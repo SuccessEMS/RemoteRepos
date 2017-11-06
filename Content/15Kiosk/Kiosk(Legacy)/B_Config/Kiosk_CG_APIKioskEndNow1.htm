@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/EMS Kiosk API Reference.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">API Functions - Kiosk End Now Reservation, Cancel Reservation, and Locate Person</h1>
+        <h2 class="Heading2">KioskEndNowReservation</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Called when a user selects to end a booking that is in progress.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">UserName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EMS User Name</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Password *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EMS User Password</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">BookingID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Booking&#160; ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 67pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Result</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Success or Failure</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <h2 class="Heading2">KioskCancelReservation</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Called when a user selects to cancel a booking that they created.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">UserName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EMS User Name</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Password *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EMS User Password</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Profile ID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Kiosk Profile ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">BookingID *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Booking&#160; ID</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 67pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Result</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Success or Failure</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <h2 class="Heading2">KioskLocatePerson</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Returns a group or list of groups based on ‘GroupName’ search criteria.</p>
+        <p><span class="Emphasis_1">Re</span><span class="Emphasis_1">quest Parameters</span>
+        </p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">UserName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EMS User Name</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Password *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EMS User Password</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">GroupName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Group Name (whole or part)</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="NormalWeb_2">&#160;</p>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 244pt;" />
+            <col style="width: 67pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Group ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">GroupName</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Group Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>An empty string can be passed in for GroupName to return ALL results.</p>
+        <p>A maximum number of 200 records will be returned.</p>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1479" MadCap:lastWidth="979">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1">Persistent <MadCap:annotation MadCap:createDate="2017-10-24T15:19:57.8368364-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is not listed in the MindTouch guide for Mobile Install/Config. Need to determine if topic should be included in documentation or archived." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:19:59.7985929-06:00">Authentication</MadCap:annotation></h1>
+        <p><span class="Strong">Persistent Authentication</span>&#160;refers to the EMS Mobile App's&#160;ability to automatically log users in so that they are not required to log into EMS Mobile App&#160;every time they need to access it. &#160;When using persistent authentication, a user's EMS Mobile App credentials will become invalid after a&#160;period of inactivity&#160;equal to or greater than the duration defined in settings.&#160;If not using persistent authentication, a user will be forced to re-authenticate after the duration defined in settings has elapsed, regardless of activity.</p>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_1">
+                            <img src="../../../Resources/Images/Mobile_Authentication/Persistent Authentication.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                        </p>
+                    </td>
+                    <td class="td_1">
+                        <p><span class="Strong">Tip:&#160;</span>Users with persistent authentication will be prompted to log back in to EMS Mobile App&#160;if anything is changed about their profile in EMS Desktop Client on the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Configuring_Everyday_Users" title="Configuring Everyday Users"><span class="span_1">Everyday User tab</span></a>, such as&#160;Email, Password, External Reference, Network ID, and&#160;Security Template. If your remove a user's access to a process template, they will also be alerted when they attempt to use it, and then they will be&#160;prompted to re-authenticate.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>1. Navigate to the&#160;<span class="Strong">Admin Functions</span>&#160;page, which is listed under your name in the upper right corner of the application.</p>
+        <p>2. Tap the&#160;<span class="Strong">MOBILE APP</span>&#160;tab.<br /></p>
+        <p>3. Select the&#160;Persistent Authentication&#160;option.</p>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_Persistent_Persistent-Auth-Option.png" style="width: 807px;height: 809px;" />
+            <br />
+        </p>
+        <p>Set the token duration in Mins/Days and&#160;<span class="Strong">Save</span>.</p>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Mobile_Authentication/Persistent Authentication_2.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="Strong">Note:&#160;</span>This setting&#160;overrides the token duration sent by SSO providers.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="p_2">&#160;</p>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Mobile_Authentication/Persistent Authentication_2.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="Strong">Note:&#160;</span>If a user should leave your organization, you should manually disable&#160;his or her profile in EMS, otherwise the employee will have access to EMS Mobile App&#160;for the duration defined above. You can also use&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_Human_Resources_Toolkit/Installing_Human_Resources_Toolkit" title="Installing HR Toolkit"><span class="span_1">HR Toolkit</span></a>&#160;to streamline this process.&#160;</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-26T23:30:53.8143598-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-26T23:31:05.7553969-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/EMS Kiosk API Reference.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/EMS Kiosk API Reference.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/EMS Kiosk API Reference.htm"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Get Profiles.htm"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Validate.htm"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Get Events.htm"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk End Now.htm"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Get Floors.htm"
+      TimeStamp="10/26/2017 11:31:01 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Add Reservation.htm"
+      TimeStamp="10/26/2017 11:31:01 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Get Event.htm"
+      TimeStamp="10/26/2017 11:31:01 PM" />
+    <Url
+      Source="../../Content/EMS Kiosk API Reference/API Functions Kiosk Add Room.htm"
+      TimeStamp="10/26/2017 11:31:01 PM" />
+    <Url
+      Source="../TOCs/EMS Kiosk API Reference.fltoc"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/EMS Kiosk API Reference.css"
+      TimeStamp="10/26/2017 11:31:00 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+  </UsedCharacterStyles>
+</MsWordImport>

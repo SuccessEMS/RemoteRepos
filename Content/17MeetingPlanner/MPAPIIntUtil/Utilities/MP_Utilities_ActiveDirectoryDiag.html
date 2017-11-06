@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Active Directory Diagnostic</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Active Directory Diagnostic</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');</pre> <p>&#160;</p> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}</pre> <h2>Background</h2> <p>Emergingsoft has an Active Directory Synchronization service that comes as part of MeetingPlanner. &#160;The service retrieves user accounts from configured Active Directory LDAP paths and creates / maintains MeetingPlanner user profiles for found users. &#160;LDAP paths for the service are typically retrieved from Microsoft's ADSI Edit tool, which provides a graphical view into Active Directory and provides the Distinguished Name formatting for all paths that are required.</p> <p>In the event that there are more complex issues preventing a connection to a configured LDAP path, additional diagnostics tools may be required. &#160;As a preliminary step, Emergingsoft has put this tool together to help with troubleshooting.</p> <h2>"Installation"</h2> <ol> <li>Download the attached zip file to the server.</li> <li>Make sure that the zip is "Unblocked" once it is on the server.</li> <li>Extract the files.</li> <li>Double-click the "Emergingsoft.MeetingPlanner.ActiveDirectoryDiagnostics.exe" to run the application.</li>  </ol> <h2>Functionality &amp; Use</h2> <ol> <li><span>Launching the tool will bring up the diagnostics interface. &#160;</span></li> <li><span>Input the LDAP path in question.</span></li> <li><span>Update the LDAP filter, if needed. &#160;It will pre-populate with the default Emergingsoft filter.</span></li> <li><span>Click "Diagnose" to run.</span></li>  </ol> <p><span><img alt="Image_003.png" src="http://support.emergingsoft.com/attachments/token/t7eDS5hwJ1ox47FYom1UUP08H/?name=Image+003.png" /></span></p> <p><strong>Result (Legacy) &amp; Result: &#160;</strong>These fields display the results from two different connection methods to connect to the LDAP path and retrieve users. &#160;The above screenshot shows a successful attempt - if any errors are encountered, they will be output in these textboxes and should be provided to Emergingsoft (a screenshot of the output, plus the results copy and pasted out of the window and into a ticket).</p> <p><strong>Current User: &#160;</strong>This displays the Distinguished Name for the current user.</p> <p><strong>Domain Controller(s): &#160;</strong>This displays any domain controllers that can be found. &#160;The discovered DCs are then pinged and checked for "Primary" status, both of which our output in this textbox.</p><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Active Directory</a><a>Active Directory Diagnostic</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

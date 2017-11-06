@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-25T13:24:38.0595508-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-25T13:24:53.6351383-06:00">
+  <Files>
+    <Url
+      Source="../../../1Word/How Does EMS Integrate.docx"
+      AbsoluteSource="file:///C:/1Word/How Does EMS Integrate.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/How Does EMS Integrate/How Does EMS Integrate With.htm"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/How Does EMS Integrate/Managing User Options.png"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/How Does EMS Integrate/Managing User Options_1.png"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/How Does EMS Integrate/Managing User Options_2.png"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/How Does EMS Integrate/Managing User Options_3.png"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/How Does EMS Integrate/Managing User Options.htm"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../TOCs/How Does EMS Integrate.fltoc"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/How Does EMS Integrate.css"
+      TimeStamp="10/25/2017 1:24:48 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="body" />
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="mt-indent-2" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="stepnumberbegin" />
+    <StyleName
+      Name="stepnumbercontinued" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="mt-font-size-13.5pt" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+  </UsedCharacterStyles>
+</MsWordImport>

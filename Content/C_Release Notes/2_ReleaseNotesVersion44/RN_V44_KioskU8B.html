@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">EMS Kiosk Release Notes V44 Update 8b</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">EMS Kiosk Release Notes V44 Update 8b</h1>
+        <section>
+<h5><strong><span class="mt-font-size-20">Enhancements</span></strong></h5>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><strong>Area</strong></td>
+            <td style="width: 1051px;"><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>Check In</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Streamline Meeting Checkin</strong></dt>
+                <dd>
+                <p>Modified functionality to streamline user actions when logging into {{product_emsk}} and checking into meetings. Now,&#160;when users swipe a badge or otherwise log into the application, they are taken directly to a list of their events; if they have an upcoming meeting within the check-in time frame in a room that requires check-in, they are automatically checked in. Additionally, when users&#160;create a meeting from the Check In window, they are automatically checked into the meeting.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26571?fullScreen=false">26571</a>&#160;and&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26572?fullScreen=false">26572</a>; content <a title="https://success.emssoftware.com/EMS_V44/Using_EMS/Using_EMS_Kiosk/020_My_Reservations_Page/Booking_Level_Check_In_with_EMS_Kiosk?mt-draft=true">here</a></p>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>New Booking</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Enable Meeting Duration To Be Set By Number of Hours or Specific Time</strong></dt>
+                <dd>
+                <p>Created two new parameters, "Booking Duration Set by Specific End Time or Number of Hours" and&#160;"Number of Hours for Booking," to enable administrators to set <a title="EMS Kiosk Parameters">parameters for Kiosk</a> so that users can specify meeting duration by number of hours rather than by a specific end time.&#160;</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/26262?fullScreen=false">26262</a>, content <a title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_Kiosk/Setting_Up_EMS_Kiosk/EMS_Kiosk_Parameters">here</a></p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h5><strong><span class="mt-font-size-20">Fixes&#160;</span></strong></h5>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><strong>Area</strong></td>
+            <td style="width: 1051px;"><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><i>Login</i></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Backspace Reverted User Logout</strong></dt>
+                <dd>
+                <p>After a user logs out of Kiosk, the next user can still operate under his or her account by clicking the Back button.</p>
+
+                <p><strong>Fix: </strong>Modified functionality to ensure that once a user logs out, clicking back takes the user to the default Kiosk&#160;log in page.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p>Bug # 26260 V43 and V44</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<header>&#160;</header>
+</section>
+
+<footer>
+<p>&#160;</p>
+</footer>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

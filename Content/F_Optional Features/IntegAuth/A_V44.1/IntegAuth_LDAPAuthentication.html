@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="4288.213" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">LDAP Authentication</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">LDAP Authentication</h1>
+        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre>
+        <h3>Overview</h3>
+        <p>Lightweight Directory Access Protocol (LDAP) is an application protocol for querying directory information.&#160; The LDAP Authentication method provides single-sign-on capability using your organization’s LDAP environment and can be used in both intranet and internet deployments of EMS Everyday applications such as {{product_webapp}} and {{product_mobile}}.&#160;</p>
+        <p>
+            <img alt="" style="width: 547px;height: 321px;" class="internal" width="547px" height="321px" />
+        </p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p>This topic covers the following topics related to LDAP&#160;configuration:</p>
+        <ul class="mt-indent-1">
+            <li><a title="LDAP Authentication"><strong>Configuring EMS Web App to Use LDAP Authentication</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Configuring EMS Web App Security</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Configuring Communication Options</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Core Properties</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Non-AD Config</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>LDAP Queries</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Saving Your Configuration</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Testing Your Configuration</strong></a>
+            </li>
+            <li><a title="LDAP Authentication"><strong>Configuring Authentication for EMS Mobile App</strong></a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>When a user logs into {{product_webapp}} or {{product_mobile}} with their User ID and Password, their credentials are authenticated against LDAP and compared against corresponding user information recorded in the <strong>Network ID</strong> and/or <strong>External Reference</strong> fields of your EMS Everyday User records.&#160; If a match exists, the Everyday User will be logged in to the application, inheriting any Everyday User Process Template rights to which&#160;their LDAP Group has been assigned.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Notes: </strong></span>
+                        </p>
+                        <ul>
+                            <li>The {{product_webapp}} LDAP-Process Template assignment process requires that your implementation of LDAP stores group information (e.g., staff, student, department, etc.) as a Directory Service object containing a property (i.e., member) that contains the users that belong to your various groups.&#160;</li>
+                            <li>The&#160;<strong><em>Field Used to Authenticate Everyday User</em></strong>&#160;parameter (within&#160;System Administration &gt; Settings &gt; <strong>Parameters </strong>(Everyday User Applications tab) is used by the applications&#160;to determine which value should be used for authentication.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>
+            <br /><a id="ConfiguringEMSWebApptoUseLDAPAuth" name="ConfiguringEMSWebApptoUseLDAPAuth"></a>Configuring&#160;{{product_webapp}} to Use LDAP Authentication</h3>
+        <ol>
+            <li>Log&#160;into {{product_webapp}} with a&#160;User that belongs to an Everyday User&#160;Security Template containing the <strong>Web&#160;Administrator</strong> role (controlled in the EMS Desktop Client under&#160;Configuration &gt; Everyday User Applications &gt; <strong>Everyday User Security Templates</strong>).<br /><strong>See Also:&#160;</strong><a title="Configuring Security Templates">Configuring Security Templates</a></li>
+            <li>From the User Options, select&#160;<strong>Admin Functions.<br /><img alt="" class="internal default" /></strong></li>
+            <li>Then click the <strong>LDAP Configuration</strong> tab.&#160;</li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal default" />
+        </p>
+        <ol start="4">
+            <li>The LDAP Configuration window appears, presenting multiple tabs for various settings.&#160;</li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal default" />
+        </p>
+        <h4><a id="ConfiguringWebAppSecurity" name="ConfiguringWebAppSecurity"></a>Configuring {{product_webapp}} Security</h4>
+        <ol start="1" style="list-style-type: decimal;">
+            <li>On&#160;the <strong>Security</strong> tab:
+
+    <ol start="1" style="list-style-type: lower-alpha;"><li>Select the <strong>Authenticate users via LDAP</strong> checkbox to enable LDAP authentication.</li><li>If LDAP will be used to assign Everyday User Process Templates to your Web Users, select the <strong>Use LDAP to assign Process Templates</strong> checkbox.</li><li><strong>Use advanced communication options</strong>:&#160;Skip this step for Active Directory environments.&#160; Enabling this checkbox requires that you complete the settings on the <strong>Communication Options</strong> tab.</li><li>In the <strong>Path for LDAP Query</strong> field, specify a valid LDAP path (example – <a class="external" href="LDAP://YourCompany.com" rel="freeklink" title="LDAP://YourCompany.com">LDAP://YourCompany.com</a>)</li><li><strong>List of Domains</strong>:&#160; Skip this step if your organization uses a single domain.&#160; Otherwise, provide a comma separated list of your domains.</li><li>In the <strong>LDAP Domain\User</strong> field, enter a Domain User account &#160;that has rights to query LDAP (example – YourDomain\User) &#160;</li><li>In the <strong>Password</strong> field, enter a valid Password for the User Account entered in the previous step.</li><li>Specify the appropriate LDAP <strong>Authentication Type</strong> for your environment.</li></ol></li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>The other tabs (<strong>Communication Options</strong>, <strong>Core Properties</strong>, <strong>Non-AD Config</strong> and <strong>LDAP Queries</strong>) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4><a id="ConfiguringCommunicationOptions" name="ConfiguringCommunicationOptions"></a>Configuring Communication Options</h4>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warnings:</span></strong>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+                        <p class="NoteTipWarningText">If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The Communication Options tab includes&#160;fields that define how to fetch a Group or a User when sending communications from the EMS Desktop Client. You can also set the SSL configurations, including the Security Certificate Path. Checking the Use SSL box will force communication to use SSL.&#160;</p>
+        <ul>
+            <li><strong>Certificate Path</strong>: If there is a specific certification that you want to use to validate your authentication.</li>
+            <li><strong>Authentication Type:</strong> Type of authentication that your LDAP&#160;server will use during the binding process. Basic is the default because it is the most common.&#160;</li>
+            <li><strong>Search Root:</strong> The root is the level at which your search will begin.&#160;</li>
+            <li><strong>User Search Filter</strong>: Specifies the filter to use when performing the user search.&#160;</li>
+        </ul>
+        <p class="mt-indent-1"><strong>Example</strong>:&#160;<span class="mt-font-courier-new">(&amp;(objectClass=Person)(SAMAccountName={0}))</span> or <span class="mt-font-courier-new">(&amp;(objectClass=Person)(uid={0}))</span></p>
+        <ul>
+            <li><strong>Group Search Filter</strong>:&#160;Specifies the filter to use when performing the group search.&#160;</li>
+        </ul>
+        <form action="./LdapConfiguration.aspx" id="VirtualEmsForm" method="post">
+            <p class="mt-indent-1"><strong>Example</strong>:&#160;<span class="mt-font-courier-new">(&amp;(objectClass=Person)(objectClass=user))</span></p>
+        </form>
+        <ul>
+            <li><strong>Protocol Version</strong>: Insert the current version number here. The default is 3, as the current version should be 3.&#160;</li>
+        </ul>
+        <h4><a id="CoreProperties" name="CoreProperties"></a>Core Properties</h4>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warnings:</span><span class="mt-color-336699">&#160;</span></strong>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+                        <p class="NoteTipWarningText">If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="./LdapConfiguration.aspx" id="VirtualEmsForm" method="post">
+            <p>Indicate whether your LDAP implementation is Active Directory. These properties are set to the common defaults, but can be changed here if the LDAP properties differ from the defaults displayed.</p>
+        </form>
+        <ul>
+            <li><strong>LDAP Name Property</strong>: The property for user name on the user record in LDAP that will be displayed. &#160;<span class="mt-font-courier-new">Displayname</span> is the default, as it is the most common.&#160;</li>
+            <li><strong>LDAP Phone Property</strong>: The property for the phone number on the user record in LDAP that will be displayed. <span class="mt-font-courier-new">Telephonenumber </span>is the default, as it is the most common.</li>
+            <li><strong>Domain to append to users</strong>: This field is unnecessary unless the domain of your user is different from the domain returned from the query.&#160;</li>
+            <li><strong>Field for LDAP Group Lookup</strong>: This identifies the EMS property that should be utilized when performing the search. For example, if you use LDAP solely to assign templates and you want the EMS Web App to look up group membership using a field other than the login name, then you must enter that field's name here.&#160;</li>
+        </ul>
+        <h4><a id="Non-ADConfiguration" name="Non-ADConfiguration"></a>Non-AD Configuration</h4>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-b22222"><strong>Warning:&#160;</strong></span>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+                        <p class="NoteTipWarningText">If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="./LdapConfiguration.aspx" id="VirtualEmsForm" method="post">
+            <p>If your LDAP implementation is not Active Directory, use these fields to redefine the LDAP property names used when searching directory information.</p>
+            <ul>
+                <li><strong>LDAP Account/User ID Property</strong>: The property in your LDAP store that contains the user name.&#160;</li>
+            </ul>
+            <p class="mt-indent-1"><strong>Example</strong>: If <span class="mt-font-courier-new">sameaccountname=xxxx</span>, then enter <span class="mt-font-courier-new">sameaccountname</span></p>
+            <ul>
+                <li><strong>Full LDAP User ID Format</strong>: Leave blank unless authentication requires a full path.&#160;</li>
+            </ul>
+            <p class="mt-indent-1"><strong>Example</strong>: &#160;<span class="mt-font-courier-new">cn={0},ou=staff,o=yourdomain</span></p>
+            <ul>
+                <li><strong>LDAP Group Category</strong>: The property in your LDAP store that contains the group category.&#160;</li>
+            </ul>
+            <p class="mt-indent-1"><strong>Example</strong>: If filter should be<span class="mt-font-courier-new"> objectClass=groupOfNames</span>, then property should be <span class="mt-font-courier-new">groupOfNames</span></p>
+            <ul>
+                <li><span class="mt-font-arial"><strong>LDAP&#160;Group Name</strong>: The property in your LDAP store that contains the group name.&#160;</span>
+                </li>
+                <li><strong>LDAP Group Member Name</strong>: The property in your LDAP store that contains the name of a single member in the group.&#160;</li>
+            </ul>
+            <p class="mt-indent-1"><strong>Example</strong>: If member property is<span class="mt-font-courier-new">&#160;member=jdoe</span>, then property should be <span class="mt-font-courier-new">member</span></p>
+            <ul>
+                <li><span class="mt-font-arial"><strong>LDAP Group Member User Name Attribute</strong>: The property of the user record that corresponds to the&#160;group's member property to determine group membership.&#160;</span>
+                </li>
+            </ul>
+            <h4><span class="mt-font-arial"><a id="LDAPQueries" name="LDAPQueries"></a>LDAP Queries</span>
+            </h4>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning: &#160;</span></strong>It is recommended that this tab only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</p>
+                            <p class="NoteTipWarningText">If you’re not familiar with the LDAP settings, it is highly recommended to get the assistance of a System Admin in your organization who is familiar with the LDAP settings.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>These are LDAP query overrides to fetch Groups and Users from the domain. These settings rarely need to overridden, but can be used to customize queries.</p>
+            <ul>
+                <li><strong>LDAP&#160;query for security groups</strong>: Query used to search for security groups in your LDAP&#160;store.&#160;</li>
+                <li><strong>LDAP query to find users</strong>: Query used to search for users in your LDAP store.</li>
+                <li><strong>LDAP query for find users with space</strong>: Query used to search for users that have spaces surrounding their user names in your LDAP store.&#160;</li>
+            </ul>
+        </form>
+        <ol start="1">
+        </ol>
+        <h4><a id="SaveConfiguration" name="SaveConfiguration"></a>Save Your Configuration&#160;</h4>
+        <ol start="1" style="list-style-type: decimal;">
+            <li>Click <strong>Save</strong>.&#160;</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span> If you want Everyday Users to inherit Everyday User Process Templates based on the LDAP Group(s) with which they belong, proceed to Step 7.&#160; Otherwise, you have completed the configuration process.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="2">
+            <li>Within EMS Desktop Client, go to the Everyday User Process Templates area (Configuration &gt; Web &gt; <strong>Everyday User Process Templates</strong>).</li>
+            <li>Within an Everyday User Process&#160;Template, locate the LDAP Groups tab and select the appropriate LDAP Group(s) to map to that Everyday User Process Template.</li>
+            <li>Click <strong>OK</strong>.</li>
+        </ol>
+        <h4><a id="TestConfiguration" name="TestConfiguration"></a>Test Your Configuration</h4>
+        <ol start="1">
+            <li>After completing configuration, navigate to the <strong>Test Configuration</strong> tab in the EMS Web App under LDAP Configuration.&#160;</li>
+            <li>Enter your <strong>Network UserId Without Domain Name</strong>.</li>
+            <li>Enter your <strong>Password</strong>.</li>
+            <li>Click <strong>Test</strong>.
+    <ol start="1" style="list-style-type: lower-alpha;"><li>If your configuration was successful, you will receive a message in a green box at the top that includes domain information and the words "Authentication successful" (please see example below).</li></ol></li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="LDAPAuthentication_Test Configuration.PNG" class="internal default" />
+        </p>
+        <ol class="mt-indent-1" start="2" style="list-style-type: lower-alpha;">
+            <li>If the configuration was unsuccessful, you will receive a prompt stating that LDAP could not be accessed. Check your logs to determine the reason for the failure.&#160;</li>
+        </ol>
+        <h4><a id="ConfiguringAuthenticationEMSMobileApp" name="ConfiguringAuthenticationEMSMobileApp"></a>Configuring Authentication for {{product_mobile}}</h4>
+        <ol start="1">
+            <li>If your organization uses {{product_mobile}}, click the Mobile App tab.</li>
+            <li><a target="_blank" title="Using LDAP Authentication for EMS Mobile">Choose the&#160;<strong>LDAP&#160;</strong>option</a>.</li>
+        </ol>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>VEMS Configuration</a><a>VEMS Integration Authentication</a><a mt-export-translate="no">persona:SysAdmin</a><a mt-export-translate="no">versionfourtyfourfunctional:EMSDeploymentENH</a><a>QAReview</a>
+        </p>
+    </body>
+</html>

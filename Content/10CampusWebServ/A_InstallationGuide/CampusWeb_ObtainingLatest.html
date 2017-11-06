@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1572.667" MadCap:lastWidth="762" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Obtaining the Latest EMS Campus Web Service Components</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Obtaining <MadCap:annotation MadCap:createDate="2017-10-25T11:37:13.2988420-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic seems to have the same content as CampusWeb_ObtainingInstallationFiles. Need to look into this." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T11:37:13.6992278-06:00">the</MadCap:annotation> Latest EMS Campus Web Service Components
+</h1>
+        <p>Please contact your Professional Services Consultant or <a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com</a> to obtain the following files:
+</p>
+        <ul class="mt-indent-1">
+            <li><strong>EMSCampusWebService.msi</strong>—EMS Campus Web Service installation file.</li>
+            <li><strong>Views.sql</strong>—Script that will create EMS Campus specific views in your SIS that the EMS Campus Web Service will use to query/update data.</li>
+            <li><strong>Queries.xml</strong>—SIS-specific configuration file used by the EMS Campus Web Service to connect to your SIS.&#160;</li>
+        </ul>
+        <h2><a name="_Toc385925078"></a>Installing the EMS Campus Views</h2>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>EMS Campus clients using the tab-delimited file option can skip to the <a class="external" title="EMS Campus Web Service Hardware/Software Requirements">EMS Campus Web Service Hardware/Software Requirements</a> section.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li>Obtain the <strong>Views.sql</strong> file (required for new EMS Campus installations AND upgrades.)</li>
+            <li>Create an EMS Campus specific account (name and password are arbitrary) in the SIS database that has been granted permissions to execute the EMS Campus views and has update privileges on the table used to store course meeting information.&#160; This account will be used by the EMS Campus Web Service to connect, query, and update your SIS via the views created by the <strong>Views.sql</strong> file.</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>For a list of permissions by table for your particular SIS, please contact your Professional Services Consultant.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li value="3">Execute <strong>Views.sql</strong> against your SIS database.&#160; (<strong>Note</strong>: Depending on your database management system, you may need to execute the <strong>Views.sql</strong> file using the account created in Step 2.)</li>
+            <li>Complete the following additional steps based on your SIS Database Management System.</li>
+        </ol>
+        <h2><a name="_Toc385925079"></a>Microsoft SQL Server</h2>
+        <p>No further steps are required.</p>
+        <h2><a name="_Toc385925080"></a>Oracle</h2>
+        <ol>
+            <li>Install the Oracle Client (version 11.1.x or 11.2.x) on your web server.&#160; Choose the ‘Administrator’ installation type option.</li>
+            <li>Using the Oracle Net Manager, create a TNSNAMES.ora file.</li>
+            <li>Verify that the PATH Environment Variable references the location of your TNSNAMES.ora file.</li>
+            <li>Create a TNS_ADMIN Environment Variable to point to the location of your TNSNAMES.ora file.</li>
+            <li>Grant to the Authenticated Users group Read + Execute privileges on your main Oracle directory.&#160; Make sure that permissions are propagated to all child objects.</li>
+            <li>Reboot your web server.</li>
+            <li>Launch SQL Plus and log-in.</li>
+            <li>Execute the following statement to verify connectivity to your Oracle-EMS buildings view.</li>
+            <li>Select * from ems_vwbuildings;</li>
+        </ol>
+        <h2><a name="_Toc385925081"></a>IBM UniData</h2>
+        <p>UniData comes with the following tools, which must be installed:</p>
+        <ul>
+            <li>Visual Schema Generator (VSG)—Used to build views and sub-tables for EMS Campus.</li>
+            <li>ODBC Client Software.</li>
+        </ul>
+        <p>Please contact a member of the Client Services group for more specific instructions.</p>
+        <h2><a name="_Toc385925082"></a>Other</h2>
+        <p>Please contact a member of the Professional Services group or <a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com.</a></p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>EMS Campus Web Service and White Paper</a><a>EMS Campus Web Service Install</a><a>EMS Campus White Paper</a><a mt-export-translate="no">persona:SysAdminCampus</a>
+        </p>
+    </body>
+</html>

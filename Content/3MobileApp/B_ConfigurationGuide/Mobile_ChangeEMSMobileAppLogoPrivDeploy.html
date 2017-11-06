@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="591" MadCap:lastWidth="981" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Changing the EMS Mobile App Logo (Private Deployment Only)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Changing the EMS Mobile App Logo (Private Deployment Only)</h1>
+        <p>
+            <MadCap:annotation MadCap:createDate="2017-10-24T12:47:08.7988562-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Steps 1-3 are deki from &quot;Configuring and Re-signing the EMS Mobile App (Private Deployment Only)&quot; in the section &quot;Using Unsigned Builds&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T12:48:07.1813624-06:00">For customers re-signing the application, we provide u</MadCap:annotation>nsigned builds.</p>
+        <ol>
+            <li>Store your unsigned EMS Mobile App in a new or empty directory.</li>
+            <li>Change the extension of the app to .zip. (e.g., IPhone.App-44.1.xxx-unsigned.ipa -&gt; IPhone.App-44.1.xxx-unsigned.zip.)</li>
+            <li>Un-compress/expand the new zip file.</li>
+            <li>
+                <p>To set a custom logo, replace the following logo files:</p>
+            </li>
+        </ol>
+        <h5><strong>IOS</strong>
+        </h5>
+        <ul>
+            <li>assets/src/features/shared/img/logo.png</li>
+        </ul>
+        <h5><strong>Android</strong>
+        </h5>
+        <ul>
+            <li>res/drawable-mdpi-v4/src_features_shared_img_logo.png</li>
+        </ul>
+        <p>&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p class="NoteTipWarningText"><strong>Note: </strong>We recommend that you&#160;use an image with a <strong>3:1 aspect ratio</strong> in order to ensure that the image will be be properly rendered&#160;by the application.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

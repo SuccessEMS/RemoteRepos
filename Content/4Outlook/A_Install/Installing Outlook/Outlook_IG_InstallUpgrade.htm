@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1">Install/Upgrade EMS for Outlook on Users' Computers</h1>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">
+                        <img src="../../../Resources/Images/Installing Outlook/Introduction to EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Important:&#160;</span>The installation/upgrading process must begin by&#160;uninstalling previous versions of the EMS for Outlook application.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>This&#160;add-in should be&#160;installed on your users’ desktops.&#160;For either 32- or 64-bit installation, you will also need an EMS Platform Services&#160;Virtual Directory Name (typical default is EMSPlatform). Make a note of the new site you have created. This URL will need to be entered during the installation process (e.g.,&#160;<span class="span_1">http://[ServerName]/EMSPlatform/&#160;</span>[replace ServerName with the name of your web server]). By default, the&#160;<span class="span_1">EMSForOutlook.msi</span>&#160;installs all of the files required by the EMS for Outlook&#160;Add-in in the following locations:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1"><span class="span_1">32-bit machines -</span><span class="Emphasis">&#160;C:\Program Files\EMS for Outlook</span>
+            </li>
+            <li class="ListParagraph_1"><span class="span_1">64-bit machines</span><span class="Emphasis">&#160;- C:\Program Files (x86)\EMS for Outlook</span>
+            </li>
+        </ul>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">
+                        <img src="../../../Resources/Images/Installing Outlook/Introduction to EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Note:&#160;</span>A 64-bit installation requires an elevated permission level.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>This location can be changed during the installation, but it is recommended that you keep the default.</p>
+        <h2 class="Heading2">32- or 64-bit User Installation&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Verify that the Requirements and Prerequisites&#160;have been met.</li>
+            <li class="ListParagraph">Download the&#160;<span class="span_1">EMSForOutlook.msi&#160;</span>file onto the user’s desktop.</li>
+            <li class="ListParagraph">Close Outlook.</li>
+            <li class="ListParagraph">Run&#160;<span class="span_1">EMSForOutlook.msi</span>.</li>
+            <li class="ListParagraph">The first screen welcomes you to the EMS Outlook Add-in Setup Wizard.&#160;</li>
+            <li class="ListParagraph">Click the&#160;<span class="span_1">Next&#160;</span>button to begin the installation process. The&#160;<span class="span_1">Destination Folder&#160;</span>screen will appear.</li>
+            <li class="ListParagraph">Specify the Installation Folder.</li>
+            <li class="ListParagraph">Click the&#160;<span class="span_1">Next</span>&#160;button. The&#160;<span class="span_1">EMS Platform Services&#160;</span>screen will appear.&#160;</li>
+            <li class="ListParagraph">Enter&#160;the&#160;address your organization uses (e.g., http://[ServerName]/EMSPlatform).</li>
+            <li class="ListParagraph">Click the&#160;<span class="span_1">Next&#160;</span>button. The&#160;<span class="span_1">Ready to install EMS for Outlook&#160;</span>screen will appear.&#160;</li>
+            <li class="ListParagraph">Click the&#160;<span class="span_1">Install</span>&#160;button to complete the installation.&#160;Click the&#160;<span class="span_1">Close</span>&#160;button to exit.</li>
+            <li class="ListParagraph">Launch Outlook.&#160;The&#160;<span class="span_1">EMS&#160;</span>button should display on the user’s Outlook toolbar on the Calendar as online.&#160;</li>
+        </ol>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">
+                        <img src="../../../Resources/Images/Installing Outlook/Introduction to EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Note:&#160;</span>If the EMS for Outlook displays as Offline,&#160;see&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Installing_%26_Configuring_EMS_for_Microsoft%C2%AE_Outlook_Update_8/07-Installing////////Upgrading_EMS_for_Outlook_on_a_User%27s_PC/EMS_for_Outlook_Add-In_is_Offline" title="EMS for Outlook Add-In is Offline"><span class="Hyperlink_1">EMS for Outlook Add-In Is Offline</span></a>.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">Silent EMS for Outlook User Installation</h2>
+        <p>You can push your EMS for Outlook Installation to user machines if your system enables this type of administration.</p>
+        <p>Use the following command to establish an Unattended/Silent installation of the&#160;<span class="span_1">EMSForOutlook.msi</span>&#160;(replace [ServerName] with the name of your web server):</p>
+        <p class="mt-font-courier-new_1">msiexec /i "EMSForOutlook.msi" RSURL="http://[serverName]/EMSPlatform"&#160;</p>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">
+                        <img src="../../../Resources/Images/Installing Outlook/Introduction to EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Important:</span><span class="mt-color-669933_1">&#160;</span>&#160;'EMSPlatform' is the default virtual directory name for EMS Platform Services. Therefore,&#160;if the default is changed during the installation of this component, the url in the parameter should change accordingly.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

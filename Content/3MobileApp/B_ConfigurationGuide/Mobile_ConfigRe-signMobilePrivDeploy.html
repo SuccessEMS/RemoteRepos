@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="3966" MadCap:lastWidth="1292" style="text-align: left;" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring and Re-Signing the EMS Mobile App (Private Deployment Only)</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configuring and Re-Signing the EMS Mobile App (Private Deployment Only)</h1>
+        <h2>Using Unsigned Builds</h2>
+        <p>For customers re-signing the application, we provide unsigned builds.</p>
+        <ol>
+            <li>Store your unsigned {{product_mobile}}&#160;in a new or empty directory.</li>
+            <li>Change the extension of the app to .zip.&#160;(e.g., IPhone.App-44.1.xxx-unsigned.ipa -&gt; IPhone.App-44.1.xxx-unsigned.zip.)</li>
+            <li>Un-compress/expand the new zip file.</li>
+        </ol>
+        <h2>Setting Custom Configuration</h2>
+        <ol>
+            <li>Refer to&#160;<a rel="internal" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Mobile_App_EMS_Mobile_Spring_2017/Installing_and_Setting_Up_the_EMS_Mobile_App/Setting_Up_EMS_Mobile_Authentication/Customizing_Your_Mobile_App_Configuration_Using_config.json" href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Mobile_App_EMS_Mobile_Spring_2017/Installing_and_Setting_Up_the_EMS_Mobile_App/Setting_Up_EMS_Mobile_Authentication/Customizing_Your_Mobile_App_Configuration_Using_config.json">Customizing&#160;Your Configuration Using config.json</a>&#160;for details on building a configuration file for EMS Mobile.&#160;</li>
+            <li>Replace the config.json file with your custom configuration (located as follows):</li>
+        </ol>
+        <h5><strong>IOS</strong>
+        </h5>
+        <ul>
+            <li>
+                <p>config.json (top-level file)</p>
+            </li>
+        </ul>
+        <h5><strong>Android</strong>
+        </h5>
+        <ul>
+            <li>
+                <p>assets/config.json</p>
+            </li>
+        </ul>
+        <h2>Re-Signing and Repackaging for iOS</h2>
+        <p>Follow the steps below to re-sign and repackage for iOS.</p>
+        <h4>1. Install Fastlane.</h4>
+        <p>Using, sudo gem install fastlane on an administrative&#160;Apple computer.</p>
+        <h4><a name="install-certificate-provisioning-profile"></a>2. Install Certificate &amp; Provisioning Profile</h4>
+        <p>If your Apple computer&#160;is already configured with these items, these steps may not be necessary.&#160;</p>
+        <p><strong>Provisioning Profile</strong>
+        </p>
+        <ol>
+            <li>Login to <a class="link-https" href="https://developer.apple.com" rel="freeklink" title="https://developer.apple.com">https://developer.apple.com</a></li>
+            <li>Download your Distribution provisioning profile</li>
+            <li>Double click it to install it. This file should exist on your system:
+    <ul><li>~/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision</li></ul></li>
+        </ol>
+        <p><strong>Certificate</strong>
+        </p>
+        <p>See Apple's <a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html" title="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html">documentation </a>for installing and managing certificates and signing identities.&#160;When the certificate is installed successfully you should see iPhone Distribution: Your Company, Inc in your Keychain, with a private key.</p>
+        <h4><a name="resigning"></a>3. Re-Signing</h4>
+        <p>Assuming you have:</p>
+        <ul>
+            <li>Fastlane installed on your Apple computer</li>
+            <li>the cert &amp; private key installed in Keychain</li>
+            <li>the provisioning profile mentioned above in ~/Library/.../&lt;profile-guid&gt;.mobileprovision</li>
+        </ul>
+        <p>...then you should be ready to re-sign the application. Before you proceed, change the following in the command below:</p>
+        <ul>
+            <li>Replace path/to/your/file.ipa with the real path to the ipa file</li>
+            <li>Replace iPhone Distribution: Your Company, Inc with the appropriate signing identity on your machine</li>
+            <li>Replace &lt;profile-guid&gt; with the actual GUID or name of the provisioning profile you intend to use</li>
+            <li>Replace <strong>EMS-Resigned</strong> with the display name you with to use, or remove the parameter if you do not wish to rename the application</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="NoteTipWarningText"><strong>Note: </strong>Running these commands will <strong>overwrite</strong> the ipa file you designate. Make a copy first if necessary.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p style="text-align: left;">fastlane run resign \<br />&#160;&#160;&#160; ipa:path/to/your/file.ipa \<br />&#160;&#160;&#160; signing_identity:"iPhone Distribution: Your Company, Inc" \<br />&#160;&#160;&#160; provisioning_profile:$HOME/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision \<br />&#160;&#160;&#160; display_name:EMS-Resigned</p>
+        </blockquote>
+        <p>(All on one line for copy/paste:)</p>
+        <blockquote>
+            <p>fastlane run resign ipa:path/to/your/file.ipa signing_identity:"iPhone Distribution: Your Company, Inc" provisioning_profile:$HOME/Library/MobileDevice/Provisioning Profiles/&lt;profile-guid&gt;.mobileprovision display_name:EMS-Resigned</p>
+        </blockquote>
+        <p>If you want a bash script that will do this, you can copy this into a file (e.g., resign_enterprise.sh):</p>
+        <blockquote>
+            <p style="text-align: left;"><em>#!/bin/bash</em>
+                <br />
+                <br />IPA=relative/path/to/file.ipa<br />IDENTITY="iPhone Distribution: Your Company, Inc"<br />PROFILE=$HOME/Library/MobileDevice/Provisioning\ Profiles/&lt;profile-guid&gt;.mobileprovision<br />DISPLAY_NAME=EMS-Resigned<br /><br />fastlane run resign ipa:"$IPA" signing_identity:"$IDENTITY" provisioning_profile:"$PROFILE" display_name:$DISPLAY_NAME</p>
+        </blockquote>
+        <h3>Re-Signing and Repackaging for Android</h3>
+        <ul>
+            <li>Re-zip all the extracted files from earlier
+    <ul><li>Note that assets, res, and AndroidManifest.xml are top-level files in an .apk, so be careful to zip the right files</li><li>This CLI command will zip all the files in the current directory into a new zip file in the parent directory:
+        <ul><li>zip -qr ../ems-custom-44.1.xxx.zip ./*</li></ul></li></ul></li>
+            <li>Give the new zip file an .apk extension
+    <ul><li>e.g., myapp.zip -&gt; myapp.apk</li></ul></li>
+            <li>Sign the new .apk file, for example:</li>
+        </ul>
+        <blockquote>
+            <p style="text-align: left;"><em>#!/bin/bash</em>
+                <br />
+                <br />APK_TO_SIGN=$1<br />APK_OUTPUT=$2<br />EMS_APK_KEYSTORE_PATH=path/to/your/app.keystore<br /><br />jarsigner -verbose \<br />&#160;&#160;&#160; -sigalg $EMS_APK_SIG_ALG \<br />&#160;&#160;&#160; -digestalg $EMS_APK_DIGEST_ALG \<br />&#160;&#160;&#160; -storepass $EMS_APK_KEYSTORE_PASS \<br />&#160;&#160;&#160; -keystore $EMS_APK_KEYSTORE_PATH \<br />&#160;&#160;&#160; $APK_TO_SIGN $EMS_APK_ALIAS_NAME<br /><br />zipalign 4 $APK_TO_SIGN $APK_OUTPUT</p>
+        </blockquote>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

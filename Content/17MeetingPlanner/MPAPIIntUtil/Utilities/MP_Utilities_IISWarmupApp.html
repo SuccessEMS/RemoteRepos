@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">IIS Warmup Application (v1.0.0.1)</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">IIS Warmup Application (v1.0.0.1)</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}</pre> <h2>Background</h2> <p>Many ASP.NET products have a long compilation time, which leads to a long loading time for the first user to access the website after an application pool is recycled. &#160;Emergingsoft's products are no exception, and also do quite a bit of application caching at this time. &#160;While this ultimately leads to a faster website, it can be a burden on that initial user. &#160;</p> <p>In order to alleviate the issue, Emergingsoft has put together an IIS warmup application that can be run to simulate the first user. &#160;Once setup, the first user of the day will no longer experience this initial delay.</p> <h2>"Installation" &amp; Configuration</h2> <p>1) &#160;Download the attached zip file.</p> <p><strong>**First confirm that the Zip is not blocked by Windows. &#160;This can be done by right-clicking on the file, going to Properties and clicking "Unblock." &#160;If the "Unblock" button is not present, then the archive is already unblocked.</strong></p> <p>2) &#160;Extract the files into a new folder on the application server (typically: &#160;...\Emergingsoft\IisWarmup)</p> <p>3) &#160;Open the configuration file and update the &lt;WarmUpElement&gt; URLs. &#160;(Note: If you wish to add any additional websites to the application, please feel free to do so).</p> <p>4) &#160;Save and close.</p> <p>5) &#160;Open the Administrative Tools &gt; Task Scheduler.</p> <p>6) &#160;Create a new task. &#160;Necessary task configurations are listed below:</p> <ul> <li> <ul> <li><strong>General &gt;&#160;</strong><strong>"Run as...":</strong>&#160;&#160;This account will need to be an domain account with a MeetingPlanner user profile.</li> <li><strong>General &gt;&#160;"Run whether user is logged on or not":</strong>&#160;&#160;Enable</li> <li><strong>Triggers &gt;&#160;Daily at 1:00am:</strong>&#160;&#160;By default the Web Scheduler will recycle everyday at midnight. &#160;If this changes, you will want to modify the trigger or add additional entries. &#160;This should be run after every recycle.</li> <li><strong>Actions</strong><strong>&#160;&gt;&#160;Start a program:</strong>&#160;This should point to the .exe file that was part of the downloaded package.</li>  </ul>  </li>  </ul> <h2>Updates &amp; Notes</h2> <h3>v1.0.0.0</h3> <ul> <li> <ul> <li>Initial release.</li>  </ul>  </li>  </ul> <h3>v1.0.0.1</h3> <ul> <li> <ul> <li>Application will ignore SSL certificate errors.</li>  </ul>  </li>  </ul><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>IIS Warmup Application</a><a>Utilities</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

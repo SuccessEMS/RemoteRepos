@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Troubleshooting: Internal Server Error When Viewing My Events in EMS Web App</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Troubleshooting: Internal Server Error When Viewing My Events in EMS Web App</h1>
+        <p>If you are&#160;getting an internal server error when trying to view existing bookings through the “My Events” page in {{product_webapp}} and there are&#160;a large amount of bookings under your name, this is because the number of records returned exceeds the number allowed by the IIS web app configuration. The maximum is set to 50,000 by default.</p>
+
+<p><strong>Workaround:&#160;</strong>You or your System Administrator can increase this limit&#160;by editing the Web.config file. The configuration attribute to look for is the following:</p>
+
+<p><span class="mt-font-Courier New">&#160;&#160;&#160; &lt;add key="aspnet:MaxJsonDeserializerMembers" value="50000" /&gt;</span></p>
+
+<p>Change the value to&#160;the maximum number of bookings you expect users to have.</p>
+
+<pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Learn_About_Our_Applications/Learn_About_Managing_EMS/EMS_Cloud_Customers%3A_Modifying_the_web.config_File")</pre>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

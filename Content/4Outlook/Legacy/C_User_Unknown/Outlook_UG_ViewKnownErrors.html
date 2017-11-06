@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">View Known Errors/Alerts</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">View Known Errors/Alerts</h1>
+        <p>During the course of using the EMS for Microsoft Outlook plugin module to schedule reservations and make appointments, you might encounter alerts and error messages.</p>
+
+<p>This following table details the known alerts and error messages for the module and provides an explanation for each:</p>
+
+<table class="mt-responsive-table">
+    <thead>
+        <tr>
+            <th class="mt-align-center" scope="col"><strong>Alert/Error Message</strong></th>
+            <th class="mt-align-center" scope="col"><strong>Description</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="mt-align-center" colspan="2" data-th="Description"><strong>Alerts</strong></td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Resource Alert</td>
+            <td data-th="Description">Customer-specified resource alerts are displayed when a user selects a resource.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Room Alert</td>
+            <td data-th="Description">Customer-specified room alerts are displayed when a user selects a room.</td>
+        </tr>
+        <tr>
+            <td class="mt-align-center" colspan="2" data-th="Description"><strong>Errors</strong></td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">You have an unapplied service order. Are you certain you wish to continue?</td>
+            <td data-th="Description">Displayed if a user has entered a service order, but clicks Save before clicking <strong>Apply</strong>.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Appointment “SUBJECT” is tied to an EMS Booking.</td>
+            <td data-th="Description">Displayed when a user attempts to copy or cut a meeting on a calendar that is linked to EMS.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">The meeting you are viewing is no longer being monitored by EMS. Changing this meeting will disconnect the meeting from EMS.</td>
+            <td data-th="Description">
+            <ul>
+                <li>Displayed if a user opens a meeting that has occurred in the past.</li>
+                <li>Prior to build 43.0.28—in inconsistent scenarios—this message was displayed when a user created a creating on a delegate’s calendar and then tried to modify the meeting.</li>
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Your web user id does not match the web user id on the reservation. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</td>
+            <td data-th="Description">Displayed when a user attempts to open a meeting for which they are not the web user.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">This reservation has been invoiced. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</td>
+            <td data-th="Description">Displayed when a user attempts to open a meeting that has been invoiced.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">This reservation is assigned to a process template that is unavailable to you in Outlook. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</td>
+            <td data-th="Description">Displayed when a user attempts to open a reservation that is tied to a process template to which they do not have access to or is not available in Outlook.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">EMS requires all meetings be 24 hours or less.</td>
+            <td data-th="Description">Displayed if a user sets a start/end date/time combination to anything greater than 24 hours.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">You changed the time after changing the location which invalidated your locations.</td>
+            <td data-th="Description">
+            <p>Displayed if a user:</p>
+
+            <ul>
+                <li>Changes the meeting time after selecting a meeting location.</li>
+                <li>Changes the meeting recurrence any in way after selecting a location.</li>
+            </ul>
+
+            <p><strong>Note</strong>: A user must verify a room after changing times or recurrences.</p>
+            </td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">One or more of your locations was not available.</td>
+            <td data-th="Description">Displayed when a user attempts to save a meeting and one or more of the EMS rooms requested was not available.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">One or more of your services violated the available quantity and was not applied to your meeting.</td>
+            <td data-th="Description">Displayed when a user attempts to save a meeting that has a service order and one or more of the resources had insufficient quantities available.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">There was a problem saving your reservation in EMS.</td>
+            <td data-th="Description">Displayed when EMS encounters an unexpected error trying to save the reservation in EMS.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Your request would violate the maximum allowed duration for a reservation ({0} minutes).</td>
+            <td data-th="Description">Displayed when a user attempts to add a booking that violates the Max Minutes Allowed value as specified by the Web Process template.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">This template only allows for {0} booking(s) at a time.</td>
+            <td data-th="Description">Displayed when a user attempts to add a booking that violates the Max Number of Bookings value as specified by the Web Process template.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Terms must be accepted.</td>
+            <td data-th="Description">Displayed if a user does not select the option to accept Terms and Conditions.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Event type is required.</td>
+            <td data-th="Description">Displayed if a user attempts to submit an entry without an event type being selected.</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Group is Required.</td>
+            <td data-th="Description">Displayed if a user has not selected a group. (Group label used in message.)</td>
+        </tr>
+        <tr>
+            <td data-th="Alert/Error Message">Use the Send Cancelation button on the appointment tab.</td>
+            <td data-th="Description">Displayed in the meeting cancel notification if a user attempts to press the EMS Save/Send button.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p>&#160;</p>
+</body>
+</html>

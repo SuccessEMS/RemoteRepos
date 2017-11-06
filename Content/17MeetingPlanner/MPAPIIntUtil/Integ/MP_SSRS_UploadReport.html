@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Upload a Report</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Upload a Report</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');</pre> <h2>Background</h2> <p>Emergingsoft will be posting various reports that we think may be helpful to our customers, and will provide assistance updating or customizing reports. &#160;If you choose to download a report or receive a .rdl file from our support team, please see the instructions below for how to upload the report to your SSRS instance.</p> <h2>Steps</h2> <p>1) &#160;Browse to your SSRS instance.</p> <p>2) &#160;Click "Upload File."</p> <p><img alt="Image_002.png" src="http://support.emergingsoft.com/attachments/token/LVqPBAeCuN51DaflSX2I1scEf/?name=Image+002.png" style="width: 600px;" /></p> <p>3) &#160;Upload the report (.rdl).</p> <p>4) &#160;From the dropdown menu for the report, click "Manage."</p> <p><img alt="Image_003.png" src="http://support.emergingsoft.com/attachments/token/iEKEnmd4C1RmPxK24figK4wnZ/?name=Image+003.png" style="width: 350px;" /></p> <p>5) &#160;Click "Data Sources" &gt; "A shared data source"</p> <p>6) &#160;Browse to your current MeetingPlanner data source.</p> <p>*In the event that you cannot browse to your shared data source, you can manually type in the path. &#160;The default path would be "/MeetingPlanner" (no quotes).</p> <p>7) &#160;Click "Apply."</p> <h2>Important</h2> <p>If you are running MeetingPlanner v5.5.3.36 or prior, please be sure to run the below SQL script against the MeetingPlanner database. &#160;The script will apply updates to the MeetingPlanner database for proper timezone support for all SSRS reports.</p> <p>The script only needs to be run against the database once, so if you are uploading a report and have already run the script, there is no need to re-run it. &#160;(Multiple executions will not have an impact on any data).</p><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

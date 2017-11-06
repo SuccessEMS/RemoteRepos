@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Scheduled Reservation Import</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Scheduled Reservation Import</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}</pre> <h2>Background</h2> <p>Some organizations may wish to regularly import reservations from a different tool or in bulk. &#160;A college, for instance, may need to add a new set of reservations for the new classes that are available each semester. &#160;This tool will allow an organization to complete those imports.</p> <h2>Installation &amp; Configuration</h2> <p>1) &#160;Download the attached zip.</p> <p><strong>**First confirm that the Zip is not blocked by Windows. &#160;This can be done by right-clicking on the file, going to Properties and clicking "Unblock." &#160;If the "Unblock" button is not present, then the archive is already unblocked.</strong></p> <p>2) &#160;Extract the files into a new folder on the application server (typically: &#160;...\Emergingsoft\ReservationImport).</p> <p>3) &#160;Update the .config file:</p> <ul> <li> <ul> <li><strong>DSN:</strong>&#160;&#160;Copy the DSN from the ... Emergingsoft \ MeetingPlannerWS \ web.config</li> <li><strong>CSVPath: &#160;</strong>Enter the file path to the csv file that will include the reservations to me imported.</li> <li><strong>ReportDir:</strong>&#160;&#160;Enter the path where the "report" should be placed. &#160;This will be an xml file containing any errors or deleted reservations, and should end with a "\".</li> <li><strong>ConflictPriority:</strong>&#160;&#160;There are three options to choose from here... <ul> <li>Import: &#160;Reservations being imported will all be added to MeetingPlanner. &#160;Any conflicts will be deleted from MeetingPlanner and noted in the report file</li> <li>MeetingPlanner: &#160;Reservations already existing in MeetingPlanner will take precedent. &#160;Any imported reservations in conflict will not be added, but will be noted in the report.</li> <li>Log: &#160;If any conflicts are encountered, both reservations will be noted in the report - no reservations will be deleted.</li>  </ul>  </li> <li><strong>DefaultUserID:</strong>&#160;&#160;If a reservation is being imported and the user cannot be found based on the provided email address, the reservation will be mode for this account. &#160;This would correspond to the user_profile.user_id in the MeetingPlanner db.</li> <li><strong>TimeZoneCode:</strong>&#160;&#160;This should be the three-letter timezone abbreviation representing the timezone that reservations are listed as in the import template.</li>  </ul>  </li>  </ul> <h2>Process</h2> <p>Once the application is properly configured, follow these steps to complete the import:</p> <p>1) &#160;Complete the import template (example is attached).</p> <p>2) &#160;Save the csv file into the designated drop location.</p> <p>3) &#160;Run the .exe application.</p> <p>4) &#160;Review the report (sample attached).</p><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Update 1.docx" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="836" MadCap:lastWidth="1227">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../Resources/Stylesheets/Release Notes Update 1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>EMS Room Wizard Release Notes V44.1 Update 1</h1>
+        <table align="center" class="TableStyle-PatternedRows" style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
+            <col style="width: 98pt;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col style="width: 550pt;" class="TableStyle-PatternedRows-Column-Regular" />
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                    <p class="Emphasis_3">EMS Rooms</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <h4 class="Heading4_2"><span style="font-size: 14pt;">After database scripts had been run, the EMS Rooms page did not list any rooms</span>
+                    </h4>
+                    <blockquote>
+                        <p class="NormalWeb_14">After database scripts had been run, the EMS Rooms page did not list any rooms and the following error occurred:</p>
+                    </blockquote>
+                    <blockquote>
+                        <blockquote>
+                            <p class="NormalWeb_18">"System.Data.SqlClient.SqlException: Invalid object name 'dbo.tblRoomWizard'. at Dea.EMSRWInterface.Utilities.DataAccess.BaseSqlAccess.GetDataTable(String sql, String tableName, CommandType commandType) at h.e() at Dea.EMSRWInterface.Pages.RWConnector.ViewRooms.b() at Dea.EMSRWInterface.Pages.RWConnector.ViewRooms.OnLoad(EventArgs e) at System.Web.UI.Control.LoadRecursive() at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)"</p>
+                        </blockquote>
+                    </blockquote>
+                    <h4 class="Heading4_2" style="text-indent: 0.5in;">Fix: <span style="font-weight: normal;">Updated the database to successfully retrieve rooms after update.</span></h4>
+                    <h4 class="Heading4">&#160;</h4>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

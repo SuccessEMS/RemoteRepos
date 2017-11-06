@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Updates 14.3-11.1.docx" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="5225" MadCap:lastWidth="906">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>EMS Platform Services Release Notes V44.1, Update 14</h1>
+        <p style="font-family: 'Open Sans';">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p style="font-family: 'Open Sans';">See Also:&#160;<a href="../ContactCustomerSupport.htm" title="Customer Support" alt="Customer Support"><span class="Hyperlink">Contacting Customer Support</span></a>&#160;and&#160;<a href="../Updating to the Latest Version of EMS (Patches and Builds).htm" title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build" alt="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build"><span class="Hyperlink">Updating to the Latest Version of EMS</span></a></p>
+        <table>
+            <col style="width: 215px;" />
+            <col style="width: 187px;" />
+            <col />
+            <col />
+            <tr>
+                <td>
+                    <p><b>Name</b>:&#160;V44.1 Update 14</p>
+                </td>
+                <td>
+                    <p><b>Release&#160;Date</b>:&#160;July 31, 2017</p>
+                </td>
+                <td>
+                    <p><b>Patch</b>:&#160;44.1.14000.201707251</p>
+                </td>
+                <td>
+                    <p><b>Build</b> #:&#160;44.1.14000.2640</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements&#160;</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 119px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td rowspan="14" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p><b>API Calls</b>&#160;</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Search By and Return Status Information for Reservations</b>
+                        </p>
+                        <blockquote>
+                            <p>The following API calls have been added:&#160;</p>
+                        </blockquote>
+                        <ol style="list-style-type: decimal;margin-left: 28pt;" start="1">
+                            <li>GET /reservations: Supports 'statusId' search filter and statusId attribute in response model.</li>
+                            <li>POST /reservations/actions/search: Supports 'statusIds' search filter.</li>
+                        </ol>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31415" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31415" class="Hyperlink">31415</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Reservation/Booking Audit Info Correctly Via Delegate Functions</b>
+                        </p>
+                        <ul style="list-style-type: disc;margin-left: 28pt;">
+                            <li style="list-style-type: disc;">GET /reservations, GET /bookings and GET /reservations/{id}/userdefinedfields all include audit information with each record, in the following format:</li>
+                        </ul>
+                        <p>"audit": {</p>
+                        <p>&#160; &#160; "addedBy": "Joe User",</p>
+                        <p>&#160; &#160; "dateAdded": "2016-12-27T15:38:07.22Z",</p>
+                        <p>&#160; &#160; "changedBy": "Joe User",</p>
+                        <p>&#160; &#160; "dateChanged": "2016-12-27T15:38:07.22Z"</p>
+                        <p>}</p>
+                        <ul style="list-style-type: disc;margin-left: 28pt;">
+                            <li style="list-style-type: disc;">If a delegate creates/edits a reservation or booking, the audit information will reflect the delegate user.</li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31196" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31196"><span class="Hyperlink">31196</span></a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31367" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31367"><span class="Hyperlink">31367</span></a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31368" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31368"><span class="Hyperlink">31368</span></a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31369" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31369"><span class="Hyperlink">31369</span></a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Make/Status the Default Redirect Page for Base URL Requests</b>
+                        </p>
+                        <ul style="list-style-type: disc;margin-left: 28pt;">
+                            <li style="list-style-type: disc;">Visiting&#160;<a href="https://mydomain.com/%5bVirtualSite%5d" title="https://mydomain.com/[VirtualSite]"><span class="Hyperlink">https://mydomain.com/[VirtualSite]</span></a>&#160;in browser redirects you to the status page (e.g.,&#160;<a href="https://mydomain.com/EmsPlatform" title="https://mydomain.com/EmsPlatform"><span class="Hyperlink">https://mydomain.com/EmsPlatform</span></a>).</li>
+                            <li style="list-style-type: disc;">Visiting&#160;<a href="https://mydomain.com/%5bVirtualSite%5d/swagger" title="https://mydomain.com/[VirtualSite]/swagger"><span class="Hyperlink">https://mydomain.com/[VirtualSite]/swagger</span></a>&#160;in browser redirects you to the EMS Platform Swagger Documentation page.</li>
+                        </ul>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31378" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31378" class="Hyperlink">31378</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Set Estimated/Actual Attendance as a Part of Edit Reservation</b>
+                        </p>
+                        <blockquote>
+                            <p>Users can&#160;set estimated and actual attendance as a part of edit reservation. Add estimated, actual attendance to request attributes of&#160;PATCH/reservation/{id}&#160;call:</p>
+                        </blockquote>
+                        <ul style="list-style-type: disc;margin-left: 28pt;">
+                            <li style="list-style-type: disc;">PATCH /reservation/{id}&#160;Additional Attributes:</li>
+                        </ul>
+                        <ul style="list-style-type: circle;margin-left: 64pt;">
+                            <li style="list-style-type: circle;">estimatedAttendance</li>
+                            <li style="list-style-type: circle;">actualAttendance</li>
+                        </ul>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31445" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31445" class="Hyperlink">31445</a></p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Rename GET/Myuser/Delegates</b>
+                        </p>
+                        <blockquote>
+                            <p>GET /myuser/delegates&#160;moved to&#160;GET /myuser/delegations&#160;to return a list of users who the authenticated user can impersonate, (i.e.,&#160;users for which an authenticated user is a delegate).</p>
+                        </blockquote>
+                        <p>TFS item 31590</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Added Ability to Search Users</b>
+                        </p>
+                        <blockquote>
+                            <p>Added new route&#160;to allow searching users by username, ID and/or email address.&#160;POST /webusers/actions/search&#160;allows the search of&#160;web users by username, email, external reference, or network id.&#160;</p>
+                        </blockquote>
+                        <p>TFS item 31600</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>GET All Buildings Within an Area</b>
+                        </p>
+                        <blockquote>
+                            <p>GET/bookviews/{id}/rooms&#160;returns buildings if ID for area is passed in the request parameters.</p>
+                            <p>New /areas service:</p>
+                        </blockquote>
+                        <ul style="list-style-type: disc;margin-left: 28pt;">
+                            <li style="list-style-type: disc;">GET /areas</li>
+                            <li style="list-style-type: disc;">GET /areas/{id}</li>
+                            <li style="list-style-type: disc;">POST /areas</li>
+                            <li style="list-style-type: disc;">POST /areas/actions/search</li>
+                            <li style="list-style-type: disc;">GET /areas/{id}/buildings</li>
+                            <li style="list-style-type: disc;">GET /areas/{id}/buildings/{building}</li>
+                            <li style="list-style-type: disc;">POST /areas/{id}/buildings</li>
+                            <li style="list-style-type: disc;">DELETE /areas/{id}/buildings</li>
+                        </ul>
+                        <p>TFS item 30684</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Set Actual Attendance As a Part of Edit Booking</b>
+                        </p>
+                        <blockquote>
+                            <p>API call,&#160;PATCH/booking/{id}&#160;includes optional actualAttendance field.</p>
+                        </blockquote>
+                        <p>TFS item 31148</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Set Estimated Attendance as a Part of Create Reservation</b>
+                        </p>
+                        <blockquote>
+                            <p>Added estimated attendance to the request parameters for the API call,&#160;POST /reservations/actions/create.&#160;</p>
+                        </blockquote>
+                        <p>TFS item 31149</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Get List of UDFs from Multiple Reservations</b>
+                        </p>
+                        <blockquote>
+                            <p style="text-align: left;">New API call,&#160;POST&#160;/reservations/actions/search/userdefinedfields,&#160;searches reservations by one or more reservation IDs, returning their UDF values.&#160;</p>
+                        </blockquote>
+                        <p>TFS item 31150</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Get List of UDFs from Multiple Bookings</b>
+                        </p>
+                        <blockquote>
+                            <p>New API call,&#160;POST&#160;/bookings/actions/search/userdefinedfields,&#160;returns a list of UDF values for one or more booking IDs.&#160;</p>
+                        </blockquote>
+                        <p>TFS item 31151</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p><b>Change Status of Bookings</b>
+                        </p>
+                        <blockquote>
+                            <p>New API call,&#160;PUT /bookings/{id}/status,&#160;changes the status on a booking.</p>
+                        </blockquote>
+                        <p>TFS item 31197</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p><b>Add Deposit to a Reservation</b>
+                        </p>
+                        <blockquote>
+                            <p>New API call,&#160;POST /reservations/{id}/deposit,&#160;adds&#160;a deposit to a reservation.</p>
+                        </blockquote>
+                        <p>TFS item 31199</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p><b>Change Status of a Reservation</b>
+                        </p>
+                        <blockquote>
+                            <p>New API call,&#160;PUT /reservations/{id}/status, changes the status on a reservation.</p>
+                        </blockquote>
+                        <p>TFS item 31218</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>&#160;Fix&#160;</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 118px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Area</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p><b>API Calls&#160;</b>
+                        </p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p><b>API Call Was Only Returning Rooms with Long Description Field Defined</b>
+                        </p>
+                        <blockquote>
+                            <p>The API call,&#160;rooms/{id}/images, was only returning rooms with the Long Description field defined.</p>
+                            <p><b>Fix</b>: Modified modality so that using the call&#160;/rooms/{id}/images&#160;would return image list regardless of contents of the Long Description field.&#160;</p>
+                        </blockquote>
+                        <p>TFS item 31380</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

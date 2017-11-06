@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">EMS VEMS Release Notes V43 Update 9b</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">EMS VEMS Release Notes V43 Update 9b</h1>
+        <section>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><strong>Area</strong></td>
+            <td style="width: 1051px;"><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>Translations</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt>Filters Not Translated for French Canadian</dt>
+                <dd>
+                <p style="margin-left: 40px;">The window title for Filters from the Browse Events page was not translated for French Canadian.</p>
+
+                <p style="margin-left: 40px;"><strong>Fix:&#160;</strong>Modified web cultures so that the page is translated as expected.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p style="margin-left: 40px;"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/13055?fullScreen=false">13055</a>&#160;V43 only</p>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><i>Browse for Space</i></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Buildings and Rooms Shown in Server Timezone for Guest Users</strong></dt>
+                <dd>
+                <p style="margin-left: 40px;">When unauthenticated users browsed for space in buildings or rooms in a different time zone, calendars showed in the server time zone rather than the users' local&#160;time zone.</p>
+
+                <p style="margin-left: 40px;"><strong>Fix:&#160;</strong>Modified validations to show space availability in the user's local time zone.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p style="margin-left: 40px;"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25484?fullScreen=false">25484</a>&#160;V43 and V44</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<header>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><em>Mobile</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Misspelling On My Bookings Page</strong></dt>
+                <dd>
+                <p style="margin-left: 40px;">The mobile My Bookings page had a misspelling, "Betwen" instead of "Between."</p>
+
+                <p style="margin-left: 40px;"><strong>Fix: </strong>Corrected the misspelling.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p style="margin-left: 40px;"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24022?fullScreen=false">24022</a>&#160;V44 and V43</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</header>
+</section>
+
+<footer>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><em>Services</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Service Cutoff Period Not Observed During Edit</strong></dt>
+                <dd>
+                <p style="margin-left: 40px;">When users changed the date/time for a room request such that it was outside the cutoff period for a service such as catering, they were still able to add the service.</p>
+
+                <p style="margin-left: 40px;"><strong>Fix: </strong>Modified validations to enforce the service category cutoff period so users cannot add a service outside the cutoff period.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p style="margin-left: 40px;"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24656?fullScreen=false">24656</a>&#160;V44 and V43</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><i>Filters</i></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt>Features Filter Absent For Video Conferences</dt>
+                <dd>
+                <p style="margin-left: 40px;">When users booked an event using a process template that enabled the features filter to display, and changed the booking to a video conference, the filter no longer displayed.</p>
+
+                <p style="margin-left: 40px;"><strong>Fix: </strong>Modified functionality to ensure that the filter displays as expected for video conferences.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+            <p style="margin-left: 40px;"><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25322?fullScreen=false">25322</a>&#160;V44 and V43</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</footer>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

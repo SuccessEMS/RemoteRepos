@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="802" MadCap:lastWidth="1103">
+    <head>
+    </head>
+    <body>
+        <h1>Human Resources Information System (HRIS)</h1>
+        <p style="text-align: justify;">User and Group Data: Human Resources Toolkit syncs user and group profiles in EMS with your HR systems.</p>
+        <p style="text-align: justify;">If your organization uses an Human Resources Information System or HRIS, user and group profiles or "accounts" may already be maintained there. This toolkit eliminates the double-entry of this information, by synchronizing between your HRIS and EMS at your chosen frequency. This toolkit enables you to automate the creation, updating, and de-activation of user and group accounts in EMS. You can configure it to automatically transfer selected records to a staging database and then update the appropriate tables in EMS. This tool saves time and enhances security, and enables the creation, maintenance, and inactivation of user and group accounts from an outside data source.</p>
+        <h2>How It Works</h2>
+        <p>The EMS_Staging database (created by HRTK Staging DB Install G_GT_WU.sql) is used to stage User records before they are imported into EMS.</p>
+        <p class="noteInDiv" MadCap:autonum="&lt;b&gt;&lt;span style=&quot;color: #bed230;&quot; class=&quot;mcFormatColor&quot;&gt;Note: &lt;/span&gt;&lt;/b&gt;">Your EMS database may have the “Groups” field renamed to another term, such as Employees.</p>
+        <p>Once you have identified the data source within your organization that will be used to create and maintain your User records, you will then define and create a process to import active User records into the tblPeople table within EMS_Staging (shown below).</p>
+    </body>
+</html>

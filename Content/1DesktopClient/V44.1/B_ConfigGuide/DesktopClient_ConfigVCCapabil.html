@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2568.067" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Video Conferencing Capabilities</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring Video Conferencing Capabilities</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To configure&#160;video conferencing capabilities (so that Everyday Users can <a target="_blank" title="Booking a Video Conference Room">book video conference meetings in {{product_webapp}}</a>&#160;or <a target="_blank" title="EMS_V44.1/Using_EMS/Using_EMS_for_Microsoft_Outlook/021_Creating_a_Video_Conference_Reservation">{{product_emso}}</a>)&#160;you will:</p>
+        <ul class="mt-indent-1">
+            <li>Configure Video Conference Room&#160;Features.</li>
+            <li>Configure&#160;Video Conference Services
+    <ul><li>Configure Rooms With Video Conference Equipment.</li><li>Configure Room Overrides.</li></ul></li>
+            <li>Configure Event Types.</li>
+            <li>Configure&#160;Video Conference Booking Templates to Use the (Above).</li>
+            <li>Configure Notifications and Reports.</li>
+        </ul><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <div class="EXPAND_CLASS">
+            <dl>
+                <dt>
+                    <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> Video Conferences Usually Involve At Least Two Rooms: A Host Room and Attendee Room(s)</dt>
+                <dd>A video conference reservation typically includes at least two bookings: the <em>Host</em>, where the presenter hosts the meeting, and at least one&#160;<em>video conference room</em>, where attendees gather to participate at another location.</dd>
+            </dl>
+        </div>
+        <h2><a id="Configuringresources" name="Configuringresources"></a>Configure Video Conference Room Features</h2>
+        <div class="EXPAND_CLASS">
+            <dl>
+                <dt>
+                    <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> A <em>feature</em> is a&#160;built-in or permanent attribute of a room.&#160;</dt>
+                <dd>...such as a network connection, a&#160;built-in plasma TV, window, and so on. Your users can use features as criteria when they are searching for a room. They can also filter the available rooms that can be reserved for an event by room features. After you configure&#160;different room features for your organization, you must indicate which rooms have these features.</dd>
+            </dl>
+        </div>
+        <ol>
+            <li class="Body"><em><a id="Configure+room+features" name="Configure+room+features"></a>Configure Room Features in {{product_dtc}} to reflect your video conferencing equipment options</em>, such as a projector or a webcam. For detailed instructions,&#160;<strong>See Also: </strong><a target="_blank" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Features">Configuring Features.</a>&#160;
+
+    <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;"><tbody><tr><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" /></td><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top"><p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>Be sure to select <strong>Tied to Resource&#160;</strong>when configuring a video conference Feature. This links the room to video conferencing equipment and services and streamlines the booking process.&#160;If you want {{product_webapp}} users to see this feature when they are searching for available space, leave <strong>Available to Everyday Users</strong> selected.<br /><img alt="" class="internal default" /></p></td></tr></tbody></table></li>
+            <li class="Body"><em>Associate the feature(s) with Rooms </em>(on the Features tab for Room Configuration); move the feature from the&#160;<strong>Available&#160;</strong>panel to the&#160;<strong>Selected</strong>&#160;panel as shown below<i>.&#160;</i>For detailed instructions,&#160;<strong>See Also:&#160;</strong><a title="Configuring Rooms">Configuring Rooms</a>.&#160;<br /><img alt="" class="internal default" /></li>
+        </ol>
+        <h2>Configure Video Conference Services (Categories and Resources)</h2>
+        <p class="StepNumberContinued">Configure several&#160;service categories&#160;to represent additional services to be performed for the video conference,&#160;such as&#160;A/V Setup, and a Mobile Video Conference Cart.</p>
+        <ol start="1" style="list-style-type: lower-alpha;">
+            <li class="StepNumberContinued">Configure a Category for Video Conferencing services.&#160;For detailed instructions,&#160;<strong>See Also:&#160;</strong><a target="_blank" title="Configuring Categories">Configuring Categories</a>.</li>
+            <li class="StepNumberContinued">Configure Resources and Services within the Category for equipment, setup, tear down, etc.&#160;For detailed instructions,&#160;<strong>See Also:&#160;</strong><a target="_blank" title="Configuring Resources for a Category">Co</a><span style="color: black;"><a target="_blank" title="Configuring Resources for a Category">nfiguring Resources for a Category</a>.</span>&#160;Depending on your organization, you may need to configure two types of&#160;video conferencing resources for the category that you just created</li>
+            <li class="StepResultBulletLev1 mt-indent-1">Built-in video conferencing equipment, such as a Built-in Video Conference Equipment (<strong>Note:&#160;</strong>Do not select the <strong>Maintain Inventory</strong> option).&#160;</li>
+            <li class="StepResultBulletLev1 mt-indent-1">A Mobile Video Conferencing Cart (<strong>Note:&#160;</strong>Be sure to select the <strong>Maintain Inventory</strong> option , plus a value in the Quantity Available field).</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 30px;height: 35px;" width="30px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>You can use the Room Configuration Wizard to mass-assign a feature to multiple rooms in a single step. Additionally, you may need to set the Status for these services to&#160;<strong>Request</strong>&#160;if your organization requires approvals.<br />            For detailed instructions,&#160;<strong>See Also:</strong>&#160;<a title="Room Administration Wizard">Room Administration Wizard</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Configure a Video Conference Booking Template</h2>
+        <p class="StepNumberBegin">Follow these detailed instructions&#160;for&#160;<a target="_blank" title="Configuring Everyday User Templates">Configuring an Everyday User Booking Template</a> using the example below.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>Video conferences are typically reserved in {{product_webapp}} due to its streamlined permissions management and ease of use (especially the Calendar view). If you have a significant number of users who book video conferences in {{product_dtc}}, especially if they have limited access and may not be comfortable using the more expert users' booking process, you may wish to create a video conference template for the Reservation Wizard. Familiarize yourself with the process here and then&#160;for detailed instructions, <strong>See Also:</strong>&#160;<a title="Configuring Reservation Wizard Templates">Creating Reservation Wizard templates</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li class="StepResultBulletLev1 mt-indent-1">Set the&#160;<strong>Mode</strong>&#160;to&#160;Self Serve. and the Video Conference option is selected for the template. If your organization requires such meetings to be approved, use&#160;<strong>Requested</strong>&#160;Request Status.&#160;<br /><img alt="" class="internal default" /><br />    &#160;</li>
+            <li class="StepResultBulletLev1 mt-indent-1">Move Categories (Resources and Services) for setup, teardown, equipment, and so forth, as you defined above, into the <strong>Selected </strong>panel on the Categories tab.&#160;Below is an example showing all "VC" (video conference) service categories for an organization enabled for users to select when booking with this template.&#160;<br /><img alt="" class="internal default" /></li>
+            <li class="StepResultBulletLev1 mt-indent-1">Move Rooms (which you defined above) on the Rooms&#160;tab to the <strong>Selected</strong>&#160;panel. If your organization requires video conference-equipped rooms to go through an approval process, use the&#160;<strong>Request</strong>&#160;panel on the lower right.<br /><img alt="" class="internal default" /></li>
+        </ol>
+        <div class="EXPAND_CLASS">
+            <dl class="mt-indent-3" />
+        </div>
+        <dl class="mt-indent-1">
+            <dt>
+                <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> Override Rooms Can "Override" Normal Room Configuration and Setup/Teardown Times&#160;</dt>
+            <dd>Users will be able to change configuration and start and end time defaults that would normally come from the room definition, in order to accommodate extra video conferencing equipment and services.</dd>
+        </dl>
+        <div class="EXPAND_CLASS">
+            <dl />
+        </div>
+        <ol start="4">
+            <li class="StepResultBulletLev1 mt-indent-1">Move Event Types (which you defined above) on the Event Types tab to the&#160;<strong>Selected&#160;</strong>panel.<br /><img alt="" class="internal default" /></li>
+            <li class="StepResultBulletLev1 mt-indent-1">On the Video Conference tab, select the video conferencing feature you defined in<a title="Configuring Video Conferencing Capabilities"> Step 1</a> (above).</li>
+            <li class="StepResultBulletLev1 mt-indent-1">Complete fields on the remaining tabs as needed and click&#160;<strong>OK&#160;</strong>&#160;to save.&#160;</li>
+        </ol>
+        <h3>Configure Notifications and Reports</h3>
+        <p>To set how and when users are notified about the meeting and any changes to it (particularly as equipment and service requests move through the approval process), <a title="Configuring Notification Rules">configure notification rules</a>.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:&#160;</span></strong>Notification Rules are highly recommended&#160;if&#160;you<a target="_blank" title="Introduction"> integrate with CISCO TMS</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>The most common report&#160;run on video conferences is the Setup Worksheet report, set to automatically run daily or weekly, and to deliver to stakeholders' inboxes. For detailed instructions,&#160;<strong>See Also:&#160;</strong><a title="Report Descriptions and Options">EMS Setup Worksheet.</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>categories</a><a>Video</a><a>Conferencing</a><a>Resource</a><a>singlesource</a><a>reused</a>
+        </p>
+    </body>
+</html>

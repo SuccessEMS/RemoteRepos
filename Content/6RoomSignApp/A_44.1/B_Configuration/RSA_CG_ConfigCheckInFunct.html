@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="3119" MadCap:lastWidth="1177" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Check In Functionality in the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Check In Functionality in the EMS Room Sign App</h1>
+        <h2><strong>To configure check in functionality in the <MadCap:variable name="General.RSA" />:</strong>
+        </h2>
+        <ol>
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> toolbar, click <MadCap:variable name="General.RSA" /> Settings to access the EMS Room Sign App Settings area.&#160;</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="NoteTipWarningText"><strong>Note: </strong>You can set how information displays at the Global level (the default for all Profiles) or for just one Profile.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>Open Global Settings&#160;to set this functionality as the default for all Profiles,&#160;<em>or</em>&#160;open a Profile&#160;for which you wish to create a special display,&#160;and then edit the settings on the Settings tab.</li>
+        </ol>
+        <p>
+            <img src="../Images/B_Configuration/RSA_UgConfigCheckIn_SettingsPage.png" style="width: 435px;height: 271px;" />
+            <br />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Adjust the Global or Profile settings listed in the table below to configure how check in information displays on the following screen. The Check&#160;In functions determine check in requirements for users in the EMS Room Sign App.</li>
+        </ol>
+        <table class="TableStyle-PatternedRows" style="mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
+            <col style="width: 380px;" />
+            <col style="width: 620px;" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <dl>
+                            <dt>&#160;</dt>
+                            <dt><strong>Option</strong>
+                            </dt>
+                        </dl>
+                    </th>
+                    <th scope="col" class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p><strong>Description</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <dl>
+                            <dt>Display Check In Button</dt>
+                        </dl>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If set to&#160;<strong>Yes</strong>, then a Check In button is displayed on both the Available screen and the In Progress screen. See the&#160;Available screen with Check In button and In Progress screen with Check In button.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <dl>
+                            <dt>Activate Check In Button ## Minutes Before Booking Start Time</dt>
+                        </dl>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>If the&#160;Display Check In Button&#160;is set to&#160;<strong>Yes</strong>, then this value determines how many minutes in advance of an upcoming meeting the Check In button is displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="text-align: left;">
+                        <dl>
+                            <dt>Enable Automatic Cancellation</dt>
+                        </dl>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If set to&#160;<strong>Yes</strong>, users are required to push the Check In button to check into their meetings.&#160; If a user does not push the Check In button within the interval set in the&#160;Automatic Cancellation Interval&#160;setting, the EMS Room Sign App automatically cancels the booking in EMS.</p>
+                        <p>If set to&#160;<strong>No</strong>, and a user checks in before an event starts, then the EMS Room Sign App adjusts the booking start time to the current time (assuming another meeting isn’t currently in progress).</p>
+                        <p>If set to&#160;<strong>Yes</strong>&#160;and a user checks in before an event starts, then the EMS Room Sign App adjusts the booking start time to the current time (assuming another meeting isn’t currently in progress) and the user is checked into the meeting. If a user does not check in before the elapsed time that is defined in the Automatic Cancellation Interval setting, then the meeting is automatically canceled.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="text-align: left;">
+                        <dl>
+                            <dt>Automatic Cancellation Interval</dt>
+                        </dl>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Requires&#160;Enable Automatic Cancellation&#160;to be set to Yes. If a user does not push the Check In button for a meeting within the set interval, the EMS Room Sign App&#160;automatically cancels the booking in EMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="text-align: left;">
+                        <p style="text-align: left;"><strong>Default Status for Cancelled Booking</strong>
+                        </p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The status to which a booking is changed if an event is automatically cancelled.&#160; Requires&#160;Enable Automatic Cancellation&#160;to be set to&#160;<strong>Yes</strong>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td data-th="Option" class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows" style="text-align: left;">
+                        <p style="text-align: left;"><strong>Default Cancel Reason for Cancellations</strong>
+                        </p>
+                    </td>
+                    <td data-th="Description" class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>The Cancel Reason to which a booking is changed if an event is automatically cancelled.&#160;Requires&#160;Enable Automatic Cancellation&#160;to be set to&#160;<strong>Yes</strong>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="mt-indent-1"><em>Available Screen With Check In Button</em>
+        </p>
+        <p class="mt-indent-1">
+            <img src="../Images/B_Configuration/RSA_UgConfigCheckIn_CheckInButton.png" style="width: 746px;height: 559px;" />
+        </p>
+    </body>
+</html>

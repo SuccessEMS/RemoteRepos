@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Update 1.docx" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="11931" MadCap:lastWidth="1004">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/Release Notes Update 1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>EMS Web App Release Notes V44.1, Update<span class="Title4"> 1</span></h1>
+        <p class="NormalWeb_1">This section describes fixes in this patch, organized by category.</p>
+        <table class="table_1">
+            <col style="width: 190pt;" />
+            <col style="width: 288pt;" />
+            <col style="width: 215pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1" style="font-family: Arial;">
+                        <p><span class="Strong_1">Name:&#160;</span><span class="span_1">V44.1 Update 1</span>
+                        </p>
+                    </td>
+                    <td class="td_1" style="font-family: Arial;">
+                        <p><span class="Strong_1">Release&#160;Date:&#160;</span><span class="span_1">July 20, 2016</span>
+                        </p>
+                    </td>
+                    <td class="td_1" style="font-family: Arial;">
+                        <p><span class="Strong_1">Patch #:&#160;</span><span class="span_1">2016.07.20.1</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" class="table_2">
+            <col style="width: 176pt;" />
+            <col style="width: 472pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_2">Area</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_3">Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_1">New Reservation</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_1">Add to Calendar Checkbox Settings Not Enforced for Booking Templates</p>
+                    <p class="NormalWeb"><span class="span_2">When using a booking template that had Enable </span><span class="span_3">"Add to Calendar" Checkbox by Default</span><span class="span_2"> activated, the setting was not enforced and the checkbox was missing on the Reservation Details page.</span>
+                    </p>
+                    <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_2">Modified the parameter to ensure that settings are enforced and the checkbox appears when activated on the Reservation Details page.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="Emphasis_1">New Reservation</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_1">Areas Listed as Buildings for Service Only Request Booking Template</p>
+                    <p class="NormalWeb_5">When using the Service Only Request template during a new reservation, selecting an Area as a building caused a crash.</p>
+                    <p class="p_3"><span class="span_5">Fix:</span><span class="span_6"> Changed the template so that only buildings are listed.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_2">New Reservation</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_2">Default Location Setting Not Displayed for Booking Templates</p>
+                    <p class="NormalWeb_4">When using a booking template that had a default location specified, the Location, Time, Timezone, and Event Name did not display properly on the Create A Reservation page.</p>
+                    <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Modified the parameter to ensure that settings are enforced and the correct location and event information displays on the Create A Reservation page.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_7">New Reservation</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_1">Default Time Zone Setting Not Observed for New Bookings</p>
+                    <p class="NormalWeb_8"><span class="span_2">When users had a default timezone specified in their Everyday User profile, that setting was not observed during the booking workflow and the </span><span class="span_4">Create a booking in </span><span class="span_4">this time zone</span><span class="span_2"> field on the new booking screen was instead using the system time zone.</span>
+                    </p>
+                    <p class="NormalWeb_8"><span class="span_4">Fix:</span> <span class="span_2">Modified functionality to ensure that this setting is observed and time zone defaults display on the Create A Reservation page.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_5">
+                    <p class="NormalWeb_7">Edit Booking &gt; Edit Room Setup Type</p>
+                </td>
+                <td class="td_5">
+                    <p class="Strong_1">Room Setup Types Not Restricted to Room</p>
+                    <blockquote>
+                        <p><span class="Strong_3">When editing a room setup type during a booking, the dropdown seemed to randomly select a setup, and the list included setup types that </span><span class="Strong_3">were not attributed to the room.</span>
+                        </p>
+                        <p><span class="span_5">Fix:</span> <span class="Strong_3">Modified functionality to only list setup </span><span class="Strong_3">types associated with the room.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_1">Browse Events</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_2">Browse Events Lists Areas Under Locations</p>
+                    <blockquote>
+                        <p class="NormalWeb_5">Searching by Location returned a list that incorrectly included both Locations and Areas.</p>
+                        <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_1">Modified the display to list only Locations for Select Location, and Areas for Select Area.</span><span class="span_2">&#160;</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="Emphasis_1">Browse Events</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_2">Browse Events Lists Different Events Depending on Time Zone</p>
+                    <blockquote>
+                        <p class="NormalWeb_5">The events listed on the Browse Events screen was different depending on time zone, when it should have been the same.</p>
+                        <p class="p_3"><span class="span_4">Fix</span><span class="span_4">: </span><span class="span_1">Modified the display to list the same events regardless of time zone.</span><span class="span_2">&#160;</span>
+                        </p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_2">Browse Events</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_2">Browse Events Lists Duplicate Events</p>
+                    <blockquote>
+                        <p class="NormalWeb_6"><span class="span_2">The events listed on the Browse Events screen were sometimes</span> <span class="span_2">duplicated in the daily view</span><span class="span_2">.</span></p>
+                        <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Modified the display for the daily view to prevent duplicate listings.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_7">My Events, Browse Events </p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_1">Current Date Incorrect on My Events and Browse Events</p>
+                    <blockquote>
+                        <p class="NormalWeb_8"><span class="span_2">When showing bookings for today's date, these views incorrectly showed today's date as the following day. While the items listed were for today, the date was incorrect</span><span class="span_2">.</span>
+                        </p>
+                        <p class="NormalWeb_8"><span class="span_4">Fix</span><span class="span_4">:</span><span class="span_1"> Modified the displays to list today's date correctly.</span>
+                        </p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_5">
+                    <p class="NormalWeb_7">Browse Locations &gt; Filters</p>
+                </td>
+                <td class="td_5">
+                    <p class="Strong_1">Enter Key Disabled on Filter by Room Field for Browse Location</p>
+                    <blockquote>
+                        <p><span class="Strong_3">When searching for a room and using the Room field in the Filters area, the Enter key was disabled</span><span class="Strong_3">.</span>
+                        </p>
+                        <p><span class="span_5">Fix:</span> <span class="Strong_3">Modified the field so that when users enter a room name, they can press the Enter key to initiate the search filter.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_7">Browse Locations</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_1">Find a Room Feature Needed in Browse Locations</p>
+                    <blockquote>
+                        <p><span class="Strong_3">When searching for a room returns too many results, the user needed the ability to Find a Room from this screen</span><span class="Strong_3">.</span>
+                        </p>
+                        <p class="NormalWeb_8"><span class="span_4">Fix:</span> <span class="Strong_4">Added Find a Room functionality to the Browse Locations views to streamline the room search process</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_1">Create New Reservation &gt; Reservation Summary &gt; Add Services</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_2">Adding Services from Reservation Summary Causes Error</p>
+                    <blockquote>
+                        <p class="NormalWeb_5" style="text-align: left;">Clicking the Add Services option from the Reservation Summary could cause the error,</p>
+                        <p class="NormalWeb_9" style="text-align: left;">"System.ArgumentException: Column 'BillingReference' does not belong to table ReservationDetails."</p>
+                        <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_1">Modified functionality to ensure that the error no longer occurs</span><span class="span_1">.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="Emphasis_1">Room Request &gt; Manage Services</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_2">POs on Room Requests Not Saving</p>
+                    <blockquote>
+                        <p class="NormalWeb_5">When including a PO on a room request, the PO information was not saving correctly and was missing from the Reservation Summary.</p>
+                        <p class="p_3"><span class="span_4">Fix</span><span class="span_4">: </span><span class="span_2">Modified functionality to ensure that PO information is correctly saved with room requests</span><span class="span_1">.</span><span class="span_2">&#160;</span>
+                        </p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_2">Edit Reservation &gt; Booking Tools &gt; Reschedule booking to specific time</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_2">Rescheduling Booking Causes Wrong Start and End Times to Display</p>
+                    <blockquote>
+                        <p class="NormalWeb_6"><span class="span_2">When using this option to choose a new booking time, the Start/End time in the Reservation Summary grid view was incorrect because the wrong time zone was used to calculate the new time</span><span class="span_2">.</span>
+                        </p>
+                        <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Modified functionality to ensure that new Start/End times are correctly recalculated to display on the Reservation Summary.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_1">Add Location to a Recurring Booking</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_2">Adding Rooms to Recurring Meetings in Outlook Cancels Meeting</p>
+                    <blockquote>
+                        <p class="NormalWeb"><span class="span_2">When editing a recurring meeting by clicking the </span><span class="span_4">Add Location</span><span class="span_2"> button on the Manage Bookings screen, selecting an available room, and then clicking the </span><span class="span_4">Notify Attendees</span><span class="span_2"> button, attendees received a notification email that the meeting was canceled and it showed as canceled in the Outlook calendar.</span>
+                        </p>
+                        <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_1">Modified functionality to ensure that the meeting is no longer canceled when users add a room to a recurring meeting with Exchange integration and email attendees</span><span class="span_1">.</span><span class="span_2">&#160;</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="Emphasis_1">New Reservation &gt; Add Attendees</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_2">Attendee Availability Displays Incorrectly During Booking EMS for Outlook</p>
+                    <blockquote>
+                        <p class="NormalWeb"><span class="span_2">When creating a new reservation and adding attendees, their free/busy/tentative status did not display correctly when the user clicked the forward/back buttons to advance to future or previous days in the calendar</span><span class="span_2">.</span>
+                        </p>
+                        <p class="p_3"><span class="span_4">Fix</span><span class="span_4">: </span><span class="span_1">Modified functionality to ensure that attendee availability displays correctly</span><span class="span_1">.</span><span class="span_2">&#160;</span>
+                        </p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_2">Edit Recurring Booking in Conflict</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_2">Recurring Meetings in EMS for Outlook Allow Bookings in Conflict</p>
+                    <blockquote>
+                        <p class="NormalWeb_6"><span class="span_2">When editing a recurring meeting that was in conflict status, the room incorrectly appeared to be available in the Outlook calendar, however, when the user attempted to change the room (clicking the </span><span class="span_4">Add Location</span><span class="span_2"> button on the Manage Bookings screen), the following error occurred and the conflict could not be resolved. </span>
+                        </p>
+                        <p class="NormalWeb_10">"Booking failed to update. Another user might have changed this booking or taken its location."</p>
+                        <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Changed validations so that the room in conflict did not appear as available in Outlook, and ensure that users can change the room to correct the conflict.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_8" style="text-align: left;"><span class="span_3">Recurring Bookings in EMS for Outlook</span>
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_1">Recurring Meetings Not Listed Properly in EMS for Outlook</p>
+                    <blockquote>
+                        <p class="NormalWeb_11">Only the first occurrence of a recurring meeting was listed in EMS for Outlook.</p>
+                        <p class="NormalWeb_8"><span class="span_4">Fix</span><span class="span_4">:</span> <span class="span_1">Modified functionality to ensure all occurrences of a recurrent meeting are listed properly in EMS for Outlook.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_5">
+                    <p class="NormalWeb_8"><span class="span_3">Edit Reservation &gt; Notify Attendee</span><span class="span_3">s</span>
+                    </p>
+                </td>
+                <td class="td_5">
+                    <p class="Strong_1">Room Change Notification Emails Missing User's Message</p>
+                    <blockquote>
+                        <p class="Strong_3">When changing a reservation, the text users manually entered in the Message field on the Notify Attendees screen was omitted from the emails sent to attendees.</p>
+                        <p><span class="span_5">Fix:</span> <span class="Strong_3">Modified functionality to ensure that text users enter in the Message field appears in the notification email</span><span class="Strong_3">.</span></p>
+                    </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="NormalWeb_12"><span class="span_3">Booking Details, Reservation Details</span>
+                    </p>
+                </td>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="NormalWeb_2">Edit Icon Sometimes Missing</p>
+                    <p class="NormalWeb"><span class="span_2">The Edit icon was occasionally missing on Booking Details and Reservation Details screens even though the user had proper rights to edit.</span>
+                    </p>
+                    <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_2">Modified the display to ensure consistent availability of the icon for </span></p>
+                    <ul class="ul_1">
+                        <li class="NormalWeb_1">Booking Details</li>
+                        <li class="NormalWeb_1">My Home &gt; My Bookings</li>
+                        <li class="NormalWeb_1">My Events &gt; My Bookings</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="Emphasis_1">New Reservation</p>
+                </td>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="NormalWeb_2">Room Name Cut Off in Search Results</p>
+                    <p class="NormalWeb"><span class="span_2">When searching for rooms, long room names appeared to be cut off in the Room Search Results list.</span>
+                    </p>
+                    <p class="p_3"><span class="span_4">Fix:</span> <span class="span_2">Modified the display to show the complete room name.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="Emphasis_2">Room Details</p>
+                </td>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="Strong_2">Room Notes Displaying Incorrectly</p>
+                    <p class="NormalWeb_6"><span class="span_2">Text in the Notes field was incorrectly displaying HTML code instead of normal text format when users copied and pasted the text from other applications. </span>
+                    </p>
+                    <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Modified the Notes field to display text normally.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="Emphasis_2">New Reservation</p>
+                </td>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="NormalWeb_8"><span class="span_4">Search for Location Field Not Clearing</span>
+                    </p>
+                    <p class="NormalWeb_13"><span class="span_1"><span style="background-color: #dcdcdc;">When searching for location by feature, once a search was completed, the search field was not clearing and the search term remained.</span></span>
+                    </p>
+                    <p class="NormalWeb_8"><span class="span_4">Fix:</span> <span class="span_1">Modified the display to clear the field after search action completes.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_5" style="background-color: #ffffff;">
+                    <p class="NormalWeb_8">&#160;</p>
+                </td>
+                <td class="td_5" style="background-color: #ffffff;">
+                    <p class="NormalWeb_8"><span class="span_4">Sign Out Option Incorrectly Available with Integrated Windows Authentication</span>
+                    </p>
+                    <p><span class="Strong_3">When using Integrated Windows Authentication, the </span><span class="span_5">Sign Out</span><span class="Strong_3"> option remained incorrectly available. </span>
+                    </p>
+                    <p><span class="span_5">Fix:</span> <span class="Strong_3">Removed the option when Integrated Windows Authentication is active.</span> <![CDATA[ ]]></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="NormalWeb_8">&#160;</p>
+                </td>
+                <td class="td_3" style="background-color: #dcdcdc;">
+                    <p class="Strong_1">Unclear Browser Warning</p>
+                    <blockquote>
+                        <p class="NormalWeb_14">When using Internet Explorer Version 11, a popup warning indicating that this browser version was unclear.</p>
+                        <p class="NormalWeb"><span class="span_1">"</span><span class="Emphasis_1">We've noticed that you're using an older web browser. For the best experience, upgrade to the latest version of one of the browsers listed on the&#160;<a href="../../System Requirements V44.htm">System Requirements</a> page."</span>
+                        </p>
+                        <p class="NormalWeb_14"><b>Fix</b>: Modified the error message to add further guidance:</p>
+                        <p class="NormalWeb"><span class="span_1">"</span><span class="Emphasis_1">We've noticed that you're using an older web browser. For the best experience, upgrade to the latest version of one of the browsers listed on the&#160;</span><a href="https://success.emssoftware.com/Internal/Archived_Doc/EMS_API_Reference_Guide_(Archived)/04-Hardware_and_Software_Requirements"><span class="Hyperlink_2"><a href="../../System Requirements V44.htm">System Requirements</a></span></a><span class="Emphasis_1">page."</span>
+                        </p>
+                    </blockquote>
+                    <p class="NormalWeb"><span class="Emphasis_1">Note: &#160;If you are using Internet Explorer, please also make sure that Compatibility View is disabled</span><span class="span_1">."</span>
+                    </p>
+                    <p class="NormalWeb">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="NormalWeb_15">Edit Recurring Meeting</p>
+                </td>
+                <td class="td_4" style="background-color: #ffffff;">
+                    <p class="NormalWeb_2">Mobile Web App Allows Multiple Rooms to Be Added to Recurring Meetings in EMS for Outlook</p>
+                    <p class="NormalWeb"><span class="span_2">The Mobile Web App allowed users to edit multi-room bookings on the same date and time and apply more than one room to a booking, including changing multiple rooms.</span>
+                    </p>
+                    <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_2">Changed functionality to prevent users from applying more than one room to a booking or changing multiple rooms at once for one occurrence.</span> <![CDATA[ ]]></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="p_4">My Bookings</p>
+                    <p class="NormalWeb_12">&#160;</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_8"><span class="span_4">Room Info Missing </span><span class="span_4">f</span><span class="span_4">rom My Bookings on Mobile Web App</span>
+                    </p>
+                    <p class="NormalWeb"><span class="span_2">T</span><span class="span_2">he room information, check in, cancel, and end now buttons were not displaying in the My Bookings view for mobile Web App users.</span>
+                    </p>
+                    <p class="p_3"><span class="span_4">Fix</span><span class="span_4">: </span><span class="span_2">Modified functionality to ensure that room information and check in, cancel, and end now buttons display in the My Bookings view.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_15">New Reservation &gt; Room Request</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_2">Existing Bookings Not Shown on Calendar During New Reservation</p>
+                    <p class="NormalWeb"><span class="span_2">When creating a new reservation and adding a meeting room using the </span><span class="span_4">Let Me Search For A Room</span><span class="span_2"> option on the Room request screen, existing reservations did not show on the calendar.</span>
+                    </p>
+                    <p class="NormalWeb"><span class="span_4">Fix:</span> <span class="span_2">Modified functionality to ensure that existing reservations show on the calendar so users do not attempt to request reserved rooms</span><span class="span_2">.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_15">New Reservation &gt; Room Request</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_2">Room Search Missing "No Rooms Available" Message</p>
+                    <p class="NormalWeb"><span class="span_2">When creating a new reservation and adding a meeting room using the </span><span class="span_4">Let Me Search For A Room</span><span class="span_2"> option on the Room request screen, when there were no rooms available, the list view did not provide any messaging indicating as such</span><span class="span_2">.</span>
+                    </p>
+                    <p class="p_3"><span class="span_4">Fix</span><span class="span_4">:</span> <span class="span_6">Added a message that will appear on the search results tab&#160;to indicate&#160;when no rooms are available.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_9">New Reservation, View Cart</p>
+                </td>
+                <td class="td_4">
+                    <p class="Strong_2">Start and End Times for New Reservations Incorrect in Cart</p>
+                    <p class="NormalWeb_4">The start and end times for new reservations was incorrect in the Shopping Cart view.</p>
+                    <p class="NormalWeb_6"><span class="span_4">Fix:</span> <span class="span_2">Modified calculations so that the start and end times in the cart match the reservation start and end times.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="Emphasis_1">Reservation Summary</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_2">Video Conferences Not Visually Grouped</p>
+                    <p class="NormalWeb_5">Video conference bookings were not visually grouped so that Host bookings and child bookings were obvious.&#160;</p>
+                    <p class="NormalWeb"><span class="span_4">Fix</span><span class="span_4">: </span><span class="span_2">Modified functionality&#160;to&#160;group and visually separate these parent-child bookings.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="Emphasis_2">Edit Reservation &gt; Cancel Bookings</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_2">Video Conference Host Reservation Incorrectly Cancelable</p>
+                    <p class="NormalWeb"><span class="span_2">When editing a videoconference reservation, the Cancel Bookings button was incorrectly available for the host room.</span><span class="span_2">&#160;</span>
+                    </p>
+                    <p class="p_3"><span class="span_4">Fix: </span><span class="span_2">Modified functionality to make the Cancel Bookings option unavailable for video conference reservations designated as "Host."</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

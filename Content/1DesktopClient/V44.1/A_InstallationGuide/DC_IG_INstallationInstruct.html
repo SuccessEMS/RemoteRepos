@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="8964" MadCap:lastWidth="1228" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installation Instructions</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installation Instructions</h1>
+        <p>This topic will discuss the following installation steps:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#PrepInstallEMSServerComp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Preparation: Installing EMS Server Components</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#InstallEMSonUsersComp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Installing EMS on User's Computers</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#DCWebDeployment" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">EMS Desktop Client Web Deployment</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#InstallWebDeployMethod" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Install EMS Desktop Client (Web Deployment Method)</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#InstallDCConventional" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Installing [%=General.EMS&#160;Desktop Client%] (Conventional Method)</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref>
+            </li>
+        </ul>
+        <p>In order to install EMS, you must perform two operations&#160;:</p>
+        <ol>
+            <li>Preparation: install server components.&#160; &#160;</li>
+            <li>Install the application on user's computers.&#160;</li>
+        </ol>
+        <p><strong>See Also:&#160;</strong><a title="EMS Desktop Client Deployment Options">EMS Desktop Client Deployment Options</a>&#160;for a more in-depth discussion.</p>
+        <h2><a name="PrepInstallEMSServerComp"></a>Preparation: Installing EMS Server Components</h2>
+        <p>The server installation process will create two EMS databases on your MS SQL Server:&#160; An <strong>EMS_Master</strong> database that contains licensing information and a separate <strong>EMS</strong> database that will ultimately contain your reservations data.</p>
+        <p><strong>Note</strong>:&#160; A Microsoft SQL Server SA level account is required to execute the database installation process.</p>
+        <ol>
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Secure the <strong>EMS.ServerInstall.exe</strong> file.</li>
+            <li>Run <strong>EMS.ServerInstall.exe</strong>&#160;as an Administrator. (This .exe can be run from any PC that has access to your database server.)</li>
+        </ol>
+        <p>&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160;<img alt="EMSUpgradeUtility1.PNG" class="internal default" /></p>
+        <ol>
+            <li value="4">In the Server text&#160;box, enter the name of the server running MS SQL Server.</li>
+            <li>In the Database text&#160;box, enter the name for your EMS database.&#160; (It is recommended that you accept the default value of ‘EMS’.)</li>
+            <li>In the Server Authentication area, specify your MS SQL Server authentication credentials.&#160; If SQL Server Authentication Mode is selected, you will be required to specify a User Name and Password.</li>
+            <li>Click the <strong>Execute </strong>button.&#160; A Create Database dialog&#160;box will appear.</li>
+            <li>Click <strong>Yes</strong> to initiate the EMS database installation process.</li>
+        </ol>
+        <div class="NoteBox"><strong>Note: </strong>The time spent on the “Upgrading database…” phase in the installation process is highly dependent on the size of your database.&#160; Please be patient.</div>
+        <ol>
+            <li value="9">Click <strong>OK</strong> when you receive the “Database Installed Successfully!” message.&#160;</li>
+        </ol>
+        <p>You have completed installing the server portion of EMS. Next you will install the software to client computers.</p>
+        <p>See Also: For information on installing the optional Email Notification Service or the EMS Campus Auto Sync Service (EMS Campus only), please see <a class="external" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Email_Notification_Service">Installing or Upgrading the EMS Email Notification Service</a> and/or&#160; <a class="external" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)">Installing or Upgrading the EMS Campus Auto Sync Service</a>.</p>
+        <h2><a name="InstallEMSonUsersComp"></a>Installing EMS on User's Computers</h2>
+        <p>After your EMS databases have been created on your database server, you must install the client software on each computer that will access your EMS database, using one of the following methods:</p>
+        <ol>
+            <li><a title="First Time Installation Instructions">EMS Desktop Client Web Deployment</a>
+            </li>
+            <li><a rel="internal" href="../C_UserGuide/DesktopClient_UsingDeleteBookingDetailsWzd.html">Installing EMS Desktop Client (Conventional Method)</a>
+            </li>
+        </ol>
+        <div class="NoteBox"><strong>Tip:&#160;See Also</strong>: <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment">Decision Guide</a></div>
+        <div class="NoteBox"><strong>Important:&#160;</strong>Before beginning the installation process, please install or upgrade your EMS databases. Existing versions of EMS Desktop Client Web Deployment must be manually uninstalled.&#160;Be sure to copy-off and save any files that have been customized.</div>
+        <h2><a name="DCWebDeployment"></a>EMS Desktop Client Web Deployment</h2>
+        <p>Important:&#160;Before beginning the installation process, please install or upgrade your EMS databases.</p>
+        <p>Existing versions of EMS Desktop Client Web Deployment must be manually uninstalled. Be sure to copy-off and save any files that have been customized.</p>
+        <h3>Web Deployment Pre-Installation Instructions&#160;</h3>
+        <ol>
+            <li>Manually <strong>uninstall</strong>any previous versions of EMS Desktop Client Web Deployment on your web server.&#160;&#160;</li>
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Download the <strong>EMSDesktopWebDeploySetup</strong><strong>.msi</strong> file onto the web server that will be running The EMS Desktop Client Web Deployment.</li>
+            <li>Run <strong>EMSDesktopWebDeploySetup</strong><strong>.msi </strong>as an administrator.</li>
+            <li>The first screen welcomes you to the The EMS Desktop Client Web Deployment&#160;Setup Wizard.&#160;Click <strong>Next </strong>to begin the installation process.&#160; The <em>Destination Folder</em> screen will appear.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal" />&#160;</p>
+        <ol start="6">
+            <li>
+                <p>Select the destination folder.&#160;The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMS Desktop Web Deploy” in the example above.).</p>
+            </li>
+            <li>Enter your SQL Instance Name.</li>
+            <li>Enter your Database Name:</li>
+        </ol>
+        <ul>
+            <li class="mt-indent-1">EMS Professional customers – typically named&#160; “EMSdata”</li>
+            <li class="mt-indent-1">EMS Workplace, EMS Campus, EMS Enterprise, EMS District and EMS Legal customers - typically named&#160; “EMS”</li>
+        </ul>
+        <ol start="9">
+            <li>The Virtual Directory Name will default to the destination folder specified in Step 6.&#160; It is recommended that you keep the default setting.&#160; The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMS Desktop Web Deploy” in the example above.)&#160; Click <strong>Next</strong>.</li>
+        </ol>
+        <div class="NoteBox"><strong>Note:</strong>&#160; The EMS Desktop Client Web Deployment&#160;should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Desktop Client Web Deployment.</div>
+        <ol start="10">
+            <li>The <em>Ready to install </em>the EMS Desktop Client Web Deployment screen will appear.&#160; Click&#160;to install The EMS Desktop Client Web Deployment.</li>
+            <li>The <em>Completed the </em>the EMS Desktop Client Web Deployment<em> Setup Wizard</em> screen will appear.&#160; Click <strong>Finish</strong>.&#160;&#160;</li>
+            <li>After following the steps above, verify your EMS Desktop Client Web Deployment installation by opening a browser and entering the address:</li>
+        </ol>
+        <p><code>http://[ServerName]/EMSDesktopWebDeploy/&#160; (replace [ServerName] with the name of your web server)</code>
+        </p>
+        <div class="NoteBox"><strong>Note:</strong>&#160;&#160;The first time you launch the EMS Desktop Client Web Deployment, it may take a few extra moments for the website to display.&#160; If you encounter any issues, please contact Customer Support for assistance.</div>
+        <h2><a name="InstallWebDeployMethod"></a>Install EMS Desktop Client (Web Deployment Method)</h2>
+        <ol>
+            <li>To install the EMS Desktop Client, users&#160;will need to access the URL from the EMS Desktop Client Web Deployment.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal default" />
+        </p>
+        <div class="NoteBox"><strong>Note</strong>: If your browser has a popup blocker it should be disabled so that both the EMSApplication.exe and the configuration&#160;file can be downloaded.</div>
+        <ol start="2">
+            <li>Click&#160;<strong>Download and Install the EMS Desktop Client </strong>to download the&#160;<strong>EMSApplication.exe</strong>.</li>
+            <li>Run the&#160;<strong>EMSApplication.exe</strong>. This will install the client locally from the service:</li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" />
+        </p>
+        <div class="NoteBox"><strong>Note</strong><strong>:</strong>&#160;When you launch launch the EMSApplication.exe if it asks for the EMS Web Deploy configuration URL it will require entering the EMS Desktop Client Web Deployment URL: <br />http://[ServerName]/EMSDesktopWebDeploy/&#160; (replace [ServerName] with the name of your web server)</div>
+        <ol start="4">
+            <li>The EMS icon will be placed on the users desktop.</li>
+        </ol>
+        <div class="NoteBox"><strong>Notes:</strong><em>&#160;</em>When a user launches the client it will check the EMS Desktop Client Web Deployment for a new version of the Client.<br />Clients installed through the EMS Desktop Client Web Deployment will not require administrative permission to install.</div>
+        <ol start="5">
+            <li>The system displays a message asking you to import your registration information. Click <strong>OK</strong>.&#160;</li>
+            <li>The Registration screen appears.&#160; Follow the instructions outlined on the screen to import your EMS license key.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal" />
+        </p>
+        <div class="NoteBox"><strong>Note:</strong>&#160;Your license key only needs to be imported once.</div>
+        <ol start="7">
+            <li>At the EMS log-in screen, type <strong>admin</strong> as both the User ID and the Password.</li>
+            <li>Click <strong>OK</strong>.</li>
+        </ol>
+        <div class="NoteBox"><strong>Note:</strong>&#160;When an EMS Client is installed through the EMS Desktop Client Web Deployment it will only be able to connect to the EMS instance received from the service.</div>
+        <h2><a name="InstallDCConventional"></a>Installing <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> (Conventional Method)</h2>
+        <p>Follow these instructions to conventionally&#160;install the <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />on individual workstations.</p>
+        <h4>Pre-Installation Instructions</h4>
+        <ol>
+            <li>Enable the Windows Component .NET 4.5 be on the client machine. The client must also have access to the EMS Server component (to the&#160;Desktop Client API, or directly&#160;to the EMS Database).</li>
+            <li>Obtain&#160;the Required MSI file (see <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below). </li>
+            <li>Log&#160;in to the EMS Product Portal. </li>
+            <li>Navigate to&#160;the Software &amp; Documents Library &gt;&#160;New&#160;Releases and Patches &gt;&#160;EMS Desktop Clients (Conventional and Web Deploy)<br /><img alt="" />   &#160;</li>
+        </ol>
+        <p class="mt-indent-1">Note:&#160;When you install, the application loads into the "Program Files",&#160; "Program Files (x86)", (or a&#160;custom directory that you specify).&#160;The first time the application is run by a user it will prompt the user to enter in the Server and Database. These entries&#160;are saved in the user's registry. The next time the application is accessed, it will not prompt the user for this information again.&#160;If upgrading from a previous version, the desktop client will search for the connection string from the previous version, and update the current version so the user is not&#160;prompted to enter that information.</p>
+        <h4>Set&#160;the Server Programmatically</h4>
+        <h6 id="Option_1:_Set_the_registry_keys_for_the_user-1925" class="mt-indent-1">Option 1: Set the registry keys for the user</h6>
+        <p class="mt-indent-1">The Server and Database information are stored in Keys in the following location:</p>
+        <p class="mt-indent-1">32bit Machines: HKEY_CURRENT_USER\Software\<strong>EMS Software\Version44.1</strong></p>
+        <p class="mt-indent-1">There will be&#160;two string values—one for the server and one for the database.</p>
+        <h6 id="Option_2:_Use_switches_in_the_executable-1925" class="mt-indent-1">Option 2: Use switches in the executable</h6>
+        <p class="mt-indent-1">There are two switches that can be used with the applications executable (ems.exe). You can use these within a shortcut that you give to the user to specify the Server and Database for them.</p>
+        <blockquote>
+            <p class="mt-indent-1" style="text-align: left;"><code>/s=Servername.domain.local<br />/d​=DatabaseName</code>
+            </p>
+        </blockquote>
+        <p class="mt-indent-1">Replace "<code>Servername.domain.local</code>" with the Domain name of your Database Server and <code>DatabaseName </code>with the Database of the Database of EMS that that user needs to connect to.</p>
+        <p class="mt-indent-1">For Example "<code>C:\Program Files(x86)\EMS\EMS.exe /s=Servername.Domain.local /d=DatabaseName</code>"</p>
+        <h5 id="Establish_Network_Connections-1925">4. Establish Network Connections</h5>
+        <p>The conventional <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> connects directly to the database server for all related transactions. The <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />may also need to connect to the following services:</p>
+        <ul>
+            <li>EMS Web Server</li>
+            <li>SMTP Server</li>
+            <li>LDAP Server</li>
+        </ul>
+        <ol start="1">
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Secure the <strong>EMSClient.msi</strong>. (See <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below.)</li>
+            <li>Run <strong>EMSClient.msi </strong>on the client workstation. Follow the on-screen prompts. It is recommended that you accept the defaults.</li>
+            <li>Start <strong>EMS </strong>from the shortcut located on your desktop.</li>
+            <li>In the Provide Server Parameters dialog box, enter the name of your EMS Server and Database.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal default" />
+        </p>
+        <ol start="6">
+            <li>Click <strong>OK</strong>.</li>
+            <li>The system displays a message asking you to import your registration information. Click <strong>OK</strong>.&#160;</li>
+            <li>The Registration screen appears.&#160; Follow the instructions outlined on the screen to import your EMS license key.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal" />
+        </p>
+        <div class="NoteBox"><strong>Note:</strong> Your license key only needs to be imported once.</div>
+        <ol start="9">
+            <li>At the EMS login screen, type <strong>admin</strong> as both the User ID and the Password.</li>
+            <li>Click <strong>OK</strong>.</li>
+            <li>You are now ready to begin using the system. You can begin defining your data following the instructions in <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client">Setting Up EMS</a>&#160;or you can install to additional client computers by repeating <strong>steps 1-6</strong> above.</li>
+        </ol>
+        <h2><a name="ObtainInstallFilesDC"></a>Obtain Installation Files for <MadCap:variable name="General.EMS&#160;Desktop Client" /></h2>
+        <p>The latest release of EMS can be downloaded from the online Support Center.</p>
+        <ol>
+            <li>Go to www.emssoftware.com and enter your Email Address and Password in the Support Center area.</li>
+            <li>Click the Software downloads link.</li>
+            <li>Download the following files.  (Required for both first time installations and upgrades.)</li>
+        </ol>
+        <ul>
+            <li>EMS License (License.lic) – License file required to activate your EMS software.</li>
+            <li>EMS Server Install (EMS.ServerInstall.exe) – File used to install or upgrade the EMS databases on your Microsoft SQL Server.</li>
+            <li>EMS Client (EMSClient.msi) – File used to install or upgrade the EMS desktop application.</li>
+            <li>EMS Email Notification (EMSEmailNotificationSetup.msi) – File used to install the EMS Email Notification service (an optional system component.)  See Installing the EMS Email Notification Service.</li>
+            <li>EMS Campus Auto Sync Service (EMSCampusAutoSyncSetup.msi) – EMS Campus only.  File used to install the optional EMS Campus Auto Sync Service (an optional system component.)  See Installing the EMS Campus Auto Sync Service.</li>
+        </ul>
+    </body>
+</html>

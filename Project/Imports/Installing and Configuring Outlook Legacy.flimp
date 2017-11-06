@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-30T12:29:22.0520413-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-30T12:29:38.9211367-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Installing and Configuring Outlook Legacy.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Installing and Configuring Outlook Legacy.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Installing and Configuring.png"
+      TimeStamp="10/30/2017 12:29:30 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Installing and Configuring.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/This guide is intended for.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Planning Your EMS for Outlook.png"
+      TimeStamp="10/30/2017 12:29:30 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Planning Your EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/EMS for Outlook Requirements.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Obtaining the EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Configuration.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Customizing the Desktop Application.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Customizing the Desktop Application_1.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Customizing the Desktop Application.htm"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/EMS for Outlook System Parameters.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/EMS for Outlook System Parameters.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_1.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_2.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_3.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_4.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_5.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_6.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Enabling User Access to EMS_7.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Enabling User Access to EMS.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Establishing Outlook Booking.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Establishing Outlook Booking_1.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Establishing Outlook Booking.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Installing Upgrading EMS for.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Installing Upgrading EMS for_1.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Installing Upgrading EMS for_2.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Installing Upgrading EMS for.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Silent Unattended EMS for.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing and Configuring Outlook Legacy/Where to See Your Exchange.png"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Installing and Configuring Outlook Legacy/Where to See Your Exchange.htm"
+      TimeStamp="10/30/2017 12:29:32 PM" />
+    <Url
+      Source="../TOCs/Installing and Configuring Outlook Legacy.fltoc"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Installing and Configuring Outlook Legacy.css"
+      TimeStamp="10/30/2017 12:29:31 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 6" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-bgcolor-000000" />
+    <StyleName
+      Name="mt-color-000000" />
+    <StyleName
+      Name="mt-font-courier-new" />
+  </UsedCharacterStyles>
+</MsWordImport>

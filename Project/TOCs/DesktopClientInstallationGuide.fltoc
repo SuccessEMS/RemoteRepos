@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="EMS Desktop Client Installation Guide Cover" Link="/Content/Print/DesktopClientFrontPage.htm">
+    </TocEntry>
+    <TocEntry Title="Chapter 1">
+        <TocEntry Title="Introduction to EMS Desktop Client" Link="/Content/A_Installation/2_DesktopClient/V44.1/2a_DesktopClient_Introduction.htm" />
+        <TocEntry Title="Upgrade Considerations" Link="/Content/A_Installation/2_DesktopClient/V44.1/2e_DesktopClient_Upgrade Instructions.htm" />
+    </TocEntry>
+    <TocEntry Title="Chapter 2">
+        <TocEntry Title="New Entry" />
+    </TocEntry>
+    <TocEntry Title="Chapter 3">
+        <TocEntry Title="New Entry" />
+    </TocEntry>
+</CatapultToc>

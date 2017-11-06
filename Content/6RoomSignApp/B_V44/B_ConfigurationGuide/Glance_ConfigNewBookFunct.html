@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="5932" MadCap:lastWidth="1363" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring New Booking Functionality</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring New Booking Functionality</h1>
+        <p>1. On the {{product_dtc}} toolbar, click EMS Glance Settings to access the EMS Glance Settings area.&#160;</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_EMSGlanceSettings.png" style="width: 134px;height: 59px;" />
+        </p>
+        <p>&#160;<span class="mt-color-669933"><strong>Concept:</strong></span>&#160;You can set how information displays at the&#160;Global&#160;level (defaults for all Profiles) or for <a title="Configuring Glance Profiles">just one Profile</a>.</p>
+        <p>2. Then <a title="Configuring EMS Glance">open Global Settings</a> to set this functionality as the default for all Profiles, <em>or</em>&#160;<a title="Configuring Glance Profiles">open a Profile</a> for which you wish to create a special display,&#160;and then edit the settings on the Settings tab.</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_GlobalSettings.png" style="width: 410px;height: 254px;" />
+        </p>
+        <p>3. Adjust the Global or Profile settings listed in the table below to configure&#160; how booking information displays on the following screen.&#160;<span>New booking functionality has two components: <span>New Booking Settings</span> and <span>Group Identification/Authentication Settings</span>.</span></p>
+        <h3><a name="_Toc374360370"></a><a name="NewBookingSettings"></a>New Booking Settings</h3>
+        <table cellpadding="0" cellspacing="0" class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-20">
+                        <dl>
+                            <dt><strong><span><span>Option</span></span></strong>
+                            </dt>
+                        </dl>
+                    </th>
+                    <th class="mt-column-width-80">
+                        <p align="center"><strong><span><span>Description</span></span></strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Allow New Bookings</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>Indicates if users can book a room. If set to <strong>Yes</strong>, then a Reserve button is displayed.&#160; When a user presses this button, a Reserve popup opens with options for reserving the room.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Allow Future Same Day Bookings</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>Indicates if a room can be booked for a future time on the </span><em><span><span>current</span></span></em><span> day.&#160; If set to <strong>No</strong>, the Start Down dropdown on the Reserve popup is disabled.</span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: Currently, EMS Glance supports only same day bookings.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Default Duration for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The default duration for booking the room, in minutes, where the start time is the current time. For example, if you enter 60 for this value and the current time is 8:00 am, then the default start/end time on the Reserve popup will be 8:00 to 9:00 am.</span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: The Default Duration value must not be larger than the <span>Maximum Number of Minutes for New Booking</span> value.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="MaxNoMinutes"></a><span>Maximum Number of Minutes for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The maximum booking duration, in minutes, allowed when booking a room.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Default Event Name for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The default name for an event when booking a room. The Event Name field is always displayed on the Reserve popup.&#160;</span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: If <span>Require Event Name for New Booking</span> is set to <strong>Yes</strong>, then Default Event Name for New Booking should be left blank.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Default Event Type for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The default Event Type when booking a room.</span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: The Event Type field is not displayed on the Reserve popup. </span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Default Reservation Source for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The default Reservation Source when booking a room. </span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: The Reservation Source field is not displayed on the Reserve popup.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span>Default Status for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>The default Status when booking a room. </span>
+                        </p>
+                        <p><strong><span><span>Note</span></span></strong><span>: The Status field is not displayed on the Reserve popup.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="RequireEventName"></a><span>Require Event Name for New Booking</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>Indicates if the Event Name is required when booking a room. </span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="mt-indent-1"><a name="Reserve_ManualInput"></a>&#160;<em>Reserve popup (Opens after the Reserve button is pushed on the Available screen.)</em></p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_ReservePopup.png" style="width: 755px;height: 566px;" />
+        </p>
+        <h3><a name="_Toc374360371"></a><a name="GroupID_AuthenticationSettings"></a>Group Identification/Authentication Settings</h3>
+        <table cellpadding="0" cellspacing="0" class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-20">
+                        <p align="center"><strong><span><span>Option</span></span></strong>
+                        </p>
+                    </th>
+                    <th class="mt-column-width-80">
+                        <p align="center"><strong><span><span>Description</span></span></strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="GroupIDMethod"></a><span>Group Identification Method</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span>Indicates how users are required to identify themselves when booking a room. Options are:</span>
+                        </p>
+                        <p><strong>No Identification</strong> - Users are not required to identify themselves. New bookings are booked under the group that is specified in the Default Group for No/Manual Authentication setting. .</p>
+                        <p><strong>Manual Input</strong> - Users are required to manually enter their names. Users are added as a temporary contact under the group that is specified in the Default Group for No/Manual Authentication setting.&#160;</p>
+                        <p><strong>Group Lookup</strong> - Based on the Group Authentication Method setting, users must look up and select their Group/Contact records in EMS. The lookup is a contained search (can be found anywhere in the record) and it is not case-sensitive.&#160;</p>
+                        <p><strong>Authentication Without Password</strong> - Users are required to enter their authentication information as defined by the Group Authentication Field setting exactly as it is stored on their Group/Contact records in EMS, based on the Group Authentication Method setting.&#160;</p>
+                        <p class="mt-indent-1"><strong>Note:</strong>&#160; The “Authenticate Username” Label/Message should be updated to reflect the correct Group Authentication Field chosen.</p>
+                        <p><strong>Authentication With Password</strong> - Users are required to enter their email addresses and passwords exactly as they are stored for their Web User records in EMS. This identification method requires that the Group Authentication Field setting specify the Web User Email/Password.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="GroupAuthenticationMethod"></a><span>Group Authentication Method</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span><span>Applicable only if Group Identification Method is set to Group Lookup or Authentication Without Password. Options are Group or Contact. </span></span>
+                        </p>
+                        <ul>
+                            <li>If your organization stores employees at the Group level in EMS, then select Group.</li>
+                            <li>If your organization stores employees at the Contact level in EMS, then select Contact.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="GroupAuthenticationField"></a><span>Group Authentication Field</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span><span>Applicable only if Group Identification Method is set to Authentication Without Password. Options are:</span></span>
+                        </p>
+                        <p><strong>Group/Contact Email (</strong>applies to Group and Contact)</p>
+                        <p><strong>External Reference</strong> (applies to Group and Contact)</p>
+                        <p><strong>Network ID</strong> (applies to Group only)</p>
+                        <p><strong>Personnel Number</strong> (applies to Group only)</p>
+                        <p><strong>Badge Number</strong> (applies to Group only)</p>
+                        <p><strong>Other ID</strong> (applies to Group only)<br /><span><span>Applicable only if Group Identification Method is set to Authentication With Password. Options is: W</span></span><span style="line-height: 1.4;">eb User Email/Password</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><a name="DefaultGroupNo_ManualID"></a><span><span>Default Group for No/Manual Authentication</span></span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span><span>If the </span></span><strong><span><span>Group Identification Method</span></span></strong><span><span> is set to <strong>No Identification</strong> or <strong>Manual </strong>Input, then new events are booked under the Group specified here.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Option">
+                        <dl>
+                            <dt><span><span>Default Numeric Keyboard for Group Identification</span></span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><span><span>Controls the default keyboard display when users are required to identify/authenticate themselves when booking a room.</span></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="mt-indent-1"><em><a name="Reserve_NoID"></a><a name="ManualInput_GroupID"></a><a name="_Ref358290475"></a>Reserve popup, No identification</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_ReservePopupNoIdentification.png" style="width: 775px;height: 581px;" />
+        </p>
+        <p class="mt-indent-1"><em><a name="GroupLookup1"></a><a name="_Ref358290512"></a>Group Lookup, Entering search string</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_GroupLookup.png" style="width: 779px;height: 583px;" />
+        </p>
+        <p class="mt-indent-1"><em><a name="GroupLookup2"></a>Group Lookup, Matching search results from which to select</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_GroupLookupMatchingResults.png" style="width: 788px;height: 591px;" />
+        </p>
+        <p class="mt-indent-1"><em><a name="AuthenticationNoPW"></a>Authentication Without Password</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_AuthWithoutPass.png" style="width: 793px;height: 593px;" />
+        </p>
+        <p class="mt-indent-1"><em><a name="AuthenticationWithPW"></a>Authentication With Password</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_AuthWithPass.png" style="width: 801px;height: 600px;" />
+        </p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

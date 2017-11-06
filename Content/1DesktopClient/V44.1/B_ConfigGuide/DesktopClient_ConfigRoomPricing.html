@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Configuring Room Pricing Under Room Configuration</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring Room Pricing Under Room Configuration</h1>
+        <p class="Body">You can configure the pricing for a room on the Pricing tab of the Room dialog box, or you can configure the room, and then configure the pricing for it at a later date on the Edit Pricing window.</p>
+
+<table border="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="border: none;border-top: solid black 1.0pt;" valign="top">
+            <div style="border: none;border-bottom: solid windowtext 1.0pt;padding: 0in 0in 0in 0in;">
+            <p class="AnchorNote"><img class="internal" /></p>
+            </div>
+            </td>
+            <td style="border: none;border-top: solid black 1.0pt;" valign="top">
+            <p class="NoteTipWarningText">You can also configure the room price at the time that you are <a title="Configuring Rooms">configuring the room on the Room dialog box</a>, or when&#160;you are <a target="_blank" title="Configuring Rate Schedules">configuring rate schedules</a>.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="StepNumberBegin">1. On the {{product_dtc}} menu bar, click Configuration &gt; Facilities &gt; <strong>Rooms</strong>.&#160;The Rooms window opens.</p>
+
+<p class="FigureCaptionColumn"><img border="0" class="internal" /></p>
+
+<p class="StepNumberContinued">2. On the Building dropdown list, select the building, area, or view that contains the rooms that you are pricing.</p>
+
+<p class="StepNumberContinued">3. Click <strong>Pricing</strong>.&#160;The Edit Pricing window opens.&#160;<a name="RTF35303632393a204669677572"></a>&#160;&#160;</p>
+
+<p class="AnchorFigure"><img border="0" class="internal" /></p>
+
+<p class="StepNumberContinued"><a name="RTF32333839313a20537465704e"></a>4. On the Rate Schedule dropdown list, select the rate schedule for which you are pricing the rooms.</p>
+
+<p class="StepNumberContinued">5. You can leave the <strong>Room Type</strong> set to the default value of (all), and then click Display to display a list of all <em>active</em> rooms for all room types that have been configured in your {{product}} database.On the Room Type dropdown list, you can select a specific room type, and then click <strong>Display </strong>for a list of all <em>active</em> rooms of the selected room type.</p>
+
+<p class="StepNumberContinued">6. For each room, select the pricing method, which determines the cost for reserving the room, using the field definitions below.</p>
+
+<table border="0" cellspacing="0" class="emstable" style="border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+            <p class="TableColumnHeader"><strong>Pricing Method</strong></p>
+            </th>
+            <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+            <p class="TableColumnHeader"><strong>Description</strong></p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Half Day/Full Day (Event Time)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The total number of hours for the event is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Half Day/Full Day (Reserved Time)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The total number of hours for the reservation (event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Hourly (Event Time)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The price that is indicated in the Price column is multiplied by the event time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Hourly (Reserved Time)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Hourly (Service Time)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the service (resource). This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Hourly (Specific)</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The price that is indicated in the Price column is multiplied by the number of hours indicated when adding the room to a booking.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Unit</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The price that is indicated in the Price column is applied to the room, regardless of the event time or reserved time for the booking.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="StepNumberContinued"><a name="RTF31313934343a20537465704e"></a>7. After you select a pricing method, click in the appropriate fields to select the currently displayed amount, and then edit the amount as needed.</p>
+
+<table border="0" cellspacing="0" class="emstable" style="border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+            <p class="TableColumnHeader"><strong>Field</strong></p>
+            </th>
+            <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+            <p class="TableColumnHeader"><strong>Description</strong></p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Price</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The dollar amount that is used in calculating the room price for a booking. If the pricing method is Unit, then this value is applied in total to a room, regardless of the event time or reserved time for the booking.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Discount</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">You can use a discount with any pricing method. If you specify a discount for a room, then the actual price, the discount percentage, and the discounted amount are displayed on confirmations and invoices.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Min. Charge</p>
+
+            <p class="TableBody">Max. Charge</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a room, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a room, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Flat Price</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">A resource price that remains constant regardless of the total number of hours booked for the room. Used in conjunction with Hourly (Event Time) and Hourly (Reserved Time).</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Half Day Price</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Full Day Price</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+            <p class="TableBody">Hours</p>
+            </td>
+            <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+            <p class="TableBody">Multiplier used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="StepNumberContinued">8. Repeat <span class="Link"><span style="color: black;"><span style="color: black;">Step 4</span></span></span> through <span class="Link"><span style="color: black;"><span style="color: black;">Step 7</span></span></span> for each rate schedule and/or grouping as needed.</p>
+
+<p class="StepNumberContinued">9. Click <strong>Close</strong>.&#160;The Edit Pricing window closes. The pricing information is saved for the room.</p>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a></p></body>
+</html>

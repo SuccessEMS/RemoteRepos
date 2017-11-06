@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin Version="2" SkinType="Component" Comment="HTML5 skin" Anchors="Width,Height" Width="800" Height="600" Top="0" Left="0" Bottom="0" Right="0" Tabs="TOC,Index,Community" DefaultTab="TOC" UseBrowserDefaultSize="True" UseDefaultBrowserSetup="True" EnableResponsiveOutput="True" ComponentType="SearchBar" conditions="General.Audience A">
+    <Stylesheet>
+        <Styles>
+            <Style Name="Search Bar">
+                <Properties>
+                    <Property Name="BorderTop">solid 4px #000000</Property>
+                    <Property Name="BorderRight">solid 4px #000000</Property>
+                    <Property Name="BorderBottom">solid 4px #000000</Property>
+                    <Property Name="BorderLeft">solid 4px #000000</Property>
+                    <Property Name="Width">900px</Property>
+                    <Property Name="Height">70px</Property>
+                </Properties>
+            </Style>
+            <Medium Name="Mobile">
+                <Style Name="Search Bar">
+                    <Properties>
+                        <Property Name="Width">100%</Property>
+                    </Properties>
+                </Style>
+            </Medium>
+            <Style Name="Search Filter Drop-down">
+                <Properties>
+                    <Property Name="BackgroundColor">#f5f5f5</Property>
+                </Properties>
+            </Style>
+            <Style Name="Search Filter Drop-down (hover)">
+                <Properties>
+                    <Property Name="BackgroundColor">#ffffff</Property>
+                </Properties>
+            </Style>
+            <Style Name="Search Input">
+                <Properties>
+                    <Property Name="FontSize">2em</Property>
+                    <Property Name="Placeholder">How Can We Help You?</Property>
+                </Properties>
+            </Style>
+            <Medium Name="Tablet">
+                <Style Name="Search Input">
+                    <Properties>
+                        <Property Name="FontFamily">Open Sans</Property>
+                    </Properties>
+                </Style>
+            </Medium>
+            <Style Name="Search Submit Button">
+                <Properties>
+                    <Property Name="Tooltip">How Can We Help You?</Property>
+                </Properties>
+            </Style>
+        </Styles>
+        <Stylesheet>
+        </Stylesheet>
+    </Stylesheet>
+    <Strings>
+        <Stylesheet lang="en-us">
+            <Stylesheet>
+                <Styles>
+                    <Style Name="Search Bar">
+                        <Properties>
+                            <Property Name="BorderTop">solid 4px #000000</Property>
+                            <Property Name="BorderRight">solid 4px #000000</Property>
+                            <Property Name="BorderBottom">solid 4px #000000</Property>
+                            <Property Name="BorderLeft">solid 4px #000000</Property>
+                            <Property Name="Width">900px</Property>
+                            <Property Name="Height">70px</Property>
+                        </Properties>
+                    </Style>
+                    <Medium Name="Mobile">
+                        <Style Name="Search Bar">
+                            <Properties>
+                                <Property Name="Width">100%</Property>
+                            </Properties>
+                        </Style>
+                    </Medium>
+                    <Style Name="Search Filter Drop-down">
+                        <Properties>
+                            <Property Name="BackgroundColor">#f5f5f5</Property>
+                        </Properties>
+                    </Style>
+                    <Style Name="Search Filter Drop-down (hover)">
+                        <Properties>
+                            <Property Name="BackgroundColor">#ffffff</Property>
+                        </Properties>
+                    </Style>
+                    <Style Name="Search Input">
+                        <Properties>
+                            <Property Name="FontSize">2em</Property>
+                            <Property Name="Placeholder">How Can We Help You?</Property>
+                        </Properties>
+                    </Style>
+                    <Medium Name="Tablet">
+                        <Style Name="Search Input">
+                            <Properties>
+                                <Property Name="FontFamily">Open Sans</Property>
+                            </Properties>
+                        </Style>
+                    </Medium>
+                    <Style Name="Search Submit Button">
+                        <Properties>
+                            <Property Name="Tooltip">How Can We Help You?</Property>
+                        </Properties>
+                    </Style>
+                </Styles>
+                <Stylesheet>
+                </Stylesheet>
+            </Stylesheet>
+        </Stylesheet>
+    </Strings>
+</CatapultSkin>

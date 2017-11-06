@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3095" MadCap:lastWidth="1445">
+    <head><title mt-export-translate="no">Reservations, Bookings, and Booking Details</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1>Reservations, Bookings, and Booking Details</h1>
+        <p class="body_1"><span class="span_1">What's the difference between a "reservation" and a "booking?"&#160;A&#160;</span><span class="Strong_1">Reservation</span><span class="span_1">&#160;consists&#160;of one&#160;or more&#160;</span><span class="Strong_1">Bookings.</span><span class="span_1">&#160;That's it.</span>
+        </p>
+        <p class="body_1"><span class="span_1">Every booking belongs to a reservation. EMS lets you have&#160;multiple bookings under a single reservation. When you have multiple bookings in a reservation, each booking&#160;can be independent of the other, such as reserving a set of rooms for an event, or can be a series of bookings under a&#160;</span><span class="Strong_1">Recurring&#160;</span><span class="span_1">reservation.</span>
+        </p>
+        <p class="body_1"><span class="span_1">Each booking can contain&#160;multiple&#160;</span><span class="Strong_1">Booking Details</span><span class="span_1">, which are the resources and services required to support the booking (such as catering and room setup).</span>
+        </p>
+        <p class="body_2">
+            <img src="../../../Resources/Images/ReservationsBookings/Reservations Bookings and.png" style="height: 1574px;width: 1445px;" alt="https://success.emssoftware.com/@api/deki/files/3917/reservationsbookingsdiagram.png?revision=3&amp;size=bestfit&amp;width=511&amp;height=556" class="img_1" />
+        </p>
+        <h2><span class="span_2">R</span><span class="span_2">eservations: Who and What&#160;</span>
+        </h2>
+        <h3 class="Heading3"><a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client/080_Reservations_and_Bookings/010_Reservation_Structure" title="Edit section" class="a_1"><img src="../../../Resources/Images/ReservationsBookings/Reservations Bookings and.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a>
+        </h3>
+        <p class="body_1"><span class="span_1">A&#160;</span><span class="Emphasis_1">reservation</span><span class="span_1">&#160;is the "who and what" of an event. For example, the Academic Planning Board&#160;(the who) may reserve space for a Semester Kickoff&#160;event&#160;(the what).&#160;</span>
+        </p>
+        <h3>Bookings: Where and When&#160;</h3>
+        <p class="body_1"><span class="span_1">A&#160;</span><span class="Emphasis_1">booking</span><span class="span_1">&#160;is the "where and when" of an event. For example, the Academic Planning Board schedules the conference room (the where) for a staff meeting on the second Monday in January (the when). The Academic Planning Board&#160;now has a single reservation with a single booking in EMS. If, however, they schedule&#160;the conference room (the where) for a staff meeting on the second Monday of each month for a year (the when), then the board now has a single reservation with 12 bookings.</span>
+        </p>
+        <h4><span class="span_3">B</span><span class="span_3">ooking Details&#160;</span>
+        </h4>
+        <p class="body_1"><span class="span_1">A booking can have one or more booking details associated with it.&#160;</span><span class="Emphasis_1">Booking details</span><span class="span_1">&#160;are the resources (items for the meeting)&#160;or services (people and their activities)&#160;that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for the Academic Planning Board’s staff meeting, the resources could&#160;include catering (coffee service, bagels and muffins, and so on) and A/V equipment, plus the services of&#160;a person bringing in and setting up a projector, moving&#160;a speaker’s podium, and so on). &#160;</span>
+        </p>
+        <h5>Service Orders&#160;</h5>
+        <p class="body_2">System Administrators configure "buckets" of these details as "Categories," which streamlines the process of adding details to bookings.&#160;</p>
+        <p class="p_1"><span class="span_4"><img src="../../../Resources/Images/ReservationsBookings/Reservations Bookings and_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" class="img_1" /></span><span class="span_4">&#160;</span><span class="span_4">Concept:</span><span class="span_4">&#160;Services, Categories, and Resources: What's the Difference? (click to expand)&#160;</span>
+        </p>
+        <p class="NormalWeb_1">In EMS, you may hear these terms used&#160;interchangeably sometimes, however, they are different concepts.</p>
+        <p class="body_3"><span class="span_1">A&#160;</span><span class="Emphasis_1">Category&#160;</span><span class="span_1">in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc.&#160;When you configure a Category, however, it must be of six&#160;</span><span class="Emphasis_1">Category&#160;types</span><span class="span_1">:&#160;Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to&#160;behave slightly differently when&#160;added to a booking. For example, a Notes/Activities/Attendees&#160;type service category&#160;does not require the EMS Administrator to configure items&#160;under it and there is nothing for a person to “select” from these types of services.</span>
+        </p>
+        <p class="body_3"><span class="span_1">By contrast, a&#160;service category that has a type of&#160;Catering,&#160;Resource with Service Order, or a Resource without a&#160;Service Order Category,&#160;will require the Administrator to create items&#160;under it. For example, an&#160;"AV Equipment" service &#160;category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart, whiteboard, (under AV Equipment).&#160;The person requesting the service for this meeting would then select&#160;</span><span class="Emphasis_1">AV equipment</span><span class="span_1">; then&#160;</span><span class="Emphasis_1">flipchart&#160;</span><span class="span_1">and&#160;</span><span class="Emphasis_1">whiteboard&#160;</span><span class="span_1">would be typical options to add to the event.&#160;</span>
+        </p>
+        <table class="table_1">
+            <col style="width: 62pt;" />
+            <col style="width: 646pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">
+                            <img src="../../../Resources/Images/ReservationsBookings/Reservations Bookings and_2.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                        </p>
+                    </td>
+                    <td class="td_1">
+                        <p class="notetipwarningtext"><span class="mt-color-669933_1">Tip:</span><span class="mt-color-669933_1">&#160;</span><span class="span_5">The following Category Types allow&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/070_Defining_Production_Areas_and_Production_Items_for_a_Resource" title="Defining Production Areas and Production Items for a Catering Resource"><span class="Hyperlink_1">Production Items</span></a><span class="span_5">: Catering, Resources with Service Orders, and Resources Without Service Orders.&#160;</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="body_3"><span class="span_1">Furthermore, a Category can&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories"><span class="Hyperlink_1">be configured&#160;to "Use States"&#160;</span></a><span class="span_1">so that when a service is requested with a meeting, it can be managed through a review and approval process in the Manage Services toolbar option&#160;</span><span class="span_1"><img src="../../../Resources/Images/ReservationsBookings/Reservations Bookings and_3.png" style="height: 53px;width: 97px;" alt="https://success.emssoftware.com/@api/deki/files/5970/clipboard_e9d0b1d823c09fb0734a820c64ddd5789.png?revision=1&amp;size=bestfit&amp;width=61&amp;height=33" class="img_1" /></span><span class="span_1">&#160;in EMS Desktop Client.&#160;</span>
+        </p>
+        <p class="Strong_1">See Also:&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Working_With_Reservations_And_Bookings/Working_With_Your_Reservations%3A_The_Navigator/030_Adding_Services%2C_Equipment%2C_and_Resources_to_a_Meeting" title="Adding Services, Equipment, and Resources to a Meeting" class="Hyperlink_1">Adding Services&#160;</a></p>
+    </body>
+</html>

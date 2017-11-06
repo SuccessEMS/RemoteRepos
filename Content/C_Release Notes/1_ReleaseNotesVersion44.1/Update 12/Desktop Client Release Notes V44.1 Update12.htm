@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Updates 14.3-11.1.docx" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="4557" MadCap:lastWidth="871">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+        <meta name="description" content="EMS Desktop Client Version 44.1 Update 12 Release Notes " />
+    </head>
+    <body>
+        <h1> EMS Desktop Client Release Notes V44.1, Update 12</h1>
+        <p style="font-family: 'Open Sans';">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p style="font-family: 'Open Sans';">See Also:&#160;<a href="../ContactCustomerSupport.htm" title="Customer Support" alt="Customer Support"><span class="Hyperlink">Contacting Customer Support</span></a>&#160;and&#160;<a href="../Updating to the Latest Version of EMS (Patches and Builds).htm" title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build" alt="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build"><span class="Hyperlink">Updating to the Latest Version of EMS</span></a></p>
+        <table>
+            <tr>
+                <td>
+                    <p>Name:&#160;V44.1 Update 12</p>
+                </td>
+                <td>
+                    <p>Release&#160;Date:&#160;June 30, 2017</p>
+                </td>
+                <td>
+                    <p>Patch:&#160;2017.06.29.0</p>
+                </td>
+                <td>
+                    <p>Build #: &#160;44.1.12000.344</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Enhancements&#160;</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>Area</p>
+                </td>
+                <td>
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />Room Configuration Wizard</p>
+                </td>
+                <td>
+                    <p>Users Can Utilize the Room Configuration Wizard to Change the Size of Rooms</p>
+                    <p>Users will now be able to change the size of rooms from the Room Configuration Wizard.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27453" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27453" class="Hyperlink">27453</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Notification Rules</p>
+                </td>
+                <td>
+                    <p>Notification Rules Date Formats Can Be Specified in International Formats</p>
+                    <p>Notification rules now utilize the parameter specification for Notifications/Automated Reports date format.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16999" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=16999" class="Hyperlink">16999</a></p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h2>Fixes&#160;</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <br />Setup Worksheet</p>
+                </td>
+                <td>
+                    <p>On Setup Worksheet, UDFs Overlapped with Text</p>
+                    <p>Users with reservations that had UDFs&#160;associated with categories were experiencing overlapping of UDFs over the category text when generating the setup worksheet.</p>
+                    <p>Fix:&#160;Modified functionality so that UDFs do not overlap with categories.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=19159" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=19159" class="Hyperlink">19159</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />VC</p>
+                </td>
+                <td>
+                    <p>Adding Rooms to a Recurring Video Conference Reservation Resulted in Error</p>
+                    <p>Users trying to add a new booking and room to a recurring video conference resulted in an index error message.</p>
+                    <p>&#160;Fix:&#160;Modified functionality so that no error appears and users can continue adding a&#160;booking to their reservation.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28343" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28343" class="Hyperlink">28343</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />Outlook Bookings</p>
+                </td>
+                <td>
+                    <p>Modifying/Canceling a Booking in an Outlook Reservation</p>
+                    <p>Reservations created in Outlook modified in the EMS&#160;Desktop Client could result in the cancellation of the entire reservation in Outlook.</p>
+                    <p>Fix: Modified functionality so that cancellations were not being generated in Outlook for reservations modified in the EMS Desktop Client.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=29314" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=29314" class="Hyperlink">29314</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />API Authentication</p>
+                </td>
+                <td>
+                    <p>No Password Was Necessary to Utilize API Authentication</p>
+                    <p>A security risk existed for customers using LDAP or Windows authentication. Users were not being prompted for a password when utilizing the EMS API.&#160;</p>
+                    <p>&#160;Fix:&#160;Modified functionality so that a password was necessary to utilize the EMS API.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30093" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30093" class="Hyperlink">30093</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />.MSI File</p>
+                </td>
+                <td>
+                    <p>Error Received When Downloading .MSI File from Product Support Website</p>
+                    <p>Users downloading .msi files were receiving an error message that stated, "digital signature is corrupted in the package."</p>
+                    <p>&#160;Fix:&#160;Modified functionality so that users can successfully download .msi files.</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=15444" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=15444" class="Hyperlink">15444</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />Notifications</p>
+                </td>
+                <td>
+                    <p>Check In Notification Links Included Wrong Web App URL</p>
+                    <p>When&#160;multiple databases were configured in the Check In Notification Service and users generated check-in notification emails, the &#160;system included the Web App URL from the last database that had been configured in the system.&#160;</p>
+                    <p>&#160;Fix:&#160;Modified functionality so that the correct Web App URL is included.</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=25875" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=25875" class="Hyperlink">25875</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />API</p>
+                </td>
+                <td>
+                    <p>Get Bookings Function in API Was Not Returning In-Progress Events</p>
+                    <p>When utilizing API to&#160;get bookings with a start and end time, the search results were not including events that had already started within that time period being searched. The search returned events with&#160;a reservation start time&#160;between midnight of the start time of the search and the end time of the search.</p>
+                    <p>Fix:&#160;Modified functionality so that Get Bookings returned&#160;in progress events, as well as&#160;events with&#160;start time between midnight of the start time of the query and the end time of the query.</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30399" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30399" class="Hyperlink">30399</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />Outlook</p>
+                </td>
+                <td>
+                    <p>Error Received When Adding Booking to a Reservation Created in Outlook</p>
+                    <p>User adding a booking to a reservation created in Outlook received an error message in Desktop Client.&#160;</p>
+                    <p>Fix:&#160;Modified functionality so that the user does not received an error message and the required room is successfully added to the reservation.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26793" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=26793" class="Hyperlink">26793</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />PAM</p>
+                </td>
+                <td>
+                    <p>Error Received When Canceling a PAM-enabled Meeting from the Book</p>
+                    <p>Users attempting to cancel a PAM-enabled meeting from the Book received an error message, however, the status change is successful.&#160;</p>
+                    <p>Fix:&#160;Modified functionality so that users will not receive an error message when canceling a PAM-enabled meeting from the Book.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27892" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27892" class="Hyperlink">27892</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />Installation</p>
+                </td>
+                <td>
+                    <p>User Received an Error Message When Downloading an MSI File from Product Support Site</p>
+                    <p>When users downloaded the MSI file from the EMS Product Support website, users were receiving an error.&#160;</p>
+                    <p>Fix:&#160;Modified functionality so that users can successfully&#160;download the MSI file.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=15444" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=15444" class="Hyperlink">15444</a></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>
+                        <br />API</p>
+                </td>
+                <td>
+                    <p>Issue Regarding API_EMS_GetWebUserBookings</p>
+                    <p>There was a CPU spike caused by the SP API_EMS_GetWebUserBookings. Users advised to add No Lock or Read Uncommitted.&#160;</p>
+                    <p>Fix:&#160;Modified functionality to eliminate the CPU spike.&#160;</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30175" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30175" class="Hyperlink">30175</a></p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

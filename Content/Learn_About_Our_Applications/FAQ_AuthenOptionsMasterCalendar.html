@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Authentication Options for EMS Master Calendar</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Authentication Options for EMS Master Calendar</h1>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p> <ol> <li><strong>Login Credentials</strong>: This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</li> <li><strong>Enabled by</strong>: This is either a parameter or checkbox that needs to be enabled for the authentication to work.</li> <li><strong>Configuration Page</strong>: This is where configuration and options are set for the authentication.</li>
+</ol> <h2>Integrated Windows Authentication</h2> <ul type="disc"> <li>Login Credentials: External Reference in MC user account settings,<em><strong> Admin Panel &gt; Admin &gt; Security &gt; Users.</strong></em></li> <li>Enabled by: Within IIS on the Master Calendar site, "Authentication" options, Windows Authentication.</li> <li>Configuration Page: None.</li>
+</ul> <h2>LDAP</h2> <ul type="disc"> <li>MC LDAP can be used in two ways: <ul type="disc"> <li>Log into an MC user account with LDAP credentials: External Reference in MC user account settings, <em><strong>Admin Panel &gt; Admin &gt; Security &gt; Users.</strong></em></li> <li>Assign an LDAP group to an MC template, user logs in with LDAP credentials and does not need an MC user account: <em><strong>Admin Panel &gt; Admin &gt; Security &gt; User Templates</strong></em>, LDAP tab inside template.</li>  </ul>  </li> <li>Enabled by: mastercalendar/ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (Need to be logged in as an administrator and have Integrated Authentication in license).</li> <li>Configuration Page: mastercalendar/ldapconfiguration.aspx page, there are multiple tabs.</li>
+</ul> <h2>Portal</h2> <ul type="disc"> <li>Login Credentials: External Reference in MC user account settings, <em><strong>Admin Panel &gt; Admin &gt; Security &gt; Users</strong></em>.</li> <li>Enabled by: Always enabled, Admin Panel &gt; Admin &gt; Site Administration &gt; Default Settings (Select the appropriate entry from the "Portal Authentication Method" parameter drop-down list).</li> <li>Configuration Page: There are multiple different setup items in the Default Settings page under the "Portal Authentication" area.</li>
+</ul>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>private</a></p></body>
+</html>

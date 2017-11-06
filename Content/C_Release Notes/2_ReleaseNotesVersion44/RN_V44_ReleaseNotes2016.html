@@ -1,0 +1,3343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="10" MadCap:lastHeight="22596.53" MadCap:lastWidth="1500" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">V44 Release Notes</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">V44 Release Notes</h1>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;width: 792px;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 734px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>To keep your applications up-to-date, download and run the latest database patch, plus the latest builds for your installed applications. <strong>Both the database patch and the application builds are cumulative</strong> (all previous fixes are included in the latest build and patch we provide). We recommend that all EMS application components are kept up-to-date&#160;<em>together.</em></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>EMS release notes are organized by month.</p>
+        <ol>
+            <li><a title="V44 Release Notes" href="#August2017">August 2017</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#July2017">July 2017</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#May2017">May 2017</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#March2017">March 2017</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#January2017">January 2017</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#December2016">December 2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#October2016">October 2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#September2016">September&#160;2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="" alt="V44 Release Notes">July 2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#June2016">June 2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#May2016">May&#160;2016</a>
+            </li>
+            <li><a rel="internal" href="#April2016">April&#160;2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#March2016">March&#160;2016</a>
+            </li>
+            <li><a title="V44 Release Notes" href="#February2016">February 2016</a>
+            </li>
+        </ol><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p><span class="mt-color-000000"><strong><span class="mt-color-669933">See Also:</span></strong></span>
+        </p>
+        <ul>
+            <li><a target="_blank" title="Customer Support">Contacting Customer Support</a>
+            </li>
+            <li><a title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build">Obtaining Patches and New Builds</a>&#160;</li>
+            <li><a title="EMS Master Calendar Release Notes">Master Calendar Release Notes V7.0 and V8.0</a>
+            </li>
+            <li><a title="https://success.emssoftware.com/Regics/EMSRegics_Release_Notes">Regics Release Notes</a>
+            </li>
+        </ul>
+        <ol>
+        </ol>
+        <h3><strong><a id="August2017" name="August2017"></a><span class="mt-color-008000">August 2017</span></strong>
+        </h3>
+        <table style="width: 915px;">
+            <tbody>
+                <tr>
+                    <td><strong>Release Date</strong>
+                    </td>
+                    <td><strong>Patch Number</strong>
+                    </td>
+                    <td><strong>VEMS</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>August 31, 2017</strong>
+                    </td>
+                    <td>
+                        <p><strong>44.0.0.201708090</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p><strong>44.0.088.89</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h2>Virtual EMS (VEMS)</h2>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-20" scope="col">Area</th>
+                    <th class="mt-column-width-80" scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-20" colspan="1" data-th="Area" rowspan="2"><em>Web Process Templates</em>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><strong>Web Process Template Assignment Error on First Login</strong>
+                        </p>
+                        <p class="mt-indent-1">Users in "activate on login" status that were assigned web process templates that were also&#160;flagged as "available to new everyday users"&#160;were receiving an error at first login. &#160;</p>
+                        <p class="mt-indent-1"><b>Fix</b>:&#160; Modified functionality so that users were not receiving an error at first login.</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27089" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27089">27089</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><strong>Cannot Add Override Description Room to Video Conference&#160;WPT</strong>
+                        </p>
+                        <p class="mt-indent-1">Users received the error message, "<em>The location you selected is not available for all of your dates</em>," when choosing to override room description in a Web Process Template.</p>
+                        <p class="mt-indent-1"><b>Fix</b>:&#160; Modified functionality so that users can add a room without an error.</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28012" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28012">28012</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3><span class="mt-color-008000"><strong><a id="July2017" name="July2017"></a>July 2017</strong>&#160;</span>
+        </h3>
+        <table style="width: 915px;">
+            <tbody>
+                <tr>
+                    <td><strong>Release Date</strong>
+                    </td>
+                    <td><strong>Patch Number</strong>
+                    </td>
+                    <td><strong>VEMS</strong>
+                    </td>
+                    <td><strong>EMS API</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>July 31, 2017</strong>
+                    </td>
+                    <td>
+                        <p><strong>201707100</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <p><strong>44.0.085.86</strong>
+                        </p>
+                    </td>
+                    <td><strong>2.0.0.7</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Virtual EMS (VEMS)</h4>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-20" scope="col"><strong>Area</strong>
+                    </th>
+                    <th class="mt-column-width-80" scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-20" colspan="1" data-th="Area" rowspan="2">
+                        <p><em>Create Reservation</em>
+                        </p>
+                        <p><em>Unauthenticated User</em>
+                        </p>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><strong>Unauthenticated User and Building Hours</strong>
+                        </p>
+                        <p class="mt-indent-1">Customers were&#160;not able to book a space at the opening time of the building due to the 15-minute setup time; however, once a user logged in they were&#160;able to do the opposite. Users should not be able to book a space due to the building hours.&#160;</p>
+                        <p class="mt-indent-1"><strong>Fix:&#160;</strong>Modified functionality so that users cannot book the space due to the building hours.&#160;</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28248" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28248">28248</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><b>Building Hours Violation Not Working for Unauthenticated Users&#160;</b>
+                        </p>
+                        <p class="mt-indent-1">Unauthenticated users who created a reservation with a start time that violated the building's hours of operation did not receive a violation of building hours error message.&#160;</p>
+                        <p class="mt-indent-1"><strong>Fix:&#160;</strong>Modified functionality so that unauthenticated users choosing a start time that violates the building's hours of operation receive an error message.&#160;</p>
+                        <div if="user.seated" class="mt-style-conditional style-wrap" title="Conditional text (pro member only)">
+                            <p>TFS item <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=29832" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=29832">29832</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-20" data-th="Area"><em>My Booking Page</em>
+                    </td>
+                    <td class="mt-column-width-80" data-th="Description">
+                        <p><b>Check In Was Not Disappearing from My Booking Page</b>
+                        </p>
+                        <p class="mt-indent-1">Once the booking ended&#160;in the Mobile Virtual EMS page, the check in icon should have disappeared.&#160;</p>
+                        <p class="mt-indent-1"><strong>Fix:&#160;</strong>Modified functionality so that the check in icon disappears after the booking ends.&#160;</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30220" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30220">30220</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>EMS API</h4>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-15" scope="col"><strong>Area</strong>
+                    </th>
+                    <th class="mt-column-width-85" scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-15" data-th="Area"><em>API Call</em>
+                    </td>
+                    <td class="mt-column-width-85" data-th="Description">
+                        <p><b>Booking Cancel Issue</b>
+                        </p>
+                        <p class="mt-indent-1">The error, "<em>Invalid URI: The URI is empty</em>," was being generated when the API call,&#160;EMSAPI UpdateBooking, was&#160;used on a booking made in the EMS for Outlook&#160;plugin.</p>
+                        <p class="mt-indent-1"><strong>Fix:&#160;</strong>Modified functionality so that no error is received.</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25389" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25389">25389</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table style="width: 915px;">
+            <tbody>
+                <tr>
+                    <td><strong>Release Date</strong>
+                    </td>
+                    <td><strong>Patch Number</strong>
+                    </td>
+                    <td style="width: 517px;"><b>VEMS</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>July 14, 2017</strong>
+                    </td>
+                    <td>
+                        <p><strong>2017.05.17.0</strong>
+                        </p>
+                    </td>
+                    <td style="width: 517px;">
+                        <p><strong>44 - 44.0.085.86</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Virtual EMS (VEMS)</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col"><strong>Area</strong>
+                    </th>
+                    <th scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><em>Create Reservation</em>
+                    </td>
+                    <td>
+                        <p><strong>When a Required Field Was Left Blank, Error Read As "Undefined"</strong>
+                        </p>
+                        <p class="mt-indent-1">While creating a reservation, users who left a required field blank (e.g., Event Type) were receiving an "Undefined" error message instead of alerting the user that the field needed to be completed.&#160;</p>
+                        <p class="mt-indent-1"><strong>Fix:&#160;</strong>Modified functionality so that an error message includes the correct verbiage to alert the user that the field needs to be completed.&#160;</p>
+                        <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27583" rel="external nofollow" target="_blank" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27583">27583</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h3><strong><span class="mt-color-669933"><a name="May2017"></a>May 2017</span></strong>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><b>API</b>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>{{product_dtc}}</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>{{product_emsk}}</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>EMS Floor Plans</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15"><strong>2017.04.17.0</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>2.0.0.5</strong>
+                        <br />            (updated overlay)</td>
+                    <td class="mt-noheading mt-column-width-15"><strong>44.0.254</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>44.0.0.266</strong>
+                    </td>
+                    <td class="mt-noheading mt-column-width-15"><strong>44.0.009.56</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>EMS API</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Older_Releases_(V44,_V43)/EMS_Version_44/V44_Release_Notes/Update_11b_V44_Release_Notes/EMS_API_Release_Notes_V44_Update_11b")</pre>
+        <h4>EMS Desktop Client</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Older_Releases_(V44%2C_V43)/EMS_Version_44/V44_Release_Notes/Update_11b_V44_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_11b")</pre>
+        <h4>EMS Campus</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Older_Releases_(V44,_V43)/EMS_Version_44/V44_Release_Notes/Update_11b_V44_Release_Notes/EMS_Academic_Planning_Release_Notes_V44_Update_11")</pre>
+        <h4>EMS Room Wizard</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Older_Releases_(V44%2C_V43)/EMS_Version_44/V44_Release_Notes/Update_11b_V44_Release_Notes/EMS_Room_Wizard_Release_Notes_V44_Update_11")</pre>
+        <h3><span class="mt-color-669933"><strong><a id="March2017" name="March2017"></a>March 2017</strong></span>
+        </h3>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_emsk}}</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>2017.02.06.0</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.0.263</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.084.85</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <img alt="" style="width: 49px;height: 47px;" width="49px" height="47px" />Click on the&#160;<span style="color: #0099cc;"><strong>title</strong>&#160;</span>for each item below to expand for more details.</p>
+        <h4>{{product_vems}} (Virtual EMS)</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_9b_V44_Release_Notes/EMS_VEMS_Release_Notes_V44_Update_9b")
+</pre>
+        <h4>{{product_dtc}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_9b_V44_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_9b")</pre>
+        <h4>{{product_emsk}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_9b_V44_Release_Notes/EMS_Kiosk_Release_Notes_V44_Update_9b")</pre>
+        <h4>{{product_emso}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_9b_V44_Release_Notes/EMS_for_Outlook_Release_Notes_V44_Update_9b")</pre>
+        <h3><span class="mt-color-669933"><strong><a name="January2017"></a>January 2017</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_emsk}}</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>2016.12.13.0</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.248</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.0.262</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.082.83</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>{{product_vems}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_VEMS_Release_Notes_V44_Update_8b")</pre>
+        <h4>{{product_dtc}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b")</pre>
+        <h4>EMS Campus&#160;</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Campus_Release_Notes_V44_Update_8b")</pre>
+        <h4>{{product_emsk}}</h4><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Kiosk_Release_Notes_V44_Update_8b")</pre>
+        <h3><span class="mt-color-669933"><strong><a name="December2016"></a>December 2016</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_emsk}}</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                    <td class="mt-noheading"><strong>EMS API</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>2016.12.06.0</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.244</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.0.256</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.74.75</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>2.0.0.5</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <dl>
+                            <dt>Issue Resolution</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><i>Parameters</i>
+                        </p>
+                        <p><strong>Exclude Weekends Parameter Not Enforced</strong>
+                        </p>
+                        <p>When the <em>Exclude Weekends from Data Calculations&#160;</em>parameter was set to&#160;<strong>Yes</strong>&#160;in {{product_dtc}},<em>&#160;</em>weekends were still included in calculations for {product_vems}}.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified validations to ensure that the parameter is properly enforced to exclude weekends.</p>
+                        <p>&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a>&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/13202">13202</a>&#160;44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Translations</em>
+                        </p>
+                        <p><strong>French Swiss Language Resets Room Search to 2016</strong>
+                        </p>
+                        <p>When users changed the language to French Swiss and searched for space for dates in January, 2017, the search results reverted to 2016.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified functionality to ensure that language settings do not affect the date on which a room search is performed.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24752">24752</a>&#160;44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Security</em>
+                        </p>
+                        <p><strong>Security Vulnerability</strong>
+                        </p>
+                        <p>Security vulnerabilities were identified in the javascript.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Updated the&#160;jQuery JavaScript Library&#160;to a version higher than 1.4.4, &#160;and the&#160;jQuery UI Library to a version higher than 1.8.17.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>23276</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Log In</em>
+                        </p>
+                        <p><strong>Wrong Password Presents Error 404</strong>
+                        </p>
+                        <p>Logging in with an incorrect password and then closing the the prompt message to enter a correct password took the user to an error 404 page.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified validations so that users are redirected to the login page.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>24861 44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>New Reservations</em>
+                        </p>
+                        <p><strong>Incorrect Building Hours&#160;Violation for Overnight and Recurrent Meeting</strong>
+                        </p>
+                        <p>When users attempted to book space starting on one day and ending on the next (overnight), or they attempted to book a recurrent meeting, the booking failed due to a building hours violation.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified booking rules validations to ensure that bookings succeed even when recurrent or spanning midnight.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>24687,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23981">23981</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Browse for Space</em>
+                        </p>
+                        <p><strong>Daylight Savings Time Ignored in Room Search</strong>
+                        </p>
+                        <p>When users browsed for space and selected a room after Daylight Savings Time began, the search results showed times that were one hour off.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified validations to ensure that Daylight Savings Time is enforced in room search results.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24104">24104</a>&#160;44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>New Booking &gt; Booking Details &gt; Services</em>
+                        </p>
+                        <p><strong>Setup Count Changes Not Copied for Services</strong>
+                        </p>
+                        <p>When users changed the number of attendees or changed rooms, the change was not copied to related service orders as expected based on parameter and template settings</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified validations to ensure that when attendance count or rooms are changed, users will be prompted to also save changes to&#160;affected service orders, and services that are not available due to&#160;the edits are removed from the reservation.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>24422 44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Video Conferences</em>
+                        </p>
+                        <p><strong>Video Conferences Not Shown As Booked on Calendar</strong>
+                        </p>
+                        <p>Some video conference rooms did not immediately show on the calendar view as booked and the bookings presented the message, "One of the resources is unavailable."</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified the display to show these rooms as booked and to not present the message when inappropriate.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>23237 44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Recurring Meetings &gt; Reservation Details &gt; Add Services</em>
+                        </p>
+                        <p><strong>Service Category Attendees Not Added to All Recurrences</strong>
+                        </p>
+                        <p>When adding attendees to a service category for a recurrent meeting, they were only added to the first booking.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified functionality to ensure that adding attendees to a service category affects all bookings for recurrent meetings.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>24274 44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 17px;width: 497px;">
+                        <h4>{{product_dtc}}</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="height: 17px;width: 497px;">
+                        <p><em>Time Zone Enhancement:</em><strong> Update to Remove Daylight Savings Time from Turkish Time Zones</strong>
+                        </p>
+                        <p>Modified time zone definitions throughout EMS to account for the Turkish government's decision to no longer observe Daylight Savings Time.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24003">24003</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <dl>
+                            <dt>Issue Resolution</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Performance</em>
+                        </p>
+                        <p><b>Database Slowness</b>
+                        </p>
+                        <p>Browsing on VEMS had very slow performance and timed out due to two stored procedures:</p>
+                        <ol>
+                            <li>vems_ReservationSummary_LoadData&#160;</li>
+                            <li>ems_RES_UserDefinedFields</li>
+                        </ol>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified the stored procedures so that users no longer experience slow performance.&#160;&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a>&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23647">23647</a></p>
+                            <p>V44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Reservation Book</em>
+                        </p>
+                        <p><strong>User Access for Combo Rooms Not Observed</strong>
+                        </p>
+                        <p>Bookings for combo rooms and their components did not display&#160;as intended&#160;when users did&#160;<em>not&#160;</em>have access to combo rooms but&#160;<em>did&#160;</em>have access to component&#160;rooms: the Reservation Book displayed the booking&#160;to these users&#160;as if it were in one of the component rooms in the combo when it should have displayed as being in all the component rooms for which the users had been assigned access.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified validations to ensure that users who do not have&#160;access to combo rooms will see the&#160;booking in the appropriate component rooms&#160;in the Reservation Book. Additionally, modified the display so that these users can see when combo&#160;<em>and&#160;</em>component&#160;rooms are blocked.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25007">25007</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Dashboard &gt; Notifications</em>
+                        </p>
+                        <p><strong>Dashboard Indicator Stays Incorrectly Red for Event Coordinators</strong>
+                        </p>
+                        <p>When Event Coordinator&#160;users were removed from a Notification Rule, the flashing indicator on their dashboard remained red although there was no notification on the dashboard.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified the dashboard indicator to accurately reflect the latest changes to Event Coordinators' notification rules.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23943">23943</a>, V44 only</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Configuration &gt; Everyday User Applications &gt; Everyday Users</em>
+                        </p>
+                        <p><strong>Filtering By Both City and Process Template Fails</strong>
+                        </p>
+                        <p>When searching for Everyday Users, with the "Everyday Users linked to Groups via External Reference" parameter turned on, filtering results by both&#160;City and Process Template returned a list of all records.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified the list to filter correctly.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23916">23916</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Configuration &gt; Facilities&#160; &gt; Rooms</em>
+                        </p>
+                        <p><strong>Non-Admin Users Unable to Set Room Request/Reserve Preferences on Booking Templates</strong>
+                        </p>
+                        <p>When non-administrative users configured rooms, the Web Process Template tab was unavailable.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified the Room Configuration page to enable the Web Process Template tab when expected.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23928">23928</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Notifications</em>
+                        </p>
+                        <p><strong>Notifications&#160;Not Triggered for Date/Time, Status, or Room Changes</strong>
+                        </p>
+                        <p>When users changed dates or times, status, or room for events that had notification rules to email participants such as event coordinators, and there were additional notification rules for the events set to monitor other status changes, the date/time change&#160;notifications did not occur.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified validations to ensure that notifications are sent to participants as expected.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>25241</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 497px;">
+                        <p><em>Services</em>
+                        </p>
+                        <p><strong>Resources From Setup Worksheet Out of Order</strong>
+                        </p>
+                        <p>When users used a setup worksheet to add resources to bookings, they were listed in the wrong order and groupings.</p>
+                    </td>
+                    <td style="width: 498px;height: 17px;">
+                        <p>Modified import sequence for setup worksheet so that resources now show in chronological and category groupings.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>25184</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1" rowspan="2" style="height: 17px;width: 497px;">
+                        <p><em>Automated Reports Service</em>
+                        </p>
+                        <p class="mt-indent-1"><strong>Automated Reports Service Not Running</strong>
+                        </p>
+                        <p class="mt-indent-1">The service&#160;for version 44 was not starting.</p>
+                        <p class="mt-indent-1"><strong>Group Distribution Lists Skipped</strong>
+                        </p>
+                        <p class="mt-indent-1">Automated reports incorrectly excluded group email lists&#160;when the user did not manually enter them.</p>
+                    </td>
+                    <td colspan="1" rowspan="2" style="width: 498px;height: 17px;">
+                        <p>&#160;</p>
+                        <p>Modified the service to start as expected.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23401?fullScreen=false">23401</a>
+                            </p>
+                        </div>
+                        <p>&#160;</p>
+                        <p>Modified the service to search and find distribution lists by name.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>24642</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <h4>EMS Campus</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                    <td style="height: 5px;width: 497px;">&#160;</td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <dl>
+                            <dt>Issue Resolution</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><i>Academic Book</i>
+                        </p>
+                        <p><strong>Instructor View of Courses Unavailable When Listing All Subjects</strong>
+                        </p>
+                        <p>When users navigated to the course view for a specific instructor and included all subjects, the view was empty.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified the view to show all courses for an instructor in all subjects as expected.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <div class="mt-comment-content">
+                                <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a>&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25096">25096</a></p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Cross Listed Courses</em>
+                        </p>
+                        <p><strong>Changes to Cross-Listed Courses Not Updated After Synch</strong>
+                        </p>
+                        <p>When users changed multiple cross-listed courses that had a single parent reservation, their changes were not updating in the EMS database after the first synchronization. &#160;</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified the SIS updates so that these changes update in the EMS database.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22835">22835</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Publish Courses</em>
+                        </p>
+                        <p><strong>Cross-Listed Courses Missing Info, Slow Performance</strong>
+                        </p>
+                        <p>When users published a term that included cross-listed courses, conflict handling caused slow performance, errors, and the courses were missing course dates.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified conflict handling so that data is published efficiently and the issues no longer occur.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25105">25105</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Cancelations</em>
+                        </p>
+                        <p><strong>Canceling One Meeting Pattern Updates Course Status Incorrectly</strong>
+                        </p>
+                        <p>When users canceled one meeting pattern for a published term that had more than one meeting pattern, the reservation status incorrectly changed to Canceled.</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified validations so the reservation status remains Confirmed as long as one confirmed meeting pattern exists in the course.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25106">25106</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 497px;">
+                        <p><em>Campus &gt; Tools &gt; Wizard &gt; Delete Items</em>
+                        </p>
+                        <p><strong>Error Occurs Incorrectly When Deleting Service</strong>
+                        </p>
+                        <p>When users deleted services from rooms using the Delete Items wizard, an error presented although the deletion was successful.&#160;</p>
+                    </td>
+                    <td style="width: 498px;height: 5px;">
+                        <p>Modified the display so the error does not present when deletion is successful.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24016">24016</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="2" style="width: 75px;">
+                        <h4>{{product_emsk}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 466px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 449px;"><strong>Issue Resolution</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 466px;">
+                        <p><i>Security</i>
+                        </p>
+                        <p><strong>Web Traffic Security Vulnerabilities</strong>
+                        </p>
+                        <p>The web application sent non-secure user and session information (cookies) during encrypted (SSL) sessions.</p>
+                    </td>
+                    <td style="width: 449px;height: 17px;">
+                        <p>Added validation to all calls and added verb tampering redirection to prevent non http or Get calls from being made to Kiosk.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23979">23979</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 466px;">
+                        <p><i>Translations</i>
+                        </p>
+                        <p><strong>Bookings Fail in Slovakian</strong>
+                        </p>
+                        <p>Users were unable<em>&#160;</em>reserve a room using a profile with default translation in Slovak.</p>
+                    </td>
+                    <td style="width: 449px;height: 17px;">
+                        <p>Modified functionality to ensure that bookings succeed using Slovakian translation.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23907">23907</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="3">
+                        <h4>EMS APIs</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;">
+                        <dl>
+                            <dt>Build</dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;width: 378px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 447px;height: 17px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;">
+                        <p align="center">&#160;2.0.0.5</p>
+                    </td>
+                    <td style="height: 17px;width: 378px;">
+                        <p>Some customers required additional support when integrating with third-party room signs that required combo room information.</p>
+                        <p>25284</p>
+                    </td>
+                    <td style="width: 447px;height: 17px;">
+                        <p>Added the <a title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_API/EMS_API_Guide/EMS_API_Functions#GetBookingHistory">GetBookingHistory API call</a>, which provides the combo room information including Room ID to support &#160;additional room-sign integration.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="October2016"></a>October 2016</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>44.0.41.60</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading">
+                        <h4>PAM</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading">Added extra logging for Auto discover.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="September2016"></a>September&#160;2016</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_emsk}}</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>2016.09.08.0</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.235</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.0.254</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.072.73</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 5px;width: 75px;">
+                        <p><strong>Build</strong>
+                        </p>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                    <td style="height: 5px;width: 75px;">
+                        <p><strong>Patch</strong>
+                        </p>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                    <td style="height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt>Issue Resolution</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>Browse for Space &gt; Edit&#160;Filters</em>
+                        </p>
+                        <p>When users changed room search filters and then no rooms matched the updated filter, users could not proceed with their task.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Enhanced the interface by adding a message explaining the situation to the user, and added functionality such that the filter resets after the message displays so that the user can continue to search for rooms.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">22396</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>End Now &amp; Check In Buttons</em>
+                        </p>
+                        <p>When users modified a room definition after making a reservation to remove the option for End Now or Check In, the buttons still appeared (although they were unclickable).</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the interface so that once users turn off the End Now or Check In options for a room, the buttons no longer appear.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 22769</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>New Booking &gt; Add Services</em>
+                        </p>
+                        <p>When adding services for a booking where Setup Count was defined by the administrator to be the same&#160;as the headcount for services, the value for Attendance was still being carried over.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified functionality to carry over the Setup Count in this situation when adding services.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 22871</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="height: 17px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 77px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;width: 73px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 77px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 73px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>EMS Desktop Client &gt; Room Utilization Report</em>
+                        </p>
+                        <p>The report was showing bookings on holiday dates.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the report to exclude bookings on holiday dates.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21783" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21783">21783</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>EMS Desktop Client &gt; Email Confirmations</em>
+                        </p>
+                        <p>When sending email confirmations with systems that had the "Display Messages as HTML" option activated, digits to the right of decimal were missing from the emails.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified email triggers so that digits are no longer omitted from email confirmations in this situation.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17233" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17233">17233</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>EMS Desktop Client &gt; Campus &gt; Course Updates</em>
+                        </p>
+                        <p>Viewing course updates on the dashboard caused slowness.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified functionality so that users no longer experience slowness in this scenario.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 21145</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">NA</p>
+                    </td>
+                    <td>
+                        <p align="center">NA</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>CISCO TMS Service</em>
+                        </p>
+                        <p><span style="line-height: 1.4;">When users selected one of the bookings in the Cisco TMS Activity window and then clicked the Retry button, the following error occurred:&#160;</span>
+                        </p>
+                        <p><em>Conversion from string "Default" to type 'Integer' is not valid.</em>
+                        </p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the screen overlay so that the error no longer occurs and the Retry button works as expected.</p>
+                        <p><strong>Note:&#160;</strong>This fix is delivered as a new DLL and a new overlay script.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17826">17826</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>Web Deploy Only &gt; Create New Department</em>
+                        </p>
+                        <p>When&#160;creating new departments without logos, the&#160;error "Value cannot be null. Parameter name:s" occurred&#160;and prevented users from completing the task.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved issue so that users can now add departments without logos.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 20211</p>
+                        </div>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">☐</td>
+                    <td style="text-align: center;">☒</td>
+                    <td style="height: 17px;">
+                        <p><em>Upgrade from V43 to V44 (Event Coordinators Only)</em>
+                        </p>
+                        <p>When upgrading to V44, Event Coordinators experienced slow performance.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved issue so that upgrade does not produce slow performance.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 23062</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="height: 17px;">
+                        <h4>{{product_emsk}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 17px;width: 85px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;width: 65px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>{{product_emsk}} &gt; Log In via LDAP</em>
+                        </p>
+                        <p>Users were unable to log in to {{product_emsk}} when their system was set to use LDAP&#160;authentication.<span class="rangySelectionBoundary" style="line-height: 0;display: none;">﻿</span></p>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <p>Modified validations so that users can now successfully log in to {{product_emsk}} using LDAP Authentication</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22869" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22869">22869</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>{{product_emsk}} &gt; Booking </em><em>Check-In</em>
+                        </p>
+                        <p>The&#160;<strong>Check In</strong>&#160;button was missing from the Locate Person page.</p>
+                        <p>When checking into a reservation from the Make Reservation page, it appeared to hang and then the user was redirected to the main page.</p>
+                        <p>&#160;</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <p>Modified the display to show the&#160;<strong>Check In&#160;</strong>button so users&#160;can now check&#160;in to meetings from Locate Person when the option is configured.</p>
+                        <p>Modified functionality so that users' check-ins now succeed and&#160;the My Reservation page is refreshed such that the check-in option no longer shows&#160;for that reservation.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17854" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/17854">17854</a><br />            Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22861" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22861">22861</a></p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p><em>{{product_emsk}} &gt; Home Screen</em>
+                        </p>
+                        <p>The EMS logo was cut off.&#160;</p>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <p>Users can now see the EMS logo.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 15517</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <h4>EMS APIs</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td>
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 17px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p align="center">☒</p>
+                    </td>
+                    <td>
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="height: 17px;">
+                        <p>Running update calls on the following APIs produced an error:</p>
+                        <ul>
+                            <li>API_EMS_CreateReservation</li>
+                            <li>API_EMS_CreateWebRequest</li>
+                            <li>API_EMS_CreateWebUser</li>
+                            <li>API_EMS_EditReservation</li>
+                            <li>API_EMS_EditWebUser</li>
+                            <li>API_EMS_GetWebUserDetails</li>
+                            <li>API_EMS_GetWebUsers</li>
+                            <li>API_EMS_UpdateWebUserOptions</li>
+                        </ul>
+                    </td>
+                    <td style="width: 398px;height: 17px;">
+                        <p>Modified functionality so the update runs successfully.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug 22721</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="July2016"></a>July 2016</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading"><strong>2016.06.27.0</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.229</strong>
+                    </td>
+                    <td class="mt-noheading"><strong>44.0.064.65</strong>&#160;(Fixes for Virtual EMS are applied through the patch.)</td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 82px;height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Authentication to VEMS via SAML</em>
+                        </p>
+                        <p>After upgrading to V44, users were unable to log into VEMS via SAML. This occurred because customer settings for SAML authentication for remote access were not properly carried over during the upgrade process.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p><span style="color: black;">Modified functionality to ensure that remote users can successfully authenticate as in previous installs.</span>
+                        </p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=20238">20238</a>&#160;redacted</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Booking Start Times</em>
+                        </p>
+                        <p>Booking start times displayed as&#160;60 minutes off for the cities of Luanda, Santiago, and Lagos. This was due to an incorrect minute calculation based how time zones were calculated in a lookup table in VEMS.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p><span style="color: black;">Modified the table containing timezones so that differences in time zones for these locations&#160;are correctly calculated and display properly in VEMS. </span>
+                        </p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>Bug&#160;<a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=20855">20855</a></p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 79px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Authentication to EMS via LDAP SSL</em>
+                        </p>
+                        <p>When using LDAP SSL to sign on to the EMS Desktop Client, issues occurred with authentication.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified functionality to ensure that users must authenticate when logging in via LDAP SSL.</p>
+                        <p>Additionally, enabled functionality as described in <a title="https://success.emssoftware.com/EMS_V44/Using_EMS/EMS_Desktop_Client/010_Getting_Started_with_EMS/010_Starting_EMS">this topic</a> so that users (even with EMS Web Deploy)&#160;can change the server and database they connect to by right-clicking on the About EMS Enterprise or Version # option on the signon window.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=20303">20303</a>, <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/20339?fullScreen=false" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/20339?fullScreen=false">20339</a></p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="June2016"></a>June 2016</strong></span>
+        </h3>
+        <table border="1" cellpadding="1" cellspacing="1" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading"><strong>Patch Number</strong>
+                    </td>
+                    <td class="mt-noheading"><b>Build Number</b>
+                    </td>
+                    <td class="mt-noheading"><b>{{product_vems}}</b>
+                    </td>
+                    <td class="mt-noheading"><b>EMS API</b>
+                    </td>
+                    <td class="mt-noheading"><strong>EMS Email Notification Service</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading">
+                        <p><strong>2016.06.03.0</strong>
+                        </p>
+                    </td>
+                    <td class="mt-noheading">
+                        <p><strong>44.0.227</strong>
+                        </p>
+                    </td>
+                    <td class="mt-noheading">
+                        <p><strong>44.0.060.64<br />            (</strong>Fixes for Virtual EMS are applied through the patch.)</p>
+                    </td>
+                    <td class="mt-noheading">
+                        <p><strong>2.0.0.2</strong>
+                        </p>
+                    </td>
+                    <td class="mt-noheading">
+                        <p><strong>43.0.385</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_vems}}</h4>
+            &#160;&#160;&#160;</td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 79px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>New Reservation&gt;Room Details&gt;list or grid view</em>
+                        </p>
+                        <p>When creating a reservation&#160;by accessing room availability from Room Details and viewing in list or grid view, the billing code did not show even when the room was set to require users to enter a charge code.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Resolved the issue so that charge codes properly display in the room details regardless of view or path user followed during the booking process.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>19284 &amp;&#160;19125 (V44)&#160;<br />            19285 &amp; 17908&#160;&amp; 19283&#160;(V43)</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 5px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>Edit Booking</em>
+                        </p>
+                        <p>When editing an event that had booking rules to allow new bookings after a specific date, and the event was later than the current system date, the following error occurred:</p>
+                        <p>"You have violated the first rule."</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Modified functionality to properly compare the event date against the booking rule and the error no longer occurs.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>19347 (V44)<br />            17100 (V43)</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="width: 82px;height: 5px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 79px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Edit Reservation &gt; Virtual tab</em>
+                        </p>
+                        <p>When editing a reservation in a new Reservation Wizard session on systems that used&#160;LDAP, and assigning a web user to the event, EMS could throw an error or the user's web process templates might not display in the dropdown if that user was not part of an LDAP group, even if the user had been properly linked to the templates. This was due to validations during new Reservation Wizard sessions against LDAP-enabled databases.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed validations to allow non-LDAP web users to be assigned during new Reservation Wizard sessions so the error no longer occurs and their authorized web templates are available.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17627 &amp; 17681 (V44)<br />            17884 (V43)</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>EMS API &gt; AddWebUser</em>
+                        </p>
+                        <p>When using the API "AddWebUser" to add web users to the database, validations did not check that the customer had enough licenses for all products, such as EMS Campus, Enterprise, District, and Legal. The API was only checking licenses for EMS Workplace.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed the API to validate licensing for all products where web users must be licensed.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>19682</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>EMS Web Deploy Login</em>
+                        </p>
+                        <p>When upgrading using the <a target="_blank" title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_EMS_Desktop_Client_Web_Deployment">web deploy method</a> to push updates to workstations, customers wanted the option to connect to a different database.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p><strong>Enhancement</strong>
+                        </p>
+                        <p>Added an option at the login screen to change databases (by right-clicking the "About EMS" link.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>20339</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p style="text-align: center;">☒</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p style="text-align: center;">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Russian Timezones</em>
+                        </p>
+                        <p>Booking in some Russian timezones&#160;did not reflect that they no longer user daylight savings time. Zones affected: Baku, Ekaterinberg, Kyiv, Togliatti.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Updated timetables in EMS to ensure that the new timezone settings appear in all areas of EMS.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>20694 (V44) and 20048 (V43)</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>EMS Campus</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;"><strong>Build</strong>
+                    </td>
+                    <td style="width: 79px;height: 5px;"><strong>Patch</strong>
+                    </td>
+                    <td style="width: 476px;height: 5px;"><strong>Reported Issue</strong>
+                    </td>
+                    <td style="width: 416px;height: 5px;"><strong>Resolution</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 5px;text-align: center;">☐</td>
+                    <td style="width: 79px;height: 5px;text-align: center;">☒</td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>Academic Browser &gt; Get Data</em>
+                        </p>
+                        <p>Some information on the User Defined Fields (UDFs) tab in Course Details was incorrect. This was due to how EMS was&#160;synchronizing two different academic terms on two (respective) databases. If the user changed course information in the UDFs on one, the edits were incorrectly overwriting similar values on the other database. The synchronization&#160;logic was not properly comparing the database domains and academic terms.</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Changed how data is synchronized so that values that have different database domains and academic terms do not overwrite each other.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>15750 (V44)</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="width: 82px;height: 17px;">
+                        <h4>Glance</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;"><strong>Build</strong>
+                    </td>
+                    <td style="width: 79px;height: 17px;"><strong>Patch</strong>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><strong>Reported Issue</strong>
+                    </td>
+                    <td style="width: 416px;height: 17px;"><strong>Issue Resolution</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 82px;height: 17px;">
+                        <p>&#160; &#160; &#160;☒</p>
+                    </td>
+                    <td style="width: 79px;height: 17px;">
+                        <p>&#160; &#160;☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p>Glance displayed&#160;the booking group and event name by default. Users could designate a booking as private by configuring a status in the EMS Client. Only this single status could be used to designate a private booking.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p><strong><em>Enhancement<br />            ​</em></strong>It is now possible to designate a private booking with 'Event Type' as well as status. This enhancement provides&#160;more flexibility in configuring EMS Glance.</p>
+                        <p><strong>Note:</strong>&#160;Requires latest Ems.Glance.dll and EMS Glance web installer</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18861</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="May2016"></a>May&#160;2016</strong></span>
+        </h3>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 311px;height: 19px;">
+                        <dl>
+                            <dt><strong>Patch Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 261px;">
+                        <dl>
+                            <dt><strong>Build Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 341px;"><strong>Virtual EMS</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 311px;height: 5px;">
+                        <p><strong>2016.05.16.0</strong>
+                        </p>
+                    </td>
+                    <td style="height: 5px;width: 261px;">
+                        <p><strong>44.0.220&#160; </strong>&#160;</p>
+                    </td>
+                    <td style="height: 5px;width: 341px;">
+                        <p>Fixes for Virtual EMS are applied through the patch.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_vems}} &#160;&#160;</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <p><strong>Build</strong>
+                        </p>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <p><strong>Patch</strong>
+                        </p>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt>&#160;</dt>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt>&#160;</dt>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>My Account&gt;Edit My Account&gt;Delegates.&#160;</em>When searching for existing&#160;delegates to act as, the following error occured:</p>
+                        <p>"Unhandled<span style="line-height: 1.4;"> callback </span>searchfordelegates<span style="line-height: 1.4;">"</span></p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Changed how the database locates delegates in the EMS Desktop client so that they are successfully located from VEMS and the error no longer occurs.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18595 and 14365</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;"><em>New Recurring Meeting&gt;Add to my calendar.</em>&#160;
+            <p>When creating a recurrent meeting&#160;and adding it to the user's Outlook calendar, and then using the EMS Desktop Client to change the room,&#160;the new location did not show the update&#160;in the user's Outlook calendar when opened "in series" rather than as "This Occurence."&#160;</p></td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Modified how changes to the booking update in Outlook so that the room change displays properly in the "in series" view.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18657</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>My Account&gt;User Options&gt; My Favorites.&#160;</em>
+                        </p>
+                        <p>When setting favorites and filtering by buildings&gt;floors, all floors were displaying regardless of the filter setting.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Modified functionality so that the filter is properly applied and only appropriate information displays.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18658</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>Browse&gt;Browse for Space.&#160;</em>
+                        </p>
+                        <p>When viewing bookings from the grid view, bookings made in the EMS Desktop Client with "info only"&#160;web process templates did not display although they displayed in the list view.&#160;&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Modified functionality so that this type of booking properly displays in the grid view.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18897</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">☐</td>
+                    <td style="width: 63px;height: 5px;">☒</td>
+                    <td style="width: 476px;height: 5px;">
+                        <p><em>Reservation Wizard.</em>
+                        </p>
+                        <p>When booking without a template, the Reservation Wizard incorrectly listed booked rooms as available.</p>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <p>Modified validations so that searching for rooms properly filters out unavailable rooms.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="width: 48px;height: 5px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;"><strong>Build</strong>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>New Reservation&gt;Add Services&gt;Selections</em>
+                        </p>
+                        <p>During the reservation process, when&#160;making changes to Selections on the SOD level, the History tab was not displaying the user's&#160;changes.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified functionality so that changes to this type of service order correctly update on the History tab.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>14523</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Upgrading database using script.&#160;</em>
+                        </p>
+                        <p>When upgrading this way&#160;instead of using the&#160;server installer.exe, some WebText records were improperly deleted.&#160;&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed how stored processes are updated during the upgrade to ensure that the WebText records are not deleted during upgrade.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18265</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Configuration&gt;Resources&gt;Select a Resource&gt;Groupings.</em>
+                        </p>
+                        <p>When users had EMS set to filter resource groups, the filter was not applied. For example, when&#160;creating a new reservation and adding new resources to a service order, the Grouping drop down did not filter the list.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved how filters are applied to ensure that resource groupings are appropriately filtered according to user settings.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18862</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Sync Courses from SIS.</em>
+                        </p>
+                        <p>EMS was not properly syncing courses from SIS because a stored procedure was looking&#160;at the EMS Course Type ID instead of SIS Course Type ID. &#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed Stored procedure to look at SIS Course Type ID and ensure that courses properly sync between EMS and SIS.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18977</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports&gt;Daily&gt;Setup Worksheet</em>
+                        </p>
+                        <p>When users ran this report, their sort order settings for categories&#160;did not apply in some cases.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed the report generation logic to ensure that users' sort order settings are properly applied.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18210</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p style="text-align: center;">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p style="text-align: center;">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><span style="line-height: 1.4;">When using the</span>&#160;AddWebUser API to add users, the following error displayed even when the Web User Count was not exceeded.&#160;</p>
+                        <p><span style="line-height: 1.4;">"Active Web User cannot be added. Web User count exceeded."</span>
+                        </p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the API to correctly compare the number of active users in the database to the set limit so that the error message only appears when appropriate.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18193</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="April2016"></a>April&#160;2016</strong></span>
+        </h3>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 179px;height: 19px;">
+                        <dl>
+                            <dt><strong>Patch Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 163px;">
+                        <dl>
+                            <dt><strong>Build Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 590px;"><strong>{{product_vems}}</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 179px;height: 5px;">
+                        <p><strong>2016.04.06.0</strong>
+                        </p>
+                    </td>
+                    <td style="height: 5px;width: 163px;">
+                        <p><strong>44.0.212</strong>
+                        </p>
+                    </td>
+                    <td style="height: 5px;width: 590px;">
+                        <p>Fixes for Virtual EMS are applied through the patch.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">NA</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p>NA</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Edit Booking.&#160;</em>Changes to the room(s) for&#160;a recurrent meeting via Outlook did not update correctly in the user's Outlook calendar.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changes to the location of a recurrent meeting in Outlook now properly update in the user's Outlook calendar.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>12970</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Custom Booking Script.&#160;</em>Running a custom VBA script to book space bypassed several booking rules and enabled the script to book unavailable space.</td>
+                    <td style="width: 416px;height: 17px;">Reinforced security validation to ensure that running such a script can no longer bypass any booking rules.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Login (LDAP).&#160;</em>Logging into VEMS when configured to use LDAP&#160;SSL&#160;could result&#160;in the error, "User not found."</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed LDAP SSL&#160;login validations to ensure that authorized users successfully authenticate and the error no longer occurs.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>16949</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Mobile </em><em>VEMS.&#160;</em>Attempting to access Mobile VEMS on a web browser&#160;resulted<span style="line-height: 1.4;">&#160;in the error, "There was a problem attempting to complete the action you requested. Please try again at a later time."</span></td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the issue so that users can now access Mobile VEMS&#160;<span style="line-height: 1.4;">with no errors.</span></p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17299</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Reservations &gt; Room Request.&#160;</em>When making a new reservation, the Info tab on the Room Request page was unavailable when the Administrator disabled help text.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the issue so that the Info tab remains available during new reservations regardless of the help text setting.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17320</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Mobile VEMS &gt; My Bookings.&#160;</em>Check-ins to a reservation on Mobile VEMS&#160;on the MobileBrowseReservations.aspx page&#160;did not display properly.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the display to properly show&#160;mobile check-ins.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17422</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Reservations &gt; My Requests.&#160;</em>Viewing My Requests caused slow performance when Administrator settings enabled web users to be associated with groups via external reference on larger databases (5M+ reservations).</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Streamlined data processing so that performance is no longer slowed by this setting.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>13139</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;text-align: center;">☐</td>
+                    <td style="width: 63px;height: 17px;text-align: center;">☒</td>
+                    <td style="width: 476px;height: 17px;"><em>Reservations &gt; Book an Event &gt; Info tab. &#160;</em>Changes administrators made to web text for booking templates was not updating to display properly in Virtual EMS. This could result, for example, in no notes on the info tab for the booking.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the issue so administrators'&#160;latest changes to web text for booking templates display properly to Virtual EMS users.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/web/wi.aspx?pcguid=437a47fa-3f18-4952-acb0-2bbcddf9e5c1&amp;id=18227">18227</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">☐</td>
+                    <td style="width: 63px;height: 17px;text-align: center;">☒</td>
+                    <td style="width: 476px;height: 17px;"><em>Booking &gt; Edit Attendee Email:&#160;</em>When users added attendee's emails to a booking, the format of the email address was not validated unless services were also added to the booking, allowing bookings to be created with invalid email addresses.</td>
+                    <td style="width: 416px;height: 17px;">Changed when email addresses are validated so that this occurs regardless of whether services are added during the booking process.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">&#160;</td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Reports &gt; Daily &gt; Event Schedule​ &gt;&#160;Print Preview.</em>&#160;Previewing reports on systems upgraded from V42&#160;to V43 and then V44 could cause the error, "Error Invalid object name 'dbo.ems_vwBookings'."</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the script that generates the report&#160;preview to properly display the report and no longer throws an error.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>16362</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Reservations.&#160;</em>When booking events in&#160;a different timezone than the Web Deploy Server, times in the Academic Book and EMS&#160;Navigator displayed incorrectly.&#160;</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Synchronized&#160;time zones between the client and the server to properly display in the user's time zone.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>16489</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>File &gt; Change Databases</em>.&#160;Syncing&#160;with Campus databases using a SIS connection caused the system to hang and sync failed.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved issue so that sync with Campus databases completes without delay.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17322</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Reservation Wizard (with LDAP).&#160;</em>After enabling LDAP in the client or in VEMS&#160;and restarting, using the Reservation Wizard for the first time&#160;to&#160;assign&#160;a web&#160;user or to edit&#160;a reservation&#160;caused&#160;errors and users' booking templates were unavailable.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the issue so that first-time Reservation Wizard edits after LDAP initiation do not throw errors and web user's booking templates are available.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17627 &amp; 17681</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports &gt; Daily &gt; Event Schedule​. </em>Running sales reports with large date ranges and SODs&#160;threw an error.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Changed calculations to compute the SOD totals properly and prevent the error.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/16482?fullScreen=false">16482</a>
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>APIs.&#160;</em>Additional APIs were requested&#160;as a feature enhancement.</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Added the following APIs to the EMS API&#160;library.</p>
+                        <ul>
+                            <li><strong>AddServiceOrder</strong>: Allows new service orders to be added to bookings.</li>
+                            <li><strong>AddServiceOrderDetail</strong>: Allows new service order details (resources) to be added to existing service orders</li>
+                            <li><strong>UpdateServiceOrder</strong>: Allows for edits to service orders.</li>
+                            <li><strong>UpdateServiceOrderDetail</strong>: Allows for edits to service order details (resources).</li>
+                            <li><strong>DeleteServiceOrderDetail</strong>: Allows deletion of service order details (resources).</li>
+                            <li><strong>DeleteServiceOrder</strong>: A<span style="line-height: 1.4;">llows deletion of service orders.</span></li>
+                            <li><strong>AddReservation5</strong>:&#160;<span style="line-height: 1.4;">Allows reservations and bookings&#160;tied to a Web User,&#160;including&#160;Billing Reference/PO Numbers and setup count.</span>&#160;</li>
+                            <li><strong>GetCategories</strong>: Retrieves category information.</li>
+                            <li><strong>GetCategoryStates</strong>: Retrieves categories for the building ID entered.</li>
+                            <li><strong>GetResources</strong>: Retrieves&#160;active resource information for the category entered.</li>
+                            <li><strong>GetPricingMethods</strong>: Retrieves&#160;active pricing methods to use with Service Order.</li>
+                            <li><strong>ValidateBilling</strong>: Checks that&#160;Billing Reference,&#160;PO Number, or both are valid.</li>
+                        </ul>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>15148</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>EMS Campus</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Optimization.&#160;</em>Publishing term&#160;optimization scenarios with pre-assigned "TBD"&#160;rooms resulted in a "Scenario is invalid due to conflicts..." error even though the "TBD" room type&#160;should have allowed scheduling conflicts.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified validation to take into account the "TBD" room type and allow scheduling conflicts so that the error no longer presents.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>17708</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_emsk}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Simultaneous VEMS and Kiosk Bookings.&#160;</em>When a VEMS user and a Kiosk user both&#160;booked&#160;the same room at the same time, EMS failed to show the proper&#160;booking conflict error message,&#160;and enabled the Kiosk user to create the reservation in "Conflict" status and multiple users could check-in.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified validation so that bookings in conflict properly alert both users and do not allow the booking nor check-in.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>16453 and 16527</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 48px;height: 17px;">
+                        <h4>EMS Email Notification Service</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;"><strong>Build</strong>
+                    </td>
+                    <td style="width: 63px;height: 17px;"><strong>Patch</strong>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><strong>Reported Issue</strong>
+                    </td>
+                    <td style="width: 416px;height: 17px;"><strong>Issue Resolution</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">☒</td>
+                    <td style="width: 63px;height: 17px;">&#160;☐</td>
+                    <td style="width: 476px;height: 17px;">
+                        <p>When users deleted a service order that had a notification rule in place, the system sent&#160;continuous&#160;emails in error.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified how the system handles service order&#160;cancelations so that notifications are only sent once.&#160;&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>20433</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 73px;height: 17px;">
+                        <h4>{{product_emso}}</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 73px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 81px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 502px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 73px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 81px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 502px;height: 17px;"><em>Opening Outlook emails</em> saved in a local folder more than once caused the error, "We can't open '<em>filename''. </em>It's possible the file is already open, or you don't have permissions to open it."</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the issue so that users can open locally saved Outlook emails repeatedly with no errors.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>18163</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 73px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 81px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 502px;height: 17px;"><em>Reservations &gt; Services.&#160;</em>Service items were visually not aligned with their descriptions.</td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the view so that service items align&#160;with their descriptions.</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>14621</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="March2016"></a>March&#160;2016</strong></span>
+        </h3>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 179px;height: 19px;">
+                        <dl>
+                            <dt><strong>Patch Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 565px;">
+                        <dl>
+                            <dt><strong>Build Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="height: 19px;width: 490px;">
+                        <dl>
+                            <dt>{{product_vems}}</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 179px;height: 5px;">
+                        <p><strong><span>44.0.197.0</span></strong>
+                        </p>
+                    </td>
+                    <td style="height: 5px;width: 565px;">
+                        <p><strong>2016.02.25.0</strong>
+                        </p>
+                    </td>
+                    <td style="height: 5px;width: 490px;">
+                        <p>Fixes for Virtual EMS are applied through the patch.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><span style="line-height: 1.4;"><em>Log In:&#160;</em>&#160;Logging into VEMS&#160;after upgrade to V44&#160;could cause the error, "There was a problem attempting to complete the action you requested. Please try again at a later time." </span>
+                        </p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified login functionality to ensure that key authentication succeeds&#160;and the error no longer presents on upgraded systems.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Virtual EMS Mobile: </em>Check In functionality was not available in Virtual EMS Mobile when dealing with certain time zones, because the stored procedure did not account for GMT time.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Stored procedure has been updated to account for GMT time. Now able to use check in functionality in Virtual EMS Mobile.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Booking Templates:&#160;</em>When a Web Process Template was set&#160;in EMS to not allow new bookings on or after a specific date, and then the Date, Time, or Room was changed for a booking based on that template in VEMS, the error "You violated your allowed booking window" presented&#160;even when the changes were not in violation.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Resolved the validation so that the incorrect error message no longer appears.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_dtc}}</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports &gt; Daily &gt; Setup Worksheet</em>: When running the setup worksheet categories were not being displayed unless the “Limit Bookings to those with Details in Selected Categories” was selected.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>The Setup Worksheet will now run and show all the selected categories information without limiting to those in selected categories.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports &gt; Statistics &gt; Room Utilization</em>: When running the report for a period of time that included a Holiday or Building Closure, hours when the building was closed were incorrectly displaying on the report.&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Holidays and Building Closures are accounted for in the Room Utilization report and no longer display on the report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Time Zone</em>: Brazil has two Time Zones, EMS only accounted for the Brazil Time Zone.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Brazil Summer Time Zone has been added to EMS to account for both Brazilian Time Zones.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports &gt; Daily &gt; Setup Worksheet</em>: When running a Setup Worksheet with just UDFs and Notes, the report would have overlapping information.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>The Setup Worksheet will no longer have any overlapping information.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Custom Queries:&#160;</em>Running a custom query in&#160;the EMS Desktop Client without a database server connection caused the error,&#160;<span>"a network related or instance specific error occurred while establishing a connection to SQL Server.</span></p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified data connections to ensure that this error no longer presents and custom queries successfully complete.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><span><em>PAM Web Service:&#160;</em>Application pool errors for PAM were&#160;crashing web servers:&#160;</span>"The Autodiscover service couldn't be located".<span> These errors occurred when an&#160;invalid email address was encountered.</span></td>
+                    <td style="width: 416px;height: 17px;">Modified application pool &#160;behavior so that it&#160;no longer causes web servers to crash.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>EMS&#160;Navigator, VEMS Room Wizard:&#160;</em>&#160;When users moved a booking with a resource to a room that excluded those resources, they were not being alerted.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">Modified field behavior on the EMS Desktop Client Navigator screen and on the VEMS Room Wizard to ensure that users are appropriately alerted that the room change was performed but that the resource is now unavailable. Resources remain in the booking with Quantity set to zero, highlighted in red to further alert users.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Billing &gt; Invoices &gt; Invoicing: </em>Invoicing reports sorted by Subtotal or Grand Total were sorted incorrectly.</td>
+                    <td style="width: 416px;height: 17px;">Resolved report sorting to correctly sort by Subtotal or Grand Total.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Web Security Templates:&#160;</em>Client Web Security Templates had an "Allow Check-In/Check-Out" option that needed to be simplified to "Allow Check-In."</td>
+                    <td style="width: 416px;height: 17px;">Modified the field behavior for Web Security Templates so that the option is simply for "Allow Check-In."</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Custom Reports:&#160;</em>Running custom reports could produce an error due to Daylight Savings Time.&#160;</td>
+                    <td style="width: 416px;height: 17px;">Modified how EMS handles Daylight Savings Time&#160;for reports so that the error no longer occurs and custom reports execute successfully.&#160;</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Service Order Notifications:&#160;</em>Users were unable to add group email addresses to these notifications.&#160;</td>
+                    <td style="width: 416px;height: 17px;">Changed&#160;the Service Order Notification to allow group email addresses.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Sending Confirmations Hangs:&#160;</em>Clicking the Confirm button to send confirmation caused slowness for some users.</td>
+                    <td style="width: 416px;height: 17px;">Streamlined system validations to eliminate&#160;processing delays so that there is no slowness when users send confirmations.</td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><em>Booking Check-In:&#160;</em>This field was unavailable for some users.&#160;</td>
+                    <td style="width: 416px;height: 17px;">Included a recent fix to this issue in the March build to resolve the issue and ensure that the Booking Check-In field is available when appropriate.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 87px;height: 17px;">
+                        <h4>EMS Campus</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 87px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 95px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 565px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 492px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 87px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 95px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 565px;height: 17px;">
+                        <p><em>Campus:&#160;</em>Running the Instructor Back to Back Report within a specified date range, all departments, course types, buildings, and room types selected would crash EMS.</p>
+                    </td>
+                    <td style="width: 492px;height: 17px;">
+                        <p>EMS runs the Instructor Back to Back Report without any crashes or slowness pulling the data.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td colspan="4" style="width: 87px;height: 17px;">
+                            <h4>EMS Glance</h4>
+                            <dl>
+                                <dt>&#160;</dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 87px;height: 5px;">
+                            <dl>
+                                <dt><strong>Build</strong>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 95px;height: 5px;">
+                            <dl>
+                                <dt><strong>Patch</strong>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 565px;height: 5px;">
+                            <dl>
+                                <dt><strong>Reported Issue</strong>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 492px;height: 5px;">
+                            <dl>
+                                <dt><strong>Issue Resolution</strong>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 87px;height: 17px;">
+                            <p align="center">☒</p>
+                        </td>
+                        <td style="width: 95px;height: 17px;">
+                            <p align="center">☐</p>
+                        </td>
+                        <td style="width: 565px;height: 17px;">Customers needed a wider range of resolution options to accommodate&#160;devices using EMS Glance. &#160;</td>
+                        <td style="width: 492px;height: 17px;">Added CSS files to enable&#160;the following resolution options:
+            <div><ul><li>1920x1080</li><li>1660x900</li><li>800x600</li></ul></div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 100px;height: 17px;">
+                        <h4>EMS Professional</h4>
+                        <dl>
+                            <dt>&#160;</dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 92px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 455px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 391px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 100px;height: 17px;">
+                        <p align="center">☒</p>
+                    </td>
+                    <td style="width: 92px;height: 17px;">
+                        <p align="center">☐</p>
+                    </td>
+                    <td style="width: 455px;height: 17px;"><em>Installer:&#160;</em>Upgrading from V43 to V44&#160;via&#160;the EMS Professional Installer without first backing up the database&#160;caused an error,&#160; "Error converting nvarchar to nvarchar".&#160;</td>
+                    <td style="width: 391px;height: 17px;">Modified validations so that the upgrade succeeds without presenting error.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 48px;height: 17px;">
+                        <h4>{{product_mobile}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;"><strong>Build</strong>
+                    </td>
+                    <td style="width: 63px;height: 17px;"><strong>Patch</strong>
+                    </td>
+                    <td style="width: 476px;height: 17px;"><strong>Reported Issue</strong>
+                    </td>
+                    <td style="width: 416px;height: 17px;"><strong>Issue Resolution</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">&#160; &#160; ☐</td>
+                    <td style="width: 63px;height: 17px;">&#160; ☒</td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>tblTimeZone&#160;(database table)</em>
+                        </p>
+                        <p>A custom script resulted in duplicate timezones in this table, and the following error occured:</p>
+                        <p>"An item with the same key has already been added."&#160;</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Modified the table to properly interpret custom scripts so that duplicate records are not created and the error no longer occurs.&#160;</p>
+                        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap" title="Conditional text (pro member only)">
+                            <p>20310 (V44)<br />            20307 (V43)</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><span class="mt-color-669933"><strong><a name="February2016"></a>February 2016</strong></span>
+        </h3>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td style="width: 20%;height: 19px;">
+                        <dl>
+                            <dt><strong>Patch Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 40%;height: 19px;">
+                        <dl>
+                            <dt><strong>Build Number</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 40%;height: 19px;">
+                        <dl>
+                            <dt><strong>{{product_vems}}</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;height: 5px;">
+                        <p style="text-align: center;"><strong>2016.02.11.0</strong>
+                        </p>
+                    </td>
+                    <td style="width: 40%;height: 5px;">
+                        <p><strong>44.0.175</strong>
+                        </p>
+                    </td>
+                    <td style="width: 40%;height: 5px;">
+                        <p>Fixes for Virtual EMS are applied through the patch.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_vems}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center"><span><span>☒</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Login</em>: Following an upgrade, users received an error when attempting to log in to Virtual EMS.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Logging into Virtual EMS no longer produces an error.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tbody>
+                <tr>
+                    <td colspan="4" style="width: 1051px;height: 17px;">
+                        <h4>{{product_dtc}}</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 5px;">
+                        <dl>
+                            <dt><strong>Build</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 63px;height: 5px;">
+                        <dl>
+                            <dt><strong>Patch</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 476px;height: 5px;">
+                        <dl>
+                            <dt><strong>Reported Issue</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td style="width: 416px;height: 5px;">
+                        <dl>
+                            <dt><strong>Issue Resolution</strong>
+                            </dt>
+                        </dl>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center"><span><span>☒</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>Reports</em>: Running reports using&#160;the <em>Display Messages as HTM</em>L feature for messages produced an error.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>Reports can now use the <em>Display Messages as HTML</em> feature without error.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center"><span><span>☒</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>EMS Desktop Client Web Deploy</em>: The EMS Desktop Client Web Deploy produced&#160;an error if configured to connect via HTTPS.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>The EMS Desktop Client Web Deployment can now be connected through HTTPS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center"><span><span>☒</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em>EMS Professional Desktop Client Web Deploy</em>: When an EMS&#160; user attempted to log in to EMS Desktop Client installed via EMS Desktop Client Web Deploy, it would produce an error.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>EMS Professional no longer produces an error after being installed via&#160;EMS Desktop Client Web Deploy.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 48px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;height: 17px;">
+                        <p align="center"><span><span>☐</span></span>
+                        </p>
+                    </td>
+                    <td style="width: 476px;height: 17px;">
+                        <p><em><span>EMS Professional Upgrade</span></em>: The initial release of the EMS Professional Server Install was not upgrading the databases and instead produced an error message stating that the databases were already upgraded.</p>
+                    </td>
+                    <td style="width: 416px;height: 17px;">
+                        <p>The EMS Professional Server Installer now upgrades the databases.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>&#160;</div>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

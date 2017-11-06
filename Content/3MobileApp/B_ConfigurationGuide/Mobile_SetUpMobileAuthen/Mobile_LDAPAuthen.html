@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="3124" MadCap:lastWidth="1490" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">LDAP Authentication</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:annotation MadCap:createDate="2017-10-24T15:19:11.3737105-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is not listed in the MindTouch guide for Mobile Install/Config. Need to determine if topic should be included in documentation or archived." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:19:12.0132053-06:00">LDAP</MadCap:annotation> Authentication</h1>
+        <p>Follow the steps in this section to authenticate your users via the Lightweight Directory Access Protocol (LDAP).&#160;After successful connection to the platform API, the user will log in following the scenario below:</p>
+        <ul class="mt-indent-1">
+            <li>The user will enter credentials on the Sign In screen and tap <strong>Sign In.</strong></li>
+            <li>{{product_mobile}}&#160;will send credentials to the EMS Platform Services.</li>
+            <li>EMS Platform Services will verify credentials against the configured LDAP provider.</li>
+            <li>EMS Platform Services will respond to the {{product_mobile}}.</li>
+            <li>User will be taken to the <strong>Home</strong> screen.</li>
+        </ul>
+        <p>If the credentials are missing when the user taps <strong>Sign In</strong>, an error message will display stating that fields are required. If the platform API is unable to verify the credentials, the mobile app will inform the user based on that response.</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To use LDAP authentication, you will</p>
+        <ul class="mt-indent-1">
+            <li>Configure you LDAP Provider</li>
+            <li>Test Your Configuration</li>
+            <li>Test Authentication</li>
+        </ul>
+        <h2>Configuring Your LDAP Provider</h2>
+        <p>1. Navigate to Platform Services admin portal (&#160;<a href="https://yourcompany.com/ems-platform-api" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>) and select Integrations&#160;from the sidebar. Select EMS Mobile and choose LDAP from everyday user authentication method dropdown.</p>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_ConfiguringLDAP_PlatfromServices.png" style="width: 659px;height: 618px;" />
+            <br />
+        </p>
+        <p>2. Navigate to the EMS Web App &gt;&#160;<strong>Admin Functions</strong>&#160;page,&#160;listed under your name in the upper right corner of the application.</p>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_ConfiguringLDAP_AdminFunctions.png" style="width: 827px;height: 319px;" />
+            <br />
+        </p>
+        <p>3. Tap the<strong> LDAP Configuration</strong> tab and complete all required LDAP information, and then <a title="Using LDAP Authentication for EMS Mobile">test your configuration</a>.</p>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_ConfiguringLDAP_TestConfiguration.png" style="width: 827px;height: 369px;" />
+            <br />
+            <br />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>This is the same process you use&#160;for <a title="LDAP Authentication">authenticating {{product_webapp}}&#160;with LDAP</a>. The EMS Platform Services&#160;API uses&#160;the same configuration information.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div if="user.seated" class="mt-style-conditional style-wrap">
+            <p>&#160;Section below is single-sourced from&#160;https://success.emssoftware.com/EMS_...</p>
+        </div><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/05-LDAP_Authentication")</pre>
+        <h2>Testing Your LDAP Configuration</h2>
+        <p>Assuming you have <a title="Installing the EMS Platform Services API">i</a>nstalled the EMS Platform Services&#160;e.g.&#160;<a href="https://yourcompany.com/ems-platform-api" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>, then you can test the configuration with a simple <span class="mt-font-size-11.0pt">curl</span> command:</p>
+        <blockquote>
+            <p>curl -X GET -H 'x-ems-consumer: MobileApp' <a class="link-https" href="https://ems.yourcompany.com/endpoint/api/v1/health" rel="freeklink" title="https://ems.yourcompany.com/endpoint/api/v1/health">https://ems.yourcompany.com/endpoint/api/v1/health</a></p>
+        </blockquote>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>You can also use the API's Swagger interface to accomplish this goal.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>You should see a portion of the JSON response that looks like this (unrelated details omitted for brevity):</p>
+        <blockquote>
+            <p>{<br />&#160;&#160;&#160; ...<br />&#160;&#160;&#160; "additionalProperties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authConfig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities":"ldap"&#160; // <span style="color: #0099cc;">&lt;-- these are the critical lines</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ui":"ldap"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</p>
+        </blockquote>
+        <h2>Testing Your LDAP Authentication</h2>
+        <p>Assuming you have installed the EMS Platform Services API at <span class="mt-font-size-11.0pt"><a class="link-https" href="https://ems.yourcompany.com/endpoint" rel="freeklink" title="https://ems.yourcompany.com/endpoint">https://ems.<em>yourcompany</em>.com/endpoint</a></span>, you can test the authentication with a simple <span class="mt-font-size-11.0pt">curl</span> command:</p>
+        <blockquote>
+            <p>curl -X POST -H 'x-ems-consumer: MobileApp' -H 'Content-Type: application/json' -d '{"username":"your_username", "password":"your_password"}' <a class="link-https" href="https://ems.yourcompany.com/endpoint/api/v1/authentication" rel="freeklink" title="https://ems.yourcompany.com/endpoint/api/v1/authentication">https://ems.yourcompany.com/endpoint...authentication</a></p>
+        </blockquote>
+        <p>...where <span class="mt-font-size-11.0pt">your<em>_username</em></span> and <span class="mt-font-size-11.0pt">your<em>_password</em></span> are your credentials.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><strong><span class="mt-font-size-11.0pt">api/v1/authentication</span></strong> is the endpoint within the API where your request must be sent.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

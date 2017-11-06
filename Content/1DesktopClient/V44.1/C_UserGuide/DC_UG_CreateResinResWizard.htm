@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="12259" MadCap:lastWidth="1160" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Create a Reservation in the Reservation Wizard</h1>
+        <p>To create a reservation using the Reservation Wizard, you must:</p>
+        <ul>
+            <li><a title="Reservations and Bookings"><MadCap:xref href="#MakingaReservationUsingtheReservationWizard">Making a Reservation Using the Reservation Wizard</MadCap:xref></a>
+                <ul>
+                    <li>
+                        <MadCap:xref href="#specifyeventdate">To set the event date and time information</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="#SelectEventLocation">To select the event location</MadCap:xref>
+                    </li>
+                    <li>
+                        <MadCap:xref href="#Specifyeventinformation">To specify the event information</MadCap:xref>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3><strong><a id="MakingaReservationUsingtheReservationWizard" name="MakingaReservationUsingtheReservationWizard"></a>Making a Reservation Using the Reservation Wizard</strong>
+        </h3>
+        <p class="mt-align-justify">The Reservation Wizard allows you to check for available space and make a reservation for an event. You can search for rooms that are available for a particular time on one day (a simple reservation with one booking) or on multiple days (a series reservation with multiple bookings). You can also create a series reservation by selecting one date and time, but multiple rooms. </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="NoteTipWarningText mt-align-justify"><strong>Note:&#160;</strong>The following procedure describes how to make a reservation by selecting values for the required and optional fields.</p>
+                        <ul>
+                            <li class="NoteTipWarningText mt-align-justify">If your EMS administrator has configured reservation wizard templates, then a Reservation Wizard Template dropdown list is displayed at the top of the Reservation Wizard. You can facilitate the making of a reservation in the Reservation Wizard by selecting the appropriate template from the list, which automatically sets the default values for many of the fields in the Reservation Wizard.</li>
+                            <li class="NoteTipWarningText mt-align-justify">If your job entails making multiple reservations that require the same information, and you are not using reservation wizard templates, then you can set your own default values for many of the fields in the Reservation Wizard.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><strong><a id="specifyeventdate" name="specifyeventdate"></a>To set the event date and time information:</strong>
+        </h3>
+        <ol>
+            <li class="mt-align-justify">On the EMS Desktop Client toolbar, click the <strong>Wizard </strong>icon. The Reservation Wizard page opens.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_SpecifyEventDate.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li class="mt-align-justify">If needed, use the scroll features on the top of the <strong>Calendar </strong>to open the calendar for a different month (&lt; or &gt;), or click a month at the top of the calendar to open a dropdown list from which you can select a different month. You can also click a year at the top of the calendar to open a dropdown list from which you can select a different year.</li>
+            <ul>
+                <li class="mt-align-justify">If the event dates do not follow a pattern, use one or more of the following options for entering a date; otherwise, go to the next step. Click to pick dates on the calendar. To select all five days in a work week, click in the blank space to the left of the week. To select all seven days in a week, double-click in the blank space to the left of the week.</li>
+            </ul>
+            <p class="mt-align-justify">&#160;<img src="Images/DC_UG_CreateResinResWiz_EventDate.png" /><![CDATA[  ]]><p>To select every occurrence of a specific day of the week for the displayed month (for example, all Tuesdays in November, 2012), click the heading (S, M, T, and so on) for the day. To select every occurrence of a specific day of the week shown (regardless if the day falls within the same month), double-click the heading (S, M, T, and so on) for the day. If you need to clear a single selected date, click the date again. To clear multiple selected dates in a single step, click Clear Month to clear all currently selected dates for the currently displayed month or click Clear All to clear all currently selected dates regardless of month or year.</p></p>
+            <ul>
+                <li class="mt-align-justify">If the event dates do follow a recurrent pattern, (for example, the third Friday of every month), click Date Pattern to open the Date Pattern dialog box and enter your event date information.The steps that you use to create a date pattern in EMS are very similar to the steps that you use to create a date pattern in Microsoft Outlook or in any other calendaring product.</li>
+            </ul>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_DatePattern.png" />
+        </p>
+        <ul>
+            <li class="mt-align-justify">As you specify the event dates, the Selected Dates tab is automatically updated with the selected dates. Dates that are closed are displayed in red on the Calendar tab, holidays are green. These are linked to information about the closure (in the Selected Dates tab, click Holidays). To remove the date your selection, open the Selected Dates tab, select the date, or CTRL-click to select multiple dates, and then click Remove. When you make a reservation for multiple dates, the process is easier if you first remove all holidays or closed dates from the list of selected dates; however, be very careful when selecting dates for removal as you are not prompted to confirm your selection before you click Remove.</li>
+        </ul>
+        <p>Viewing Information About a Holiday or Closed Date from the Calendar Tab</p>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_CalendarTab.png" />
+        </p>
+        <ol start="3">
+            <li>Specify the start time and end time for the event:</li>
+        </ol>
+        <p>• Select a time from the dropdown list for each field.</p>
+        <p>• Manually enter the time in each field. When you manually enter the time, you can use a shortcut. For example, for 9:00 am, you need to enter only “9a” and for 2:00 pm, you need to enter only “2p,” and so on. If you enter an end time that is earlier than the start time, then the system assumes that the end time is the next day and the phrase “Next Day” is displayed to the right of the End time field.</p>
+        <ol start="4">
+            <li> Specify Setup and Teardown times. To use the default setup and teardown times that your EMS administrator has assigned to the rooms in your system, leave Use Default selected. To override the default setup/teardown times, clear Use Default, select Minutes or Hours, and then enter your own setup and teardown times. Remember, setup and teardown times are the hours, or fractions of hours, that you add to the event time to allow staff to prepare a room for the event or to clean up after the event. For example, for a 30 minute setup time, you can enter 30 minutes or 0.5 hours.</li>
+            <li>Select the status for the event. Depending on the status that you select, for example, Tentative or Hold, you might be required to enter a reconfirm date. You can monitor reservations that must be reconfirmed on the Reconfirm Dates tab on the EMS Dashboard. See EMS Dashboard.</li>
+        </ol>
+        <p>&#160;</p>
+        <h3><strong><a id="Specifyeventtimeandstatus" name="Specifyeventtimeandstatus"></a>To specify the event time and status:</strong>
+        </h3>
+        <ol>
+            <li class="mt-align-justify">Specify&#160;the start time and end time for the event in one of two ways:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">Click the Time Picker icon to open a dropdown list from which you can select a time for each field</li>
+            <li class="mt-align-justify">Under the <strong>Time </strong>section, manually enter the start and end times from the dropdowns.&#160;If applicable, select the appropriate Time Zone for the event</li>
+        </ul>
+        <ol start="2">
+            <li class="mt-align-justify">Specify the Setup and Teardown times in one of two ways:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">To use the default setup and teardown times that your EMS administrator has assigned to the rooms in your system, leave the&#160;<strong>Use Default </strong>checkbox selected</li>
+            <li class="mt-align-justify">Override the default setup/teardown times by clearing the&#160;<strong>Use Default&#160;</strong>checkbox, and selecting <strong>Minutes or Hours</strong>, and entering your own setup and teardown times</li>
+        </ul>
+        <ol start="3">
+            <li class="mt-align-justify">Indicate the status for the event.</li>
+            <li class="mt-align-justify">Continue to select the event location.&#160;</li>
+        </ol>
+        <p class="mt-align-justify">&#160;</p>
+        <h3><strong><a id="SelectEventLocation" name="SelectEventLocation"></a>To select the event location:</strong>
+        </h3>
+        <p class="mt-align-justify">You have three options for selecting the event location, which are indicated on the first page of the Reservation Wizard:</p>
+        <ol start="1">
+            <li class="mt-align-justify"><strong>Standard:&#160;</strong>Use this option to display a list of all the available rooms that meet all the requested dates.&#160;</li>
+            <li class="mt-align-justify"><strong>Best Fit:&#160;</strong>Use this option if no one room can meet all the requested dates.&#160;The system lists rooms along with the number of bookings for which you can reserve the room. You can piece together the entire reservation using Best Fit, or just part of it.</li>
+            <li class="mt-align-justify"><strong>Specific Room:&#160;</strong>Use this option to confirm the availability and reserve of one specific room for the scheduled event.</li>
+        </ol>
+        <h3><em>To search for a standard room:</em>
+        </h3>
+        <ol>
+            <li class="mt-align-justify">Select <strong>Standard</strong>.</li>
+            <li class="mt-align-justify">Choose one of the following for room specifications:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify"><strong>Type </strong>is the class or category of the room, for example a meeting room, a workspace, and so on. Leave Type set to the default of (all) to search for all pre-configured room types or select a specific room type from the Type dropdown list.</li>
+            <li class="mt-align-justify"><strong>Floor </strong>is optional information when you are searching for a room. Leave Floor set to the default value of (all) to search for all pre-configured floors or select the floor from the Floor dropdown list.</li>
+            <li class="mt-align-justify"><strong>Setup Type</strong> is the physical layout or arrangement of a room, for example, rounds of 6 or theater-style. Leave Setup Type set to the default value of (all) to search for all pre-configured setup types or select the setup type from the Setup Type dropdown list.</li>
+            <li class="mt-align-justify"><strong>Setup Count</strong> is the anticipated attendance for the event. If you selected a specific setup type, then you must enter the setup count.</li>
+        </ul>
+        <ol start="5">
+            <li class="mt-align-justify">To select a Feature, open the <strong>Features </strong>tab, select the Feature, or CTRL-click to select the multiple features that the room must have.</li>
+            <li class="mt-align-justify">Click <strong>Next</strong>. Up to two tabs are displayed:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">The <strong>Available tab</strong>, which is the active tab and is always displayed, lists all the rooms that meet all your event criteria.
+
+    <ul><li class="mt-align-justify">If you have elected to show the Available All Day Indicator, the rooms that are available all day are marked with an asterisk (*).</li><li class="mt-align-justify">By default, the available rooms are sorted alphabetically by room code. If your EMS administrator has configured the rooms for your EMS implementation with a book sequence, then under Options, select Sort Rooms by Book Sequence to sort the rooms from lowest to highest book sequence. (If two rooms have the same sequence, then the rooms are sorted alphabetically by name within the sequence.)</li></ul></li>
+            <li class="mt-align-justify">The <strong>Conflicts tab</strong> is displayed only if there are rooms that are not available for the requested dates/times. Optionally, you can open the Conflicts tab to view the list of rooms that were not available for scheduling as well as list of the events that are scheduled for each room.</li>
+        </ul>
+        <ol start="7">
+            <li class="mt-align-justify">Select the room, or CTRL-click to select the multiple rooms that you are scheduling for the event.</li>
+            <li class="mt-align-justify">Click <strong>Room Info</strong> to open the Room Info dialog box and view information about the room properties, notes, Room URL, Building URL, setup type and capacity, and features. Click <strong>Close</strong>.</li>
+            <li class="mt-align-justify">Click <strong>Building Hours</strong> to open the Building Hours dialog box which displays the hours that the selected room/building is open on the reserved date. Click <strong>Close</strong>.</li>
+            <li class="mt-align-justify">Click the Move button (<strong>&gt;</strong>) to move the rooms to the Selected list.</li>
+            <li class="mt-align-justify">Click <strong>Next&#160;</strong>to <a title="Reservations and Bookings">specify the event information</a>.</li>
+        </ol>
+        <h3><em>To search for a best fit room:</em>
+        </h3>
+        <ol>
+            <li class="mt-align-justify">Select <strong>Best Fit</strong>.</li>
+            <li class="mt-align-justify">Leave <strong>Building </strong>set to the default value of (all), or select a specific Building, Area, or View in which to search for a best fit room.</li>
+            <li>
+                <p>If applicable, select the appropriate time zone for the event.</p>
+                <p>Note:&#160;Your selection on the Building dropdown list determines the options that are available on the Time Zone dropdown list. If you select (all) buildings, then you can select a time zone. If you select a specific building, then by default, a time zone is selected for the building, and you cannot select a different value.</p>
+            </li>
+            <li class="mt-align-justify">Choose one of the following for room specifications:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify"><strong>Type </strong>is the class or category of the room, for example a meeting room, a workspace, and so on. Leave Type set to the default of (all) to search for all pre-configured room types or select a specific room type from the Type dropdown list.</li>
+            <li class="mt-align-justify"><strong>Floor </strong>is optional information when you are searching for a room. Leave Floor set to the default value of (all) to search for all pre-configured floors or select the floor from the Floor dropdown list.</li>
+            <li class="mt-align-justify"><strong>Setup Type</strong> is the physical layout or arrangement of a room, for example, rounds of 6 or theater-style. Leave Setup Type set to the default value of (all) to search for all pre-configured setup types or select the setup type from the Setup Type dropdown list.</li>
+            <li class="mt-align-justify"><strong>Setup Count</strong> is the anticipated attendance for the event. If you selected a specific setup type, then you must enter the setup count.</li>
+        </ul>
+        <ol start="5">
+            <li class="mt-align-justify">Open the <strong>Features tab</strong>, and then select the feature, or CTRL-click to select the multiple features that the room must have.</li>
+            <li class="mt-align-justify">Click <strong>Next</strong>. Up to two tabs are displayed:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">The <strong>Available tab</strong>, which is the active tab and is always displayed, has two lists. The list in the left pane is a list of all the rooms that meet some or all of your event criteria. The list in the right pane is a list of all the event dates that must be fulfilled.</li>
+            <li class="mt-align-justify">The <strong>Conflicts tab</strong> is displayed only if there are rooms that are not available for the requested dates. Optionally, you can open the Conflicts tab to view the list of rooms that were not available for scheduling for the event as well as list of the events that are scheduled for each room.</li>
+        </ul>
+        <p>Example of Best Fit Room Search Results</p>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_BestFit.png" />
+        </p>
+        <ol start="7">
+            <li class="mt-align-justify">Choose one or both of the following:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">Click <strong>Room Info</strong> to open the Room Info dialog box and view information about the room properties, notes, Room URL, Building URL, setup type and capacity, and features. Click <strong>Close</strong></li>
+            <li class="mt-align-justify">Click <strong>Building Hours </strong>to open the Building Hours dialog box which displays the hours that the selected room/building is open on the reserved date. Click <strong>Close</strong>.</li>
+        </ul>
+        <ol start="8">
+            <li class="mt-align-justify">Choose one of the following:</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="mt-align-justify">If one is available, select the single room that is available for all the requested dates, and then click the Move button (&gt;) to move the room to the <strong>Event Dates</strong> list.</li>
+            <li class="mt-align-justify">If a single room is not available, select a room that is available for some of your requested dates, and then click the Move button (&gt;) to move the room to the <strong>Event Dates</strong> list. Repeat this step as needed to fulfill all the event dates.</li>
+        </ul>
+        <ol start="9">
+            <li class="mt-align-justify">Click <strong>Next&#160;</strong>to <a title="Reservations and Bookings">specify the event information</a>.</li>
+        </ol>
+        <h3><em>Find a specific room:</em>
+        </h3>
+        <p class="mt-align-justify">You can use the <strong>Specific Room </strong>search to book a standard EMS room or a room or area that is not managed in EMS. An override room, or “override description,” is used to book an event in a space that has not been configured in your EMS system. For example, your EMS administrator might have configured an override room named “Other Area” in the Engineering building. To book an event in Dr. Wilson's office, which is a room that is not defined in EMS, in the Engineering building, you can select the “Other Area” room and specify “Dr. Wilson's Office” for the location. EMS does not track availability for events booked in override rooms; however, EMS reports on events that are scheduled in an override room just like any other event scheduled for any other room.</p>
+        <ol>
+            <li class="mt-align-justify">Select <strong>Specific Room</strong>. The Room Selector dialog box opens. </li>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_RoomSelector.png" />
+        </p>
+        <p>
+            <ol>
+                <li>To choose a room from list of all rooms in all available buildings, select (all) on the Building dropdown list; then select a room, and then click OK. To select a room in a specific building, area, or view, select it on the Building dropdown list, select the room, and then click OK.</li>
+                <li>In the Location field, enter the location of the override room, and then click Next skip the remaining steps in this subsection.
+
+</li>
+                <li>Click Next. If the event is scheduled for a single date and the room is available, then continue. In all other cases, (for example, the event is scheduled for a single date but the room is not available or it is a multiple date event), the Available tab opens. This tab lists all the event dates for which the specific room is available. You can open the Conflicts tab to view the list of dates for which the specific room is not available as well as list of the events that are scheduled for the room.
+</li>
+                <li> Optionally, do one or both of the following; otherwise, go to the next step.
+
+</li>
+            </ol>
+            <ul>
+                <li>To see detailed room information, click Room Info  (such as the room properties, pricing, and/or to view an image of the room).
+
+</li>
+                <li>To see building hours, click Building Hours (which shows hours when the selected room/building is open on the reserved date).
+</li>
+            </ul>
+            <ol start="5">
+                <li>
+If the specific room is available for all the event dates, then click the Move All button (&gt;&gt;) to schedule the room for all the event dates. If the specific room is not available, try another approach such as reserving a different specific room, or using the Standard or Best Fit search method.
+
+</li>
+                <li>Click Next to continue. </li>
+            </ol>
+        </p>
+        <h3><strong><a id="Specifyeventinformation" name="Specifyeventinformation"></a>To specify the event information:</strong>
+        </h3>
+        <p>After you select an event location or locations, you must specify other information for the event. You must enter information in the required fields.</p>
+        <ol>
+            <li>Enter event information using the elements in the window. See Also, <MadCap:xref href="DC_UG_FieldsinResWiz.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Reservation Wizard Fields</MadCap:xref>.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_CreateResinResWiz_ResWizFields.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </p>
+        <ol start="2">
+            <li>Click <strong>Finish</strong>. The Navigator window opens. The reservation information appears in the window. You use this window to add booking details and to make any needed modifications to the reservation and its bookings.</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="NoteTipWarningText"><strong>Warning:</strong>A reservation is not complete and rooms are not removed from the Available list until you click <strong>Finish</strong>. Although unlikely, it is possible for another user to select and reserve a room during the time period after you have selected the room but before you have finalized the reservation. If this occurs, after you click Finish, a message opens stating that your reservation conflicts with an existing reservation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

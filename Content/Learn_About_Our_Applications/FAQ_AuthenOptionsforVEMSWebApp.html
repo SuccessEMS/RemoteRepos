@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Authentication Options for Virtual EMS and EMS Web App</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Authentication Options for Virtual EMS and EMS Web App</h1>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p> <ol> <li><strong>Login Credentials</strong>: This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</li> <li><strong>Enabled by</strong>: This is either a parameter or checkbox that needs to be enabled for the authentication to work.</li> <li><strong>Configuration Page</strong>:This is where configuration and options are set for the authentication.</li>
+</ol> <h2>Integrated Windows Authentication</h2> <ul type="disc"> <li>Login Credentials: Network ID / External Reference in web user account settings (Either of these work)</li> <li>Enabled by: Within IIS on the VEMS site, "Authentication" options, Windows Authentication enabled, Anonymous Authentication disabled</li> <li>Configuration Page: IIS "Authentication" options</li>
+</ul> <h2>LDAP</h2> <ul type="disc"> <li>Login Credentials: Network ID / External Reference in web user account settings (This is specified by the "Field Used to Authenticate Web User" on the {{product_vems}}/{{product_webapp}} Parameters&#160;tab).</li> <li>Enabled by: ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (must be logged in with Web Admin security role and have Integrated Authentication in license).</li> <li>Configuration Page: ldapconfiguration.aspx page (there are multiple tabs).</li> <li>Other Notes: EMS LDAP License is required for this to work.&#160; The web server will need access to directory server for this to work.</li>
+</ul> <h2>Portal</h2> <ul type="disc"> <li>Login Credentials: Network ID / External Reference in web user account settings (this is specified by the "Field Used to Authenticate Web User" on the {{product_vems}}/{{product_webapp}}&#160;parameters tab).</li> <li>Enabled by: Always enabled; select the appropriate entry from&#160;the "Portal Authentication Method" on the {{product_vems}}/{{product_webapp}}&#160;Parameters page</li> <li>Configuration Page: There are multiple different setup items in the {{product_vems}}/{{product_webapp}}&#160;parameters under the "Authentication" area</li>
+</ul>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>private</a></p></body>
+</html>

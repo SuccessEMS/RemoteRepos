@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="3640" MadCap:lastWidth="1263">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Title1">Introduction</h1>
+        <p>EMS&#160;Integration with Microsoft®&#160;Exchange&#160;is a component that integrates EMS Everyday User applications, such as EMS Mobile App, EMS for Outlook and&#160;EMS Web App,&#160;with Microsoft® Exchange. This module enables everyday users to view the availability of both meeting rooms&#160;<span class="Emphasis">and&#160;</span>attendees, and send Outlook® meeting invitations, all from within EMS Everyday User applications.&#160;</p>
+        <p><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/01-Introduction/Exchange_Integration_Flow" title="Exchange Integration Flow"><span class="Strong_1">See <MadCap:annotation MadCap:createDate="2017-10-30T23:39:21.9495379-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Copied diagram below (Exchange Integration Flow)" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-30T23:39:39.1463423-06:00">the</MadCap:annotation> Diagram</span></a>
+        </p>
+        <h2 class="Heading2">Exchange Integration Flow</h2>
+        <p>
+            <img src="../../../Resources/Images/Integration to Microsoft/Introduction.png" style="height: 761px;width: 1055px;" alt="https://success.emssoftware.com/@api/deki/files/6341/integrationsdiagramexchange.png?revision=1" class="img_1" />
+        </p>
+        <p class="NormalWeb">&#160;</p>
+        <p>You must be licensed for EMS, EMS Web App, and EMS&#160;Integration with Microsoft®&#160;Exchange&#160;in order to configure and use this feature.&#160;If you are unsure if your organization is licensed for EMS&#160;Integration with Microsoft®&#160;Exchange, or if you would like to learn more about it, please contact your Account Executive.</p>
+        <p class="Strong">Process Overview:</p>
+        <p>To install and configure EMS Integration with Exchange, you will:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1"><a href="https://success.emssoftware.com/Admin_Guides_(V44.1)/Optional_Features/Integration_to_Exchange/03_Installation_and_Upgrade_Instructions_for_the_Exchange_Integration_Web_Service" title="Installation and Upgrade Instructions for the Exchange Integration Web Service" class="Hyperlink_1">Install the EMS Exchange Integration Web Service</a>
+            </li>
+            <li class="ListParagraph_1"><a href="https://success.emssoftware.com/Admin_Guides_(V44.1)/Optional_Features/Integration_to_Exchange/06_Configuring_Exchange_Integration" title="Configuring Integration to Exchange" class="Hyperlink_1">Configure EMS Integration to Exchange</a>
+            </li>
+            <li class="ListParagraph_1"><a href="https://success.emssoftware.com/Admin_Guides_(V44.1)/Optional_Features/Integration_to_Exchange/Setting_Up_Impersonation_for_Exchange_Online_(Office_365%C2%AE)" title="Admin_Guides_(V44.1)/Optional_Features/Integration_to_Exchange/Setting_Up_Impersonation_for_Exchange_Online_(Office_365%C2%AE)" class="Hyperlink_1">Set Up Impersonation for Exchange Online (Office 365®)</a>
+            </li>
+        </ul>
+        <p>&#160;<span class="mt-color-669933_1">See System Requirements</span>&#160;</p>
+        <ul class="ul_1">
+            <li class="Strong_1">EMS and/or&#160;EMS Web App&#160;Installed</li>
+        </ul>
+        <p>EMS must be installed and operational.</p>
+        <ul class="ul_1">
+            <li class="Strong_1">Valid Outlook Integration License</li>
+        </ul>
+        <p>You must be licensed for EMS, EMS Web App&#160;and Integration with Exchange&#160;in order to configure and use this module.&#160;If you are unsure if your organization is licensed for Integration with Exchange, or if you would like to learn more about it, please contact your Account Executive.</p>
+        <h2 class="Heading2">Web <MadCap:annotation MadCap:createDate="2017-10-30T23:39:58.7660181-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Wiki page: Admin_Guides_(V44.1)/Optional_Features/Integration_to_Exchange/02_Exchange_Integration_Requirements" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-30T23:40:28.3414494-06:00">Application</MadCap:annotation> Requirements</h2>
+        <table class="table_1">
+            <col style="width: 943pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Desktop Browser</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="Strong_2">Internet Explorer 11&#160;</span><span class="span_1">(please see Tip below)</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p><span class="Strong_2">Microsoft Edge</span><span class="span_1">&#160;(latest)</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="Strong_2">Firefox</span><span class="span_1">&#160;(latest)</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p><span class="Strong_2">Chrome</span><span class="span_1">&#160;(latest)</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p><span class="Strong_2">Safari</span><span class="span_1">&#160;(Mac)&#160;(latest)</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*= varies per application</p>
+        <table class="table_1">
+            <col style="width: 62pt;" />
+            <col style="width: 646pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Introduction_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Tip:</span><span class="Strong_2">&#160;</span>EMS Web App v44.1 has been optimized for Internet Explorer 11 and does not require compatibility with previous versions of Internet Explorer.&#160; EMS recommends&#160;<span class="Emphasis_1">disabling compatibility mode&#160;</span>when&#160;using Web App v44.1.</p>
+                </td>
+            </tr>
+        </table>
+        <h3 class="Heading3">EMS Web App (Mobile)</h3>
+        <table class="table_1">
+            <col style="width: 285pt;" />
+            <col style="width: 658pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Mobile Browser</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Platform</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Internet Explorer for Mobile&#160;8.1</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">Windows</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_2">Internet Explorer for Mobile 10</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_2">Windows</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="td_1">
+                        <p class="p_2">Chrome</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">Android,&#160;4.4, 6.0, 7.0, 7.1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_2">iOS 9.x, iOS 10.x</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Safari</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">iOS 9.x, iOS 10.x</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span class="Strong">Important:</span>&#160; Integration with Exchange configuration issues often relate to access rights with this account.&#160;Please ensure that the account has the necessary permissions.</p>
+        <h2 class="Heading2">Web Server Requirements</h2>
+        <table class="table_1">
+            <col style="width: 285pt;" />
+            <col style="width: 658pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Operating System</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">IIS App Pool</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Windows Server 2008 R2</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">7/7.5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_2">Windows Server 2012</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_2">8</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Windows Server 2012 R2</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">8.5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="Strong_2">Prerequisites</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_2">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Application Pool Running&#160;4.0*</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_2">.NET Framework 4.6.1*</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_2">&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_1">
+                        <p class="mt-font-size-120pt_1">Minimum System Requirements</p>
+                        <p class="NormalWeb"><span class="mt-font-size-120pt_1">Processor: 2.0GHz and 4 cores or faster</span><span class="mt-font-size-120pt_1"><br /></span><span class="mt-font-size-120pt_1">Memory: 8GB or more*</span><span class="mt-font-size-120pt_1"><br /></span><span class="mt-font-size-120pt_1">Hard-Disk Space: 1GB or more</span>
+                        </p>
+                        <p class="mt-font-size-120pt_2">*For up to 100 concurrent users.&#160;Increased specs required for 100+ concurrent users.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*= varies per EMS Software Application</p>
+        <h2 class="Heading2">Exchange Integration Requirements</h2>
+        <table class="table_1">
+            <col style="width: 238pt;" />
+            <col style="width: 705pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">Microsoft® Office</p>
+                </td>
+                <td class="td_1">
+                    <p class="p_2">365</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">Outlook</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">2010, 2013, 2016</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">.NET Framework</p>
+                </td>
+                <td class="td_1">
+                    <p class="p_2">4.6.1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="NormalWeb_1"><a href="http://www.microsoft.com/en-us/download/details.aspx?id=42513" class="Hyperlink_2">Microsoft® Visual Studio 2010 Tools for Office Runtime</a>
+                    </p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">VSTOR&#160;2010</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <p class="Strong_2">Prerequisites</p>
+                </td>
+                <td class="td_1">
+                    <p class="p_2">&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">EMS Web App</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">Latest</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <p class="NormalWeb_2">On User Workstations</p>
+                </td>
+                <td class="td_1">
+                    <p class="NormalWeb_2">Desktop requirements for Microsoft®&#160;Outlook Windows 7, 8, or 10</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <h2 class="Heading2">EMS Platform Services</h2>
+        <table class="table_1">
+            <col style="width: 717pt;" />
+            <col style="width: 226pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="p_3">Operating System</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="p_3">IIS</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Windows Server 2008 R2</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">7/7.5</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="p_2">Windows Server 2012&#160;&#160;</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="p_2">8</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_2">Windows Server 2012 R2&#160;&#160;</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="p_2">8.5</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="table_1">
+            <col style="width: 318pt;" />
+            <col style="width: 625pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">.NET Framework</p>
+                </td>
+                <td class="td_1">
+                    <p class="p_2">4.6.1</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">Application Pool</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">4.0</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <h6 class="Strong_1">Prerequisites</h6>
+                </td>
+                <td class="td_1">
+                    <h6 class="Heading6_1">&#160;</h6>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">HTTPPlatformHandler&#160;IIS Module</p>
+                </td>
+                <td class="td_2">
+                    <p class="NormalWeb_1"><a href="https://www.iis.net/downloads/microsoft/httpplatformhandler" title="https://www.iis.net/downloads/microsoft/httpplatformhandler"><span class="Hyperlink_1">Download Version 1.2&#160;here</span></a><span class="span_1">&#160;OR download the installer&#160;</span><a href="http://download.microsoft.com/download/8/1/3/813AC4E6-9203-4F7A-8DD5-F3D54D10C5CD/httpPlatformHandler_amd64.msi" title="http://download.microsoft.com/download/8/1/3/813AC4E6-9203-4F7A-8DD5-F3D54D10C5CD/httpPlatformHandler_amd64.msi"><span class="Hyperlink_1">here</span></a><span class="span_1">.</span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">PowerShell</p>
+                </td>
+                <td class="td_1">
+                    <p><a href="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes" title="https://msdn.microsoft.com/en-us/powershell/wmf/5.1/release-notes" class="Hyperlink_2">5+ Version</a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">ASP.NET Version 4.6</p>
+                </td>
+                <td class="td_2">
+                    <p class="NormalWeb_3">Under Web Server (IIS)-&gt;Web Server-&gt;Application Development:</p>
+                    <ul class="ul_1">
+                        <li class="li_1">ISAPI Extensions</li>
+                        <li class="li_1">ISAPI Filters</li>
+                        <li class="li_1">.NET Extensibility 4.6</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">EMS Integration for Exchange</h2>
+        <table class="table_1">
+            <col style="width: 238pt;" />
+            <col style="width: 705pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_2">Microsoft® Exchange</p>
+                </td>
+                <td class="td_1">
+                    <p class="p_2">2010 SP3, 2013, 2016</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_2">
+                    <p class="p_2">Microsoft® Office</p>
+                </td>
+                <td class="td_2">
+                    <p class="p_2">365</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="td_1">
+                    <p><a href="https://success.emssoftware.com/Learn_About_EMS_Applications/Learn_About_Managing_EMS/What_is_EWS_Impersonation%3F" title="What is EWS Impersonation?" class="Hyperlink_2">Exchange Web Services (EWS) impersonation</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p class="NormalWeb_4">&#160;</p>
+    </body>
+</html>

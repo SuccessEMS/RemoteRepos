@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="8640" MadCap:lastWidth="1328" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installing EMS Glance</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installing EMS Glance</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To install or upgrade EMS Glance, you will:</p>
+        <ul class="mt-indent-1">
+            <li>Update your database with the new Glance .sql file.</li>
+            <li>Copy the Glance .dll file to each user workstation that needs Glance options on <MadCap:variable name="General.EMS&#160;Desktop Client" />.</li>
+            <li>Install the new Glance API on the web server that will be running it, and verify it.</li>
+            <li>Install the new Glance web application on the web server that will be hosting it (and hook it to your Glance API, SQL server, and database).</li>
+            <li>Create an Admin User to manage EMS Glance.</li>
+            <li>Access your&#160;EMS Glance application through the web&#160;on your device(s).</li>
+        </ul>
+        <h2><a name="_Toc374360357"></a>Install/Upgrade the Database Component</h2>
+        <ol>
+            <li><span>Obtain the </span><strong><span><span>EMSGlance.sql</span></span></strong><span> file.</span>
+            </li>
+            <li><span>Open </span><em><span><span>Microsoft SQL Server Management Studio</span></span></em><span>.</span>
+            </li>
+            <li><span>Within </span><em><span><span>Microsoft SQL Server Management Studio</span></span></em><span>, select </span><strong><span><span>File &gt; Open &gt; File…</span></span></strong><span> and locate </span><strong><span><span>EMSGlance.sql</span></span></strong><span>.</span>
+            </li>
+            <li><span><span>Select your <strong>EMS</strong> database</span> and execute the query <em>(</em></span><em><strong><span><span>Query &gt; Execute</span></span></strong></em><span><em>).</em>&#160;When query execution has completed, a ‘Command(s) completed successfully’ message will display in the Results section.</span>
+            </li>
+        </ol>
+        <h2><a name="_Toc374360358"></a>Install/Upgrade the EMS Glance DLL</h2>
+        <ol>
+            <li><span>On each client machine that needs access to the EMS Glance Settings area, paste a copy of the </span><strong><span><span>EMS.Glance.dll</span></span></strong><span> file into the folder that contains your EMS application files (typically C:\Program Files\EMS).</span>
+            </li>
+            <li><span>Once the </span><strong><span><span>EMS.Glance.dll</span></span></strong><span> is placed in the correct folder on the client machine (assuming your organization is appropriately licensed for EMS Glance), the EMS user will see the </span><strong><span><span>EMS Glance Settings </span></span></strong><span>button on the tool bar within the EMS application.</span>
+            </li>
+        </ol>
+        <p style="text-align: left;">
+            <img src="../Images/A_InstallationGuide/GL_Install_EMSGlanceSettings.png" style="width: 126px;height: 55px;" />
+        </p>
+        <p class="mt-indent-1"><strong><span>Note:</span></strong><span>&#160; To update your registration, go to <span>System Administration &gt; Settings &gt; <strong>Registration</strong></span><strong></strong>in {{product_dtc}}.</span>
+        </p>
+        <h2><a name="_Toc374360359"></a>Install/Upgrade&#160;the EMS Glance API</h2>
+        <ol>
+            <li><span>Manually </span><strong><span><span>uninstall</span></span></strong><span>any previous versions of the EMS Glance API on your web server.&#160; </span>
+            </li>
+            <li><span>Download the </span><strong><span><span>EMSGlanceAPI.msi</span></span></strong><span> file onto the web server that will be running the EMS Glance API.</span>
+            </li>
+            <li><span>Run </span><strong><span><span>EMSGlanceAPI.msi</span></span></strong><span>.</span>
+            </li>
+            <li><span>The first screen welcomes you to the EMS Glance API Web Service Setup Wizard.&#160;Click </span><strong><span><span>Next </span></span></strong><span>to begin the installation process.&#160;The <span>Destination Folder</span> screen will appear.</span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_WebServiceSetup.png" style="width: 561px;height: 439px;" />
+        </p>
+        <ol>
+            <li value="5"><span>Select the destination folder.&#160;The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMSGlanceAPI” in the example above.)&#160;Click </span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><strong><span><span>Note:</span></span></strong><span>&#160; The EMS Glance API should <span>not</span> be installed in the same physical directory as other EMS web-based products OR under a site running another version of the EMS Glance API.</span>
+        </p>
+        <ol>
+            <li value="6"><span>The <span>EMS SQL</span></span><span><span>Server Database Settings</span> information screen will appear.</span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_SQLServerDatabaseSettings.png" style="width: 559px;height: 438px;" />
+        </p>
+        <ol>
+            <li value="7"><span>Enter your EMS SQL </span><strong><span><span>Server </span></span></strong><span>name.</span>
+            </li>
+            <li><span>Enter your EMS </span><strong><span><span>Database</span></span></strong><span> name:</span>
+            </li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li><span>EMS Professional customers – typically named&#160; “EMSData”</span>
+            </li>
+            <li><span>EMS Workplace, EMS Campus, EMS Enterprise, EMS District and EMS Legal customers - typically named&#160; “EMS”</span>
+            </li>
+        </ul>
+        <ol>
+            <li value="9"><span>Click </span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+            <li><span>The <span>Virtual Directory information</span> screen will appear.&#160; </span>
+            </li>
+        </ol>
+        <p style="text-align: center;">
+            <img src="../Images/A_InstallationGuide/GL_Install_VirtualDirectory.png" style="width: 571px;height: 445px;" />​</p>
+        <ol MadCap:continue="true">
+            <li><span>The Virtual Directory Name will default to the destination folder specified in Step 5.&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMSGlanceAPI” in the example above.)&#160;Click </span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><strong><span><span>Note:</span></span></strong><span>&#160; The EMS Glance API should <strong><span>not</span></strong>be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Glance API.</span>
+        </p>
+        <ol>
+            <li value="12"><span>The </span><em><span><span>Ready to install EMS Glance API Web Service </span></span></em><span>screen will appear.&#160;Click&#160; Install button</span>&#160;<span>to install the EMS Glance API.</span></li>
+            <li><span>The </span><em><span><span>Completed the EMS Glance API Web Service Setup Wizard</span></span></em><span> screen will appear.&#160;Click </span><strong><span><span>Finish</span></span></strong><span>.&#160; </span>
+            </li>
+        </ol>
+        <h3><a name="_Toc374360360"></a><a name="_Toc330906250"></a>Verify&#160;the EMS Glance API Installation</h3>
+        <p class="mt-indent-1"><span>After following the steps above, verify your EMS Glance API installation by opening a browser and entering the EMS Glance API URL:</span>
+        </p>
+        <p class="mt-indent-2" style="text-align: left;"><span><strong>Example:</strong>&#160;<code>http://[ServerName]/EMSGlanceAPI/service.asmx</code><br />(replace [ServerName] with the name of your web server)</span>
+        </p>
+        <p class="mt-indent-1"><strong><span>Note:</span></strong><span>&#160; This URL will be required for the EMS Glance Web Application installation.</span>
+        </p>
+        <h2><a name="_Toc374360361"></a>Install/Upgrade&#160;the EMS Glance Web Application</h2>
+        <ul>
+        </ul>
+        <ol>
+            <li><span>Download the </span><strong><span><span>EMSGlance.msi</span></span></strong><span> file onto the web server that will be running the EMS Glance web application.</span>
+            </li>
+            <li><span>Run </span><strong><span><span>EMSGlance.msi</span></span></strong><span>.</span>
+            </li>
+            <li><span>The first screen welcomes you to the EMS Glance Setup Wizard.&#160;Click </span><strong><span><span>Next </span></span></strong><span>to begin the installation process.&#160;The <span>Destination Folder</span> screen will appear.</span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_SetupWizard.png" style="width: 579px;height: 453px;" />
+        </p>
+        <ol>
+            <li value="4"><span>Select the destination folder.&#160;The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMSGlance” in the example above.)&#160;Click&#160;</span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><strong><span><span>Note:</span></span></strong><span>&#160; EMS Glance should <strong><span>not</span></strong>be installed in the same physical directory as other EMS web-based products OR under a site running another version of EMS Glance.</span>
+        </p>
+        <ol>
+            <li value="5"><span>The <span>EMS Glance API Path</span> screen will appear.</span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_ApiPath.png" style="width: 574px;height: 449px;" />
+        </p>
+        <ol>
+            <li value="6"><span><span>Enter the URL of your Glance API Web Service.</span></span>
+            </li>
+        </ol>
+        <p class="mt-indent-1" style="text-align: left;"><span><strong>Example:&#160;</strong>http://[ServerName]/EMSGlanceAPI/service.asmx</span>
+            <br /><span>(replace [ServerName] with the name of your web server)</span>
+        </p>
+        <ol>
+            <li value="7"><span>Click </span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+            <li><span>The </span><em><span><span>Virtual Directory information</span></span></em><span> screen will appear.&#160; </span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_VirtualDirectoryInformation.png" style="width: 567px;height: 443px;" />
+        </p>
+        <ol>
+            <li value="9"><span>The Virtual Directory Name will default to the destination folder specified in Step 4.&#160;It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMSGlance” in the example above.)&#160;Click </span><strong><span><span>Next</span></span></strong><span>.</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><strong><span><span>Note:</span></span></strong><span>&#160; EMS Glance should </span><u><span><span>not</span></span></u><span> be installed in the same virtual directory as other EMS web-based products OR under a site running another version of EMS Glance.</span>
+        </p>
+        <ol>
+            <li value="10"><span>The </span><em><span><span>Ready to install EMS Glance </span></span></em><span>screen will appear.&#160; Click&#160;Install button</span>&#160;<span>to install EMS Glance.</span></li>
+            <li><span>The </span><em><span><span>Completed the EMS Glance Setup Wizard</span></span></em><span> screen will appear.&#160;Click </span><strong><span><span>Finish</span></span></strong><span>.&#160;</span>
+            </li>
+        </ol>
+        <h3><span>Create an EMS Admin User to Manage Your EMS Glance API&#160;Web Service</span>
+        </h3>
+        <ol>
+            <li>&#160;C<span>reate&#160;the EMS Admin Account to be used for Glance:&#160;</span></li>
+        </ol>
+        <ol class="mt-indent-1" start="1" style="list-style-type: lower-alpha;">
+            <li><span>Create a user account in <MadCap:variable name="General.EMS&#160;Desktop Client" /> under System Administration &gt; Security &gt; <strong>Users </strong>(with any user name and password you choose).</span>
+            </li>
+            <li><span>Uncheck the Administrator&#160;box.</span>
+            </li>
+            <li><span>Then add the process,&#160;"EMS API Web Service Access",&#160;to this account.</span>
+            </li>
+        </ol>
+        <ol start="2">
+            <li><span>Enter the user name and password for the account in the web.config file of the Glance application settings, for example:</span>
+            </li>
+        </ol>
+        <p>
+            <img src="../Images/A_InstallationGuide/GL_Install_WebConfigUsernamePassword.png" style="width: 595px;height: 235px;" />
+        </p>
+        <p mt-export-translate="no" xml:space="preserve">Tip for EMS Cloud Customers: Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please contact EMS Support.)</p>
+        <h2><a name="_Toc374360362"></a>Launch&#160;EMS Glance on your Device(s)</h2>
+        <p><span>Glance is ready to use once all of the Glance components have been properly installed and at least one Profile has been configured for use (see </span><span><span><a title="Configuring EMS Glance">Configuration</a>&#160;section)</span></span><span>.&#160;To access Glance on your device, do the following: </span>
+        </p>
+        <ol>
+            <li><span>On your device, open a browser and enter the URL to your EMS Glance web application:</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><span><strong>Example:</strong>&#160;<span>http://[ServerName]/EMSGlance</span><br />(replace [ServerName] with the name of your web server)</span>
+        </p>
+        <ol>
+            <li value="2"><span>The first time you access Glance on your device, the Settings screen will appear.</span>
+            </li>
+        </ol>
+        <p align="center">
+            <img src="../Images/A_InstallationGuide/GL_Install_SettingsScreen.png" style="width: 347px;height: 424px;" />
+        </p>
+        <ol>
+            <li value="3"><span>Select the Profile in the <strong>Profile</strong> dropdown.</span>
+            </li>
+            <li value="4"><span>Select the Room in the <strong>Room</strong> dropdown.</span>
+            </li>
+            <li value="5"><span>Click <strong>Apply</strong>.</span>
+            </li>
+        </ol>
+        <p class="mt-indent-1"><strong><span>Note:</span></strong><span>&#160; Once the EMS Glance application is running, to re-access the Settings screen for any reason, simply double-tap the EMS Glance logo in the upper-left hand corner of the screen.</span>
+        </p>
+        <ol start="6">
+            <li>To optimize your tablet's settings, follow our <a class="F1" title="Glance Best Practice: Device Configuration">Device&#160;Configuration Recommendations</a>.</li>
+        </ol>
+    </body>
+</html>

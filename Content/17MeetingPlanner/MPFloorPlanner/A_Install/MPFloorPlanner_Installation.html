@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Installation</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installation</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre> <h2><a name="_Toc432661435"></a><a name="_Toc423003873"></a><a name="_Toc388952196"></a>PHP&#160;&#160;</h2> <ol> <li>Go to <a href="http://php.iis.net/">http://php.iis.net</a> to download and install php 5.3.</li>  </ol> <p><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; By default, the php will install to program files (x86).</span></p> <ol> <li value="2">Use the Installation Guide to set up IIS7 (and above) to work with PHP at:</li>  </ol> <p>&#160;&#160;&#160;&#160;&#160; <a href="http://www.php.net/manual/en/install.windows.iis7.php">http://www.php.net/manual/en/install.windows.iis7.php</a></p> <p><span>&#160;&#160;&#160;&#160;&#160;&#160;&#160; Do not utilize the command prompt instructions from the Installation Guide: perform the operation from the iis gui.</span></p> <ol> <li value="3">Open the php.ini from the php folder.</li> <li value="4">Enter the time zone in the two date.timezone text fields. <strong>Make sure</strong> to delete the ‘;’ before the entry.</li>  </ol> <h2><a name="_Toc432661436"></a><a name="_Toc423003872"></a>FloorPlanner Setup Wizard</h2> <ol> <li>From the application server, run the Meetingplanner msi.</li> <li>Walk through the installation wizard.</li>  </ol> <ul> <li>The FloorPlanner should be installed in the meetingplanner suite site.</li>  </ul> <p><span>Access FloorPlanner at:&#160; </span><a href="http://yourserver/suite/floorplanner"><span>http://yourserver/suite/floorplanner</span></a><span>.</span></p> <h2><a name="_Toc432661437"></a><a name="_Toc432500096"></a>Add License Key to Database</h2> <ol> <li>Open the configuration tool on the server to access the MeetingPlanner Database.</li> <li>Select <strong>Database</strong>.</li>  </ol> <p><img alt="" class="internal" style="width: 633px;height: 417px;" width="633px" height="417px" /></p> <ol> <li value="3">Copy and paste the license key file, provided by EMS Software, in the corresponding field.</li> <li value="4">Select <strong>Update Database</strong>.</li>  </ol> <p><strong>5.</strong><strong>Save</strong>.</p> <p><img alt="" class="internal" style="width: 559px;height: 327px;" width="559px" height="327px" /></p><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

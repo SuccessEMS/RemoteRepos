@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Advanced EMS Polycom Interface Configuration</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Advanced EMS Polycom Interface Configuration</h1>
+        <p>By default, the following booking information is transferred from EMS to the Polycom Realpresence Resource Manager API:</p>
+
+<p>&#160;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="mt-responsive-table" width="638">
+	<tbody>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 32px;">
+			<p><strong>Field Description </strong></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 32px;">
+			<p style="margin-left: .05pt;"><strong>EMS Table.Column </strong></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 32px;">
+			<p style="margin-left: .05pt;"><strong>Polcom Object Property </strong></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 32px;">
+			<p style="margin-left: .05pt;"><strong>Direction </strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Reservation Event&#160;</span></span><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Name </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblReservation.EventName </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">reservation:name </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">EMS &gt; Polycom </span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Booking Event Start Time </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblBooking.GMTTimeEventStart </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">reservation:start-time </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">EMS &gt; Polycom </span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Booking Event End Time </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblBooking.GMTTimeEventEnd </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">reservation:end-time </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">EMS &gt; Polycom </span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Room(s) and/or Resource(s) </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblRoom.ExternalReference and/or tblResource.ExternalReference </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">plcm-reservedparticipant(s) </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">EMS &gt; Polycom </span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Polycom&#160;</span></span><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Reference ID </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblPolycomActivity.PolycomReferenceID </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Location|Etag </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Polycom &gt; EMS </span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-15" style="height: 36px;">
+			<p><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Polycom Error Information </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-20" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">tblPolycomActivity.Activity </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Web Service Exception </span></span></p>
+			</td>
+			<td class="mt-noheading mt-column-width-10" style="height: 36px;">
+			<p style="margin-left: .05pt;"><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">Polycom &gt; EMS </span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

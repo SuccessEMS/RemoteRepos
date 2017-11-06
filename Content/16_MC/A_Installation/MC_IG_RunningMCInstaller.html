@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="793.3334" MadCap:lastWidth="891" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Running the Master Calendar Installer</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Running the Master Calendar Installer</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">In order to install Master Calendar, you will: &#160; &#160;</p>
+        <ol class="mt-indent-1">
+            <li>Run the <strong>DEA.MasterCalendar.Server.Install.exe</strong> to install the Master Calendar Database on the database server (following the steps below). &#160;</li>
+            <li><a title="Installing/Upgrading the Master Calendar API Web Service">Run the <strong>DEAMasterCalendarSetup.msi</strong> program on the web server to install the Master Calendar website. &#160;</a>
+            </li>
+            <li><a rel="internal" target="_blank" title="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/050_Configuring_Master_Calendar_for_Master_Calendar_API_Web_Service_Use" href="../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigureEMSDesktopClient.html" alt="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/050_Configuring_Master_Calendar_for_Master_Calendar_API_Web_Service_Use">Configure Master Calendar to use the Web Service</a>.</li>
+            <li>(optional)&#160;Verify the Master Calendar API. &#160;</li>
+            <li>(If&#160;Upgrading) Uninstall any optional services on the web server used by the previous version of Master Calendar.&#160;</li>
+            <li>Install or re-install any optional services on the web server.&#160;</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>&#160;Be sure to run a backup prior to upgrading your database. It is recommended to upgrade your Master Calendar Database in a test environment prior to upgrading a production database.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ol>
+            <li>Run <strong>DEA.MasterCalendar.Server.Install.exe</strong> from any PC that has access to the database server.&#160;<br /><br /><img alt="" class="internal" style="width: 865px;height: 375px;" width="865px" height="375px" /></li>
+            <li>In the <strong>Server </strong>field, enter the name of the server running MS SQL Server.&#160;</li>
+            <li>In the <strong>Database </strong>field, enter the name for the Master Calendar Database. (It is recommended that you accept the default value of ‘Master_Calendar’).</li>
+            <li>In the Server Authentication area, specify MS SQL Server authentication credentials. &#160;If SQL Server Authentication Mode is selected, you must specify a User Name and Password.</li>
+            <li>Click the <strong>Execute </strong>button.&#160;<br /><br /><img alt="" class="internal" style="width: 660px;height: 234px;" width="660px" height="234px" /></li>
+            <li>Click&#160;<strong>Yes </strong>to initiate the installation.</li>
+        </ol>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

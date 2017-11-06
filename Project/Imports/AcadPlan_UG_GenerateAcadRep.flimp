@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-25T23:21:02.4210468-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-25T23:21:09.1145811-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/AcadPlan_UG_GenerateAcadRep.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/AcadPlan_UG_GenerateAcadRep.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/AcadPlan_UG_GenerateAcadRep/Generating Academic Reports.png"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+    <Url
+      Source="../../Content/Resources/Images/AcadPlan_UG_GenerateAcadRep/Generating Academic Reports_1.png"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+    <Url
+      Source="../../Content/Resources/Images/AcadPlan_UG_GenerateAcadRep/Generating Academic Reports_2.png"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+    <Url
+      Source="../../Content/AcadPlan_UG_GenerateAcadRep/Generating Academic Reports.htm"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+    <Url
+      Source="../TOCs/AcadPlan_UG_GenerateAcadRep.fltoc"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/AcadPlan_UG_GenerateAcadRep.css"
+      TimeStamp="10/25/2017 11:21:07 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

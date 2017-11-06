@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Title1">View Known Errors/Alerts</h1>
+        <p>During the course of using the EMS for Microsoft Outlook plugin module to schedule reservations and make appointments, you might encounter alerts and error messages.</p>
+        <p>This following table details the known alerts and error messages for the module and provides an explanation for each:</p>
+        <table class="table_2">
+            <col style="width: 464pt;" />
+            <col style="width: 496pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="p_1_1">Alert/Error Message</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="p_1_1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" class="td_3">
+                        <p class="p_1_2">Alerts</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">Resource Alert</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Customer-specified resource alerts are displayed when a user selects a resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">Room Alert</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Customer-specified room alerts are displayed when a user selects a room.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="td_4">
+                        <p class="p_1_2">Errors</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">You have an unapplied service order. Are you certain you wish to continue?</p>
+                    </td>
+                    <td class="td_3">
+                        <p><span class="span_2">Displayed if a user has entered a service order, but clicks Save before clicking&#160;</span><span class="mt-color-669933_1">Apply</span><span class="span_2">.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">Appointment “SUBJECT” is tied to an EMS Booking.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed when a user attempts to copy or cut a meeting on a calendar that is linked to EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">The meeting you are viewing is no longer being monitored by EMS. Changing this meeting will disconnect the meeting from EMS.</p>
+                    </td>
+                    <td class="td_3">
+                        <ul class="ul_1">
+                            <li class="li_2">Displayed if a user opens a meeting that has occurred in the past.</li>
+                            <li class="li_2">Prior to build 43.0.28—in inconsistent scenarios—this message was displayed when a user created a creating on a delegate’s calendar and then tried to modify the meeting.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_6">Your web user id does not match the web user id on the reservation. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed when a user attempts to open a meeting for which they are not the web user.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">This reservation has been invoiced. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed when a user attempts to open a meeting that has been invoiced.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">This reservation is assigned to a process template that is unavailable to you in Outlook. Any changes to this meeting will disconnect the meeting from the EMS Reservation.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed when a user attempts to open a reservation that is tied to a process template to which they do not have access to or is not available in Outlook.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">EMS requires all meetings be 24 hours or less.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed if a user sets a start/end date/time combination to anything greater than 24 hours.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">You changed the time after changing the location which invalidated your locations.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="figurecaptioncolumn_2">Displayed if a user:</p>
+                        <ul class="ul_1">
+                            <li class="li_2">Changes the meeting time after selecting a meeting location.</li>
+                            <li class="li_2">Changes the meeting recurrence any in way after selecting a location.</li>
+                        </ul>
+                        <p class="figurecaptioncolumn_3"><span class="mt-color-669933_1">Note</span><span class="span_2">: A user must verify a room after changing times or recurrences.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">One or more of your locations was not available.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed when a user attempts to save a meeting and one or more of the EMS rooms requested was not available.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">One or more of your services violated the available quantity and was not applied to your meeting.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed when a user attempts to save a meeting that has a service order and one or more of the resources had insufficient quantities available.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">There was a problem saving your reservation in EMS.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed when EMS encounters an unexpected error trying to save the reservation in EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">Your request would violate the maximum allowed duration for a reservation ({0} minutes).</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed when a user attempts to add a booking that violates the Max Minutes Allowed value as specified by the Web Process template.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">This template only allows for {0} booking(s) at a time.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed when a user attempts to add a booking that violates the Max Number of Bookings value as specified by the Web Process template.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">Terms must be accepted.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed if a user does not select the option to accept Terms and Conditions.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">Event type is required.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed if a user attempts to submit an entry without an event type being selected.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_4">
+                        <p class="p_4">Group is Required.</p>
+                    </td>
+                    <td class="td_4">
+                        <p class="p_4">Displayed if a user has not selected a group. (Group label used in message.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_3">
+                        <p class="p_4">Use the Send Cancelation button on the appointment tab.</p>
+                    </td>
+                    <td class="td_3">
+                        <p class="p_4">Displayed in the meeting cancel notification if a user attempts to press the EMS Save/Send button.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="figurecaptioncolumn">&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">EMS for Outlook Release Notes V44 Update 9b</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">EMS for Outlook Release Notes V44 Update 9b</h1>
+        <section>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><strong>Area</strong></td>
+            <td style="width: 1051px;"><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>Edit Reservation</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Forwarding Caused Error</strong></dt>
+                <dd>When users attempted to forward a meeting using the EMS for Outlook add-in, the error "You will have to save before you forward" presented although they had not edited the event.
+                <p><strong>Fix:&#160;</strong>Modified validations to enable users to forward meetings with no error.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            <p><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25693">25693</a><span class="mt-color-ff0000">&#160;V43 and V44 </span>(split from V44.1 Update 8:&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/19004" rel="external nofollow" target="_blank">19004</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25698" rel="external nofollow" target="_blank">&#160;25698</a>)</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>Services</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><b>Adding More Services Caused Error</b></dt>
+                <dd>When users added more&#160;services to an existing event, the error "column TimeEventStart does not belong to table Table7" occurred.
+                <p><strong>Fix:&#160;</strong>Modified validations to allow more services to be added without causing the error.</p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            <p><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25703">25703</a>&#160;<span class="mt-color-ff0000">V43 and V44</span><span class="mt-color-b22222">&#160;</span>(split from V44.1 Update 8:&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22604" rel="external nofollow" target="_blank">22604</a>)</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 183px;"><em>Calendar</em></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Calendar Grid View Absent for Video Conferences, Missing Buildings And Available Rooms</strong></dt>
+                <dd>When users booked a meeting using a video conference template, the grid view was empty and if users also filtered by feature, buildings were not listed on the left, and available rooms were not listed in the grid.
+                <p><strong>Fix:&#160;</strong>Modified the display to show the Schedule view including buildings and available rooms for video conferences.</p>
+                </dd>
+            </dl>
+
+            <p><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25708">25708</a>&#160;<span class="mt-color-ff0000">V43 and V44&#160;</span>(split from V44.1 Update 8: <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23902" rel="external nofollow" target="_blank">23902</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/15536" rel="external nofollow" target="_blank">15536</a>,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/12740" rel="external nofollow" target="_blank">12740</a>)</p>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<header>&#160;</header>
+</section>
+
+<footer>
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 183px;"><i>Notifications</i></td>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><strong>Notifications Sent Incorrectly</strong></dt>
+                <dd>When users booked an event and left the Event Type field blank,&#160;or booked an event that required User Defined Fields,&#160;and the user clicked&#160;<strong>Save/Send</strong>&#160;after attempting to resolve multiple required field issues, notifications were incorrectly sent to attendees before all required information was complete.
+                <p><strong>Fix:&#160;</strong>Modified validations to prevent notification triggers until all required fields are successfully completed and the event has been booked.</p>
+                </dd>
+            </dl>
+
+            <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap">
+            <p><a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25702" style="background-color: rgb(255, 255, 255);">25702</a>&#160;<span class="mt-color-ff0000">V43 and V44&#160;</span><span class="mt-color-000000">(split from V44.1 Update 8:&#160;</span><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/13143" rel="external nofollow" style="background-color: rgb(255, 255, 255);" target="_blank"><span class="mt-color-000000">13143</span></a><span class="mt-color-000000">,&#160;</span><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/20811" rel="external nofollow" style="background-color: rgb(255, 255, 255);" target="_blank"><span class="mt-color-000000">20811</span></a><span class="mt-color-000000">)</span></p>
+            </div>
+            </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</footer>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

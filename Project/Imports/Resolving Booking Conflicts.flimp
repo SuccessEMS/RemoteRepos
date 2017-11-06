@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T12:41:59.6603755-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T12:42:05.1295150-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Resolving Booking Conflicts.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Resolving Booking Conflicts.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_1.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_2.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_3.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_4.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_5.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Resolving Booking Conflicts/Resolving Booking Conflicts_6.png"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resolving Booking Conflicts/Resolving Booking Conflicts.htm"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../TOCs/Resolving Booking Conflicts.fltoc"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Resolving Booking Conflicts.css"
+      TimeStamp="10/27/2017 12:42:03 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

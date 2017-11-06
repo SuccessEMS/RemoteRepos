@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="2209" MadCap:lastWidth="1237" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Deploying the EMS Mobile App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Deploying the EMS Mobile App</h1>
+        <p>There are two ways to deploy the {{product_mobile}} App&#160;for your users:</p>
+        <ol>
+            <li>The standard public app store offered by Apple and Google</li>
+            <li>A private enterprise app store. (This approach can also be integrated with your company's Mobile Device Management system.)</li>
+        </ol>
+        <h2>Public Deployment: Public&#160;App Store</h2>
+        <p>To deploy via the public app store, direct your users to go to the <a href="https://play.google.com/store/apps/details?id=com.emssoftware.emsmobile" title="https://play.google.com/store/apps/details?id=com.emssoftware.emsmobile">Google Play</a>&#160;and&#160;<a href="https://itunes.apple.com/us/app/ems-mobile-app/id1126083021?ls=1&amp;mt=8" title="https://itunes.apple.com/us/app/ems-mobile-app/id1126083021?ls=1&amp;mt=8">Apple</a>&#160;app stores on their mobile devices. They will be able to download the app by clicking on the link.&#160;However, they will have to manually input the EMS Mobile API URL. They will receive a prompt to do so the first time they open the {{product_mobile}} App.</p>
+        <p>If users need to change the API URL at a later date, they can:</p>
+        <p>1. Open the app, and then click 'About' in the lower right corner.</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/MA_DeployMobileApp_About.png" style="width: 365px;height: 648px;" />
+            <br />    &#160;</p>
+        <p>2. Click&#160;to change the API URL.</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/MA_DeployMobileApp_ChangeApiURL.png" style="width: 366px;height: 149px;" />
+            <br />    &#160;</p>
+        <p>3. Enter&#160;the API URL you provide and connect.</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/MA_DeployMobileApp_Connect.png" style="width: 364px;height: 350px;" />
+            <br />
+        </p>
+        <p>While this approach may be easier&#160;for your IT staff, it has definite costs:</p>
+        <ul>
+            <li>Users will have to input the&#160;the {{product_mobile}} API URL on their own.</li>
+            <li>EMS will frequently deploy mobile app updates to the app store. Most users will have this app set to automatically update, and will therefore receive updates even if you have not yet upgraded your EMS Mobile API.</li>
+            <li>While we aim to make the Mobile API backwards- and forwards- compatible within major updates, we may not do so all the time.</li>
+            <li>Deploying via the public app store therefore requires you to make major updates to the EMS Mobile API as soon as they are available.</li>
+        </ul>
+        <h2>Private Deployment: Private App Store</h2>
+        <p>To deploy via a private enterprise&#160;app store, first&#160;download the unsigned apk/ipa&#160;files from your EMS software portal. You then have to resign the app and deploy it via your MDM system. <a href="http://dev.mlsdigital.net/posts/how-to-resign-an-ios-app-from-external-developers/" title="http://dev.mlsdigital.net/posts/how-to-resign-an-ios-app-from-external-developers/">This site</a> offers some guidance on how to sign an unsigned ipa file (i.e. for iOS),&#160;while <a href="https://developer.android.com/studio/publish/app-signing.html#signing-manually" title="https://developer.android.com/studio/publish/app-signing.html#signing-manually">this site</a> does the same for Android apk&#160;files. Deploying via a private app store allows you to&#160;<a target="_blank" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Mobile_App/Setting_Up_EMS_Mobile/Restricting_Users'_Mobile_App_Versions">control which version of the Mobile App</a>&#160;your users have.</p>
+        <p>As an example, here are the key steps to resign and deploy the unsigned EMS Mobile App ipa file (following instructions provided <a href="http://dev.mlsdigital.net/posts/how-to-resign-an-ios-app-from-external-developers/" title="http://dev.mlsdigital.net/posts/how-to-resign-an-ios-app-from-external-developers/">here</a>):</p>
+        <ol>
+            <li>
+                <p>Download unsigned builds: .ipa and .apk files</p>
+                <p>• Optional: <a title="Customizing Your Mobile App Configuration Using config.json">Configure API URL and SSO URL via config.json</a>, change logo•</p>
+            </li>
+            <li>
+                <p><a title="Configuring and Resigning {{product_mobile}}">Re-sign the app</a>
+                </p>
+                <p>• <a title="Changing the EMS Mobile App Logo">Change app logo</a>&#160;(if using MDM])</p>
+            </li>
+        </ol>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

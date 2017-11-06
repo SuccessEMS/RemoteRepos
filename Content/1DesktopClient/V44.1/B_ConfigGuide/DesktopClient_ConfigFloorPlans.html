@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2287.067" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Floor Plans</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring Floor Plans</h1>
+        <p>This optional feature, enabled with an EMS Floor Plans license,&#160;allows users to view available rooms and book a space directly from a floor plan image in {{product_webapp}}&#160;or {{product_emsk}}.</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}﻿﻿</pre>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_concept.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Concept:&#160;</span></strong>Configuring floor plans in the Floor Plan module is a three step process:</p>
+                        <ol>
+                            <li><em>Configure&#160;the&#160;floor plan indicators (</em>the images used indicate whether a room is available or unavailable for a floor plan). For example, you might use something as simple as a green square to indicate that a room on a floor is available and a red square to indicate that a room on a floor is unavailable.</li>
+                            <li><em>Configure&#160;a floor plan diagram</em> for each floor of each building for which a floor plan applies. A&#160;<em>floor plan diagram</em>&#160;is a drawing, or outline, usually to scale, that shows the relationships between rooms, spaces, and other physical features for one floor of a building.</li>
+                            <li>Map your floor plan indicators to rooms on your diagrams using the Floor Plan Configuration utility.</li>
+                        </ol>
+                        <p>The availability of each reservable space ultimately determines the indicator (available or unavailable) that shows&#160;on a floor plan in {{product_webapp}} or {{product_emsk}}.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="RTF436f6e6669677572655f696e"></a>Configure floor plan indicators</h3>
+        <p>1. On the EMS menu bar, click Configuration &gt; Facilities &gt; <strong>Floor Plan Indicators</strong>.&#160;The Floor Plan Indicators window opens, listing&#160;active&#160;indicator sets currently configured in your EMS database.</p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>To see all indicator sets regardless of status, under Show, click&#160;<strong>Inactive</strong>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>2. Click <strong>New</strong>.&#160;The Floor Plan Indicator dialog box opens.</p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <p>3. In the Description field, enter a name or description for the new floor plan indicators (max 50 characters including spaces.You can name indicators something as simply as Indicator Set 1, or if you are using different indicators for different floor plans in different buildings, you could identify them by building, for example, Memorial Student Union indicators, Fifth Floor Conference Room indicators, and so on.</p>
+        <p>4. Next to the Image field, click <strong>Search </strong><img border="0" style="border: 0px;" />&#160;to browse to and select an&#160;image to use for the&#160;<em>available</em>&#160;indicator.</p>
+        <p>5. Next to the Secondary Image field, click <strong>Search </strong><img border="0" style="border: 0px;" />&#160;to browse to and select an&#160;image to use for the&#160;<em>unavailable</em>&#160;indicator.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>The image must be in .gif, .jpeg, .jpg, .bmp, .wmf, or .png format.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>6. Click <strong>OK</strong>. Your new&#160;floor plan indicators are added as active. Optionally, select Inactive to deactivate the set.</p>
+        <h2><a name="RTF436f6e6669677572655f6469"></a>C<a name="RTF34313337333a20486561644c"></a>onfigure a floor plan diagram</h2>
+        <p>You must configure one floor plan diagram for each floor that will&#160;be available for booking in {{product_webapp}}&#160;and the {{product_emsk}}.</p>
+        <p>1. On the EMS menu bar, click Configuration &gt; Facilities &gt; <strong>Floor Plan Diagrams</strong>.&#160;A blank Floor Plan Diagrams window opens.</p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <p>2. Optionally, in the Building dropdown list, select (all), or select a specific building to see a list of floor plans for all buildings or for the selected building in the window.</p>
+        <p>3. Click <strong>New</strong>.&#160;The Floor Plan Diagram dialog box opens on&#160;Floor Plan Diagram tab.</p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <p>4. In the Description field, enter a name or description for the new floor plan diagram (maximum of 50 characters, including spaces).</p>
+        <p>5. On the Building dropdown list, select the building for which you are configuring the floor plan diagram.</p>
+        <p>6. Next to the Image field, <strong>Search </strong><img border="0" style="border: 0px;" />&#160;to browse and select the image to use for the floor plan diagram.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span><span class="mt-color-000000">Image files must be&#160;</span>gif, .jpeg, .jpg, .bmp, .wmf, or .png. Optimal image size is 1024 x 768.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>7. Open the Floor Plan Indicators tab, and on the Available list, select the floor plan indicator (CTRL-click to select multiple floor plan indicators) you wish to use&#160;for this diagram, and then Move (&gt;) to the Selected list.</p>
+        <p>8. Click <strong>OK</strong>.&#160;The Floor Plan Diagram dialog box closes and you return to the Floor Plan Diagrams window with the newly configured floor plan diagram automatically selected.</p>
+        <h2><a name="RTF4d61705f666c6f6f7220706c"></a>M<a name="RTF32353733313a20486561644c"></a>ap&#160;a floor plan</h2>
+        <p>1. Log in to the Floor Plan Configuration module;&#160;then the Configure Rooms option shows&#160;above&#160;the Login fields on the main window.</p>
+        <p class="mt-indent-1"><em>Floor Plan Configuration module, main window with Configure Rooms option</em>
+        </p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <p>2. Click <strong>Configure Rooms</strong>.&#160;The Configure Rooms page opens.</p>
+        <p class="mt-indent-1"><em>Floor Plan Configuration module, Configure Rooms page</em>
+        </p>
+        <p>
+            <img border="0" style="border: 0px;" />
+        </p>
+        <p>3. On the Floor Plan dropdown list, select a floor plan diagram.&#160;The available indicators that are associated with the floor plan diagram are displayed below the selected diagram.</p>
+        <p><a name="RTF32323938353a20537465704e"></a>4. Drag an available indicator and place it as needed to indicate where a room (reservable space) is located on the floor.</p>
+        <p>5. Repeat&#160;<span style="color: black;"><span style="color: black;">Step 4</span></span>&#160;until you have identified all the reservable spaces on the floor.</p>
+        <p>6. For each indicator, do the following:</p>
+        <p class="mt-indent-1">• Click on the indicator to open a Room Details dialog box.</p>
+        <p class="mt-indent-1">• On the Rooms dropdown list, select the room for the indicator, and then click <strong>Save</strong>.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>To filter the list of available rooms, under Filter Options, select a specific floor and/or room type. An indicator is not saved to a floor plan diagram until you select a room for it.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>7. Close the Floor Plan Configuration module.</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a>
+        </p>
+    </body>
+</html>

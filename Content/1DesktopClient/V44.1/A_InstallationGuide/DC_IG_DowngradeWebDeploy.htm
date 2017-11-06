@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1362" MadCap:lastWidth="1228">
+    <head>
+    </head>
+    <body>
+        <h1>Downgrade the <MadCap:variable name="General.EMS&#160;Desktop Client" />Web Deploy</h1>
+        <p>When determining whether you organization wants to revert to an older version of the EMS Desktop Client, follow the steps below.</p>
+        <p>Note: You cannot roll back an EMS Patch once it has been applied. Please read the release notes each month to determine if an upgrade is necessary for your organization. As a best practice, it is recommended that your system remain current on EMS Desktop Client builds and patches.</p>
+        <h2>To Roll Back the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy</h2>
+        <ol>
+            <li>Uninstall the newer version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy.</li>
+            <li>Run the installer for the older version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy.</li>
+        </ol>
+        <p>Notes: Once the older version of the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deploy is installed, users will need to close EMS before they will be downgraded to the older version of the software. Any user who has an individual install of the EMS Desktop Client will also need to have that individual install rolled back, by uninstalling the EMS Client and installing the older version.</p>
+        <ol MadCap:continue="true">
+            <li>After the users' <MadCap:variable name="General.EMS&#160;Desktop Client" />s have been downgraded, they will receive a message stating there is new client software available:</li>
+        </ol>
+        <p>&#160;</p>
+        <p>If you wish to avoid this prompt from presenting to your users, after installing the older version of the EMS Desktop Client Web Deploy, run the following script against the EMS database:</p>
+        <p>Update tblServerVersion</p>
+        <p>set ClientVersion = NULL</p>
+        <p>If you have further questions, please contact Customer Support.</p>
+        <MadCap:snippetBlock src="../../../ContactCustomerSupport.flsnp" />
+    </body>
+</html>

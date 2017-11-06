@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="4335" MadCap:lastWidth="1103">
+    <head>
+    </head>
+    <body>
+        <h1>EMS Web App Upgrade Considerations</h1>
+        <p>When planning to upgrade from previous versions of VEMS to the new EMS Web App, you should take the following new features, functionality, and default settings into consideration.</p>
+        <p>Time Zone Settings</p>
+        <p>Web Users should be assigned to a time zone for an optimal experience.</p>
+        <p>Configuration and Parameter Settings</p>
+        <p>Due to a change in product naming, you will need to update the name of the Exchange Integration Web Service URL parameter. See Also: EMS Web App parameters.</p>
+        <p>For an optimal user-interface experience, we recommend keeping text-based fields and notes (e.g., Room Descriptions, Process Template Descriptions, Event Names, etc.) as brief as possible.</p>
+        <p>New parameters have been introduced:</p>
+        <p>For organizations who direct everyday users to manually create their own accounts:</p>
+        <p>Sign Up Confirmation Email</p>
+        <p>Sign Up Success Email</p>
+        <p>Request Received Email</p>
+        <p>Password Reset Email</p>
+        <p>Password Reset Success Email</p>
+        <p>Default Home Page of Site Home or My Home (My Home is the default).</p>
+        <p>Show Infographics on My Home (No is the default).</p>
+        <p>Default Cancel Reason</p>
+        <p>Some parameters have been updated:</p>
+        <p>Default Account Status for Newly-Created User (formerly Security Status for User) - Options are Active or Pending. Inactive option has been removed.</p>
+        <p>Browse Events - Display Format - Reduced to Daily, Weekly, and Monthly options.</p>
+        <p>Setup Type Validation Rule - No longer affects room searching. Will still handle Setup Type display and validating attendance against capacties.</p>
+        <p>Allow Access to System Check Pages from Any Machine? - No longer applies to EMS Web App as SystemCheck.aspx has been removed for this application.</p>
+        <p>Default Value for Attendance - Default is now "1." Existing configurations of this parameter for any value other than "0" will not be affected upon upgrade.</p>
+        <p>Some parameters have been removed for v44.1:</p>
+        <p>Note Label on Account Management - Field is no longer exposed to the everyday user.</p>
+        <p>Number of Hours to Show on Browse for Space - No longer applicable.</p>
+        <p>Maximum Number of Events/Day to Display - No longer applicable. Maximums now set per view (Daily, Weekly, or Monthly).</p>
+        <p>Secondary Event Sort (After Date/Time) - No longer applicable. All columns are sortable.</p>
+        <p>Devices to redirect to mobile site - No longer applicable as EMS Web App is now mobile-responsive.</p>
+        <p>Display Areas as Filter - Areas are incorporated into Locations for searching.</p>
+        <p>Allow User to Change Setup Count in Selected Locations Area - Permanently enabled as part of the new UX design.</p>
+        <p>Web Menus</p>
+        <p>All custom menus should be reviewed and updated/removed prior to updating in a live environment.</p>
+        <p>Custom menus can be parented under the Links or Help icon (for organization-specific help pages). Upgrading will re-parent all custom menus under Links.</p>
+        <p>Process templates can be sequenced under Create a Reservation menu but can no longer be moved to different menus.</p>
+        <p>Due to the new UI design, system-generated menus cannot be re-sequenced or relabeled, and you cannot modify their URLs.</p>
+        <p>Functional Changes</p>
+        <p>The following changes will show in your new installation due to the new UI design:</p>
+        <p>The EMS Web App has been made mobile-responsive. Therefore, mobile-specific pages such as MobileLogin.aspx have been removed. Everyday users can instead access mobile-responsive versions of the same pages used when accessing the EMS Web App on a desktop machine.</p>
+        <p>New Validated checkbox for everyday users:</p>
+        <p>Only applies to manual authentication creation and approval process, but checkbox appears for all users regardless.</p>
+        <p>Will be automatically selected for new users created in the EMS desktop client and via EMS Human Resources Toolkit.</p>
+        <p>New EMS Human Resources Toolkit installations will have the Validated checkbox included in update logic.</p>
+        <p>For tighter security, the SystemCheck.aspx page and the Ctrl+Shift+U keystroke shortcut to access SystemCheck.aspx have been removed for the EMS Web App. Some information previously included on SystemCheck.aspx has been relocated to options within the Web Administrator menu of the EMS Web App:</p>
+        <p>Clear Cache option</p>
+        <p>License information</p>
+        <p>Server and database connection string</p>
+        <p>Error Log Files</p>
+        <p>Application version and information (relocated to the About page)</p>
+        <p>Services, videoconferencing, and reservation management will not be available on the mobile version of the EMS Web App nor on the EMS Mobile App.</p>
+        <p>Template personalization will be automatically enabled for all process templates, which means that users will be able to set favorite templates to streamline navigation during the booking process. Favorite templates, for example, will be listed in a dropdown when the user begins booking space.</p>
+        <p>For organizations using the optional Floor Map module, the SVG file format is no longer supported for floor map icons/images.</p>
+        <p>Help Text Records</p>
+        <p>All help text records should be reviewed and updated/removed prior to updating in a live environment.</p>
+        <p>Home page web text records will now belong under Site Home and can differ for unauthenticated users vs. authenticated users.</p>
+        <p>For organizations who direct everyday users to manually create their own accounts, a new text record for Terms of Use has been introduced.</p>
+        <p>Some help text records have been removed (listed alphabetically by the database value LookupKey for tblWebText):</p>
+        <p>MenuItem</p>
+        <p>VEMSAccountManagementHelp</p>
+        <p>VEMSAddBookingHelpPopup</p>
+        <p>VEMS_BadBrowserHelp</p>
+        <p>VEMSBillingReferenceLookupHelp</p>
+        <p>VEMSClassicRequestPopup</p>
+        <p>VEMSEditAccountHelp</p>
+        <p>VEMSEditBookingHelpPopup</p>
+        <p>VEMSGroupLookupOnPage</p>
+        <p>VEMSLdapConfigurationHelp</p>
+        <p>VEMSLoginHelp</p>
+        <p>VEMSLoginPageMainContent</p>
+        <p>VEMSLogoutPageMainContent</p>
+        <p>VEMSLogoutScreenMessage</p>
+        <p>VEMSMissingOrInvalidExpectedQuerystring</p>
+        <p>VEMSPONumberLookupHelp</p>
+        <p>VEMSReservationDetailsHelp</p>
+        <p>VEMSReservationRecurrenceHelp</p>
+        <p>VEMSReservationSummaryCheckInSuccess</p>
+        <p>VEMSReservationSummaryCheckInUnavailable</p>
+        <p>VEMSRoomRequestHelpPopup</p>
+        <p>VEMSUDFDetailsHelp</p>
+        <p>VEMSUserPersonalizationHelp</p>
+        <p>Application title help record only applies to Default.aspx (HTML not recommended for this page).</p>
+        <p>CSS (Style) Settings</p>
+        <p>All custom CSS should be reviewed and updated/removed prior to upgrading in a live environment.</p>
+        <p>Custom.CSS now saved under EMSWebApp/Content/Custom/Custom.CSS instead of the Styles folder.</p>
+        <p>Language Translation</p>
+        <p>Language translation is still supported, but administrators should review the new site design to apply new translations where necessary.</p>
+        <p>All Other Customizations</p>
+        <p>Any custom logos, custom JavaScript, and all other customizations should be reviewed and updated/removed prior to updating in a live environment.</p>
+    </body>
+</html>

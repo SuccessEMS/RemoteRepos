@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/EMS Kiosk API Reference.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">API Functions - Kiosk Get Events and Reservations</h1>
+        <h2 class="Heading2">KioskGetEvents</h2>
+        <p><span class="Emphasis_1">Description</span>
+            <br />&#160;</p>
+        <p>Returns an event or a list of events for a given date range and search criteria.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 93pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Profile ID *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Kiosk Profile ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">StartDate *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Start Date</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EndDate *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">End Date</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">BuildingID *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">FloorID *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Floor ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomTypeID *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Type ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EventName</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Event Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 243pt;" />
+            <col style="width: 67pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BookingID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Booking ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building Description</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BuildingCode</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Building Code</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">BuildingID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomCode</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Code</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomType</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Type Description</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Event</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Event Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Status</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Status</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeEventStart</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Local Start Time of the Event&#160; (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">TimeEventEnd</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Local End Time of the Event (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GMTStartTime</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GMT Start Time</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">GMTEndTime</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">GMT End Time</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeZoneID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Time Zone ID (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">TimeZoneDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Time Zone Description (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeZoneAbbreviation</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Time Zone Abbreviation (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>For BuildingID, FloorID just pass in a -1 if no real value is available to search on.&#160;</p>
+        <p>EventName is optional and can be left blank.</p>
+        <p>A maximum number of 100 records will be returned.</p>
+        <h2 class="Heading2">KioskGetReservations</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Returns an event or a list of events for a given date range and group ID.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 93pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">StartDate *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Start Date</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EndDate *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">End Date</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">GroupID *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 243pt;" />
+            <col style="width: 67pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BookingID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Booking ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building Description</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BuildingCode</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Building Code</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">BuildingID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomCode</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Code</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomType</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Type Description</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Event</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Event Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Status</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Status</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeEventStart</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Local Start Time of the Event&#160; (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">TimeEventEnd</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Local End Time of the Event (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GMTStartTime</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GMT Start Time</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">GMTEndTime</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">GMT End Time</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">DateTime</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeZoneID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Time Zone ID (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">TimeZoneDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Time Zone Description (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">TimeZoneAbbreviation</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Time Zone Abbreviation (The Building’s Time Zone)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>A maximum number of 100 records will be returned.</p>
+        <p>&#160;</p>
+    </body>
+</html>

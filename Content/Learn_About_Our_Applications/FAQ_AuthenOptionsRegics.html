@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Authentication Options for EMS Regics</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Authentication Options for EMS Regics</h1>
+        <p>Authentication is controlled by three factors.&#160; They all must be configured correctly for the authentication to work:</p> <ol> <li><strong>Login Credentials</strong>: This is the location where external LDAP/Windows/Portal credentials need to be entered in our software for each user.</li> <li><strong>Enabled by</strong>: This is either a parameter or checkbox that needs to be enabled for the authentication to work.</li> <li><strong>Configuration Page</strong>: This is where configuration and options are set for the authentication.</li>
+</ol> <h2>Windows Authentication</h2> <ul type="disc"> <li>Login Credentials: External Reference in Regics user account settings, <em><strong>Admin &gt; Security &gt; Users</strong>.</em></li> <li>Enabled by: Within IIS on the Regics site, "Authentication" options, Windows Authentication.</li> <li>Configuration Page: None.</li>
+</ul> <h2>LDAP</h2> <ul type="disc"> <li>Login Credentials: External Reference in Regics user account settings, <em><strong>Admin &gt; Security &gt; Users</strong>.</em></li> <li>Enabled by: regics/ldapconfiguration.aspx page, "Authenticate users via LDAP?" checkbox (Need to be logged in as an administrator and have Integrated Authentication in license).</li> <li>Configuration Page: regics/ldapconfiguration.aspx page, there are multiple tabs.</li>
+</ul> <h2>Portal</h2> <ul type="disc"> <li>Login Credentials: External Reference in Regics user account settings, <em><strong>Admin &gt; Security &gt; Users</strong>.</em></li> <li>Enabled by: Always enabled, <em><strong>Admin &gt; System Administration &gt; Parameters</strong></em> (Select the appropriate entry from the "Portal Authentication Method" parameter drop-down list).</li> <li>Configuration Page: There are multiple different setup items in the Default Settings page under the "Portal Authentication" area.</li>
+</ul>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>private</a></p></body>
+</html>

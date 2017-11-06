@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-25T22:20:05.8238960-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-25T22:20:25.4191902-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Overview of Room Assignments and Optimization.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Overview of Room Assignments and Optimization.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Overview of Room Assignments and Optimization/Overview of Room Assignments and Optimization.png"
+      TimeStamp="10/25/2017 10:20:23 PM" />
+    <Url
+      Source="../../Content/Overview of Room Assignments and Optimization/Overview of Room Assignments and Optimization.htm"
+      TimeStamp="10/25/2017 10:20:23 PM" />
+    <Url
+      Source="../TOCs/Overview of Room Assignments and Optimization.fltoc"
+      TimeStamp="10/25/2017 10:20:23 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Overview of Room Assignments and Optimization.css"
+      TimeStamp="10/25/2017 10:20:23 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+  </UsedCharacterStyles>
+</MsWordImport>

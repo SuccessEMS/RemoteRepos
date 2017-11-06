@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Best Practices: Using the Reservations Import Utility</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Best Practices: Using the Reservations Import Utility</h1>
+        <p class="mt-script-comment">Page summary display</p>
+
+<pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');</pre>
+
+<p>This section provides guidance in using the EMS Reservations Import Utility to import existing reservations.&#160;</p>
+
+<p><strong>See Also: </strong><a class="F1" title="Reservation Import File Specifications">Reservation File Import Specifications</a></p>
+
+<h3>Preparing&#160;Existing Reservations for Import into EMS</h3>
+
+<p><span><span>To view the fields you are importing in order, from EMS&#160;System Administration&#160;&gt;&#160;Tools&#160; &gt;&#160;<strong>Import Reservation Utility</strong>, you can use&#160;Print&#160;&gt;&#160;<strong>Import Format</strong>&#160;to view the fields in order. These fields are explained below.</span></span></p>
+
+<ul>
+    <li><strong><span><span>Date&#160;</span></span></strong><span><span>(This can be in MM/DD/YYYY&#160;format if you are in US. If your computer is using DD/MM/YYY format, your file should match that format.</span></span></li>
+    <li><strong><span><span>Start time</span></span></strong><span><span>&#160;(This must be HHMM, like 0800 - Excel will try removing the leading zero, so you can format the column as&#160;<strong>Text</strong>, or as&#160;More Number Formats&#160;&gt;&#160;<strong>Custom</strong>&#160;and enter "HHMM" as the custom format).</span></span></li>
+    <li><strong><span><span>End time</span></span></strong><span><span>&#160;(This must be HHMM, like 1700).</span></span></li>
+    <li><strong><span><span>Building&#160;</span></span></strong><span><span>(This is EMS Building Code, not description).</span></span></li>
+    <li><strong><span><span>Room&#160;</span></span></strong><span><span>(This is EMS Room Code).</span></span></li>
+    <li><strong><span><span>Event Name&#160;</span></span></strong><span><span>(255 character max).</span></span></li>
+    <li><strong><span><span>Group&#160;</span></span></strong><span><span>(a.k.a. Host, Customer, Employee if you have relabeled it in your organization).</span></span></li>
+    <li><strong><span><span>1st Contact</span></span></strong></li>
+    <li><strong><span><span>Setup Count</span></span></strong></li>
+    <li><strong><span><span>Reservation Grouping</span></span></strong><span><span>&#160;(this number behaves similarly to an EMS reservation number: you should use the same number for each booking that should be grouped together. You can start with 1 and work upwards from there; all lines with a "1" will go under one reservation, so if you have a three day meeting, &#160;"1" would appear&#160;on the first three lines, then start with #2 for the next reservation).</span></span></li>
+    <li><strong><span><span>Billing Reference</span></span></strong><span><span>&#160;(this can be left blank if not required).</span></span></li>
+</ul>
+
+<h3>Additional Best Practices</h3>
+
+<p><span><span><span>1.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span>Your import file must be tab-delimited. The easiest way to generate the file is by using Excel and then copying and pasting into Notepad, and saving that file.</span></span></span></p>
+
+<p><span><span><span>2.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span>Make sure the <strong>Group</strong>, <strong>1st&#160;Contact</strong>, and <strong>Billing Reference</strong> are the same for all bookings within any single reservation. (For example,&#160;Taylor cannot be the contact for Monday&#160;while Chris is the contact for Tuesday)</span></span></span></p>
+
+<div><span><span><span>3.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span><strong>Group Name</strong> will be matched based on the first one found in your database. If you have two groups called "Pat Lee", EMS will pick the first one and assign it to all matching reservations.</span></span></span></div>
+
+<p><span><span><span>4. &#160; &#160; &#160;</span></span></span><span><span><span>Values for&#160;</span></span></span><span><span><span><strong>1st&#160;Contact</strong> will create contacts in EMS as temporary contacts.</span></span></span></p>
+
+<div><span><span><span>5.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span>Web User and Web Templates will not be assigned to imported reservations.</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>6.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span>If you choose to&#160;map&#160;web users to your imported reservations, you should also make sure the web user you assigned is set to "Active" security status. If a web user logs on for the first time&#160;and they already have reservations created, they will be moved from "Activate on Logon" status to "Pending" status and you will need to manually activate their account. You can prevent this by making their account "Active" in advance.</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>7.&#160;&#160;&#160;&#160;&#160;&#160;</span></span></span><span><span><span>Be sure not to copy any header rows when you import. Your first row in Notepad should have&#160;tabs between, instead of spaces.</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>8. &#160; &#160; &#160;Selecting the&#160;</span></span></span><span><span><span>checkbox to "Skip Notifications" causes all imported bookings to bypass the checks for any EMS Notification Rules. The utility has been successfully used for importing tens of thousands of records at a time, but if you are processing notification rules, large batches could take a very long time to complete.</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>9. &#160; &#160; &#160;The Import Utility only allows you to specify the</span></span></span><span><span><span>&#160;Start Date. If your start time is greater than your end time, EMS will assume your end date is one day later. You cannot import a single booking longer than 24 hours.</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>10.&#160;&#160;&#160;&#160;</span></span></span><span><span><span>All times should be local to the time zone of the building you’re booking.&#160;&#160;For example,&#160;0800 for New York, and 0800 for London would create 8:00 am bookings in the respective buildings.&#160;</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>11.&#160;&#160;&#160;&#160;</span></span></span><span><span><span>Once you start loading your import file, if you see "Unassigned" rooms or groups/people, that means the data in your import file did not find an exact match. You can manually fix rooms and groups individually, but if you notice that there are way too many to cleanup individually, you may be better off deleting the import session, then fixing your import file, and then creating a new session. If you create manual mappings, they will be remembered for future import sessions.</span></span></span></div>
+
+<p><span><span><span>12. &#160; After launching an import, you may see a&#160;</span></span></span><span><span><span>failure message. The import may have completed anyways, so after waiting a while, check to see before re-launching the import.</span></span></span></p>
+
+<div><span><span><span>13.&#160;&#160;&#160;&#160;</span></span></span><span><span><span>If you are importing vidoeconference&#160;reservations, you will need to one more step for them to have associated reservation numbers: after the import, for these reservations use the&#160;“Move Bookings” option&#160;to move them to a primary reservation number. That reservation should then be marked as “Videoconference” in EMS, and a host site designated.&#160;</span></span></span></div>
+
+<div>&#160;</div>
+
+<div><span><span><span>14.&#160;</span></span></span><span style="color: #404040;"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Setup and Teardown time<strong>   </strong>are not included in the import. If you need the room blocked including setup/teardown time, you can set your start time and end time to reflect&#160;the entire duration for which you wish to block the room, or you can modify the bookings post-import.</span></span></span></div>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:SysAdmin</a><a>Best Practices for Importing Reservations</a><a>Importing Reservations</a><a>Reservations Import Utility</a><a>Prepare Reservations for Import</a><a>Prepare Reservations Import</a><a>Reservations Import Session</a></p></body>
+</html>

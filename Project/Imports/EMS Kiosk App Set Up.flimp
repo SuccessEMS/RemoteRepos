@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T10:12:33.2143300-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T10:12:39.6651748-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/EMS Kiosk App Set Up.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/EMS Kiosk App Set Up.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/EMS Kiosk App Set Up/EMS Kiosk App Install or Set.htm"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Set Up/Setting Up EMS Kiosk.htm"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk.png"
+      TimeStamp="10/27/2017 10:12:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_1.png"
+      TimeStamp="10/27/2017 10:12:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_2.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_3.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_4.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_5.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_6.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_7.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_8.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_9.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_10.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring the EMS Kiosk_11.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Set Up/Configuring the EMS Kiosk.htm"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring EMS Kiosk App.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Set Up/Configuring EMS Kiosk App_1.png"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Set Up/Configuring EMS Kiosk App.htm"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../TOCs/EMS Kiosk App Set Up.fltoc"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/EMS Kiosk App Set Up.css"
+      TimeStamp="10/27/2017 10:12:38 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Title1" />
+  </UsedCharacterStyles>
+</MsWordImport>

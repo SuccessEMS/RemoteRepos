@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-26T22:56:40.8072353-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-26T22:56:50.4138994-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Setting Up EMS Kiosk Legacy.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Setting Up EMS Kiosk Legacy.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Setting Up EMS Kiosk Legacy.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Setting Up EMS Kiosk Legacy/Setting Up EMS Kiosk Legacy.htm"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_1.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_2.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_3.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_4.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_5.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_6.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_7.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles.gif"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_8.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_9.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles_10.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Profiles.htm"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Menus.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Menus_1.png"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Setting Up EMS Kiosk Legacy/Configuring EMS Kiosk Menus.htm"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../TOCs/Setting Up EMS Kiosk Legacy.fltoc"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Setting Up EMS Kiosk Legacy.css"
+      TimeStamp="10/26/2017 10:56:46 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-color-669933" />
+  </UsedCharacterStyles>
+</MsWordImport>

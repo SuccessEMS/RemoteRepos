@@ -1,0 +1,276 @@
+/*<meta />*/
+
+p
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	font-family: 'Calibri Light';
+	color: #2F5496;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+span.Strong
+{
+	font-weight: bold;
+}
+
+span.Hyperlink
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+span.Strong_1
+{
+	font-weight: bold;
+	font-family: Arial;
+	color: #000000;
+}
+
+span.Hyperlink_1
+{
+	text-decoration: underline;
+	font-family: Arial;
+	color: #00467F;
+}
+
+h2.Heading2
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 2pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 2;
+	font-family: 'Calibri Light';
+	color: #2F5496;
+	font-size: 13pt;
+	font-weight: normal;
+}
+
+p.Emphasis
+{
+	font-style: italic;
+}
+
+p.NormalWeb
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.Strong
+{
+	font-weight: bold;
+}
+
+p.Emphasis_1
+{
+	font-style: italic;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000000;
+}
+
+p.Strong_1
+{
+	font-weight: bold;
+	text-align: center;
+	font-family: Arial;
+	font-size: 14pt;
+}
+
+th.th_1
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 2pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #FFFFFF;
+	padding-top: 6pt;
+	padding-left: 12pt;
+	padding-bottom: 6pt;
+	padding-right: 12pt;
+}
+
+p.NormalWeb_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	font-family: Arial;
+}
+
+td.td_1
+{
+	border-top-style: outset;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: outset;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: outset;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: outset;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #FFFFFF;
+	padding-left: 0pt;
+	padding-right: 0pt;
+}
+
+td.td_2
+{
+	border-top-style: outset;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: outset;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: outset;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: outset;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #DDDDDD;
+	padding-left: 0pt;
+	padding-right: 0pt;
+}
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+
+p.Emphasis_2
+{
+	font-style: italic;
+	background-color: #FFFFFF;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000000;
+}
+
+p.Emphasis_3
+{
+	font-style: italic;
+	font-weight: bold;
+}
+
+span.Emphasis
+{
+	font-style: italic;
+}
+
+span.Emphasis_1
+{
+	font-style: italic;
+	font-family: Arial;
+	font-weight: bold;
+	color: #000000;
+}
+
+p.Strong_2
+{
+	font-weight: bold;
+	font-family: Arial;
+}
+
+td.td_3
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+	background-color: #FFFFFF;
+	padding-top: 12pt;
+	padding-left: 12pt;
+	padding-bottom: 12pt;
+	padding-right: 12pt;
+}
+
+td.td_4
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+	background-color: #DDDDDD;
+	padding-top: 12pt;
+	padding-left: 12pt;
+	padding-bottom: 12pt;
+	padding-right: 12pt;
+}
+
+p.NormalWeb_2
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	background-color: #FFFFFF;
+	font-family: Arial;
+	color: #000000;
+}
+
+span.Emphasis_2
+{
+	font-style: italic;
+	font-family: Arial;
+	color: #000000;
+}
+

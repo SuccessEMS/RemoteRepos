@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="2438.667" MadCap:lastWidth="891" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Importing Events Into Your Master Calendar System</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Importing Events Into Your Master Calendar System</h1>
+        <p class="Body">You use the Import Events function to import events into Master Calendar. The file that contains the events can be a tab-delimited file that has been created in another system such as Microsoft Excel or it can be an XML file. You can import a tab-delimited file or an XML file into Master Calendar only if it adheres to file specifications that DEA has defined for Master Calendar.</p>
+        <p class="NoteTipWarningText">To obtain file specifications and view examples of allowed files, click the <strong>Import file specification</strong>s link on the <strong>Details</strong> tab of the <strong>Imports</strong> page. To access this link, do one of the following:</p>
+        <p class="NoteTipWarningBullet"><span style="font-style: normal;">• </span>Click Admin &gt; Event and Special Dates &gt; <strong>Import Events</strong>, and then click <strong>Add</strong>.</p>
+        <p class="NoteTipWarningBullet"><span style="font-style: normal;">• </span>Select an imported event, and then click <strong>Edit</strong>.</p>
+        <p class="Body">This topic guides you in&#160;<span class="Link"><span style="color: black;"><a><span style="color: black;text-decoration: none;"><span style="color: black;">importing</span></span></a></span></span> an event, <span class="Link"><span style="color: black;"><a><span style="color: black;text-decoration: none;"><span style="color: black;">editing, deleting</span></span></a></span></span>&#160;and purging imported events, and viewing&#160;the history for an imported event.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>Make sure Master Calendar is <a target="_blank" title="Connecting Master Calendar to Your EMS Database">connected to the EMS database as a data source</a> and has <a title="Connecting to Data Sources">connectors set up</a>.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Importing an Event</h2>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates &gt; <strong>Import Events</strong>.&#160;The Imports page opens to the the Saved tab, which lists all currently imported files saved in Master Calendar.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Under Actions, click <strong>Add</strong>.&#160;A blank Details tab opens, where you specify the calendar to which you are importing the event&#160;and you select the file to import.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">3. Enter the information for the imported file.</p>
+        <table border="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p class="TableTitle"><strong>Details tab fields</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Field</strong>
+                        </p>
+                    </td>
+                    <td style="border: solid black 1.0pt;border-left: none;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Description</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">A description of the file or the information that you are importing.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Calendars</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">A list of all active calendars to which you have access as Calendar Manager. Click the Lookup icon to open the Calendars dialog box and select the calendars to which you are adding the special date.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Import File</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Click Browse to open the Choose File dialog box to browse to and select the file that is to be imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">File Type</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Dropdown from which you can select one of two options:</p>
+                        <p class="TableBulletLev1">• Tab delimited file (the default value)</p>
+                        <p class="TableBulletLev1">• XML file</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Save Settings</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Optional. Select this value to save the imported file in Master Calendar.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Purge all previous import file</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Optional. Select this value to purge all previously imported events that were saved in Master Calendar.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">4. Click <strong>Import</strong>.&#160;If the import is successful, the information for the import is displayed and if:</p>
+        <p class="BulletLev2 mt-indent-1">• You selected Save Settings, the import is displayed on the Save tab. An automated email from emssoftware.com is sent to the address that you used to log in to Master Calendar. The email is titled “Master Calendar File Import Process” and the message states that “The file for the import named &lt; &gt; was successfully imported.”</p>
+        <p class="BulletLev2 mt-indent-1">• You did <em>not</em> select Save settings, the import is displayed on the Unsaved tab. An automated email from emssoftware.com is sent to the address that you used to log in to Master Calendar. The email is titled “Master Calendar File Import Process” and the message states that “The file for the import named &lt; &gt; was successfully imported.”</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepResultNoBullet mt-indent-1">Otherwise, a message is displayed at the top of the Imports page indicating that the import was not successful and details the problems with the file that prevented the import from being successful. You must correct the problems that are indicated for the file and carry out the import process again.</p>
+        <h2>Working With Imported EMS Event Files</h2>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>You can only edit an import file only if you saved it in Master Calendar.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates &gt; <strong>Import Events</strong>.&#160;The Imports page opens to the the Saved tab, which lists all currently imported files saved in Master Calendar. You can select any file using the checkboxes on the left and then apply Actions from the&#160;<strong>Actions&#160;</strong>menu.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Select the imported event&#160;file you wish to work with.</p>
+        <p class="StepNumberContinued">3. Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens, where you&#160;edit the information for the import, including its description, the calendars to which you are importing the external events, the file to be used for the import, and the file type. You can also indicate whether you want to save this edited import and whether you want to purge all previously imported files that were saved in Master Calendar.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <ol start="4">
+            <li><em>To view the history for an import file</em>, select the import file for which you are viewing the history.</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="StepNumberContinued">Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</li>
+            <li class="FigureCaptionColumn">Click the History tab to view the history for the selected import. Click&#160;<strong>Cancel&#160;</strong>to return to the Details tab.</li>
+        </ul>
+        <p class="AnchorFigure StepResultNoBullet">
+            <img border="0" class="internal" />
+        </p>
+        <ol start="5">
+            <li class="StepResultNoBullet"><em>To delete an imported event, </em>select the event file from the Saved or Unsaved tab in the Import Events page.&#160;To select all import files&#160;in a single step, select Description. If you have multiple pages of imports to delete, you must repeat this entire process on each page.</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip StepResultNoBullet" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Concept:</span></strong>When you delete a <em>saved </em>import file, you are deleting the import file plus&#160;all the events that were added to the calendars as a result of the import. When you delete an <em>unsaved </em>import file, you are not truly deleting a file. Instead, you are simply deleting all the events that were added to the calendars as a result of the import.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="mt-indent-1">
+            <li class="StepNumberContinued">Under Actions, click <strong>Delete</strong>.&#160;A message prompts you to confirm that you want to delete all the selected imports.</li>
+            <li class="StepNumberContinued">Click <strong>OK</strong>.&#160;A message confirms the deletion.</li>
+            <li class="StepNumberContinued">Click <strong>OK</strong>.&#160;The Active tab or Inactive tab is updated to reflect the deletion of the import file(s).</li>
+        </ul>
+        <ol start="6">
+            <li><em>To purge an imported even</em>t, select the file from the Saved tab (you can purge an import file only if you saved the file in Master Calendar).&#160;To select all saved import files on the currently opened page for purging in a single step, select Description. If you have multiple pages of saved import files to purge, you must repeat this entire process on each page.</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li class="StepNumberContinued">Under Actions, click <strong>Purge</strong>.&#160;A message prompts you to confirm&#160;that you want to purge all the selected imports.</li>
+            <li class="StepNumberContinued">Click <strong>OK</strong>.&#160;A message confirms the deletion.</li>
+            <li class="StepNumberContinued">Click <strong>OK</strong>.&#160;The Active tab or Inactive tab is updated to reflect the purge of the import file(s).</li>
+        </ul>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

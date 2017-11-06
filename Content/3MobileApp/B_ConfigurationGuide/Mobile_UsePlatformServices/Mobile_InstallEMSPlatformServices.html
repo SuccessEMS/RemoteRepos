@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="5" MadCap:lastHeight="1766" MadCap:lastWidth="994" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installing the EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installing the <MadCap:annotation MadCap:createDate="2017-10-24T15:34:04.4500252-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This page is in MindTouch about Mobile using Platform Services. However, the info is not in the guide for Mobile App. Need to determine if this info should appear." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:34:05.5143318-06:00">EMS</MadCap:annotation> Platform Services</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p>To install EMS Platform Services (which provides access to a Restful API), you will</p>
+        <ul class="mt-indent-1">
+            <li>Install <a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_API/EMS_API_Guide/020_Hardware_and_Software_Requirements&amp;_Setup_Guides_(V44_1)/Optional_Features/EMS_API/EMS_API_Guide/020_Hardware_and_Software_Requirements=">Prerequisites</a></li>
+            <li>Install the MSI</li>
+            <li>Customize the API</li>
+        </ul>
+        <h3 dir="auto">Install <a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_API/EMS_API_Guide/020_Hardware_and_Software_Requirements&amp;_Setup_Guides_(V44_1)/Optional_Features/EMS_API/EMS_API_Guide/020_Hardware_and_Software_Requirements=">Prerequisites</a></h3>
+        <h3 dir="auto">Install The MSI</h3>
+        <ol dir="auto">
+            <li dir="ltr">Download the MSI from the <a href="http://www.dea.com/ServiceAndSupport/productdownloads.aspx" title="http://www.dea.com/ServiceAndSupport/productdownloads.aspx">Downloads Portal</a><a target="_blank" title="http://download.microsoft.com/download/8/1/3/813AC4E6-9203-4F7A-8DD5-F3D54D10C5CD/httpPlatformHandler_amd64.msi">.</a></li>
+            <li dir="ltr">Run the installer.</li>
+        </ol>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-40" scope="col"><strong>Installer Prompt</strong>
+                    </th>
+                    <th class="mt-column-width-60" scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-40" data-th="Installer Prompt"><strong>SQL Instance Name</strong>
+                    </td>
+                    <td class="mt-column-width-60" data-th="Description">Server hosting SQL Server instance.</td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-40" data-th="Installer Prompt"><strong>Database Name</strong>
+                    </td>
+                    <td class="mt-column-width-60" data-th="Description">Name of EMS Database.</td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-40" data-th="Installer Prompt"><strong>Use Windows Authentication For Database Connection</strong>
+                    </td>
+                    <td class="mt-column-width-60" data-th="Description">Check this box to use windows authentication for access to the EMS database. Uncheck the box to use the default 'emsuser' SQL Server Authentication account.</td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-40" data-th="Installer Prompt"><strong>Virtual Directory Name</strong>
+                    </td>
+                    <td class="mt-column-width-60" data-th="Description">IIS virtual directory name to give to the EMS Platform Services (default is 'EmsPlatform').</td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-40" data-th="Installer Prompt"><strong>Enable NTLM For EMS Everyday User Authentication</strong>
+                    </td>
+                    <td class="mt-column-width-60" data-th="Description">Check this box if web users will be authenticated using Windows NTLM authentication.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>3. After running the installer, the following new folder should be created as the destination for EMS Platform Services logs:</p><pre class="mt-indent-1" xml:space="preserve">
+C:\ProgramData\EMS Software\Ems.Platform.Api
+</pre>
+        <h2>Validating The&#160;Installation</h2>
+        <p>To validate that the above installation was successful</p>
+        <ul>
+            <li>Ensure that the IIS&#160;Server, and EMS-specific Web Site, are started.&#160;</li>
+            <li>Identify the URL defined for the IIS&#160;Web Site hosting the EMS Platform Services Application. This is a combination of the domain name defined for the EMS web site, combined with the Virtual Directory name, configured during the installation process above (ex. 'EmsPlatform'). Ex.&#160;<em><a href="https://ems.yourcompany.com/EmsPlatform" rel="freelink" title="https://ems.yourcompany.com/EmsPlatform">https://ems.yourcompany.com/EmsPlatform</a></em></li>
+            <li>In a browser, view the EMS Platform Services status page by enter the URL identified in the previous step, followed by '/status', ex:&#160;&#160;<em><a href="https://ems.yourcompany.com/EmsPlatform/status" rel="freelink" title="https://ems.yourcompany.com/EmsPlatform/status">https://ems.yourcompany.com/EmsPlatform/status</a>&#160;</em></li>
+            <li>If the installation is successful, and Platform Services successfully connected to the database, the following status page should appear.</li>
+        </ul>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_InstallSetupPfatformServ_Status.png" style="width: 427px;height: 135px;" />
+        </p>
+        <ul>
+            <li>If Platform Services was unable to connect to the database, a different "Connection Status" will be displayed.&#160;</li>
+        </ul>
+        <h2>Post Installation Customizations</h2>
+        <h5>Configuring a Non-Standard SQL Server Port</h5>
+        <p>If connection to SQL Server is made using tcp, on a port other than the default 1433, then the platform configuration needs to be updated.</p>
+        <ul>
+            <li>Edit the default.json file located in the folder where the EMS Platform was installed above.&#160;</li>
+            <li>
+                <p>Add a "Port" attribute to the existing connection string, after the "Server" attribute and before the "Database" attribute.</p>
+            </li>
+        </ul><pre class="mt-indent-1" xml:space="preserve">
+"connectionString": "Server=&lt;servername&gt;;Port=1234;Database=&lt;dbname&gt;;Connect Timeout=30;"
+</pre>
+        <ul>
+            <li>
+                <p>Save changes and restart IIS.</p>
+            </li>
+        </ul>
+        <h5>Changing EMS Platform Services log file location</h5>
+        <ul>
+            <li>Edit the default.json file located in the folder where the EMS Platform was installed above.&#160;</li>
+            <li>Modify the <em>logFilePath</em> attribute to reference the new location for the logs, ensuring that double backslash separators are used in the file path.</li>
+        </ul><pre class="mt-indent-1" xml:space="preserve">
+"logFilePath": "C:\\ProgramData\\EMS Software\\Ems.Platform.Api\\api.log"</pre>
+        <ul>
+            <li>After installation of the EMS Web App Update, edit the web.config file in the web app installation directory.</li>
+            <li>Modify the <em>APILogFileDirectory</em> parameter with a value that matches the directory only of the file path above (omitting api.log).</li>
+        </ul><pre class="mt-indent-1" xml:space="preserve">
+&lt;add key="APILogFileDirectory" value="c:\ProgramData\EMS Software\Ems.Platform.Services\" /&gt;</pre>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-30T12:31:57.2044144-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-30T12:32:05.8932773-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Installing Outlook.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Installing Outlook.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Installing Configuring EMS.png"
+      TimeStamp="10/30/2017 12:32:02 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Installing Configuring EMS.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Introduction to EMS for Outlook.png"
+      TimeStamp="10/30/2017 12:32:02 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Introduction to EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Requirements and Prerequisites.png"
+      TimeStamp="10/30/2017 12:32:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Requirements and Prerequisites_1.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Requirements and Prerequisites.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Planning Your EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Configure EMS for Outlook.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Configure EMS for Outlook_1.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Configure EMS for Outlook_2.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Configure EMS for Outlook_3.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Configure EMS for Outlook_4.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Configure EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Install Upgrade EMS for Outlook.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/EMS for Outlook Add In Is.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/EMS for Outlook Add In Is.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Silent Unattended EMS for.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing Outlook/Where to See Your Exchange.png"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Installing Outlook/Where to See Your Exchange.htm"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../TOCs/Installing Outlook.fltoc"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Installing Outlook.css"
+      TimeStamp="10/30/2017 12:32:03 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-font-size-10.0pt" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-font-courier-new" />
+  </UsedCharacterStyles>
+</MsWordImport>

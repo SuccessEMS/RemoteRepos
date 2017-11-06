@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-30T12:18:02.8932039-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-30T12:18:14.7592467-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Using EMS for Microsoft Outlook Legacy.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Using EMS for Microsoft Outlook Legacy.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Using EMS for Microsoft Outlook.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Using EMS for Microsoft Outlook.gif"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Using EMS for Microsoft Outlook_1.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Using EMS for Microsoft Outlook.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Microsoft Outlook EMS for.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Creating Reservations in EMS.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation_1.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation_2.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation_3.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation_4.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Creating a Single Reservation.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Create a Series Reservation.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Create a Series Reservation_1.png"
+      TimeStamp="10/30/2017 12:18:08 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Create a Series Reservation.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Video Conference.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Video Conference_1.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a Video Conference_2.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Creating a Video Conference.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Editing or Canceling a Scheduled.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Editing or Canceling a Scheduled.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a List of Favorite.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Creating a List of Favorite_1.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Creating a List of Favorite.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Using Skype for Business in.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Using Skype for Business in.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Resolve Booking Conflicts.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS for Microsoft Outlook Legacy/Resolve Booking Conflicts_1.png"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/Resolve Booking Conflicts.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Using EMS for Microsoft Outlook Legacy/View Known Errors Alerts.htm"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../TOCs/Using EMS for Microsoft Outlook Legacy.fltoc"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Using EMS for Microsoft Outlook Legacy.css"
+      TimeStamp="10/30/2017 12:18:09 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="mt-font-size-20" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-font-size-16" />
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-color-b22222" />
+    <StyleName
+      Name="mt-color-a52a2a" />
+    <StyleName
+      Name="mt-color-669900" />
+    <StyleName
+      Name="mt-color-000000" />
+  </UsedCharacterStyles>
+</MsWordImport>

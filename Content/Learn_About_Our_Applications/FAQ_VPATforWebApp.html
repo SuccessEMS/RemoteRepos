@@ -1,0 +1,1486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="11" MadCap:lastHeight="11965.48" MadCap:lastWidth="1252" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">VPAT for 44.1 Web App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">VPAT for 44.1 Web App</h1>
+        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');</pre>
+        <div class="EXPAND_CLASS">
+            <h2 class="mt-align-center"><strong>EMS Accessibility Conformance Report</strong>
+            </h2>
+            <p class="mt-align-center"><span class="mt-font-size-22">Based on Voluntary Product Accessibility Template<sup>®</sup> (VPAT<sup>®</sup>)<sup>1</sup></span>
+            </p>
+            <p class="mt-align-center"><span class="mt-font-size-22">VPAT Version 2.0 Beta 2</span>
+            </p>
+            <h2>Name of Product: EMS Software Web App v44.1</h2>
+            <h2><span class="mt-font-size-16">Date: May 17, 2017</span>
+            </h2>
+            <h2><span class="mt-font-size-16">Contact information: <a href="mailto:support@emssoftware.com">support@emssoftware.com</a> (800-440-3994)</span>
+            </h2>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><span class="mt-font-size-16">This VPAT is based upon an evaluation of a select number of pages from within the larger application. It is not necessarily exhaustive of all issues.</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2><strong><span class="mt-font-size-24">Standards/Guidelines</span></strong>
+            </h2>
+            <p>This report covers the degree of conformance for the following accessibility standard/guideline:</p>
+            <table border="1" cellpadding="0" cellspacing="3" style="width: 1246px;">
+                <tbody>
+                    <tr>
+                        <td style="width: 600px;">
+                            <dl>
+                                <dt><span class="mt-font-size-24"><strong><em>Standard/Guideline</em></strong></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 640px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><span class="mt-font-size-24"><strong>Included in Report</strong></span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 600px;">
+                            <p>Web Content Accessibility Guidelines 2.0, at<br /><a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/"><em>http://www.w3.org/TR/2008/REC-WCAG20-20081211/</em></a></p>
+                        </td>
+                        <td style="width: 640px;">
+                            <p align="center">Level A – Included</p>
+                            <p align="center">Level AA – Included</p>
+                            <p align="center">Level AAA – Not Included</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 600px;">
+                            <p>Section 508 as published in 2017, at<br /><a href="http://www.section508.gov/"><em>http://www.Section508.gov</em></a></p>
+                        </td>
+                        <td style="width: 640px;">
+                            <p align="center">Included</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h4><strong>Table Information</strong>
+            </h4>
+            <p><span class="mt-font-Arial,sans-serif">For each of the standards, the criteria are listed in the tables below. The first column contains the criteria being evaluated, the second column describes the level of conformance of the product with regard to the criteria, and the third column contains any additional remarks and explanations regarding the product.</span>
+            </p>
+            <ul>
+                <li><span class="mt-font-Arial,sans-serif">By default, the table information is showing. This information can be hidden by clicking, “Click to show or hide table data”. This allows users to hide information so they see only the sections they need.</span>
+                </li>
+                <li><span class="mt-font-Arial,sans-serif">When sections of criteria do not apply, or deemed by the customer as not applicable, the section is noted as such and the rest of that table may be removed for that section.</span>
+                </li>
+                <li><span class="mt-font-Arial,sans-serif">When multiple standards are being recorded in this document, the duplicative sections are noted and responded to only one time. The duplicate entry will note the cross reference to the data.</span>
+                </li>
+            </ul>
+            <h4><strong>Terms</strong>
+            </h4>
+            <p><span class="mt-font-Arial,sans-serif">The terms used in the Conformance Level information are defined as follows:</span>
+            </p>
+            <ul>
+                <li><strong><span class="mt-font-Arial,sans-serif">Supports</span></strong><span class="mt-font-Arial,sans-serif">: The functionality of the product has at least one method that meets the criteria without known defects or meets with equivalent facilitation.</span>
+                </li>
+                <li><strong><span class="mt-font-Arial,sans-serif">Supports with Exceptions</span></strong><span class="mt-font-Arial,sans-serif">: Some functionality of the product does not meet the criteria.</span>
+                </li>
+                <li><strong><span class="mt-font-Arial,sans-serif">Does Not Support</span></strong><span class="mt-font-Arial,sans-serif">: Majority of functionality of the product does not meet the criteria.</span>
+                </li>
+                <li><strong><span class="mt-font-Arial,sans-serif">Not Applicable</span></strong><span class="mt-font-Arial,sans-serif">: The criteria are not relevant to the product.</span>
+                </li>
+                <li><strong><span class="mt-font-Arial,sans-serif">Not Evaluated</span></strong><span class="mt-font-Arial,sans-serif">: The product has not been evaluated against the criteria. This can be used only with WCAG 2.0 Level AAA.</span>
+                </li>
+            </ul>
+            <p>&#160;</p>
+            <h2><strong>WCAG 2.0 Report</strong>
+            </h2>
+            <h3><strong>Table 1: Conformance Criteria, Level A</strong>
+            </h3>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../Resources/Images/tech_doc_note.png" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">&#160;Some issues fall under two criteria. The issue reference will only be listed under one of the applicable criteria.</span></span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td style="width: 640px;">
+                            <dl>
+                                <dt><span class="mt-font-size-24"><strong><em>Criteria</em></strong></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 149px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><strong><span class="mt-font-size-24">Conformance Level</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 472px;">
+                            <dl>
+                                <dt><em><strong><span class="mt-font-size-24">Remarks and Explanations</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><a href="http://www.w3.org/TR/WCAG20/#text-equiv-all"><strong>1.1.1 </strong><strong>Non-text Content</strong></a> (Level A)</p>
+                            <p class="mt-align-justify">All non-text content that is presented to the user has a text alternative that serves the equivalent purpose. (See Exceptions.)</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some images do not have proper alt-text. Icon fonts in the "Services" section do not contain text alternatives.&#160;Some icon fonts do not have text alternatives. Decorative SVG images on the home page are not marked as decorative.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt">1.2.1 Audio-only and Video-only (Pre-recorded)</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">For prerecorded audio-only and prerecorded video-only media, the following are true:</p>
+                            <ul>
+                                <li class="mt-align-justify">Pre-recorded Audio-only: An alternative for time-based media presents equivalent information for prerecorded audio-only content.</li>
+                                <li class="mt-align-justify">Pre-recorded Video-only: Either an alternative for time-based media or an audio track&#160;presents equivalent information for pre-recorded video-only content.</li>
+                            </ul>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Pre-recorded audio-only and pre-recorded video only media are not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#media-equiv-captions">1.2.2 Captions (Pre-recorded)</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Captions are provided for all pre-recorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Pre-recorded audio in synchronized media is not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc">1.2.3 Audio Description or Media Alternative (Pre-recorded)</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">An alternative for time-based media or audio description of the pre-recorded video content is provided for synchronized media. (See Exceptions.)</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Pre-recorded video content for synchronized media is not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-programmatic">1.3.1 Info and Relationships</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Programmatically determined structure is not provided for some of the content. There are some empty list items. The main navigation nested list does not properly define the nested structure. Some pages do not have headings defined in the correct place. Some tables do not have their column headers properly defined, or they are using ARIA grids and do not have all ARIA roles assigned correctly. Some form elements are not explicitly labeled.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-sequence">1.3.2 Meaningful Sequence</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some of the content does not have a reading sequence that is programmatically determined. When the main navigation is collapsed, it is still readable by screen reader users. There are a couple of other instances in the main content of the pages where content hidden from all users is still readable by screen reader users.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#content-structure-separation-understanding">1.3.3 Sensory Characteristics</a></strong>&#160;(Level A)</p>
+                            <p class="mt-align-justify">Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components, such as shape, size, visual location, orientation, or sound.</p>
+                            <p class="mt-align-justify">Note: For requirements related to color, refer to Guideline 1.4.1.&#160;</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Instructions for content do not rely on sensory characteristics.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-without-color">1.4.1 Use of Color</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Color alone is used to convey some information. Some links are identified through color alone. The availability of attendees and rooms in the schedule search is conveyed exclusively through color.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-dis-audio">1.4.2 Audio Control</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Audio content is not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-keyboard-operable">2.1.1 Keyboard</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Numerous user interface elements cannot be operated with the keyboard.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#keyboard-operation-trapping">2.1.2 No Keyboard Trap</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">No keyboard trap is detected during navigation.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#time-limits-required-behaviors">2.2.1 Timing Adjustable</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">For each time limit that is set by the content, at least one of the following is true:</p>
+                            <ul>
+                                <li class="mt-align-justify"><strong>Turn off:</strong> The user is allowed to turn off the time limit before encountering it; or</li>
+                                <li class="mt-align-justify"><strong>Adjust: </strong>The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or</li>
+                                <li class="mt-align-justify"><strong>Extend: </strong>The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times</li>
+                            </ul>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Users can extend or turn off timeouts for tasks.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#time-limits-pause">2.2.2 Pause, Stop, Hide</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">For moving, blinking, scrolling, or auto-updating information, all of the following are true:</p>
+                            <ul>
+                                <li class="mt-align-justify"><strong>Moving, blinking, scrolling: </strong>For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and</li>
+                                <li class="mt-align-justify"><strong>Auto-updating:</strong> For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential</li>
+                            </ul>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">No moving content is present on the pages.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#seizure-does-not-violate">2.3.1 Three Flashes or Below Threshold</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">No flashing or blinking content is present on the pages.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-skip">2.4.1 Bypass Blocks</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Does not Support</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">A mechanism to bypass blocks of content is not available. Some ARIA landmarks are also defined incorrectly.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-title">2.4.2 Page Titled</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Web pages have titles that describe topic or purpose.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some pages do not have informative titles. The reservation confirmation screen is lacking a descriptive title.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-order">2.4.3 Focus Order</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Focus order is illogical and does not follow the navigation sequence of pages in some cases. Some content when it is supposed to be hidden from all users can still be reached with the keyboard. The main navigation is one example. Also, when modal dialogs close, the focus is not set back to a logical spot within the page.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-refs">2.4.4 Link Purpose (In Context)</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some links do not have link text or surrounding text that convey their purpose. Many of the links have text, but the text repeats other link text on the page and the differences between the links cannot be perceived.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#meaning-doc-lang-id">3.1.1 Language of Page</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">The default human language of each Web page can be programmatically determined.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Does Not Support</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Human language is not defined on each page.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-receive-focus">3.2.1 On Focus</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">When any component receives focus, it does not initiate a change of context.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">A change of context is not initiated when elements on the page receive focus.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-unpredictable-change">3.2.2 On Input</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Changing the setting of any user interface component does not automatically cause a change of context.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Changing the settings of controls does not change context.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#minimize-error-identified">3.3.1 Error Identification</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Some error messages are not semantically related to their form element.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#minimize-error-cues">3.3.2 Labels or Instructions</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">Labels or instructions are provided when content requires user input.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some user input controls do not have labels or instructions. The date and time inputs do not convey their formatting requirements.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-parses">4.1.1 Parsing</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique (see exceptions).</p>
+                            <p class="mt-align-justify"><strong>Note: </strong>Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some elements do not have correct structure.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 640px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#ensure-compat-rsv">4.1.2 Name, Role, Value</a></strong> (Level A)</p>
+                            <p class="mt-align-justify">For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.</p>
+                        </td>
+                        <td style="width: 149px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 472px;">
+                            <p class="mt-align-justify">Some user interface controls provide names, states, roles, and values. Controls that expand and collapse sections do not convey their current state. Dynamic changes to the page are not perceived by screen reader users. Complex UI components such as tab panels are not implemented correctly. Some form labels are not defined correctly.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3><b>Table 2. Conformance Criteria, Level AA</b>
+                            </h3>
+                            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                                <tbody>
+                                    <tr>
+                                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                                            <img src="../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                                        </td>
+                                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span>Some issues fall under two criteria. The issue reference will only be listed under one of the applicable criteria.</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <dl>
+                                <dt><em><strong><span class="mt-font-size-24">Criteria</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 189px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><strong><span class="mt-font-size-24">Conformance Level</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 447px;">
+                            <dl>
+                                <dt><em><strong><span class="mt-font-size-24">Remarks and Explanations</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#media-equiv-real-time-captions">1.2.4 Captions (Live)</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Captions are provided for all live audio content in synchronized media.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Live audio content is not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#media-equiv-audio-desc-only">1.2.5 Audio Description (Prerecorded)</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Audio description is provided for all pre-recorded video content in synchronized media.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Pre-recorded video content for synchronized media is not present.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">1.4.3 Contrast (Minimum)</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">The visual presentation of text and images of text has a contrast ratio of at least 4.5:1.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify">Some content does not have a color contrast ratio of at least 4.5:1.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale">1.4.4 Resize text</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Text can be resized without assistive technology up to 200 percent without loss of content or functionality (see Exceptions).</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify">Some text cannot be resized up to 200% without overlapping other content in some cases.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-text-presentation">1.4.5 Images of Text</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Text is not conveyed as images of text.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-mult-loc">2.4.5 Multiple Ways</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">More than one way is available to locate a Web page within a set of Web pages.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">All Web pages have multiple ways of navigation.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-descriptive">2.4.6 Headings and Labels</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Headings and labels describe topic or purpose.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">Headings and labels on all pages describe the topic or purpose.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#navigation-mechanisms-focus-visible">2.4.7 Focus Visible</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify">Some elements obtain partial visible focus or no focus at all when users navigate to them.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#meaning-other-lang-id">3.1.2 Language of Parts</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">The human language of each passage or phrase in the content can be programmatically determined.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">There are no changes in language within the page.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-locations">3.2.3 Consistent Navigation</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">All Web pages have consistent navigation mechanisms.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#consistent-behavior-consistent-functionality">3.2.4 Consistent Identification</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">Components that have the same functionality within a set of Web pages are identified consistently.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">All components with the same functionality are identified consistently.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#minimize-error-suggestions">3.3.3 Error Suggestion</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user.</p>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">User input controls have suggestions to correct errors.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 601px;">
+                            <p class="mt-align-justify"><strong><a href="http://www.w3.org/TR/WCAG20/#minimize-error-reversible">3.3.4 Error Prevention (Legal, Financial, Data)</a></strong> (Level AA)</p>
+                            <p class="mt-align-justify">For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:</p>
+                            <ul>
+                                <li class="mt-align-justify"><strong>Reversible</strong>: Submissions are reversible.</li>
+                                <li class="mt-align-justify"><strong>Checked</strong>: Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li>
+                                <li class="mt-align-justify"><strong>Confirmed</strong>: A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+                            </ul>
+                        </td>
+                        <td style="width: 189px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 447px;">
+                            <p class="mt-align-justify"><span class="mt-font-size-10.0pt">No legal commitments or financial transaction are present on the page.</span>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><strong>Table 3. Conformance Criteria, Level AAA</strong>
+            </h3>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: &#160;</strong></span>WCAG 2 Level AAA conformance criteria were not evaluated.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3><b>Table 4. WCAG Conformance Requirements</b>
+                            </h3>
+                            <p>&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <dl>
+                                <dt><em><span class="mt-font-size-24"><strong>Criteria</strong></span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 202px;">
+                            <dl>
+                                <dt class="mt-align-center"><span class="mt-font-size-24"><i>Conformance Level</i></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 437px;">
+                            <dl>
+                                <dt><em><span class="mt-font-size-24"><strong>Remarks and Explanations</strong></span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <p class="mt-align-justify"><a href="http://www.w3.org/TR/WCAG20/#cc1"><strong><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">1. Conformance Level</span></span></strong></a>
+                            </p>
+                            <p class="mt-align-justify">One of the following levels of conformance is met in full.</p>
+                            <ul>
+                                <li class="mt-align-justify"><strong>Level A</strong>: For Level A conformance (the minimum level of conformance), the Web page satisfies all the Level A Success Criteria, or a conforming alternate version is provided.</li>
+                                <li class="mt-align-justify"><strong>Level AA</strong>: For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
+                                <li class="mt-align-justify"><strong>Level AAA</strong>: For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
+                            </ul>
+                        </td>
+                        <td style="width: 202px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 437px;">
+                            <p class="mt-align-justify">Some of the Level A and Level AA conformance requirements are met. Level AAA was not evaluated</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <p class="mt-align-justify"><strong><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt"><a href="http://www.w3.org/TR/WCAG20/#cc2"><strong>2. Full pages</strong></a></span></span></strong>
+                            </p>
+                            <p class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">Conformance (and conformance level) is for full Web page(s) only, and cannot be achieved if part of a Web page is excluded.</span>
+                            </p>
+                        </td>
+                        <td style="width: 202px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 437px;">
+                            <p class="mt-align-justify">The full page was audited for issues, however, within each page there was only partial conformance to the guidelines.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <p class="mt-align-justify"><strong><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt"><a href="http://www.w3.org/TR/WCAG20/#cc3"><strong>3. Complete processes</strong></a></span></span></strong>
+                            </p>
+                            <p class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">When a Web page is one of a series of Web pages presenting a process (i.e., a sequence of steps that need to be completed to accomplish an activity), all Web pages in the process conform at the specified level or better. (Conformance is not possible at a particular level if any page in the process does not conform at that level or better.)</span>
+                            </p>
+                        </td>
+                        <td style="width: 202px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 437px;">
+                            <p class="mt-align-justify">The entire process of reserving a room and viewing a schedule was evaluated, but the pages in the process only partially conformed to the guidelines.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <p class="mt-align-justify"><strong><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt"><a href="http://www.w3.org/TR/WCAG20/#cc4"><strong>4. Only Accessibility-Supported Ways of Using Technologies</strong></a></span></span></strong>
+                            </p>
+                            <p class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">Only accessibility-supported ways of using technologies are relied upon to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is accessibility supported.</span>
+                            </p>
+                        </td>
+                        <td style="width: 202px;">
+                            <p class="mt-align-center">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 437px;">
+                            <p class="mt-align-justify">The pages audited were tested using a combination of assistive technologies: the latest versions of JAWS and NVDA in both latest versions of IE and Firefox. Additionally, keyboard-only support was tested in IE, Firefox and Chrome. Where the application meets a conformance requirement, accessibility-supported ways of using technologies was supported. Where conformance requirements were not met, assistive technologies were used in the testing, but coding errors created barriers to assistive technology users.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 598px;">
+                            <p class="mt-align-justify"><strong><span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt"><a href="http://www.w3.org/TR/WCAG20/#cc5"><strong>5. Non-Interference</strong></a></span></span></strong>
+                            </p>
+                            <p class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">If technologies are used in a way that is not accessibility supported, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the Web page as a whole continues to meet the conformance requirements under each of the following conditions:</span>
+                            </p>
+                            <ol>
+                                <li class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">When any technology that is not relied upon is turned on in a user agent,</span>
+                                </li>
+                                <li class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">When any technology that is not relied upon is turned off in a user agent, and</span>
+                                </li>
+                                <li class="mt-align-justify"><span class="mt-font-Calibri,sans-serif">When any technology that is not relied upon is not supported by a user agent</span>
+                                </li>
+                            </ol>
+                        </td>
+                        <td style="width: 202px;">
+                            <p class="mt-align-center">Supports</p>
+                        </td>
+                        <td style="width: 437px;">
+                            <p class="mt-align-justify">The parts of the pages that assistive technology users cannot access due to coding errors do not prevent assistive technology users from accessing other parts of the pages that do meet conformance requirements.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h2 align="center"><b>2017 Section 508 Report</b>
+                            </h2>
+                            <h3><strong>Functional Performance Criteria</strong>
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <dl>
+                                <dt><span class="mt-font-size-24"><strong><em>Criteria</em></strong></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 203px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><strong><span class="mt-font-size-24">Conformance Level</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 435px;">
+                            <dl>
+                                <dt><em><strong><span class="mt-font-size-24">Remarks and Explanations</span></strong></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.1 Without Vision</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some images, active elements (links and buttons), and form controls lack accessible names necessary for assistive technologies</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.2 With Limited Vision</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some color contrast problems exist. Some content cannot be enlarged to 200%.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.3 Without Perception of Color</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some links are identified with color alone.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.4 Without Hearing</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">No audio content is present</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.5 With Limited Hearing</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">No audio content is present</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.6 Without Speech</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">No speech is required for operating the application</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.7 With Limited Manipulation</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some interactions require using a mouse</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.8 With Limited Reach and Strength</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some interactions require using a mouse</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 599px;">
+                            <p style="margin-left: -.75pt;">302.9 With Limited Language, Cognitive, and Learning Abilities</p>
+                        </td>
+                        <td style="width: 203px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports with Exceptions</p>
+                        </td>
+                        <td style="width: 435px;">
+                            <p style="margin-left: -.75pt;">Some interactions will create challenges for users with some cognitive or learning impairments</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <h3><strong>Hardware</strong>
+            </h3>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: &#160;</strong></span>This is not a hardware product.&#160;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>&#160;</p>
+            <h3><strong>Software</strong>
+            </h3>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText mt-align-justify"><span class="mt-color-669900"><strong>Notes: &#160;</strong></span>
+                            </p>
+                            <ul>
+                                <li class="NoteTipWarningText mt-align-justify">Examples of "Platform software" are desktop operating systems; embedded operating systems, including mobile systems; Web browsers; plug-ins to Web browsers that render a particular media or format; and sets of components that allow other applications to execute, such as applications which support macros or scripting.</li>
+                                <li class="NoteTipWarningText mt-align-justify">Examples of "Software Tools" are defined as Software for which the primary function is the development of other software. Software tools usually come in the form of an Integrated Development Environment (IDE) and are a suite of related products and utilities. Examples of IDEs include Microsoft<sup>®</sup> Visual Studio<sup>®</sup>, Apple<sup>®</sup> Xcode<sup>®</sup>, and Eclipse Foundation Eclipse<sup>®</sup>.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td>
+                            <dl>
+                                <dt><span class="mt-font-size-24"><strong><em>Criteria</em></strong></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 221px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><span class="mt-font-size-24">Conformance Level</span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 577px;">
+                            <dl>
+                                <dt><em><span class="mt-font-size-24"><strong>Remarks and Explanations</strong></span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;"><span class="mt-font-Calibri,sans-serif">501 Scope – Incorporation of WCAG 2.0 AA</span>
+                            </p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">See <a><span style="color: blue;">WCAG 2.0</span></a> section</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;"><span class="mt-font-Calibri,sans-serif">502 Interoperability with Assistive Technology</span>
+                            </p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This section only applies to "platform software."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.2.1 User Control of Accessibility Features</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.2.2 No Disruption of Accessibility Features</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">The application does not disrupt accessibility features.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3 Accessibility Services</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This section only applies to "platform software" and "software tools."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.1 Object Information</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.2 Modification of Object Information</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool".</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.3 Row, Column, and Headers</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.4 Values</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.5 Modification of Values</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.6 Label Relationships</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.7 Hierarchical Relationships</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.8 Text</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.9 Modification of Text</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.10 List of Actions</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.11 Actions on Objects</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.12 Focus Cursor</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.13 Modification of Focus Cursor</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.3.14 Event Notification</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">502.4 Platform Accessibility Features</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This application is not "platform software" and is not a "software tool."</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;"><strong><span class="mt-font-Calibri,sans-serif">503 Applications</span></strong>
+                            </p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">503.2 User Preferences</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Supports</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">The application allows <span style="color: black;"><span class="mt-font-Verdana,sans-serif"><span class="mt-font-size-9.0pt">user preferences from platform settings for color, contrast, font type, font size, and focus cursor.</span></span></span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">503.3 Alternative User Interfaces</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">No alternative user interfaces are provided.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;"><strong>503.4 User Controls for Captions and Audio Description</strong>
+                            </p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">503.4.1 Caption Controls</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">No video content is present.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">503.4.2 Audio Description Controls</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">No video content is present.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;"><span class="mt-font-Calibri,sans-serif">504 Authoring Tools</span>
+                            </p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This section only applies to applications where users can author content.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">504.2 Content Creation or Editing</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This is not an authoring tool.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">504.2.1 Preservation of Information Provided for Accessibility in Format Conversion</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This is not an authoring tool.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">504.2.2 PDF Export</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This is not an authoring tool.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">504.3 Prompts</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This is not an authoring tool.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p style="margin-left: -.75pt;">504.4 Templates</p>
+                        </td>
+                        <td style="width: 221px;">
+                            <p class="mt-align-center" style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 577px;">
+                            <p style="margin-left: -.75pt;">This is not an authoring tool.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table border="1" cellpadding="0" cellspacing="3">
+                <tbody>
+                    <tr>
+                        <td colspan="3">
+                            <h3><b>Support Documentation and Services</b>
+                            </h3>
+                            <p>&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <dl>
+                                <dt><span class="mt-font-size-24"><strong><em>Criteria</em></strong></span>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 194px;">
+                            <dl>
+                                <dt class="mt-align-center"><em><span class="mt-font-size-24">Conformance Level</span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                        <td style="width: 610px;">
+                            <dl>
+                                <dt><em><span class="mt-font-size-24"><strong>Remarks and Explanations</strong></span></em>
+                                </dt>
+                            </dl>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">601.1 Scope</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;"><strong><span class="mt-font-Calibri,sans-serif">602 Support Documentation</span></strong>
+                            </p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">602.2 Accessibility and Compatibility Features</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">No documentation was evaluated.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">602.3 Electronic Support Documentation</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">No documentation was evaluated.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">602.4 Alternate Formats for Non-Electronic Support Documentation</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">No alternate formats were evaluated.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;"><span class="mt-font-Calibri,sans-serif">603 Support Services</span>
+                            </p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">&#160;</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p><span style="color: black;">ICT support services including, but not limited to, help desks, call centers, training services, and automated self-service technical support, shall conform to 603.</span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">603.2 Information on Accessibility and Compatibility Features</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">No support services were evaluated.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 433px;">
+                            <p style="margin-left: -.75pt;">603.3 Accommodation of Communication Needs</p>
+                        </td>
+                        <td style="width: 194px;">
+                            <p style="margin-left: -.75pt;">Not Applicable</p>
+                        </td>
+                        <td style="width: 610px;">
+                            <p style="margin-left: -.75pt;">No support services were evaluated.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <dl class="mt-indent-3">
+                <dt>&#160;</dt>
+                <dd>&#160;</dd>
+                <dt>&#160;</dt>
+            </dl>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,3781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="10122.33" MadCap:lastWidth="833" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Colleague Unidata Views Data Model</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Colleague Unidata Views Data Model</h1>
+        <div>
+            <p>EMS Software&#160;will code a set of views specific to your organization’s use of Unidata to allow for integration between EMS and Unidata. Outlined are the baseline tables/columns accessed in the views.</p>
+        </div>
+        <p>You will be provided a Campus Technical Environment Questionnaire which allows for identification of specific fields used by EMS that tend to vary in individual Unidata implementations. Following return of the questionnaire, EMS Views will be coded for your organization and a final review done in EMS. Your Implementation Consultant can assist in more detailed explanations or demonstrations of how the information will be used in EMS to support the Academic Scheduling process, as needed for completion of the questionnaire.&#160; Once reviewed and accepted, further view modifications will be subject to EMS Professional Services time and materials fees.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <p>
+                            <img src="../../../Resources/Images/tech_doc_note.png" />
+                        </p>
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p><span class="mt-font-arial"><span class="mt-font-size-16"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><span style="color: windowtext;">Optionally and on a custom basis, up to 10 User Defined Fields can be added to the new SQL compliant dictionaries and EMS_vwCourses view for each organization to support desired workflow. Detailed business requirements are needed to provide a quote for customization of the views for this purpose.&#160;</span></span></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: #0070C0;">In order to build the EMS views the following are required:</span></span></span>
+        </p>
+        <ol>
+            <li>
+                <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: windowtext;">The VSG (Visual Schema Generator), an executable that is shipped with Unidata, must be installed on a computer that can access Unidata. If you cannot locate the .msi installer for this tool, EMS Software&#160;can provide a copy.</span></span></span>
+                </p>
+                <ol style="list-style-type: lower-alpha;">
+                    <li>
+                        <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: windowtext;">The purpose of the VSG is to create SQL compliant dictionary files based on the dictionary files that contain data that EMS requires. Once SQL compliant dictionaries are created by the VSG the final EMS views can be created and permissions granted via the VSG.</span></span></span>
+                        </p>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: windowtext;">The 32-bit IBM Unidata ODBC driver must be installed in order for the VSG to connect to Unidata. If you cannot locate this installer, EMS Software can provide a copy.</span></span></span>
+                </p>
+            </li>
+        </ol>
+        <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: windowtext;">Modification of SQL compliant dictionaries and views by the customer is unsupported and voids the Annual Service Agreement for the integration with Colleague Unidata.</span></span></span>
+        </p>
+        <p><span class="mt-font-arial"><span class="mt-font-size-16"><span style="color: windowtext;">Fields highlighted in </span><span class="mt-color-0000cd">BLUE </span><span style="color: windowtext;">are required to be unique.</span></span></span>
+        </p>
+        <p><span class="mt-font-arial"><span class="mt-font-size-16"><strong>New Unidata Dictionary Legend:</strong><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; BLACK – Fields generated from VSG – no AE Editor changes required.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span style="color: #00B050;">GREEN</span> – New fields that must be added via the AE Editor.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <span style="color: #C45911;">RED</span> – Required changes via the AE Editor.</span></span>
+        </p>
+        <p><span class="mt-font-size-20"><span style="font-size: 18.6667px;"><b>Buildings</b></span></span>
+        </p>
+        <p><strong>EMS View</strong>: EMS_vwBuildings</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> BUILDINGS<br /><strong>New Dictionary</strong>: BUILDINGS_EMS<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>BLDG_DESC</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>BUILDINGS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>BUILDINGS_EMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <br /><strong>Purpose:</strong> Used to define buildings list in EMS. Required for buildings that host academic courses; additional buildings can be added manually to EMS if used only for non-academic purposes.</p>
+        <p>&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>BUILDINGS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>BuildingCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>BuildingDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>BLDG_DESC</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><span style="font-size: 14.0pt;">Room Types</span></strong>
+        </h2>
+        <p><strong>EMS View</strong>: EMS_vwRoomTypes</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> ROOM.TYPES<br /><strong>New Dictionary</strong>: ROOM_TYPES_EMS<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>ROOM.TYPES</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>ROOM_TYPES_EMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>RMTP_DESCRIPTION</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><strong>Purpose:</strong> Used to define room type list in EMS. Room Types classify each room and allows for searching, sorting, and reporting by classification. Additional room types can be added to EMS manually.<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>ROOM_TYPES_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>RoomTypeDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>RMTP_DESCRIPTION</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><span style="font-size: 14.0pt;">Rooms</span></strong>
+        </h2>
+        <p><strong>EMS View</strong>: EMS_vwRooms</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary</strong>: ROOMS<br /><strong>New Dictionary</strong>: ROOMS_EMS (Requires modifications via AE Editor)<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>ROOMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>ROOMS_EMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ROOM_NAME</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ROOM_CAPACITY</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>2</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>MD0,</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Capacity</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>7R</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ROOM_TYPE</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>4</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Room Type</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>20L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ROOMS_BLDG_ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>FIELD(@ID,”*”,1)</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Building</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>4L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">ROOM_CAPACITY_1</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">IF ROOM_CAPACITY=’’ THEN ‘30’ ELSE ROOM_CAPACITY</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">7R</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">ROOM_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">FIELD(@ID,”*”,2)</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">ROOM_TYPE_1</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">IF ROOM_TYPE = ‘’ THEN ‘0’ ELSE ROOM_TYPE</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">20L</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p><strong>Purpose:</strong> Used to define list of rooms and their capacities for academic purposes in EMS; related to Buildings and Room Types. Required for rooms that host academic courses; additional rooms can be added manually to EMS if used only for non-academic purposes.</p>
+        <p>&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>ROOMS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISBuildingID</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ROOMS_BLDG_ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISRoomTypeID</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ROOM_TYPE_1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>RoomCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ROOM_CODE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>RoomDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ROOM_NAME</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Capacity</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ROOM_CAPACITY_1</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong><span style="font-size: 14.0pt;">Instructors</span></strong>
+        </p>
+        <p><strong>EMS View:</strong> EMS_vwInstructors</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> FACULTY<br /><strong>New Dictionary</strong>: FACULTY_EMS (Requires modifications via AE Editor)<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 97px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 42px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 156px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 55px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 108px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 72px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 36px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 74px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 97px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 156px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 55px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 108px;">
+                        <p>FACULTY</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 74px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 97px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 156px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 55px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 108px;">
+                        <p>FACULTY_EMS</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 74px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 97px;">
+                        <p>FAC_FIRST_NAME</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 156px;">
+                        <p>TRANS(“PERSON”,@ID,”FIRST.NAME”,”X”)</p>
+                    </td>
+                    <td style="width: 55px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 108px;">
+                        <p>Faculty First Name</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 74px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 97px;">
+                        <p><span style="color: #00B050;">FAC_FULL_NAME</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 156px;">
+                        <p><span style="color: #00B050;">FAC_LAST_NAME:’, ‘:FAC_FIRST_NAME</span>
+                        </p>
+                    </td>
+                    <td style="width: 55px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 108px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">35L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 74px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 97px;">
+                        <p>FAC_LAST_NAME</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 156px;">
+                        <p>TRANS(“PERSON”,@ID,”LAST.NAME”,”X”)</p>
+                    </td>
+                    <td style="width: 55px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 108px;">
+                        <p>Faculty Last Name</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 74px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Purpose:</strong> Used to define list of instructors in EMS; related to Courses.</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>FACULTY_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>InstructorDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>FAC_FULL_NAME</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong><span style="font-size: 14.0pt;">Terms</span></strong>
+        </p>
+        <p><strong>EMS View:</strong> EMS_vwTerms</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary</strong>: TERMS<br /><strong>New Dictionary</strong>: TERMS_EMS (Requires modifications via AE Editor)</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>TERMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>TERMS_EMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>TERM_DESC</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>2</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>TERM_START_DATE</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>5</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: maroon;">D2/MDY</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Start Date</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>TERM_END_DATE</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>6</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p><span style="color: maroon;">D2/MDY</span>
+                        </p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>End Date</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Purpose:</strong> Used to define list of terms in EMS; related to Courses.&#160; In conjunction with Domains, terms separate courses into distinct lists that will go through the academic planning process (synching, optimizing, publishing, reporting) as a unit.</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>TERMS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>TermCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>TermDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>TERM_DESC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>StartDate</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>TERM_START_DATE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>EndDate</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>TERM_END_DATE</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><span style="font-size: 14.0pt;">Subjects (no Campus Codes)</span></strong>
+        </h2>
+        <p><strong>EMS View:</strong> EMS_vwSubjects</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> SUBJECTS<br /><strong>New Dictionary</strong>: SUBJECTS_EMS (Requires modifications via AE Editor)<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 108px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 64px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 78px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 68px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 106px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 75px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 63px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 77px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 108px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>SUBJECTS</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>SUBJECTS_EMS</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p>SUBJ_DESC</p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">CAMPUS_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">DIVISION_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">DEPT_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">LEVEL_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">CUSTOMCODE1</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 108px;">
+                        <p><span style="color: #00B050;">CUSTOMCODE2</span>
+                        </p>
+                    </td>
+                    <td style="width: 64px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 78px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 68px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 106px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 75px;">
+                        <p><span style="color: #00B050;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 63px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 77px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Purpose:</strong> Used to define list of subjects in EMS. Within EMS, subjects are divided into Domains in order to create distinct lists of courses per term that will go through the academic planning process (synching, optimizing, publishing, reporting) as a unit, managed by the academic central scheduler.</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>SUBJECTS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SubjectCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SubjectDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>SUBJ_DESC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">CampusCode</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">NULL</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>DivisionCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>DepartmentCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>LevelCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode1</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode2</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><span style="font-size: 14.0pt;">Subjects (with Campus Codes)</span></strong>
+        </h2>
+        <p><strong>EMS View:</strong> EMS_vwSubjects</p>
+        <p><strong>Unidata Dictionary:</strong> COURSE.SECTIONS<br /><strong>New Dictionary</strong>: COURSE_SECTIONS_EMS <strong><em><span style="color: maroon;">(See Courses Below)</span></em></strong></p>
+        <h2><strong><span style="font-size: 14.0pt;">Course Types</span></strong>
+        </h2>
+        <p><strong>EMS View</strong>: EMS_vwCourseTypes</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> INSTR.METHODS<br /><strong>New Dictionary</strong>: INSTR_METHODS_EMS<br />&#160;</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>FORMAT</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>SM</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 80px;">
+                        <dl>
+                            <dt>ASSOC.....</dt>
+                        </dl>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>INSTR.METHODS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>INSTR_METHODS_EMS</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 80px;">
+                        <p>INM_DESC</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 80px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong style="line-height: 1.4;">Purpose:</strong><span style="line-height: 1.4;"> Used to define the course type list in EMS; related to coursedates. Course Types are used to classify coursedates for purposes of searching, sorting, optimizing, and reporting.</span>
+        </p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>INSTR_METHODS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Description</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>INM_DESC</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><span style="font-size: 14.0pt;">Courses</span></strong>
+        </h2>
+        <p><strong>EMS View</strong>: EMS_vwCourses</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> COURSE.SECTIONS<br /><strong>New Dictionary</strong>: COURSE_SECTIONS_EMS</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;width: 500px;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 154px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 166px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 82px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 608px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 132px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </th>
+                    <th scope="col" style="width: 72px;">
+                        <p>FORMAT</p>
+                    </th>
+                    <th scope="col" style="width: 36px;">
+                        <p>SM</p>
+                    </th>
+                    <th scope="col" style="width: 85px;">
+                        <p>ASSOC.....</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>COURSE.SECTIONS</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>21L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>COURSE_SECTIONS_EMS</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>21L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_TERM</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>15</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Term</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_SUBJECT</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>6</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Subject</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>40L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_COURSE_NO</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>17</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Course Number</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>7L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_NO</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>18</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Section</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>5L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_SHORT_TITLE</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Short Title</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_FACULTY</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>40</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Faculty</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_CAPACITY</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>5</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>MD0,</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Capacity</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>5R</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_MIN_CRED</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>8</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>MD25</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Min Cred</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_XLIST</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>32</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>XList</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">CAMPUS_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">(This record required when <strong>NOT</strong> using Campus Codes. Otherwise do not include this record.)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">DIVISION_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">DEPT_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">LEVEL_CODE</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">CUSTOMCODE1</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: #00B050;">CUSTOMCODE2</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: #00B050;">‘’</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_ACTIVE_STUDENT_COUNT</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">IF SEC_ACTIVE_STUDENTS AND SEC_ACTIVE_STUDENTS NE "0" THEN (((COUNT(SEC_ACT</span>
+                        </p>
+                        <p><span style="color: maroon;">IVE_STUDENTS,@VM)) + (1))) ELSE (0)&#160; </span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>MD0,</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Active Student Count</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>6R</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>CSXL_PRIMARY_SECTION</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">TRANS(COURSE.SEC.XLISTS,SEC_XLIST,’CSXL.PRIMARY.SECTION’,’X’);IF @=ID THEN ‘0’ ELSE IF @=’’ THEN ‘0’ ELSE @</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Primary Section</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>21L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_FIRST_FACULTY</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">TRANS(“COURSE.SEC.FACULTY”, SEC_FACULTY, “CSF.FACULTY”,”X1”);IF @=’’ THEN ‘0’ ELSE @</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Faculty</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_CURRENT_STATUS</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">FIELD(SEC_STATUS,@VM,1)</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Current Status</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>5L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_STATUS</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>88</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Status</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>30L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_SYNONYM</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>61</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>Synonym</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>11L</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p>SEC_ACTIVE_STUDENTS</p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p>66</p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>6R</p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: maroon;">SEC_SUBJ_DESC</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: maroon;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">TRANS(“SUBJECTS”, SEC_SUBJECT, “SUBJ.DESC”, “X1”)</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">Subject Description (This record required when using Campus Codes)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: maroon;">30L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: maroon;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 154px;">
+                        <p><span style="color: maroon;">SEC_LOCATION</span>
+                        </p>
+                    </td>
+                    <td style="width: 166px;">
+                        <p><span style="color: maroon;">D</span>
+                        </p>
+                    </td>
+                    <td style="width: 82px;">
+                        <p><span style="color: maroon;">6</span>
+                        </p>
+                    </td>
+                    <td style="width: 608px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">Location</span>
+                        </p>
+                        <p><span style="color: maroon;">(This record required when using Campus Codes)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: maroon;">40L</span>
+                        </p>
+                    </td>
+                    <td style="width: 36px;">
+                        <p><span style="color: maroon;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Purpose:</strong> Used to define the list of courses per term; related to subjects, instructors, terms.</p>
+        <table cellpadding="0" cellspacing="0" style="width: 733px;table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 414px;">
+                        <p><strong>COURSE_SECTIONS_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISID</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISTermID</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_TERM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISSubjectID</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_SUBJECT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CampusCode</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>NULL<span style="color: maroon;"> (or SEC_LOCATION if using Campus Codes)</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>DepartmentCode</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>LevelCode</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode1</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode2</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CRN</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_SYNONYM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Course</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_COURSE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Section</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_NO</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CourseTitle</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_SHORT_TITLE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISInstructorID</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_FIRST_FACULTY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>EstimatedEnrollment</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_CAPACITY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CrosslistParentID</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>CSXL_PRIMARY_SECTION</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>ActualEnrollment</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_ACTIVE_STUDENT_COUNT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CreditHours</p>
+                    </td>
+                    <td style="width: 414px;">
+                        <p>SEC_MIN_CRED</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><span style="font-size: 14.0pt;">Subjects with Campus Codes (distinct values)</span>
+        </p>
+        <table border="1" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><strong>COURSE_SECTIONS_EMS Field</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SEC_SUBJECT</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SubjectCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>SEC_SUBJECT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SubjectDescription</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>SEC_LOCATION</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">CampusCode</span>
+                        </p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">NULL</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>DivisionCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>DepartmentCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>LevelCode</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode1</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>CustomCode2</p>
+                    </td>
+                    <td style="width: 312px;">
+                        <p>NULL</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong><span style="font-size: 14.0pt;">Course Dates</span><br />EMS View</strong>: EMS_vwCourseDates</p>
+        <p><strong>View Permissions:</strong> Read Only</p>
+        <p><strong>Unidata Dictionary:</strong> COUSRE.SEC.MEETING<br /><strong>New Dictionary</strong>: COURSE_SEC_MEETING_EMS<br /><strong><span style="color: maroon;">New Dictionary Permissions</span></strong>: Update if allowing EMS to update room locations in Unidata</p>
+        <table cellpadding="0" cellspacing="0" style="width: 500px;table-layout: fixed;">
+            <tbody>
+                <tr>
+                    <td style="width: 171px;">
+                        <dl>
+                            <dt>@ID............</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 135px;">
+                        <dl>
+                            <dt>TYP</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 129px;">
+                        <dl>
+                            <dt>LOC..........</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 132px;">
+                        <dl>
+                            <dt>CONV</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 425px;">
+                        <dl>
+                            <dt>NAME...........</dt>
+                        </dl>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>FORMAT</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>SM</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>ASSOC.....</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>ID</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>COURSE.SEC.MEETING</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>ID0</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>0</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>COURSE_SEC_MEETING_EMS</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>10L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_SEC_TERM</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>I</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: maroon;">TRANS(“COURSE_SECTIONS_EMS”,CSM_COURSE_SECTION,”SEC_TERM”,”X”)</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Term</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>7L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_COURSE_SECTION</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>1</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Section</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>21L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_START_DATE</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>2</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">D2/MDY</span>
+                        </p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Start Date</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_END_DATE</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>3</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">D2/MDY</span>
+                        </p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>End Date</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_START_TIME</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>8</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">MT</span>
+                        </p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Start Time</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_END_TIME</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>9</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p><span style="color: maroon;">MT</span>
+                        </p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>End Time</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>8R</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_BLDG*</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>4</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Building</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_ROOM*</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>5</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Room</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_SUNDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>20</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_MONDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>14</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_TUESDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>15</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_WEDNESDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>16</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_THURSDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>17</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_FRIDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>18</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_SATURDAY</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>19</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">(this must be blank)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>1L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p>CSM_INSTR_METHOD</p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p>D</p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p>6</p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>Instr Method</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p>35L</p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p>S</p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">ROOM_ID</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_ROOM=’’ THEN ‘’ ELSE CSM_BLDG:’*’:CSM_ROOM</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">35L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">SUNDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_SUNDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Sunday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">MONDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_MONDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Monday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">TUESDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_TUESDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Tuesday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">WEDNESDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_WEDNESDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Wednesday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">THURSDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_THURSDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Thursday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">FRIDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_FRIDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Friday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 171px;">
+                        <p><span style="color: #00B050;">SATURDAY</span>
+                        </p>
+                    </td>
+                    <td style="width: 135px;">
+                        <p><span style="color: #00B050;">I</span>
+                        </p>
+                    </td>
+                    <td style="width: 129px;">
+                        <p><span style="color: #00B050;">IF CSM_SATURDAY=’Y’ THEN ‘1’ ELSE ‘0’</span>
+                        </p>
+                    </td>
+                    <td style="width: 132px;">
+                        <p>&#160;</p>
+                    </td>
+                    <td style="width: 425px;">
+                        <p><span style="color: maroon;">Saturday (this is required)</span>
+                        </p>
+                    </td>
+                    <td style="width: 72px;">
+                        <p><span style="color: #00B050;">1L</span>
+                        </p>
+                    </td>
+                    <td style="width: 42px;">
+                        <p><span style="color: #00B050;">S</span>
+                        </p>
+                    </td>
+                    <td style="width: 85px;">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>*field used for updating room assignments</p>
+        <p><strong>Purpose:</strong> Used to define the list of meeting patterns per course; related to courses, coursetypes, buildings, rooms.</p>
+        <table cellpadding="0" cellspacing="0" style="table-layout: fixed;width: 738px;">
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 312px;">
+                        <p><strong>EMS Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" style="width: 420px;">
+                        <p><strong>COURSE_SEC_MEETING_EMS Field</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width: 312px;">
+                        <p><span class="mt-color-0000cd">SISID</span>
+                        </p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p><span class="mt-color-0000cd">ID</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISTermID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_SEC_TERM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISCourseID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_COURSE_SECTION</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>StartDate</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_START_DATE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>EndDate</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_END_DATE</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>StartTime</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_START_TIME</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>EndTime</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_END_TIME</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISBuildingID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_BLDG</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISRoomID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>ROOM_ID</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>RoomID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_ROOM</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Sunday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>SUNDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Monday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>MONDY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Tuesday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>TUESDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Wednesday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>WEDNESDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Thursday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>THURSDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Friday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>FRIDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>Saturday</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>SATURDAY</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 312px;">
+                        <p>SISCourseTypeID</p>
+                    </td>
+                    <td style="width: 420px;">
+                        <p>CSM_INSTR_METHOD</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Colleague Integration</a><a>Colleague Unidata Integration</a>
+        </p>
+    </body>
+</html>

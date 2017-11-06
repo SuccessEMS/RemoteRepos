@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="1191" MadCap:lastWidth="966">
+    <head>
+    </head>
+    <body>
+        <h1>Enabling User Access to EMS for Outlook</h1>
+        <p>EMS must be configured properly in order to activate the EMS for Outlook. &#160;The&#160;add-in&#160;uses each&#160;Outlook user’s EMS&#160;<span class="Emphasis_1">Everyday User</span>&#160;account&#160;to establish their room booking privileges based on:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">the Booking Template(s) to which&#160;the Everyday User is&#160;assigned.</li>
+            <li class="ListParagraph_1">EMS Group(s) for which&#160;the appointment can be booked.</li>
+        </ul>
+        <h2 class="Heading2">Prerequisites&#160;</h2>
+        <p>In order for your Outlook users to have access, you must have enabled them in your EMS Desktop Client setup using&#160;Everyday User Process Templates<span class="Emphasis_1">.&#160;</span><span class="Strong_2">See Also:</span>&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Everyday_User_Templates" title="Configuring Web Templates"><span class="Hyperlink_3">Configuring Everyday User Templates&#160;</span></a>for instructions&#160;in creating&#160;a Everyday User Process Template.&#160;In addition to EMS for Outlook&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_for_Outlook_(Legacy)/EMS_for_Outlook_(Prior_to_Update_8)/Installing_EMS_for_Microsoft%C2%AE_Outlook_(Prior_to_Update_8)/03-EMS_for_Outlook_Requirements" title="EMS for Outlook Requirements"><span class="Hyperlink_3">Requirements</span></a>, the following must be true for you to be able to&#160;activate EMS for Outlook for a specific user:</p>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">An active EMS Everyday User account must exist.</li>
+            <li class="ListParagraph">The EMS Everyday User account must be assigned to at least one Process Template and the&#160;<span class="Strong_2">Outlook</span>&#160;option must be enabled.</li>
+            <li class="ListParagraph">The EMS Everyday User account must be linked to an active EMS Group record (via the&#160;<span class="Strong_2">External Reference</span>&#160;field).</li>
+            <li class="ListParagraph">The EMS Everyday User must have at least one contact associated.</li>
+        </ol>
+        <p>This section guides you in establishing these elements of your installation.</p>
+        <h2 class="Heading2">Defining&#160;an Outlook Everyday User Process Template&#160;</h2>
+        <p>Once you have&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Process_Templates" title="Configuring Everyday User Templates"><span class="Hyperlink_3">defined Everyday User Process templates</span></a>&#160;as part of EMS Desktop Client setup, you can make some adjustments in order to fully enable and customize the EMS for Outlook add-in.</p>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">When defining a Everyday User Process template in EMS Desktop Client setup, simply select the&#160;<span class="Strong_2">Outlook</span>&#160;option.&#160;</li>
+            <li class="ListParagraph">Use the&#160;<span class="Emphasis_1">Outlook Conflict – Email Options</span>&#160;tab to customize the email sent to&#160;the Outlook user if a booking conflict arises during the process of booking through Outlook.</li>
+            <li class="ListParagraph">Complete the remaining tabs.</li>
+            <li class="ListParagraph">Once you have defined your Outlook Everyday User Process template(s),&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/030_Security_Templates/Assigning_Security_Templates_to_Multiple_Everyday_Users" title="Assigning Security Templates to Multiple Everyday Users"><span class="Hyperlink_3">assign it to your User Account(s)</span></a>. (A Group record is assigned to an Everyday&#160;User account in&#160;<span class="Emphasis_1">Configuration &gt; Everyday Applications &gt; Everyday Users.)</span></li>
+        </ol>
+        <h2 class="Heading2">Assigning EMS Users to&#160;Groups&#160;</h2>
+        <p>You assign users to groups in EMS by modifying their Everyday User accounts using&#160;via the&#160;<span class="Strong_2">External Reference</span>&#160;field.&#160; You can have a user test this as follows:</p>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Navigate to&#160;Billing Information tab within Reservations &gt; Reservations &gt;&#160;<span class="Strong_2">Groups</span>.&#160;</li>
+            <li class="ListParagraph">Make a note of the value in&#160;the&#160;<span class="Strong_2">External Reference</span>&#160;field.</li>
+            <li class="ListParagraph">Navigate&#160;to the&#160;Everyday User account, which is&#160;on the Everyday User tab within Configuration &gt; Everyday Applications&gt;&#160;<span class="Strong_2">Everyday&#160;Users</span>.</li>
+            <li class="ListParagraph">Compare the value above to the value in the&#160;<span class="Strong_2">External Reference&#160;</span>field.</li>
+        </ol>
+        <table class="table_1">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_4">
+                        <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Introduction.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Note:&#160;</span><span class="span_1">T</span>hese values can be set automatically by administrators if your organization is using the HR Toolkit&#160;module.&#160; Please see the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_Human_Resources_Toolkit/Installing_Human_Resources_Toolkit" title="Installing HR Toolkit"><span class="Hyperlink_3">HR Toolkit Installation Instructions</span></a>&#160;for more information.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="NormalWeb_4">&#160;</p>
+    </body>
+</html>

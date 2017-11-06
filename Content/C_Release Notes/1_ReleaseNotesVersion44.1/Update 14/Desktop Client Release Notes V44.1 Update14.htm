@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Updates 14.3-11.1.docx" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1316" MadCap:lastWidth="979">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 style="font-family: 'Open Sans';">EMS Desktop Client Release Notes V44.1, Update 14</h1>
+        <p style="font-family: 'Open Sans';">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p style="font-family: 'Open Sans';">See Also:&#160;<a href="../ContactCustomerSupport.htm" title="Customer Support" alt="Customer Support"><span class="Hyperlink">Contacting Customer Support</span></a>&#160;and&#160;<a href="../Updating to the Latest Version of EMS (Patches and Builds).htm" title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build" alt="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build"><span class="Hyperlink">Updating to the Latest Version of EMS</span></a></p>
+        <table>
+            <col style="width: 243px;" />
+            <col style="width: 268px;" />
+            <col style="width: 292px;" />
+            <col />
+            <tr>
+                <td>
+                    <p style="font-family: 'Open Sans';"><b>Name</b>:&#160;V44.1 Update 14</p>
+                </td>
+                <td>
+                    <p style="font-family: 'Open Sans';"><b>Release&#160;Date:</b>&#160;July 31, 2017</p>
+                </td>
+                <td>
+                    <p style="font-family: 'Open Sans';"><b>Patch</b>:&#160;44.1.14000.201707251</p>
+                </td>
+                <td>
+                    <p style="font-family: 'Open Sans';"><b>Build</b> #:&#160;&#160;44.1.14000.349</p>
+                </td>
+            </tr>
+        </table>
+        <h2 style="font-family: 'Open Sans';"><span style="font-size: 20pt; font-weight: bold;">Fix</span>&#160;</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-weight: bold;">
+                    <p style="font-family: 'Open Sans';">Area</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows" style="font-weight: bold;">
+                    <p style="font-family: 'Open Sans';">Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="font-style: italic;">
+                    <p style="font-family: 'Open Sans';">Optimization</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p style="font-family: 'Open Sans';"><b>Conflicts for Optimization Scenarios Showed Conflicts That Were Not Actual Conflicts</b>
+                    </p>
+                    <blockquote>
+                        <p style="font-family: 'Open Sans';">Conflicts for Optimization scenarios showed courses from all terms that were not actual conflicts.&#160;</p>
+                        <p style="font-family: 'Open Sans';"><b>Fix</b>:&#160;Modified functionality so that conflicts shown are actual conflicts.&#160;</p>
+                    </blockquote>
+                    <p style="font-family: 'Open Sans';">TFS item&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21142" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21142" class="Hyperlink">21142</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-style: italic;">
+                    <p style="font-family: 'Open Sans';">Reporting</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p style="font-family: 'Open Sans';"><b>Utilization Report Error</b>
+                    </p>
+                    <blockquote>
+                        <p style="font-family: 'Open Sans';">When users tried to access&#160;the Room Utilization report, they received an error message stating, "Conversion from string '0.9' to type 'Double' is not valid. Input string was not in a correct format."&#160;&#160;</p>
+                        <p style="font-family: 'Open Sans';"><b>Fix</b>:&#160;Modified functionality so that the Room Utilization report can be run without errors.&#160;</p>
+                    </blockquote>
+                    <p style="font-family: 'Open Sans';">TFS item&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/29243" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/29243" class="Hyperlink">29243</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="font-style: italic;">
+                    <p style="font-family: 'Open Sans';">EMS Web Deploy</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p style="font-family: 'Open Sans';"><b>EMS Web Deploy Was Not Automatically Updating</b>
+                    </p>
+                    <blockquote>
+                        <p style="font-family: 'Open Sans';">When users launched the EMS Web-deploy Desktop Client, automatic updates were not taking place. If they attempted to run the AutoUpdate.exe manually, they received the following error, "EMS is having trouble connecting," and the EMS Desktop Client stopped working entirely. Users on version 12 or later needs to upgrade to Update 14.&#160;</p>
+                        <p style="font-family: 'Open Sans';"><b>Fix</b>:&#160;Modified functionality so that the EMS Web-deploy automatically updates when clicked.&#160;</p>
+                    </blockquote>
+                    <p style="font-family: 'Open Sans';">TFS item&#160;<a href="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/31453" title="http://tfs02.dea.com:8080/tfs/EMS%20Suite/Ems/_workitems/edit/31453" class="Hyperlink">31453</a></p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3388.667" MadCap:lastWidth="2490" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">SAML Authentication</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">SAML <MadCap:annotation MadCap:createDate="2017-10-24T15:19:32.9731882-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is not listed in the MindTouch guide for Mobile Install/Config. Need to determine if topic should be included in documentation or archived." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:19:33.8779809-06:00">Authentication</MadCap:annotation></h1><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p>This section guides you authenticating your users with a SAML provider. Authentication with SAML requires getting configuration information into {{product_mobile}}&#160;prior to beginning the authentication flow.</p>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To use SAML&#160;authentication, you will:</p>
+        <ul class="mt-indent-1">
+            <li>Review how SAML authentication works</li>
+            <li>Test your configuration</li>
+            <li>Test authentication</li>
+        </ul>
+        <h2>How SAML Authentication Works</h2><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Mobile_App_EMS_Mobile_Spring_2017/Installing_and_Setting_Up_the_EMS_Mobile_App/Setting_Up_EMS_Mobile_Authentication/SAML_Authentication_Can_Be_Hosted_or_Pre-Configured_in_{{product_mobile}}%3A")</pre>
+        <dl>
+            <dt>&#160;</dt>
+        </dl>
+        <ul>
+        </ul>
+        <h2>Configuring SAML Authentication for {{product_mobile}}</h2>
+        <p>Setting up SAML involves configuration on both the Identify Provider and Service Provider sides.</p>
+        <h5>Identifying Your&#160;Provider in Configuration</h5>
+        <p>You are responsible for the configuration of your chosen IdP, with information relevant to the EMS Platform Services acting as a Service Provider for SAML Authentication. The following EMS Platform Services related settings may be needed in order to configure your IdP.</p>
+        <ul>
+            <li><strong>EMS Platform Signing Certificate</strong>:<strong>&#160;</strong>Optional certificate used by EMS Platform to sign AuthnRequests sent to IdP.</li>
+            <li><strong>SP Issuer</strong>:&#160;Optional service provider identifier used to identify the EMS Platform to the identify provider. (e.g.: <a href="http://mycompany.com/EmsPlatform" rel="freelink" title="http://mycompany.com/EmsPlatform">http://mycompany.com/EmsPlatform</a>)</li>
+            <li>
+                <p><strong>Service Provider Post back URL</strong>: Optional URL for Identify Provider to use for generating SAMLResponse POST Back URL to EMS Platform as the Service Provider. This should be set to the URL to the EMS Platform Services SAML Auth Endpoint (e.g.: https : //mycompany.com/EmsPlatform/api/v1/authentication/saml). If the Service Provider post back URL is not configured with the IdP, then it will need to be configured from the EMS Platform Admin UI.</p>
+            </li>
+            <li>Following fields are required to complete SAML authentication configuration:&#160;</li>
+        </ul>
+        <table border="1" cellpadding="0" cellspacing="0" style="width: 1218px;">
+            <tbody>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong>Field</strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Form Post Field Name</span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">HTTP Form Post Attribute (optional, default is SamlResponse). Attribute in which assertions are sent, within encoded &lt;samlp:Response&gt; document.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">User Info Request Method </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Dropdown with choice of assertion element containing user identity (NameID&#160;or Attribute). If set to Attribute, then must set <strong>Identity Attribute Name</strong> to expected assertion attribute name to use for user identity.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Identity Attribute Name </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Assertion attribute name containing user identity. Attribute names can be identity provider specific (i.e. 'uid', 'mail').</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Identity Provider Issuer </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Optional Identity Provider Issuer (i.e. urn:emsplayground.auth0.com) to use to verify expected issuer of assertions, included in SAMLResponse as &lt;saml:Issuer&gt;.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Service Provider Issuer </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Optional Service Provider issuer identifier, to be included by EMS Platform in AuthnRequest requests sent to Identify Provider. This maps to the &lt;saml:Issuer&gt; element in the SAML AuthnRequest. Ex: <span style="color: blue;"><a class="external" href="http://mycompany.com/EmsPlatform" rel="freeklink" title="http://mycompany.com/EmsPlatform">http://mycompany.com/EmsPlatform</a></span></span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Identity Provider URL for Service Provider Redirect </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p>Required Identity Provider Redirect URL (ex. <a href="https://idp.example.org/SAML2/SSO/Redirect" rel="freelink" title="https://idp.example.org/SAML2/SSO/Redirect">https://idp.example.org/SAML2/SSO/Redirect</a>). This URL includes two SAML-defined query string argument (typically 'SAMLRequest' and 'RelayState'). 'SAMLRequest' includes the authentication request details, provided by EMS Platform. 'RelayState' contains opaque data that EMS Platform includes in the request, in order for the Identify Provider to include as Relay State on the SAML Response. If 'SAMLRequest' and 'RelayState' are not included in the configured URL, the EMS Platform will add them automatically to the request sent to the Identify Provider. For example, if you configure a URL of <a href="https://idp.example.org/SAML2/SSO/Redirect" rel="freelink" title="https://idp.example.org/SAML2/SSO/Redirect">https://idp.example.org/SAML2/SSO/Redirect</a>, the resulting URL that EMS Platform calls will look like https : //idp.example.org/SAML2/SSO/Redirect?SAMLRequest=[SamlRequest data]&amp;RelayState=[Opaque EMS Data].</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Service Provider Callback URL </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Base URL of EMS Platform, used for the Identity Provider callback URL in the SAML HTTP POST binding. Set this URL to the base URL of the EMS Platform installation (i.e. <span style="color: blue;"><a class="link-https" href="https://mycompany.com/EmsPlatform" rel="freeklink" title="https://mycompany.com/EmsPlatform">https://mycompany.com/EmsPlatform</a></span>).</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Path to Identity Provider Public Certificate </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Optional identity provider public key (.pem) for EMS Platform to use to verify SAML Assertions.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Path to Service Provider Public Certificate </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Optional Customer-generated public cert (.cer/.pem) file containing base64 encoded public cert for EMS Platform to use to sign AuthnRequests sent to identity provider.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 193px;">
+                        <p><strong><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Path to Service Provider Private Certificate </span></span></strong>
+                        </p>
+                    </td>
+                    <td style="width: 1015px;">
+                        <p><span class="mt-font-Times New Roman,serif"><span class="mt-font-size-12.0pt">Optional Customer-generated private cert (.cer/.pem) file containing base64 encoded public cert for EMS Platform to use to sign AuthnRequests sent to identity provider.</span></span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>How EMS Platform Services Supports SAML</h3>
+        <p>No 2fa support is provided&#160;with SAML authentication. &#160;2fa is the responsibility of the Identity Provider (3rd-Party or Customer owned) and not the EMS Platform Services.&#160;Token expiration is configured and managed the same for SAML as for other authorization types, thus overriding any SAML Assertion Conditions which specify the assertion expiration timestamp.</p>
+        <p><strong>See Also:</strong><a title="Establishing Persistent Authentication">Persistent Authentication configuration</a> for token expiration configuration details.</p>
+        <p><strong>See Also:&#160;</strong>Refer to <a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Mobile_App_EMS_Mobile_Spring_2017/Installing_and_Setting_Up_the_EMS_Mobile_App/Setting_Up_EMS_Mobile_Authentication/Customizing_Your_Mobile_App_Configuration_Using_config.json">Customizing&#160;Your Configuration Using config.json</a>&#160;for details on building a configuration file for {{product_mobile}}.</p>
+        <p>Once you have created your configuration file, you may proceed with one of the sections below, depending on whether you intend to host the file or pre-configure the application and redistribute it.</p>
+        <h4>Using Hosted Configuration (Public Deployment)</h4>
+        <p>Host your configuration file from an applicable web server. Distribute the URL to your end users.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>It is not recommended to make this configuration file publicly available, since it will likely have URLs and/or other information in it that you do not want made available. Instead, host the file in a way such that it is only available internally to your organization. Users should only have to perform this import one time per installation of the application.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Pre-Configuring {{product_mobile}} (Private Deployment)</h4>
+        <p>If you wish to pre-configure {{product_mobile}}, <b>See Also:</b>&#160;<a title="Configuring and Resigning {{product_mobile}}">Configuring and Resigning {{product_mobile}}</a><a title="Configuring and Resigning {{product_mobile}}">.</a></p>
+        <h2>Testing Your SAML&#160;Configuration</h2>
+        <p>Assuming you have installed the EMS Platform Services API at <span class="mt-font-size-11.0pt"><a class="link-https" href="https://ems.yourcompany.com/endpoint" rel="freeklink" title="https://ems.yourcompany.com/endpoint">https://ems.yourcompany.com/endpoint</a></span>, then you can test the configuration with a simple <span class="mt-font-size-11.0pt">curl</span> command:</p>
+        <blockquote>
+            <p>cURL -X GET -H 'x-ems-consumer: MobileApp' <a class="link-https" href="https://ems.yourcompany.com/endpoint/api/v1/health" rel="freeklink" title="https://ems.yourcompany.com/endpoint/api/v1/health">https://ems.yourcompany.com/endpoint/api/v1/health</a></p>
+        </blockquote>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../B/ems/Content/Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>You can also use the API's Swagger interface to accomplish this goal.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>You should see a portion of the JSON response that looks like this (unrelated details omitted for brevity):</p>
+        <blockquote>
+            <p>{<br />&#160;&#160;&#160; ...<br />&#160;&#160;&#160; "additionalProperties": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authConfig": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities":"saml"&#160; // <span style="color: #0099cc;">&lt;-- these are the critical lines</span><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "ui":"saml"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</p>
+        </blockquote>
+        <h2>Testing Your SAML&#160;Authentication</h2>
+        <p>The SAML process should be testable in a browser, assuming all configuration is correct.&#160;</p>
+        <ol>
+            <li>Visit the EMS Platform Services API SAML URL in a browser:&#160;<em><a class="link-https" href="https://yourcompany.com/ems-platform...ntication/saml" rel="freeklink" title="https://yourcompany.com/ems-platform...ntication/saml">https://yourcompany.com/ems-platform...ntication/saml</a></em></li>
+            <li>After logging in a logging in as a user, you should see a JSON response in the browser containing the EMS Platform Services API's authentication response.</li>
+        </ol>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="7179" MadCap:lastWidth="1326">
+    <head><title></title>
+    </head>
+    <body>
+        <h1>Customizing Your Mobile App Configuration Using config.json (Private Deployment Only)</h1>
+        <p class="NormalWeb">EMS Mobile App&#160;ships with a&#160;<span class="mt-font-size-110pt">config.json</span>&#160;file that you can use to customize EMS Mobile App&#160;before re-signing and distributing in your app store&#160;or similar as follows:</p>
+        <ul class="ul_1">
+            <li class="li_1">Set the API URL so users do not have to type it in on their own.</li>
+            <li class="li_1">Configure authentication.</li>
+        </ul>
+        <h2>Finding the config.json File&#160;</h2>
+        <p class="NormalWeb">After unzipping the respective app files, the paths to the file for each OS are:</p>
+        <h3>iOS&#160;</h3>
+        <ul class="ul_1">
+            <li class="li_1"><span class="mt-font-size-110pt">config.json</span>&#160;(top-level file)</li>
+        </ul>
+        <h3>Android&#160;</h3>
+        <ul class="ul_1">
+            <li class="li_1">assets/config.json</li>
+        </ul>
+        <p class="NormalWeb">The file&#160;looks like the example below (subject to change, per development):</p>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api_doc": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "Configure the API here"<br />&#160;&#160;&#160; ],<br />&#160;&#160;&#160; "api": {<br /><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url_doc": [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "The API EMS Mobile App should connect to"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": ""<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h2>Setting the API URL&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Open the&#160;<span class="mt-font-size-110pt">config.json file</span>&#160;in a text editor.</li>
+            <li class="li_1">In the API section, find the URL property.</li>
+            <li class="li_1">Set the URL property to your desired value (e.g.,&#160;<a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_1">https://yourcompany.com/ems-platform-api</span></a><span class="mt-font-size-110pt">).</span></li>
+        </ol>
+        <h2>Configuring Authentication&#160;</h2>
+        <p class="NormalWeb">EMS Mobile App&#160;does not ship with an authentication configuration section by default, but you can add it as follows.</p>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_1">
+                            <img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                        </p>
+                    </td>
+                    <td class="td_1">
+                        <p class="notetipwarningtext"><span class="Strong_1">Note:&#160;</span><span class="span_2">If you are adding authentication configuration,&#160;</span><span class="Strong_1">it is also necessary to set the API URL</span><span class="span_2">.</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="NormalWeb">Below is an example (the&#160;<span class="mt-font-size-110pt">..._doc</span>&#160;entries are omitted for brevity):</p>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span><a href="https://yourcompany.com/openid" title="https://yourcompany.com/openid"><span class="Hyperlink_2">https://yourcompany.com/openid</span></a><span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span><a href="emssoftware://oauth-callback/x" title="emssoftware://oauth-callback/x"><span class="Hyperlink_2">emssoftware://oauth-callback/x</span></a><span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h2 class="Heading2">Supported Authentication Configurations&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Mobile_App/Installing_and_Setting_Up_the_EMS_Mobile_App/007_Deploying_the_EMS_Mobile_App/Customizing_Your_Mobile_App_Configuration_Using_config.json_(Private_Deployment_Only)" title="Edit section" class="a_1"><img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a></h2>
+        <h3 class="Heading3">Open ID&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Mobile_App/Installing_and_Setting_Up_the_EMS_Mobile_App/007_Deploying_the_EMS_Mobile_App/Customizing_Your_Mobile_App_Configuration_Using_config.json_(Private_Deployment_Only)" title="Edit section" class="a_2"><img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a></h3>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">"authentication": {<br />&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span><a href="https://yourcompany.com/openid" title="https://yourcompany.com/openid"><span class="Hyperlink_2">https://yourcompany.com/openid</span></a><span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span><a href="emssoftware://oauth-callback/x" title="emssoftware://oauth-callback/x"><span class="Hyperlink_2">emssoftware://oauth-callback/x</span></a><span class="span_1">"<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <ul class="ul_1">
+            <li class="li_1">Set the&#160;<span class="Strong">activities</span><span class="Strong">&#160;</span>to&#160;<span class="Strong">openId</span></li>
+            <li class="li_1">Add an&#160;<span class="Strong">openID</span><span class="Strong">&#160;</span>section next to&#160;<span class="Strong">activities</span></li>
+        </ul>
+        <h3 class="Heading3">Properties For the&#160;<span class="mt-font-size-110pt_1">openID</span>&#160;Section&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Mobile_App/Installing_and_Setting_Up_the_EMS_Mobile_App/007_Deploying_the_EMS_Mobile_App/Customizing_Your_Mobile_App_Configuration_Using_config.json_(Private_Deployment_Only)" title="Edit section"><span class="span_3"><img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></span></a></h3>
+        <ul class="ul_1">
+            <li class="mt-font-size-110pt_1">discoveryURL</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">if your IdP provides it, this is the URL for EMS Mobile App to automatically configure its Open ID settings</li>
+            <li class="li_2">if you provide this, leave&#160;<span class="mt-font-size-110pt">authorization</span>URL and&#160;<span class="mt-font-size-110pt">token</span>URL empty</li>
+        </ul>
+        <ul class="ul_1">
+            <li class="mt-font-size-110pt_1">authorizationURL</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">this is the endpoint to send the initial Open ID authorization request</li>
+        </ul>
+        <ul class="ul_1">
+            <li class="mt-font-size-110pt_1">tokenURL</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">this is the endpoint to request an Open ID&#160;<span class="Strong">access token</span></li>
+        </ul>
+        <ul class="ul_1">
+            <li class="mt-font-size-110pt_1">clientID</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">the client ID for the EMS Mobile App as configurd in the IdP</li>
+        </ul>
+        <ul class="ul_1">
+            <li class="mt-font-size-110pt_1">redirectURL</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">leave this set to&#160;<a href="emssoftware://oauth-callback/x" title="emssoftware://oauth-callback/x"><span class="Hyperlink_1">emssoftware://oauth-callback/x</span></a>&#160;for EMS Mobile App</li>
+            <li class="li_2">this is the URL the IdP will redirect to during the Open ID authentication flow</li>
+        </ul>
+        <h2 class="Heading2">SAML&#160;</h2>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">"authentication": {<br />&#160;&#160;&#160; "activities": "saml",<br />&#160;&#160;&#160; "saml": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api/api/v1/authentication/saml" title="https://yourcompany.com/ems-platform-api/api/v1/authentication/saml"><span class="Hyperlink_2">https://yourcompany.com/ems-platform...ntication/saml</span></a><span class="span_1">`<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <ul class="ul_1">
+            <li class="li_1">Set the&#160;<span class="Strong">activities</span><span class="Strong">&#160;</span>to&#160;<span class="Strong">saml</span></li>
+            <li class="li_1">Add a&#160;<span class="Strong">saml</span><span class="Strong">&#160;</span>section next to&#160;<span class="Strong">activities</span></li>
+        </ul>
+        <h3 class="Heading3">Properties For the&#160;<span class="mt-font-size-110pt_1">SAML</span>&#160;Section&#160;</h3>
+        <ul class="ul_1">
+            <li class="li_1">URL</li>
+        </ul>
+        <ul class="ul_2">
+            <li class="li_2">this property is optional</li>
+            <li class="li_2">you can manually specifiy the initial request URL for SAML authentication</li>
+            <li class="li_2">this URL will be opened in a webview in EMS Mobile App</li>
+            <li class="li_2">if you do not specify this property, EMS Mobile App will assume the default SAML endpoint for the REST API</li>
+        </ul>
+        <ul class="ul_3">
+            <li class="li_2">This is one reason you must specify the URL in the&#160;<span class="mt-font-size-110pt">api</span>&#160;section for custom authentication configuration (e.g., if you set the custom API URL to&#160;<a href="https://ems.example.com/api" title="https://ems.example.com/api"><span class="Hyperlink_1">https://ems.example.com/api</span></a>, then EMS Mobile App will use&#160;<a href="https://ems.example.com/api/api/v1/authentication/saml" title="https://ems.example.com/api/api/v1/authentication/saml"><span class="Hyperlink_1">https://ems.example.com/api/api/v1/a...ntication/saml</span></a>&#160;as it's initial SAML url)</li>
+        </ul>
+        <h3 class="Heading3">Examples&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Mobile_App/Installing_and_Setting_Up_the_EMS_Mobile_App/007_Deploying_the_EMS_Mobile_App/Customizing_Your_Mobile_App_Configuration_Using_config.json_(Private_Deployment_Only)" title="Edit section" class="a_3"><img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a></h3>
+        <h4 class="Heading4">Custom URL only&#160;</h4>
+        <p class="NormalWeb"><span class="span_1">{</span><span class="span_1"><br />&#160;&#160;&#160; "api": {</span><span class="span_1"><br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"</span><span class="span_1"><br />&#160;&#160;&#160; }</span><span class="span_1"><br />}</span>
+        </p>
+        <h3 class="Heading3">Open ID With Discovery URL&#160;</h3>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "</span><a href="https://yourcompany.com/openid/discovery" title="https://yourcompany.com/openid/discovery"><span class="Hyperlink_2">https://yourcompany.com/openid/discovery</span></a><span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span><a href="emssoftware://oauth-callback/x" title="emssoftware://oauth-callback/x"><span class="Hyperlink_2">emssoftware://oauth-callback/x</span></a><span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h3 class="Heading3">Open ID Without Discovery URL&#160;</h3>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "openId",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "openID": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "discoveryURL": "",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "authorizationURL": "</span><a href="https://yourcompany.com/openid/authorize" title="https://yourcompany.com/openid/authorize"><span class="Hyperlink_2">https://yourcompany.com/openid/authorize</span></a><span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "tokenURL": "</span><a href="https://yourcompany.com/openid/token" title="https://yourcompany.com/openid/token"><span class="Hyperlink_2">https://yourcompany.com/openid/token</span></a><span class="span_1">",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "clientID": "abcdefxabQijQcJstY4nImWYL5y12345",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "redirectURL": "</span><a href="emssoftware://oauth-callback/x" title="emssoftware://oauth-callback/x"><span class="Hyperlink_2">emssoftware://oauth-callback/x</span></a><span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h3 class="Heading3">SAML With Default API SAML Endpoint&#160;</h3>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "saml"<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h3 class="Heading3">SAML With Specific API SAML Endpoint<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Mobile_App/Installing_and_Setting_Up_the_EMS_Mobile_App/007_Deploying_the_EMS_Mobile_App/Customizing_Your_Mobile_App_Configuration_Using_config.json_(Private_Deployment_Only)" title="Edit section" class="a_4"><img src="../../Resources/Images/Mobile_CustomMobileConfigUse-config-json/Customizing Your Mobile App.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a></h3>
+        <p class="NormalWeb" style="text-align: left;"><span class="span_1">{<br />&#160;&#160;&#160; "api": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api"><span class="Hyperlink_2">https://yourcompany.com/ems-platform-api</span></a><span class="span_1">"<br />&#160;&#160;&#160; },<br />&#160;&#160;&#160; "authentication": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "activities": "saml",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; "saml": {<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "url": "</span><a href="https://ems.example.com/saml" title="https://ems.example.com/saml"><span class="Hyperlink_2">https://ems.example.com/saml</span></a><span class="span_1">"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160; }<br />}</span>
+        </p>
+        <h2>Changing Logging Location&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="li_3">Modify the&#160;<span class="HTMLCode_1">logFilePath</span>&#160;attribute:&#160;</li>
+        </ol>
+        <p class="NormalWeb_1"><span class="HTMLCode_2">"logFilePath": ".\\LogFiles\\api.log"</span><span class="span_1">&#160;&#160;</span>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

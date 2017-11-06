@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin Version="2" SkinType="WebHelp2" ComponentType="MasterPage" TemplateName="Fluid" Comment="HTML5 Top Navigation skin" EnableResponsiveOutput="True">
+    <WebHelpOptions NavigationPanePosition="Left" OffCanvasMenuStyle="Drilldown" />
+    <Stylesheet>
+        <Styles>
+            <Style Name="Search Glossary Result">
+                <Properties>
+                    <Property Name="BorderTop">none 4px #000000</Property>
+                    <Property Name="BorderRight">none 4px #000000</Property>
+                    <Property Name="BorderBottom">none 4px #000000</Property>
+                    <Property Name="BorderLeft">none 4px #000000</Property>
+                </Properties>
+            </Style>
+        </Styles>
+    </Stylesheet>
+    <Strings>
+        <Stylesheet lang="en-us">
+            <Stylesheet>
+                <Styles>
+                    <Style Name="Search Glossary Result">
+                        <Properties>
+                            <Property Name="BorderTop">none 4px #000000</Property>
+                            <Property Name="BorderRight">none 4px #000000</Property>
+                            <Property Name="BorderBottom">none 4px #000000</Property>
+                            <Property Name="BorderLeft">none 4px #000000</Property>
+                        </Properties>
+                    </Style>
+                </Styles>
+            </Stylesheet>
+        </Stylesheet>
+    </Strings>
+</CatapultSkin>

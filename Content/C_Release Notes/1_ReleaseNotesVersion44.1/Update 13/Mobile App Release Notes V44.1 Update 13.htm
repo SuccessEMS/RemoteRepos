@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Updates 14.3-11.1.docx" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="3946" MadCap:lastWidth="1004">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>EMS Mobile App Release Notes V44.1, Update 13</h1>
+        <p style="font-family: 'Open Sans';">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p style="font-family: 'Open Sans';">See Also:&#160;<a href="../ContactCustomerSupport.htm" title="Customer Support" alt="Customer Support"><span class="Hyperlink">Contacting Customer Support</span></a>&#160;and&#160;<a href="../Updating to the Latest Version of EMS (Patches and Builds).htm" title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build" alt="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build"><span class="Hyperlink">Updating to the Latest Version of EMS</span></a></p>
+        <table>
+            <tr>
+                <td>
+                    <p><b>Name</b>:&#160;V44.1&#160;Update 13</p>
+                </td>
+                <td>
+                    <p><b>Release&#160;Date</b>:&#160;July 14, 2017</p>
+                </td>
+                <td>
+                    <p><b>Patch</b>:&#160;44.1.13000.201707100</p>
+                </td>
+                <td>
+                    <p><b>Build #</b>:&#160;&#160;44.1.13000.4254</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p><span style="color: #ff0000;"><b>Important Notes</b>:</span>
+                    </p>
+                    <ul style="list-style-type: disc;margin-left: 28pt;">
+                        <li style="list-style-type: disc;">The EMS Mobile App Update 7 version was removed from the Apple App Store and Google Play Store on July 7, 2017.</li>
+                        <li style="list-style-type: disc;">EMS Mobile App Update 12 is compatible with Platform Services Update 12, as well as previous versions.</li>
+                        <li style="list-style-type: disc;">Platform Services Update 12 is NOT compatible with previous versions of EMS Mobile App. Customers upgrading to Platform Services Update 12 must upgrade to EMS Mobile App Update 12.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 227px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <col style="width: 623px;" class="TableStyle-PatternedRows-Column-Regular" />
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-weight: bold;">
+                    <p>Area</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows" style="font-weight: bold;">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td rowspan="2" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="font-style: italic;">
+                    <p>Create Reservation</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Contact Record Not Displayed</b>
+                    </p>
+                    <blockquote>
+                        <p>When creating or editing a booking, the Contact ('None') record was not displaying.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that the&#160;Contact record '(None)' is a selectable option when creating and editing a booking.</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27874" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=27874" class="Hyperlink">27874</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Load More Button Displayed on the Top of Events List For 0.5 to 1 Second After Creating and Saving Booking</b>
+                    </p>
+                    <blockquote>
+                        <p>When users were creating or editing a reservation, the Load More button displayed at the top of the Events List for only 0.5 to 1 second after creating and saving the booking.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that the Load More button doesn't appear&#160;at the top of the Events List right after creating and saving the booking.</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30948" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30948" class="Hyperlink">30948</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" style="font-style: italic;">
+                    <p>User Defined Field</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>User Defined Fields Were Unreadable Due to Truncation</b>
+                    </p>
+                    <blockquote>
+                        <p>When a template with a user defined field (UDF) was selected, users were unable to read the UDF question in its entirety.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that users can read the UDF in order to provide an intelligent answer.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30892" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30892" class="Hyperlink">30892</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td rowspan="2" class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-style: italic;">
+                    <p>Events List</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Check In Icon Not Displayed After Checking In</b>
+                    </p>
+                    <blockquote>
+                        <p>The Check In icon was not displaying right after the user checked in. User was forced to manually refresh the Events List.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that the Events List automatically refreshed and the Check In icon appeared near the booking.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31009" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31009" class="Hyperlink">31009</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>After Canceling a Booking from the Drawer, the Spinning Circle Disappeared</b>
+                    </p>
+                    <blockquote>
+                        <p>The spinning circle was missing after canceling a booking from the drawer.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that the spinning circle is present before booking is canceled and the Events List updated.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31039" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31039" class="Hyperlink">31039</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td rowspan="2" class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-style: italic;">
+                    <p>Skype for Business</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Mobile App Crashed When User Clicked "Continue Without Adding Skype" Button</b>
+                    </p>
+                    <blockquote>
+                        <p>If Skype is not configured correctly, clicking the "Continue Without Adding Skype" button crashes the app instead of leading to Create Reservation page.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that users clicking Continue Without Adding Skype button are led to the Create Reservation page.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31068" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31068" class="Hyperlink">31068</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Previously Entered UDFs&#160;Were Refreshing After Enabling Skype Toggle</b>
+                    </p>
+                    <blockquote>
+                        <p>When the Skype toggle was enabled for the first time, previously entered user-defined fields (UDFs) were refreshing.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that previously entered UDFs do not refresh and users do not have to repopulate UDFs.</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31327" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31327" class="Hyperlink">31327</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-style: italic;">
+                    <p>Configuration</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Mobile App Crashed When Users Imported OpenID Configuration</b>
+                    </p>
+                    <blockquote>
+                        <p>When users configured the EMS Mobile App to use OpenID, the config import caused the app to crash. The app would continue to crash after each subsequent try until the user uninstalled and then reinstalled the app.&#160;</p>
+                        <p><b>Fix</b>:&#160;Modified functionality so that the OpenID configuration import does not cause the EMS Mobile App to crash.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31093" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=31093" class="Hyperlink">31093</a></p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

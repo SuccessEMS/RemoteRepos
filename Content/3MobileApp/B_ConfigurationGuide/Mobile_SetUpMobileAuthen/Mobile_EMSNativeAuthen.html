@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="806.3333" MadCap:lastWidth="979" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">EMS Native Authentication</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">EMS Native <MadCap:annotation MadCap:createDate="2017-10-24T15:19:04.3386554-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is not listed in the MindTouch guide for Mobile Install/Config. Need to determine if topic should be included in documentation or archived." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:19:05.5421798-06:00">Authentication</MadCap:annotation></h1>
+        <p>Authenticate your users via Everyday Application User (emsuser) credentials stored in the EMS database. This is the default configuration that ships with {{product_mobile}}.&#160;</p>
+        <p>
+            <img src="../../Images/B_ConfigurationGuide/MA_NativeAuthentication.png" style="width: 502px;height: 177px;" />
+        </p>
+        <p>After successful connection to&#160;EMS Platform Services, the user will:</p>
+        <ul>
+            <li>Enter his or her credentials on the Sign In screen.</li>
+            <li>Tap <strong>Sign In.</strong></li>
+            <li>User will be taken to the Home screen.</li>
+        </ul>
+        <p>If the credentials are missing or invalid when the user taps <strong>Sign In</strong>, an error message will appear indicating invalid credentials or that the fields are required.</p>
+        <h4>Testing Your EMS Native Authentication</h4>
+        <p>Assuming you have installed the EMS Platform Services (at &#160;<a href="https://yourcompany.com/ems-platform-api" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a><span class="mt-font-size-11.0pt">)</span>,&#160;you can test the authentication with a <span class="mt-font-size-11.0pt">curl</span> command:</p>
+        <blockquote>
+            <p>curl -X POST -H 'x-ems-consumer: MobileApp' -H 'Content-Type: application/json' -d '{"username":"your_username", "password":"your_password"}' <a class="link-https" href="https://ems.yourcompany.com/endpoint...authentication" rel="freeklink" title="https://ems.yourcompany.com/endpoint...authentication">https://ems.yourcompany.com/endpoint...authentication</a></p>
+        </blockquote>
+        <p class="mt-indent-1">...where <span class="mt-font-size-11.0pt">your<em>_username</em></span> and <span class="mt-font-size-11.0pt">your<em>_password</em></span> are your credentials.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><strong><span class="mt-font-size-11.0pt">api/v1/authentication</span></strong> is the endpoint within the API where your request must be sent.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

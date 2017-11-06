@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T10:59:37.5509118-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T10:59:43.3783121-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Installing.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Installing.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_1.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_2.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_3.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_4.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_5.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_6.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_7.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_8.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing/Installing Upgrading the EMS_9.png"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Installing/Installing Upgrading the EMS.htm"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../TOCs/Installing.fltoc"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Installing.css"
+      TimeStamp="10/27/2017 10:59:41 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

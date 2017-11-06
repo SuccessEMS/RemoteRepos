@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2546.4" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Billing and Invoicing Quick Reference Guide</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Billing and Invoicing Quick Reference Guide</h1><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">This quick reference gets you going with billing and invoicing in {{product_dtc}}:</p>
+        <ul class="mt-indent-1">
+            <li><a rel="internal" href="">Run the Billing Worksheet to Review Charges</a>
+            </li>
+            <li><a rel="internal" href="">Edit Charges on Reservations</a>
+            </li>
+            <li><a rel="internal" href="">Invoice Reservations in Batch</a>
+            </li>
+            <li><a rel="internal" href="">Run the General Ledger Distribution Report by Invoice</a>
+            </li>
+            <li><a rel="internal" href="">Apply Payments in Batch</a>
+            </li>
+            <li><a rel="internal" href="">Void Payments and Invoices</a>
+            </li>
+            <li><a rel="internal" href="">Additional Billing Reports</a>
+            </li>
+        </ul>
+        <h2>Run the Billing Worksheet to Review Charges</h2>
+        <ul>
+            <li>Once a billing cycle is complete, run the Billing Worksheet to review reservations with charges assigned that have not been invoiced yet.</li>
+            <li>Go to Billing &gt; Invoices &gt; Billing Worksheet &gt; Select the Previous Billing Cycle &gt; <strong>Print Preview</strong></li>
+        </ul>
+        <h2>Edit Charges on Reservations</h2>
+        <ul>
+            <li>If a reservation on the billing worksheet needs to be modified, use the Reservation ID from the billing worksheet to open the reservation.</li>
+            <li>Add or edit billable items like resources as needed.</li>
+            <li>In the navigator screen, you will see the prices in the booking details pane. Edit the booking detail to manually change the price as needed.</li>
+            <li>To change the prices to another pricing plan, go to the Reservation level &gt; click <strong>Update Pricing</strong><br />    Then choose a New Pricing Plan, slect the appropriate category, then click <strong>Next</strong>. Select all Applicable Bookings, then click <strong>Finish</strong>.</li>
+        </ul>
+        <h2>Invoice Reservations in Batch</h2>
+        <ul>
+            <li>Once charges on reservations are corrected, invoice in batch.</li>
+            <li>Go to Billing &gt; Invoices &gt; <strong>Invoicing</strong></li>
+            <li>Select the same Dates and other filter criteria used on the Billing Worksheet.</li>
+            <li>Click <strong>Generate</strong><ul style="list-style-type: circle;"><li>Highlight the transactions you want to invoice (all or some), click <strong>Preview</strong> to review, then click <strong>Final</strong> – click Yes to warning about posting and printing x number of invoices</li></ul></li>
+            <li>The invoices display. Close the preview.</li>
+        </ul>
+        <h2>Run the General Ledger Distribution Report by Invoice</h2>
+        <ul>
+            <li>Next run the general ledger distribution report by invoice to see all of the journal entries that need to be made for the billing period. The report includes the Billing Reference Number to charge, the accounts to credit, and the amount due.</li>
+            <li>Go to Billing &gt; Reports &gt; <strong>General Ledger Distribution</strong></li>
+            <li>The first time you run this report, make the following selections and then click <strong>Memorize</strong>&#160;to save the report for future use.
+    <ul style="list-style-type: circle;"><li>Date Range Tab:
+        <ul><li>Department - will default to the department you work in and are assigned to.</li><li>First Transaction Date and Last Transaction Date – select the date the batch invoices were created</li><li>Group – (all)</li><li>Format – By Invoice</li></ul></li><li>Group Types Tab:
+        <ul><li>Move all group types that you invoice from the Available to the Selected column</li></ul></li><li>Options Tab:
+        <ul><li>Currency: US Dollars</li><li>Invoices with Payments Only: unchecked</li><li>Show Applied Deposits/Pre-payments: unchecked</li></ul></li></ul></li>
+            <li>After the report has been saved, click <strong>Print Preview</strong>.</li>
+            <li>Optionally, use this report to make journal entries in your financial system. The Billing Reference Numbers represents the account to be debited, the Account represents the revenue account to be credited.</li>
+        </ul>
+        <p class="mt-indent-1">
+            <img alt="" class="internal default" style="width: 1063px;height: 375px;" width="1063px" height="375px" />
+        </p>
+        <h2>Apply Payments in Batch</h2>
+        <ul>
+            <li>Optionally, apply payments in EMS to represent that the journal entry was made to pay for the charges. Go to Billing &gt; Payments &gt; <strong>Payment Entry</strong>.</li>
+            <li>The Payment Entries window will open. Click <strong>New</strong>.</li>
+            <li>The Payment Entry window will open. Make the following selections:
+    <ul style="list-style-type: circle;"><li>Transaction Type – Payment</li><li>Payment Type – Internal Transfer</li><li>Check No. – optionally enter the journal entry transaction number</li><li>Amount – enter the total amount paid for the invoice</li><li>Invoice No. – type the invoice number found on the General Ledger Report</li><li>Notes – Optionally, enter other information you would like to track about this payment. Click <strong>OK</strong> to save.</li></ul></li>
+        </ul>
+        <h2>Void Payments and Invoices</h2>
+        <ul>
+            <li>If a correction to an invoice is needed, you must void the most recent transaction(s) on an invoice before you can void the Invoice itself. For example, payments applied to an invoice must be voided first.</li>
+        </ul>
+        <ul>
+            <li>On the Transactions Tab, select payment &gt; Void &gt; enter Void Reason &gt; <strong>OK</strong> (this action does not delete the payment, it voids it and displays void date &amp; comment)</li>
+            <li>To void an Invoice, select invoice &gt; Void&gt; enter Void Reason &gt; <strong>OK</strong></li>
+            <li>Transactions become locked after a certain number of days. The number of days are configured on the Department are represent the number of days you are allowed to <u>void</u> an invoice.&#160; If it is&#160;365, for example, you must void invoices within one year of creating that invoice.&#160; After one year, you would not be able to void the invoice.</li>
+        </ul>
+        <h2>Additional Billing Reports</h2>
+        <h3>Statements</h3>
+        <ul>
+            <li>Allows you to create a customer facing statements (across all invoices) of the original amount due on an invoice and remaining balance.
+    <ul><li>Billing &gt; Reports &gt; <strong>Statements</strong></li></ul></li>
+        </ul>
+        <h3>Ageing Report</h3>
+        <ul>
+            <li>Used to show who owes a payment and if they are current, 30 days, 60 days, or 90 days late.
+    <ul style="list-style-type: circle;"><li>Billing &gt; Reports &gt; <strong>Ageing Report</strong></li></ul></li>
+        </ul>
+        <h3>Billing Queries</h3>
+        <ul>
+            <li>If you need a billing report that doesn’t already exist in EMS, build a query. Use billing as a filter type. When billing is selected as the filter type, transaction fields become available as filters and display fields.
+    <ul><li>Reports &gt; Queries &gt; <strong>Query Builder</strong></li></ul></li>
+        </ul>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

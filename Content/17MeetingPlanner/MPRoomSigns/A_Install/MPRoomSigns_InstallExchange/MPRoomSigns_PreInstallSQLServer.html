@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Pre-Installation SQL Server</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Pre-Installation SQL Server</h1>
+        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre> <h2><a name="_Toc437590600"></a><a name="_Toc433964316"></a>Database Server Prerequisites and Requirements</h2> <h3><a name="_Toc437590601"></a>Database Server</h3> <p><strong><span>Important!</span></strong><span> The application and database servers can be, but do not have to be, the same.</span></p> <table border="1" cellpadding="0" cellspacing="0" style="width: 564px;"> <tbody> <tr> <td style="width: 204px;"> <p><strong>Prerequisite</strong></p>  </td> <td style="width: 360px;"> <p><strong>Details</strong></p>  </td>  </tr> <tr> <td style="width: 204px;height: 31px;"> <p>SQL S<strong>erver</strong></p>  </td> <td style="width: 360px;height: 31px;"> <p>2008 R2 and newer</p> <p>Management Studio</p> <p>Mixed Authentication Mode Enabled</p>  </td>  </tr>  </tbody> <tbody> <tr> <td style="width: 204px;height: 31px;"> <p><strong>Requirements</strong></p>  </td> <td style="width: 360px;height: 31px;"> <p>SQL instance</p> <p>SQL login</p> <p>Restore Database&#160;</p>  </td>  </tr>  </tbody>  </table> <h3><a name="_Toc437590602"></a><a name="_Toc433964317"></a>SQL Server</h3> <p>i. &#160;Open ‘Microsoft SQL Server Management Studio’ and <strong>Connect</strong>.</p> <ol> <li>Enable Mixed Authentication Mode.</li>  </ol> <p><img alt="" class="internal" style="width: 437px;height: 333px;" width="437px" height="333px" /></p> <p>ii. &#160; Right click on the server name in the ‘Object Explorer’ window.</p> <p>iii. &#160;Select <em>Properties &gt;<strong>Security.</strong></em></p> <p>iv. &#160;Select SQL Server and Windows Authentication Mode and .</p> <p><img alt="" class="internal" style="width: 438px;height: 276px;" width="438px" height="276px" /></p> <h3><a name="_Toc437590603"></a><a name="_Restore_Database"></a>Restore Database</h3> <p>1. &#160;&#160;&#160; Open Microsoft SQL Management Studio.</p> <p>2. &#160; &#160;&#160;Connect to the server that will hold the MeetingPlanner database.</p> <p>3. &#160;&#160;&#160; Right-click on <strong>Database </strong><em>(Object Explorer, left pane) &gt; <strong>Restore Database</strong></em>.</p> <p>&#160;4. &#160; Set the name for the new database (“To database” field).</p> <p>&#160;5.&#160;&#160; Select <strong>From</strong> device and click on the three dots to launch the folder browser.</p> <p>&#160;6. &#160; Select <strong>Add,</strong> and the .bak you wish to restore. Link to MP backup database file TBD.</p> <p>7.&#160;&#160; Select <strong>Ok</strong>.</p> <p>8. &#160; Select <strong>Restore</strong>.</p> <p><img alt="" class="internal" style="width: 704px;height: 629px;" width="704px" height="629px" /></p> <p>9. &#160;Select <strong>OK</strong>.</p> <h3><a name="_Toc437590604"></a>Required Installation Data</h3> <p>Provide the MeetingPlanner Installer the following:</p> <ul> <li>database name (ie. MeetingPlanner)</li> <li>MeetingPlanner login and password credentials</li>  </ul> <p><strong>Important!</strong> The installation data is required to install MeetingPlanner.</p> <hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Room Signs with Exchange</a><a>Pre-Installation SQL Server</a><a mt-export-translate="no">persona:UserFacilitiesMgr</a></p></body>
+</html>

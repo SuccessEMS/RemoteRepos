@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="2250" MadCap:lastWidth="1845">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Heading1">Installing/Upgrading EMS for Outlook on a User's PC</h1>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p>
+                        <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Introduction.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_4">
+                    <p>&#160;</p>
+                </td>
+                <td class="td_1">
+                    <p><span class="Strong_2">Note:&#160;</span>If you are installing on a machine with Outlook 64bit, use the 64bit (x64) EMS for Outlook installer.&#160; If you are installing on a machine with Outlook 32bit, use the 32bit (x86) EMS for Outlook installer.&#160;64-bit editions of Microsoft Office 2010 and 2013 require additional installation steps not outlined in this document.&#160; Please contact Customer Support for more information. &#160;</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p>
+                        <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Introduction.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="Strong_2">Note:&#160;</span><span class="mt-color-669900_1">The&#160;</span><a href="https://success.emssoftware.com/Release_Notes/Update_7_Release_Notes/EMS_Outlook_Release_Notes_V44.1_Update_7#non-cached%2Bmode" title="EMS Outlook Release Notes V44.1 Update 7"><span class="Hyperlink_3">Update 7</span></a><span class="mt-color-669900_1">&#160;release requires that users&#160;</span><a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Troubleshooting/Enabling_Exchange_Caching" title="https://success.emssoftware.com/Knowledge_Base/EMS_for_Outlook_FAQs/Activating_Exchange_Caching"><span class="Hyperlink_3">run Microsoft® Outlook in cached mode</span></a><span class="mt-color-669900_1">.</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">Silent EMS for Outlook&#160;User Installation&#160;</h2>
+        <p>You can push your EMS for Outlook Installation to user machines if your system enables this type of administration.</p>
+        <p>Use the following command to establish an Unattended/Silent installation of the&#160;<span class="Strong_2">EMSForOutlook.msi</span>&#160;(replace [ServerName] with the name of your web server):</p>
+        <p><span class="mt-color-669900_1">msiexec /I “EMS for Outlook.msi” /quiet ENDPOINT_ADDRESS=”</span><span class="Strong_2">http://[ServerName]/ExchangeIntegrationWebService/Service.asmx”</span>
+        </p>
+        <h2 class="Heading2">Standard EMS for Outlook User Installation&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Verify that the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_for_Outlook_(Legacy)/EMS_for_Outlook_(Prior_to_Update_8)/Installing_EMS_for_Microsoft%C2%AE_Outlook_(Prior_to_Update_8)/06-Pre-Installation_Requirements" title="https://dea-prod.mindtouch.us/EMS_System_Administration/EMS_Outlook/Installing_EMS_Outlook/06-Pre-Installation_Requirements"><span class="Hyperlink_3">pre-installation requirements</span></a>&#160;have been met.</li>
+            <li class="ListParagraph">Download the&#160;<span class="Strong_2">EMSForOutlook.msi&#160;</span>file onto the user’s desktop.</li>
+            <li class="ListParagraph">Close Outlook.</li>
+            <li class="ListParagraph">Run&#160;<span class="Strong_2">EMSForOutlook.msi</span>.</li>
+            <li class="ListParagraph">The first screen welcomes you to the EMS Outlook Add-in Setup Wizard.&#160; Click the&#160;<span class="Strong_2">Next&#160;</span>button to begin the installation process.&#160; The&#160;<span class="Emphasis_1">Destination Folder</span>&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Installing or Upgrading EMS.png" style="height: 387px;width: 495px;" alt="https://success.emssoftware.com/@api/deki/files/1889/EFO_Install_2.png?revision=1&amp;size=bestfit&amp;width=495&amp;height=387" class="img_1" />
+        </p>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Specify the installation Folder.&#160;&#160;<span class="Strong_2">Note</span>&#160;- It is recommended that you keep the default setting.&#160;</li>
+            <li class="ListParagraph">Click the&#160;<span class="Strong_2">Next</span>&#160;button. The&#160;<span class="Emphasis_1">Outlook Integration&#160;Service Information</span>&#160;screen will appear.</li>
+            <li class="ListParagraph">Enter&#160;the Outlook Integration Web Service address your organization uses. (Example - http://[ServerName]/ExchangeIntegrationWebService/Service.asmx)</li>
+            <li class="ListParagraph">Click the&#160;<span class="Strong_2">Next&#160;</span>button. The&#160;<span class="Emphasis_1">Ready to install EMS for Outlook</span>&#160;screen will appear.&#160;</li>
+            <li class="ListParagraph">Click the&#160;<span class="Strong_2">Install</span>&#160;button to complete the installation.&#160; Click the&#160;<span class="Strong_2">Close</span>&#160;button to exit.</li>
+            <li class="ListParagraph">Launch Outlook.&#160;The&#160;<span class="Strong_2">EMS&#160;</span>button should display on the user’s Outlook toolbar.</li>
+        </ol>
+        <table class="table_1">
+            <col style="width: 62pt;" />
+            <col style="width: 692pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_4">
+                        <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Installing or Upgrading EMS_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3857/tech_doc_warning.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_1">Warning</span><span class="mt-color-669933_1">:</span><span class="mt-color-669933_1">&#160;</span>EMS for Outlook requires Outlook to be running in cached mode (the option selected under&#160;<span class="mt-color-669933_1">File &gt; Account Settings</span>) as shown below). The add-in has a close tie to Outlook and makes frequent calls as users click through the Outlook interface.&#160;In cached mode, over 95% of those calls end at the local Outlook cache file. If cached mode is disabled, however, those calls end at Exchange and the frequency of calls can cause performance issues. For this reason, the add-in will become inactive if Outlook is not in cached mode, and users will receive a message to this effect.</p>
+                    <p>
+                        <img src="../../../Resources/Images/Installing EMS for Microsoft Outlook pU8/Installing or Upgrading EMS_2.png" style="height: 713px;width: 889px;" alt="https://success.emssoftware.com/@api/deki/files/5071/clipboard_ea05dd2f8355f64c4142b2867aecd572e?revision=1&amp;size=bestfit&amp;width=889&amp;height=713" class="img_1" />
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

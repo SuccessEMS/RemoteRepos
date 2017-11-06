@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Introduction to EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Introduction to EMS Platform Services</h1>
+        <p>This documentation contains important information regarding EMS Platform Services, including:</p>
+        <ul class="mt-indent-1">
+            <li><a title="EMS Platform Services_JN Draft"><strong>Overview</strong></a>
+            </li>
+            <li><a title="EMS Platform Services_JN Draft"><strong>Architecture</strong></a>
+            </li>
+            <li><a title="Installing EMS Platform Services"><strong>Installation</strong></a>
+            </li>
+            <li><a title="EMS Platform Services_JN Draft"><strong>Getting Started with Integrations</strong></a>
+                <ul class="mt-indent-1">
+                    <li><a title="Configuring Platform Services in the Admin Portal"><strong>Configuring&#160;Platform Services in Admin Portal</strong></a>
+                    </li>
+                </ul>
+            </li>
+            <li><a title="EMS Platform Services_JN Draft"><strong>API Documentation</strong></a>
+            </li>
+            <li><a title="Licensing Requirements for Platform Services"><strong>Licensing</strong></a>
+            </li>
+        </ul>
+        <h2><strong><a id="overview" name="overview"></a>Overview</strong>
+        </h2>
+        <h3><strong>What is EMS Platform Services?</strong>
+        </h3>
+        <p>EMS Platform Services is a Platform as a Service (PaaS) solution offering modern, RESTful APIs. Platform Services enables the development of multi-platform applications that&#160;can be customized, cloud-based, scalable and easily integrated. &#160;It&#160;is a true middle tier, providing a business and resource layer&#160;that enables the central development of applications, reducing complexity and development time. Platform Services fosters innovation by ensuring&#160;easy maintenance and efficient management of an application's lifecycle.</p>
+        <p>In the current EMS architecture, databases exchange business logic directly with applications in the business tier.&#160;The Platform Services architecture creates an intermediary layer of business logic and resources that provides a buffer between the applications and EMS databases. Fixes, enhancements and/or new features can now be dispersed simultaneously to all products through Platform Services.</p>
+        <h2><strong><a id="architecture" name="architecture"></a>Architecture&#160;</strong>
+        </h2>
+        <p>
+            <img alt="LegacyEMSArchitecture.PNG" class="internal default" style="width: 802px;height: 514px;" width="802px" height="514px" />
+        </p>
+        <p>In June 2017, the EMS Mobile App was implemented with EMS Platform Services. In the future, all EMS applications will consume the Platform Services layer.&#160;</p>
+        <p>
+            <img alt="FutureEMSArchitecture.PNG" class="internal default" style="width: 530px;height: 495.994px;" width="530px" height="495.994px" />
+        </p>
+        <p>For our clients and partners, Platform Services provides a platform for faster, more straightforward custom integrations. Clients will experience a more valuable,&#160;consistent user experience across all EMS products. In addition, features and enhancements across all access points will experience faster turn around times. Platform Services has empowered EMS to be a true enterprise solution.&#160;</p>
+        <h2><strong><a id="installingps" name="installingps"></a>Installing EMS Platform Services</strong>
+        </h2>
+        <p>To learn more about installing EMS Platform Services, click <a title="Installing EMS Platform Services">here</a>.&#160;</p>
+        <ol>
+        </ol>
+        <h2><strong><a id="gettingstartedwithintegrations" name="gettingstartedwithintegrations"></a>Getting Started with Integrations</strong>
+        </h2>
+        <p class="mt-align-justify">Platform Services provides RESTful APIs which empowers customers and partners power to build custom, multi-platform applications connected to EMS. Any client/device accessing EMS Platform Services must be a registered Integration Client. The one exception is that anyone can access the public (open) API requests (/status, /health, /clientauthentication).</p>
+        <p>There are two types of Integrations:</p>
+        <ol class="mt-indent-1">
+            <li><strong>Custom</strong>—Customer applications</li>
+            <li><strong>Partner</strong>—Third-party EMS partner applications (e.g.,&#160;7PointsSolutions, Pepperdash,&#160;control concepts, etc.)</li>
+        </ol>
+        <p>Partner and Custom types can be classified as either of the following two client sub-categories:</p>
+        <ol class="mt-indent-1">
+            <li><strong>User-based:</strong>&#160;User-based clients (EMS Mobile, EMS for Outlook) need to authenticate as a user in order to perform any actions. These clients need an integration client role with minimal access to the following API resources (above and beyond public resources):
+
+    <ul><li>/authentication</li><li>/logging</li></ul></li>
+            <li><strong>Non-user Based</strong>: Non-user Based clients (EMS Kiosk, EMS Room Sign App) provide functionality independent of users but also support user-like functionality (i.e., Check-In, on-the-fly room reservations). These clients need a role with wider access.</li>
+        </ol>
+        <h4><strong>To begin the integration process:</strong>
+        </h4>
+        <ol>
+            <li>Verify if you have a license for adding Integrations. EMS Licensing manages a numeric count of both Custom and Partner Integration Types. Contact your EMS Sales Representative for a license for EMS Platform Services. View Licensing Requirements <a title="Licensing Requirements for Platform Services">here</a>.&#160;</li>
+            <li>Access Platform Services documentation (e.g.,&#160;<a href="https://yourcompany.com/ems-platform-api/api/v1/static/swagger-ui/" rel="freelink" title="https://yourcompany.com/ems-platform-api/api/v1/static/swagger-ui/">https://yourcompany.com/ems-platform-ic/swagger-ui/</a>).&#160;</li>
+            <li>Access admin portal for Platform Services&#160;(e.g., <a href="https://yourcompany.com/ems-platform-api/admin" rel="freelink" title="https://yourcompany.com/ems-platform-api/admin">https://yourcompany.com/ems-platform-api/admin</a>) to create a new Integration Client.&#160;Please see <a title="Configuring Platform Services in the Admin Portal">Configuring Platform Services</a> documentation for more information.&#160;</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>Creating a new Integration Client will generate a Client ID and Secret pair.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Platform Services requires a valid JWT Authentication token in order to call any of the API resources&#160;with the exception of&#160;<tt>/public, /status</tt>&#160;and&#160;<tt>/clientauthentication</tt>. Before making any API request, you must first call&#160;<tt>/clientauthentication</tt>&#160;with a Client ID and Secret&#160;pair generated above.</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li>The <em>Client </em>token returned from calling /clientauthentication should be applied to the x-ems-api-token header for subsequent API requests.</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText mt-align-justify"><span class="mt-color-669900"><strong>Note: </strong></span>There can be multiple active instances of a particular client interacting with the Platform. All devices that share a client/secret will share a common authentication token. If the token expires, all devices will need to authenticate again to get a new shared token.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5">
+            <li>For API resources that require an authenticated web user, your integration client will need to request a web user authentication token for that user. To acquire an authentication token, call the /authentication requests.</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li>The <em>Web </em>token returned from calling /authentication should also be applied to the x-ems-api-token header, thus replacing the client token with a user token.</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>Refer to the API documentation to determine the appropriate token (i.e., client token or web token)&#160;for the header field.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><a id="apidocumentation" name="apidocumentation"></a>API Documentation</strong>
+        </h2>
+        <p>Navigate to Platform Services URL e.g. <a href="https://yourcompany.com/ems-platform-api" rel="freelink" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>&#160;to view the API documentation. You can also manually type in the URL (<a href="https://yourcompany.com/ems-platform-api/api/v1/static/swagger-ui/" rel="freelink" title="https://yourcompany.com/ems-platform-api/api/v1/static/swagger-ui/">https://yourcompany.com/ems-platform...ic/swagger-ui/</a>). You can view sample API calls for EMS Platform Services <a href="https://ems01.dea.com/BookPlatform/api/v1/static/swagger-ui/" title="https://ems01.dea.com/BookPlatform/api/v1/static/swagger-ui/">here</a>.&#160;</p>
+        <h6>Base URL for All API Requests</h6>
+        <p>All requests should be made to URL for EMS Platform Services (e.g.,&#160;<a href="https://yourcompany.com/ems-platform-api" rel="freelink" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>).</p>
+        <h6><strong>Date/Time Standards</strong>
+        </h6>
+        <p>All dates and times passed to the API requests follow&#160;RFC 3339&#160;Standard and must be in UTC.&#160;</p>
+        <p>All DateTimes&#160;follow the standard (e.g.,&#160;<span class="mt-font-courier-new">2008-09-08T22:47:31-07:00</span><span class="mt-font-arial">)</span></p>
+        <h6><strong>Common Response Codes</strong>
+        </h6>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th scope="col"><strong>Response Code</strong>
+                    </th>
+                    <th scope="col"><strong>Title</strong>
+                    </th>
+                    <th scope="col"><strong>Meaning</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Response Code">200</td>
+                    <td data-th="Title">Success</td>
+                    <td data-th="Meaning">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Response Code">400</td>
+                    <td data-th="Title">Bad Request</td>
+                    <td data-th="Meaning">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Response Code">401</td>
+                    <td data-th="Title">Invalid/Missing Client Credential</td>
+                    <td data-th="Meaning">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Response Code">500</td>
+                    <td data-th="Title">Server Error</td>
+                    <td data-th="Meaning">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>HTTP Request Methods</h6>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th scope="col"><strong>Method</strong>
+                    </th>
+                    <th scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Method">GET</td>
+                    <td data-th="Description">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Method">POST</td>
+                    <td data-th="Description">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Method">PUT</td>
+                    <td data-th="Description">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Method">DELETE</td>
+                    <td data-th="Description">&#160;</td>
+                </tr>
+                <tr>
+                    <td data-th="Method">PATCH</td>
+                    <td data-th="Description">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ul class="mt-indent-1">
+        </ul>
+        <ul>
+        </ul>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic-guide</a><a>site</a>
+        </p>
+    </body>
+</html>

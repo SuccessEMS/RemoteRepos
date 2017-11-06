@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-25T23:09:09.3796070-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-25T23:09:15.2549323-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/SetFinalExamSchedule.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/SetFinalExamSchedule.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_1.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_2.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_3.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_4.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_5.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_6.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_7.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_8.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_9.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_10.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_11.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_12.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_13.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_14.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/SetFinalExamSchedule/Setting a Final Exam Schedule_15.png"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/SetFinalExamSchedule/Setting a Final Exam Schedule.htm"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../TOCs/SetFinalExamSchedule.fltoc"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/SetFinalExamSchedule.css"
+      TimeStamp="10/25/2017 11:09:13 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/EMS Kiosk API Reference.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">API Functions - Kiosk Add Room to Profile and by Setup Type</h1>
+        <h2 class="Heading2">KioskAddRoomtoProfile</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Adds a room to an existing Kiosk Profile.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 93pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ProfileID*</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Kiosk Profile ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomID*</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomIDType</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room ID Type (ID or ExternalReference)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 67pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Result</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Success or Failure</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>Possible values for&#160;<span class="Emphasis_2">RoomIDType</span>:&#160;&#160;<span class="Strong_1">0 = Room ID (default), 1 = Room External Reference</span></p>
+        <h2 class="Heading2">KioskGetRoomsBySetupType</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Returns a list of rooms by setup type and capacity</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 93pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BuildingID *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Building ID (-1 = All Buildings)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomTypeID *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Type ID (-1 = All Room Types)</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">FloorID *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Floor ID (-1 = All Floors)</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">SetupTypeID *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Setup Type ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 243pt;" />
+            <col style="width: 67pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomCode</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Code</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">BuildingID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Building ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BuildingDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Building Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">RoomTypeID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Room Type ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">RoomTypeDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Room Type Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">FloorID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Floor ID</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">FloorDescription</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Floor Description</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">SetupCount</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Setup Count</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

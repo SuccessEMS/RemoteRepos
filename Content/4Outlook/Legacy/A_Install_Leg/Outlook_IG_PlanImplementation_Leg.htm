@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="955" MadCap:lastWidth="967">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Title1">Planning Your EMS for Outlook Implementation</h1>
+        <p>EMS for Outlook consists of two main components: the Integration with Microsoft Exchange and the EMS for Outlook.</p>
+        <h2 class="Heading2">Install the EMS Integration for Microsoft® Exchange Web Service&#160;</h2>
+        <p>This service (typically&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange" title="EMS_V44.1/Installing_and_Setting_Up_EMS/Integration_to_Exchange"><span class="Hyperlink_1">installed</span></a>&#160;where your EMS Web App&#160;resides) manages all communication/transactions between EMS for Outlook (as well EMS Desktop Client and EMS Web App) and the EMS database, including checking room availability, booking the meeting in EMS, and managing changes.&#160;<span class="Strong">EMSForOutlook.msi</span>&#160;will prompt the user for the Integration with Microsoft Exchange&#160;Web Service Address during the installation process.&#160;</p>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="p_1">
+                            <img src="../../../Resources/Images/Installing and Configuring Outlook Legacy/Planning Your EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                        </p>
+                    </td>
+                    <td class="td_1">
+                        <p><span class="mt-color-669933_2">Tip:</span><span class="mt-color-669933_2">&#160;</span>The URL you enter during this process is stored in the application's configuration file and can be changed by going to Add/Remove Programs &gt; Ems for Outlook &gt; Change Installation &gt;&#160;<span class="mt-color-669933_2">Change URL</span>.</p>
+                        <p>For complete instructions, see the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange" title="Integration to Exchange"><span class="Hyperlink_2">Integration With Microsoft® Exchange</span></a>&#160;guide.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2">Install EMS for Outlook&#160;On Users' Computers (EMSForOutlook.msi)&#160;</h2>
+        <p>This&#160;add-in should be&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Installing_%26_Configuring_EMS_for_Microsoft%C2%AE_Outlook_(Legacy)/07-Installing////////Upgrading_EMS_for_Outlook_on_a_User%27s_PC" title="Installing/Upgrading EMS for Outlook on a User&amp;#39;s PC"><span class="Hyperlink_1">installed on your users’ desktops</span></a>.&#160; This file exposes the EMS Room Scheduling option on the Outlook Calendar Appointment form.&#160;By default, the&#160;<span class="Strong">EMSForOutlook.msi</span>&#160;installs all of the files required by the EMS for Outlook&#160;Add-in in the following locations:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1"><span class="Strong">32-bit machines -</span><span class="Emphasis">&#160;C:\Program Files\EMS for Outlook</span>
+            </li>
+            <li class="ListParagraph_1"><span class="Strong">64-bit machines</span><span class="Emphasis">&#160;- C:\Program Files (x86)\EMS for Outlook</span>
+            </li>
+        </ul>
+        <p>This location can be changed during the installation, but it is recommended that you keep the default.</p>
+        <h2 class="Heading2">Configuration Path&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">EMS must be&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Installing_%26_Configuring_EMS_for_Microsoft%C2%AE_Outlook_(Legacy)/060_Configuration" title="Configuration"><span class="Hyperlink_1">configured&#160;</span></a>properly in order to activate the EMS for Outlook for each Outlook user:</li>
+        </ol>
+        <ol start="1" class="ol_2">
+            <li class="ListParagraph">The Outlook user must have an active EMS&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Glossary#everyday+user" title="Glossary"><span class="Hyperlink_1">Everyday User</span></a>&#160;account.</li>
+            <li class="ListParagraph">The EMS Everyday User account must be assigned to&#160;<a href="https://success.emssoftware.com/Establishing_Booking_Templates_for_EMS_for_Outlook_Users" title="Establishing Booking Templates for EMS for Outlook Users"><span class="Hyperlink_3">at least one Everyday User Process Template</span></a>&#160;with the&#160;<span class="Strong">Outlook</span>&#160;option enabled.</li>
+            <li class="ListParagraph">The EMS Everyday User account must be&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Installing_%26_Configuring_EMS_for_Microsoft%C2%AE_Outlook_(Legacy)/060_Configuration/Assigning_EMS_Users_to_Groups" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_for_Microsoft%C2%AE_Outlook/Installing_EMS_for_Microsoft%C2%AE_Outlook_V44.1_Update_8_newer/060_Configuration/Assigning_EMS_Users_to_Groups"><span class="Hyperlink_1">associated to an active EMS Group record</span></a>.</li>
+            <li class="ListParagraph">The EMS Everyday User must have an associated&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Glossary#contact" title="Glossary"><span class="Hyperlink_1">Contact</span></a>.</li>
+        </ol>
+        <table class="table_1">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_1">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Installing and Configuring Outlook Legacy/Planning Your EMS for Outlook.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_1">
+                    <p><span class="mt-color-669933_2">Tip:</span><span class="mt-color-669933_2">&#160;</span>“<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Glossary#group" title="Glossary"><span class="Hyperlink_2">Group</span></a>” may have been relabeled to “Client” or “Employee” in your EMS system.</p>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="347" MadCap:lastWidth="1230">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+        </title>
+        <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="contentBody" class="off-canvas-main">
+            <MadCap:bodyProxy />
+            <div class="footer center" style="background-color: #f8f8f6;">
+                <div class="HomeMasterPageFooter outer-row">
+                    <div>
+                        <a href="../../Home.htm">
+                            <img src="../Images/EMS Logo.jpg" alttext="" class="Hyperlinked footer-logo" alt="[%=General.CompanyName%]" title="[%=General.CityStateZip%]" style="width: 301px;height: 113px;" />
+                        </a>
+                    </div>
+                    <div>
+                        <p>&#160;</p>
+                        <p style="text-align: center;">
+                            <span style="font-size: 14pt;">Got Feedback? Click </span>
+                            <a href="mailto:jen.naused@emssoftware.com?subject=Documentation Feedback for Success.EMSSoftware.com" style="color: #00467f;font-weight: bold;text-decoration: underline;font-size: 14pt;">Here</a>
+                            <span style="font-size: 14pt;">.</span>
+                        </p>
+                        <p>This documentation applies to EMS&#160;Software applications.</p>
+                        <p>To download software updates, log in to the Downloads Portal.</p>
+                        <p class="Copyright">Copyright © <MadCap:variable name="General.Year" /> EMS Software, LLC All Rights Reserved.</p>
+                    </div>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/#!/MadCapDocTeam" target="_blank">
+                            <img src="../Images/TwitterIcon.png" alttext="" class="Hyperlinked" />
+                        </a>
+                        <a href="http://www.facebook.com/madcapdocteam" target="_blank">
+                            <img src="../Images/FacebookIcon.png" alttext="" class="Hyperlinked" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

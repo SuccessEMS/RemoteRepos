@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="2" MadCap:lastHeight="5885" MadCap:lastWidth="1083">
+    <head>
+    </head>
+    <body>
+        <h1>Upgrade Instructions</h1>
+        <div class="NoteBox">In order to upgrade EMS, you must perform two operations:</div>
+        <p>Upgrade the EMS server components.</p>
+        <p>Install EMS Desktop Client.</p>
+        <div class="NoteBox">Note:  If you are upgrading from a version of EMS released prior to server version 35, please contact Customer Support.</div>
+        <p>&#160;</p>
+        <p>Tip: You can see a summary of all EMS Updates for V44.1 here.</p>
+        <p>To learn more about our release update process, See Also:</p>
+        <p>Updating to the Latest Version of EMS</p>
+        <p>How are EMS Applications Updated?</p>
+        <p>Upgrading the EMS Server Components</p>
+        <p>The server upgrade process will upgrade the EMS databases on your MS SQL Server. If you are upgrading from EMS Enterprise 4.x or below, your existing EMSEnterprise_Master database (which contains licensing information) will be replaced by a new EMS_Master database, and your existing EMS database will be upgraded to the current version.</p>
+        <p>Note:  A Microsoft SQL Server SA level account will be required to execute the database upgrade process.</p>
+        <p>Download the EMS.ServerInstall.exe file from the EMS Support Portal.</p>
+        <p>Using SQL Server Management Studio, back up your existing EMS databases.</p>
+        <p>Run EMS.ServerInstall.exe. (This .exe can be run from any PC that has access to your database server.)</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>In the Server field, enter the name of the MS SQL Server.</p>
+        <p>In the Database field, enter the name of the EMS database you wish to upgrade.</p>
+        <p>In the Server Authentication area, specify your MS SQL Server authentication credentials.  If SQL Server Authentication Mode is selected, you will be required to specify a User Name and Password.</p>
+        <p>Click the Execute button. A Backup Database popup will appear.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Click Yes to acknowledge that you have backed up your EMS databases and it is OK to continue.You have completed the upgrade process for the server portion of EMS. Next you will upgrade individual workstations.</p>
+        <p>Note: For information on installing the optional Email Notification Service or the EMS Campus Auto Sync Service (EMS Campus only), see Installing or Upgrading the EMS Email Notification Service and/or  Installing or Upgrading the EMS Campus Auto Sync Service.</p>
+        <p>Upgrading Individual Workstations</p>
+        <p>Follow the procedures below to upgrade individual workstations to EMS Desktop Client.</p>
+        <p>EMS Desktop Client Web Deployment</p>
+        <p>&#160;</p>
+        <p>Notes:</p>
+        <p>Before beginning the installation process, please install or upgrade your EMS databases.</p>
+        <p>To learn more about EMS Desktop Client Web Deployment, See Also: EMS Desktop Client Web Deployment Decision Guide. If you choose not to use this option, skip to the Conventional Desktop Client Installation section.</p>
+        <p>Manually uninstall any previous versions of EMS Desktop Client Web Deployment on your web server.</p>
+        <p>Verify that the prerequisite software has been installed.</p>
+        <p>Download the EMSDesktopWebDeploySetup.msi file onto the web server that will be running EMS Desktop Client Web Deployment.</p>
+        <p>Run the EMSDesktopWebDeploySetup.msi as an administrator.</p>
+        <p>The first screen welcomes you to the EMS Desktop Client Web Deployment Setup Wizard. Click Next to begin the installation process. The Destination Folder dialog will appear.</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>Select the destination folder where you wish to install the EMS EMS Desktop Client Web Deployment. The installation process will create a new physical directory on your web server based on the destination folder path you entered (“EMSDesktopWebDeploy” in the example above.).</p>
+        <p>In the Web Site URL and Virtual Directory Name fields, enter your SQL instance name.</p>
+        <p>In the EMS Database field, enter your Database Name: the Virtual Directory Name will default to the destination folder specified in Step 6.  It is recommended that you keep the default setting.  The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMS Desktop Web Deploy” in the example above.)</p>
+        <p>If you will be using a Load Balancer with the EMS Desktop Web Deploy application, enter the Name or IP Address of your server in the EMS SQL Server field.</p>
+        <p>Click Next.</p>
+        <p>Note:  The EMS Desktop Client Web Deployment should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Desktop Client Web Deployment.</p>
+        <p>The Ready to install the EMS Desktop Client Web Deployment window will appear. Click Install.</p>
+        <p>The Completed EMS Desktop Client Web Deployment Setup Wizard window will appear.  Click Finish.</p>
+        <p>After following the steps above, verify your EMS Desktop Client Web Deployment installation by opening a browser and entering the address:</p>
+        <p>http://[ServerName]/EMSDesktopWebDeploy/  (replace [ServerName] with the name of your web server)</p>
+        <p>Note:  The first time you launch the EMS Desktop Client Web Deployment, it may take a few extra moments for the page to display.  If you encounter any issues, please contact Customer Support for assistance.</p>
+        <nav class="title-bar">Installation Instructions</nav>
+        <p>Installation Instructions</p>
+        <p>Installing Additional EMS Services</p>
+        <p>All optional EMS features, services, and add-ons are listed here. You may need to install or upgrade additional features.</p>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-26T22:56:09.0157015-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-26T22:56:17.2955717-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Installing EMS Kiosk Legacy.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Installing EMS Kiosk Legacy.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing EMS Kiosk Legacy.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Installing EMS Kiosk Legacy.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Introduction to EMS Kiosk.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/System Requirements and Prerequisites.gif"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/System Requirements and Prerequisites.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Obtaining the Installation.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing Upgrading the EMS.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing Upgrading the EMS_1.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing Upgrading the EMS_2.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing Upgrading the EMS_3.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Installing Upgrading the EMS_4.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Installing Upgrading the EMS.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Starting EMS Kiosk Legacy.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Installing EMS Kiosk Legacy/Starting EMS Kiosk Legacy_1.png"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Starting EMS Kiosk Legacy.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Installing EMS Kiosk Legacy/Installing EMS Kiosk Legacy_1.htm"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../TOCs/Installing EMS Kiosk Legacy.fltoc"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Installing EMS Kiosk Legacy.css"
+      TimeStamp="10/26/2017 10:56:14 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="mt-color-ff0000" />
+    <StyleName
+      Name="Emphasis" />
+  </UsedCharacterStyles>
+</MsWordImport>

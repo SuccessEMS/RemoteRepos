@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="8252" MadCap:lastWidth="878" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Connecting Master Calendar to Your EMS Database</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Connecting Master Calendar to Your EMS Database</h1>
+        <p class="Body">A <em>connector</em> is a direct feed from your EMS database to your Master Calendar database. If you are an EMS customer and a Master Calendar customer, a connector prevents you from having to carry out double entry of your events. You can enter all your events once into your EMS system, then use a connector to import one or more, or all your EMS events into Master Calendar.</p>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To manage connectors, you will</p>
+        <ul class="mt-indent-1">
+            <li><a target="_blank" title="Connecting Master Calendar to Your EMS Database">Make sure your Master Calendar has data sources set up</a>.</li>
+            <li>Set up connectors (this topic).</li>
+        </ul>
+        <p class="Body">Managing connectors in Master Calendar consists of <span class="Link"><span style="text-decoration: none;">adding</span></span> a connector, <span class="Link"><span style="text-decoration: none;">filtering</span></span> the events to import, <span class="Link"><span style="text-decoration: none;">setting</span></span> the frequency of the import, <span class="Link"><span style="text-decoration: none;">activating</span></span> and <span class="Link"><span style="text-decoration: none;">inactivating</span></span> connectors, <span class="Link"><span style="text-decoration: none;">editing</span></span> a connector, <span class="Link"><span style="text-decoration: none;">running</span></span> a connector, <span class="Link"><span style="text-decoration: none;">purging</span></span> a connector, and <span class="Link"><span style="text-decoration: none;">deleting</span></span> a connector. You can also <span class="Link"><span style="text-decoration: none;">generate</span></span> a Connectors List report and you can <span class="Link"><span style="text-decoration: none;">view</span></span> the history for a connector.</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>As with data sources, the Connector function requires that your organization purchase the optional module, Master Calendar Data Connectors.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Adding a connector</h2>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click Connectors.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Under Actions, click Add.&#160;A Data Source list is displayed.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">3. Select the data source that you want to use for the connector.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_tip.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>Remember, the data source is for the connection to the EMS database, and you must also use a connector to import UDFs into your Master Calendar database. If you do not see the data source that you want to use for the connector, then it has not been created.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">The Details tab opens. You use the options on this tab to add the basic information for the connector.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">4. Enter the information for the connector.</p>
+        <table border="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p class="TableTitle"><strong><a name="RTF39313131303a205461626c65"></a>Details tab fields</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Field</strong>
+                        </p>
+                    </td>
+                    <td style="border: solid black 1.0pt;border-left: none;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Connector Name</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">The title or the name for the connector.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Calendars</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">A list of all active calendars to which you have access as a Calendar Manager. Click the Lookup icon to open the Calendars dialog box and select the calendar or calendars to which you are importing the EMS events.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Automatically Match Event Type</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Selected by default. If you leave this option selected, then every event type in the selected data source is mapped according to the event type mapping that you carried out for the data source. (See <span class="Link">“<a title="Managing Data Sources">To add a data source</a>”</span>) If you clear this option, then the Event Types dropdown list becomes available.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Event Type</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Available only if you clear the Automatically Match Event Type option. Every event type in the selected data source will be mapped to the MC event type that you select on this dropdown list.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Bookings Require Approval</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the imported events will follow the approval workflow for the Manage Events option. See <a title="Working With Events"><em><span>Managing Events</span></em></a> in the <a title="Master Calendar User Guide"><em><span>Master Calendar User’s Manual</span></em></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Name</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the name of the event’s contact person does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Phone Number</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the contact phone number for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Email</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the contact email for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Location Format</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Determines the location format that is imported from EMS. For example, if one of the buildings for an event type is the Strong building, you can indicate whether you want to import the EMS Building Description (STRONG) or the EMS Building Code (STR). Eight options are available:</p>
+                        <p class="TableBulletLev1">• Building Code - Room Code</p>
+                        <p class="TableBulletLev1">• Building Code - Room Description</p>
+                        <p class="TableBulletLev1">• Building Description - Room Code</p>
+                        <p class="TableBulletLev1">• Building Description - Room Description</p>
+                        <p class="TableBulletLev1">• Building Code</p>
+                        <p class="TableBulletLev1">• Building Description</p>
+                        <p class="TableBulletLev1">• Room Code</p>
+                        <p class="TableBulletLev1">• Room Description</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><a name="RTF46696c746572696e675f6576"></a>Filtering<a name="RTF34313930363a20486561644c"></a>&#160;EMS events</h2>
+        <p class="Body">When you filter the EMS events, you must select at least one event type, one status, and one group type, or no events are pulled from your EMS database into your Master Calendar database.</p>
+        <p class="StepNumberBegin">1. Click the Filters tab to open it.&#160;The Buildings label, Rooms label, Group Types label, and Group label that you see on the Filters tab are brought over from the EMS Data source. You configure these labels in the EMS Database under System Administration &gt; Settings &gt; Parameters. Asterisks next to Event Types, Statuses, and Group Types indicate the EMS Display on Web setting for the item.</p>
+        <p class="StepNumberContinued">2. Select at least one event type, one status, and one group type. CTRL-click to select multiple event types, statuses, and group types.</p>
+        <p class="StepNumberContinued">3. If you do not select any specific groups for a group type, then EMS events tied to all groups are pulled. Optionally, to filter the connector based on the EMS events for a specific group:</p>
+        <p class="BulletLev2 mt-indent-1">• Click Add to open a Master Calendar EMS Group Lookup dialog box.</p>
+        <p class="BulletLev2 mt-indent-1">• In the Filter field, specify the search criteria for the group, and then click Go.The search is limited to the exact order of characters in the search string, and the string must begin with the information for which you are searching. The string is not case-sensitive. For example, if you enter “admin” as your search string for All groups, “<span class="Bold">Admin</span>istrators” is returned in the search results, but DnsAdmins is not.</p>
+        <p class="BulletLev2 mt-indent-1">• From the search results, select the group that is to be used as a filter&#160;(CTRL-click to select multiple groups), and then click Add to move the groups to the Groups list.To remove groups, select the department (CTRL-click to select multiple groups), and then click Remove</p>
+        <p class="StepNumberContinued">4. Optionally, select (All) to pull EMS events booked in all EMS buildings, or pick a specific building. If you pick a specific building, you must also select the building rooms.To select all rooms for a building a single step, click the Move All (&gt;&gt;) button.</p>
+        <p class="StepNumberContinued">5. Optionally, to filter the EMS events based on a specific response to a specific UDF, select the UDF on the User Defined Fields dropdown list, and select the answer on the Answer dropdown list.</p>
+        <h2>Specifying the frequency of the data import</h2>
+        <p class="Body">The frequency of the data import means how often are you querying the EMS database. The greater the frequency, the more current is the “synch up” between your EMS database and your Master Calendar database.</p>
+        <p class="StepNumberBegin">1. Click the Data Retrieval tab to open it.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="AnchorFigure">&#160;</p>
+        <p class="AnchorFigure">2.&#160;Specify the information for the frequency of the data retrieval<span>.</span></p>
+        <div if="user.anonymous" class="mt-style-conditional style-wrap">
+            <table border="0" cellspacing="0" class="MsoNormalTable" style="font-size: 16px;border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <p class="TableTitle"><strong><a name="RTF31323737383a205461626c65"></a>Data Retrieval tab fields</strong>&#160;</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-width: 1pt;border-style: solid;border-color: black;background-color: rgb(229, 229, 229);" valign="top">
+                            <p class="TableColumnHeader"><strong>Field</strong>
+                            </p>
+                        </td>
+                        <td style="border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: none;background-color: rgb(229, 229, 229);" valign="top">
+                            <p class="TableColumnHeader"><strong>Description</strong>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-top: none;" valign="top">
+                            <p class="TableBody">Time Period</p>
+                        </td>
+                        <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                            <p class="TableBody">The time frame for which the events are to be imported. Two values are available:</p>
+                            <p class="TableBulletLev1">• Range of Days (default value)—If you select this value, you must also specify a Days Forward value.</p>
+                            <p class="TableBulletLev1">• Specific Dates—If you select this value, the Days Forward field is removed from the tab. Fields for specific dates are displayed instead.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-top: none;" valign="top">
+                            <p class="TableBody">Days Forward</p>
+                        </td>
+                        <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                            <p class="TableBody">Available only if you select Range of Days for the Time Period. Indicates the number of days into the future from the current day’s date that the event types are to be imported from the EMS database.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-top: none;" valign="top">
+                            <p class="TableBody">Start Date/End Date/No End Date</p>
+                        </td>
+                        <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                            <p class="TableBody">Available only if you select Specific Dates for the Time Period. You must enter a start date. You must enter an end date, or you must select No End Date.</p>
+                            <p class="TableNoteNote">Note: If you select No End Date, then all future events are pulled.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border-right: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-top: none;" valign="top">
+                            <p class="TableBody">Frequency</p>
+                        </td>
+                        <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                            <p class="TableBody">Indicates how often you are querying the EMS database.</p>
+                            <p class="TableBulletLev1">• Daily—If you select this option, you must also indicate the run time for the data import. (For example, daily at 1:30 a.m.)</p>
+                            <p class="TableBulletLev1">• Weekly—If you select this option, you must also indicate the day of the week and the run time for the data import. (For example, every Wednesday at 2:00 p.m.)</p>
+                            <p class="TableBulletLev1">• Minutes—If you select this option, you must indicate the intervals (in minutes) of the data import. (For example, every 15 minutes.)</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="StepNumberContinued">3. Click Save.&#160;The connector is saved as an <em>active</em> connector in Master Calendar.</p>
+        <h2><a name="RTF41637469766174696e675f63"></a>Activating<a name="RTF31313239363a20486561644c"></a>&#160;a connector</h2>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click Connectors.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Click the Inactive tab to open.&#160;All currently inactive connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">3. Select the connector that you are activating.</p>
+        <p class="StepNumberContinued">4. Under Actions, click Edit.&#160;The Details tab opens. The Inactive option is selected.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">5. Select Active.</p>
+        <p class="StepNumberContinued">6. Click Save.&#160;The connector is saved and is displayed on the Active tab on the Connectors page.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <h2><a name="RTF496e61637469766174696e67"></a>Deactivating<a name="RTF31363132333a20486561644c"></a>&#160;a connector</h2>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click Connectors.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Select the connector that you wish to de-activate.</p>
+        <p class="StepNumberContinued">3. Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens. The Active option is selected.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">4. Select <strong>Inactive</strong>.</p>
+        <p class="StepNumberContinued">5. Click <strong>Save</strong>.&#160;The connector is saved and is displayed on the Inactive tab on the Connectors page.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <h2><a name="RTF4d6f64696679696e675f636f"></a>Editing<a name="RTF37333133393a20486561644c"></a>&#160;a connector</h2>
+        <p class="Body">You can edit both active and inactive connectors.</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click Connectors.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. If needed, click the Inactive tab to open it.</p>
+        <p class="StepNumberContinued">3. Select the connector that you are editing.</p>
+        <p class="StepNumberContinued">4. Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">5. Edit the information as needed for the connector.</p>
+        <table border="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p class="TableTitle"><strong>Details tab fields</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Field</strong>
+                        </p>
+                    </td>
+                    <td style="border: solid black 1.0pt;border-left: none;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Connector Name</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">The title or the name for the connector.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Calendars</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">A list of all active calendars to which you have access as a Calendar Manager. Click the Lookup icon to open the Calendars dialog box and select the calendar or calendars to which you are importing the EMS events.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Automatically Match Event Type</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Selected by default. If you leave this option selected, then every event type in the selected data source is mapped according to the event type mapping that you carried out for the data source. (See <span class="Link">“<a title="Managing Data Sources">To add a data source</a>”</span>) If you clear this option, then the Event Types dropdown list becomes available.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Event Type</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Available only if you clear the Automatically Match Event Type option. Every event type in the selected data source will be mapped to the MC event type that you select on this dropdown list.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Bookings Require Approval</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the imported events will follow the approval workflow for the Manage Events option. See <a title="Working With Events"><em><span>Managing Events</span></em></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Name</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the name of the event’s contact person does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Phone Number</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the contact phone number for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Hide Contact Email</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you select this option, the contact email for the event does not show on the calendars to which the event is imported.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Location Format</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Determines the location format that is imported from EMS. For example, if you are importing the Class Event type to an academic calendar in your Master Calendar system, and one of the buildings for the event type is the Strong building, you can indicate whether you want to import the EMS Building Description (STRONG) or the EMS Building Code (STR). Four combinations are possible:</p>
+                        <p class="TableBulletLev1">• Building Code - Room Code</p>
+                        <p class="TableBulletLev1">• Building Code - Room Description</p>
+                        <p class="TableBulletLev1">• Building Description - Room Code</p>
+                        <p class="TableBulletLev1">• Building Description - Room Description</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellspacing="0" class="MsoNormalTable" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p class="TableTitle"><strong>Data Retrieval tab fields</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Field</strong>
+                        </p>
+                    </td>
+                    <td style="border: solid black 1.0pt;border-left: none;background: #E5E5E5;" valign="top">
+                        <p class="TableColumnHeader"><strong>Description</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Time Period</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">The time frame for which the events are to be imported. Two values are available:</p>
+                        <p class="TableBulletLev1">• Range of Days (default value)—If you select this value, you must also specify a Days Forward value.</p>
+                        <p class="TableBulletLev1">• Specific Dates—If you select this value, the Days Forward field is removed from the tab. Fields for specific dates appear instead.</p>
+                        <p class="FigureCaptionColumn">Specific Dates options</p>
+                        <p class="AnchorFigure">
+                            <img border="0" class="internal" />
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Days Forward</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Available only if you select Range of Days for the Time Period. Indicates the number of days into the future from the current day’s date that the event types are to be imported from the EMS database.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Start Date/End Date/No End Date</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Available only if you select Specific Dates for the Time Period. You must enter a start date. You must enter an end date, or you must select No End Date.</p>
+                        <p class="TableNoteNote"><span><strong>Note</strong>: </span>If you select No End Date, then all future events are pulled.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Frequency</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Indicates how often you are querying the EMS database.</p>
+                        <p class="TableBulletLev1">• Daily—If you select this option, you must also indicate the run time for the data import. (For example, daily at 1:30 a.m.)</p>
+                        <p class="TableBulletLev1">• Weekly—If you select this option, you must also indicate the day of the week and the run time for the data import. (For example, every Wednesday at 2:00 p.m.)</p>
+                        <p class="TableBulletLev1">• Minutes—If you select this option, you must indicate the intervals (in minutes) of the data import. (For example, every 15 minutes.)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">6. Click <strong>Save</strong>.&#160;The edited connector is saved in Master Calendar.</p>
+        <h2><a name="RTF50757267696e675f636f6e6e"></a>Purging<a name="RTF36313338343a20486561644c"></a>&#160;a connector</h2>
+        <p class="Body">You can purge both active and inactive connectors. When you purge a connector, all the <em>events</em> that you imported into Master Calendar using the selected connector are deleted. The connector itself is not deleted. It remains available either on the Active or Inactive tab of the Connectors page.</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click <strong>Connectors</strong>.The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. If needed, click the <strong>Inactive </strong>tab to open it.</p>
+        <p class="StepNumberContinued">3. Select the connector that you are purging.</p>
+        <p class="StepNumberContinued">4. Under Actions, click <strong>Purge</strong>.&#160;A message opens asking you if you are sure that you want to purge all the selected connectors.</p>
+        <p class="StepNumberContinued">5. Click <strong>OK </strong>in the message.&#160;A message opens indicating that all the selected connectors were purged.</p>
+        <p class="StepNumberContinued">6. Click <strong>OK </strong>in the message.&#160;All the <em>events</em> that you imported into Master Calendar using the selected connector are deleted. The connector itself is not deleted. It remains available either on the Active or Inactive tab of the Connectors page.</p>
+        <h2><a name="RTF52756e6e696e675f636f6e6e"></a>Running<a name="RTF36323139383a20486561644c"></a>&#160;a connector</h2>
+        <p class="Body">To manually override the frequency setting for a connector, you run a connector. After you run a connector, the connector will continue to run at its regularly scheduled times.</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click <strong>Connectors</strong>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.<img border="0" class="internal" /></p>
+        <p class="StepNumberContinued">2. Select the connector that you are running.</p>
+        <p class="StepNumberContinued">3. Under Actions, click <strong>Run</strong>.&#160;After the connector runs, a message opens indicating that the run was successful. It also indicates the number of records that were inserted, the number of records that were updated, and the number of records that were deleted.</p>
+        <h2><a name="RTF44656c6574696e675f636f6e"></a>Deleting<a name="RTF34383034383a20486561644c"></a>&#160;a connector</h2>
+        <p class="Body">You can only delete inactive connectors. To delete a currently active connector, you must first de-activate the connector. &#160;When you delete a connector, none of the events that were imported through the connector is deleted. To delete the events, you <a title="Managing Connectors in your Master Calendar System">purge the data</a> first</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click <strong>Connectors</strong>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Click the <strong>Inactive </strong>tab to open.&#160;All currently inactive connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">3. Under Actions, click <strong>Delete</strong>.&#160;A message opens asking you if you are sure that you want to delete all the selected connectors.</p>
+        <p class="StepNumberContinued">4. Click <strong>OK </strong>in the message.&#160;A message opens indicating that all the selected connectors were successfully deleted.</p>
+        <p class="StepNumberContinued">5. Click <strong>OK </strong>in the message.&#160;The Inactive tab is refreshed to show the remaining, if any, inactive connectors in Master Calendar.</p>
+        <h2><a name="RTF47656e65726174655f436f6e"></a>Generating<a name="RTF35343630323a20486561644c"></a>&#160;a Connectors List report</h2>
+        <p class="Body">You can generate a Connectors List report, which lists all the active or inactive connectors that are configured in Master Calendar. The report includes the connector name and data source, the connector filters, the event types that imported by the connector, and the calendars to which the event types are imported. It also indicates whether automatching for the imported event types has been selected.</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click <strong>Connectors</strong>.The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="FigureCaptionColumn">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Do one of the following:</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• If you are generating a Connectors List report for all <em>active</em> connectors in your Master Calendar, under Actions, click <strong>Print</strong>.</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• If you are generating a Connectors List report for all <em>inactive</em> connectors in Master Calendar, click the Inactive tab to open it, and then under Actions, click <strong>Print</strong>.</p>
+        <p class="StepResultBulletLev1Description mt-indent-1">An onscreen preview of the Connectors List report opens in its own window. A variety of options are available from this preview, including (from left to right at the top of the onscreen preview) the options to search the report results, print the report in its entirety, print the currently displayed report page, and export the report to a file and save the file.&#160;</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <h2><a name="RTF56696577696e675f636f6e6e"></a>Viewing<a name="RTF31353830333a20486561644c"></a>&#160;history for a connector</h2>
+        <p class="Body">The history for a connector consists of the original creation date of the connector, the name of the user who created the connector, and the last date that the connector was edited as well as the name of the user who last edited the connector. You can view the history for both active and inactive connectors.</p>
+        <p class="StepNumberBegin">1. On the Admin menu, point to Events &amp; Special Dates, and then click <strong>Connectors</strong>.&#160;The Connectors page opens. By default, the Active tab is the opened tab. All the currently active connectors in Master Calendar are displayed on this tab.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. If needed, click the <strong>Inactive </strong>tab to open it.</p>
+        <p class="StepNumberContinued">3. Select the connector for which you are viewing the history.</p>
+        <p class="StepNumberContinued">4. Under Actions, click <strong>Edit</strong>.&#160;The Details tab opens.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">5. Click the <strong>History </strong>tab to open it and view the history for the selected connector.</p>
+        <p class="AnchorFigure">
+            <img border="0" class="internal" />
+        </p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Connectors</a>
+        </p>
+    </body>
+</html>

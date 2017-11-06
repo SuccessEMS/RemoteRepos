@@ -1,0 +1,940 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">API Functions - GetBookingHistory</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">API Functions - GetBookingHistory</h1>
+        <p>For each booking that has changed or has been created within a specified time period, this API returns all of the changes (including a baseline record so that the calling application can figure out every change).</p>
+
+<h3><strong><em><span class="mt-font-size-11.0pt">Request Parameters (inputs)</span></em></strong></h3>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 182px;">
+			<p><strong><span class="mt-font-size-8.0pt">Name</span></strong></p>
+			</td>
+			<td style="width: 237px;">
+			<p><strong><span class="mt-font-size-8.0pt">Description</span></strong></p>
+			</td>
+			<td style="width: 106px;">
+			<p><strong><span class="mt-font-size-8.0pt">Type</span></strong></p>
+			</td>
+			<td style="width: 97px;">
+			<p><strong><span class="mt-font-size-8.0pt">Required</span></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">UserName</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">EMS User Name</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Yes</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">Password</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">EMS User Password</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Yes</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">StartTimeDate</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">Starting time and date for the changes (GMT)</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Yes</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;height: 14px;">
+			<p><span class="mt-font-size-8.0pt">EndTimeDate</span></p>
+			</td>
+			<td style="width: 237px;height: 14px;">
+			<p><span class="mt-font-size-8.0pt">Ending time and date for the changes (GMT)</span></p>
+			</td>
+			<td style="width: 106px;height: 14px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+			<td style="width: 97px;height: 14px;">
+			<p><span class="mt-font-size-8.0pt">Yes</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">Rooms</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">List of Room IDs</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">Array of integers</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Optional</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">Statuses</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">List of Status IDs</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">Array of integers</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Optional</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">EventTypes</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">List of Event Type IDs</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">Array of integers</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Optional</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;">
+			<p><span class="mt-font-size-8.0pt">GroupTypes</span></p>
+			</td>
+			<td style="width: 237px;">
+			<p><span class="mt-font-size-8.0pt">List of Group Type IDs</span></p>
+			</td>
+			<td style="width: 106px;">
+			<p><span class="mt-font-size-8.0pt">Array of integers</span></p>
+			</td>
+			<td style="width: 97px;">
+			<p><span class="mt-font-size-8.0pt">Optional</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 182px;height: 13px;">
+			<p><span class="mt-font-size-8.0pt">ViewComboRoomComponents</span></p>
+			</td>
+			<td style="width: 237px;height: 13px;">
+			<p><span class="mt-font-size-8.0pt">Option to see bookings in components of combo rooms if bookings are in combo rooms</span></p>
+			</td>
+			<td style="width: 106px;height: 13px;">
+			<p><span class="mt-font-size-8.0pt">Boolean</span></p>
+			</td>
+			<td style="width: 97px;height: 13px;">
+			<p><span class="mt-font-size-8.0pt">Required</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3><strong><em><span class="mt-font-size-11.0pt">Response Elements</span></em></strong></h3>
+
+<p><span class="mt-font-size-8.0pt">Baseline (latest data for a booking that has changed during the time period)</span></p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 208px;">
+			<p><strong><span class="mt-font-size-8.0pt">Name</span></strong></p>
+			</td>
+			<td style="width: 291px;">
+			<p><strong><span class="mt-font-size-8.0pt">Description</span></strong></p>
+			</td>
+			<td style="width: 125px;">
+			<p><strong><span class="mt-font-size-8.0pt">Type</span></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">BookingDate</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Date based on reserved time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">StartBookingDate</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Date based on event time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">RoomDescription</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Location Description</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">TimeEventStart</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Event Start Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">TimeEventEnd</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Event End Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GroupName</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Group/Customer name</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">EventName</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Event Name</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">SetupTypeDescription</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Setup Type Description</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">SetupCount</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Setup Count</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">ReservationID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Reservation ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">EventCoordinator</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Initials of Event Coordinator</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GroupID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Group/Customer ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">VIP</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">‘VIP’ or empty string to signify a VIP event</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">VIPEvent</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">0 or 1 to signify a VIP event</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Boolean</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">ClosedAllDay</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">0 or 1 to&#160; signify if the Building is closed</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Boolean</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">OpenTime</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Time Building Opens</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">CloseTime</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Time Building Closes</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GroupTypeDescription</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Group Type Description</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">EventTypeDescription</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Event Type Description</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">Contact</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Contact Name</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">AltContact</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Alternate Contact Name</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">BookingID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">BuildingID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Building ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">TimeBookingStart</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Reserved Start Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">TimeBookingEnd</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Reserved End Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GMTStartTime</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Reserved GMT Start Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GMTEndTime</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Reserved GMT End Time</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">TimeZone</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Time Zone abbreviation</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">BuildingCode</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Building Code</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">Building</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Building Description</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">RoomCode</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room Code</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">Room</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">RoomID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">BuildingID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Building ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">RoomTypeID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room Type ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">RoomType</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room Type</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">HVACZone</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Room HVAC Zone</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">StatusID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Status ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">StatusTypeID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Status Type: -14 = Booked Space, -11 = Info Only, -13 = Wait, -12 = Cancel</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">EventTypeID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Event Type ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">GroupTypeID</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Group Type ID</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">DateAdded</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Date/Time Booking Added</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">AddedBy</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Added By</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">DateChanged</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Date/Time Booking Changed</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">ChangedBy</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">Booking Changed By</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 208px;">
+			<p><span class="mt-font-size-8.0pt">CheckedIn</span></p>
+			</td>
+			<td style="width: 291px;">
+			<p><span class="mt-font-size-8.0pt">0 or 1 to signify Checked in or not</span></p>
+			</td>
+			<td style="width: 125px;">
+			<p><span class="mt-font-size-8.0pt">Boolean</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3><strong><span class="mt-font-size-8.0pt">History </span></strong></h3>
+
+<p><strong><span class="mt-font-size-8.0pt">(one for each change for the above booking for the time period)</span></strong></p>
+
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width: 210px;">
+			<p><strong><span class="mt-font-size-8.0pt">Name</span></strong></p>
+			</td>
+			<td style="width: 286px;">
+			<p><strong><span class="mt-font-size-8.0pt">Description</span></strong></p>
+			</td>
+			<td style="width: 122px;">
+			<p><strong><span class="mt-font-size-8.0pt">Type</span></strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">Date</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">Time and date of change</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">DateTime</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">ChangedBy</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">Booking changed by</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">Field</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">Field that changed (list of field names to be provided – or just use names from the first column of the baseline?)</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">OldValue</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">If value has changed then this is the old value</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">NewValue</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">If value has changed then this is the new value</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">String</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 210px;">
+			<p><span class="mt-font-size-8.0pt">ID</span></p>
+			</td>
+			<td style="width: 286px;">
+			<p><span class="mt-font-size-8.0pt">Booking ID</span></p>
+			</td>
+			<td style="width: 122px;">
+			<p><span class="mt-font-size-8.0pt">Integer</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3><strong><em><span class="mt-font-size-11.0pt">Sample Code</span></em></strong></h3>
+
+<p><span class="mt-font-size-8.0pt">Private Sub GetBookingHistory()</span></p>
+
+<p><u><span class="mt-font-size-8.0pt">___Code sample here______________________________</span></u></p>
+
+<p><span class="mt-font-size-8.0pt">End Sub</span></p>
+
+<h3><strong><em><span class="mt-font-size-11.0pt">Example Response</span></em></strong></h3>
+
+<p><span class="mt-font-size-8.0pt">&lt;BookingsHistory&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;Booking&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&#160;&#160;&#160;&#160;&#160;&#160; &lt;Data&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;BookingDate&gt;2009-10-04T00:00:00&lt;/BookingDate&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;StartBookingDate&gt;2009-10-04T00:00:00&lt;/StartBookingDate&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;RoomDescription&gt;DEN Room 101&lt;/RoomDescription&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeEventStart&gt;2009-10-04T16:00:00&lt;/TimeEventStart&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeEventEnd&gt;2009-10-04T17:00:00&lt;/TimeEventEnd&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GroupName&gt;ABC Company &lt;/GroupName&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;EventName&gt;Spring Conference&lt;/EventName&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;SetupTypeDescription&gt;U - Shape&lt;/SetupTypeDescription&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;SetupCount&gt;50&lt;/SetupCount&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;ReservationID&gt;6650&lt;/ReservationID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;EventCoordinator /&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GroupID&gt;499&lt;/GroupID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;VIP xml:space="preserve"&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;/VIP&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;VIPEvent&gt;false&lt;/VIPEvent&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;ClosedAllDay&gt;false&lt;/ClosedAllDay&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;OpenTime&gt;1900-01-01T00:00:00&lt;/OpenTime&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;CloseTime&gt;1900-01-01T00:00:00&lt;/CloseTime&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GroupTypeDescription&gt;Corporate&lt;/GroupTypeDescription&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;EventTypeDescription&gt;Conference&lt;/EventTypeDescription&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;Contact&gt;Jim Smith&lt;/Contact&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;AltContact /&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;BookingID&gt;222008&lt;/BookingID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeBookingStart&gt;2009-10-04T16:00:00&lt;/TimeBookingStart&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeBookingEnd&gt;2009-10-04T17:00:00&lt;/TimeBookingEnd&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GMTStartTime&gt;2009-10-04T22:00:00&lt;/GMTStartTime&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GMTEndTime&gt;2009-10-04T23:00:00&lt;/GMTEndTime&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeZone&gt;MT&lt;/TimeZone&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;BuildingCode&gt;DEN&lt;/BuildingCode&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;Building&gt;Denver&lt;/Building&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;RoomCode&gt;RM101&lt;/RoomCode&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;Room&gt;Room 101&lt;/Room&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;RoomID&gt;3271&lt;/RoomID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;BuildingID&gt;1&lt;/BuildingID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;RoomTypeID&gt;1&lt;/RoomTypeID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;RoomType&gt;Classroom&lt;/RoomType&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;HVACZone/&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;StatusID&gt;1&lt;/StatusID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;StatusTypeID&gt;-14&lt;/StatusTypeID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;EventTypeID&gt;4&lt;/EventTypeID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;GroupTypeID&gt;3&lt;/GroupTypeID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;DateAdded&gt;2009-10-04T16:00:00&lt;/DateAdded&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;AddedBy&gt;User 1&lt;/AddedBy&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;DateChanged&gt;2009-10-04T16:00:00&lt;/DateChanged&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;ChangedBy&gt;User 1&lt;/ChangedBy&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;CheckedIn&gt;false&lt;/CheckedIn&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&#160;&#160;&#160;&#160;&#160;&#160; &lt;/Data&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;/Booking&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;BookingHistoryItems&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;BookingHistoryItem&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeDate&gt;2009-10-04T16:00:00&lt;/TimeDate&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;ChangedBy&gt;User 1&lt;/ChangedBy&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;Field&gt;Room&lt;/Field&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;OldValueID&gt;3270&lt;/OldValueID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;NewValueID&gt;3271&lt;/NewValueID&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;OldValueString&gt;Room 3270&lt;/OldValueString&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;NewValueString&gt;Room 3271&lt;/NewValueString&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;/BookingHistoryItem&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;BookingHistoryItem&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;TimeDate&gt;2009-10-04T16:00:10&lt;/TimeDate&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;ChangedBy&gt;User 1&lt;/ChangedBy&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;Field&gt;TimeEventStart&lt;/Field&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;OldValueString&gt;2009-10-05T16:00:00&lt;/OldValueString&gt;</span></p>
+
+<p style="margin-left: 1.0in;"><span class="mt-font-size-8.0pt">&lt;NewValueString&gt;2009-10-06T16:00:00&lt;/NewValueString&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;/BookingHistoryItem&gt;</span></p>
+
+<p style="margin-left: .5in;"><span class="mt-font-size-8.0pt">&lt;/BookingHistoryItems&gt;</span></p>
+
+<p><span class="mt-font-size-8.0pt">&lt;/BookingsHistory&gt;</span></p>
+
+<p>&#160;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+	<tbody>
+		<tr>
+			<td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" /></td>
+			<td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+			<p class="NoteTipWarningText"><strong><span class="mt-color-669933" data-mt-color="1">Concept:</span>  </strong><span class="mt-font-size-8.0pt">The BookingHistoryItem reflects the same data (and supporting logic) as the booking history display in the {{product_dtc}}.</span></p>
+
+			<p class="NoteTipWarningText"><span class="mt-font-size-8.0pt">Note, however, that for the following screen shot, “Booking Only” should have been selected.</span></p>
+
+			<p class="NoteTipWarningText"><img alt="" class="internal" style="width: 624px;height: 162px;" width="624px" height="162px" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&#160;</p>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>EMS</a><a>EMS API Reference</a><a>EMS API Functions - Update Booking 1 and 2, Check In</a><a>singlesource</a><a>reused</a></p></body>
+</html>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T00:25:44.7704427-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T00:25:50.9609691-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/OverviewKioskLegacyUG.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/OverviewKioskLegacyUG.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/OverviewKioskLegacyUG/Overview the EMS Kiosk Window.png"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/OverviewKioskLegacyUG/Overview the EMS Kiosk Window_1.png"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/OverviewKioskLegacyUG/Overview the EMS Kiosk Window_2.png"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+    <Url
+      Source="../../Content/OverviewKioskLegacyUG/Overview the EMS Kiosk Window.htm"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+    <Url
+      Source="../TOCs/OverviewKioskLegacyUG.fltoc"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/OverviewKioskLegacyUG.css"
+      TimeStamp="10/27/2017 12:25:49 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="body" />
+    <StyleName
+      Name="bulletlev1" />
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

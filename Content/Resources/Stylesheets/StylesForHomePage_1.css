@@ -1,0 +1,1756 @@
+/*<meta />*/
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+}
+
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+h1
+{
+	font-family: 'Open Sans';
+	color: #00467f;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	word-spacing: 6px;
+	font-size: 20pt;
+	font-variant: normal;
+	font-weight: bold;
+	font-style: normal;
+}
+
+h2
+{
+	font-size: 1.6785em;
+}
+
+h2.SubCenter
+{
+	text-align: center;
+	margin-bottom: 1.2em;
+}
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+img.Slideshow
+{
+	border-style: none;
+	margin-bottom: 40px;
+	height: 128px;
+	width: 128px;
+}
+
+p
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: inherit;
+	font-family: Arial;
+	text-align: justify;
+	color: #000000;
+}
+
+p.Copyright
+{
+	font-size: 0.9em;
+	text-align: left;
+	color: #888888;
+	line-height: 1.6em;
+	margin: 0 0 10px 0;
+}
+
+.centered-text
+{
+	text-align: center;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.whiteheader
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.off-canvas-content .title-bar .nav-search
+{
+	display: none;
+}
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/* Home Page Button Styles */
+
+.button
+{
+	cursor: pointer;
+	background-color: transparent;
+	width: 200px;
+	height: 35px;
+	font-weight: bold;
+	-webkit-transition: all 200ms;
+	-moz-transition: all 200ms;
+	-ms-transition: all 200ms;
+	-o-transition: all 200ms;
+	transition: all 200ms;
+}
+
+.button.black
+{
+	border: solid 2px black;
+	color: black;
+}
+
+.button.black:hover
+{
+	background-color: #ccc;
+}
+
+.button a
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/* Responsive Header Styles*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Content Section */
+
+#content-section
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e6e6e6;
+	margin-top: 35px;
+}
+
+#content-section h2
+{
+	font-weight: normal;
+}
+
+.right-section div.button-group,
+.left-section div.button-group
+{
+	margin-top: 20px;
+}
+
+#content-section .left-section
+{
+	padding-right: 20px;
+}
+
+#content-section .right-section
+{
+	padding-left: 20px;
+}
+
+.left-section .left-content,
+.right-section .right-content
+{
+	height: 270px;
+}
+
+#content-section .right-section .table-images:first-of-type
+{
+	margin-bottom: 20px;
+}
+
+#content-section.mc-blurb p
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#content-section.mc-blurb .mc-bullets
+{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content-section.mc-blurb .mc-bullets > li
+{
+	color: #5a5a5a;
+	list-style-image: url('../Images/Bullet1.png');
+	font-size: 14px;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	height: 600px;
+	padding-bottom: 150px;
+	background-image: url('../Images/large-meeting-room.jpg');
+}
+
+div.topichero h1
+{
+	font-size: 3.6em;
+	margin-top: 1.11em;
+	margin-bottom: 0.5em;
+	line-height: 100%;
+}
+
+div.topichero h2
+{
+	font-size: 1.8em;
+	margin-bottom: 80px;
+	line-height: 100%;
+}
+
+.search,
+.search-bar
+{
+	margin: 0 auto;
+}
+
+/* Home Page slide show */
+
+div.slidingshow
+{
+	margin-top: 50px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+.mc-wrapper .mc-caption
+{
+	background: none;
+}
+
+/* Home Page Video Section */
+
+.video-section
+{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.video-section img
+{
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.video-wrapper
+{
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Home Page Footer */
+
+div.footer
+{
+	background-color: #292928;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+div.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+div.footer > div.outer-row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+/* Mad Cap proxy/editor assigned styles */
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+p.TOC2
+{
+	margin-left: 20px;
+	display: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|slideshow
+{
+	border-style: none;
+	box-shadow: none;
+	font-family: 'Open Sans';
+	font-size: 16pt;
+	color: #00467f;
+}
+
+MadCap|slideshowCaption
+{
+	background: none;
+	color: #000000;
+	padding-top: 15px;
+	text-align: center;
+}
+
+html.HomePage
+{
+	mc-community-features: disabled;
+}
+
+div.HomeHeroSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeHeroSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeHeroSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeHeroSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeHeroSection > div:nth-child(1)
+{
+	width: 100%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(1)
+{
+	width: 58.333%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomePDFSection > div:nth-child(2)
+{
+	width: 41.667%;
+	margin-left: 0%;
+}
+
+div.HomeWelcomeButtons	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeWelcomeButtons::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeWelcomeButtons::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeWelcomeButtons > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeWelcomeButtons > div:nth-child(1)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomeWelcomeButtons > div:nth-child(2)
+{
+	width: 33.333%;
+	margin-left: 8.3333%;
+}
+
+div.HomePDFSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomePDFSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+div.HomePDFButton	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomePDFButton::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomePDFButton::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomePDFButton > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomePDFButton > div:nth-child(1)
+{
+	width: 50%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeMasterPageFooter::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeMasterPageFooter::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeMasterPageFooter > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.HomeMasterPageFooter > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.HomeMasterPageFooter > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.HomeVideoSection	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.HomeVideoSection::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.HomeVideoSection::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.HomeVideoSection > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+div.HomeVideoSection > div:nth-child(1)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(2)
+{
+	width: 33.33333%;
+}
+
+div.HomeVideoSection > div:nth-child(3)
+{
+	width: 33.33333%;
+}
+
+b
+{
+	font-weight: bold;
+	font-style: normal;
+	font-family: 'Open Sans';
+}
+
+/* Medium Layout */
+
+@media tablet
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	div.slidingshow
+	{
+		width: 100%;
+	}
+
+	.left-section div.button-group > div
+	{
+		margin-bottom: 20px;
+	}
+
+	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 50%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 50%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 33.33333%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 33.33333%;
+	}
+}
+
+/* Small Layout */
+
+@media mobile
+{
+	MadCap|searchBarProxy.homeSearchBar
+	{
+		width: 100%;
+	}
+
+	.left-content
+	{
+		margin-bottom: 60px;
+	}
+
+	div.topichero h1
+	{
+		font-size: 2em;
+	}
+
+	div.topichero h2
+	{
+		font-size: 1.2em;
+	}
+
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.video-section
+	{
+		padding-top: 30px;
+	}
+
+	.video-section .columns
+	{
+		padding: 0;
+	}
+
+	.footer-links,
+	p.Copyright,
+	.footer-icons
+	{
+		text-align: center;
+	}
+
+	div.HomeHeroSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomePDFSection > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeWelcomeButtons > div:nth-child(2)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomePDFSection > div:nth-child(1)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(2)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFSection > div:nth-child(3)
+	{
+		width: 33.333%;
+		margin-left: 0%;
+	}
+
+	div.HomePDFButton > div:nth-child(1)
+	{
+		width: 41.667%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.HomeMasterPageFooter > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+	div.HomeVideoSection > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.HomeVideoSection > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+}
+
+ul.navigation
+{
+	margin-left: 0;
+}
+
+nav.title-bar
+{
+	height: 250px;
+}
+
+.title-bar-section a.logo
+{
+	position: relative;
+}
+
+.mc-wrapper .mc-viewport
+{
+	text-align: center;
+}
+
+p.Note
+{
+	background-image: url('../Images/NoteIcon.png');
+	background-repeat: no-repeat;
+	background-position-x: left;
+	background-position-y: center;
+	padding-left: 250px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	border-bottom-left-radius: 5px 5px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #008000;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #008000;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #008000;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #008000;
+}
+
+div.Row-6-6:after
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 20px;
+	padding-left: 40px;
+	background-image: url('../Images/QuotationMark.png');
+}
+
+div.Row-6-6:before
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 18px;
+	padding: 20px;
+	padding-left: 40px;
+	background-image: url('../Images/QuotationMark.png');
+}
+
+div.NoteBox
+{
+	background-color: #e1e1e1;
+	background-repeat: no-repeat;
+	background-position: top left;
+	border-color: #b3b3b3;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 6px;
+	font-family: 'Century Gothic';
+	line-height: 18px;
+	background-image: url('../Images/Release Notes Updates 14.3-11.1/V44 1 Update 14 1.png');
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10pt;
+	background-position-y: center;
+	padding-left: 60px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #b3b3b3;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #b3b3b3;
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: #b3b3b3;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #b3b3b3;
+}
+
+p.EMSSoftware
+{
+	margin-bottom: 8px;
+	margin-top: 8px;
+	font: helvetica;
+	font-size: 12pt;
+	font-style: normal;
+	font-variant: inherit;
+	font-family: Arial;
+	text-align: justify;
+	color: #000000;
+}
+
+p.p_1
+{
+	font: helvetica;
+	font-style: normal;
+	font-variant: inherit;
+	text-align: justify;
+	color: #000000;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	font: helvetica;
+	font-style: normal;
+	font-variant: inherit;
+	text-align: justify;
+	color: #000000;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul.ul_1
+{
+	margin-left: 0;
+	font: helvetica;
+	font-style: normal;
+	font-variant: inherit;
+	text-align: justify;
+	color: #000000;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li.li_1
+{
+	list-style-image: url('../Images/Bullet1.png');
+	line-height: 1.6em;
+	font: helvetica;
+	font-style: normal;
+	font-variant: inherit;
+	text-align: justify;
+	color: #000000;
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	font-family: 'Calibri Light';
+	color: #2F5496;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+li.ListParagraph
+{
+	margin-bottom: 8pt;
+	font-size: 11pt;
+	margin-left: 36pt;
+	font-family: Calibri;
+}
+
+span.Hyperlink
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+span.link_1
+{
+	font-family: Arial;
+	color: #000000;
+}
+
+span.Hyperlink_1
+{
+	text-decoration: underline;
+	font-family: Arial;
+	color: #00467F;
+}
+
+ul.ul_2
+{
+	list-style-type: square;
+	margin-left: 36pt;
+}
+
+h2.Heading2
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 2pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 2;
+	font-family: 'Calibri Light';
+	color: #2F5496;
+	font-size: 13pt;
+	font-weight: normal;
+}
+
+p.tablecolumnheader
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.tablebody
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+span.Hyperlink_2
+{
+	text-decoration: underline;
+	color: #000000;
+}
+
+th.th_1
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: #000000;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #000000;
+	background-color: #E5E5E5;
+	padding-top: 6pt;
+	padding-left: 12pt;
+	padding-bottom: 6pt;
+	padding-right: 12pt;
+}
+
+th.th_2
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #E5E5E5;
+	padding-top: 6pt;
+	padding-left: 12pt;
+	padding-bottom: 6pt;
+	padding-right: 12pt;
+}
+
+td.td_1
+{
+	border-top-style: none;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+td.td_2
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+td.td_3
+{
+	border-top-style: none;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: #000000;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #000000;
+	background-color: #DDDDDD;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+td.td_4
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: #000000;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: #000000;
+	background-color: #DDDDDD;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+
+a.Hyperlink
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+a.Hyperlink_1
+{
+	color: #2F5496;
+	text-decoration: none;
+}
+
+a.Hyperlink_2
+{
+	text-decoration: underline;
+	font-family: Arial;
+	color: #00467F;
+}
+
+p.body
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.stepnumberbegin
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.stepnumbercontinued
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.body_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	background-color: #FFFFFF;
+	font-family: Arial;
+}
+
+span.span_1
+{
+	font-family: Arial;
+}
+
+p.stepnumberbegin_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+	background-color: #FFFFFF;
+}
+
+p.anchornote
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+ol.ol_1
+{
+	list-style-type: decimal;
+	margin-left: 36pt;
+}
+
+img.img_1
+{
+	visibility: visible;
+	mso-wrap-style: square;
+}
+
+p.anchornote_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	font-family: Arial;
+}
+
+th.th_3
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: #000000;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+	background-color: #FFFFFF;
+	padding-top: 12pt;
+	padding-left: 12pt;
+	padding-bottom: 12pt;
+	padding-right: 12pt;
+}
+
+p.figurecaptioncolumn
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.figurecaptioncolumn_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	background-color: #FFFFFF;
+	text-align: center;
+	font-family: Arial;
+}
+
+span.Hyperlink_3
+{
+	text-decoration: underline;
+	color: #00467F;
+}
+
+h2.Strong
+{
+	font-weight: bold;
+}
+
+h2.Strong_1
+{
+	font-weight: normal;
+}
+
+p.Emphasis
+{
+	font-style: italic;
+}
+
+table.table_2
+{
+	background-color: #FFFFFF;
+	border-collapse: collapse;
+}
+
+p.stepresultbulletlev1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+span.Emphasis
+{
+	font-style: italic;
+}
+
+p.stepresultbulletlev1_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+	margin-left: 30pt;
+}
+
+span.link_2
+{
+	color: #000000;
+}
+
+p.tablecolumnheader_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: 12pt;
+	margin-left: 30pt;
+	font-family: Arial;
+}
+
+span.Hyperlink_4
+{
+	text-decoration: underline;
+	font-family: Arial;
+	color: #000000;
+}
+
+span.Emphasis_1
+{
+	font-style: italic;
+	font-family: Arial;
+	color: #000000;
+}
+
+span.Emphasis_2
+{
+	font-style: italic;
+	font-family: Arial;
+}
+
+span.span_2
+{
+	color: #999999;
+}
+
+h3.Heading3
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 2pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 3;
+	font-family: 'Calibri Light';
+	color: #1F3763;
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+h3.Strong
+{
+	font-weight: bold;
+}
+
+span.Hyperlink_5
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+h3.Strong_1
+{
+	font-weight: normal;
+}
+
+span.Strong
+{
+	font-weight: bold;
+}
+
+a.Hyperlink_3
+{
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.Hyperlink_4
+{
+	text-decoration: underline;
+	color: #00467F;
+}
+
+li.stepnumbercontinued
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+li.stepnumbercontinued_1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+	background-color: #FFFFFF;
+}
+
+span.Strong_1
+{
+	font-weight: bold;
+	font-family: Arial;
+	color: #000000;
+}
+
+p.anchorwarning
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+a.a_1
+{
+	font-family: Arial;
+	font-weight: bold;
+	color: #999999;
+	font-size: 24pt;
+}
+
+th.th_4
+{
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: #000000;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: none;
+	padding-top: 12pt;
+	padding-left: 12pt;
+	padding-bottom: 12pt;
+	padding-right: 12pt;
+}
+
+span.Strong_2
+{
+	font-weight: bold;
+	font-family: Arial;
+}
+
+span.Hyperlink_6
+{
+	color: #00467F;
+	text-decoration: none;
+}
+
+p.p_2
+{
+	font-weight: bold;
+}
+
+p.anchortip
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.p_3
+{
+	background-color: #FFFFFF;
+}
+
+p.tablebulletlev1
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.tablebulletlev2
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.tablenotenote
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.p_4
+{
+	margin-top: 23pt;
+	margin-bottom: 30pt;
+}
+
+li.li_2
+{
+	margin-top: 3pt;
+	margin-bottom: 3pt;
+}
+
+td.td_5
+{
+	border-top-style: none;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #FFFFFF;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+td.td_6
+{
+	border-top-style: none;
+	border-left-style: none;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	background-color: #FFFFFF;
+	padding-top: 1pt;
+	padding-bottom: 1pt;
+	padding-left: 1pt;
+	padding-right: 1pt;
+}
+
+p.tablecolumnheader_2
+{
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	text-align: center;
+	font-family: Arial;
+	font-size: 14pt;
+}
+

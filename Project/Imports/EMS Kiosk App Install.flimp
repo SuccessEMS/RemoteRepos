@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T10:12:11.8452669-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T10:12:18.4681803-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/EMS Kiosk App Install.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/EMS Kiosk App Install.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/EMS Kiosk App Install/EMS Kiosk App Install or Set.htm"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Introduction to the EMS Kiosk.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Install/Introduction to the EMS Kiosk.htm"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Obtaining the Installation.gif"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Install/Obtaining the Installation.htm"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Install/System Requirements and Prerequisites.htm"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_1.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_2.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_3.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_4.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_5.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_6.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_7.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_8.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_9.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_10.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_11.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_12.png"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS.jpg"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Images/EMS Kiosk App Install/Installing Upgrading the EMS_1.jpg"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/EMS Kiosk App Install/Installing Upgrading the EMS.htm"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../TOCs/EMS Kiosk App Install.fltoc"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/EMS Kiosk App Install.css"
+      TimeStamp="10/27/2017 10:12:16 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

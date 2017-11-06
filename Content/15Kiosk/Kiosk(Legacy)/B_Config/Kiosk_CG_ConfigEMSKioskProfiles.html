@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3777.733" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring EMS Kiosk Profiles</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring EMS Kiosk Profiles</h1>
+        <p>When you configure an {{product_emsk}} on a specific touch-screen device, a Kiosk profile controls the functionality that will be&#160;available on the device. You configure an {{product_emsk}} profile through the {{product_dtc}}.</p>
+        <p>
+            <img alt="" src="../../../../Resources/Images/tech_doc_concept.png" height="29px" width="26px" /><span class="mt-color-669933"><strong>&#160;Concept:</strong></span>&#160;You can set parameters and default language translations and floor plans&#160;at the&#160;<em>Global&#160;</em>level (these set defaults for all Profiles) or for&#160;<em>just one Kiosk Profile</em> (on the tabs below).&#160;This article guides you in configuration for one Kiosk Profile.&#160;</p>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">To configure an {{product_emsk}} Profile, you will:</p>
+        <ul class="mt-indent-1">
+            <li>Navigate to the Kiosk Profiles area</li>
+            <li>Create a new {{product_emsk}} Profile&#160;</li>
+            <li>Configure how Rooms, Menu Items, Translations, Images, and Help Text&#160;display on kiosks that have this profile</li>
+            <li>Set parameters (as needed) for this profile</li>
+        </ul><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p>1. On the {{product_dtc}} menu bar, click Configuration &gt; Kiosk &gt; <strong>Kiosk Profiles.</strong>&#160;The Kiosk Profiles window opens, listing&#160;all active Kiosk Profiles.</p>
+        <p>
+            <img border="0" class="internal" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>You can&#160;view all Kiosk Profiles in your EMS database, regardless of status, under Show, click <strong>Inactive</strong>.</p>
+                        <p class="NoteTipWarningText">The remainder of this procedure describes how to configure a kiosk profile “from scratch.” You can also configure a kiosk profile by copying an existing profile. Select the kiosk profile that you want to copy, click <strong>Copy</strong>, and then skip to&#160;Step 3.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>2. Click <strong>New</strong>.&#160;The Kiosk Profile dialog box opens. The Kiosk Profile tab is the active tab.&#160;</p>
+        <p class="mt-indent-2">
+            <img alt="" class="internal" style="width: 784px;height: 470px;" width="784px" height="470px" />
+        </p>
+        <p><a id="Step3" name="Step3"></a>3. Enter the information for the new profile on the Kiosk Profile tab.&#160;</p>
+        <h4 class="mt-indent-1"><a name="RTF33373730323a20486561644c"></a>Kiosk Profile tab</h4>
+        <p class="mt-indent-2">Fields on this tab are described below.</p>
+        <table border="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th scope="col" valign="top">
+                        <p>Option</p>
+                    </th>
+                    <th scope="col" valign="top">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <p>Description</p>
+                    </td>
+                    <td valign="top">
+                        <p>The name or description for the kiosk profile (maximum of 50 characters, including spaces).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p>Building</p>
+                        <p>Floor</p>
+                        <p>Area</p>
+                    </td>
+                    <td valign="top">
+                        <p>Select the default building, and floor, for the current day’s events. The area is used to define the scope of the event display on the Today’s Events page. {{product_emsk}} users will be able to see events across all the buildings that are included in the selected area.&#160;</p>
+                        <p><strong>Note</strong>:&#160;Building is a required value.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p>Default Translation</p>
+                    </td>
+                    <td valign="top">
+                        <p>A translation is the language in which the menu items, menu text, and Help text are displayed on a Kiosk page. If you leave this field set to "(default)", then this Kiosk Profile will inherit the language setting in {{product_emsk}} global parameters (and if these are not specified, the default language is US English). In order to set a default language for this Kiosk Profile, you will need to first add one or more languages on the&#160;<a title="Configuring EMS Kiosk Profiles">Translations tab</a>; then you can select a language on this dropdown to be the language in which the kiosk automatically displays. If you add multiple languages on the Translations tab for users to choose from, your selection in this field sets the default to display unless they choose another language.</p>
+                        <p><strong>Note</strong>:&#160;If the language you want is not available in this dropdown&#160;field, then the&#160;translation must be defined globally for {{product_dtc}} (see&#160;<a rel="internal" title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/EMS_Client/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Additional_Setup_for_Everyday_User_Applications/080_Configuring_Language_Translations" href="../../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AdditionalSetupEverydayUser.html" alt="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/EMS_Client/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Additional_Setup_for_Everyday_User_Applications/080_Configuring_Language_Translations">Configuring Language Translations</a>).&#160;Global parameters can be accessed under System Administration &gt; Settings &gt; <strong>System Parameters.&#160;</strong>Additionally, in order to make alternate languages available on your kiosks, you must <a title="Configuring EMS Kiosk Menus">enable the Language Selection menu</a> for {{product_emsk}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p>Default Floor Plan</p>
+                    </td>
+                    <td valign="top">
+                        <p>Select the default floor plan&#160;that is to be displayed for the current day’s events in the selected <strong>Building</strong>&#160;(above).</p>
+                        <p><strong>Note</strong>: This is an add-on feature that is only available if floor plans have been configured using the optional <a class="F1" title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/Optional_Features/EMS_Floor_Plans/Installing_EMS_Floor_Plans/01-Introduction">EMS Floor Plans</a> utility.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">
+                        <p>Inactive</p>
+                    </td>
+                    <td valign="top">
+                        <p>Leave this option blank to keep the profile active. Select this option to inactivate the profile.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>4. Continue with any other configuration tabs (below) for the profile as needed:</p>
+        <ul class="mt-indent-2">
+            <li>Kiosk Profile tab</li>
+            <li>Rooms tab</li>
+            <li>Menu Items tab</li>
+            <li>Translations tab</li>
+            <li>Images tab</li>
+            <li>Parameters tab</li>
+            <li>Help Text tab</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:&#160;</span></strong>On any tabs in this configuration, you can&#160;click <strong>OK</strong> to save your changes and close the Kiosk Profile dialog box. Your newly configured profile will then be listed in the list of Kiosk Profiles.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="RTF31343435373a20486561644c"></a>Rooms tab</h3>
+        <p>Rooms selected here will appear under Today's Events and&#160;users can reserve them from the Make Reservations page</p>
+        <p>
+            <img alt="" class="internal default" />
+        </p>
+        <p>1. On the Building dropdown list, select the applicable building.</p>
+        <p>2. On the Room Type dropdown list, leave the default value of (all), or select the appropriate room type.&#160;The Available list displays all the rooms that meet your search criteria.</p>
+        <p>3. On the Available list, select the room, or CTRL-click to select the multiple rooms that a user can book from the Make Reservation page, and then click the Move (&gt;) button to move the selected rooms to the Selected list.</p>
+        <h3><a name="RTF32303130363a20486561644c"></a>Menu Items tab</h3>
+        <p>You use the Menu Items tab to select the menu items that are to be available to the users of {{product_emsk}}. Menus are displayed as buttons at the top of {{product_emsk}} pages.</p>
+        <p>On the Available list, select the menu item, or CTRL-click to select the multiple menu items that are to be available to an {{product_emsk}} user, and then click the Move (&gt;) button to move the selected items to the Selected list.</p>
+        <p>
+            <img alt="" class="internal default" />
+        </p>
+        <h3><a name="RTF37373536363a20486561644c"></a>Translations tab</h3>
+        <p>A translation is the language in which the menu items, menu text, and Help text are displayed on a Kiosk page. &#160;If you select one or more languages here, then this Kiosk Profile will inherit the language setting in {{product_emsk}} global parameters (and if these are not specified, the default language is US English). If you add multiple languages here for users to choose from, you can set&#160;a language as the default to display on the kiosk unless they choose another language on the <a title="Configuring EMS Kiosk Profiles">Kiosk Profile tab.</a></p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tips:</span></strong>If the language you want is not available in this dropdown&#160;field, then the&#160;translation must be defined globally for {{product_dtc}} (see&#160;<a rel="internal" title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/EMS_Client/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Additional_Setup_for_Everyday_User_Applications/080_Configuring_Language_Translations" href="../../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AdditionalSetupEverydayUser.html" alt="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/EMS_Client/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Additional_Setup_for_Everyday_User_Applications/080_Configuring_Language_Translations">Configuring Language Translations</a>).&#160;Global parameters can be accessed under System Administration &gt; Settings &gt; <strong>System Parameters.&#160;</strong>Additionally, in order to make alternate languages available on your kiosks, you must <a title="Configuring EMS Kiosk Menus">enable the Language Selection menu</a> for {{product_emsk}}.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To add a translation to your Kiosk Profile, in the Available list, select the language (or CTRL-click to select the multiple languages to be available on the Kiosk), and then click the Move (&gt;) button to move the selected items to the Selected list</p>
+        <p>
+            <img alt="" class="internal default" />
+        </p>
+        <h3><a name="RTF33333534313a20486561644c"></a>Images tab</h3>
+        <p>Use the Images tab to select the images (map of area, image of building, and so on) that show in the Information area of {{product_emsk}}.</p>
+        <p>
+            <img border="0" class="internal" />
+        </p>
+        <p>1. Click <strong>New </strong>to open the Find Image dialog box, and then browse to and select the image that is to be displayed in the Images area of {{product_emsk}}.&#160;The Find Image dialog box closes. You remain on the Images tab with an entry for the image displayed on the tab.&#160;The image must be in one of the following formats—.gif, .jpeg, .jpg, .bmp, .wmf, or .png.</p>
+        <p>2. Optionally, do one or both of the following:</p>
+        <p class="mt-indent-1">• Edit the description for the image.</p>
+        <p class="mt-indent-1">• In the Web Long Description field, enter a description of the image. The value that you enter here defines the “long desc” attribute for web content accessibility.</p>
+        <p>3. Continue with any other configuration for the profile as needed; otherwise, click <strong>OK</strong> to close the Kiosk Profile dialog box and return to the Kiosk Profiles window. The newly configured profile is displayed in the window.</p>
+        <h3><a name="RTF35383833313a20486561644c"></a>Parameters tab</h3>
+        <div class="EXPAND_CLASS">
+            <dl>
+                <dt>
+                    <img alt="" src="../../../../Resources/Images/tech_doc_concept.png" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> You can set <em>global </em>parameters to affect all Kiosk Profiles, or you can set parameters for a single Kiosk Profile.&#160;</dt>
+                <dd>This article guides you in setting parameters for the Kiosk Profile you created (above) in <a title="Configuring EMS Kiosk Profiles">Step 3</a>.&#160;Global parameters can be accessed under System Administration &gt; Settings &gt; <strong>System Parameters.</strong>&#160;For a detailed explanation about editing all EMS system parameters, see&#160;<a rel="internal" title="Editing System Parameters and Customizing Field Labels" href="../../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AuthenticationOptions.html" alt="Editing System Parameters and Customizing Field Labels">Editing System Parameters</a>.&#160;For definitions of the parameters for {{product_emsk}},&#160;see&#160;<a class="F1" rel="internal" title="EMS Kiosk Parameters" href="../../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ImportFilesStreamlineDataEntry.html" alt="EMS Kiosk Parameters">{{product_emsk}} System Parameters</a>.</dd>
+            </dl>
+        </div>
+        <p>The parameters on this tab are grouped based on the functional areas that they affect. You can click <strong>Edit&#160;</strong>to change&#160;the parameter settings as needed on this tab.</p>
+        <p class="mt-indent-1">
+            <img border="0" class="internal" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>Click the&#160;<strong>Use Global&#160;</strong>button to inherit settings from Global parameters.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3><a name="RTF37313839393a20486561644c"></a>Help Text tab</h3>
+        <p><em>Help text</em>&#160;is custom help text or policies and procedures that are specific to your organization that is displayed on various pages in {{product_webapp}} and {{product_emsk}}. Help text is defined at the global level under Configurations &gt; Everyday User Applications&#160;&gt; <strong>Help text.</strong> (See&#160;<a rel="internal" title="Configuring Help Text" href="../../../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigHelpText.html" alt="Configuring Help Text">Configuring Help text</a>.) You use the Help text tab to override the global setting for a help text and customize the help text for a specific Kiosk Profile.</p>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" style="width: 781px;height: 468px;" width="781px" height="468px" />
+        </p>
+        <p>1. Select the Help text that you are customizing, and then click Edit.&#160;The Help text dialog box opens. The Help text tab is the active tab. The tab contains options for entering and configuring the Help text.</p>
+        <p class="mt-indent-1">• Design is selected by default. Use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want in the headers and footers.</p>
+        <p class="mt-indent-1">• Select HTML and enter the necessary HTML code to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want in the headers and footers.&#160;<a name="RTF38363330393a204669677572"></a>&#160;</p>
+        <p>
+            <img alt="" class="internal" style="width: 713px;height: 496px;" width="713px" height="496px" />
+        </p>
+        <p>2. If Help Text translations have been defined for web templates or kiosk pages (see&#160;Configuring Language Translations), then open the Translations tab, and for each translation, click in the Text field, and enter the appropriate translation for the Help text item.</p>
+        <p>3. Click <strong>OK</strong>.&#160;The Help text dialog box closes. You return to the Help text tab with the newly configured Help text item automatically selected in the tab.</p>
+        <p>4. Continue with any other configuration for the profile as needed; otherwise, click <strong>OK</strong> to close the Kiosk Profile dialog box and return to the Kiosk Profiles window. The newly configured profile is displayed in the window.</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>EMS Kiosk</a><a>Kiosk Profiles</a><a mt-export-translate="no">persona:UserEventCoord</a><a>singlesource</a><a>reused</a>
+        </p>
+    </body>
+</html>

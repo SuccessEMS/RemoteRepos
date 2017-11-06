@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-24T12:16:22.6581156-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-24T12:16:43.4041377-06:00">
+  <Files>
+    <Url
+      Source="../../../1Word/Adding Mobile Users.docx"
+      AbsoluteSource="file:///C:/1Word/Adding Mobile Users.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Adding Mobile Users/Adding Mobile Users.png"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Adding Mobile Users/Adding Mobile Users_1.png"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Adding Mobile Users/Adding Mobile Users_2.png"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Adding Mobile Users/Adding Mobile Users_3.png"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Adding Mobile Users/Adding Mobile Users_4.png"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Adding Mobile Users/Adding Mobile Users.htm"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../TOCs/Adding Mobile Users.fltoc"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Adding Mobile Users.css"
+      TimeStamp="10/24/2017 12:16:36 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">Configuring and Generating Room QR Codes</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring and Generating Room QR Codes</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p class="mt-indent-1">In order to associate rooms with QR Codes (in {{product_dtc}}), you will:&#160;</p>
+        <ul class="mt-indent-1">
+            <li>enable QR code functionality from the Room configuration</li>
+            <li>run and print a "Room Card - QR Code" report in&#160;</li>
+        </ul>
+        <p class="mt-indent-1">This automatically generates the codes and associates them with the designated rooms.</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <h3>Enable Room Cards for Rooms</h3>
+        <ol>
+            <li><a id="Step1" name="Step1"></a>Open the room configuration (under Configuration &gt; Facilities &gt;&#160;<strong>Rooms</strong>, select a room for which you wish to create a QR code).<br />
+    (For complete instructions in configuring rooms,&#160;<strong>See Also:&#160;</strong><a title="Configuring Rooms">Configuring Rooms</a>.)</li>
+            <li>Enter a value in the&#160;<strong>No. Room Cards</strong>&#160;field (a number greater than one means you can generate a QR code for this room).<br /><img alt="" class="internal default" /></li>
+            <li>Click <strong>OK&#160;</strong>to save your changes.</li>
+        </ol>
+        <h3>Run the Room Card - QR Code Report to Generate QR Codes</h3>
+        <ol>
+            <li>Select Reports &gt; Hoteling&#160;&gt; <strong>Room Card - QR Code</strong>.<br /><img alt="" class="internal default" /></li>
+            <li>In the report setup window that appears, use the Buildings, Room Types, and Rooms&#160;tabs to specify the parameters for the QR Code report. Use the arrow keys to move your preferences to the selected list.&#160;You must specify preferences on all three tabs.<br /><img alt="" class="internal default" /></li>
+            <li>You can add a logo and control the order and titles on&#160;the report on the Options tab.</li>
+        </ol>
+        <ul class="mt-indent-1">
+            <li>
+                <p>Click <strong>Sort Room Cards By Book Sequence</strong> to order the QR Room Cards the way they display in the <a title="Using the Reservation Book">Reservation Book</a> (instead of by Room Name). <strong>Book Sequence</strong> is set in <a target="_blank" title="Configuring Rooms">Room configuration</a>.</p>
+            </li>
+            <li>
+                <p>To print separate QR Room Cards for each component (titled by Room Name), click <strong>Print Combo Room Components</strong>.</p>
+                <img alt="" class="internal default" />
+                <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;width: 696px;">
+                    <tbody>
+                        <tr>
+                            <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                                <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                            </td>
+                            <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 642px;" valign="top">
+                                <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>We recommend that you use one method to generate multiple cards for the same room: either configure the Room to have more than one room card (see&#160;<strong><span class="mt-color-669933"><a title="Configuring EMS QR Codes">Step 1</a></span></strong>) <em>or</em> set&#160;<strong>Copies To Print </strong>(above)<strong>&#160;</strong>to print multiple copies.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+        <ol start="4">
+            <li>When you have specified all settings for your QR codes, you can click&#160;<strong>Print Preview</strong>&#160;to see a preview of the report (ideal for for emailing, exporting, printing, and so on), or&#160;<strong>Print&#160;</strong>to print the file.&#160;</li>
+        </ol>
+        <div class="EXPAND_CLASS">
+            <dl class="mt-indent-2">
+                <dt>
+                    <img alt="" class="internal default" style="width: 23.9844px;height: 23.9844px;" width="23.9844px" height="23.9844px" />&#160;<strong><span class="mt-color-669933">If you see this error message (click to expand), go back to <a title="Configuring EMS QR Codes">Step 1</a>.</span></strong>&#160;</dt>
+                <dd>The&#160;<strong>No. Room Cards</strong>&#160;field on the Room configuration should be greater than zero.<br /><img alt="" class="internal default" /></dd>
+            </dl>
+        </div>
+        <div class="EXPAND_CLASS">
+            <dl class="mt-indent-1">
+                <dt>
+                    <img alt="" class="internal default" style="width: 23.9844px;height: 23.9844px;" width="23.9844px" height="23.9844px" />&#160;<span class="mt-color-669933">Click here for a screenshot of a Print Preview</span>&#160;</dt>
+                <dd>
+                    <img alt="" class="internal default" />
+                </dd>
+            </dl>
+        </div>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

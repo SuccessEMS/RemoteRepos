@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="5286.134" MadCap:lastWidth="1020" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Working with Invoices</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Working with Invoices</h1>
+        <p class="Body">You can generate an invoice in {{product_dtc}} based on a specific booking date or date range, a reservation number, or both. For example, you can generate invoices for all bookings from May 1 through May 14, for all bookings in reservation number 22, or for all bookings in reservation number 22 that occurred between May 1 and May 14. You can generate multiple invoices for the same booking, with each invoice showing the charges for a different category (such as room charges on one invoice, catering charges on another invoice, and so on). This might be necessary in situations in which you must produce multiple invoices for the same booking if the departments within your organization bill separately for the services they provide. You can also reprint an invoice and void an invoice.</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+
+</pre>
+        <p class="Body">You can work with invoices for a single reservation, or you can batch process multiple invoices. If you want to work with invoices for a single reservation, you do so through the Transactions tab in the Navigator. If you want to work with a batch of invoices, you do so through the {{product_dtc}} Billing menu: Billing &gt; Invoices &gt; <strong>Invoicing</strong>.</p>
+        <h2>Generating an Invoice</h2>
+        <table border="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border: none;border-top: solid black 1.0pt;" valign="top">
+                        <div style="border: none;border-bottom: solid windowtext 1.0pt;padding: 0in 0in 0in 0in;">
+                            <p class="AnchorNote">
+                                <img class="internal" />
+                            </p>
+                        </div>
+                    </td>
+                    <td style="border: none;border-top: solid black 1.0pt;" valign="top">
+                        <p class="NoteTipWarningText">Before you generate an invoice, you should generate the Billing Worksheet report. See <a target="_blank" title="Generating an EMS Billing Report">Generating an EMS Billing Report</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberBegin">1. Do one of the following:</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• <a target="_blank" title="Getting Familiar with the Navigator">Open the reservation in the Navigator</a> and on the Transactions tab, click New &gt; <strong>Invoice</strong>.</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• On the {{product_dtc}} menu bar, click Billing &gt; Invoices &gt; <strong>Invoicing</strong>.</p>
+        <p class="StepResultNoBullet mt-indent-1">The Invoicing window opens.</p>
+        <p class="FigureCaptionColumn" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>On the Setup dropdown list, you can select a saved, or <em>memorized</em>, invoice. If you select a memorized confirmation, then the only changes that you can make are to the dates and/or times on the Date Range tab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">2. Review and make changes as needed, using the table below.</p>
+        <table border="0" cellspacing="0" class="emstable" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                        <p class="TableColumnHeader mt-indent-1">Field</p>
+                    </th>
+                    <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                        <p class="TableColumnHeader mt-indent-1">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2" style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <h5>Date Range tab</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Department</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">Select the department that is creating the invoices. The department name and address is printed at the top of the invoice.</p>
+                        <p class="TableNoteNote mt-indent-1"><span><strong>Note</strong>: </span>This field is automatically populated if you have a default department assigned to your user account but you can select a different value if needed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Reservation Number</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">Automatically populated if you are generating an invoice from the Transaction tab; otherwise, enter a reservation number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Starting Date</p>
+                        <p class="TableBody mt-indent-1">Ending Date</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">Automatically populated with the first (starting) booking date and the last (ending) booking date for the selected reservation when you are generating an invoice from the Transaction tab; otherwise, enter the date range of the bookings for which you are generating the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Use Specific Times</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">If only a specific time for the bookings is to be invoiced (for example, the bookings are from 8 am to 5 pm and you want to invoice the booking from only 8 am to noon), click <strong>Use Specific Times</strong>&#160;and then enter a specific time period.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Invoice Date</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">The default value is the current day’s date. You can leave this value as is, or enter a different date.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody mt-indent-1">Due Date</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody mt-indent-1">The default value is 30 days from the current day’s date. (Your Administrator may&#160;have configured a different default value for this field.) You can leave in the field as is, or you can enter a different date.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <h5>Buildings tab/Categories tab/Statuses tab/Group Types tab</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Open the appropriate tab on the window and select the buildings, resource categories, booking statuses, and group types that are to be invoiced. This information is displayed on the invoice.To select a building, category, and so on, select the item in the Available list (CTRL-click to select multiple items), and then click the Move button (&gt;) to move the items to the Selected list.</p>
+                        <p class="TableNoteNote"><span><strong>Note</strong>: You can click the</span>&#160;<strong>Show Inactive</strong> option for both categories and statuses, to show inactive categories and statuses, so you can select these inactive items as part of your filtering criteria.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <h5><a name="RTF4f7074696f6e735f746162"></a><span class="Bold">O</span><a name="RTF37333733313a205461626c65"></a><span class="Bold">ptions ta</span><span class="Bold">b</span>—Format settings for a printed confirmation</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Header Message</p>
+                        <p class="TableBody">Footer Message</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Select the header message and footer message that is to be printed on the invoice. By default, the header and footer messages are printed on every page of the invoice. To print the header only on the first page of the invoice, clear the <strong>Print Header on Each Page</strong> option.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Currency</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Select the currency that indicates how a room or resources in a category should be charged.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Comments</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the comments for the reservation in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Reminders</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the reminders for the reservation in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print User Defined Fields</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include user-defined fields and their values in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Suppress Reserved Time</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Do not show the reserved time on the printed invoice. (Instead, only the event time is included on the printed invoice.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Item Notes</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the notes for any booking items in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Zero Priced Items</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include resources for which there was no charge in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Item Selections</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include any resource item selections in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Header On Each Page</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the selected Header message on each page of the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Suppress Logo</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Do not show your department’s/organization’s logo on the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Billing Reference Allocation</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the billing reference numbers for the event as well as the percentage of charges that is allocated to each number in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Category Subtotals</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Include the subtotal charges by category in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Display Messages as HTML</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">If you have defined any HTML messages, then select this option to display the HTML version of these messages in the printed invoice; otherwise, the message is displayed in plain text.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>If needed, you can always save these settings. See <a title="Working with Saved Reports">Working with Saved Reports</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">3. Click <strong>Generate</strong>.&#160;The generated invoices are displayed in the Invoicing dialog box. By default, invoices with a zero balance are not shown.</p>
+        <p class="FigureCaptionColumn" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">4. Optionally, you can do one or more of the following to work with the invoices that are displayed; otherwise, if you are satisfied with the invoices, you can go to the next step&#160;to post the invoice.</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• To show zero balance invoices in the window, clear the <strong>Hide Zero Balances</strong> option.</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• To preview an invoice, select the invoice (CTRL-click to select multiple invoices), and then click Preview.&#160;An onscreen preview of the selected invoices opens, titled “Invoice Preview” (to distinguish the invoices from those that have been posted). The invoices also do not have invoice numbers, which are not issued until you post the invoices. The preview window contains options for printing a hard copy of the invoices, for emailing the invoices (see <a title="Sending Email from EMS">Sending Email from EMS</a>), and so on. Select the option or options that best fit your working needs.</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• To change the criteria for the invoices, click <strong>Filter </strong>to return to the Invoicing window After changing the criteria, you can generate the invoices again.</p>
+        <p class="FigureCaptionColumn"><em><a name="RTF39313835393a204669677572"></a>Onscreen preview of an in-progress invoice</em>
+        </p>
+        <p class="AnchorFigure" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued"><a name="RTF31333739383a20537465704e"></a>5. To post an invoice, select the invoice (CTRL-click to select multiple invoices), and then click <strong>Final</strong>.&#160;A message opens warning you that you are about to post and print (#) invoices, and asking you if want to continue.</p>
+        <p class="StepNumberContinued">6. Click <strong>Yes</strong>.&#160;The message closes and an onscreen preview of the <em>final</em> invoices opens. The preview is titled “Invoices” and each invoice has been issued an invoice number. The preview window contains options for printing a hard copy of the invoices, for emailing the invoices (see <a target="_blank" title="https://success.emssoftware.com/EMS_V44.1/Using_EMS/Using_EMS_Desktop_Client/080_Reservations_and_Bookings/Other_Reservation_Functions/020_Sending_Email_from_EMS">Sending Email from EMS</a>), and so on. Select the option or options that best fit your working needs.&#160;</p>
+        <p class="FigureCaptionColumn"><em><a name="RTF37303639383a204669677572"></a>Onscreen preview of a posted invoice</em>
+        </p>
+        <p class="AnchorFigure" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="Body">After you generate and post an invoice, the message “Items have been invoiced” is displayed in red text on the Reservation Summary tab, the Booking Summary tab, and the &lt;Booking Detail&gt; Summary tab in the Navigator. The booking detail folder in which the invoiced items reside now has a green background in the Booking Details pane and the icon for each invoiced item also has a green background in the Items pane. Also, the invoice is permanently saved, and you cannot edit it. You can make changes to the balance due for a reservation only by creating an adjustment or by voiding the invoice and regenerating it after you edit the booking information. (Because invoiced bookings are locked and cannot be edited, you must void the invoice before you can edit the bookings.)</p>
+        <h2>Reprinting an Invoice</h2>
+        <p class="Body">You can reprint both non-voided and voided invoices. You can reprint invoices <em>for only one department at a time</em> from the Billing area of {{product}}. Reprinting an invoice does not recalculate the invoice. The invoice is simply printed as it appeared when it was first generated. You can <a><span style="color: black;text-decoration: none;"><span style="color: black;">specify</span></span></a> the invoices that you are reprinting, or you can <a><span style="color: black;text-decoration: none;"><span style="color: black;">search</span></span></a> for invoices that meet specific criteria, and then select specific invoices to reprint from the list of search results.</p>
+        <p class="Body">To reprint invoices for one or more departments, you must select the reservation in the Navigator, open the Transactions tab and CTRL-click to select the multiple invoices that you are reprinting, and then use the Reprint option on the Transactions tab.</p>
+        <p class="StepNumberBegin">1. On the {{product_dtc}} menu bar, click Billing &gt; Other &gt; <strong>Reprint Invoices</strong>.&#160;The Reprint Invoices dialog box opens.</p>
+        <p class="FigureCaptionColumn"><a name="RTF34393832393a204669677572"></a>Reprint Invoices dialog box</p>
+        <p class="AnchorFigure" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. Select the <strong>Department </strong>that generated the invoices. This field is automatically populated if you have a default department assigned to your user account, but you can select a different value if needed.</p>
+        <p class="StepNumberContinued"><a name="RTF33333538373a20537465704e"></a>3. In the <strong>Invoice No.</strong> field, enter the number of the invoice that you wish to reprint, and then click <strong>Add</strong>.&#160;The invoice is displayed (by number) in the lower right Invoice pane.</p>
+        <p class="StepNumberContinued">4. Repeat <span class="Link"><span style="color: black;"><span style="color: black;">Step <span style="color: black;">3</span></span></span></span> until you have added all the invoices that you wish to reprint.</p>
+        <p class="StepNumberContinued">5. Leave the reprinting criteria set to their default values, or change them as needed using the table below.</p>
+        <table border="0" cellspacing="0" class="emstable" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                        <p class="TableColumnHeader">Option</p>
+                    </th>
+                    <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                        <p class="TableColumnHeader">Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Invoices</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">The invoice type that you are reprinting—Non Voided (the default value) or Voided.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Format</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Select the sort order for the reprinted invoices. The default value is By Reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">First Transaction Date</p>
+                        <p class="TableBody">Last Transaction Date</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Leave these values blank to reprint the invoice for all bookings; otherwise, enter the date range of the bookings for which you are reprinting the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Header on Each Page</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Leave this option selected to print the invoice header on every page of the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                        <p class="TableBody">Print Transactions</p>
+                    </td>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                        <p class="TableBody">Select this option to include any associated transactions (deposits, payments, and so on) in the reprinted invoice.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">6. Click <strong>OK</strong>.&#160;An onscreen preview of the invoices opens. The preview is titled “Invoices.” The preview window contains options for printing a hard copy of the invoices, for exporting the invoices to a .pdf, emailing the invoice (see <a title="Sending Email from EMS">Sending Email from EMS</a>) and so on. Select the option or options that best fits your working needs.</p>
+        <p class="FigureCaptionColumn" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <h2>Voiding an Invoice</h2>
+        <p class="Body">You can void an invoice only if the invoice has <em>not</em> been paid. If payments have been made against an invoice, you must first void the payments.You can void invoices <em>for only one department at a time</em>. When you void an invoice, the invoice is removed from the Ageing report and its associated bookings are unlocked. You can specify invoices to void, or you can search for invoices that meet specific criteria, and then select specific invoices to void from the list of search results.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>You can also void an invoice from the Transactions tab when a reservation is selected in the Navigator.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberBegin">1. On the {{product}} menu bar, click Billing &gt; Other &gt; <strong>Void Invoices</strong>.&#160;The Void Invoices dialog box opens.&#160;</p>
+        <p class="AnchorFigure" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued">2. In the <strong>Department </strong>field, select the department that generated the invoices.</p>
+        <p class="StepNumberContinued"><a name="RTF32323036343a20537465704e"></a>3. In the <strong>Invoice No. </strong>field, enter the number of the invoice that you are voiding, and then click <strong>Add</strong>.</p>
+        <p class="StepResultNoBullet">Two results are possible:</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• If payments have <em>not</em> been applied to the invoice, then a Void Reason dialog box opens. Continue to <span class="Link"><span style="color: black;"><span style="color: black;">Step 4.</span></span></span></p>
+        <p class="FigureCaptionColumn mt-indent-1" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepResultBulletLev1 mt-indent-1">• If payments have been applied to the invoice, then an error message opens indicating that payments have been applied to the invoice and it cannot be voided. You must void the payments first before you can continue with voiding the invoice. See <a title="Working with Transactions">Voiding a transaction</a>.</p>
+        <p class="StepNumberContinued"><a name="RTF36323730393a20537465704e"></a>4. Enter a reason for voiding the invoice, and then click <strong>OK</strong>.&#160;The invoice is displayed (by number) in the lower right Invoice pane.</p>
+        <p class="StepNumberContinued">5. Repeat <span class="Link"><span style="color: black;"><span style="color: black;">Step 3</span></span></span> and <span class="Link"><span style="color: black;"><span style="color: black;">Step 4</span></span></span> until you have selected all the invoices from the same department that you are voiding.</p>
+        <p class="StepNumberContinued">6. Do one of the following:</p>
+        <p class="StepResultBulletLev1 mt-indent-1">• To review an invoice before you void it, go <span class="Link"><span style="color: black;"><span style="color: black;">Step 7.</span></span></span></p>
+        <p class="StepResultBulletLev1 mt-indent-1">• To void an invoice without reviewing it, go to <span class="Link"><span style="color: black;"><span style="color: black;">Step 8.</span></span></span></p>
+        <p class="StepNumberContinued"><a name="RTF37313136373a20537465704e"></a>7. Optionally, before you void a selected invoice, you can review it to ensure that it is indeed an invoice that you want to void. In the lower right Invoice pane, select the invoice, or CTRL-click to select multiple invoices, and then click <strong>Preview</strong>.&#160;An onscreen preview of the selected invoices opens. The preview is titled “Invoices.” The preview window contains options for printing a hard copy of the invoices, for exporting the invoices to a .pdf, and so on.&#160;Select the option or options that best fit your working needs. For example, before you void an invoice, you might want to email a copy of the invoice to a colleague to confirm that the invoice should be voided.</p>
+        <p class="FigureCaptionColumn"><a name="RTF37363331353a204669677572"></a>Onscreen preview of an invoice selected for voiding</p>
+        <p class="AnchorFigure" style="text-align: center;">
+            <img border="0" class="internal" />
+        </p>
+        <p class="StepNumberContinued"><a name="RTF35323836363a20537465704e"></a>8. In the lower right Invoice pane, select the invoice, or CTRL-click to select the multiple invoices that you are voiding, and then click <strong>OK</strong>.&#160;A message opens asking you if you are sure that you want to void the selected invoices.</p>
+        <p class="StepNumberContinued">9. Click <strong>Yes</strong>.&#160;A message opens indicating that the invoices have been voided.</p>
+        <p class="StepNumberContinued">10. Click <strong>OK</strong>.&#160;The message and the Void Invoices dialog box close. The Void column is set to Yes on the Transactions tab for each of the voided invoices in the Navigator.</p><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("EMS_V44.1/Using_EMS/Using_EMS_Desktop_Client/030_Billing/Applying_Calculations_to_Billing")</pre>
+        <p>&#160;</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:User</a>
+        </p>
+    </body>
+</html>

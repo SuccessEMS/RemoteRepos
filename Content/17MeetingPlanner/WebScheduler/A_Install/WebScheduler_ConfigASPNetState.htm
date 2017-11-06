@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" class="topic" MadCap:lastBlockDepth="4" MadCap:lastHeight="1517" MadCap:lastWidth="1018">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/WebScheduler_ConfigureASPStateServer.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configure ASP.NET State for Load Balanced Environments</h1>
+        <h2>Introduction&#160;</h2>
+        <p>Larger organizations may be looking to host the Web Scheduler on multiple servers in order to distribute network traffic and enhance performance. The general setup in these cases would consist of a piece of hardware (or software in some cases) that acts as the load balancer. This tool will provide a unified front for multiple servers, allowing users to connect through itself and be routed to one of the web servers.&#160;The web servers will all have the Web Scheduler installed on them, but will need to save each user's session information on the same server, the "State Server". This allows the user's session information to always be available as the load balancer routes the user to a different server.</p>
+        <p>Below, you will find the steps needed to properly configure the Web Scheduler in this setup. &#160;</p>
+        <p class="p_4"><span class="span_1">Note:&#160;</span><span class="span_2">Web Scheduler v1.8.2.0 or above is required.</span>
+        </p>
+        <p class="p_2">Configuration&#160;</p>
+        <p class="p_5">State Server Setup (Inbound Ports Required: 80 &amp; 42424)&#160;</p>
+        <p class="p_3">Below are the configuration steps for the server that will be designated to hold all of the session state information for all users</p>
+        <p class="p_6">Generate a new machine key&#160;</p>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Perform a web search for "machine key generator"</li>
+            <li class="li_2"><span class="span_2">Click on one of the first few links (ie&#160;</span><a href="http://aspnetresources.com/tools/machineKey"><span class="span_3">http://aspnetresources.com/tools/machineKey</span></a><span class="span_2">)</span>
+            </li>
+            <li class="li_1">Generate a new machine key (this will be used shortly)</li>
+        </ol>
+        <p class="p_6">Update the Web Scheduler Web web.config&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44,_V43)/MeetingPlanner/30-Meeting_Planner_Web_Scheduler/Installing_Web_Scheduler_-_(and_other_technical_documentation)/Configure_ASP.NET_State_Server_for_Load_Balanced_Environments/Configure_ASP.NET_State_for_Load_Balanced_Environments" title="Edit section" class="a_1"><img src="../../../Resources/Images/WebScheduler_ConfigureASPStateServer/Configure ASP NET State for.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></a></p>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Open C:\Program Files\Emergingsoft\Scheduler\web.config</li>
+            <li class="li_1">Add a &lt;sessionState&gt; element within &lt;system.web&gt;&#160;as seen below</li>
+            <li class="li_1">Save and close (example below)</li>
+        </ol>
+        <ol start="1" class="ol_1">
+            <li class="li_3">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</li>
+        </ol>
+        <p class="p_7">&lt;configuration&gt;</p>
+        <p class="p_7">&lt;appSettings&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;/appSettings&gt;</p>
+        <p class="p_7">&lt;system.web&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;sessionState mode="StateServer" stateConnectionString="tcpip=127.0.0.1:42424" /&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;/system.web&gt;</p>
+        <p class="p_7">&lt;/configuration&gt;</p>
+        <p class="p_6">Modify the registry&#160;</p>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Open regedit</li>
+            <li class="li_1">Navigate to the following key: HKLM\System\Current Control Set\Services\aspnet_state\Parameters\AllowRemoteConnection</li>
+            <li class="li_1">Set this value to 1</li>
+            <li class="li_1">Close regedit</li>
+        </ol>
+        <p class="p_6">Start the ASP.NET State Service&#160;</p>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Open Start &gt; Administrative Tools &gt; Services</li>
+            <li class="li_1">Right-click the ASP.NET State Service (if the service doesn't exist you will need to run the 'aspnet_regiis.exe -i' command)</li>
+            <li class="li_1">Select "Automatic" startup type</li>
+            <li class="li_1">Click Apply</li>
+            <li class="li_1">Start the service</li>
+            <li class="li_1">Click OK</li>
+        </ol>
+        <p class="p_5">Web Server(s) Setup (Outbound Ports Required: 80 &amp; 42424)&#160;</p>
+        <p class="p_3">Below are the configuration steps for all of the web servers that will run MeetingPlanner, but will not hold session state information</p>
+        <p class="p_6">Update the Web Scheduler Web web.config&#160;</p>
+        <ol start="1" class="ol_1">
+            <li class="li_1">Open C:\Program Files\Emergingsoft\Scheduler\web.config</li>
+            <li class="li_1">Add a &lt;sessionState&gt; element&#160;within &lt;system.web&gt;&#160;as seen below (note the stateConnectionString)</li>
+            <li class="li_1">Save and close (example below)&#160;</li>
+        </ol>
+        <p class="p_7">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+        <p class="p_7">&lt;configuration&gt;</p>
+        <p class="p_7">&lt;appSettings&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;/appSettings&gt;</p>
+        <p class="p_7">&lt;system.web&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;sessionState mode="StateServer" stateConnectionString="mystateserver.emergingsoft.com:42424" ... /&gt;</p>
+        <p class="p_7">...</p>
+        <p class="p_7">&lt;/system.web&gt;</p>
+        <p class="p_7">&lt;/configuration&gt;</p>
+        <p class="p_5">Validate the configuration&#160;</p>
+        <p class="p_4"><span class="span_2">In order to test this functionality, you will want to access the Web Scheduler at each of the web servers, from your local desktop.&#160;Make sure that you bypass your load balancing system and access the Web Scheduler&#160;directly on each server (</span><a href="http://mystateserver.emergingsoft.com/meetingplanner"><span class="span_3">http://mystateserver.emergingsoft.com/scheduler</span></a><span class="span_2">,&#160;</span><a href="http://mywebserver1.emergingsoft.com/meetingplanner..."><span class="span_3">http://mywebserver1.emergingsoft.com/scheduler...</span></a><span class="span_2">).&#160;</span>
+        </p>
+        <p>&#160;</p>
+    </body>
+</html>

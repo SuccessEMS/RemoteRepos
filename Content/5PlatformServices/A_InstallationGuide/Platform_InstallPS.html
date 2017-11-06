@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="810.3333" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installing EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installing EMS Platform Services</h1>
+        <h2><strong>Getting Started </strong>
+        </h2>
+        <ol>
+            <li>Verify the&#160;<a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides%2FOptional_Features%2FEMS_API%2FEMS_API_Guide%2F020_Hardware_and_Software_Requirements&amp;_Setup_Guides_%28V44_1%29%2FOptional_Features%2FEMS_API%2FEMS_API_Guide%2F020_Hardware_and_Software_Requirements=">System Requirements</a>.</li>
+            <li>Install the <a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides%2FOptional_Features%2FEMS_API%2FEMS_API_Guide%2F020_Hardware_and_Software_Requirements&amp;_Setup_Guides_%28V44_1%29%2FOptional_Features%2FEMS_API%2FEMS_API_Guide%2F020_Hardware_and_Software_Requirements=">Prerequisites</a>.&#160;</li>
+            <li>The&#160;EMS Platform Services installation files&#160;can be downloaded from the online&#160;<a href="https://www.dea.com/ServiceAndSupport/Login.aspx" title="https://www.dea.com/ServiceAndSupport/Login.aspx">Support Center</a>. Enter your Email Address and Password to log in to the Support Center.</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>HTTPPlatformHandler is a prerequisite and if not installed prior to installing Platform Services, a server reboot may be required.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Navigate to the <strong>Software &amp; Docs Library</strong> &gt;&#160;<strong>Software Downloads </strong>&gt; <strong>Releases &amp; Patches</strong>.&#160;</li>
+            <li>Download&#160;<strong><span><span>EMSPlatformServices.msi</span></span></strong>. &#160;(Required for all&#160;installations.)&#160;</li>
+            <li>The EMS Platform Services Setup Wizard will appear. Click&#160;<strong>Next&#160;</strong>to begin installation.</li>
+        </ol>
+        <p class="mt-indent-1"><em><img alt="PlatformServices_Installation_SetupWizard.png" height="483" width="618" /></em>
+        </p>
+        <ol start="7">
+            <li>Choose a default folder to install EMS Platform Services to. The Platform installer by default will try to install in Programs folder, you can change the path to wwwroot folder. The typical install path is&#160;<strong>C:\Program Files/EMS Software/Ems.Platform.Api\</strong>. Click&#160;<strong>Next</strong>.&#160;</li>
+            <li>You will need to enter the SQL server and EMS database, configured to allow external connections. Make a note of the database name.&#160;</li>
+            <li>Enter a Virtual Directory Name.</li>
+            <li>To enable NTLM authentication for Everyday User Authentication for the Platform Services Admin Portal and Integration Clients, click the<strong>&#160;Enable NTLM&#160;For EMS Everyday User Authentication</strong>&#160;box.&#160;</li>
+            <li>Click the&#160;<strong>Install&#160;</strong>button to complete the installation. You will receive a prompt from the Wizard that installation is complete. EMS Platform Services is now installed on your Web server.</li>
+            <li>Click&#160;<strong>Finish</strong>.&#160;</li>
+        </ol>
+        <h2><strong>Verify Installation Status</strong>&#160;</h2>
+        <ol>
+            <li>Access your URL for Platform Services (e.g.,&#160;<a href="https://yourcompany.com/ems-platform-api" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>).</li>
+            <li>Verify the status of your installation.
+    <ol start="1" style="list-style-type: lower-alpha;"><li>Navigate to&#160;<a href="https://yourcompany.com/ems-platform-api/status" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api/status">https://yourcompany.com/ems-platform-api/status</a>.</li></ol></li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="PlatformServices_VerifyInstallation2.PNG" class="internal default" style="width: 687px;height: 222px;" width="687px" height="222px" />
+        </p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic-guide</a>
+        </p>
+    </body>
+</html>

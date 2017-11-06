@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" MadCap:lastBlockDepth="6" MadCap:lastHeight="3430.213" MadCap:lastWidth="840" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Resolving Booking Conflicts</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Resolving Booking Conflicts</h1>
+        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no">template('MindTouch/Controls/PageOverview');</pre><pre class="script-css" mt-export-translate="no">.columbia-article-topic #mt-toc-container {
+				display:block !important; 
+				}
+				#mt-toc-container {
+				display: block !important;
+				}
+			</pre>
+        <p>Bookings in conflict show on the <strong>Schedule</strong> tab in red.</p>
+        <p>&#160;</p>
+        <p>For a quick video tutorial, see: Resolving Conflicts for Recurring Meetings.</p>
+        <h2>Resolving Booking Conflicts When You Receive a Warning Email</h2>
+        <p class="StepNumberContinued">As the meeting scheduler, you may receive a booking error message (such as "One or more of your rooms were not available and are in conflict. Refer to your email for next steps.") and an email that indicates the bookings that are in conflict for the reservation.</p>
+        <p><a name="RTF38363638363a20537465704e">1. Locate the email with the warning email</a> which begins, "The following rooms could not be reserved because they are unavailable. You must reserve a new room for each time slot shown below." (or similar)<a name="RTF38363638363a20537465704e"></a></p>
+        <ol start="2">
+            <li><a name="RTF38363638363a20537465704e">Open your Outlook calendar. </a>
+            </li>
+            <li class="StepResultNoBullet">Navigate to the date of the scheduled event and double-click the event for which a booking is in conflict. </li>
+        </ol>
+        <p class="StepResultNoBullet mt-indent-1">If the event is recurring, an Open Recurring Item message opens. The message indicates that the event is recurring and asks you if want to open only this occurrence of the event, or the series.</p>
+        <p class="mt-indent-1">&#160;</p>
+        <p class="mt-indent-1">Leave <strong>Open this occurrence</strong> selected, and then click <strong>OK</strong>. </p>
+        <p>3. Click the {{product_emso}} icon in the Outlook toolbar. . The EMS for Outlook add-in opens the <strong>Selected Rooms</strong> tab to show you the booking conflicts.</p>
+        <p class="mt-indent-1">&#160;</p>
+        <p class="StepNumberContinued">4. Click the <strong>Remove </strong>icon to delete the room in conflict from Selected Rooms. </p>
+        <p class="StepNumberContinued">5. Click the <strong>List </strong>tab. Select a different room.</p>
+        <p class="StepNumberContinued">6. Click <strong>Save/Send</strong>. The selected room is booked in the EMS database.</p>
+        <h2><span style="font-size: 32px;">Resolving Booking Conflicts During the Booking Process</span>
+        </h2>
+        <p>You may receive a popup message when booking a meeting saying "One of the rooms you selected is not available and are in conflict" (or similar). This means that you requested space that is already booked. The room will show in your bookings list as "Conflict - [room name]". The EMS for Outlook add-in opens the <strong>Resolve Conflicts </strong>popup, where you can select a different room for the unresolved days.</p>
+        <p class="NoteTipWarningText mt-indent-1">&#160;</p>
+        <p class="StepNumberContinued">1. In the Rooms list, select a room and click the <strong>&gt;</strong> arrow to move it to the right panel for the date in question.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse; width: 709px;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none; border-top-color: black; border-top-width: 1pt; width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" xmlns="http://www.w3.org/1999/xhtml" /> </td>
+                    <td style="border-style: solid none none; border-top-color: black; border-top-width: 1pt; width: 653px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span> <![CDATA[ ]]></strong>You can filter the list of rooms by clicking the <strong>Filter</strong> button.</p>
+                        <p class="NoteTipWarningText">&#160;</p>
+                        <p class="NoteTipWarningText">Once you have set filters, click <strong>Apply. </strong>You return to the main meeting window.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="StepNumberContinued">2. <a name="RTF35363135373a20537465704e">Click <strong>Save/Send</strong>. </a>The selected room is booked in the EMS database. The event is updated in your Outlook calendar to reflect the new location. All the invited meeting attendees receive a standard Outlook message about the updated meeting location. The invitees accept or decline the meeting invitation as they normally would in Outlook. The next time that you open the EMS for Outlook add-in and show the date of the scheduled event, the room status for the newly selected room is indicated as "Booked" for the event date.</p>
+        <p>3. Repeat these steps for each booking date that is in conflict.</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>The room you selected is not available</a>
+        </p>
+    </body>
+</html>

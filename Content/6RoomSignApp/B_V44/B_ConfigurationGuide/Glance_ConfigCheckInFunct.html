@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="2365" MadCap:lastWidth="1376" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Check In Functionality</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configuring Check In Functionality</h1>
+        <p>1. On the {{product_dtc}} toolbar, click EMS Glance Settings to access the EMS Glance Settings area.&#160;</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_EMSGlanceSettings.png" style="width: 132px;height: 58px;" />
+        </p>
+        <dl class="mt-indent-1">
+            <dt>
+                <img src="../../../Resources/Images/tech_doc_concept.png" /> Concept:&#160;You can set how information displays at the&#160;Global&#160;level (defaults for all Profiles) or for <a title="Configuring Glance Profiles">just one Profile</a>.&#160;&#160;</dt>
+        </dl>
+        <p>2. Then <a title="Configuring EMS Glance">open Global Settings</a> to set this functionality as the default for all Profiles, <em>or</em>&#160;<a title="Configuring Glance Profiles">open a Profile</a> for which you wish to create a special display,&#160;and then edit the settings on the Settings tab.</p>
+        <p>
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_GlobalSettings.png" style="width: 456px;height: 284px;" />
+            <br />
+        </p>
+        <p>3. Adjust the Global or Profile settings listed in the table below to configure how check in information displays on the following screen. The Check&#160;In functions determine check in requirements for users in EMS Glance.</p>
+        <table cellpadding="0" cellspacing="0" class="mt-responsive-table">
+            <tbody>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <dl>
+                            <dt><strong><span><span>Option</span></span></strong>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><strong><span><span>Description</span></span></strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <dl>
+                            <dt><a name="DisplayCheckInButton"></a><span>Display Check In Button</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>If set to <strong>Yes</strong>, then a Check In button is displayed on both the Available screen and the In Progress screen. See the&#160;<span>Available screen with Check In button and In Progress screen with Check In button.</span></span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <dl>
+                            <dt><span>Activate Check In Button ## Minutes Before Booking Start Time</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>If the&#160;<span>Display Check In Button</span> is set to <strong>Yes</strong>, then this value determines how many minutes in advance of an upcoming meeting the Check In button is displayed.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <dl>
+                            <dt><a name="EnableAutomaticCancellation"></a><span>Enable Automatic Cancellation</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>If set to <strong>Yes</strong>, users are required to push the Check In button to check into their meetings.&#160; If a user does not push the Check In button within the interval set in the <span>Automatic Cancellation Interval</span> setting, EMS Glance automatically cancels the booking in EMS.</span>
+                        </p>
+                        <p>If set to <strong>No</strong>, and a user checks in before an event starts, then EMS Glance adjusts the booking start time to the current time (assuming another meeting isn’t currently in progress).</p>
+                        <p>If set to <strong>Yes</strong>&#160;and a user checks in before an event starts, then&#160;EMS Glance adjusts the booking start time to the current time (assuming another meeting isn’t currently in progress) and the user is checked into the meeting. If a user does not check in before the elapsed time that is defined in the Automatic Cancellation Interval setting, then the meeting is automatically canceled.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <dl>
+                            <dt><a name="AutomaticCancellationInterval"></a><span>Automatic Cancellation Interval</span>
+                            </dt>
+                        </dl>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>Requires <span>Enable Automatic Cancellation</span> to be set to Yes. If a user does not push the Check In button for a meeting within the set interval, EMS Glance automatically cancels the booking in EMS.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p><span>Default Status for Cancelled Booking</span>
+                        </p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>The status to which a booking is changed if an event is automatically cancelled.&#160; Requires <span>Enable Automatic Cancellation</span> to be set to <strong>Yes</strong>.</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p><span>Default Cancel Reason for Cancellations</span>
+                        </p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-80">
+                        <p><span>The Cancel Reason to which a booking is changed if an event is automatically cancelled.&#160; Requires <span>Enable Automatic Cancellation</span> to be set to <strong>Yes</strong>.</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="mt-indent-1"><em><a name="AvailableScreen_CheckIn"></a>Available screen with Check In button</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_AvailableCheckIn.png" style="width: 654px;height: 488px;" />
+        </p>
+        <p class="mt-indent-1"><em><a name="InProgressScreen_CheckIn"></a>In Progress screen with Check In button</em>
+        </p>
+        <p style="text-align: center;">
+            <img src="../Images/B_ConfigurationGuide/GL_ConfigCheckInFunct_InProgressCheckIn.png" style="width: 654px;height: 488px;" />
+        </p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

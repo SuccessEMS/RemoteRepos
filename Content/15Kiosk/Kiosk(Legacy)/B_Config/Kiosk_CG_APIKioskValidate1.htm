@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/EMS Kiosk API Reference.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">API Functions - Kiosk Validate by Badge Number, External Reference, Personnel Number</h1>
+        <h2 class="Heading2">KioskValidateByBadgeNum</h2>
+        <p class="Emphasis_3">Description</p>
+        <p>Validates a Group based on the search criteria. Returns the Group Name and ID if successful.</p>
+        <p class="Emphasis_3">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 155pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 94pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">BadgeNum *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Badge Number to Authenticate</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_3">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 155pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 68pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GroupName</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Group Name</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_3">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>Returns an empty dataset if validation ‘Failed’.</p>
+        <h2 class="Heading2">KioskValidateByExternalReference</h2>
+        <p class="Emphasis_3">Description</p>
+        <p>Validates a Group based on the search criteria. Returns the Group Name and ID if successful.</p>
+        <p class="Emphasis_3">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ExternalReference *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ExternalReference to Authenticate</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_3">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 155pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 68pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GroupName</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Group Name</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_3">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>Returns an empty dataset if validation ‘Failed’.</p>
+        <h2 class="Heading2">KioskValidateByPersonnelNum</h2>
+        <p class="Emphasis_3">Description</p>
+        <p>Validates a Group based on the search criteria. Returns the Group Name and ID if successful.</p>
+        <p class="Emphasis_3">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 155pt;" />
+            <col style="width: 219pt;" />
+            <col style="width: 94pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">UserName *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">EMS User Name</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Password *</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">EMS User Password</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">PersonnelNum *</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Personnel Number to Authenticate</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p class="Emphasis_3">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 155pt;" />
+            <col style="width: 245pt;" />
+            <col style="width: 68pt;" />
+            <thead>
+                <tr>
+                    <th class="th_1">
+                        <p class="Strong_1">Name</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Description</p>
+                    </th>
+                    <th class="th_1">
+                        <p class="Strong_1">Type</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Group ID</p>
+                    </td>
+                    <td class="td_1">
+                        <p class="NormalWeb_1">Integer</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">GroupName</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">Group Name</p>
+                    </td>
+                    <td class="td_2">
+                        <p class="NormalWeb_1">String</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="Emphasis_3">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>Returns an empty dataset if validation ‘Failed’.</p>
+    </body>
+</html>

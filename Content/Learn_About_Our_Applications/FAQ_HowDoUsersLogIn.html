@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1395.213" MadCap:lastWidth="773" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">How Do Users Log In?</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">How Do Users Log In?</h1>
+        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');</pre><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <p>EMS offers a wide variety of authentication methods across its product offering. Since some of our solutions are web-based while others are Client-Server, options vary depending on the product.&#160;</p>
+        <h2>Supported&#160;Authentication Types</h2>
+        <p>EMS products support different types of authentication. In addition to local machine&#160;authentication, EMS offers two optional features:</p>
+        <ul>
+            <li><strong>EMS&#160;Integrated Authentication</strong>: this component provides single-sign-on capability using Integrated Windows Authentication, your organization’s portal, or LDAP.&#160;<strong>See Also:&#160;</strong><a title="Introduction">Introduction to Integrated Windows Authentication</a>.</li>
+            <li><strong>EMS Integration to Exchange</strong>: this component enables your organization to leverage your existing Microsoft Exchange authentication policies.&#160;<strong>See Also:&#160;</strong><a title="Introduction">Introduction to Integration to Exchange</a>.</li>
+        </ul>
+        <div class="EXPAND_CLASS">
+            <dl />
+        </div>
+        <h2>EMS Authentication Options By Application</h2>
+        <p>The table below lists each EMS product that requires users to log in, and the authentication options available.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;width: 773px;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 714px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>Click on an EMS application name to read more about this type of authentication.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="1" cellpadding="1" cellspacing="1" style="width: 100%;table-layout: fixed;">
+            <tbody>
+                <tr>
+                    <td style="width: 200px;"><strong>EMS Application</strong>
+                    </td>
+                    <td style="width: 98px;"><strong>User</strong>
+                    </td>
+                    <td style="width: 187px;"><strong>Release #</strong>
+                    </td>
+                    <td style="width: 370px;"><strong>Authentication Options</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;"><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_EMS_Desktop_Client">EMS Desktop Client</a>
+                    </td>
+                    <td style="width: 98px;">Expert</td>
+                    <td style="width: 187px;">V43, V44, V44.1</td>
+                    <td style="width: 370px;">Windows, LDAP, EMS</td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;">
+                        <p><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_Virtual_EMS_and_EMS_Web_App">{{product_vems}}</a>
+                        </p>
+                    </td>
+                    <td style="width: 98px;">
+                        <p>Everyday</p>
+                    </td>
+                    <td style="width: 187px;">
+                        <p>V43, V44</p>
+                    </td>
+                    <td style="width: 370px;">SAML, Portal, Windows, LDAP, EMS</td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;">
+                        <p><a title="Introduction">{{product_webapp}}</a>
+                        </p>
+                    </td>
+                    <td style="width: 98px;">
+                        <p>Everyday</p>
+                    </td>
+                    <td style="width: 187px;">
+                        <p>V44.1</p>
+                    </td>
+                    <td style="width: 370px;">SAML, Portal, Windows, LDAP, EMS</td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;">
+                        <p><a class="F1" title="Setting Up EMS Mobile Authentication">{{product_mobile}}</a>
+                        </p>
+                    </td>
+                    <td style="width: 98px;">
+                        <p>Everyday</p>
+                    </td>
+                    <td style="width: 187px;">
+                        <p>V44.1</p>
+                    </td>
+                    <td style="width: 370px;">
+                        <p>LDAP, EMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;"><a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_for_Microsoft%C2%AE_Outlook/Installing_EMS_for_Microsoft%C2%AE_Outlook/Enabling_User_Access_to_EMS_for_Outlook">{{product_emso}}<br />            (with Exchange Integration Service)</a>
+                    </td>
+                    <td style="width: 98px;">Everyday</td>
+                    <td style="width: 187px;">V43, V44, V44.1</td>
+                    <td style="width: 370px;">Application Authentication<br />            Exchange Authentication</td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;">
+                        <p><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_EMS_Regics">{{product_campus}}</a>
+                        </p>
+                    </td>
+                    <td style="width: 98px;">
+                        <p>Academic&#160;</p>
+                    </td>
+                    <td style="width: 187px;">
+                        <p>V43, V44, V44.1</p>
+                    </td>
+                    <td style="width: 370px;">
+                        <p>SAML, Portal, Windows, LDAP, EMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;"><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_EMS_Regics">EMS </a><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_EMS_Regics">Regics</a>
+                    </td>
+                    <td style="width: 98px;">Everyday</td>
+                    <td style="width: 187px;">V43</td>
+                    <td style="width: 370px;">SAML, Portal, Windows, LDAP, EMS</td>
+                </tr>
+                <tr>
+                    <td style="width: 200px;">
+                        <p><a title="https://success.emssoftware.com/Knowledge_Base/Authentication_Options_for_EMS_Master_Calendar">EMS Master Calendar</a>
+                        </p>
+                    </td>
+                    <td style="width: 98px;">
+                        <p>Everyday</p>
+                    </td>
+                    <td style="width: 187px;">
+                        <p>V43</p>
+                    </td>
+                    <td style="width: 370px;">
+                        <p>SAML, Portal, Windows, LDAP, EMS</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Authentication methods</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="2" MadCap:lastHeight="1038" MadCap:lastWidth="1044">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/WebScheduler_UnistallSelfPackVer.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Uninstalling a Self-Packaged Version (v1.6.0.0 - v1.8.2.0)</h1>
+        <h2>Introduction&#160;</h2>
+        <p class="p_3">Web Scheduler v1.8.2.0 and previous were packaged within their own msi, with additional services requiring a manual installation of each. As of MeetingPlanner Family build v5.5.3.8, the Web Scheduler and its services have been packaged together with MeetingPlanner.&#160;Due to the change in installation process, you will need to uninstall your current version using the steps below and then move forward with the new installation.</p>
+        <h2>Procedure&#160;</h2>
+        <h3>Web Scheduler&#160;</h3>
+        <p class="p_5"><span class="span_1">1) &#160;Open the&#160;</span><span class="span_2">Control Panel &gt;&#160;</span><span class="span_3">Add/Remove Programs</span><span class="span_1">.</span>
+        </p>
+        <p class="p_3">2) &#160;Select "MeetingPlanner Web Scheduler."</p>
+        <p class="p_3">3) &#160;Click "Uninstall."</p>
+        <p class="p_3">If you are installing a newer version on this server, please proceed through the following steps:</p>
+        <p class="p_3">4) &#160;Go to the C:\Program Files (x86)\Emergingsoft\Scheduler directory.</p>
+        <p class="p_3">5) &#160;Open the web.config and note the "MeetingPlanner Url." &#160;(This will be needed for the installation process)</p>
+        <p class="p_3">6) &#160;Delete the web.config. While this file is typically retained between versions, there is an important update that you will need when installing a newer version, so you will want to delete the existing file. Once your new installation is complete, simply update the "MeetingPlanner Url" setting.</p>
+        <h2>Appointment Notifier Service&#160;</h2>
+        <p class="p_3">If you will not be installing a newer version of the Web Scheduler, please skip to step 3.</p>
+        <p class="p_3">1) &#160;Open the Services panel.</p>
+        <p class="p_3">2) &#160;Note the "Log On" account for the "Emergingsoft Appointment Notifier" service. &#160;This will need to be reset after the installation of the newer version of the Web Scheduler.</p>
+        <p class="p_3">3) &#160;Open the cmd.exe as an Administrator.</p>
+        <p class="p_3">4) &#160;User the "cd" command to navigate to the .NET 4.0 directory</p>
+        <p class="p_6">C:\&gt; cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\</p>
+        <p class="p_3">5) &#160;Execute the following command to uninstall the service:</p>
+        <p class="p_5"><span class="span_4">...v4.0.30319&gt; InstallUtil.exe -u “C:\Program Files (x86)\Emergingsoft\Appointment&#160;</span><span class="span_4"><br />Notifier\Emergingsoft.MeetingPlanner.AppointmentNotifierEws.exe</span>
+        </p>
+        <p class="p_4">Work Request Notifier Service&#160;</p>
+        <p class="p_3">1) &#160;Open the cmd.exe as an Administrator.</p>
+        <p class="p_3">2) &#160;User the "cd" command to navigate to the .NET 4.0 directory</p>
+        <p class="p_6">C:\&gt; cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\</p>
+        <p class="p_3">3) &#160;Execute the following command to uninstall the service:</p>
+        <p class="p_6">...v4.0.30319&gt; InstallUtil.exe -u “C:\Program Files (x86)\Emergingsoft\Work Request Notifier\Emergingsoft.MeetingPlanner.WorkRequestNotifier.exe</p>
+        <p>&#160;</p>
+    </body>
+</html>

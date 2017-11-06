@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-27T10:13:00.9850342-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-27T10:13:10.5432986-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Using EMS Kiosk App.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Using EMS Kiosk App.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Using EMS Kiosk App.png"
+      TimeStamp="10/27/2017 10:13:07 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Using EMS Kiosk App.htm"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Getting Started with the EMS.png"
+      TimeStamp="10/27/2017 10:13:07 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Getting Started with the EMS.htm"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Overview The EMS Kiosk App.png"
+      TimeStamp="10/27/2017 10:13:07 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Overview The EMS Kiosk App_1.png"
+      TimeStamp="10/27/2017 10:13:07 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Overview The EMS Kiosk App.htm"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_1.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_2.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_3.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_4.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_5.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Your Reservations_6.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Viewing Your Reservations.htm"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_1.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_2.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_3.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_4.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_5.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_6.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_7.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Booking a Desk or Workspace_8.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Booking a Desk or Workspace.htm"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Locating a Space in EMS Kiosk.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Locating a Space in EMS Kiosk_1.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Locating a Space in EMS Kiosk.htm"
+      TimeStamp="10/27/2017 10:13:09 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Today s Events in.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Today s Events in_1.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Using EMS Kiosk App/Viewing Today s Events in_2.png"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Using EMS Kiosk App/Viewing Today s Events in.htm"
+      TimeStamp="10/27/2017 10:13:09 AM" />
+    <Url
+      Source="../TOCs/Using EMS Kiosk App.fltoc"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Using EMS Kiosk App.css"
+      TimeStamp="10/27/2017 10:13:08 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-color-669933" />
+  </UsedCharacterStyles>
+</MsWordImport>

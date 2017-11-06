@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1178" MadCap:lastWidth="917" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installing/Upgrading the Master Calendar Web Service</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Installing/Upgrading the Master Calendar Web Service</h1>
+        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
+        </p>
+        <p>Once you meet the&#160;<a rel="internal" title="Master Calendar API Requirements and Licensing" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/010_Requirements_for_Master_Calendar_v44.1/page.html" alt="Master Calendar API Requirements and Licensing">prerequisites</a>,&#160;<a rel="internal" title="Obtaining Master Calendar API Installation Files" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/020_Installation_Instructions_for_Master_Calendar_version_44.1/010_Obtaining_Master_Calendar_API_Installation_Files/page.html" alt="Obtaining Master Calendar API Installation Files">download the installation files</a>, <a rel="internal" title="Running the Master Calendar API Installer" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/020_Installation_Instructions_for_Master_Calendar_version_44.1/020_Running_the_Master_Calendar_Installer/page.html" alt="Running the Master Calendar API Installer">run the Master Calendar Installer</a>, and <a title="Installing/Upgrading the Database Component in Master Calendar" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/020_Installation_Instructions_for_Master_Calendar_version_44.1/Installing%25252FUpgrading_the_Database_Component_in_Master_Calendar/page.html" alt="Installing/Upgrading the Database Component in Master Calendar">Install/upgrade the Database Component</a>,&#160;you will:</p>
+        <ul>
+            <li>Install/upgrade the API Web Service&#160;(following the steps below).</li>
+        </ul>
+        <p><em>Optional:</em>
+        </p>
+        <ul>
+            <li><a rel="internal" target="_blank" title="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/050_Configuring_Master_Calendar_for_Master_Calendar_API_Web_Service_Use" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/020_Installation_Instructions_for_Master_Calendar_version_44.1/Configuring_Master_Calendar_to_Use_the_Master_Calendar_Web_Service/page.html" alt="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/050_Configuring_Master_Calendar_for_Master_Calendar_API_Web_Service_Use">Configure Master Calendar to use the Web Service</a>.</li>
+            <li><a rel="internal" target="_blank" title="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/060_Verifying_the_Master_Calendar_API" href="../../../../B/ems/Content/relative/Installation_Setup_Guides/EMS_Master_Calendar/Master_Calendar_API/060_Verifying_the_Master_Calendar_API/page.html" alt="https://success.emssoftware.com/Master_Calendar/Master_Calendar_API/060_Verifying_the_Master_Calendar_API">Verify the Master Calendar API</a> installation.&#160;</li>
+        </ul>
+        <ol>
+            <li><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Download the <strong>MCAPI.msi</strong> file onto the web server that will be running the Master Calendar API Web Service (typically the web server that hosts your Master Calendar site.) </span></span>
+            </li>
+            <li><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Run <strong>MCAPI.msi</strong>. </span></span>
+            </li>
+            <li><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The first screen welcomes you to the Master Calendar API Setup Wizard.&#160; Click <strong>Next </strong>to begin the installation process.&#160; The <em>Destination Folder</em> screen will appear. </span></span>
+            </li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" style="width: 360px;height: 281px;" width="360px" height="281px" />
+        </p>
+        <p align="center" style="margin-left: 2.9pt;">&#160;</p>
+        <ol>
+            <li value="4"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Select the destination folder.&#160; The installation process will create a new physical directory on your web server based on the destination folder path entered (“MCAPI” in the example above.)&#160; Click <strong>Next</strong>. </span></span>
+            </li>
+        </ol>
+        <p style="margin-left: 36.5pt;"><strong><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Note:</span></span></strong><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">&#160; The Master Calendar API Web Service should <u>not</u> be installed in the same physical directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API. </span></span>
+        </p>
+        <ol>
+            <li value="5"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The <em>SQL Server and database information</em> screen will appear. </span></span>
+            </li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" style="width: 350px;height: 273px;" width="350px" height="273px" />&#160;</p>
+        <ol>
+            <li value="6"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Enter your Master Calendar SQL Instance Name. </span></span>
+            </li>
+            <li value="7"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Enter your Master Calendar Database Name. </span></span>
+            </li>
+            <li value="8"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Click <strong>Next</strong>. </span></span>
+            </li>
+            <li value="9"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The <em>Virtual Directory information</em> screen will appear.&#160;&#160; </span></span>
+            </li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" style="width: 359px;height: 280px;" width="359px" height="280px" />
+        </p>
+        <ol>
+            <li value="10"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The Virtual Directory Name will default to the destination folder specified in Step 4.&#160; It is recommended that you keep the default setting.&#160; The installation process will create a virtual directory on your web server based on the virtual directory entered (“MCAPI” in the example above.)&#160; Click <strong>Next</strong>. </span></span>
+            </li>
+        </ol>
+        <p style="margin-left: 36.5pt;"><strong><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">Note:</span></span></strong><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">&#160; The Master Calendar API Web Service should <u>not</u> be installed in the same virtual directory as other EMS web-based products OR under a site running another version of Master Calendar or the Master Calendar API. </span></span>
+        </p>
+        <ol>
+            <li value="11"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The <em>Ready to install Master Calendar API</em> screen will appear.&#160; Click&#160; <img alt="" class="internal" style="width: 106px;height: 22px;" width="106px" height="22px" /></span></span>&#160;<span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">to install the Master Calendar API Web Service. </span></span></li>
+            <li value="12"><span class="mt-font-Arial,sans-serif"><span class="mt-font-size-10.0pt">The <em>Completed the Master Calendar API Setup Wizard</em> screen will appear.&#160; Click <strong>Finish</strong>.&#160;&#160; </span></span>
+            </li>
+        </ol>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

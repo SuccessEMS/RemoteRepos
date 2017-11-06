@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultTarget Version="2" Comment="MadCap HTML5 Target" Type="PDF" Destinations="" GlossaryTermConversion="marked" MoveOutputContentToRoot="false" SkinComponents="" EnableResponsiveOutput="true" MasterPage="/Content/Resources/MasterPages/OtherTopicsFixedSideMenu.flmsp" ResultsPerPage="10" ConditionTagExpression="include[&quot;General.Audience A&quot;] exclude[&quot;General.Audience B&quot;] " DefaultUrl="/Content/Home.htm" MenuSkin="/Project/Skins/SideMenuFixed.flskn" MasterStylesheet="/Content/Resources/Stylesheets/StylesForHomePage.css">
+    <PrintedOutput CollapseMargins="true" GenerateTOCProxy="true" GenerateIndexProxy="true" GenerateGlossaryProxy="true" />
+</CatapultTarget>

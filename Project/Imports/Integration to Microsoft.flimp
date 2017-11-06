@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-30T12:30:42.3521383-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-30T12:31:04.9244006-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Integration to Microsoft.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Integration to Microsoft.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Integration to Microsoft Exchange.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Integration to Microsoft Exchange.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Introduction.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Introduction_1.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Introduction.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Integration to Exchange Requirements.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Installation and Upgrade Instructions.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to_1.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to_2.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to_3.png"
+      TimeStamp="10/30/2017 12:30:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to.gif"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Configuring Integration to_4.png"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Configuring Integration to.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Using Application Pool Identity.jpg"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Integration to Microsoft/Using Application Pool Identity.png"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Using Application Pool Identity.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Configuring EWS Impersonation.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Integration to Microsoft/Learning More About Exchange.htm"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../TOCs/Integration to Microsoft.fltoc"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Integration to Microsoft.css"
+      TimeStamp="10/30/2017 12:30:49 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 6" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="mt-indent-1" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Title1" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-font-size-12.0pt" />
+    <StyleName
+      Name="mt-font-trebuchet-ms" />
+    <StyleName
+      Name="mt-color-000000" />
+    <StyleName
+      Name="mt-color-b22222" />
+    <StyleName
+      Name="mt-color-336699" />
+    <StyleName
+      Name="mt-font-size-11.0pt" />
+    <StyleName
+      Name="mt-font-calibri" />
+  </UsedCharacterStyles>
+</MsWordImport>

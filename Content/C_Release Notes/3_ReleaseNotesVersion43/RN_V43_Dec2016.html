@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">December 2016</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">December 2016</h1>
+        <table border="1" cellpadding="1" cellspacing="1" style="width: 352px;table-layout: fixed;">
+	<tbody>
+		<tr>
+			<td style="width: 214px;"><strong>Patch</strong></td>
+			<td style="width: 129px;"><strong>2016.12.06.0</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 214px;"><strong>Client</strong></td>
+			<td style="width: 129px;"><strong>43.0.389</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 214px;"><strong>{{product_emsk}}</strong></td>
+			<td style="width: 129px;"><strong>43.0.0.249</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 214px;"><strong>{{product_vems}}</strong></td>
+			<td style="width: 129px;"><strong>43.0.156.156</strong></td>
+		</tr>
+		<tr>
+			<td style="width: 214px;"><strong>EMS API</strong></td>
+			<td style="width: 129px;"><strong>1.1.39</strong></td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" class="mt-responsive-table">
+	<tbody>
+		<tr>
+			<td class="mt-noheading" colspan="2" style="height: 17px;">
+			<h4>{{product_emsk}}</h4>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 5px;">
+			<dl>
+				<dt><strong>Reported Issue</strong></dt>
+			</dl>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 5px;">
+			<dl>
+				<dt><strong>Issue Resolution</strong></dt>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><i>Security</i></p>
+
+			<p><strong>Web Traffic Security Vulnerabilities</strong></p>
+
+			<p>The web application sent non-secure user and session information (cookies) during encrypted (SSL) sessions, exposing vulnerable information.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Added ANtiForgery validation to all Ajax HttpPost calls and added verb tampering redirection to prevent non http or Get calls being made to Kiosk so web traffic no longer exposes user and session information.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T16:22:05.683Z">Dec 8, 2016 @ 9:22 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23979">23979</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><i>Translations</i></p>
+
+			<p><strong>Bookings Fail in Slovakian</strong></p>
+
+			<p>Users were unable<em>&#160;</em>reserve a room using a profile with default translation in Slovak.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified functionality to ensure that bookings succeed using Slovakian translation.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T16:28:23.845Z">Dec 8, 2016 @ 9:28 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23907">23907</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-40" colspan="2" style="height: 17px;">
+			<h4>{{product_vems}}</h4>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<dl>
+				<dt><strong>Reported Issue</strong></dt>
+			</dl>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<dl>
+				<dt>Issue Resolution</dt>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>Security</em></p>
+
+			<p><strong>Security Vulnerability</strong></p>
+
+			<p>Security vulnerabilities were identified in the javascript file Jquery.min.js.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Updated the&#160;jQuery JavaScript Library&#160;to a version higher than 1.4.4, &#160;and the&#160;jQuery UI Library to a version higher than 1.8.17.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T18:52:42.643Z">Dec 8, 2016 @ 11:52 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p>23276</p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>New Reservations</em></p>
+
+			<p><strong>Incorrect Building Hours&#160;Violation for Overnight and Recurrent Meetings</strong></p>
+
+			<p>When users attempted to book space starting on one day and ending on the next (overnight), or they attempted to book a recurrent meeting, the booking failed due to a building hours violation.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified booking rules validations to ensure that bookings succeed even when recurrent or spanning midnight.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T18:10:49.094Z">Dec 8, 2016 @ 11:10 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p>24687,&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23981">23981</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<h4>EMS Campus</h4>
+
+			<dl>
+				<dt>&#160;</dt>
+			</dl>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">&#160;</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<dl>
+				<dt><strong>Reported Issue</strong></dt>
+			</dl>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<dl>
+				<dt>Issue Resolution</dt>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><i>Academic Book</i></p>
+
+			<p><strong>Instructor View of Courses Unavailable When Listing All Subjects</strong></p>
+
+			<p>When users navigated to the course view for a specific instructor and included all subjects, the view was empty.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified the view to show all courses for an instructor in all subjects as expected.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-07T17:42:48.028Z">Dec 7, 2016 @ 10:42 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p>Bug <a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22396">#</a>&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25096">25096</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>Cross Listed Courses</em></p>
+
+			<p><strong>Changes to Cross-Listed Courses Not Updated After Synch</strong></p>
+
+			<p>When users changed multiple cross-listed courses that had a single parent reservation, their changes were not updating in the EMS database after the first synchronization. &#160;</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified the SIS updates so that these changes update in the EMS database.&#160;</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-07T17:51:53.476Z">Dec 7, 2016 @ 10:51 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/22835">22835</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>Publish Courses</em></p>
+
+			<p><strong>Cross-Listed Courses Missing Info, Slow Performance</strong></p>
+
+			<p>When users published a term that included cross-listed courses, conflict handling caused slow performance, errors, and the courses were missing course dates.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified conflict handling so that data is published efficiently and the issues no longer occur.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T16:12:25.243Z">Dec 8, 2016 @ 9:12 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25105">25105</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>Cancelations</em></p>
+
+			<p><strong>Canceling One Meeting Pattern Updates Course Status Incorrectly</strong></p>
+
+			<p>When users canceled one meeting pattern for a published term that had more than one meeting pattern, the reservation status incorrectly changed to Canceled.</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified validations so the reservation status remains Confirmed as long as one confirmed meeting pattern exists in the course.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T16:09:53.735Z">Dec 8, 2016 @ 9:09 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25106">25106</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="mt-noheading mt-column-width-30" style="height: 17px;">
+			<p><em>Campus &gt; Tools &gt; Wizard &gt; Delete Items</em></p>
+
+			<p><strong>Error Occurs Incorrectly When Deleting Service</strong></p>
+
+			<p>When users deleted services from rooms using the Delete Items wizard, an error presented although the deletion was successful.&#160;</p>
+			</td>
+			<td class="mt-noheading mt-column-width-70" style="height: 17px;">
+			<p>Modified the display so the error does not present when deletion is successful.&#160;</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-05T21:53:31.831Z">Dec 5, 2016 @ 2:53 PM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24016">24016</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<h4>{{product_dtc}}</h4>
+
+			<dl>
+				<dt>&#160;</dt>
+			</dl>
+			</td>
+			<td style="height: 17px;width: 497px;">&#160;</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="height: 17px;width: 497px;">
+			<p><em>Time Zone Enhancement:</em><strong> Update to Remove Daylight Savings Time from Turkish Time Zones</strong></p>
+
+			<p>Modified time zone definitions throughout EMS to account for the Turkish government's decision to no longer observe Daylight Savings Time.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-05T18:55:38.757Z">Dec 5, 2016 @ 11:55 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/24003">24003</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<dl>
+				<dt><strong>Reported Issue</strong></dt>
+			</dl>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<dl>
+				<dt>Issue Resolution</dt>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Reservation Book</em></p>
+
+			<p><strong>User Access for Combo Rooms Not Observed</strong></p>
+
+			<p>Bookings for combo rooms and their components did not display&#160;as intended&#160;when users did&#160;<em>not&#160;</em>have access to combo rooms but&#160;<em>did&#160;</em>have access to component&#160;rooms: the Reservation Book displayed the booking&#160;to these users&#160;as if it were in one of the component rooms in the combo when it should have displayed as being in all the component rooms for which the users had been assigned access.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified validations to ensure that users who do not have&#160;access to combo rooms will see the&#160;booking in the appropriate component rooms&#160;in the Reservation Book. Additionally, modified the display so that these users can see when combo&#160;<em>and&#160;</em>component&#160;rooms are blocked.&#160;</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-05T18:45:45.677Z">Dec 5, 2016 @ 11:45 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/25007">25007</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Configuration &gt; Everyday User Applications &gt; Everyday Users</em></p>
+
+			<p><strong>Filtering By Both City and Process Template Fails</strong></p>
+
+			<p>When searching for Everyday Users, with the "Everyday Users linked to Groups via External Reference" parameter turned on, filtering results by both&#160;City and Process Template returned a list of all records.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified the list to filter correctly.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-05T18:50:22.875Z">Dec 5, 2016 @ 11:50 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23916">23916</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Configuration &gt; Facilities&#160; &gt; Rooms</em></p>
+
+			<p><strong>Non-Admin Users Unable to Set Room Request/Reserve Preferences on Booking Templates</strong></p>
+
+			<p>When non-administrative users configured rooms, the Web Process Template tab was unavailable.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified the Room Configuration page to enable the Web Process Template tab when expected.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-05T18:51:39.671Z">Dec 5, 2016 @ 11:51 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23928">23928</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&#160;</p>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Building Level Check-In</em></p>
+
+			<p><strong>Building Check-in Times Incorrect on Printed Form</strong></p>
+
+			<p>When users printed the Building Check-in Form, check-in times incorrectly showed in the server&#160;time zone.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified the printed form to show the time zone in the user's preferred time zone&#160;(set in the "Display Audit Times In This Time Zone" preference).</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T19:43:51.820Z">Dec 8, 2016 @ 12:43 PM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/21382">21382</a></p>
+			</div>
+			</div>
+
+			<p>&#160;</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Notifications</em></p>
+
+			<p><strong>Notifications&#160;Not Triggered for Date/Time, Status, or Room Changes</strong></p>
+
+			<p>When users changed dates or times, status, or room for events that had notification rules to email participants such as event coordinators, and there were additional notification rules for the events set to monitor other status changes, the date/time change&#160;notifications did not occur.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified validations to ensure that notifications are sent to participants as expected.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-06T20:06:04.715Z">Dec 6, 2016 @ 1:06 PM</time></div>
+
+			<div class="mt-comment-content">
+			<p>25241</p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Services</em></p>
+
+			<p><strong>Resources From Setup Worksheet Out of Order</strong></p>
+
+			<p>When users used a setup worksheet to add resources to bookings, they were listed in the wrong order and groupings.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified import sequence for setup worksheet so that resources now show in chronological and category groupings.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T15:55:26.768Z">Dec 8, 2016 @ 8:55 AM</time></div>
+
+			<div class="mt-comment-content">
+			<p>25184</p>
+			</div>
+			</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="height: 17px;width: 497px;">
+			<p><em>Automated Reports Service</em></p>
+
+			<p><strong>Automated Reports Service Not Running</strong></p>
+
+			<p>The service&#160;for version 44 was not starting.</p>
+			</td>
+			<td style="width: 498px;height: 17px;">
+			<p>Modified the service to start as expected.</p>
+
+			<div class="comment">
+			<div class="mt-comment-meta">
+			<div class="mt-comment-author">Charity Dominic</div>
+			<time class="mt-comment-datetime" datetime="2016-12-08T19:36:57.479Z">Dec 8, 2016 @ 12:36 PM</time></div>
+
+			<div class="mt-comment-content">
+			<p><a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems/edit/23401?fullScreen=false">23401</a></p>
+			</div>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td colspan="3" style="width: 75px;">
+			<h4>EMS API&#160;&#160;</h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 78px;">
+			<dl>
+				<dt><strong>Build</strong></dt>
+			</dl>
+			</td>
+			<td style="height: 17px;width: 534px;">
+			<dl>
+				<dt><strong>Reported Issue</strong></dt>
+			</dl>
+			</td>
+			<td style="width: 617px;height: 17px;">
+			<dl>
+				<dt><strong>Issue Resolution</strong></dt>
+			</dl>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 78px;">
+			<p align="center">1.1.39</p>
+			</td>
+			<td style="height: 17px;width: 534px;">
+			<p>Some customers required additional support when integrating with third-party room signs that required combo room information.</p>
+
+			<div if="user.seated" class="mt-style-conditional style-wrap" title="Conditional text (pro member only)">
+			<p>25284</p>
+			</div>
+			</td>
+			<td style="width: 617px;height: 17px;">
+			<p>Added the GetBookingHistory API call, which provides the combo room information including Room ID to support &#160;additional room-sign integration.&#160;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

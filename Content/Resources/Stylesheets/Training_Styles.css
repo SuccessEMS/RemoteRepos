@@ -1,0 +1,39 @@
+/*<meta />*/
+
+p.MyStyle
+{
+	font-family: Arial;
+	font-size: 12pt;
+	margin: 0px;
+}
+
+img
+{
+	border: none;
+}
+
+a.Popup
+{
+	
+}
+
+body
+{
+	font-family: Arial;
+	font-size: 1em;
+}
+
+button
+{
+	font-weight: bold;
+	font-style: normal;
+	font-variant: small-caps;
+}
+
+p.tip
+{
+	font-weight: bold;
+	font-style: normal;
+	vertical-align: sub;
+}
+

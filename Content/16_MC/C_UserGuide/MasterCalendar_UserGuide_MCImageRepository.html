@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Master Calendar Image Repository</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Master Calendar Image Repository</h1> <pre class="script" mt-export-translate="no" xml:space="preserve">
+		&lt;table&gt;		    &lt;thead&gt;&lt;tr&gt;		        &lt;th&gt;"File Name"&lt;/th&gt;		        &lt;th&gt;"Last Modified"&lt;/th&gt;		        &lt;th&gt;"Image"&lt;/th&gt;		    &lt;/tr&gt;&lt;/thead&gt;		    &lt;tbody&gt;&lt;/tbody&gt;		foreach (var file in list.orderby(map.values(page.files), "name")) {
+		    &lt;tr&gt;		        &lt;td class="file-name sorting_1"&gt;&lt;a href=(file.uri)&gt;file.name&lt;/a&gt;&lt;/td&gt;		        &lt;td&gt;date.format(file.date,"MMMM dd, yyyy");&lt;/td&gt;		        &lt;td&gt;&lt;a href=(file.uri)&gt;&lt;img src=(file.thumburi) /&gt;&lt;/a&gt;&lt;/td&gt;		    &lt;/tr&gt;		}
+		&lt;/table&gt;
+		</pre> <pre class="script-css" mt-export-translate="no" xml:space="preserve">
+		.mt-content-container table img {
+		    max-width: 250px;
+		}
+		</pre> <hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

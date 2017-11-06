@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="5554.333" MadCap:lastWidth="845" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Exchange Sync Utility</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Exchange Sync Utility</h1>
+        <p>This topic will provide an overview and detail the benefits of Exchange Sync Utility, as well as outline its installation.</p>
+        <ul>
+            <li><a title="Exchange Sync Utility"><strong>Overview</strong></a>
+            </li>
+            <li><a title="Exchange Sync Utility"><strong>Installing Exchange Sync Utility</strong></a>
+                <ul>
+                    <li><a title="Exchange Sync Utility"><strong>Commands</strong></a>
+                    </li>
+                    <li><a title="Exchange Sync Utility"><strong>Syntax</strong></a>
+                    </li>
+                    <li><a title="Exchange Sync Utility"><strong>Parameters</strong></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <h2><strong><a id="overview" name="overview"></a>Overview</strong>
+        </h2>
+        <h3><strong>What is Exchange Sync Utility?</strong>
+        </h3>
+        <p>Exchange Sync Utility&#160;allows existing bookings in EMS to be synchronized with configured Exchange resource mailboxes. Exchange Room Integration (ERI) will automatically synchronize new bookings once rooms and resources are configured, but existing bookings will not automatically be synchronized. Exchange Sync Utility is a tool to push those existing bookings to the corresponding Exchange resource mailbox.&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span> Existing customers already utilizing Exchange resource mailboxes will need to resolve conflicting Exchange appointments prior to synchronization.&#160;Synchronization issues should be resolved in Exchange, and conflicts checked again until all issues are resolved.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2><strong><a id="installation" name="installation"></a>Installing Exchange Sync Utility</strong>
+        </h2>
+        <p>The Exchange Sync Utility is installed in the Platform API directory. The utility does not to be accessed from the directory running Platform Services. The Platform API can be installed locally to utilize Exchange Sync Utility. <strong>Users must have write permission to the directory where installed for the creation of reports.</strong></p>
+        <ol>
+            <li>Open a Command Prompt and navigate to Platform API directory.</li>
+            <li>Type exchangesync to see a list of commands.</li>
+        </ol>
+        <div class="NoteBox"><span class="mt-color-669900"><strong>Note: </strong></span> CSV output is generated in the directory where the Exchange Sync Utility is located. <strong>Write access is required. </strong>CSV input file should be in the directory where the Exchange Sync Utility is located.<strong> Read access is required.</strong></div>
+        <table class="TableStyle-PatternedRows" style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1" scope="col"><strong><a id="commands" name="commands"></a>Commands</strong>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1" scope="col">&#160;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" data-th="Commands"><strong>-List</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Use this command to list the bookings Exchange Sync Utility will send to Exchange before synchronization. This can be written to a .csv file to reference all bookings and potential conflicts.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" data-th="Commands"><strong>-Sync</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Use this command to synchronize EMS bookings to Exchange.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" data-th="Commands"><strong>-SyncOne</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Use this command to synchronize&#160;a single booking to Exchange.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" data-th="Commands"><strong>-Import</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Use this command to import room and resource mailboxes into EMS. The format utilizes the ID of the room or resource and the SMTP mail address in exchange.&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" data-th="Commands"><strong>-Rooms</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Use this command to view a list of rooms and their configured mailboxes. This can be written to a .csv file to reference the configurations.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows" data-th="Commands"><strong>-Resources</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">Use this command to view a list of resources and their configured mailboxes. This can be written to a .csv file to reference the configurations.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-30" scope="col"><strong><a id="syntax" name="syntax"></a>Syntax</strong>
+                    </th>
+                    <th class="mt-column-width-70" scope="col">&#160;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Syntax"><strong>List</strong>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p><span class="mt-font-courier-new">exchangesync.exe -exec=list -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />            [-csv=&lt;out.csv&gt;]</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Syntax"><strong>Sync</strong>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p><span class="mt-font-courier-new">exchangesync.exe -exec=sync -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />            [-csv=&lt;out.csv&gt;] [-bookings=&lt;1,2,3...&gt;]</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Syntax"><strong>Import</strong>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p><span class="mt-font-courier-new">exchangesync.exe -exec=import -url=&lt;platform url&gt; -user=&lt;username&gt; \ -pass=&lt;password&gt;<br />            -rooms=&lt;rooms.csv&gt; -resources=&lt;resources.csv&gt;</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Syntax"><strong>Rooms</strong>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p><span class="mt-font-courier-new">exchangesync.exe -exec=rooms -url=&lt;platform url&gt; -user=&lt;username&gt; \&#160;-pass=&lt;password&gt;<br />            [-csv=&lt;out.csv&gt;]</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Syntax"><strong>Resources</strong>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p><span class="mt-font-courier-new">exchangesync.exe -exec=resources -url=&lt;platform url&gt; -user=&lt;username&gt; \&#160;-pass=&lt;password&gt; [-csv=&lt;out.csv&gt;]</span>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table class="mt-responsive-table">
+            <thead>
+                <tr>
+                    <th class="mt-column-width-30" scope="col"><strong><a id="parameters" name="parameters"></a>Parameters</strong>
+                    </th>
+                    <th class="mt-column-width-70" scope="col">&#160;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Parameters">
+                        <p><span class="mt-font-courier-new">-exec=&lt;command&gt;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-url=&lt;platform url&gt;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-user=&lt;username&gt;</span>
+                        </p>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p>The command to run</p>
+                        <p>The EMS Platform API url</p>
+                        <p>Username for authentication</p>
+                        <p><strong>Note</strong>: Must have web admin privileges.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Parameters">
+                        <p><span class="mt-font-courier-new">-pass=&lt;password&gt;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-bookings=&lt;booking ids&gt;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-start=&lt;datetime&gt;</span>
+                        </p>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p>The password for authentication</p>
+                        <p>Comma separated list of booking IDs to sync</p>
+                        <p>Limit sync items to after this date and time. Requires <span class="mt-font-courier-new">-end</span></p>
+                        <p><span class="mt-font-arial"><strong>Example</strong>:</span><b>&#160;</b>&#160;<span class="mt-font-courier-new">- format 2008-09-08T22:47:31-07:00</span></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Parameters"><span class="mt-font-courier-new">-end=&lt;datetime&gt;</span>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p>Limit sync items to before this date and time. Requires <span class="mt-font-courier-new">-start</span></p>
+                        <p><strong>Example:&#160;</strong><span class="mt-font-courier-new">- format 2008-09-08T22:47:31-07:00</span>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-column-width-30" data-th="Parameters">
+                        <p><span class="mt-font-courier-new">-rooms=&lt;rooms.csv&gt;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-resources=&lt;resources.csv&gt;&#160;&#160;&#160;&#160;&#160;</span>
+                        </p>
+                        <p><span class="mt-font-courier-new">-csv=&lt;output.csv&gt;&#160;&#160;&#160;&#160;</span>&#160;&#160;&#160;&#160;&#160;&#160; &#160;</p>
+                    </td>
+                    <td class="mt-column-width-70">
+                        <p>CSV input file for room import</p>
+                        <p>CSV input file for resource import</p>
+                        <p>CSV output file</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

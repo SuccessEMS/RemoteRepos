@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-24T15:13:29.7442567-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-24T15:14:00.6198703-06:00">
+  <Files>
+    <Url
+      Source="../../../1Word/Mobile_Authentication.docx"
+      AbsoluteSource="file:///C:/1Word/Mobile_Authentication.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/Open ID Connect Authentication.gif"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Mobile_Authentication/Open ID Connect Authentication.htm"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/Persistent Authentication.png"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/Persistent Authentication_1.png"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/Persistent Authentication_2.png"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Mobile_Authentication/Persistent Authentication.htm"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/SAML Authentication Can Be.png"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Mobile_Authentication/SAML Authentication Can Be_1.png"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Mobile_Authentication/SAML Authentication Can Be.htm"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../TOCs/Mobile_Authentication.fltoc"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Mobile_Authentication.css"
+      TimeStamp="10/24/2017 3:13:43 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-font-size-11.0pt" />
+  </UsedCharacterStyles>
+</MsWordImport>

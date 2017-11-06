@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1840" MadCap:lastWidth="2237">
+    <head><title mt-export-translate="no">EMS Mobile App System Parameters</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="false" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">
+            <MadCap:annotation MadCap:createDate="2017-10-24T13:41:40.8053289-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This is deki points to Mobile App Install/config guide, but I couldn't find the topic in the guide, but the topic there is deki and points to this topic. I found what looks like the correct info in the Archive docs. This information appears to be the same as what is shown in Mobile App in MindTouch. Double-check later to make certain." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T13:50:02.8145868-06:00">EMS&#160;Mobile App System Parame</MadCap:annotation>ters</h1>
+        <table border="0" cellpadding="0" cellspacing="0" width="2237">
+            <tbody>
+                <tr>
+                    <th height="19" style="width: 305px;" width="256"><strong>KeyValue (tblRegistry Name)</strong>
+                    </th>
+                    <th style="width: 588px;" width="542"><strong>Description</strong>
+                    </th>
+                    <th width="651"><strong>Configured Where?</strong>
+                    </th>
+                    <th width="226"><strong>Area</strong>
+                    </th>
+                    <th width="562"><strong>Notes</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td height="58" style="width: 305px;">VEMS_DefaultCancelReason</td>
+                    <td style="width: 588px;" width="542">Default Cancel Reason</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Create/Manage Reservations</td>
+                    <td width="562">Controls which Cancel Reason, if any, is applied to bookings that are cancelled by everyday users. The ability for a user to choose a Cancel Reason does not need to be enabled for a default Cancel Reason to be applied.</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_HelpLinkLabel</td>
+                    <td style="width: 588px;" width="542">Label for the Help Link on the mobile app</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_HelpLinkURL</td>
+                    <td style="width: 588px;" width="542">URL for the Help Link on the mobile app</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">Mobile_Require2FA</td>
+                    <td style="width: 588px;" width="542">Requires 2-factor authentication for all mobile logins</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Requires Two-Factor Authentication for mobile authentication</td>
+                </tr>
+                <tr>
+                    <td height="38" style="width: 305px;">Mobile_AuthHeaderVariable</td>
+                    <td style="width: 588px;" width="542">Sets the header variable for the EMS Mobile API's Header Authentication Method</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="38" style="width: 305px;">MOBILE_2faEmailSubject</td>
+                    <td style="width: 588px;" width="542">The subject for the EMS Mobile two-factor setup email</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Subject of the email sent to users notifying them to go to the webapp and scan their 2fa barcode</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_EverydayAppConfigJson</td>
+                    <td style="width: 588px;" width="542">Authentication configuration for the EMS Mobile App</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Stores the configuration the mobile app will use to authenticate against the api</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_MaxSupportedAppVersion</td>
+                    <td style="width: 588px;" width="542">Maximum EMS Mobile App version that the API should allow to connect</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Maximum app version that the api will allow to connect</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_MinSupportedAppVersion</td>
+                    <td style="width: 588px;" width="542">Minimum EMS Mobile App version that the API should allow to connect</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Minimum app version that the api will allow to connect</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_NumberofDays</td>
+                    <td style="width: 588px;" width="542">Inactivity period in minutes before auto logout from mobile app</td>
+                    <td width="651">Desktop Client &gt; System Administration - Settings - Parameters - Everyday User Applications tab</td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_QueryStringKey</td>
+                    <td style="width: 588px;" width="542">Key used to sign mobile query strings in links to virtual</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Key used to encrypt the query strings when emailing users links to the webapp</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">MOBILE_SessionTokenSigningKey</td>
+                    <td style="width: 588px;" width="542">Key use to for signing EMS Mobile session tokens</td>
+                    <td width="651"><span>Desktop Client &gt; </span><span>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </span><span>tab</span>
+                    </td>
+                    <td>Mobile-Specific</td>
+                    <td width="562">Key used to sign the tokens authenticated users receive once they create a valid session</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_User_RequirePhone</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Require Phone during account creation</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Account Management</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_User_SecurityStatus</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Default Account Status for Newly-Created User</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Account Management</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_ResBook_ShowWhatInBar</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Event Information to Display in Booking on Schedule View</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Schedule View</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_ReservationBook_StartTime</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Start Time on Schedule View</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Schedule View</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_Browse_DropEventsInPast</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Drop Events from Daily View After They Occur</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Browse Events</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_EmailAccount</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Account to Use for Sending Email</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email - Settings</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_EmailAccountPassword</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Password of Email Account</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email - Settings</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_EmailSender</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Name of Email Sender</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_EmailSenderAddress</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Email Address of Sender</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_EmailServer</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Name or IP Address of SMTP Server</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email - Settings</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">Vems_Reservations_AutoEmailFormat</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Format for Request Summary</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_Reservations_AutoSendSummary</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Send Request Summary upon Submit</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_Reservations_AutoSendSummaryOnCancel</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Send Confirmation on Cancel</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">VEMS_Reservations_DefaultSubject</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Default Subject for Email</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Email</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">LDAP_Authenticate</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">This determines whether to authenticate with Ldap.</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Virtual EMS <em>&gt; LDAPConfiguration.aspx &gt; Security </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">LDAP</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">MOBILE_CheckinProximityDistance</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Mobile checkin proximity distance</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Mobile-Specific</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">MOBILE_CheckinProximityUnitOfMeasurement</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Mobile checkin proximity unit of measurement</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Mobile-Specific</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">MOBILE_MinutesToRememberLogin</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p>Inactivity period in minutes before auto logout from mobile app</p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Mobile-Specific</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">MOBILE_ProximityDistance</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Mobile building proximity distance</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Mobile-Specific</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">MOBILE_ProximityUnitOfMeasurement</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Mobile building proximity unit of measurement</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Mobile-Specific</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">PAM_TextAboveEditLink</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">The text to display above the edit link</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">PAM Web Service &gt; <em>PAMConfig.aspx &gt; Message </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">PAM</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">
+                        <p><span style="color: black;">PAM_WebServiceURL</span>
+                        </p>
+                    </td>
+                    <td style="width: 588px;" width="542">
+                        <p><span style="color: black;">Exchange Integration Web Service URL</span>
+                        </p>
+                    </td>
+                    <td width="651">
+                        <p><span style="color: black;">Desktop Client <em>&gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</span>
+                        </p>
+                    </td>
+                    <td>
+                        <p><span style="color: black;">Integration to Microsoft Exchange</span>
+                        </p>
+                    </td>
+                    <td width="562">&#160;</td>
+                </tr>
+                <tr>
+                    <td height="19" style="width: 305px;">&#160;</td>
+                    <td style="width: 588px;" width="542">&#160;</td>
+                    <td width="651">&#160;</td>
+                    <td>&#160;</td>
+                    <td width="562">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator">
+        </hr>
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+    <head><title mt-export-translate="no">EMS Desktop Client Release Notes V44 Update 8b</title>
+        
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">EMS Desktop Client Release Notes V44 Update 8b</h1>
+        <section>
+<h5><span class="mt-font-size-20"><strong>Enhancements</strong>&#160;</span></h5>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 1051px;"><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 1051px;">
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><b>Time Zone and Daylight Savings Time Updates</b></dt>
+                <dd>Updated time zones to reflect new decisions by those cities to use their own time zones, or to&#160;not observe DST: Baku,Casablanca,&#160;Haiti and Easter Island.</dd>
+            </dl>
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;">25514</p>
+            </div>
+            
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h5><strong><span class="mt-font-size-20">Fixes&#160;</span></strong></h5>
+
+<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 1242px;">
+    <tbody>
+        <tr>
+            <td style="width: 222px;"><strong>Area</strong></td>
+            <td><strong>Description</strong></td>
+        </tr>
+        <tr>
+            <td style="width: 222px;"><i>Edit Booking</i></td>
+            <td>
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Error When Editing Date/Time for Multi-Location Exchange Web Booking</strong></span></dt>
+                <dd>
+                <p><span class="mt-color-000000" data-mt-color="1">When editing the time or date of a booking on a multi-location,&#160;Exchange-enabled reservation&#160;that had been created in {{product_webapp}}, the error "Cannot find stored Procedure:ems_RES_GETPAMLocations" occurred.</span></p>
+
+                <p><span class="mt-color-000000" data-mt-color="1"><strong>Fix:&#160;</strong>Restored the missing stored procedure so that the error does not occur.</span></p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">25524 V44 and V43</span></p>
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 222px;">
+            <p><em>Reports</em></p>
+
+            <p>&#160;</p>
+            </td>
+            <td>
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Daily Query Included Tomorrow's Bookings</strong></span></dt>
+                <dd>
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">When users ran a daily query report that included Booking Event Start and Booking End Display Fields, the report&#160;included both the day it ran for and some of the next day's bookings.</span></p>
+
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1"><strong>Fix:&#160;</strong>Modified functionality so that the report includes only data for the day reported.</span></p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">25401&#160;V44 and V43</span></p>
+            
+
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Automated Reports Option Absent From Main Menu</strong></span></dt>
+                <dd>
+                <p style="margin-left: 40px;">This menu option was not available under <strong>Reports &gt; Automated Report Delivery</strong>.</p>
+
+                <p style="margin-left: 40px;"><strong>Fix:&#160;</strong>Modified the display to show the Automated Reports option on the right side of the main menu under <strong>Reports &gt; Automated Report Delivery</strong>.&#160;</p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;">25877 just V44</p>
+            
+
+            <div class="EXPAND_CLASS">&#160;</div>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 222px;"><span class="mt-color-000000" data-mt-color="1"><em>Notifications</em></span></td>
+            <td>
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Notifications Not Triggered For Changed or Deleted Service Orders</strong></span></dt>
+                <dd>
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">When users created, changed, or canceled a service order that had a notification rule to only send an email (without posting to the dashboard) for changes to services, notifications did not occur.</span></p>
+
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1"><strong>Fix:&#160;</strong>Modified functionality so that notices now generate as expected.</span></p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">&#160;25579 just V44</span></p>
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 222px;">
+            <p><span class="mt-color-000000" data-mt-color="1"><em>Services</em></span></p>
+            </td>
+            <td>
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Hourly Minimum Price Calculated Incorrectly</strong></span></dt>
+                <dd>
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">When hourly resources had a minimum hourly rate, the amount was not correctly calculated during the process of adding them to bookings.</span></p>
+
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1"><strong>Fix:&#160;</strong>Modified validations to properly set and calculate the minimum price.&#160;</span></p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">25559&#160;V44 and V43</span></p>
+            
+
+            <div class="EXPAND_CLASS">
+            <dl>
+                <dt><span style="color: #0099cc;"><strong>Categories on Setup Worksheet Duplicated</strong></span></dt>
+                <dd>
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">When users used a setup worksheet to generate a report that sorted "by date by reserved time", categories were duplicated when they had separate services.</span></p>
+
+                <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1"><strong>Fix:&#160;</strong>Modified import sequence for setup worksheet so that resources now show in chronological and category groupings that do no duplicate for each service.</span></p>
+                </dd>
+            </dl>
+            </div>
+
+            <dl />
+
+            EMS_V44/V44_Release_Notes/Update_8b_Release_Notes/EMS_Desktop_Client_Release_Notes_V44_Update_8b
+            <p style="margin-left: 40px;"><span class="mt-color-000000" data-mt-color="1">25512&#160;V44 and V43</span></p>
+            
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<header>&#160;</header>
+</section>
+
+<footer>
+<p>&#160;</p>
+</footer>
+<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+</html>

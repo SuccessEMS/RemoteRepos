@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1994" MadCap:lastWidth="1330">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Title1">Using Application Pool Identity for Integration for Exchange Service Account</h1>
+        <p>Rather than entering&#160;the Integration for Exchange account credentials on the PAMConfig.aspx page (as in V44 and previous releases), credentials can be maintained at the Application Pool level. This allows your organization to maintain absolute control –&#160;<span class="Strong">only</span>&#160;IIS applications running in the newly created application pool can run as the Integration to Exchange Account.</p>
+        <p>This functionality requires the following:</p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1">Microsoft Exchange 2007 (SP1) or Exchange 2010.</li>
+            <li class="ListParagraph_1">Microsoft Exchange Impersonation Account (your EMS Integration to Exchange account).&#160; This account&#160;<span class="Strong">must</span>&#160;be using&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/Configuring_EWS_Impersonation_for_Microsoft%C2%AE_Exchange/Learning_More_About_Exchange_Web_Services_(EWS)_Impersonation" title="Learning More About Exchange Web Services (EWS) Impersonation"><span class="Hyperlink_2">Exchange Web Services (EWS) Impersonation</span></a>, not full access to the mailbox store.</li>
+        </ul>
+        <h2 class="Heading2"><span class="Strong_5">Configuring the Application Pool</span>&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Open IIS Manager</li>
+            <li class="ListParagraph">Open the&#160;Application Pools&#160;panel</li>
+            <li class="ListParagraph">Click&#160;Add Application Pool…</li>
+            <li class="ListParagraph">The&#160;Add Application Pool&#160;window opens.&#160; Enter a unique name and ensure to correct .NET Framework&#160;is selected.&#160; Managed pipeline mode should be&#160;<span class="Strong">Integrated</span>.&#160; Click&#160;<span class="Strong">OK</span></li>
+            <li class="ListParagraph">Find the Application Pool you just created.&#160;Right-click it and select&#160;<span class="Strong">Advanced Settings.</span></li>
+            <li class="ListParagraph">The third section in the list is&#160;<span class="Emphasis">Process Model</span>.&#160;Highlight&#160;<span class="Strong">Identity&#160;</span>and then click the (...) button to configure.</li>
+            <li class="ListParagraph">Choose&#160;<span class="Strong">Custom Account</span>&#160;and then click&#160;<span class="Strong">Set</span>.&#160;Enter the username and password for your EMS Integration to Exchange account.&#160;Confirm the password and click&#160;<span class="Strong">OK&#160;</span>on any remaining dialogs (see screenshot below).</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Integration to Microsoft/Using Application Pool Identity.jpg" style="height: 418px;width: 583px;" alt="https://success.emssoftware.com/@api/deki/files/134/image_43.jpg?revision=1&amp;size=bestfit&amp;width=583&amp;height=418" class="img_1" />
+        </p>
+        <ol start="8" class="ol_1">
+            <li class="ListParagraph">Within IIS Manager, navigate to the Virtual Directory containing the Integration for Exchange&#160;Web Service.&#160; This is under the Default Web Site by default, but may be installed to a different website.&#160;</li>
+            <li class="ListParagraph">With the IntegrationExchangeWebService Virtual Directory highlighted in the left pane, select&#160;<span class="Emphasis">Basic Settings…</span>&#160;under Actions in the right pane.</li>
+            <li class="ListParagraph">Click the&#160;<span class="Strong">Select</span><span class="Emphasis">…</span>&#160;button and then choose your newly created application pool from the list.</li>
+            <li class="ListParagraph">Click&#160;<span class="Strong">OK&#160;</span>on all remaining dialogs.</li>
+        </ol>
+        <h2 class="Heading2"><span class="Strong_5">Configuring&#160;Integration for Exchange to Use the Application Pool Account</span>&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">Navigate to the Integration for Exchange&#160;configuration area by opening a browser and entering the following:<br /><span class="span_2">http://[ServerName]/PAMWebService/PAMConfig.aspx&#160;</span>(replace [ServerName] with the name of your web server)</li>
+            <li class="ListParagraph">From the&#160;Account Info&#160;tab, find the&#160;Authentication Information&#160;section, check the box for&#160;<span class="Emphasis">“Use application pool identity when authenticating to calendaring service”</span>&#160; (see screenshot below).</li>
+            <li class="ListParagraph">With this option enabled, you can leave the&#160;Username&#160;and&#160;Password<span class="Emphasis">&#160;</span>fields blank in the Authentication Information section.</li>
+            <li class="ListParagraph">Click&#160;<span class="Strong">Save&#160;</span>button at the bottom of the page.&#160;</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Integration to Microsoft/Using Application Pool Identity.png" style="height: 451px;width: 1330px;" alt="https://success.emssoftware.com/@api/deki/files/6232/clipboard_e8ad9fb41bb4b13db227807218915c6cf.png?revision=1" class="img_1" />
+        </p>
+    </body>
+</html>

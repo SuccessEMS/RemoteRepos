@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1003.667" MadCap:lastWidth="762" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Using Windows Authentication (NTLM) for EMS Mobile</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2017-10-24T13:56:33.3168329-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is not listed in the MindTouch guide for Mobile Install/Config. Need to determine if topic should be included in documentation or archived." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:18:47.3954260-06:00">Using Windows Authentication (NTLM) for EMS Mobile</MadCap:annotation>
+        </h1>
+        <p>Follow the steps in this section to authenticate&#160;your users with Windows Authentication via Microsoft's NTLM challenge-response protocol. &#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>This requires that you install and use the optional <a title="Using the EMS Platform Services API">EMS Platform Services API</a>.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>User Login Scenario</h3>
+        <p>Once you have established a connection to the EMS Platform Services API, the user log-in process is as follows:</p>
+        <ul>
+            <li>EMS Mobile user will enter domain credentials on the Sign In screen and tap <strong>Sign In.</strong></li>
+            <li>{{product_mobile}}&#160;will send credentials to the EMS Platform Services API.</li>
+            <li>IIS will intercept the call and issue a challenge to&#160;{{product_mobile}}.
+    <ul><li>Mobile application will then perform all steps necessary to complete process with the user's provided credentials.</li></ul></li>
+            <li>Platform API receive the initial request and extract the authenticated user from the IIS context.</li>
+            <li>Platform API will verify the authenticated user against the EMS database and respond to the mobile app.</li>
+            <li>EMS Mobile User will be taken to the <strong>Home</strong> screen.</li>
+        </ul>
+        <p>If the credentials are missing when the user taps <strong>Sign In</strong>, an error message will appear indicating that&#160;fields are required. If the EMS Platform Services API is unable to verify the authenticated user, or if IIS rejects the request due to failed authentication, {{product_mobile}} will inform the user.</p>
+        <p>&#160;</p>
+        <h3>&#160;</h3>
+        <h3>Test Your&#160;Windows Authentication</h3>
+        <p>Assuming you have installed the EMS Platform Services API at &#160;<a rel="freelink" href="https://yourcompany.com/ems-platform-api" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>, you can test the authentication with a <span class="mt-font-size-11.0pt">curl</span> command:</p>
+        <blockquote>
+            <p>curl -X POST -H "x-ems-consumer: MobileApp" -H "Content-Type: application/json" --ntlm&#160; -u your_username:your_password -vvvv -d '{}'&#160; "<a class="link-https" href="https://ems.yourcompany.com/endpoint/api/v1/authentication" rel="freeklink" title="https://ems.yourcompany.com/endpoint/api/v1/authentication">https://ems.yourcompany.com/endpoint...authentication</a>"</p>
+        </blockquote>
+        <p>...where <span class="mt-font-size-11.0pt">your<em>_username</em></span> and <span class="mt-font-size-11.0pt">your<em>_password</em></span> are your credentials.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note:&#160;</strong></span><strong><span class="mt-font-size-11.0pt">api/v1/authentication</span></strong> is the endpoint within the API where your request must be sent.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>NTLM Authentication</a>
+        </p>
+    </body>
+</html>

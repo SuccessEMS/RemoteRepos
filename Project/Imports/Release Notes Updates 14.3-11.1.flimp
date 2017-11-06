@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport PreserveSourceStyles="false" KeepSourceLinks="true" ConvertInlineFormatting="true" AddContinuedLinks="false" AddContinuedFromLinks="false" ContinuedLinkFormat="(continued in {title})" ContinuedFromLinkFormat="(continued from {title})" UseMaxCharLimit="false" UseMinCharLimit="true" MaxCharLimit="10000" MinCharLimit="50" FilenameLength="24" GeneratePageLayouts="false" UseFirstHeadingAsTopicTitle="true" ConvertEquations="true" LastCollectTime="2017-08-15T13:32:45.2113177-06:00" ProjectName="Technical Documentation" ProjectFolder="C:\Users\Jen.Naused\Desktop\Technical Documentation\Technical Documentation\" AutoSync="false" AutoFitTables="false" UseHeaderRows="false" Stylesheet="../../../Content/Resources/Stylesheets/MainStyles.css" LastImport="2017-08-15T13:33:24.0228114-06:00">
+    <Files>
+        <Url Source="../../../../Release Notes Updates 14.3-11.1.docx" AbsoluteSource="file:///C:/Users/Jen.Naused/Desktop/Release Notes Updates 14.3-11.1.docx" />
+    </Files>
+    <ExcludedFiles />
+    <CollectedSourceFiles />
+    <SkippedSourceFiles />
+    <GeneratedFiles>
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 14 3.htm" TimeStamp="8/15/2017 1:33:18 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Microsoft Outlook.htm" TimeStamp="8/15/2017 1:33:18 PM" />
+        <Url Source="../../Content/Resources/Images/Release Notes Updates 14.3-11.1/V44 1 Update 14 1.png" TimeStamp="8/15/2017 1:33:17 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 14 1.htm" TimeStamp="8/15/2017 1:33:18 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Platform Services Release.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 14.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Release Notes.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Platform Services Release_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Release Notes.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Release.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Floor Plan Release Notes.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS API Release Notes V44.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/Known Issues Version 44 1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Known Issues.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Known Issues.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Known Issues Update.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Known Issues.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Kiosk Known Issues Update.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS HR Toolkit Known Issues.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 13.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Release Notes.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Release Notes_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Kiosk Release Notes Version.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Platform Services Release_2.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Release_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Release Notes_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/Update 13 Known Issues.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Known Issues_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Known Issues_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Known Issues Update_1.htm" TimeStamp="8/15/2017 1:33:19 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Known Issues_1.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Kiosk Known Issues Update_1.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Platform Services Known.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 12.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Release Notes_1.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Release Notes_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Floor Plan Release Notes_1.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Release_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Release Notes_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Kiosk Release Notes.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Room Sign App Release.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Regics Release Notes.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Exchange Room Integration.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/Update 12 Known Issues.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Known Issues_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Known Issues_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Known Issues Update_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Known Issues_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Room Sign App Known Issues.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/V44 1 Update 11 1.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Release Notes_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS For Outlook Release Notes_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/Update 11 1 Known Issues.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS for Outlook Known Issues_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Kiosk Known Issues Update_2.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Mobile App Known Issues_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Web App Known Issues Update_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../../Content/Release Notes Updates 14.3-11.1/EMS Desktop Client Known Issues_3.htm" TimeStamp="8/15/2017 1:33:20 PM" />
+        <Url Source="../TOCs/Release Notes Updates 14.3-11.1.fltoc" TimeStamp="8/15/2017 1:33:18 PM" />
+        <Url Source="../../Content/Resources/Stylesheets/MainStyles_1.css" TimeStamp="8/15/2017 1:33:18 PM" />
+    </GeneratedFiles>
+    <ParagraphStyles>
+        <Map From="Heading 1" To="h1" />
+        <Map From="Heading 2" To="h2" />
+        <Map From="Heading 3" To="h3.Heading 3" />
+        <Map From="Heading 4" To="h4.Heading 4" />
+    </ParagraphStyles>
+    <CharacterStyles>
+        <Map From="Hyperlink" To="a.(MS Word Style)" />
+    </CharacterStyles>
+    <NewTopicStyles>
+        <StyleName Name="Heading 1" />
+    </NewTopicStyles>
+    <UsedParagraphStyles>
+        <StyleName Name="Comment Text" />
+        <StyleName Name="Heading 1" />
+        <StyleName Name="Heading 2" />
+        <StyleName Name="mt-indent-1" />
+        <StyleName Name="mt-indent-2" />
+        <StyleName Name="Normal (Web)" />
+        <StyleName Name="notetipwarningtext" />
+    </UsedParagraphStyles>
+    <UsedCharacterStyles>
+        <StyleName Name="author-d-iz88z86z86za0dz67zz78zz78zz74zz68zjz80zz71z9iz90z9z84z33d9ss6hz74z3iz90zuz85zz122zk95fz74z1z88z3klz89zz80zhx" />
+        <StyleName Name="Comment Reference" />
+        <StyleName Name="Emphasis" />
+        <StyleName Name="Hyperlink" />
+        <StyleName Name="mt-color-000000" />
+        <StyleName Name="mt-color-0000ff" />
+        <StyleName Name="mt-color-ff0000" />
+        <StyleName Name="mt-font-arial" />
+        <StyleName Name="mt-font-courier-new" />
+        <StyleName Name="mt-font-size-10.0pt" />
+        <StyleName Name="mt-font-size-9.0pt" />
+        <StyleName Name="Strong" />
+        <StyleName Name="Title1" />
+    </UsedCharacterStyles>
+</MsWordImport>

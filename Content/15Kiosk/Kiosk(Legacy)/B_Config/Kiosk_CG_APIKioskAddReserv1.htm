@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/EMS Kiosk API Reference.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">API Functions - Kiosk Add Reservation 1 and Reservation 2</h1>
+        <h2 class="Heading2">KioskAddReservation</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Adds a new event for a given set of parameters.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">UserName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EMS User Name</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Password *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EMS User Password</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Profile ID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Kiosk Profile ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EventName *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Event Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">RoomID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Room ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">GroupID *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Group ID</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EventTypeID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Event Type ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">DateTimeList *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">XML Date Time List</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 244pt;" />
+            <col style="width: 67pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">ReservationID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Reservation ID that was created in EMS</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>DateTimeList example:&#160;&lt;Dates&gt;&lt;Date requestedDate="2010-10-27" startTime="10:42:00" endTime="20:00:00" /&gt;&lt;/Dates&gt;.</p>
+        <p>For a reservation spanning multiple days just pass in additional&#160;&lt;Date /&gt;&#160;nodes in the DateList XML.</p>
+        <p>Returns a -1 if the Reservation was NOT created.</p>
+        <h2 class="Heading2">KioskAddReservation2</h2>
+        <p class="Emphasis_1">Description</p>
+        <p>Adds a new event for a given set of parameters.</p>
+        <p class="Emphasis_1">Request Parameters</p>
+        <table class="table_1">
+            <col style="width: 157pt;" />
+            <col style="width: 218pt;" />
+            <col style="width: 93pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">UserName *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EMS User Name</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Password *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EMS User Password</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Profile ID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Kiosk Profile ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">EventName *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Event Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">RoomID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Room ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">GroupID *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Group ID</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EventTypeID *</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Event Type ID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">DateTimeList *</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">XML Date Time List</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Response Elements</p>
+        <table class="table_1">
+            <col style="width: 156pt;" />
+            <col style="width: 236pt;" />
+            <col style="width: 76pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="Strong_2">Name</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Description</p>
+                </td>
+                <td class="td_3">
+                    <p class="Strong_2">Type</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">ReservationID</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Reservation ID that was created in EMS</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">BookingID</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Booking ID created in EMS</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">BookingDate</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Booking Date</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">DateTime</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">StartTime</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Start Time</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">DateTime</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">EndTime</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">End Time</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">DateTime</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">RoomCode</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Room Code</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">RoomDescription</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Room Description</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_3">
+                    <p class="NormalWeb_1">StatusID</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Status ID of booking created in EMS</p>
+                </td>
+                <td class="td_3">
+                    <p class="NormalWeb_1">Integer</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_4">
+                    <p class="NormalWeb_1">StatusDescription</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">Status Description of booking created in EMS</p>
+                </td>
+                <td class="td_4">
+                    <p class="NormalWeb_1">String</p>
+                </td>
+            </tr>
+        </table>
+        <p class="Emphasis_1">Notes</p>
+        <p>* Indicates required field.</p>
+        <p>DateTimeList example:&#160;&lt;Dates&gt;&lt;Date requestedDate="2010-10-27" startTime="10:42:00" endTime="20:00:00" /&gt;&lt;/Dates&gt;.</p>
+        <p>For a reservation spanning multiple days just pass in additional&#160;&lt;Date /&gt;&#160;nodes in the DateList XML.</p>
+        <p>Returns an Error element if the Reservation was NOT created.</p>
+    </body>
+</html>

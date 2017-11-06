@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+    </head>
+    <body>
+        <h1 class="Title1">Configuring Integration to Exchange</h1>
+        <p>Configuring EMS to work with Exchange Online (Office 365) or Exchange 2013 is the same as configuring EMS to work with a 2007/2010 Exchange environment that is hosted on your network.&#160;See&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/Configuring_EWS_Impersonation_for_Microsoft%C2%AE_Exchange" title="Setting Up Exchange Integration Impersonation for Exchange Online (Office 365)"><span class="Hyperlink_2">this page&#160;</span></a>for setting up impersonation on Exchange Online (Office 365).&#160;If you need additional assistance setting this up please contact&#160;<a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com"><span class="Hyperlink_2">support@emssoftware.com</span></a>.</p>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">After following the<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/03_Installation_and_Upgrade_Instructions_for_the_Exchange_Integration_Web_Service" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/Integration_to_Exchange/03_Installation_and_Upgrade_Instructions_for_the_Exchange_Integration_Web_Service"><span class="Hyperlink_2">&#160;installation instructions</span></a>, access the Integration with Exchange configuration area by opening a browser and entering the following:<br />http://[ServerName]/ExchangeIntegrationWebService/PamConfig.aspx&#160;<br /><span class="Emphasis">(replace [ServerName] with the name of your web server)</span></li>
+            <li class="ListParagraph">Go the&#160;<span class="Strong">Account Info</span>&#160;tab.<a name="Tabs"></a>&#160;</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to.png" style="height: 775px;width: 1347px;" alt="https://success.emssoftware.com/@api/deki/files/6233/clipboard_e6d118aad848b7113c155da542d010ad3.png?revision=1" class="img_1" />
+        </p>
+        <ol start="3" class="ol_1">
+            <li class="ListParagraph">Select your email system in the&#160;<span class="Strong">Provider</span>&#160;dropdown using the instructions provided on the page.</li>
+            <li class="ListParagraph">Check the box “.. utilize AutoDiscover to locate the best Client Access Server for the user…”</li>
+        </ol>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Note:&#160;</span>If you do not check this box, you&#160;<span class="Strong_2">must</span>&#160;fill in the&#160;<span class="Strong_2">Url to Exchange Web Services</span>&#160;field.</p>
+                </td>
+            </tr>
+        </table>
+        <ol start="5" class="ol_1">
+            <li class="ListParagraph">Within the&#160;<span class="Emphasis">Authentication Information</span>&#160;section, enter your Integration with Exchange Account&#160;<span class="Strong">User Name</span>&#160;and&#160;<span class="Strong">Password</span>.&#160;The User Name should be prefixed with your domain (example – YourDomain\Integration with Exchange Account, or Integration with Exchange Account@YourDomain)&#160;</li>
+        </ol>
+        <table class="table_1">
+            <col style="width: 62pt;" />
+            <col style="width: 646pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Introduction_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Tip:</span><span class="Strong_2">&#160;</span>Make a note of this URL for use later in this topic.</p>
+                </td>
+            </tr>
+        </table>
+        <ol start="6" class="ol_1">
+            <li class="ListParagraph"><span class="Emphasis">(Optional)&#160;</span>The “Use application pool identity…” option allows you to set the Integration with Exchange Account credentials at the Application Pool level instead of storing the credentials in the EMS database.&#160;See the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/07-Additional_Information" title="Additional Information"><span class="Hyperlink_2">Additional Information</span></a>&#160;section for more information about this option.&#160;If this option is selected, you&#160;<span class="Strong">must</span>&#160;check the box to use Impersonation.&#160;</li>
+            <li class="ListParagraph">If you selected “Exchange Web Services” as your&#160;<span class="Strong">Provider</span>, select the checkbox if the account specified has Exchange Impersonation access to all mailboxes in your Exchange mailbox store.</li>
+            <li class="ListParagraph">Select the Authentication Type:</li>
+        </ol>
+        <ul class="ul_3">
+            <li class="ListParagraph_1"><span class="Strong">Anonymous</span>&#160;– No authentication</li>
+            <li class="ListParagraph_1"><span class="Strong">Specify Account</span>&#160;– Relies on a custom account (not the Integration with Exchange Account) that you create and manage.&#160;Please contact Customer Support (or a member of the Professional Services group if you are working with one) to discuss the configuration process for this option.</li>
+            <li class="ListParagraph_1"><span class="Strong">Default Credentials</span>&#160;– Relies on security context of EMS application calling the Integration with Exchange&#160;Web Service.&#160;If using this option, Integrated Windows Authentication should be enabled for the Integration with Exchange Web Service.&#160;</li>
+            <li class="ListParagraph_1">For MS Exchange 2007/2010 environments, click&#160;<span class="Strong">Save</span>.&#160;Go to&#160;<span class="Strong">Step 1</span></li>
+        </ul>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Note:&#160;</span>When testing Integration with Exchange, the email account that is being used (either on the Test Settings tab or in the "Testing Integration with Exchange" section below) MUST exist in the Exchange environment being tested.&#160;If you are testing Integration with Exchange in a development environment please verify that a mailbox for the email being used exists in that domain/environment.</p>
+                </td>
+            </tr>
+        </table>
+        <ol start="9" class="ol_1">
+            <li class="ListParagraph">Click&#160;<span class="Strong">Test Configuration</span>.&#160; If any errors are encountered, please verify your configuration. Otherwise, your Integration with Exchange configuration is complete.&#160;</li>
+        </ol>
+        <h2 class="Heading2">Testing Your Exchange Integration&#160;</h2>
+        <ol start="1" class="ol_1">
+            <li class="ListParagraph">In order to test your &#160;configuration, you will need to log into EMS Web App with a user account (configured with the user’s primary email address) belonging to a Everyday Application Process Template (within the EMS client application) that has the&#160;<a href="https://success.emssoftware.com/#Allow+Invitations?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Process_Templates/Everyday_User_Process_Template_Field_Definitions" title="Everyday User Process Template Field Definitions"><span class="Strong_1">Enable Integration to Microsoft Exchange</span></a>&#160;option checked.&#160;</li>
+            <li class="ListParagraph">Log into EMS Web App. Begin making a reservation and selecting a room.</li>
+            <li class="ListParagraph">Select the&#160;<span class="Strong">Add to my calendar</span>&#160;checkbox.&#160;If this option is not available, please verify (within the EMS client application) that your user account belongs to a Everyday User Process Template that has the&#160;<span class="Strong">Allow Invitations</span>&#160;option checked.&#160;</li>
+            <li class="ListParagraph">Find and add&#160;an attendee using the&#160;<span class="Strong">Find Attendee</span>&#160;field.</li>
+            <li class="ListParagraph">Complete necessary information on the&#160;<span class="Strong">Details</span>&#160;tab and click&#160;<span class="Strong">Submit Reservation</span>.</li>
+            <li class="ListParagraph">Verify that an appointment was added to your Outlook Calendar and that your attendee received an invitation.</li>
+        </ol>
+        <h2 class="Heading2">Optional Messaging Settings<span class="Strong_4">​</span>&#160;</h2>
+        <p>The options on the Message tab (as reached&#160;above in&#160;<a href="https://success.emssoftware.com/#Tabs?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/06_Configuring_Exchange_Integration" title="Configuring Exchange Integration"><span class="Hyperlink_2">Step 2</span></a>)&#160;below guide you in further configuring your integration.</p>
+        <p>
+            <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_2.png" style="height: 387px;width: 630px;" alt="https://success.emssoftware.com/@api/deki/files/4163/Exchangeconfig.png?revision=1" class="img_1" />
+        </p>
+        <ul class="ul_1">
+            <li class="ListParagraph_1"><span class="Strong">Message To Append</span>
+                <br />Message appended to the bottom of the appointment body.&#160;This message is seen by all users.</li>
+            <li class="ListParagraph_1"><span class="Strong">To view the details of this reservation click the below link</span>
+                <br />Message added to the appointment body, above a link that takes a user to a view-only EMS Web App page for the appointment.&#160;This message is seen by all users.</li>
+            <li class="ListParagraph_1"><span class="Strong">If you are the meeting organizer click the below link to edit the reservation</span>
+                <br />Message added to the appointment body, above a link that takes the meeting organizer to the EMS Web App Reservation Summary page for that reservation.&#160;This message is seen by all users, but only the meeting organizer can access the Reservation Summary page to make changes.</li>
+            <li class="ListParagraph_1"><span class="Strong">Allow Attachments</span>
+                <br />Allows users to add attachments within EMS Web App when making an appointment.</li>
+            <li class="ListParagraph_1"><span class="Strong">Maximum Attachment Size</span>
+                <br />If attachments are allowed, set&#160;the maximum file size allowed for an attachment.</li>
+        </ul>
+        <table class="table_2">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_3.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Concept:</span><span class="Strong_2">&#160;</span>&#160;The default installation allows&#160;file attachments up to 4MB.&#160;If your implementation needs file attachments that are larger, follow the two procedures&#160;below:</p>
+                    <ol start="1" class="ol_2">
+                        <li class="ListParagraph"><a href="https://success.emssoftware.com/#config?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/06_Configuring_Exchange_Integration" title="Configuring Exchange Integration" class="Hyperlink_2">Update the config file.</a>
+                        </li>
+                        <li class="ListParagraph"><a href="https://success.emssoftware.com/#database?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/06_Configuring_Exchange_Integration" title="Configuring Exchange Integration" class="Hyperlink_2">Update the database</a>.&#160;</li>
+                    </ol>
+                    <p><span class="Strong_2">Note:</span>&#160;File sizes larger than 2GB are not allowed at this time.</p>
+                </td>
+            </tr>
+        </table>
+        <h3 class="Heading3">Enabling Larger File Attachments On The Config&#160;File<a name="config"></a>&#160;</h3>
+        <p>By default, Exchange Integration attachments will only accept files 4MB or less.&#160;If your implementation needs to allow files of larger sizes to be attached to reservations, the following config updates will be required, both in EMS Web App&#160;and in the Exchange Integration Web Service.&#160;</p>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Important:</span><span class="Strong_2">&#160;</span><span class="mt-font-trebuchet-ms_1">The maximum file size is 2GB.</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <ol start="1" class="ol_1">
+            <li class="li_2">In the&#160;<span class="span_3">&lt;</span><span class="span_4">system.webServer</span><span class="span_3">&gt;</span>&#160;section, include this xml node:</li>
+        </ol>
+        <p class="mtindent1_1"><span class="span_3">&lt;</span><span class="span_4">security</span><span class="span_3">&gt;</span>
+        </p>
+        <p class="mtindent1_1"><span class="span_3">&#160;&#160;&#160;&#160;&#160; &lt;</span><span class="span_4">requestFiltering</span><span class="span_3">&gt;</span>
+        </p>
+        <p class="mtindent1_1"><span class="span_3">&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;</span><span class="span_4">requestLimits</span>&#160;<span class="span_5">maxAllowedContentLength</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">51200000</span><span class="span_6">"</span><span class="span_3">/&gt; &lt;!--</span><span class="span_7">maxAllowedContentLength in bytes, 50MB=51200000</span><span class="span_3">--&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p>
+        <p class="mtindent1_1"><span class="span_3">&#160;&#160;&#160;&#160;&#160;&#160;&lt;/</span><span class="span_4">requestFiltering</span><span class="span_3">&gt;</span>
+        </p>
+        <p class="mtindent1_1"><span class="span_3">&#160;&#160;&#160; &lt;/</span><span class="span_4">security</span><span class="span_3">&gt;</span>
+        </p>
+        <ol start="2" class="ol_1">
+            <li class="li_2">In the&#160;<span class="span_3">&lt;</span><span class="span_4">httpRuntime</span>&#160;element, add these highlighted attributes with the end result looking like this:</li>
+        </ol>
+        <p class="mtindent1_1"><span class="span_3">&lt;</span><span class="span_4">httpRuntime</span>&#160;<span class="span_5">targetFramework</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">4.5</span><span class="span_6">"</span>&#160;<span class="span_5">requestLengthDiskThreshold</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">2147483644</span><span class="span_6">"</span>&#160;<span class="span_5">maxRequestLength</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">51200</span><span class="span_6">"</span>&#160;&#160;<span class="span_3">/&gt;&#160; &lt;!—-</span><span class="span_7">requestLengthDiskThreshold in bytes, &amp; maxRequestLength in KB, 50MB</span><span class="span_3">--&gt;</span></p>
+        <ol start="3" class="ol_1">
+            <li class="li_2">Under the&#160;<span class="span_3">&lt;</span><span class="span_4">appSettings</span><span class="span_3">&gt;</span>&#160;look for the “MaximumUploadSizeInBytes” key.&#160; Update this value to the number of bytes allowed.&#160; For instance, 50MB would look like this:</li>
+        </ol>
+        <p class="mtindent1_1"><span class="span_3">&lt;</span><span class="span_4">add</span>&#160;<span class="span_5">key</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">MaximumUploadSizeInBytes</span><span class="span_6">"</span>&#160;<span class="span_5">value</span><span class="span_3">=</span><span class="span_6">"</span><span class="span_3">52428800000</span><span class="span_6">"</span><span class="span_3">/&gt;&#160; &lt;!—- in&#160;bytes</span><span class="span_7">50MB</span><span class="span_3">--&gt;</span>&#160;</p>
+        <h3 class="Heading3">Enabling Larger File Attachments in the Exchange Integration Web Service<a name="database"></a>&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange/06_Configuring_Exchange_Integration" title="Edit section"><span class="span_8"><img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to.gif" style="height: 16px;width: 16px;" alt="Edit section" class="img_1" /></span></a></h3>
+        <p>By default Exchange Integration attachments will only accept files 4MB or less.&#160; If your implementation needs to allow for Exchange message attachments larger than 4MB, the config updates above will need to be applied in the Exchange Integration Web Service.</p>
+        <table class="table_2">
+            <col style="width: 62pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Note:&#160;</span>Due to the size of the xml sent, we reco<span class="span_1">mmend adding 5MB to t</span>he desired file upload size. (i.e., if you want to allow a max of 20MB files, calculate a total of 25MB worth of Kilobytes and bytes.</p>
+                </td>
+            </tr>
+        </table>
+        <p>In addition to these web.config settings above, a web administrator will need to update the file size in the Exchange Integration Web Service as follows:</p>
+        <ol start="1" class="ol_1">
+            <li class="li_2">Navigate to the Exchange Integration Web Service/PAMConfig.aspx</li>
+            <li class="li_2">Click the Message tab</li>
+            <li class="li_2">Update the&#160;<span class="Strong">Maximum Attachment Size</span>&#160;text box and Save.</li>
+        </ol>
+        <table class="table_2">
+            <col style="width: 63pt;" />
+            <col style="width: 658pt;" />
+            <tr>
+                <td class="td_3">
+                    <p class="p_1">
+                        <img src="../../../Resources/Images/Integration to Microsoft/Configuring Integration to_4.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3857/tech_doc_warning.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25" class="img_1" />
+                    </p>
+                </td>
+                <td class="td_3">
+                    <p><span class="Strong_2">Warning</span><span class="Strong_2">:&#160;</span>f<span class="Strong_2">or&#160;Externally Exposed Web App sites</span></p>
+                    <p>If your EMS Web App site is externally exposed, some of the web.config settings above could make the site vulnerable to DoS site attacks. We highly recommend setting network-level protection to prevent DoS attacks.</p>
+                </td>
+            </tr>
+        </table>
+        <p class="NormalWeb">&#160;</p>
+    </body>
+</html>

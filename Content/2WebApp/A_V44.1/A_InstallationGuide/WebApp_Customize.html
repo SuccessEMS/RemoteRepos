@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2793.28" MadCap:lastWidth="1190" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Customizing EMS Web App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Customizing EMS Web App</h1>
+        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
+template('MindTouch/Controls/PageOverview');
+</pre>
+        <p>After you have installed the&#160;{{product_webapp}},&#160;you can customize many aspects of it. You can change the “look and feel” of the {{product_webapp}} by inserting your own logo. Experienced web developers can also modify the system’s style sheet to change fonts and colors.&#160;&#160;</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+
+.columbia-article-topic #mt-toc-container {
+    display:block !important; 
+}
+#mt-toc-container {
+    display: block !important;
+}
+</pre>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 26px;" width="26px" height="26px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Important:</span></strong>Do not alter any of the {{product_webapp}} web page files themselves. <strong>The maintenance agreement for {{product_webapp}} extends <em>to the original page content only</em></strong>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Customizing the&#160;Logo</h2>
+        <p>The logo&#160;that appears in the upper left corner of all pages within the&#160;{{product_webapp}} comes from a file named <em>LOGO.GIF&#160;</em>found in the <em>\EMSWebApp\Images </em>folder of the web server. If you choose to have the system display a different logo, create a new file called <em>CUSTOMLOGO</em>&#160;in the same&#160;folder&#160;(any graphics file type, such as .gif, .png, etc. will suffice). If the system detects <em>CUSTOMLOGO</em>, the system will&#160;use that file&#160;rather than the default <em>LOGO.GIF&#160;</em>file.&#160;The advantage of creating the new file instead of simply replacing the <em>LOGO.GIF </em>file is that,&#160;in an upgrade to a new version of {{product_webapp}},&#160;the <em>LOGO.GIF </em>file is overwritten&#160;whereas <em>CUSTOMLOGO&#160;</em>is not.&#160;If you create a custom logo file, you may need clear your browser’s cache before you see the new image.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>Be sure to maintain&#160;the aspect ratio of&#160;135px&#160;wide&#160;X 40px&#160;high.The system will accept nearly any size logo image, but you should avoid images more than 200 pixels wide and images that are too tall&#160;to avoid extra scrolling.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Customizing Style Sheets</h2>
+        <p>Experienced web developers are can&#160;modify the look and feel of {{product_webapp}} using a custom style sheet, which controls fonts and colors throughout the application. To do so:</p>
+        <ol>
+            <li>Create&#160;<em>EMSWebApp/Content/Custom&#160;</em>folder on your&#160;web server.</li>
+            <li>Name your custom style sheet <em>CUSTOM.CSS </em>and place it in the <em>EMSWebApp/Content/Custom&#160;</em>folder. If the system detects this file, it will use the styles found there rather than those in the system’s default style sheet, <em>{{product_vems}}.CSS</em>. The advantage of creating the new file instead of overwriting the default file is that, in an upgrade to a new version of {{product_webapp}}, <em>{{product_vems}}.CSS&#160;</em>is overwritten whereas&#160;<em>CUSTOM.CSS&#160;</em>is not.&#160;</li>
+        </ol>
+        <h2>Customizing Links</h2>
+        <p>The {{product_webapp}} Browse Events page allows users to view all events scheduled in EMS that display to everyday users. You have the option to automatically filter this list of events by facility, room, event type, event name or group name as part of a customized&#160;<em>Browse Events&#160;</em>page. This customized page is referred to as a Custom Link.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Concept:</span></strong>A Custom Link enables you to build a link based on&#160;the <em>Browse Events </em>page that will display only events meeting your specified criteria. For example,&#160;you can create a link that only displays events in a specific Building or of a specific Event Type. Essentially, the link&#160;pre-filters the event listing displayed to a specific building, event type, Group, etc. Once you generate the link, then you can insert it in emails or websites.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To create a Custom Link, follow the steps outlined below.</p>
+        <ol>
+            <li>Log into {{product_webapp}} using a user ID that belongs to a Everyday User Security Template containing the <em>Web&#160;</em><em>Administrator</em> Role.&#160; For information on how to configure a user and/or Everyday User Security Template, see <a title="Configuring Everyday Users">Configuring Everyday Users</a>&#160;and <a title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_VEMS/010_Configuring_Web_Templates">Configuring Templates</a>.</li>
+            <li>Under the dropdown&#160;menu next to your name, click <strong><em>Creat<em><strong>e</strong></em> Custom Link</em></strong>.</li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" style="width: 289px;height: 258px;" width="289px" height="258px" />
+        </p>
+        <ol start="3">
+            <li>Specify the pre-filters that will control what displays when users click your custom link.<br /><img alt="" class="internal" style="width: 866px;height: 930px;" width="866px" height="930px" /><table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;"><tbody><tr><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" /></td><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top"><p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tips:</span></strong><br />                To display a custom logo other than the default logo used for your {{product_webapp}} site, enter the logo filename and server path&#160;in the<strong> Logo</strong> field.&#160;The logo needs to be stored&#160;in the {{product_webapp}} physical directory on your web server (typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\</em>).</p><p class="NoteTipWarningText">Select the&#160;<strong>Ignore Everyday User Application Display Settings</strong>&#160;option if you want all events within your criteria to display to&#160;users using this link regardless of everyday user display&#160;settings&#160;(essentially,&#160;ignoring configuration rules that would normally hide certain events from view).<br /><br />                Select the<strong> Collapse Bookings to Reservation-Level</strong> option to collapse booking information so that only the reservation information shows.&#160;</p></td></tr></tbody></table></li>
+        </ol>
+        <table align="center" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="width: 157px;">
+                        <p>
+                            <img alt="" class="internal" style="width: 140px;height: 142px;" width="140px" height="142px" />
+                        </p>
+                        <p><em><span>Collapse Bookings to&#160;Reservation Level Enabled</span></em>
+                        </p>
+                    </td>
+                    <td style="width: 144px;">
+                        <p>
+                            <img alt="" class="internal" style="width: 142px;height: 367px;" width="142px" height="367px" />
+                        </p>
+                        <p><em><span>Collapse Bookings to&#160;Reservation Level Disabled</span></em>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol>
+            <li value="10">Click the <strong>Generate Link</strong> button to display a friendly URL and HTML code that can be added to a web page, email, etc.&#160; The URL can also be used to test your Custom Link.</li>
+        </ol>
+        <p align="center">
+            <img alt="" class="internal" style="width: 1004px;height: 370px;" width="1004px" height="370px" />
+        </p>
+        <h2>Customizing JavaScript</h2>
+        <p>With custom JavaScript, you can extend the functionality of {{product_webapp}} to suit your business needs.&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>Including custom JavaScript on {{product_webapp}} pages can affect performance.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>When {{product_webapp}} receives a request for a page, it checks for the existence of a <em>CustomJs </em>folder.&#160;If the folder exists, {{product_webapp}} checks for any files that match the name of the page.&#160;For instance, on the <em>RoomRequest.aspx </em>page, if there is a file called <em>RoomRequest.js </em>in the <em>CustomJs </em>folder, {{product_webapp}} will include the RoomRequest.js file on the page.&#160;</p>
+        <p>In addition to the name-matched file, {{product_webapp}} will also check for and include the file named <em>global.js </em>on EVERY page.&#160;</p>
+        <p>Perform the following steps to enable Custom JavaScript:</p>
+        <ol>
+            <li>Enable Custom JavaScript.&#160;</li>
+            <li>Open the {{product_webapp}} <em>web.config </em>file <em>(</em>typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\web.config).</em></li>
+        </ol><pre class="script" mt-export-translate="no" xml:space="preserve">
+wiki.page("Learn_About_Our_Applications/Learn_About_Managing_EMS/EMS_Cloud_Customers%3A_Modifying_the_web.config_File")</pre>
+        <ol start="3">
+            <li>Locate the following node under the <em>&lt;appSettings&gt;</em> node:</li>
+        </ol>
+        <p class="mt-indent-1">&lt;add key="allowCustomJs" value="false" /&gt;</p>
+        <ol>
+            <li value="2">Change the <em>false </em>value to <em>true.</em></li>
+            <li>Save the file.</li>
+            <li>Create the <em>CustomJs</em> folder within the root of your {{product_webapp}} Install Directory <em>(</em>typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\CustomJs</em>).</li>
+        </ol>
+        <p>You are now ready to implement your Custom JavaScript&#160;using one of several&#160;options:</p>
+        <ul>
+            <li>In the newly-created <em>CustomJs </em>folder, create a file for each of the above pages you wish to include your custom JavaScript on (such as <em>RoomRequest.js, EditReservation.js, </em>or <em>Default.js</em>).</li>
+            <li>In the newly-created <em>CustomJs </em>folder, create one file called <em>global.js </em>that will be included on every page in the system.</li>
+        </ul>
+        <p>Your custom JavaScript should be included on <em>global.js </em><u><strong>OR</strong></u> on each of the applicable page-specific JavaScript files.&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>If you include the script in both places, it could cause problems.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:SysAdmin</a><a>Customizing EMS Web App</a><a>custom logo</a>
+        </p>
+    </body>
+</html>

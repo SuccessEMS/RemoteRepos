@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="9" MadCap:lastHeight="4065" MadCap:lastWidth="913" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Installation and Basic Setup</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Installation and Basic Setup</h1>
+        <section><pre class="script-css" mt-export-translate="no" xml:space="preserve">
+
+<strong>See Also:&#160;</strong><a class="F1" title="System Requirements">System Requirements</a></pre>
+            <h2>1. Install the&#160;<MadCap:variable name="General.Platform" /> on Your Web Server</h2>
+            <ol>
+                <li>Navigate to <a href="http://www.emssoftware.com/support" title="http://www.emssoftware.com/support">emssoftware.com/support</a>. Log&#160;in&#160;and locate EMS Platform Services.</li>
+                <li>Download the <strong>EMSPlatformServices.msi</strong> file.&#160;</li>
+                <li>Run this file on your web server.&#160;
+    <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;"><tbody><tr><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" /></td><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top"><p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>You will need to enter the SQL server and EMS database, configured to allow external connections. Make a note of the database name.&#160;The typical install path is&#160;C:\Inetpub\wwwroot.&#160;</p></td></tr></tbody></table></li>
+            </ol>
+            <p>
+                <img src="../Images/A_InstallationGuide/MA-Install-EMS-Platform-Services_PlatfromServicesSetup.png" style="width: 669px;height: 517px;" />
+            </p>
+            <ol start="4">
+                <li>When all prompts have been completed, click <strong>Install</strong>. The API is installed on your web server.&#160;</li>
+                <li>You will also need a Virtual Directory Name (typical default is EMSPlatformServices). Make a note of the new site you have created.</li>
+            </ol>
+            <h2>2. Initial Configuration</h2>
+            <ol>
+                <li>Access URL for <MadCap:variable name="General.Platform" /> (e.g.,&#160;<a href="https://yourcompany.com/ems-platform-api" rel="external nofollow" target="_blank" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/ems-platform-api</a>).</li>
+                <li>Login using your credentials depending on your authentication type. Please refer to configuring <MadCap:variable name="General.Platform" /> in admin portal for more details.</li>
+                <li>Click on the <b>Integrations </b>tab in the sidebar and select EMS Mobile:</li>
+            </ol>
+            <p>
+                <img src="../Images/A_InstallationGuide/MA-Initial-Configuration_EMSPlatformServices.png" style="width: 671px;height: 461px;" />
+            </p>
+            <ol start="4">
+                <li>Select authentication method for everyday users. <MadCap:variable name="General.Mobile App" /> supports the following authentication methods (refer to the guide linked below for guidance in each type of setup):</li>
+            </ol>
+            <ul class="mt-indent-1">
+                <li><a rel="internal" title="Using EMS Native Authentication" href="#" alt="Using EMS Native Authentication">EMS Native Authentication</a>
+                </li>
+                <li><a rel="internal" title="Using LDAP Authentication for EMS Mobile" href="../B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_LDAPAuthen.html" alt="Using LDAP Authentication for EMS Mobile">LDAP Authentication</a>
+                </li>
+                <li><a rel="internal" title="Using Windows Authentication for EMS Mobile" href="../B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_UseWindowsAuthenforMobile.html" alt="Using Windows Authentication for EMS Mobile">NTLM Authentication</a>
+                </li>
+                <li><a rel="internal" title="Using Open ID Connect Authentication for EMS Mobile" href="../B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_OpenIDConnectAuthen.html" alt="Using Open ID Connect Authentication for EMS Mobile">Open ID Connect Authentication</a>
+                </li>
+                <li><a rel="internal" title="Using SAML Authentication With EMS Mobile" href="#" alt="Using SAML Authentication With EMS Mobile">SAML Authentication</a>
+                </li>
+                <li>Header Authentication</li>
+            </ul>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">&#160;</td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>In addition to the authentications above, EMS Mobile App supports Two-factor authentication and Persistent authentication.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ol start="5">
+                <li>Click "User authentication is persistent" box to allow the user to remain logged into the <MadCap:variable name="General.Mobile App" />. Token duration field determines the duration of persistent login. Default value is 1440 minutes (1 day). This duration can be edited by updating the token duration field.</li>
+                <li><a target="_blank" title="Deploying the EMS Mobile App">Install the <MadCap:variable name="General.Mobile App" />&#160;(private or public deployment) on user devices</a> and then on each, import the Platform Services URL (based on your user authentication preference)</li>
+            </ol>
+            <p>&#160;</p>
+            <h2>3. <MadCap:annotation MadCap:createDate="2017-10-24T11:37:21.6697464-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content in Step 3 is Deki from Mobile Install Guide &quot;AssignTemptoMobileUsers&quot; topic." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T11:38:04.2404084-06:00">Enable</MadCap:annotation> Everyday User&#160;Booking Templates&#160;</h2>
+            <p>EMS V44.1 allows you to select which process templates (e.g "web process templates") will be enabled on your users' mobile devices. From the Admin page for templates in the <MadCap:variable name="General.EMS&#160;Desktop Client" />, you will see an <strong>Enable for Mobile</strong>&#160;checkbox on the first tab of the template dialog box:&#160;</p>
+            <p>
+                <img src="../Images/A_InstallationGuide/MA_EnableEverydayUserBookingTemplates_ProcessTemplate.png" style="width: 331px;height: 496px;" />
+            </p>
+            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+                <tbody>
+                    <tr>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                            <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
+                        </td>
+                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span><MadCap:variable name="General.Mobile App" /> is designed to make and edit simple reservations for users "on the go." At this time it cannot handle service requests, video conference bookings or complex workflows. &#160;Please consider this when you decide which templates should be enabled for the <MadCap:variable name="General.Mobile App" />. Additionally, you&#160;can only change the name and icon of the mobile app through private <a title="Deploying the EMS Mobile App">deployment via </a><a title="Deploying the EMS Mobile App">MDM</a>. Please refer to your MDM&#160;guide for instructions on how to change the name and icon of the <MadCap:variable name="General.Mobile App" />.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>

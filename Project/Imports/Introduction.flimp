@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-24T09:59:51.1203408-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-24T10:00:16.8673435-06:00">
+  <Files>
+    <Url
+      Source="../../../1Word/Introduction.docx"
+      AbsoluteSource="file:///C:/1Word/Introduction.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Introduction/Introduction.png"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Introduction/Introduction_1.png"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/Introduction/Introduction_2.png"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+    <Url
+      Source="../../Content/Introduction/Introduction.htm"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+    <Url
+      Source="../TOCs/Introduction.fltoc"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Introduction.css"
+      TimeStamp="10/24/2017 10:00:12 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles />
+</MsWordImport>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="4126.333" MadCap:lastWidth="858" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Decision Guide - Web Deployment Versus Conventional Deployment</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Decision Guide - Web Deployment Versus Conventional Deployment</h1>
+        <h2>What are My Deployment Options?</h2>
+        <p>There are two different deployment options for the Desktop Client:&#160;</p>
+        <ul>
+            <li><strong>EMS Desktop Web Deployment&#160;</strong>
+            </li>
+            <li><strong>​Conventional Deployment</strong>
+            </li>
+        </ul>
+        <h3>EMS Desktop Web Deployment</h3>
+        <dl>
+            <div class="NoteBox"><span class="mt-color-669933">Concept:</span> <MadCap:variable name="General.EMS&#160;Desktop Client" />Web Deployment (V44+ and V44.1) is an alternative method for installing <MadCap:variable name="General.EMS&#160;Desktop Client" /> locally on individual user machines&#160;</div>
+        </dl>
+        <p>This solution is an alternative to using Microsoft® methods of deployment, such as SCCM. Administrators can use it to host {{product_dtc}}&#160;<span style="color: black;"><span class="mt-font-Verdana,sans-serif"><span class="mt-font-size-10.0pt">on a web server, with the ability to push the URL to any EMS Administrators so they can download&#160;</span></span></span>{{product_dtc}}&#160;<span style="color: black;"><span class="mt-font-Verdana,sans-serif"><span class="mt-font-size-10.0pt">without needing Administrative Privileges on their local machine.</span></span></span></p>
+        <p>The web deploy application is installed on your web server. The EMS Desktop Application is included within this installation. Once installed, end users point&#160;their web browsers to the EMS Web Deployment&#160;Application, which points them with&#160;a link to download the EMS Desktop Client. (<strong>See Also</strong>: <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/01-Introduction">Types of EMS Users</a>).&#160;Once a user downloads and runs that link, the EMS Desktop Client is installed in the user's profile on that workstation. Once installed, the EMS Desktop Client will check the server for an updated version of the client each time the client is launched. If a new version is available, then it will automatically download and install the update.</p>
+        <h3>​Conventional Deployment</h3>
+        <p>Conventional Deployment works like previous releases&#160;of <MadCap:variable name="General.My Company" />. The downloadable installer is in the form of a MSI file. Once the software is installed on the Admin Users workstation, it connects directly to the database. optionally it can be configured to connect to the <MadCap:variable name="General.EMS&#160;Desktop Client" /> API included in the Web Deployment option.&#160;</p>
+        <div class="NoteBox"><strong>Note:</strong>&#160;The Web Deployment method also adds an application layer (in the form of a web service), to the architecture of the application. Instead of the Desktop Client connecting directly to the Database server as it has in the past. All connections are routed through the <MadCap:variable name="General.EMS&#160;Desktop Client" /> API (Included with Web Deploy). this can add additional benefit for Security Considerations, or multi-region deployments. For further information on this feature is detailed <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_the_Easy_Deployment_with_a_Conventional_EMS_Desktop_Client_Deployment"><u><span style="color: #0066cc;">here.</span></u></a></div>
+        <h2>Features of Each Deployment Method</h2>
+        <p>The&#160;table below&#160;outlines the features available between the two deployment methods.</p>
+        <table border="1" cellpadding="1" cellspacing="0" class="TableStyle-PatternedRows" style="width: 100%;table-layout: fixed;mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1">Feature</th>
+                    <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1">Desktop Web Deployment</th>
+                    <th scope="col" class="TableStyle-PatternedRows-HeadD-Regular-Header1">Conventional Deployment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Admin Rights required on the workstation</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Number of installations per workstation</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>1 Per User</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Once for all users of the workstation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Installation Location</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Users Profile</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Location can be specified during installation</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Requires a Web Server</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Yes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>No</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Can adopt customer specific, deployment procedures</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Yes (Requires IT Assistance)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Able To deploy without user intervention</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>No</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Yes (Requires IT Assistance)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Updates are handled...</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>From the Web Service on the server</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Must be re-pushed to individual workstations.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>IT has control of when updates are pushed</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Yes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Network Connection to the database</td>
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows"><MadCap:variable name="General.EMS&#160;Desktop Client" /> API</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Direct TCP connection or Desktop Client API</td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">&#160;</td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <div class="NoteBox"><span class="mt-color-669900"><strong>Note: </strong></span>To enable SSL, you first make changes to the <MadCap:variable name="General.EMS&#160;Desktop Client" />.msi file.&#160;<strong>See Also: </strong><a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Enabling_SSL_on_Web_Deploy">Enabling SSL</a>.</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

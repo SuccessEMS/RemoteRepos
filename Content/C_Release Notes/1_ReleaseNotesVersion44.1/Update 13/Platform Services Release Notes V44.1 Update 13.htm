@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:sourceDocument="C:\Users\Jen.Naused\Desktop\Release Notes Updates 14.3-11.1.docx" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1905" MadCap:lastWidth="1021">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../Resources/Stylesheets/MainStyles_1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>EMS Platform Services Release Notes V44.1, Update 13</h1>
+        <p style="font-family: 'Open Sans';">This section describes updates to&#160;your EMS software.&#160;</p>
+        <p style="font-family: 'Open Sans';">See Also:&#160;<a href="../ContactCustomerSupport.htm" title="Customer Support" alt="Customer Support"><span class="Hyperlink">Contacting Customer Support</span></a>&#160;and&#160;<a href="../Updating to the Latest Version of EMS (Patches and Builds).htm" title="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build" alt="https://success.emssoftware.com/EMS_V44.1/Obtaining_and_Applying_the_Latest_Patch_or_a_New_Build"><span class="Hyperlink">Updating to the Latest Version of EMS</span></a></p>
+        <table>
+            <tr>
+                <td>
+                    <p><b>Name</b>:&#160;V44.1&#160;Update 13</p>
+                </td>
+                <td>
+                    <p><b>Release&#160;Date</b>:&#160;July 14, 2017</p>
+                </td>
+                <td>
+                    <p><b>Patch</b>:&#160;44.1.13000.201707100</p>
+                </td>
+                <td>
+                    <p><b>Build #</b>:&#160;&#160;44.1.13000.2459</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Fixes&#160;&#160;</h2>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" style="font-weight: bold;">
+                    <p>Area</p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows" style="font-weight: bold;">
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td rowspan="7" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                    <p><i>API Calls</i>
+                    </p>
+                </td>
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Added&#160;POST /rooms/actions/availability/templates</b>
+                    </p>
+                    <blockquote>
+                        <p>Added a new API call to search availability across multiple templates</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28763" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=28763" class="Hyperlink">28763</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Added the Following&#160;Room Details to GET / Rooms Response</b>
+                    </p>
+                    <blockquote>
+                        <p>"diagram": {</p>
+                        <p>"floorPlanIndicatorID": 0,<br />"imageID": 0,<br />"x": 0,<br />"y": 0<br />&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30621" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30621" class="Hyperlink">30621</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Added new API calls to get all floor plans for a floor ID</b>
+                    </p>
+                    <blockquote>
+                        <p>/buildings/{id}/floors<br />/buildings/{id}/floors/{floorId}<br />/buildings/{id}/floors/{floorId}/roomdiagrams</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30685" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30685" class="Hyperlink">30685</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Updated the POST/Bookings/action/search call</b>
+                    </p>
+                    <blockquote>
+                        <p>The API call POST / bookings/actions/search/users has been added.&#160;</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30701" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30701" class="Hyperlink">30701</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Added a&#160;status as a search criteria to POST/bookings/action/search</b>
+                    </p>
+                    <blockquote>
+                        <p>Added "statusIds"&#160;to POST /bookings/actions/search request.</p>
+                    </blockquote>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30703" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30703" class="Hyperlink">30703</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-LightRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                    <p><b>Add room types as a search criteria to POST/bookings/action/search</b>
+                    </p>
+                    <p style="text-indent: 0.5in;">Added "roomTypeIds"&#160;to POST /bookings/actions/search request.</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30704" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30704" class="Hyperlink">30704</a></p>
+                </td>
+            </tr>
+            <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                    <p><b>Added floors as a search criteria to POST/bookings/action/search</b>
+                    </p>
+                    <p style="text-indent: 0.5in;">Added "floorIds"&#160;to POST /bookings/actions/search request.</p>
+                    <p>TFS item&#160;<a href="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30705" title="http://tfs02:8080/tfs/EMS%20Suite/Ems/_workitems?_a=edit&amp;id=30705" class="Hyperlink">30705</a></p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

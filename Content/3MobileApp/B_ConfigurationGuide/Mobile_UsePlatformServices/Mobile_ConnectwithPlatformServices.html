@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="547.3334" MadCap:lastWidth="762" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Connecting With EMS Platform Services</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Connecting With <MadCap:annotation MadCap:createDate="2017-10-24T15:33:42.1674429-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This page is in MindTouch about Mobile using Platform Services. However, the info is not in the guide for Mobile App. Need to determine if this info should appear." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T15:33:48.6424226-06:00">EMS</MadCap:annotation> Platform Services</h1>
+        <div if="user.groups[&quot;Internal Power Users&quot;]" class="style-wrap">
+            <p>To begin using {{product_mobile}}, you must first configure it with a valid EMS Platform Services URL. When prompted for a "EMS Server URL", enter the root of EMS Platform Services. For example:&#160;If EMS Platform Services is hosted at&#160;<span class="mt-font-size-11.0pt"><em><a href="https://yourcompany.com/ems-platform-api" rel="freelink" title="https://yourcompany.com/ems-platform-api">https://yourcompany.com/EmsPlatform</a></em>, t</span>hen enter that URL at the "EMS Server URL" prompt, followed by clicking on the "Connect" link. If the URL is valid, you will be taken to the {{product_mobile}} Sign In page.&#160;</p>
+        </div>
+        <h3>{{product_mobile}} Sign In&#160;Invalidation</h3>
+        <p>A mobile user's action sign in session&#160;may be invalidated in any of the following ways:</p>
+        <ul class="mt-indent-1">
+            <li>Session Expiration,&#160;based on the "Token Duration" settings under the <strong>Web App </strong>&gt; <strong>Admin Functions</strong> &gt; <strong>Mobile App</strong> &gt; <strong>Persistent Authentication configuration</strong>.</li>
+            <li>Changes to security-related information in the user's EMS database account.
+    <ul><li>This includes things like usernames and email addresses, but not things like phone or fax information.</li></ul></li>
+            <li>Logging into {{product_mobile}} on another device or {{product_DTC}}.</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+            <tbody>
+                <tr>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                        <img src="../../../../../Resources/Images/tech_doc_note.png" />
+                    </td>
+                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
+                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>At this time, EMS Platform Services does not allow concurrent sessions.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="mt-export-separator" />
+        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
+        </p>
+    </body>
+</html>

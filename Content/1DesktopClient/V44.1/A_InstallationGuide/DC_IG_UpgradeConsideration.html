@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1691" MadCap:lastWidth="1228" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Upgrade Considerations</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Upgrade Considerations for EMS&#160;Desktop Client V44.1</h1>
+        <p>When planning your&#160;upgrade&#160;to the <MadCap:variable name="General.EMS&#160;Desktop Client" /> V44.1, be sure to take the following changes in functionality into consideration.</p>
+        <h2>Everyday User Process Template Configuration&#160;</h2>
+        <p>After you upgrade your system, all&#160;<a title="Understanding Everyday User Templates">everyday user process </a><a title="Understanding Everyday User Templates">templates</a> will be set to&#160;<em>Enabled for Web Application.&#160;</em>This means that these templates will be potentially available to everyday users of the <MadCap:variable name="General.EMS&#160;Web App" /> (under the&#160;<em>Create a Reservation </em>menu). If you would prefer that a template is only available to users of <MadCap:variable name="General.EMS for Outlook Add-in" /> and/or <MadCap:variable name="General.Mobile" />, you must disable the setting&#160;<em>Enabled for Web Application&#160;</em>under the process template's configuration (<em>Configuration &gt; Everyday User Applications &gt; Everyday User Process Templates &gt; Edit&#160;</em>the template &gt;&#160;<em>Process Template&#160;</em>tab).&#160;<em>&#160;</em></p>
+        <p>The following process template settings will also persist&#160;after upgrade:</p>
+        <ul>
+            <li><em>Allow Invitations =</em><a title="Integration with Exchange Enables You to Use Outlook®"><em>Enable Integration to Microsoft Exchange</em></a>
+            </li>
+            <li><em>Outlook = </em><a title="EMS for Microsoft® Outlook Overview"><em>Enable <MadCap:variable name="General.EMS for Outlook Add-in" /></em></a>
+            </li>
+            <li><em>Enable for Mobile Device = </em><em><a title="Using EMS Mobile">Enable for <MadCap:variable name="General.Mobile" /></a>.&#160;</em>
+            </li>
+        </ul>
+        <h2>Everyday User&#160;Web Menu Changes</h2>
+        <ul>
+            <li>After you upgrade, all everyday user process templates will move under the&#160;<em>Create a Reservation</em>&#160;parent menu.</li>
+            <li>All custom web menus&#160;(<em>i.e.,&#160;</em>any non-system-generated web menus such as <em>Browse, Create a Reservation, Help,&#160;</em>etc.)&#160;will move under the&#160;<em>Links </em>menu. Administrators can change the sequence of these custom menus and/or move custom menus to the&#160;<em>Help&#160;</em>menu by changing the web menu configuration (<em>Configuration &gt; Everyday User Applications &gt; Web Menus).</em></li>
+        </ul>
+        <h2>Additional Default Settings</h2>
+        <ul>
+            <li>If the existing <em><a title="Configuring Setup Types">Default Setup Type</a></em>for a room does not match a Setup Type configured as <em>In Use, Default Setup Type </em>will revert to <em>(none).</em></li>
+        </ul>
+        <h2>Additional System Changes</h2>
+        <ul>
+            <li><a title="Cisco TMS Activity DLL Installation">TMS and Polycom DLL</a> access will be controlled by both {{product}} desktop client user permissions and licensing. In order for a user to access the desktop client menu for TMS or Polycom&#160;settings, an administrator must apply these settings to the user or the user's template under&#160;<em>System Administration &gt; Security &gt; Users&#160;</em>or&#160;<em>User Templates.&#160;</em></li>
+        </ul>
+        <h3>No Considerations Needed</h3>
+        <p>The following items, which are typically affected by EMS upgrades, are not affected for this release.</p>
+        <ul>
+            <li>Any label changes within the desktop client</li>
+            <li>Parameter Tab/Area/Name Label Changes or Reassignments</li>
+            <li>New functionality introduced with v44.1</li>
+        </ul>
+    </body>
+</html>

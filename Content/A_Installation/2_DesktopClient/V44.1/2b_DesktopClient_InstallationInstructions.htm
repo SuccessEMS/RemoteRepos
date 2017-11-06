@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="5520" MadCap:lastWidth="1264">
+    <head>
+    </head>
+    <body>
+        <h1>EMS Desktop Client Installation Instructions</h1>
+        <p>In order to install EMS, you must perform two operations :</p>
+        <ol>
+            <li>Install EMS&#160;Database Server components.</li>
+            <li>Install the application on users' computers.</li>
+        </ol>
+        <p>See Also: EMS Desktop Client Deployment Options for a more in-depth discussion.</p>
+        <div class="quotation">
+            <span style="color: #b22222; font-weight: bold;">Important</span>:&#160;Once you have installed EMS and begun defining your data, it is extremely important to back up your database every night. If your data is damaged and we determine the damage to be irreparable, your only alternative will be to restore from the most recent backup.</div>
+        <h2>Installing EMS Server Components</h2>
+        <p>The server installation process will create two EMS databases on your MS SQL Server:  An EMS_Master database that contains licensing information and a separate EMS database that will ultimately contain your reservations data.</p>
+        <div class="quotation">
+            <b>Note</b>:  A Microsoft SQL Server SA level account is required to execute the database installation process.</div>
+        <ol>
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>
+                <p>Go to www.emssoftware.com and enter your Email Address and Password in the Support Center area.</p>
+            </li>
+            <li>
+                <p>Click the Software downloads link.</p>
+            </li>
+            <li>
+                <p>Download the following files.  (Required for both first time installations and upgrades.)</p>
+            </li>
+            <li>
+                <p>EMS License (License.lic) – License file required to activate your EMS software.</p>
+            </li>
+            <li>Secure the EMS.ServerInstall.exe file.</li>
+            <li>Run EMS.ServerInstall.exe as an Administrator. (This .exe can be run from any PC that has access to your database server.)</li>
+        </ol>
+        <p>EMSUpgradeUtility1.PNG</p>
+        <ol start="8">
+            <li>In the Server text box, enter the name of the server running MS SQL Server.</li>
+            <li>In the Database text box, enter the name for your EMS database.  (It is recommended that you accept the default value of ‘EMS’.)</li>
+            <li>In the Server Authentication area, specify your MS SQL Server authentication credentials.  If SQL Server Authentication Mode is selected, you will be required to specify a User Name and Password.</li>
+            <li>Click the Execute button.  A Create Database dialog box will appear.</li>
+            <li>Click Yes to initiate the EMS database installation process</li>
+        </ol>
+        <p>&#160;</p>
+        <div class="quotation">
+            <b>Note</b>: The time spent on the “Upgrading database…” phase in the installation process is highly dependent on the size of your database.  Please be patient.</div>
+        <ol>
+            <li>Click OK when you receive the “Database Installed Successfully!” message. </li>
+        </ol>
+        <p>You have completed installing the server portion of EMS. Next you will install the software to client computers.</p>
+        <div class="quotation">
+            <b>Note</b>: For information on installing the optional Email Notification Service or the EMS Campus Auto Sync Service (EMS Campus only), please see Installing or Upgrading the EMS Email Notification Service and/or  Installing or Upgrading the EMS Campus Auto Sync Service.</div>
+        <h2>Installing EMS on User's Computers</h2>
+        <p>After your EMS databases have been created on your database server, you must install the client software on each computer that will access your EMS database, using one of the following methods:</p>
+        <p>EMS Desktop Client Web Deployment</p>
+        <p>Installing EMS Desktop Client (Conventional Method)</p>
+        <p>&#160;</p>
+        <p>Tip: See Also: Decision Guide</p>
+        <p>EMS Desktop Client Web Deployment</p>
+        <p>&#160;</p>
+        <p>Important: Before beginning the installation process, please install or upgrade your EMS databases.</p>
+        <p>Existing versions of EMS Desktop Client Web Deployment must be manually uninstalled. Be sure to copy-off and save any files that have been customized.</p>
+        <p>Web Deployment Pre-Installation Instructions</p>
+        <p>Manually uninstall any previous versions of EMS Desktop Client Web Deployment on your web server.</p>
+        <p>Verify that the prerequisite software has been installed.</p>
+        <p>Download the EMSDesktopWebDeploySetup.msi file onto the web server that will be running The EMS Desktop Client Web Deployment.</p>
+        <p>Run EMSDesktopWebDeploySetup.msi as an administrator.</p>
+        <p>The first screen welcomes you to the The EMS Desktop Client Web Deployment Setup Wizard. Click Next to begin the installation process.  The Destination Folder screen will appear.</p>
+        <p>&#160;</p>
+        <p>Select the destination folder. The installation process will create a new physical directory on your web server based on the destination folder path entered (“EMS Desktop Web Deploy” in the example above.).</p>
+        <p>Enter your SQL Instance Name.</p>
+        <p>Enter your Database Name:</p>
+        <p>EMS Professional customers – typically named  “EMSdata”</p>
+        <p>EMS Workplace, EMS Campus, EMS Enterprise, EMS District and EMS Legal customers - typically named  “EMS”</p>
+        <p>The Virtual Directory Name will default to the destination folder specified in Step 6.  It is recommended that you keep the default setting.  The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMS Desktop Web Deploy” in the example above.)  Click Next.</p>
+        <p>Note:  The EMS Desktop Client Web Deployment should not be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Desktop Client Web Deployment.</p>
+        <p>The Ready to install the EMS Desktop Client Web Deployment screen will appear.  Click   to install The EMS Desktop Client Web Deployment.</p>
+        <p>The Completed the the EMS Desktop Client Web Deployment Setup Wizard screen will appear.  Click Finish.</p>
+        <p>After following the steps above, verify your EMS Desktop Client Web Deployment installation by opening a browser and entering the address:</p>
+        <p>http://[ServerName]/EMSDesktopWebDeploy/  (replace [ServerName] with the name of your web server)</p>
+        <p>Note:  The first time you launch the EMS Desktop Client Web Deployment, it may take a few extra moments for the website to display.  If you encounter any issues, please contact Customer Support for assistance.</p>
+        <p>Installing EMS Desktop Client (Web Deployment Method)</p>
+        <p>To install the EMS Desktop Client, users will need to access the URL from the EMS Desktop Client Web Deployment.</p>
+        <p>Note: If your browser has a popup blocker it should be disabled so that both the EMSApplication.exe and the configuration file can be downloaded.</p>
+        <p>Click Download and Install the EMS Desktop Client to download the EMSApplication.exe.</p>
+        <p>Run the EMSApplication.exe. This will install the client locally from the service:</p>
+        <p>Note: When you launch launch the EMSApplication.exe if it asks for the EMS Web Deploy configuration URL it will require entering the EMS Desktop Client Web Deployment URL:</p>
+        <p>http://[ServerName]/EMSDesktopWebDeploy/  (replace [ServerName] with the name of your web server)</p>
+        <p>The EMS icon will be placed on the users desktop.</p>
+        <p>Note: When a user launches the client it will check the EMS Desktop Client Web Deployment for a new version of the Client.</p>
+        <p>Note: Clients installed through the EMS Desktop Client Web Deployment will not require administrative permission to install.</p>
+        <p>The system displays a message asking you to import your registration information. Click OK.</p>
+        <p>The Registration screen appears.  Follow the instructions outlined on the screen to import your EMS license key.</p>
+        <p>Note: Your license key only needs to be imported once.</p>
+        <p>At the EMS log-in screen, type admin as both the User ID and the Password.</p>
+        <p>Click OK.</p>
+        <p>Note: When an EMS Client is installed through the EMS Desktop Client Web Deployment it will only be able to connect to the EMS instance received from the service.</p>
+        <p>Installing EMS Desktop Client (Conventional Method)</p>
+        <p>Follow these instructions to conventionally install the EMS Desktop Client on individual workstations.</p>
+        <p>1. Pre-Installation Instructions</p>
+        <p>The Desktop Client requires that the Windows Component .NET 4.5 be enabled on the client machine. The client must also have access to the EMS Server component (to the Desktop Client API, or directly to the EMS Database).</p>
+        <p>2. Obtain the Required MSI File</p>
+        <p>Log in to the EMS support center at http://www.emssoftware.com/support</p>
+        <p>Navigate to the Software &amp; Documents Library &gt; New Releases and Patches &gt; EMS Desktop Clients (Conventional and Web Deploy)</p>
+        <p>&#160;</p>
+        <p>When you install, the application loads into the "Program Files",  "Program Files (x86)", (or a custom directory that you specify). The first time the application is run by a user it will prompt the user to enter in the Server and Database. These entries are saved in the user's registry. The next time the application is accessed, it will not prompt the user for this information again. If upgrading from a previous version, the desktop client will search for the connection string from the previous version, and update the current version so the user is not prompted to enter that information.</p>
+        <p>3. Set the Server Programmatically</p>
+        <p>Option 1: Set the registry keys for the user</p>
+        <p>The Server and Database information are stored in Keys in the following location</p>
+        <p>32bit Machines: HKEY_CURRENT_USER\Software\EMS Software\Version44.1</p>
+        <p>Within there will be two string values, one for server and one for database.</p>
+        <p>Option 2: Use switches in the executable</p>
+        <p>There are two switches that can be used with the applications executable (ems.exe) You can use these within a shortcut that you give to the user to specify the Server and Database for them.</p>
+        <p>/s=Servername.domain.local</p>
+        <p>/d​=DatabaseName</p>
+        <p>Replace "Servername.domain.local" with the Domain name of your Database Server and DatabaseName with the Database of the Database of EMS that that user needs to connect to.</p>
+        <p>For Example "C:\Program Files(x86)\EMS\EMS.exe /s=Servername.Domain.local /d=DatabaseName"</p>
+        <p>4. Establish Network Connections</p>
+        <p>The conventional desktop client connects directly to the database server for all related transactions. The desktop client may also need to connect to the following services.</p>
+        <p>EMS Web Server</p>
+        <p>SMTP Server</p>
+        <p>LDAP Server</p>
+        <p>Verify that the prerequisite software has been installed.</p>
+        <p>Secure the EMSClient.msi.</p>
+        <p>Run EMSClient.msi on the client workstation. Follow the on-screen prompts. It is recommended that you accept the defaults.</p>
+        <p>Start EMS from the shortcut located on your desktop.</p>
+        <p>In the Provide Server Parameters dialog box, enter the name of your EMS Server and Database.</p>
+        <p>Click OK.</p>
+        <p>The system displays a message asking you to import your registration information. Click OK.</p>
+        <p>The Registration screen appears.  Follow the instructions outlined on the screen to import your EMS license key.</p>
+        <p>Note: Your license key only needs to be imported once.</p>
+        <p>At the EMS login screen, type admin as both the User ID and the Password.</p>
+        <p>Click OK.</p>
+        <p>You are now ready to begin using the system. You can begin defining your data following the instructions in Setting Up EMS or you can install to additional client computers by repeating steps 1-6 above.</p>
+    </body>
+</html>

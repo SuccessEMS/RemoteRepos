@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-31T07:40:46.6984165-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\S\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-31T07:40:53.8088343-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/MigrateWordDocs/ReservationsBookings.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/ReservationsBookings.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Reservations Bookings and.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Reservations Bookings and.gif"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Reservations Bookings and_1.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Reservations Bookings and_2.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Reservations Bookings and_3.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/ReservationsBookings1/Reservations Bookings and.htm"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_1.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_2.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_3.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_4.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_5.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_6.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_7.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_8.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_9.png"
+      TimeStamp="10/31/2017 7:40:51 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_10.png"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ReservationsBookings1/Booking Recurring Meetings_11.png"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+    <Url
+      Source="../../Content/ReservationsBookings1/Booking Recurring Meetings.htm"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+    <Url
+      Source="../TOCs/ReservationsBookings1.fltoc"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/ReservationsBookings1.css"
+      TimeStamp="10/31/2017 7:40:52 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="body" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="Heading 5" />
+    <StyleName
+      Name="Heading 6" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

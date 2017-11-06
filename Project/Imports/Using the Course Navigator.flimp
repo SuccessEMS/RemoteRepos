@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-10-25T22:28:08.2829388-06:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Success\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-10-25T22:28:16.5145082-06:00">
+  <Files>
+    <Url
+      Source="../../../Users/Megan.laub/Documents/Documentation/Using the Course Navigator.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/Documentation/Using the Course Navigator.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/Using the Course Navigator/Using the Course Navigator.png"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using the Course Navigator/Using the Course Navigator_1.png"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/Using the Course Navigator/Using the Course Navigator_2.png"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+    <Url
+      Source="../../Content/Using the Course Navigator/Using the Course Navigator.htm"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+    <Url
+      Source="../TOCs/Using the Course Navigator.fltoc"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/Using the Course Navigator.css"
+      TimeStamp="10/25/2017 10:28:14 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+  </UsedCharacterStyles>
+</MsWordImport>

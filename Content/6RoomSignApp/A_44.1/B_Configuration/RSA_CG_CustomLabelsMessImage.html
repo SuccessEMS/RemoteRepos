@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1912" MadCap:lastWidth="1368" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Customizing Labels, Messages, and Images in the EMS Room Sign App</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configure Customized Labels, Messages, and Images in the EMS Room Sign App</h1>
+        <ol>
+            <li>On the EMS Desktop Client toolbar, click EMS Room Sign App Settings to access the EMS Room Sign App Settings area.&#160;</li>
+        </ol>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>&#160;</td>
+                    <td>
+                        <p class="NoteTipWarningText"><strong>Note: </strong>You can set how information displays at the Global level (the default for all Profiles) or for just one Profile.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>Open Global Settings&#160;to set this functionality as the default for all Profiles,&#160;<em>or</em>&#160;open a Profile&#160;for which you wish to create a special display,&#160;and then edit the settings on the Settings tab.</li>
+        </ol>
+        <p>
+            <img src="../Images/C_UserGuide/RSA_UgCustomLabelsMessImage_ProfileSettings.png" style="width: 364px;height: 227px;" />
+            <br />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Adjust the Global or Profile settings listed in the table below to configure how logos, labels, images, and other visual elements display. The EMS Room Sign App allows you to re-label all buttons, page labels, and messages.</li>
+        </ol>
+        <table class="TableStyle-PatternedRows" style="mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1" scope="col"><strong>Option</strong>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1" scope="col"><strong>Description</strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" data-th="Option"><strong>Label/Message Settings</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows" data-th="Description">To change a label/message, simply edit the desired setting, change the value and click <strong>OK</strong>.&#160;Labels/messages that are too long to display in the EMS Room Sign App are truncated and appended with an ellipses.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" data-th="Option"><strong>Misc—Background URL</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows" data-th="Description">Leave blank to use the default the EMS Room Sign App background image.&#160;To change, specify a fully qualified URL to the image location.&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows" data-th="Option"><strong>Misc—Logo URL</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows" data-th="Description">Leave blank to use the default the EMS Room Sign App logo.&#160;To change, specify a fully qualified URL to the image location.&#160; Supported logo specifications (above) apply.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows" data-th="Option"><strong>Misc—Device Polling Interval</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows" data-th="Description">Interval in minutes device polls the EMS database for booking information (e.g., new, changed, canceled) bookings. The EMS Room Sign App&#160;randomizes calls to the EMS database by +/- 20 seconds to ensure that all of your devices aren’t polling for information at identical times.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows" data-th="Option"><strong>Misc—Pin to Access Settings Screen</strong>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows" data-th="Description">Once the EMS Room Sign App&#160;is running on your device, double-tapping the EMS Room Sign App logo in the upper-left hand corner of the screen re-accesses the&#160;<em>Settings</em>&#160;screen.&#160;This setting requires the user to enter a PIN.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Supported Logo and Background Image Sizes</h2>
+        <p>To customize the logo and/or background, update the ‘Logo Url’ and ‘Background Url’ profile settings in the ‘Misc’ area.* You can use either a URL or a server path (e.g., /EmsRoomSign/Content/Images/custom-logo.png). The logo can be a maximum of 300 x 80 pixels.&#160;The background depends on the tablet resolution. For landscape mode, the image resolution will typically be 1024 x 768.</p>
+        <p class="mt-indent-1"><em>EMS Room Sign App Profile Settings</em>
+        </p>
+        <p>
+            <img src="../Images/C_UserGuide/RSA_UgCustomLabelsMessImage_ProfileSettings.png" style="width: 1368px;height: 67px;" />
+        </p>
+    </body>
+</html>

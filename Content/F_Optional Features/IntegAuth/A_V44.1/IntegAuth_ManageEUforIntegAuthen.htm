@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2225" MadCap:lastWidth="810">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/IntegAuthen_Guide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Managing Everyday Users For Integrated Authentication</h1>
+        <p>In order to make a reservation in EMS Everyday User Applications, such as&#160;EMS Web App, EMS Mobile App, and EMS for Outlook, a user must have an active Everyday User account with appropriate security and process templates.&#160;</p>
+        <p>Process Overview:</p>
+        <p>You can create&#160;Everyday User accounts within EMS in several ways:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li><a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/03-Managing_Web_Users_For_Integrated_Authentication#Manual_Everyday_User_Account_Creation" class="Hyperlink">Manually Create Everyday User Accounts</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/03-Managing_Web_Users_For_Integrated_Authentication#Automatic_Everyday_User_Account_Creation" class="Hyperlink">Automatically Create Everyday User Accounts</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/03-Managing_Web_Users_For_Integrated_Authentication#Existing_Everyday_User_Accounts" class="Hyperlink">Modify&#160;Existing Everyday User Accounts</a>
+            </li>
+        </ul>
+        <h2>Manual Everyday User Account&#160;Creation&#160;</h2>
+        <p>Everyday User accounts can be created manually by EMS Administrators within EMS Desktop Client or by anonymous Everyday Users on their respective EMS Everyday Applications.&#160;</p>
+        <p>To create Everyday User accounts in the&#160;EMS Desktop Client,&#160;See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Configuring_Everyday_Users" title="Configuring Everyday Users"><span class="Hyperlink">Creating Everyday User Accounts</span></a>. &#160;</p>
+        <p>To configure EMS Web App to allow anonymous Everyday Users to request an account, you adjust parameters&#160;See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/EMS_Web_App_System_Parameters" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/EMS_Web_App_System_Parameters"><span class="Hyperlink">EMS Web App System Parameters</span></a>.</p>
+        <p>Important:&#160; When manually creating an Everyday User account in an Integrated Authentication environment, you must specify a value in the Everyday User&#160;Network ID&#160;field or the&#160;External Reference&#160;field.&#160; The&#160;Field Used to Authenticate Everyday User&#160;parameter (within System Administration &gt; Settings &gt;&#160;Parameters,&#160;Everyday User Applications tab) is used to determine which value should be used for authentication.</p>
+        <h2>Automatic Everyday User Account Creation&#160;</h2>
+        <p>Various configuration settings are available to automatically create Everyday User records (and assign the appropriate Security and&#160;Process Template(s) if applicable) when a user accesses an EMS Everyday User Application (such as EMS Web App for the first time.&#160;</p>
+        <h3>EMS Web App Parameters&#160;</h3>
+        <p>Within the Everyday User Applications parameters area of the EMS desktop client (System Administration &gt; Settings &gt;&#160;Parameters, Everyday User Applications&#160;tab), the following parameters must be set accordingly:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Area</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                    <th>
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                    </td>
+                    <td>
+                        <p>Auto Create Everyday User Account (for Integrated Authentication)</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                    </td>
+                    <td>
+                        <p>Default Security Template for User</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                    </td>
+                    <td>
+                        <p>Default Account Status for Newly-Created User</p>
+                    </td>
+                    <td>
+                        <p>Active</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Portal/Federated&#160;Authentication Parameters</p>
+        <p>For organizations using Portal or Federated&#160;authentication, EMS supports a simple account provisioning strategy.&#160; When using Auto Create, EMS requires that a Everyday User account is provisioned with a name, an email address and a NetworkId (some authentication key).&#160;Otherwise, the user will be redirected to the Account Management page and be asked to manually enter the required information. &#160;In addition to the required fields, EMS also supports collecting phone, fax, and an external reference value.&#160; The parameters below are meant to help create a more complete Everyday User. The values for each of the parameters are to be determined by the information populated by your portal.</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Area</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                    <th>
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Email Variable</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication External Reference Variable</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Fax Variable</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Name Variable</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Phone Variable</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h3>HR Toolkit (for EMS Workplace, EMS Campus, EMS Enterprise, EMS District and EMS Legal only)&#160;</h3>
+        <p>The HR Toolkit is an optional component that allows you to automate the creation and maintenance of Everyday User records in EMS using an outside employee data source like your HR system or another data store within your organization.&#160; Please refer to the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_Human_Resources_Toolkit/Installing_Human_Resources_Toolkit" title="Installing HR Toolkit"><span class="Hyperlink">HR Toolkit Installation Instructions</span></a>&#160;for information.&#160; If you are not licensed for the HR Toolkit, but would like to learn more about it, please contact your Account Executive.</p>
+        <h3>Automatic Template Assignment to Users&#160;</h3>
+        <p>The&#160;Default Security Template for User&#160;parameter shown above is used to automatically&#160;assign the correct Everyday User Security&#160;Template to new Everyday User records.</p>
+        <p>You can automatically assign default Everyday User Process Templates when a new Everyday User account is created.&#160; To automatically assign a Everyday User Process Template to new Everyday Users, select the&#160;Available to New Everyday Users&#160;option within your Everyday User Process Template(s) (Configuration &gt; Everyday User Applications&#160;&gt;&#160;Everyday User Process Templates&#160;(Edit&#160;the template &gt;&#160;Process Templates&#160;tab)).</p>
+        <p>EMS customers using the LDAP Authentication method can use an alternate method to assign a Everyday User Process Template to a Everyday User based on the LDAP Group(s) that that user belongs to.&#160; This approach can be used in addition to or in lieu of the Everyday User Process Template assignment approach discussed above.&#160; Please see the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Integrated_Authentication_Options/05-LDAP_Authentication" title="LDAP Authentication"><span class="Hyperlink">LDAP Authentication</span></a>&#160;section&#160;for configuration instructions.</p>
+        <h2>Existing Everyday User Accounts&#160;</h2>
+        <p>Warning for Existing EMS Customers:&#160; Before activating any Integrated Authentication option, the&#160;Network ID&#160;field or&#160;External Reference&#160;field must be populated on all existing Everyday User records.&#160;</p>
+        <table>
+            <col />
+            <col style="width: 524px;" />
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/IntegAuthen_Guide/Managing Everyday Users For.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3857/tech_doc_warning.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25" />
+                    </p>
+                </td>
+                <td>
+                    <p>Warning:&#160;Ignoring this step may result in duplicate Everyday User records.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

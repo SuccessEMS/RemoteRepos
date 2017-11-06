@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1923" MadCap:lastWidth="820">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/HRToolkit_InstallGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Aligning Your Source Data for HR Toolkit</h1>
+        <p>You can use the specifications below to make sure your source data will import correctly into EMS.</p>
+        <p>The&#160;HRTK_Update_Group&#160;stored procedure (created by&#160;HRTK Update Script G_C_GT_WU.sql) contains all of the logic to create your EMS Contact, Group and Everyday Applications (web) User data.&#160;Records are imported into EMS from the EMS_Staging database according to the specifications below.</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>EMS Staging Field (varchar)</p>
+                    </th>
+                    <th>
+                        <p>Writes Data to EMS Database Fields</p>
+                    </th>
+                    <th>
+                        <p>Requirements/Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>PersonnelNumber&#160;(20)</p>
+                    </td>
+                    <td>
+                        <p>Contact.External Reference</p>
+                        <p>WebUser.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;Part of Primary Key Cluster.&#160;Unique identifier (e.g. Employee/Student ID, Personnel Number, etc.) for each web user.&#160; Used for purposes of creating /updating EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>FirstName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>LastName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Title&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Title</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>MiddleInitial&#160;(10)</p>
+                    </td>
+                    <td>
+                        <p>Contact .Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EMailAddress&#160;(75)</p>
+                    </td>
+                    <td>
+                        <p>Contact.EmailAddress</p>
+                        <p>WebUser.EmailAddress</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;for Web User creation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Phone&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Phone</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fax&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Fax</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Address1&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Address1</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Address2&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Address2</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>City&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.City</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>State&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.State</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ZipCode&#160;(10)</p>
+                    </td>
+                    <td>
+                        <p>Contact.ZipCode</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Country&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Contact.Country</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>NetworkID&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>WebUser.NetworkID</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;for Integrated Authentication.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupID&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Group.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>Required.&#160;&#160;Unique identifier for each group.&#160;&#160;Along with PersonnelNumber, part of primary key cluster. If (Hybrid) for Group/GroupType functionality must be 0.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Group.GroupName</p>
+                    </td>
+                    <td>
+                        <p>Required only for Everyday Application User associated with Groups. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupType&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>Group.GroupTypeID</p>
+                        <p>GroupType.Description if unique</p>
+                    </td>
+                    <td>
+                        <p>Required only for Everyday Application User associated with Groups. Associates groups with group types. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h2>Group Type Records&#160;</h2>
+        <p>Unique GroupTypes in&#160;EMS_Staging.tblPeople&#160;are added to the Group Types table in EMS (EMS.tblGroupType). Group Types are not updated or de-activated.</p>
+        <h2>Group Records&#160;</h2>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Groups that exist in EMS_Staging.tblPeople, but not in EMS.tblGroup (based on EMS_Staging.tblPeople.GroupID and EMS.tblGroup.ExternalReference) will be created in EMS.</li>
+            <li>For Groups that exist in EMS_Staging.tblPeople and in EMS.tblGroup, GroupName and GroupType changes in EMS_Staging will be updated in EMS.</li>
+            <li>Groups that exist in EMS.tblGroup, but not in EMS_Staging.tblPeople will be de-activated in EMS (includes all of the Contacts associated with the Group).</li>
+        </ul>
+        <h2>Contact Records&#160;</h2>
+        <p>Contacts that exist in EMS_Staging.tblPeople, but not in EMS.tblContact (based on EMS_Staging.tblPeople.PersonnelNumber and EMS.tblContact.ExternalReference) will be created in EMS for the associated Group (see section above for Group maintenance logic).&#160;A Web User account will also be created for the Contact in EMS and the Group record will be automatically assigned to the Contact’s Web User record.&#160;This allows the Contact to make a reservation on behalf of the Group in Virtual EMS.&#160;</p>
+        <p>For Contacts that exist in EMS_Staging.tblPeople and in EMS.tblContact, any/all changes to the Contact’s information (name, address, etc.)&#160;in EMS_Staging will be updated in EMS.&#160;If the Group that a Contact is assigned to changes, the Contact record under the original Group will be de-activated and a new Contact record will be added under the new Group.&#160;This process also automatically assigns the Group record to the Contact’s Web User record.</p>
+        <p>Contacts that exist in EMS.tblContact, but not in EMS_Staging.tblPeople will be de-activated in EMS.</p>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1399" MadCap:lastWidth="868">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeat_API.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configuring and Verifying EMS for EMS API Web Service Use</h1>
+        <h2>Connecting EMS Desktop Client&#160;to the&#160;EMS API Web Service</h2>
+        <p>External applications require a pre-defined EMS User account to authenticate to the EMS API Web Service.&#160;The EMS User account should not be granted any rights within the EMS application itself.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Launch the EMS client application and login with a user that has EMS administrator-level access.</li>
+            <li>Go to&#160;System Administration&#160;&gt;&#160;Security&#160;&gt;&#160;Users.</li>
+            <li>Click the&#160;New&#160;button.&#160;The&#160;User&#160;screen will appear.</li>
+            <li>Enter the following information:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Name</li>
+            <li>User ID</li>
+            <li>Password</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>On the Processes screen, select the&#160;Special – EMS API Web Service Access&#160;process.</li>
+        </ol>
+        <p>Note:&#160; If the&#160;Special – EMS API Web Service Access&#160;process does not exist, please contact Customer Support.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Click the&#160;OK&#160;button.</li>
+        </ol>
+        <h2>Enable JSON to Query Data</h2>
+        <p>If using&#160;JSON to interface with the API,&#160;it must&#160;be enabled. (It is disabled by default).</p>
+        <p>Important!&#160;&#160;Installation must be complete before enabling JSON.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Edit the web.config file and enter&#160;&lt;add key="UseJSON" value="false"/&gt;.</li>
+            <li>Set the value to "true".</li>
+        </ol>
+        <h2>Verifying the EMS API</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Open a browser and enter the following URL:</li>
+        </ol>
+        <p>http://[ServerName]/EMSAPI/Service.asmx&#160;(replace [ServerName] with the name of your web server)</p>
+        <p>Your browser should return a list of API calls.</p>
+        <p>
+            <img src="../../Resources/Images/OptFeat_API/Configuring and Verifying.png" style="visibility: visible;mso-wrap-style: square;width: 756px;height: 406px;" alt="https://success.emssoftware.com/@api/deki/files/1485/EMS_API_-_Configure_and_Verify_EMS_API_Web_Service_-_Service.png?revision=1&amp;size=bestfit&amp;width=756&amp;height=406" />
+        </p>
+        <p>The EMS API version can be verified by going to the About page:</p>
+        <p>http://[ServerName]/EMSAPI/About.aspx&#160;(replace [ServerName] with the name of your web server)</p>
+        <p>&#160;</p>
+    </body>
+</html>

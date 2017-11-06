@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1869" MadCap:lastWidth="855">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing the EMS Automated Report Service</h1>
+        <p>EMS has built-in functionality that will automatically email reports to users. To learn more about configuring automated reporting, see&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/070_Reports_and_Queries/015_Creating_Automated_Reports" title="Configuring Automated Reports">Configuring Automated Reports</a>.&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Configuring Your EMS Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;The EMS Automated Report Service&#160;must be installed on a computer that is connected to the network and is running 24 hours a day.&#160;Existing versions of the EMS Automated Report Service&#160;must be manually uninstalled.&#160;&#160;Install the EMS Automated Report Service&#160;on&#160;one computer/server only.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Manually uninstall any existing versions of the EMS Automated Report Service Service.</li>
+            <li>Download the&#160;EMSAutomatedReportsSetup.msi&#160;onto the server that will be running the service.</li>
+            <li>Double-click&#160;EMSAutomatedReportsSetup.msi. Follow the on-screen prompts.&#160; It is recommended that you accept the defaults.</li>
+            <li>Within your Microsoft Windows Start menu, locate&#160;EMS Automated Report.&#160; The EMS Automated Report Configuration screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing the EMS Automated.png" style="visibility: visible;mso-wrap-style: square;width: 431px;height: 475px;" alt="https://success.emssoftware.com/@api/deki/files/934/Auto_Report_Config_1.png?revision=1&amp;size=bestfit&amp;width=431&amp;height=475" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Review and complete/change the following settings:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Mode&#160;– Type of authentication to the SMTP server.</li>
+            <li>SMTP Server –&#160;SMTP server name or IP address.</li>
+            <li>Use Gmail –&#160;Check this option to set the service to use Gmail settings.</li>
+            <li>Port Number –&#160;SMTP port (default = 25)</li>
+            <li>Use SSL –&#160;Check this option if your SMTP server runs under SSL.</li>
+            <li>User Name/Password&#160;– Required if an authentication mode other than Unauthenticated is selected.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click&#160;Edit, and change the values to your EMS server and database name.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing the EMS Automated_1.png" style="visibility: visible;mso-wrap-style: square;width: 464px;height: 244px;" alt="https://success.emssoftware.com/@api/deki/files/935/Auto_Report_Config_2.png?revision=1&amp;size=bestfit&amp;width=464&amp;height=244" />
+        </p>
+        <p>On the Database tab of the Delivery&#160;Database dialog box, complete the following:</p>
+        <ul style="list-style-type: disc;margin-left: 72pt;">
+            <li>Server/Database&#160;– EMS server and database name</li>
+            <li>EMS&#160;Authentication/Windows Authentication&#160;– The method of authentication to this database.</li>
+            <li>Email From&#160;–Email address that will be displayed in the From field of automated report&#160;emails that are sent.</li>
+            <li>Enable Service Event Logging&#160;– Activates Windows event logging.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>After making your entries, click&#160;OK.</li>
+            <li>Click&#160;OK&#160;again to save your EMS Automated Report Service Configuration settings.</li>
+        </ol>
+        <p>​Note:&#160; If any issues are encountered starting the service, please visit the online Support Center for a possible solution or call Customer Support.</p>
+        <p>The EMS Automated Report Service is now enabled.&#160;See Also:&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/070_Reports_and_Queries/015_Creating_Automated_Reports" title="Configuring Automated Reports">Configuring Automated Reports</a>.</p>
+        <p>&#160;</p>
+    </body>
+</html>

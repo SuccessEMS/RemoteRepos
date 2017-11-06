@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2151" MadCap:lastWidth="868">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing or Upgrading the EMS Email Notification Service</h1>
+        <p>EMS has built-in functionality that alerts users of certain changes in the database.&#160; With the optional EMS Email Notification Service users can also be notified via email. If email notification will not be used, there is no need to install the Email Notification Service. Standard notifications can still be generated and viewed by users who are logged into EMS.</p>
+        <p>The EMS Email Notification Service must be installed on a computer that is connected to the network and is running 24 hours a day.</p>
+        <p>IMPORTANT:&#160; Existing versions of the EMS Email Notification Service must be manually uninstalled.&#160; Install the EMS Email Notification Service on&#160;one computer/server only.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Manually uninstall any existing versions of the EMS Email Notification Service.</li>
+            <li>Download the&#160;EMSEmailNotificationSetup.msi&#160;onto the server that will be running the service.</li>
+            <li>Double-click&#160;EMSEmailNotificationSetup.msi. Follow the on-screen prompts.&#160; It is recommended that you accept the defaults.</li>
+            <li>Within your Microsoft Windows Start menu, locate&#160;EMS Email Notification.&#160; The EMS Email Notification Configuration screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing or Upgrading the.png" style="visibility: visible;mso-wrap-style: square;width: 422px;height: 503px;" alt="https://success.emssoftware.com/@api/deki/files/930/Email_Notification_Config_1.png?revision=1&amp;size=bestfit&amp;width=422&amp;height=503" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Review and complete/change the following settings:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Mode&#160;– Type of authentication to the SMTP server.</li>
+            <li>SMTP Server –&#160;SMTP server name or IP address.</li>
+            <li>Use Gmail –&#160;Check this option to set the service to use Gmail settings.</li>
+            <li>Port Number –&#160;SMTP port (default = 25)</li>
+            <li>Use SSL –&#160;Check this option if your SMTP server runs under SSL.</li>
+            <li>User Name/Password&#160;– Required if an authentication mode other than Unauthenticated is selected.</li>
+            <li>Email Interval –&#160;The frequency with which the system will generate notification emails.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click&#160;Edit, and change the values to your EMS server and database name.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing or Upgrading the_1.png" style="visibility: visible;mso-wrap-style: square;width: 661px;height: 313px;" alt="https://success.emssoftware.com/@api/deki/files/931/Email_Notification_Config_2.png?revision=1&amp;size=bestfit&amp;width=661&amp;height=313" />
+        </p>
+        <p>On the Database tab of the Notification Database dialog box, complete the following:</p>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Server/Database&#160;– EMS server and database name</li>
+            <li>EMS&#160;Authentication/Windows Authentication&#160;– The method of authentication to this database.</li>
+            <li>Email From –&#160;Email address that will be displayed in the From field of notification emails that are sent.</li>
+            <li>Enable Email Notification&#160;– Activates email notifications.</li>
+            <li>Enable Group Notification&#160;– Activates group notifications.</li>
+            <li>Enable Service Event Logging&#160;– Activates Windows event logging.</li>
+        </ul>
+        <p>Click the Service Order Settings tab and review/change the following:</p>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Paper size&#160;– The paper size for the PDF file that is emailed.</li>
+            <li>Highlight Days&#160;– Number selected here determines the information that is highlighted on service order PDFs.</li>
+            <li>Show Pricing&#160;– Check if service orders should display pricing.</li>
+            <li>Show Notes&#160;– Check if service orders should display resource notes.</li>
+            <li>Show Special Instructions&#160;– Check if service orders should display resource special instructions.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>After making your entries, click&#160;OK.</li>
+            <li>Click&#160;OK&#160;again to save your EMS Email Notification Configuration settings.The Email Notification Service is now enabled.<br />See&#160;Also:&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client" title="Setting Up EMS Desktop Client">EMS Setup Guide</a>&#160;for information on defining Notification Rules.</li>
+        </ol>
+    </body>
+</html>

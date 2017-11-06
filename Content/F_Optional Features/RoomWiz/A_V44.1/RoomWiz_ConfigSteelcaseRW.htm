@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="3848" MadCap:lastWidth="836">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/RoomWizard.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configuring Steelcase RoomWizard</h1>
+        <h2>Configuring the RoomWizard Setup Site for EMS Synchronization&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Open a browser and launch the RoomWizard Setup (typically&#160;http://[RoomWizardIPAddress]/admin/sign/DeviceNetwork).</li>
+            <li>Go to the Device–Synchronization area.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/RoomWizard/Configuring Steelcase RoomWizard.png" style="visibility: visible;mso-wrap-style: square;width: 757px;height: 825px;" alt="https://success.emssoftware.com/@api/deki/files/6359/clipboard_e392e6395dc751641feee596a02431ded.png?revision=1" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Select the ‘Use external source…’ option.</li>
+            <li>In the&#160;Base URL of the server pages&#160;field, enter the path to the&#160;RWAPI.aspx&#160;page for your EMS-RoomWizard Interface web site.&#160; For example:</li>
+        </ol>
+        <p><a href="http://www/" title="http://www" class="Hyperlink">http://www</a>.[ServerName]/EMSRoomWizardConnector/RWAPI.aspx&#160;(replace [ServerName] with the name of your web server)</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Enter the&#160;Poll interval.&#160; This setting determines how frequently the RoomWizard unit will check the EMS database for new bookings to display on the free/busy grid.&#160; To prevent any potential performance impacts on your EMS database, it is recommended that you set this interval to 10 minutes.&#160; You may adjust this setting based internal performance testing results if necessary.</li>
+            <li>If you have multiple RoomWizard units, you can click the&#160;Save on ALL Wizards&#160;button to use the above settings for all of your devices.</li>
+            <li>To link this specific RoomWizard unit to a specific EMS room, input the&#160;RoomWizard Room ID&#160;obtained in the&#160;Configuring EMS Rooms&#160;section above into the&#160;Room identifier&#160;field.</li>
+            <li>Click the&#160;Save on THIS Wizard&#160;button to save your RoomWizard Room ID.</li>
+        </ol>
+        <h2>EMS-RoomWizard Functionality Overview&#160;</h2>
+        <p>An explanation of general EMS related RoomWizard functionality and additional options is provided below.&#160; The following screenshot displays the various settings available in the Device-Front Panel area on the RoomWizard Setup site.</p>
+        <p>
+            <img src="../../../Resources/Images/RoomWizard/Configuring Steelcase RoomWizard_1.png" style="visibility: visible;mso-wrap-style: square;width: 754px;height: 658px;" alt="https://success.emssoftware.com/@api/deki/files/191/Room_Wizard_-_2.png?revision=1&amp;size=bestfit&amp;width=754&amp;height=658" />
+        </p>
+        <h3>RoomWizard Free/Busy Grid</h3>
+        <p>A room is considered ‘busy’ for a block of time if a meeting booked in a ‘Book Space’ Status Type exists in that room.</p>
+        <h3>RoomWizard Main Screen</h3>
+        <p>Meeting details will be displayed for all ‘public’ bookings (i.e. bookings where the Display on Web setting for the EMS Status, Event Type and Room are equal to ‘True’).&#160; If a meeting is private, ‘Private’ will appear on the RoomWizard unit.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Host Name&#160;- This option can be disabled on the RoomWizard Setup site in the Device–Front panel area by checking the&#160;Do not display “Host” name when in Synchronized modeoption.</li>
+            <li>Event Name</li>
+            <li>Event Start Time - Event End Time</li>
+        </ul>
+        <h3>RoomWizard Meeting Details</h3>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Reservation&#160;- Host name, booking Event Name</li>
+            <li>Created&#160;- Booking Date Added</li>
+            <li>Modified&#160;- Booking Date Changed</li>
+            <li>Email&#160;- This option can be enabled on the EMS-RoomWizard Interface site in the Configure EMS Databases area by checking the&#160;Display Meeting Host’s Phone and Email&#160;option.</li>
+            <li>Phone&#160;- This option can be enabled on the EMS-RoomWizard Interface site in the Configure EMS Databases area by checking the&#160;Display Meeting Host’s Phone and Email&#160;option.&#160; Phone appears under the&#160;Invitees&#160;area on the RoomWizard unit.</li>
+            <li>Notes&#160;- An option to display Booking Service Orders can be enabled on the EMS-RoomWizard Interface site in the Configure EMS Databases area by checking the&#160;Display Service Information as Notes&#160;setting.</li>
+        </ul>
+        <h3>RoomWizard Use Now Function</h3>
+        <p>This option can be disabled on the RoomWizard Setup site in the Device–Front panel area by checking&#160;Disable “Use Now” button.&#160; If enabled, a user can create a walk-up impromptu meeting on the RoomWizard unit using the settings specified on the EMS-RoomWizard Interface site in the Configure EMS Databases area.&#160; If the Start Now Function is enabled, “Local Reservation” will be concatenated to the end of the value specified in the Event Name field.</p>
+        <h3>RoomWizard End Function</h3>
+        <p>This option can be disabled on the RoomWizard Setup site in the Device–Front panel area by checking&#160;Disable “End” button.&#160; If enabled, a user can end their in-progress meeting.&#160; Ending a meeting adjusts the booking Event and Reservation end times to the current time.</p>
+        <h3>RoomWizard Adjust Function</h3>
+        <p>This option can be disabled on the RoomWizard Setup site in the Device–Front panel area by checking&#160;Disable “Adjust” button.&#160; If enabled, a user can adjust the end time of their in-progress meeting.&#160; The booking Event and Reservation end times are adjusted based on the user’s selection.</p>
+        <h3>RoomWizard Start Now Function</h3>
+        <p>This option can be enabled on the RoomWizard Setup site in the Device–Front panel area by checking&#160;Enable “Start” button.&#160; If enabled, a user’s booking will be cancelled (i.e. set to the status specified in the EMS-RoomWizard Interface site in the Configure EMS Databases area) if the ‘Start’ button has not been pushed within the amount of time configured in RoomWizard’s&#160;Time limit for “Start” button’&#160;setting.</p>
+        <h3>RoomWizard Start Early Function</h3>
+        <p>This option can be enabled on the RoomWizard Setup site in the Device–Front panel area by checking&#160;Enable “Start Early” button.&#160; If enabled, a user can start their booking early.&#160; The RoomWizard unit creates a new booking using the settings specified on the EMS-RoomWizard Interface site in the Configure EMS Databases area.&#160; “Start Early” will be concatenated to the end of the value specified in the Event Name field.</p>
+        <h3>RoomWizard Room Information</h3>
+        <p>Room information (e.g. Name, Capacity, Phone Number, etc.) is configured within the RoomWizard Setup site in the Room-Name/Location and Room-Facilities areas.&#160; This information cannot be pulled from the EMS database.</p>
+        <p>&#160;</p>
+    </body>
+</html>

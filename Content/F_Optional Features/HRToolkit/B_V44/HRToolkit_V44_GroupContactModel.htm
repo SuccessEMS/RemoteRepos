@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4216" MadCap:lastWidth="820">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/HRToolkitV44.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>HR Toolkit - Group/Contact Model</h1>
+        <h2>Obtaining the HR Toolkit Components</h2>
+        <p>Please contact your Professional Services Consultant to obtain the following components:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>HRTK Staging DB Install G_C_GT_WU.sql&#160;– SQL file required to create the staging database -&#160;EMS_Staging.</li>
+            <li>HRTK Update Script G_C_GT_WU.sql&#160;– SQL file required to create the stored procedure&#160;HRTK_ Update_Group&#160;within your EMS database.</li>
+        </ul>
+        <h2>HR Toolkit Overview&#160;</h2>
+        <h3>The EMS_Staging Database&#160;</h3>
+        <p>The&#160;EMS_Staging&#160;database (created by&#160;HRTK Staging DB Install G_C_GT_WU.sql) is used to stage Contact, Group and Web User records before they are imported into EMS.</p>
+        <p>Note: your EMS database may have the “Groups” and “Contacts” fields renamed to other terms.</p>
+        <p>Once you have identified the data source within your organization that will be used to create and maintain your EMS Contact, Group and Web User records, you will be required to define/create a process to import&#160;ACTIVE&#160;records into the&#160;tblPeople&#160;table within&#160;EMS_Staging.</p>
+        <p>
+            <img src="../../../Resources/Images/HRToolkitV44/HR Toolkit Group Contact Model.png" style="visibility: visible;mso-wrap-style: square;width: 357px;height: 433px;" alt="https://success.emssoftware.com/@api/deki/files/1492/HR_Toolkit_-_Group_Contact_Model_-_EMS_Staging.png?revision=1&amp;size=bestfit&amp;width=357&amp;height=433" />
+        </p>
+        <p>Maintaining Contact, Group and Group Type Records in EMS</p>
+        <p>The&#160;HRTK_Update_Group&#160;stored procedure (created by&#160;HRTK Update Script G_C_GT_WU.sql) contains all of the logic to create your EMS Contact, Group and Web User data.&#160;Records are imported into EMS from the&#160;EMS_Staging&#160;database according to the specifications outlined in the following table:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>EMS Staging Field (varchar)</p>
+                    </th>
+                    <th>
+                        <p>&#160;</p>
+                    </th>
+                    <th>
+                        <p>Writes Data to EMS Database Fields</p>
+                    </th>
+                    <th>
+                        <p>Requirements/Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>PersonnelNumber&#160;(20)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.External Reference</p>
+                        <p>WebUser.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;Part of Primary Key Cluster.&#160;Unique identifier (e.g. Employee/Student ID, Personnel Number, etc.) for each web user.&#160; Used for purposes of creating /updating EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>FirstName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>LastName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Title&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Title</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>MiddleInitial&#160;(10)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact .Contact</p>
+                        <p>WebUser.UserName</p>
+                    </td>
+                    <td>
+                        <p>Must have at least 1 of 3.&#160;Built in EMS as LastName, FirstName Middle Initial.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EMailAddress&#160;(75)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.EmailAddress</p>
+                        <p>WebUser.EmailAddress</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;for Web User creation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Phone&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Phone</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fax&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Phone</p>
+                        <p>WebUser.Fax</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Address1&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Address1</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Address2&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Address2</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>City&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.City</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>State&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.State</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ZipCode&#160;(10)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.ZipCode</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Country&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Contact.Country</p>
+                    </td>
+                    <td>
+                        <p>can be null</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>NetworkID&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>WebUser.NetworkID</p>
+                    </td>
+                    <td>
+                        <p>Required&#160;for Integrated Authentication.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupID&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Group.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>Required.&#160;&#160;Unique identifier for each group.&#160;&#160;Along with PersonnelNumber, part of primary key cluster. If (Hybrid) for Group/GroupType functionality must be 0.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupName&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Group.GroupName</p>
+                    </td>
+                    <td>
+                        <p>Required only for Web Users associated with Groups. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>GroupType&#160;(50)</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Group.GroupTypeID</p>
+                        <p>GroupType.Description if unique</p>
+                    </td>
+                    <td>
+                        <p>Required only for Web Users associated with Groups. Associates groups with group types. If (Hybrid) and GroupID = 0, this value is ignored.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Group Type Records</h4>
+        <p>Unique GroupTypes in&#160;EMS_Staging.tblPeople&#160;are added to the Group Types table in EMS (EMS.tblGroupType). Group Types are not updated or inactivated.</p>
+        <h4>Group Records</h4>
+        <p>Groups that exist in&#160;EMS_Staging.tblPeople, but not in&#160;EMS.tblGroup&#160;(based on&#160;EMS_Staging.tblPeople.GroupID&#160;and&#160;EMS.tblGroup.ExternalReference) will be created in EMS.</p>
+        <p>For Groups that exist in&#160;EMS_Staging.tblPeople&#160;and in&#160;EMS.tblGroup, GroupName and GroupType changes in&#160;EMS_Staging&#160;will be updated in EMS.</p>
+        <p>Groups that exist in&#160;EMS.tblGroup, but not in&#160;EMS_Staging.tblPeople&#160;will be inactivated in EMS (includes all of the Contacts associated with the Group).</p>
+        <h4>Contact Records</h4>
+        <p>Contacts that exist in&#160;EMS_Staging.tblPeople&#160;, but not in&#160;EMS.tblContact&#160;(based on&#160;EMS_Staging.tblPeople.PersonnelNumber&#160;and&#160;EMS.tblContact.ExternalReference) will be created in EMS for the associated Group (see section above for Group maintenance logic).&#160;A Web User account will also be created for the Contact in EMS and the Group record will be automatically assigned to the Contact’s Web User record.&#160;This allows the Contact to make a reservation on behalf of the Group in Virtual EMS.&#160;</p>
+        <p>For Contacts that exist in&#160;EMS_Staging.tblPeople&#160;and in&#160;EMS.tblContact, any/all changes to the Contact’s information (name, address, etc.)&#160;in&#160;EMS_Staging&#160;will be updated in EMS.&#160;If the Group that a Contact is assigned to changes, the Contact record under the original Group will be inactivated and a new Contact record will be added under the new Group.&#160;This process also automatically assigns the Group record to the Contact’s Web User record.</p>
+        <p>Contacts that exist in&#160;EMS.tblContact, but not in&#160;EMS_Staging.tblPeople&#160;will be inactivated in EMS.</p>
+        <h4>Virtual EMS Considerations</h4>
+        <p>Various configuration settings are available to automatically assign the appropriate Web Process Template(s) when a user hits your Virtual EMS site for the first time.&#160;Within the Virtual EMS Parameters area of EMS (System Administration &gt; Settings &gt; Parameters (Virtual tab)), the following parameters must be set accordingly to activate this feature:</p>
+        <p>Note:&#160; Ignore the “Auto Creates…” and “Security Status…” parameters if your HR Toolkit was customized to automatically assign Web Process Templates to Web Users.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Area</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                    <th>
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Auto Creates Web Users During Integrated Authentication</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Default Security Template for User</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Must be specified</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account Management</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Security Status for User</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Active</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To automatically assign a Web Process Template to new Web Users, select the ‘Available to New Web Users’ option within your Web Process Template(s) (Configuration &gt; Web &gt; Web Process Templates).</p>
+        <h3>Hybrid Group/Contact HR Toolkits</h3>
+        <p>In some instances, it may be necessary to combine elements of the Group/Group Type and Group/Contact model HR Toolkits.&#160;Usually this is necessary when you will have some web users belonging to a department while other web users will not be part of a department and simply using Virtual EMS on their own behalf. A common example is with study rooms on college campuses; all students on campus should have access to Virtual EMS to book these study spaces, but they may not all belong to a Group, and therefore are created following the Group/Group Type rules.&#160;In addition with this Toolkit, it is possible to have users created that belong to both individual Groups and organizational Groups.&#160;For instance, John Doe could be created as a contact for the History department as well as an individual Group.&#160;You should work with your Professional Services Consultant for guidance on whether this particular version of the HR Toolkit is right for you.</p>
+        <h2>Installing and Executing the HR Toolkit</h2>
+        <p>Important Note:&#160; Existing EMS clients must ‘synchronize’ existing EMS Group, Contact and Web User records before activating the HR Toolkit.&#160;Ignoring this step will result in duplicate records. Please see your Professional Services Consultant for more details.</p>
+        <h3>Installation</h3>
+        <p>The followings steps should be performed on the MS SQL Server that hosts your EMS database.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Obtain the SQL files outlined in the Obtaining the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/HR_Toolkit/Installing_HR_Toolkit/04-HR_Toolkit_-_Group%2F%2F%2F%2FContact_Model#Obtaining_the_HR_Toolkit_Components" title="HR Toolkit - Group/Contact Model"><span class="Hyperlink">HR Toolkit Components</span></a>.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;(G_C_GT_WU.sql)/(G_GT_WU.sql)/(Hybrid.sql)&#160;script against your&#160;master&#160;database.&#160;This will create the&#160;EMS_Stagingdatabase containing one table named&#160;tblPeople.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;HRTK Update Script&#160;(G_C_GT_WU.sql)/(G_GT_WU.sql)/(Hybrid.sql)&#160;script against your&#160;EMS&#160;database.&#160; This will create a stored procedure in your EMS database named&#160;HRTK_Update_Group.&#160;</li>
+        </ol>
+        <h3>Execution&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Import&#160;ACTIVE&#160;records from your organization’s data source into the&#160;tblPeople&#160;table within the&#160;EMS_Staging&#160;database.</li>
+            <li>For current EMS clients only:&#160;Ensure that existing Group and/or Web User records have been ‘synchronized’.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;HRTK_Update_Group&#160;stored procedure.</li>
+        </ol>
+        <p>Note:&#160; Step 3 (and Step 1 with assistance from your IT Department) can be scheduled to execute automatically using a SQL Job.&#160;Please refer to your MS SQL Server documentation for more information on creating and scheduling a SQL Job.&#160;This is&#160;NOT&#160;an EMS managed process.</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4216" MadCap:lastWidth="996">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/CISCO_Guide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configuring the EMS - Cisco TMS Interface</h1>
+        <h2>Configuring Rooms and Resources</h2>
+        <p>Before activating the EMS – Cisco TMS Interface, the EMS video conference-room and/or resource list must be synchronized with a Cisco TMS video-conference system (e.g. room or resource).&#160; Systems are linked via the EMS Room/Resource&#160;External Reference&#160;field and the&#160;System ID&#160;in Cisco TMS.</p>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco.png" style="visibility: visible;mso-wrap-style: square;width: 996px;height: 615px;" alt="https://success.emssoftware.com/@api/deki/files/117/image_22.png?revision=1&amp;size=bestfit&amp;width=996&amp;height=615" />
+        </p>
+        <p>Rooms can be accessed in EMS within&#160;Configuration &gt; Facilities &gt; Rooms.&#160; Resources can be accessed in EMS within&#160;Configuration &gt; Resources.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the Cisco TMS Booking API Web Service is installed and running by opening a browser and entering the web service URL (typically&#160;http://[ServerName]/TMS/external/booking/bookingservice.asmx).&#160;The following screen should appear:</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco_1.png" style="visibility: visible;mso-wrap-style: square;width: 787px;height: 468px;" alt="https://success.emssoftware.com/@api/deki/files/118/image_23.png?revision=1&amp;size=bestfit&amp;width=787&amp;height=468" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Log into the EMS desktop application using an EMS user account with Administrator-level access.</li>
+            <li>Click the&#160;Cisco TMS Activity&#160;button on the tool bar.&#160; The&#160;Cisco TMS Activity&#160;screen will appear.</li>
+            <li>Click the&#160;Settings&#160;menu option in the upper right-hand corner of the&#160;Cisco TMS Activity&#160;screen.&#160; The&#160;Cisco TMS Settings&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/CISCO_Guide/Configuring the EMS Cisco_2.png" style="visibility: visible;mso-wrap-style: square;width: 903px;height: 623px;" alt="https://success.emssoftware.com/@api/deki/files/119/image_24.png?revision=1&amp;size=bestfit&amp;width=903&amp;height=623" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>On the&#160;Settings&#160;tab, specify values for the items listed by highlighting the record and clicking the&#160;Edit&#160;button.&#160; Once you configure a setting, click the&#160;OK&#160;button to save your value.</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Enable Event Logging&#160;– Enables EMS – Cisco TMS Windows Service event logging.</li>
+            <li>Error Email Message&#160;- Subject line of error email notifications.</li>
+            <li>Error “From” Email Address&#160;- Email address (individual or distribution group) that error email notifications will be sent from.</li>
+            <li>Error “To” Email Address&#160;- Email address (individual or distribution group) that error email notifications will be sent to.</li>
+            <li>Number of days prior to Event&#160;- Specifies how far in advance of a video-conference date the EMS – Cisco TMS Interface should push the EMS booking(s) to Cisco TMS.</li>
+            <li>SMTP Authentication Type&#160;– Anonymous or Authenticated.</li>
+            <li>SMTP Password&#160;- Specify if SMTP Authentication Type = Authenticated.</li>
+            <li>SMTP Server&#160;– Used to relay error notification emails.</li>
+            <li>SMTP User Name&#160;– Specify if SMTP Authentication Type = Authenticated.</li>
+            <li>Use Reserved Time&#160;– If set to Yes, the booking reserved time will be passed to the Cisco TMS Booking API.&#160; Otherwise, the event time will be passed.</li>
+            <li>Web Service Authentication Type&#160;– Anonymous or Authenticated.</li>
+            <li>Web Service Domain&#160;– Cisco TMS Booking API Web Service Domain.</li>
+            <li>Web Service Password&#160;– Specify if Web Service Authentication Type = Authenticated.</li>
+            <li>Web Service URL&#160;- URL to Cisco TMS Booking API Web Service verified in Step 1.</li>
+            <li>Web Service User Name&#160;– Specify if Web Service Authentication Type = Authenticated.</li>
+            <li>Go to the&#160;Buildings&#160;tab.&#160; This tab is used to include/exclude EMS bookings scheduled in specific Buildings, Areas, or Views during processing.&#160; To select an item, highlight the record and click the&#160;&gt;&#160;button.</li>
+            <li>Go to the&#160;Event Types&#160;tab.&#160; This tab is used to include/exclude EMS bookings scheduled in specific Event Types during processing.</li>
+            <li>Go to the&#160;Status&#160;tab.&#160; This tab is used to include/exclude EMS bookings scheduled in specific Statues during processing.</li>
+            <li>Click the&#160;OK&#160;button to save your settings.</li>
+        </ul>
+        <h2>Advanced Configuration</h2>
+        <p>By default, the following booking information is transferred from EMS to the Cisco TMS Booking API:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field Description</p>
+                    </th>
+                    <th>
+                        <p>EMS Table.Column</p>
+                    </th>
+                    <th>
+                        <p>Cisco TMS Conference Object Property</p>
+                    </th>
+                    <th>
+                        <p>Direction</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Reservation Event Name</p>
+                    </td>
+                    <td>
+                        <p>tblReservation. EventName</p>
+                    </td>
+                    <td>
+                        <p>Title</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Booking Event Start Time</p>
+                    </td>
+                    <td>
+                        <p>tblBooking. GMTTimeEventStart</p>
+                    </td>
+                    <td>
+                        <p>StartTimeUTC</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Booking Event End Time</p>
+                    </td>
+                    <td>
+                        <p>tblBooking. GMTTimeEventEnd</p>
+                    </td>
+                    <td>
+                        <p>EndTimeUTC</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room(s) and/or Resource(s)</p>
+                    </td>
+                    <td>
+                        <p>tblRoom. ExternalReference</p>
+                        <p>and/or</p>
+                        <p>tblResource.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>ParticipantID(s)</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room Phone(s)</p>
+                    </td>
+                    <td>
+                        <p>tblRoomPhone.&#160; NA for resource.</p>
+                    </td>
+                    <td>
+                        <p>NameOrNumber</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Cisco TMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cisco TMS Conference ID</p>
+                    </td>
+                    <td>
+                        <p>tblTMSActivity. ConferenceID</p>
+                    </td>
+                    <td>
+                        <p>ConferenceID</p>
+                    </td>
+                    <td>
+                        <p>Cisco TMS &gt; EMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>TMS Error Information</p>
+                    </td>
+                    <td>
+                        <p>tblTMSActivity.Error</p>
+                    </td>
+                    <td>
+                        <p>FaultCode + FaultString</p>
+                    </td>
+                    <td>
+                        <p>Cisco TMS &gt; EMS</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Cisco TMS default values (defined within Cisco TMS) will be used for any properties not explicitly specified in the table above.&#160; Functionality is available to send additional Cisco TMS Conference Object properties using EMS reservation-level User Defined Fields (UDFs).&#160; This would allow you, for example, to create an EMS UDF named “Conference Type” and map that to the&#160;ConferenceType&#160;Cisco TMS Conference Object property.&#160; To map an EMS UDF to a Cisco TMS Conference Object property, do the following:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Create a reservation-level UDF in EMS within&#160;Configuration &gt; Other &gt; User Defined Fields.&#160; For information on how to configure an EMS UDF, please refer to the&#160;EMS Setup Guide.</li>
+            <li>Go to the&#160;Optional Cisco TMS Settings&#160;tab within the Cisco TMS Settings area (outlined in the section above).</li>
+            <li>Click the&#160;New&#160;button.&#160; The&#160;Optional Cisco TMS Setting&#160;screen will appear.</li>
+            <li>Select your Cisco TMS Conference Object property in the&#160;Cisco TMS Setting&#160;dropdown.&#160; Please refer to your Cisco TMS Booking API documentation for a listing/explanation of Cisco TMS Conference Object properties.</li>
+            <li>Select your EMS UDF in the&#160;User Defined Field&#160;dropdown.</li>
+            <li>Click the&#160;OK&#160;button to close the&#160;Optional Cisco TMS Setting&#160;screen.</li>
+            <li>Click the&#160;OK&#160;button to close the&#160;Cisco TMS Settings&#160;screen and save your configuration settings.</li>
+        </ol>
+        <h2>Additional Cisco TMS Conference Object Properties</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>Conference Type<br />Bandwidth<br />Picture Mode<br />Encrypted<br />Data Conference</p>
+                </td>
+                <td>
+                    <p>Password<br />Billing Code<br />ISDN Restrict<br />User Message Text<br />External Source ID</p>
+                </td>
+                <td>
+                    <p>Participant Call Type<br />Numeric ID<br />External Primary Key<br />Show Extend Option</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

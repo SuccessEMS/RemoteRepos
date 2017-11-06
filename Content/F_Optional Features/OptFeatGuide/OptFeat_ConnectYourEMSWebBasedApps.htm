@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="1381" MadCap:lastWidth="816">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Connecting Your EMS Web-Based Applications</h1>
+        <p>EMS Web-based applications (such as VEMS, EMS Web App, and EMS Mobile App) also need to be configured to use this database connection method. This topic guides you in this task.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Access Internet Information Services (IIS) Manager on your web server.&#160;</li>
+            <li>Create a new Application Pool that will be used by your EMS web based application(s) installed on this web server.&#160;</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Connecting Your EMS Web Based.png" style="visibility: visible;mso-wrap-style: square;width: 230px;height: 209px;" alt="https://success.emssoftware.com/@api/deki/files/5065/clipboard_edd5e36f1f7792d381050b57806288331?revision=1&amp;size=bestfit&amp;width=230&amp;height=209" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Change the Application Pool&#160;Identity&#160;to run under a&#160;Custom account. &#160;Specify the EMS-specific Active Directory user account (see&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Connecting_To_Your_Database_Using_Active_Directory/010_Pre-Installation_Requirements" title="Pre-Installation Requirements">Pre-Installation Requirements</a>).&#160;</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Connecting Your EMS Web Based_1.png" style="visibility: visible;mso-wrap-style: square;width: 583px;height: 362px;" alt="https://success.emssoftware.com/@api/deki/files/5066/clipboard_e314ae78ec87b0c30eca30a367bbd5572?revision=1&amp;size=bestfit&amp;width=583&amp;height=362" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Change the&#160;Application Pool&#160;in your EMS web-based application to the pool defined above.&#160;</li>
+            <li>Open the&#160;web.config&#160;file for the EMS web-based product and make the following changes:&#160;</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Connecting Your EMS Web Based_2.png" style="visibility: visible;mso-wrap-style: square;width: 695px;height: 70px;" alt="https://success.emssoftware.com/@api/deki/files/5067/clipboard_e6f03ad3e3bf56b23f0a0efee7c4934a9?revision=1&amp;size=bestfit&amp;width=695&amp;height=70" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Connecting Your EMS Web Based_3.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/6382/tech_doc_tip.png?revision=1" />
+                    </p>
+                </td>
+                <td>
+                    <p>Tip for EMS Cloud Customers:&#160;Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please contact EMS Support.&#160;&#160;</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <p>
+                                    <img src="../../Resources/Images/OptFeatGuide/Configuring Your EMS Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                                </p>
+                            </td>
+                            <td>
+                                <p>Important:&#160;If you do not have a customer login, register&#160;<a href="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx" title="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx">here</a>.</p>
+                            </td>
+                        </tr>
+                    </table>
+                    <p>Option 1&#160;(Recommended):&#160;Submit a Ticket directly via the&#160;<a href="https://support.emssoftware.com/" title="https://support.emssoftware.com">EMS Support Portal</a></p>
+                    <p>Option 2:&#160;Email&#160;<a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com</a></p>
+                    <p>Option 3 (Recommended for critical issues only):&#160;Phone (800) 288-4565</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Launch your EMS web-based product to verify connectivity.&#160;<br />&#160;</li>
+        </ol>
+    </body>
+</html>

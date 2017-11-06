@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="945" MadCap:lastWidth="810">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/HRToolkitV44.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installation Overview</h1>
+        <p>If you are unsure whether your organization is licensed for EMS Human Resources Toolkit or if you would like to learn more about it, please contact your Account Executive.</p>
+        <p>Process Overview:</p>
+        <p>To integrate the EMS Human Resources Toolkit, you will:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Identify the data source(s) in your organization to use as the source for your user records.</li>
+            <li>Determine if user records are organized by groups and contacts (Group/Contact Model), by groups and group types (Group/Group Type Model), or all of these (Hybrid).</li>
+            <li>Obtain and execute the .sql files for creating the staging database and stored procedures needed to import data into your EMS database.</li>
+            <li>Establish a process for importing records into the staging database.</li>
+            <li>Execute the EMS HR Toolkit stored procedure (using Microsoft SQL Server Management Studio to create an SQL job to run the stored procedure on a schedule).</li>
+            <li>Maintain the source data to ensure continual data flow between your source(s) and EMS.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/HRToolkitV44/Installation Overview.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;EMS Human Resources Toolkit can be configured&#160;in three ways: Group/Group Type, Group/Contact and Hybrid&#160;(click to expand)&#160;</p>
+        <p>&#160;Your Implementation Consultant will work with you to determine which variant will be best for your organization.&#160;The “Group/Contact” model is structured around having your Groups populated with Contacts beneath them; the “Group/Group Type” model categorizes User records by group and group type, and&#160;does not create Contacts under the Groups imported into the HRTK. The Hybrid Model will adjust the functionality based upon the&#160;GroupID&#160;criteria in the EMS_Staging.dbo.tblPeople table.&#160;Note that your EMS environment may use different names for Groups and Contacts, such as&#160;Employee.</p>
+        <p>The EMS Human Resources Toolkit&#160;Installation Guide leads you through installing HR Toolkit in your environment.&#160;</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../Resources/Images/HRToolkitV44/Installation Overview_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>Important:&#160;If you do not have a customer login, register&#160;<a href="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx" title="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx">here</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Option 1&#160;(Recommended):&#160;Submit a Ticket directly via the&#160;<a href="https://support.emssoftware.com/" title="https://support.emssoftware.com">EMS Support Portal</a></p>
+        <p>Option 2:&#160;Email&#160;<a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com</a></p>
+        <p>Option 3 (Recommended for critical issues only):&#160;Phone (800) 288-4565</p>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="1727" MadCap:lastWidth="810">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/RoomWizard.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Data Transferred Between Units and the Interface</h1>
+        <h2>get_booking</h2>
+        <p>The following fields are transferred from EMS to the RoomWizard unit for event display:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>RoomWizard API Field</p>
+                    </th>
+                    <th>
+                        <p>EMS Field</p>
+                    </th>
+                    <th>
+                        <p>Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>booking_id</p>
+                    </td>
+                    <td>
+                        <p>Booking ID</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>purpose</p>
+                    </td>
+                    <td>
+                        <p>Booking Event Name</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>notes</p>
+                    </td>
+                    <td>
+                        <p>Service Order Information</p>
+                    </td>
+                    <td>
+                        <p>When enabled RoomWizard notes are compiled to include Setup Type, Setup Count, Service Order Name, and Service Order Start Time</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>start_time</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>start_date</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>end_time</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>end_date</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>booking_creation_time</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>booking_creation_date</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>booking_modification_time</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>booking_modification_date</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>name</p>
+                    </td>
+                    <td>
+                        <p>Group Name or “In Use”</p>
+                    </td>
+                    <td>
+                        <p>Events originating in EMS will display the Group Name</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>email</p>
+                    </td>
+                    <td>
+                        <p>Group Email</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>phone</p>
+                    </td>
+                    <td>
+                        <p>Group Phone</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>add_booking</h2>
+        <p>The following fields are transferred from the RoomWizard unit to EMS and used to create a new Event:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>start_date</li>
+            <li>start_time</li>
+            <li>end_date</li>
+            <li>end_date</li>
+            <li>host</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>If the user inputs a Host name from the RoomWizard unit EMS uses that input as the Temp Contact Description of the reserving group configured in the EMS-ROOMWIZARD Interface.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Purpose</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>If the user inputs a Purpose from the RoomWizard unit EMS uses that input as the Event Name.</li>
+            <li>RoomWizard input can be configured, from the EMS-ROOMWIZARD Interface, to be appended to a static Event Name used for all events added from a RoomWizard unit.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>room_id</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>The ID Specific to the RoomWizard unit.&#160;</li>
+            <li>Converted to an EMS Room ID before sending to the database</li>
+        </ul>
+        <h2>edit_booking</h2>
+        <p>The following fields are transferred from the RoomWizard unit to EMS and processed based on the type of operation:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>new_start_date</li>
+            <li>new_start_time</li>
+            <li>new_end_date</li>
+            <li>new_end_time</li>
+            <li>booking_id</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>The EMS Booking ID for the Event.</li>
+            <li>Originally sent to the RoomWizard unit as part of the ‘get_bookings’ call</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1820" MadCap:lastWidth="829">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Managing Database Connections With EMS Services</h1>
+        <p>After EMS has been installed on your desktop using the EMS Desktop Client Web Deployment, managing database connections can be done through the&#160;EMS Desktop Client&#160;using the instructions below.</p>
+        <h2>Changing Databases</h2>
+        <p>To change databases&#160;while using EMS Desktop Client applications&#160;installed with&#160;Web Deployment, do the following:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS Menu select File &gt; Change Database to bring up the Database Connections window.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Managing Database Connections.gif" style="visibility: visible;mso-wrap-style: square;width: 551px;height: 389px;" alt="https://success.emssoftware.com/@api/deki/files/1453/Change_Database_2.gif?revision=1&amp;size=bestfit&amp;width=551&amp;height=389" />
+        </p>
+        <p>Note: Any database connection listed in blue is a system record inherited from the EMS Desktop Client Web Deployment that can not be deleted.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>To connect to a database that is not the system database select it from the list of Database Connections and&#160;then press the&#160;Connect&#160;button.&#160;This will close and reopen EMS Desktop Client connected to the selected database.<br /><br />Note: The user will need to log in again after changing databases</li>
+        </ol>
+        <h2>Creating New Database Connections</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>To create a New connection select&#160;New&#160;in the Database Connections window to bring up the Database Connection window.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Managing Database Connections_1.gif" style="visibility: visible;mso-wrap-style: square;width: 404px;height: 245px;" alt="https://success.emssoftware.com/@api/deki/files/1455/Change_Database_1.gif?revision=1&amp;size=bestfit&amp;width=404&amp;height=245" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Type in the SQL server and EMS database name and then select&#160;OK&#160;to save the connection. You can delete connections later when you no longer need them.&#160;</li>
+            <li>For EMS to save this connection it will first check to see if it is a valid connection. If the connection is invalid,&#160;it will not be created and the user will receive this error message:</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Managing Database Connections_2.gif" style="visibility: visible;mso-wrap-style: square;width: 202px;height: 160px;" alt="https://success.emssoftware.com/@api/deki/files/1516/Change_Database_3.gif?revision=1&amp;size=bestfit&amp;width=202&amp;height=160" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Connecting Your EMS Web Based_3.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                    </p>
+                </td>
+                <td>
+                    <p>Tip:&#160;If your implementation uses additional EMS Services and Components, you will need to establish (and maintain) database&#160;connections with each.&#160;<br />See Also:&#160;(Step 7 for each Service)</p>
+                    <ul style="list-style-type: disc;margin-left: 36pt;">
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/Optional_Features/Installing_EMS_Check-in_Notification_Service" title="Installing EMS Check-in Notification Service" class="Hyperlink">Installing EMS Check-in Notification Service</a>
+                        </li>
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/Optional_Features/Installing_or_Upgrading_the_EMS_Email_Notification_Service" title="Installing or Upgrading the EMS Email Notification Service" class="Hyperlink">Installing or Upgrading the EMS Email Notification Service</a>
+                        </li>
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/Optional_Features/Installing_the_EMS_Automated_Report_Service" title="Installing the EMS Automated Report Service" class="Hyperlink">Installing the EMS Automated Report Service</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2218" MadCap:lastWidth="900">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/FloorPlan_Config.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing/Upgrading <MadCap:annotation MadCap:createDate="2017-11-04T15:04:28.6781420-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is in the Install guide with different content/images. Which one is correct?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-04T15:05:00.0891930-06:00">the</MadCap:annotation> Floor Plan Web Service</h1>
+        <p>Important:&#160; Before beginning the installation process, please do the following:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Install or upgrade your EMS databases as outlined in the&#160;EMS Desktop Client Installation Instructions.</li>
+            <li>Manually&#160;uninstall&#160;any previous versions of the Floor Plan Web Service on your web server.&#160;</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Download&#160;EMSRoomDiagrammingService.msi&#160;and&#160;EMSFloorPlanConfiguration.msi&#160;onto the web server (typically the web server that hosts your EMS Web App or EMS Kiosk&#160;web site(s).)</li>
+            <li>Run&#160;EMSRoomDiagrammingService.msi.&#160;</li>
+            <li>The first screen welcomes you to the EMS Room Diagramming Web Service Setup Wizard.&#160;Click&#160;Next &gt;&#160;to begin the installation process.&#160;The&#160;Select Installation Address&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/FloorPlan_Config/Installing Upgrading the Floor.png" style="visibility: visible;mso-wrap-style: square;width: 512px;height: 420px;" alt="https://success.emssoftware.com/@api/deki/files/1498/Floor_Plan_Module_-_Installing_Web_Service_-_Install_Address.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Select the Site, Virtual Directory and Application Pool.&#160;It is recommended that you keep the default settings.&#160;The installation process will create a Physical and Virtual directory on your web server named “EMSRoomDiagrammingService” (or whatever value you entered in the Virtual Directory field.)&#160;Click&#160;Next &gt;.</li>
+        </ol>
+        <p>Note:&#160; The EMS Room Diagramming Web Service should&#160;not&#160;be installed in the same Virtual Directory as other EMS web-based products.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>The&#160;Confirm Installation&#160;screen will appear.&#160;Click&#160;Next &gt;. The&#160;SQL Server Connection&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/FloorPlan_Config/Installing Upgrading the Floor_1.png" style="visibility: visible;mso-wrap-style: square;width: 512px;height: 420px;" alt="https://success.emssoftware.com/@api/deki/files/1499/Floor_Plan_Module_-_Installing_Web_Service_-_SQL_Server.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Enter your EMS SQL Server Name.</li>
+            <li>Enter your EMS Database Name (typically “EMS”).&#160;Click&#160;Next &gt;&#160;to begin the installation.</li>
+            <li>The&#160;Installation Complete&#160;screen will appear.&#160;Click&#160;Close.&#160;</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following URL:</li>
+        </ol>
+        <p>http://[ServerName]/EMSRoomDiagrammingService/DiagramWS.asmx?WSDL&#160;(replace [ServerName] with the name of your web server)</p>
+        <p>Your browser should return XML.</p>
+        <p>
+            <img src="../../../../Resources/Images/FloorPlan_Config/Installing Upgrading the Floor_2.png" style="visibility: visible;mso-wrap-style: square;width: 900px;height: 488px;" alt="https://success.emssoftware.com/@api/deki/files/1500/Floor_Plan_Module_-_local_host_diagramming_Service_-_.png?revision=1&amp;size=bestfit&amp;width=900&amp;height=488" />
+        </p>
+    </body>
+</html>

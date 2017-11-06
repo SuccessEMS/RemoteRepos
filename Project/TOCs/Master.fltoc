@@ -60,25 +60,25 @@
       Link="/Content/A_Installation/5_OutlookV44.1/5_OutlookV44.1Home.htm">
       <TocEntry
         Title="Introduction to EMS for Outlook"
-        Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/4Outlook/A_Install/Outlook_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Requirements and Prerequisites for EMS for Outlook"
-        Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_ReqsPrereqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/4Outlook/A_Install/Outlook_IG_ReqsPrereqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Plan Your EMS for Outlook Implementation"
-        Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_PlanImplementation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        Link="/Content/4Outlook/A_Install/Outlook_IG_PlanImplementation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       <TocEntry
         Title="Install or Upgrade EMS for Outlook on Users' Computers"
-        Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_InstallUpgrade.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        Link="/Content/4Outlook/A_Install/Outlook_IG_InstallUpgrade.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
         <TocEntry
           Title="EMS for Outlook Add-In Is Offline"
-          Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_OutlookAddInOffline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/4Outlook/A_Install/Outlook_IG_OutlookAddInOffline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="Silent or Unattended EMS for Outlook Installation"
-          Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_SilentUnattendedInstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/4Outlook/A_Install/Outlook_IG_SilentUnattendedInstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
           Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number"
-          Link="/Content/4Outlook/A_Install/Installing Outlook/Outlook_IG_WhereExchServURLVerNum.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          Link="/Content/4Outlook/A_Install/Outlook_IG_WhereExchServURLVerNum.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
     </TocEntry>
     <TocEntry
@@ -1240,14 +1240,14 @@
         Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseMasterCalendar.html" />
       <TocEntry
         Title="Introduction to EMS Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_Introduction.html">
+        Link="/Content/16_MC/C_UserGuide/MC_UG_Introduction.html">
         <TocEntry
           Title="How Do I Publicize an Event in Master Calendar?"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_HowtoPublicizeEvent.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_HowtoPublicizeEvent.html" />
       </TocEntry>
       <TocEntry
         Title="Log In to Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_LogIn.html" />
+        Link="/Content/16_MC/C_UserGuide/MC_UG__LogIn.html" />
       <TocEntry
         Title="Use Basic Features of EMS Master Calendar"
         Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseBasicFeatures.html"></TocEntry>
@@ -1256,13 +1256,13 @@
         Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseFieldIcons.html">
         <TocEntry
           Title="Search by Keyword"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SearchbyKeyword.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SearchbyKeyword.html" />
         <TocEntry
           Title="Export Search Results"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ExportSearchResults.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_ExportSearchResults.html" />
         <TocEntry
           Title="Search for an Event or Special Date"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SearchforEventorSpecialDate.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SearchforEventorSpecialDate.html" />
         <TocEntry
           Title="Use RSS Feeds in EMS Master Calendar"
           Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseRSSFeeds.html" />
@@ -1272,7 +1272,7 @@
         Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UserOptions.html">
         <TocEntry
           Title="Change Your Password"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ChangeYourPassword.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_ChangeYourPassword.html" />
         <TocEntry
           Title="View Custom Help Text"
           Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewCustomHelpText.html" />
@@ -1288,31 +1288,31 @@
         Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_WorkwithCalendars.html">
         <TocEntry
           Title="Modify the Calendar Display"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ModifyCalendarDispaly.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_ModifyCalendarDispaly.html" />
         <TocEntry
           Title="Filter Events on the Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_FilterEventsonCalendar.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_FilterEventsonCalendar.html" />
         <TocEntry
           Title="Set a Timeframe for the Calendar Display"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SetTimeFrameforDisplay.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SetTimeFrameforDisplay.html" />
         <TocEntry
           Title="Navigate in the Master Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_NavigateinMasterCalendar.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_NavinMasterCalendar.html" />
         <TocEntry
           Title="Open Events from the Master Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_OpenEvents.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_OpenEvents.html" />
         <TocEntry
           Title="Scroll Through Events on the Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ScrollThroughEvents.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_ScrollThroughEvents.html" />
         <TocEntry
           Title="Subscribe to a Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SubscribetoCalendar.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendar.html" />
         <TocEntry
           Title="Subscribe to a Calendar Using Email"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SubscribetoCalendarUsingEmail.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingEmail.html" />
         <TocEntry
           Title="Subscribe to a Calendar Using iCal"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SubscribetoCalendarUsingical.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingical.html" />
       </TocEntry>
       <TocEntry
         Title="Work with Events"
@@ -1322,23 +1322,23 @@
           Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_TypesofUsers.html" />
         <TocEntry
           Title="Submit an Event"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_SubmitEvents.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_SubmitEvents.html" />
         <TocEntry
           Title="Additional Info Fields"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_AdditionalInfoFields.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_AdditionalInfoFields.html" />
         <TocEntry
           Title="Custom, Email, and Attachment Fields"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_CustomEmailAttachmentFields.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_CustomEmailAttachmentFields.html" />
         <TocEntry
           Title="Event Times Fields"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_EventTimesFields.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_EventTimesFields.html" />
         <TocEntry
           Title="General Info Fields"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_GeneralInfoFields.html" />
+          Link="/Content/16_MC/C_UserGuide/MC_UG_GeneralInfoFields.html" />
       </TocEntry>
       <TocEntry
         Title="Glossary"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_Glossary.html" />
+        Link="/Content/16_MC/C_UserGuide/MC_UG_Glossary.html" />
     </TocEntry>
     <TocEntry
       Title="EMS for Outlook Everyday User Guide"

@@ -688,7 +688,9 @@ img
 	mc-thumbnail-max-width: auto;
 	mc-thumbnail: none;
 	height: auto;
-	width: 1000px;
+	max-width: 1000px;
+	max-height: auto;
+	width: auto;
 }
 
 /* Medium Layout */

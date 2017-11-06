@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="927" MadCap:lastWidth="796">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MP_Integ.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Upload a Report</h1>
+        <h2>Background&#160;</h2>
+        <p>Emergingsoft will be posting various reports that we think may be helpful to our customers, and will provide assistance updating or customizing reports. &#160;If you choose to download a report or receive a .rdl file from our support team, please see the instructions below for how to upload the report to your SSRS instance.</p>
+        <h2>Steps&#160;</h2>
+        <ol start="1">
+            <li>Browse to your SSRS instance.</li>
+            <li>Click "Upload File."</li>
+        </ol>
+        <p>Image_002.png</p>
+        <ol start="3">
+            <li>Upload the report (.rdl).</li>
+            <li>From the dropdown menu for the report, click "Manage."</li>
+        </ol>
+        <p>Image_003.png</p>
+        <ol start="5">
+            <li>Click "Data Sources" &gt; "A shared data source"</li>
+            <li>Browse to your current MeetingPlanner data source.</li>
+        </ol>
+        <p>*In the event that you cannot browse to your shared data source, you can manually type in the path. &#160;The default path would be "/MeetingPlanner" (no quotes).</p>
+        <ol start="7">
+            <li>Click "Apply."</li>
+        </ol>
+        <h2>Important&#160;</h2>
+        <p>If you are running MeetingPlanner v5.5.3.36 or prior, please be sure to run the below SQL script against the MeetingPlanner database. &#160;The script will apply updates to the MeetingPlanner database for proper timezone support for all SSRS reports.</p>
+        <p>The script only needs to be run against the database once, so if you are uploading a report and have already run the script, there is no need to re-run it. &#160;(Multiple executions will not have an impact on any data).</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

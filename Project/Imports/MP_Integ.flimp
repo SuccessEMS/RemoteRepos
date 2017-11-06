@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-06T13:50:59.3693608-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-06T13:51:16.0404124-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/MP_Integ.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/MP_Integ.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/MP_Integ/Crestron Fusion Digital Signage.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/Installation Configuration.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/MP_Integ.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/MP_Integ/Installation.png"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/MP_Integ/Installation_1.png"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/Installation.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/Resource Isolation Splitting.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/SSRS Reporting.htm"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/MP_Integ/Introduction.htm"
+      TimeStamp="11/6/2017 1:51:14 PM" />
+    <Url
+      Source="../../Content/MP_Integ/SQL Server Setup.htm"
+      TimeStamp="11/6/2017 1:51:14 PM" />
+    <Url
+      Source="../../Content/MP_Integ/Upload a Report.htm"
+      TimeStamp="11/6/2017 1:51:14 PM" />
+    <Url
+      Source="../TOCs/MP_Integ.fltoc"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/MP_Integ.css"
+      TimeStamp="11/6/2017 1:51:13 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Title" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="Title" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

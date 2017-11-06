@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="9" MadCap:lastHeight="1304" MadCap:lastWidth="731">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MP_Integ.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installation&#160;</h1>
+        <h2>Quick Reference</h2>
+        <ol start="1">
+            <li>From the application server, execute the Meeting Planner msi.</li>
+            <li>Walk through the installation wizard, choosing a custom type install.</li>
+            <li>Find the Room Wizard Integration Module and select it to be installed.After the installation completes, find the web.config file. It defaults to "C:\Program Files\Emergingsoft\RoomWizardConnector\"&#160;</li>
+            <li>Inside the Web.config file ensure that the DSN setting is the same as the DSN setting in your MeetingPlannerWeb’s Web.Config. &#160;If it is not, please copy the MeetingPlanner DSN and paste it over the existing RoomWizard DSN. &#160;This will make sure the database connection is properly established.</li>
+            <li>Open a browser and go to each room wizard’s configuration page. This will be "<a href="http://ip.address.of.roomwizard/%22" class="Hyperlink">http://ip.address.of.roomwizard/"</a></li>
+            <li>Click on the link that takes you to its setup page and enter the password. Then click on the Synchronization.</li>
+            <li>You will be greeted with a screen that will ask you how you want the RoomWizard to synchronize. There will be two options. The default option is to use the default database on the RoomWizard. Choose the second option which connects to an external connector.</li>
+            <li>In the address field, use "<a href="http://address.of.meetingplanner.server/RoomWizardConnector/Connector.aspx%22">http://address.of.meetingplanner.server/RoomWizardConnector/Connector.aspx"</a>. You will also see username and password fields. Try using a username and password of a user that would have sufficient permission to connect to the “Connector.aspx” page. You will need to save at this point.</li>
+            <li>Near the bottom of the screen you should see Room ID field. Insert the MeetingPlanner room ID that the RoomWizard represents here. So, if each room wizard represents a different room, they will all have different ID’s. You’ll need to do a “select * from room” against the MeetingPlanner database to get the room id’s and corresponding room names.</li>
+            <li>You will need to save again after putting in the room ID.</li>
+            <li>You’ll know if it is working if the synchronization page says that it was able to find our connector, and it displays some information regarding it. If it fails to connect, try restarting the RoomWizard first, and then going back to the synchronization page.</li>
+            <li>If it still fails, then the RoomWizard is probably having trouble reaching the configured page (Connector.aspx). You’ll need to make sure that server permissions and directory permissions to allow for the user you configured in the username/password section. You can also try deleting both of these fields and trying it without the username/password specified.</li>
+            <li>The RoomWizard will often take a few minutes to sync up completely with the server.</li>
+        </ol>
+        <p>Note: &#160;You can set the room name from the Room "tab" on the top toolbar of the RoomWizard web interface</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../Resources/Images/MP_Integ/Installation.png" alt="https://success.emssoftware.com/@api/deki/files/6382/tech_doc_tip.png?revision=1" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>Tip for EMS Cloud Customers:&#160;Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please contact EMS Support.&#160;&#160;</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <img src="../Resources/Images/MP_Integ/Installation_1.png" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Important:&#160;If you do not have a customer login, register&#160;<a href="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx" title="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx">here</a>.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>Option 1&#160;(Recommended):&#160;Submit a Ticket directly via the&#160;<a href="https://support.emssoftware.com/" title="https://support.emssoftware.com">EMS Support Portal</a></p>
+                        <p>Option 2:&#160;Email&#160;<a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com">support@emssoftware.com</a></p>
+                        <p>Option 3 (Recommended for critical issues only):&#160;Phone (800) 288-4565</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

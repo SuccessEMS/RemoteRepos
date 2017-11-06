@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2589" MadCap:lastWidth="796">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MP_Integ.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installation and Configuration Guide</h1>
+        <h2>1) Setup new MeetingPlanner custom field</h2>
+        <ol start="1">
+            <li>Go to MP Web &gt; Setup &gt; Code Tables &gt; Room Custom Fields (dropdown) &gt; Insert New Record.</li>
+            <li>Set the item Value to "ZZ1" (or similar) and the Item Description to "Crestron Room ID."</li>
+        </ol>
+        <h2>2) Set Crestron rooms to 'RoomView' mode&#160;</h2>
+        <ol start="1">
+            <li>From the Crestron Fusion Setup page, edit the room(s) you wish to link to MeetingPlanner.</li>
+            <li>Go to "Scheduling Details" and select "RoomView."</li>
+        </ol>
+        <p>Alternative: &#160;Run the following SQL command against the Crestron database to enable this mode for all rooms. &#160;</p>
+        <p>UPDATE CRV_Rooms&#160;SET GroupwareProviderType = 'Internal'&#160;WHERE Type = 'Room'</p>
+        <h2>3)&#160;Get Crestron RoomID's &#160;&#160;&#160;</h2>
+        <ol start="1">
+            <li>Run the following SQL command against the Crestron database.</li>
+        </ol>
+        <p>SELECT r.RoomID, r.RoomName FROM CRV_Rooms r&#160;WHERE r.Type = 'Room'</p>
+        <ol start="2">
+            <li>Note the RoomID for the room(s) that you would like to integrate with MeetingPlanner.</li>
+        </ol>
+        <h2>4) Link the Crestron RoomIDs to the appropriate MeetingPlanner Rooms&#160;</h2>
+        <ol start="1">
+            <li>Go to MP Web &gt; Setup &gt;&#160;Rooms&#160;&gt; [select building] &gt; [select room to link] &gt; Custom Fields</li>
+            <li>Enter the Crestron Room ID into the custom field that was created in Step 2.</li>
+        </ol>
+        <p>Alternative:&#160;&#160;Convert a csv file containing Crestron RoomID's and MeetingPlanner Room Names to a SQL script, to be run against the MeetingPlanner database.</p>
+        <ol start="1">
+            <li>Complete the template, making sure that there are no extra "columns" or "rows" (<a href="https://dl.dropboxusercontent.com/u/45342453/Latest%20Releases/Crestron%20Integration%20Service/CrestronRoomImport.csv">Template Download</a>)</li>
+            <li>Run the linked PowerShell script with the csv template as the only parameter (<a href="https://dl.dropboxusercontent.com/u/45342453/Latest%20Releases/Crestron%20Integration%20Service/CrestronRoomImport.ps1">PowerShell Script Download</a>)</li>
+        </ol>
+        <p>&gt; CrestronRoomImport.ps1 CrestronRoomImport.csv &gt; MeetingPlannerImport.sql</p>
+        <h2>5) Download the synchronization application&#160;</h2>
+        <ol start="1">
+            <li>Download the latest program files (see latest release article in this forum:&#160;<a href="http://support.emergingsoft.com/forums/22202622-Integration-Crestron-Fusion-Digital-Signage">http://support.emergingsoft.com/forums/22202622-Integration-Crestron-Fusion-Digital-Signage</a>).</li>
+            <li>Extract the files into a new folder in the ...\EmergingSoft folder on the application server. &#160;The rest of this guide will assume the files were extracted into the ... \ EmergingSoft \ Crestron Sync folder.</li>
+        </ol>
+        <h2>6) Configure the application / database connections&#160;</h2>
+        <p>Note: &#160;This step is to be done when MeetingPlanner is not in use.</p>
+        <ol start="1">
+            <li>Open the ...\ EmergingSoft \ MeetingPlanner_WS \ web.config file.</li>
+            <li>Copy the value of the "DSN"</li>
+            <li>Paste the copied value into the ... \ EmergingSoft \ Crestron Sync \ MeetingPlannerCrestronIntegrationService.exe.config file as the "MeetingPlannerDSN" value, replacing the existing value.</li>
+            <li>Open the MeetingPlanner Configuration Tool to the Database tab.</li>
+            <li>Update the tab to include all information related to the Crestron Fusion database (Server, Database, SQL Login, Password).</li>
+            <li>Save.</li>
+            <li>Open the ...\ EmergingSoft \ MeetingPlanner_WS \ web.config file.</li>
+            <li>Copy the value of the "DSN"</li>
+            <li>Paste the copied value into the ... \ EmergingSoft \ Crestron Sync \ MeetingPlannerCrestronIntegrationService.exe.config file as the "CrestronFusionDSN" value, replacing the existing value.</li>
+            <li>Open the MeetingPlanner Configuration Tool to the Database tab.</li>
+            <li>Reset the information to reflect MeetingPlanner database information.</li>
+            <li>Save.</li>
+        </ol>
+        <h2>7) Finalize application configuration&#160;</h2>
+        <ol start="1">
+            <li>Open the the&#160;... \ EmergingSoft \ Crestron Sync \ MeetingPlannerCrestronIntegrationService.exe.config file.</li>
+            <li>Make sure the "CrestronRoomIdCode" value is set to match the custom field code that was created in Step 1b (above).</li>
+            <li>Set the "TraceLevel" to "Error" (if it isn't already).</li>
+            <li>Set the "LogPath" to the folder that you would like application logs to be written to. &#160;A typical path may be "C:\Temp\MeetingPlannerLogs\"</li>
+        </ol>
+        <p>Note: &#160;Make sure the path ends with a " \ " character.</p>
+        <ol start="5">
+            <li>Save and close.</li>
+        </ol>
+        <h2>8) &#160;Establish the application as a service&#160;</h2>
+        <ol start="1">
+            <li>Run the following command to setup the application as a service:</li>
+        </ol>
+        <p>&gt; sc create MeetingPlannerToCrestronIntegration binpath= "C:\Program Files (x86)\EmergingSoft\Crestron Sync\MeetingPlannerCrestronIntegrationService.exe"</p>
+        <p>* Update the file path as necessary</p>
+        <p>** Make sure there is a space between 'binpath=' and the file path</p>
+        <ol start="2">
+            <li>Update the service's Log On account and auto start options as desired.</li>
+        </ol>
+        <p>Note: &#160;Emergingsoft recommends running the service under the local system account. &#160;If another account is used, please make sure the account has full access to the log path (Step 7d, above), as well as to the application files.</p>
+        <ol start="3">
+            <li>Start the service.</li>
+        </ol>
+        <h2>9) Optional: "Migrate" existing reservations&#160;</h2>
+        <p>The service is designed to run based off of a "transaction log" in MeetingPlanner, and will synchronize any action that happens in MeetingPlanner from the point the service is started, forward. &#160;If there are already reservations in MeetingPlanner that should be synchronized, Emergingsoft has put together a script (linked below) to set all existing reservations to by sync'd. &#160;</p>
+        <p>Please update the WHERE clause (line 35) as necessary. &#160;Keep in mind, the migration will take additional time, and this should be planned for.</p>
+        <p><a href="https://dl.dropboxusercontent.com/u/45342453/Latest%20Releases/Crestron%20Integration%20Service/AddRoomReservationToTransactionTable.sql" class="Hyperlink">SQL Script Download</a>
+        </p>
+    </body>
+</html>

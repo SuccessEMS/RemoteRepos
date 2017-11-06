@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="2724" MadCap:lastWidth="796">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/ResourceMailboxMigration.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Resource Mailbox Migration: Exchange Web Services</h1>
+        <h2>Background&#160;</h2>
+        <p>Organizations that are currently using Exchange Resource Mailboxes to hold reservation information, and are looking to migrate their reservations into MeetingPlanner and sunset their Resource Mailboxes can use this tool to aid in the reservation export process. &#160;The utility uses Exchange Web Services to access each resource mailbox and create a csv file containing all reservation information. &#160;This allows manual intervention, if necessary, to update any subjects, owners or other information and will provide data in a specific format that can be easily processed by Emergingsoft and turned into a sql script that will import appropriately into MeetingPlanner.</p>
+        <p>Note: &#160;If you are using or evaluating Emergingsoft's Exchange Sync service, be mindful that the room configuration steps below will affect Exchange Sync. &#160;It may be necessary to stop the service during the setup, configuration, and processing steps with this tool.</p>
+        <h2>Setup &amp; Configuration&#160;</h2>
+        <h3>Prerequisites&#160;</h3>
+        <h4>Applications</h4>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Exchange 2010 or newer</li>
+            <li>MeetingPlanner</li>
+            <li>Web Scheduler</li>
+            <li>Application Notifier Service (part of the Web Scheduler installation)</li>
+        </ul>
+        <h3>Service Account</h3>
+        <p>The migration tool will require a service account setup that has Read access to the Resource Mailboxes that will be migrated.</p>
+        <p>Add-MailboxFolderPermission -Identity ResourecMailbox:\Calendar -User ServiceAcct&#160;-AccessRights ReadItems</p>
+        <h2>Installation / Setup&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Download the attached zip.</li>
+        </ol>
+        <p>**First confirm that the Zip is not blocked by Windows. &#160;This can be done by right-clicking on the file, going to Properties and clicking "Unblock." &#160;If the "Unblock" button is not present, then the archive is already unblocked.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Extract the files into a new folder within the Emergingsoft installation folder present on the application server for MeetingPlanner and the Web Scheduler (typically: &#160;C:\ Program Files (x86)\Emergingsoft\Exchange Migration).</li>
+            <li>Modify the Properties &gt; Security on the new folder so that the EWS service account has Full Control over the folder.</li>
+            <li>In the .config file, you will find two appSettings, which should be updated to meet your organization's needs:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>CsvRoomsListFilePath: &#160;If you are using the CSV method for identifying rooms to be migrated (recommended), this is where you will provide the file path to the csv file. &#160;There is more information in the next section for how to setup the file.</li>
+            <li>EnableFuzzyLogic: &#160;If "fuzzy logic" should be used to match recurring reservation occurrences. &#160;Sometimes there are different Exchange Ids associated with these reservation instances and doing a match based on the subject and organizer can help resolve any issues. &#160;I would suggest disabling this option to start and enabling it later, if tests demonstrate a need.</li>
+            <li>DaysBack: &#160;The number of days in the past for which the tool should retrieve reservations. &#160;This is based on the start date of each appointment &#160;(or the start date of the first occurrence in a recurring series).</li>
+            <li>DaysForward: &#160;The number of days in the future for which the tool should retrieve reservations. &#160;This is based on the start date of each appointment (or the start date of the first occurrence in a recurring series).</li>
+        </ul>
+        <h2>MeetingPlanner Configuration&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>In a browser, open the Web Scheduler (<a href="http://server/scheduler" title="http://server/scheduler">http://server/scheduler</a>).</li>
+            <li>Go to the Configuration page (gear icon), and update the Ews Integration section as necessary.</li>
+            <li>Save all changes.</li>
+        </ol>
+        <h2>Identifying Rooms to Migrate&#160;</h2>
+        <p>Please only choose one of the following methods.</p>
+        <p>Method 1: &#160;CSV File (recommended)</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Run the following SQL query to assist with the csv creation: &#160;SELECT room_id, room_name FROM room</li>
+            <li>Create a blank csv file with the following columns:</li>
+        </ol>
+        <p>-- SMTP Address: &#160;The Exchange SMTP address for the room</p>
+        <p>-- Room Name: &#160;The room name in MeetingPlanner</p>
+        <p>-- Room Id: &#160;The room id in MeetingPlanner</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Complete the columns for all rooms that should be migrated.</li>
+            <li>Update the export tool's configuration file with the path to the file (see above).</li>
+        </ol>
+        <p>Method 2: &#160;MeetingPlanner</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Open MeetingPlanner Web (<a href="http://server/meetinglanner" title="http://server/meetinglanner">http://server/meetinglanner</a>).</li>
+            <li>Go to Setup &gt; General Settings &gt; Room.</li>
+            <li>Enable Exchange Sync.</li>
+            <li>For each room that will be migrated, do the following*:</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;margin-left: 36pt;" start="1">
+            <li>Go to Setup &gt; Rooms &gt; [select building] &gt; [select room] &gt; Exchange (or EBI depending on your current configuration).</li>
+        </ol>
+        <p>Image_008.png</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 36pt;" start="2">
+            <li>Check the "Enable Room for Synchronization" box.</li>
+            <li>Enter the smtp address for the room.</li>
+            <li>Save.</li>
+        </ol>
+        <h2>Process&#160;</h2>
+        <p>Once all of the above steps are complete, either log onto the application server as the service account and execute the .exe or hold down Shift as you right-click on the .exe and then select "Run as different user..." &#160;From here, you can use the credentials for the service account with Exchange permissions.</p>
+        <p>Once the application completes, you will find one csv file per Resource Mailbox created in the Exchange Migration folder. &#160;Please supply these csv files to our support team (via a new ticket), and our team can convert these to sql scripts for you. &#160;The sql script will then be able to be run against your MeetingPlanner database to complete the migration.</p>
+        <h2>Download&#160;</h2>
+        <p>&#160;</p>
+    </body>
+</html>

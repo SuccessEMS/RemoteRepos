@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="600" MadCap:lastWidth="783">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MP_Integ.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Create Data Source</h1>
+        <h2>Background&#160;</h2>
+        <p>The SSRS reporting engine will require a data source be setup so that a connection can be established to the MeetingPlanner database. &#160;Once this data source is available, all reports can be linked to the one data source. &#160;This way, if the SQL server information ever changes, you will be able to update the connections for all reports by simply updating this data source.</p>
+        <h2>Steps</h2>
+        <ol start="1">
+            <li>Browse to your SSRS instance.</li>
+            <li>Click "New Data Source."</li>
+        </ol>
+        <p>Image_018.png</p>
+        <ol start="3">
+            <li>Create the new data source.</li>
+            <ul>
+                <li>Select "Hide in tile view"</li>
+                <li>Update the Connection String to match your SQL server and database names</li>
+            </ul>
+        </ol>
+        <ol MadCap:continue="true">
+            <li>Click Apply</li>
+            <li>Update the Security "tab" as necessary (this will typically be more limited than the users that have access to reports).</li>
+        </ol>
+    </body>
+</html>

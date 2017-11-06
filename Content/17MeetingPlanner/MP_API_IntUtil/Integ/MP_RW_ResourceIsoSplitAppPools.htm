@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="747" MadCap:lastWidth="796">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/MP_Integ.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Resource Isolation: Splitting Application Pools</h1>
+        <h2>Background&#160;</h2>
+        <p>The RoomWizard Connector is setup as a web application, side-by-side with the MeetingPlanner and MeetingPlanner_WS applications. &#160;All of these applications, by default, share an application pool. &#160;If issues are encountered or a better allocation of resources on the application server is required or desired, the RoomWizard Connector can be split into its own application pool. &#160;This will allow the MeetingPlanner users and RoomWizard Connector to maintain separate connection pools and memory allocations.</p>
+        <h2>Implementation</h2>
+        <ol start="1">
+            <li>Open IIS.</li>
+            <li>Create a new application pool. &#160;this new application pool will be the RoomWizard App Pool and should mirror the MeetingPlanner App Pool setup (see below).&#160;</li>
+        </ol>
+        <p>Image_001.png</p>
+        <p>Image_002.png</p>
+        <ol start="3">
+            <li>Once the RoomWizard App Pool is created, select the Default Web Site &gt; RoomWizard application. &#160;</li>
+            <li>Click "Advanced Settings" and update the Application Pool from MeetingPlannerAppPool to the RoomWizard pool that was just created.</li>
+            <li>After completion, it may also be beneficial to reset IIS.</li>
+        </ol>
+        <h2>Additional Information&#160;</h2>
+        <p>If you have additional questions, please contact our support team for assistance.</p>
+        <p>&#160;</p>
+    </body>
+</html>

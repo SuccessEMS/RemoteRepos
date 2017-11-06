@@ -1,22 +1,149 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3013" MadCap:lastWidth="842" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Introduction</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Introduction</h1>
+        <h1>Introduction</h1>
         <p>For EMS customers who use the Polycom RealPresence Resource Manager to manage their video communication systems, this interface enables integration between EMS and Polycom. Polycom provides a 3rd Party Booking API that exposes Polycom RealPresence Resource Manager booking functionality to external scheduling systems like EMS. The Polycom&#160;Interface Installation Guide takes you through the steps&#160;to install and configure the EMS interface with&#160;Polycom.</p>
-
-<dl>
-    <dt><img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> What is Polycom Integration?&#160;</dt>
-    <dd>
-    <pre class="script" mt-export-translate="no" xml:space="preserve">
-wiki.page("Knowledge_Base/System_Administrator_FAQs/What_is_Polycom_Integration%3F")</pre>
-    </dd>
-</dl>
-
-<div class="EXPAND_CLASS">&#160;</div>
-<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+        <p>
+            <img src="../../../Resources/Images/Polycom/Introduction.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;<MadCap:annotation MadCap:createDate="2017-11-02T15:10:51.9660150-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:comment="All of the content below this Concept line is wiki and links to topics in the Polycom guide. " MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-02T15:12:03.9559695-06:00">What</MadCap:annotation> is Polycom Integration?&#160;</p>
+        <p>While video conferencing system management software controls the delivery of audio and video content, the scheduling component within the software is typically designed to be used by the person responsible for all technical aspects of the session. However, technicians may be unavailable when video conferences need to be scheduled or changes need to be made. There is a solution to this problem - integration between your videoconferencing system management software and EMS. This simplifies the process and allows the host to focus on other details of the meeting.</p>
+        <p>EMS - Polycom integration provides a cohesive and powerful way to book and manage video conferences. With the integration, you can coordinate all aspects of your video conference efforts, from booking the room and reserving the equipment to ensuring that break services have been scheduled and attendees are aware of the event. Even if your organization is using EMS’ standard functionality for video conference scheduling, this is another way to take your video conference scheduling to the next level.&#160;The integration requires the purchase of the Polycom RealPresence Resource Manager API directly from Polycom.</p>
+        <h2>How It Works</h2>
+        <p>Polycom provides a 3rd Party Booking API that exposes Polycom RealPresence Resource Manager booking functionality to external scheduling systems like EMS.&#160;</p>
+        <p>&#160;See the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Polycom_Interface/001_Introduction/Integration_Diagram" title="Integration Diagram">Integration Diagram</a></p>
+        <p>
+            <img src="../../../Resources/Images/Polycom/Introduction_1.png" style="visibility: visible;mso-wrap-style: square;width: 624px;height: 450px;" alt="https://success.emssoftware.com/@api/deki/files/6337/integrationsflowvc.png?revision=1" />
+        </p>
+        <p>&#160;See the Technical Architecture&#160;</p>
+        <p>The EMS Polycom Interface is comprised of two components:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>EMS Polycom Service:&#160;Windows service responsible for pushing video conference bookings from EMS to the Polycom Realpresence Resource Manager API at timed intervals.</li>
+            <li>Polycom Activity DLL:&#160;Custom Polycom DLL provided by EMS that will display all EMS Polycom Interface activity within the EMS application, including errors and successfully scheduled video conferences. The Polycom Activity DLL also contains an area that allows EMS Administrators to configure various EMS&#160;Polycom Interface settings.</li>
+        </ol>
+        <p>New video conferences booked in EMS are pushed to the Polycom Realpresence Resource Manager API based on various settings defined within EMS (see EMS Polycom Interface Configuration Settings) Subsequent critical booking changes (i.e. date, time or location changes) and/or cancelations are also relayed to the API. The EMS&#160;Polycom Interface is a one-way interface and changes made in Polycom will not be reflected in EMS.</p>
+        <p>
+            <img src="../../../Resources/Images/Polycom/Introduction_2.png" style="visibility: visible;mso-wrap-style: square;width: 788px;height: 547px;" alt="https://success.emssoftware.com/@api/deki/files/5009/PolycomV44Diagram.png?revision=1" />
+        </p>
+        <p>See Also:&#160;<a href="https://success.emssoftware.com/#s4782?title=Installation_%26_Setup_Guides/Optional_Features/Polycom_Interface/001_Introduction" title="Advanced EMS Polycom Interface Configuration"><span class="Hyperlink">Advanced EMSPolycom Interface Configuration</span></a>&#160;to learn about how data&#160;is transferred from EMS to the Polycom Realpresence Resource Manager API.</p>
+        <p>&#160;See How Resources Are Mapped Between EMS and Polycom&#160;</p>
+        <p>By default, the following booking information is transferred from EMS to the Polycom Realpresence Resource Manager API:</p>
+        <p>&#160;</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Field Description</p>
+                    </td>
+                    <td>
+                        <p>EMS Table.Column</p>
+                    </td>
+                    <td>
+                        <p>Polcom Object Property</p>
+                    </td>
+                    <td>
+                        <p>Direction</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reservation Event&#160;Name</p>
+                    </td>
+                    <td>
+                        <p>tblReservation.EventName</p>
+                    </td>
+                    <td>
+                        <p>reservation:name</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Polycom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Booking Event Start Time</p>
+                    </td>
+                    <td>
+                        <p>tblBooking.GMTTimeEventStart</p>
+                    </td>
+                    <td>
+                        <p>reservation:start-time</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Polycom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Booking Event End Time</p>
+                    </td>
+                    <td>
+                        <p>tblBooking.GMTTimeEventEnd</p>
+                    </td>
+                    <td>
+                        <p>reservation:end-time</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Polycom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room(s) and/or Resource(s)</p>
+                    </td>
+                    <td>
+                        <p>tblRoom.ExternalReference and/or tblResource.ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>plcm-reservedparticipant(s)</p>
+                    </td>
+                    <td>
+                        <p>EMS &gt; Polycom</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Polycom&#160;Reference ID</p>
+                    </td>
+                    <td>
+                        <p>tblPolycomActivity.PolycomReferenceID</p>
+                    </td>
+                    <td>
+                        <p>Location|Etag</p>
+                    </td>
+                    <td>
+                        <p>Polycom &gt; EMS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Polycom Error Information</p>
+                    </td>
+                    <td>
+                        <p>tblPolycomActivity.Activity</p>
+                    </td>
+                    <td>
+                        <p>Web Service Exception</p>
+                    </td>
+                    <td>
+                        <p>Polycom &gt; EMS</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>How Do I Install It?</h2>
+        <p>Process Overview:</p>
+        <p>To integrate EMS with your Cisco - TMS system,&#160;you will:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Obtain the Installation Files (from EMS Professional Services)</li>
+            <li>Install the Database</li>
+            <li>Install the EMS - Polycom Service</li>
+            <li>Install the DLL on User's Desktops</li>
+            <li>Configure the EMS - Polycom Interface to Map VC Resources Between EMS and Polycom</li>
+        </ol>
+        <p>&#160;See System Requirements&#160;</p>
+        <p>In addition&#160;to .NET Framework 3.5, the latest version of EMS (EMS Desktop Client V44.1) must be installed.</p>
+    </body>
 </html>

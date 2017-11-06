@@ -1,150 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1569" MadCap:lastWidth="810" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Portal or Federated Authentication</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Portal or Federated Authentication</h1>
-        <p class="mt-script-comment">Page summary display</p>
-
-<pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');
-</pre>
-
-<h3>Overview</h3>
-
-<pre class="script-css" mt-export-translate="no" xml:space="preserve">
-
-.columbia-article-topic #mt-toc-container {
-    display:block !important; 
-}
-#mt-toc-container {
-    display: block !important;
-}
-</pre>
-
-<p>The Portal Authentication method provides {{product_webapp}} single sign-on capability using your organization’s portal (<em>e.g.,</em>&#160;CAS, Shibboleth,&#160;SiteMinder, Plumtree, uPortal, etc.).&#160; When a user logged into your portal accesses {{product_webapp}}, a predefined user-specific variable (<em>e.g.,</em> email address, employee/student ID, network ID, etc.) captured by your portal/sign-on page is compared against corresponding information recorded in the <strong>Network ID </strong>and/or <strong>External Reference</strong> fields of your EMS Everyday User records.&#160; If a match exists, the Everyday User will be automatically logged-into {{product_webapp}}.</p>
-
-<p><strong>Note:</strong>&#160; The "Field Used to Authenticate Everyday User"&#160;parameter (within System Administration &gt; Settings &gt; <strong>Parameters</strong> (Everyday User Applications tab) is used by {{product_webapp}} to determine which value should be used for authentication.</p>
-
-<p>Several built-in authentication methods to pass-in credentials are available including:</p>
-
-<ul>
-    <li>Server Variable (Header Variable)</li>
-    <li>Session</li>
-    <li>Form</li>
-    <li>Cookie</li>
-    <li>Query String</li>
-    <li>Federated (SAML)</li>
-</ul>
-
-<p>For a more detailed explanation of the authentication methods outlined above, <strong>See Also:</strong>&#160;<a class="F1" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Configuring_Integrated_Authentication_for_Everyday_User_Applications/06-Portal_Authentication/Portal_Authentication_Methods">Portal Authentication Methods</a>.&#160;</p>
-
-<h3>Installation/Configuration</h3>
-
-<ol>
-    <li>Within the Everyday User Applications parameters area of EMS (System Administration &gt; Settings &gt; <strong>Parameters</strong> (Everyday User Applications tab), the following parameters must be set accordingly:</li>
-</ol>
-
-<table border="1" cellpadding="0" cellspacing="0" class="emstable" style="width: 906px;">
-    <thead>
-        <tr>
-            <th scope="col" style="width: 109px;">
-            <p><strong>Area</strong></p>
-            </th>
-            <th scope="col" style="width: 240px;">
-            <p><strong>Description</strong></p>
-            </th>
-            <th scope="col" style="width: 523px;">
-            <p><strong>Value</strong></p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td style="width: 109px;">
-            <p>Authentication</p>
-
-            <p>&#160;</p>
-            </td>
-            <td style="width: 240px;">
-            <p>Portal Authentication Cookie Key</p>
-            </td>
-            <td style="width: 523px;">
-            <p>Required if Portal Authentication Method = Cookie</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 109px;">
-            <p>Authentication</p>
-
-            <p>&#160;</p>
-            </td>
-            <td style="width: 240px;">
-            <p>Portal Authentication Method</p>
-
-            <p>&#160;</p>
-            </td>
-            <td style="width: 523px;">
-            <p>Server Variable</p>
-
-            <p>Session</p>
-
-            <p>Form</p>
-
-            <p>Cookie</p>
-
-            <p>Query String</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 109px;">
-            <p>Authentication</p>
-
-            <p>&#160;</p>
-            </td>
-            <td style="width: 240px;">
-            <p>Portal Authentication Variable</p>
-            </td>
-            <td style="width: 523px;">
-            <p>User variable to be compared against the EMS Everyday User <strong>External Reference/Network ID</strong> field</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<ol>
-    <li value="2">Direct users to the default {{product_webapp}} page. If the default installation settings were used, the default page is:</li>
-</ol>
-
-<p class="mt-indent-1"><span class="mt-font-courier-new">(http://[ServerName]/EMSWebApp/Default.aspx)</span><br />
-(replace [ServerName] with the name of your web&#160;server)</p>
-
-<table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-    <tbody>
-        <tr>
-            <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" /></td>
-            <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-            <p class="NoteTipWarningText"><strong><span class="mt-color-669933">New!</span>&#160;Redirecting User Log In to Your SSO Provider</strong></p>
-
-            <p class="NoteTipWarningText">Administrators can&#160;hide the login form on the My Home page and instead, present a single <strong>Sign In</strong> button that links to the override URL. Open the web.config file and locate the following code to customize the redirect:</p>
-
-            <p class="NoteTipWarningText"><span class="mt-font-courier-new">&lt;!--&lt;add key="loginOverrideUrl" value=""/&gt;--&gt;</span></p>
-
-            <p class="NoteTipWarningText">Additionally, you can do the same for user log out:</p>
-
-            <p class="NoteTipWarningText"><span class="mt-font-courier-new">&lt;!--&lt;add key="logoutOverrideUrl" value=""/&gt;--&gt;</span></p>
-
-            <p class="NoteTipWarningText">Changing the URL in these areas means that when users log in or out, they will pass through your SSO provider.</p>
-
-            <p class="NoteTipWarningText"><strong>Specifying a Different Default Home Page for Guest Users</strong></p>
-
-            <p class="NoteTipWarningText">Additionally, you can now <a title="EMS Web App System Parameters">specify a different site home page</a> for unauthenticated users.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>VEMS Configuration</a><a>VEMS Integration Authentication</a><a mt-export-translate="no">persona:SysAdmin</a><a>LDAP authentication</a><a>SAML authentication</a><a>Portal authentication methods</a><a>Editing system parameters</a><a>comeback</a><a>QAReview</a><a>singlesource</a><a>Federated authentication</a></p></body>
+        <h1>Portal or Federated Authentication</h1>
+        <h2>Overview&#160;</h2>
+        <p>The Portal Authentication method provides EMS Web App single sign-on capability using your organization’s portal (e.g.,&#160;CAS, Shibboleth,&#160;SiteMinder, Plumtree, uPortal, etc.).&#160; When a user logged into your portal accesses EMS Web App, a predefined user-specific variable (e.g.,&#160;email address, employee/student ID, network ID, etc.) captured by your portal/sign-on page is compared against corresponding information recorded in the&#160;Network ID&#160;and/or&#160;External Reference&#160;fields of your EMS Everyday User records.&#160; If a match exists, the Everyday User will be automatically logged-into EMS Web App.</p>
+        <p>Note:&#160; The "Field Used to Authenticate Everyday User"&#160;parameter (within System Administration &gt; Settings &gt;&#160;Parameters&#160;(Everyday User Applications tab) is used by EMS Web App to determine which value should be used for authentication.</p>
+        <p>Several built-in authentication methods to pass-in credentials are available including:</p>
+        <ul>
+            <li>Server Variable (Header Variable)</li>
+            <li>Session</li>
+            <li>Form</li>
+            <li>Cookie</li>
+            <li>Query String</li>
+            <li>Federated (SAML)</li>
+        </ul>
+        <p>For a more detailed explanation of the authentication methods outlined above,&#160;See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Integrated_Authentication_Options/06-Portal_Authentication/Portal_Authentication_Methods" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Configuring_Integrated_Authentication_for_Everyday_User_Applications/06-Portal_Authentication/Portal_Authentication_Methods">Portal Authentication Methods</a>.&#160;</p>
+        <h2>Installation/Configuration&#160;</h2>
+        <ol start="1">
+            <li>Within the Everyday User Applications parameters area of EMS (System Administration &gt; Settings &gt;&#160;Parameters&#160;(Everyday User Applications tab), the following parameters must be set accordingly:</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Area</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                    <th>
+                        <p>Value</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Cookie Key</p>
+                    </td>
+                    <td>
+                        <p>Required if Portal Authentication Method = Cookie</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Method</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Server Variable</p>
+                        <p>Session</p>
+                        <p>Form</p>
+                        <p>Cookie</p>
+                        <p>Query String</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Authentication</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Portal Authentication Variable</p>
+                    </td>
+                    <td>
+                        <p>User variable to be compared against the EMS Everyday User&#160;External Reference/Network ID&#160;field</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="2">
+            <li>Direct users to the default EMS Web App page. If the default installation settings were used, the default page is:</li>
+        </ol>
+        <p>(http://[ServerName]/EMSWebApp/Default.aspx)<br></br>(replace [ServerName] with the name of your web&#160;server)</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/IntegAuthen_Guide/Integrated Windows Authentication.png" alt="https://success.emssoftware.com/@api/deki/files/3864/tech_doc_new.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25">
+                        </img>
+                    </p>
+                </td>
+                <td>
+                    <p>New!&#160;Redirecting User Log In to Your SSO Provider</p>
+                    <p>Administrators can&#160;hide the login form on the My Home page and instead, present a single&#160;Sign In&#160;button that links to the override URL. Open the web.config file and locate the following code to customize the redirect:</p>
+                    <p>&lt;!--&lt;add key="loginOverrideUrl" value=""/&gt;--&gt;</p>
+                    <p>Additionally, you can do the same for user log out:</p>
+                    <p>&lt;!--&lt;add key="logoutOverrideUrl" value=""/&gt;--&gt;</p>
+                    <p>Changing the URL in these areas means that when users log in or out, they will pass through your SSO provider.</p>
+                    <p>Specifying a Different Default Home Page for Guest Users</p>
+                    <p>Additionally, you can now&#160;<a href="https://success.emssoftware.com/#Unauthenticated User Home Page Parameter?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/EMS_Web_App_System_Parameters" title="EMS Web App System Parameters">specify a different site home page</a>&#160;for unauthenticated users.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
 </html>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="7" MadCap:lastHeight="1804" MadCap:lastWidth="829">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>How Do I Translate EMS To Another Language?</h1>
+        <h2>Build Your&#160;Language Translation Spreadsheet&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>EMS Software provides a Microsoft® Excel spreadsheet specific to EMS Web App that contains all of the application labels, page titles, system messages and error messages with their English translations. &#160;</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Configuring Your EMS Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;Values for data items (e.g. Event Types like “Meeting”, “Training”, etc. or Room Types like “Workspace”, “Conference Room”, etc.) configured within EMS or dynamic information that is inputted by an EMS user or Virtual EMS web user (e.g. Event Name like “HR Meeting”, Comments, Special Instructions, etc.) are not translated.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>The customer is responsible for providing the translated values for the information in the product spreadsheet. Once the&#160;customer returns&#160;the fully translated product spreadsheet to EMS Software,&#160;EMS Software development teams compile the spreadsheet into a product-specific language folder containing a set of files. (We maintain a&#160;language folder for each language).</li>
+            <li>The customer saves the language files&#160;in&#160;the "App_GlobalResources" folder within the EMS Web App physical directory on their web server. (The default path is C:\inetpub\wwwroot\emswebapp\App_GlobalResources\).&#160; &#160;&#160;</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Configuring Your EMS Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                    </p>
+                </td>
+                <td>
+                    <p>Important:&#160;For the translation to affect an Everyday Applications user,&#160;two conditions should be met: &#160;</p>
+                    <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+                        <li>The language setting should be&#160;<a href="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" title="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" class="Hyperlink">set in Windows</a></li>
+                        <li>The end&#160;user’s browser Language Preference is set to that specific language and set as the default.&#160;&#160;</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <h2>Example Successful Installation&#160;</h2>
+        <p>&#160;<img src="../../Resources/Images/OptFeatGuide/How Do I Translate EMS To.png" style="visibility: visible;mso-wrap-style: square;width: 377px;height: 24px;" alt="https://success.emssoftware.com/@api/deki/files/5866/translationroot.png?revision=1" /></p>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/How Do I Translate EMS To_1.png" style="visibility: visible;mso-wrap-style: square;width: 530px;height: 334px;" alt="https://success.emssoftware.com/@api/deki/files/5867/translationfiles.png?revision=1" />
+            <br />... reflected in EMS as follows (French-Canadian is the example here.)</p>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/How Do I Translate EMS To_2.png" style="visibility: visible;mso-wrap-style: square;width: 811px;height: 591px;" alt="https://success.emssoftware.com/@api/deki/files/5868/translationsuccess.png?revision=1" />
+        </p>
+        <p>See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" class="Hyperlink">Configuring EMS Language Translation for Everyday User Applications</a></p>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1865" MadCap:lastWidth="868">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing EMS Check-in Notification Service</h1>
+        <p>To install the EMS Email Notification Service:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Download the&#160;EMSCheckInNotificationSetup.msi&#160;onto the server that will be running the service.</li>
+            <li>Double-click&#160;EMSCheckInNotificationSetup.msi. Follow the on-screen prompts. It is recommended that the defaults are accepted.</li>
+            <li>Within the Microsoft Windows Start menu, locate&#160;EMS Check-in Notification Service.&#160;The EMS Check-in Notification Configuration screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing EMS Check in Notification.png" style="visibility: visible;mso-wrap-style: square;width: 422px;height: 503px;" alt="https://success.emssoftware.com/@api/deki/files/936/Check_In_Configuration_1.png?revision=1&amp;size=bestfit&amp;width=422&amp;height=503" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Review and complete/change the following settings:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Mode&#160;– Type of authentication to the SMTP server.</li>
+            <li>SMTP Server –&#160;SMTP server name or IP address.</li>
+            <li>Use Gmail –&#160;Check this box if the organization uses Gmail as their mail server.</li>
+            <li>Port Number –&#160;SMTP port (default = 25)</li>
+            <li>Use SSL –&#160;Check this option if your SMTP server runs under SSL.</li>
+            <li>User Name/Password&#160;– Required if an authentication mode other than Unauthenticated is selected.</li>
+            <li>Email Interval –&#160;The frequency with which the system will generate notification emails. If the interval is set to 0 minutes, the service will not function.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click&#160;Edit, and change the values to your EMS server and database name.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeatGuide/Installing EMS Check in Notification_1.png" style="visibility: visible;mso-wrap-style: square;width: 661px;height: 313px;" alt="https://success.emssoftware.com/@api/deki/files/937/Check_In_Configuration_2.png?revision=1&amp;size=bestfit&amp;width=661&amp;height=313" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>On the Database tab of the Notification Database dialog box, complete the following:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Server/Database&#160;– EMS server and database name</li>
+            <li>EMS Authentication/Windows Authentication&#160;– The method of authentication to this database.</li>
+            <li>Email From –&#160;Email address that will be displayed in the From field of notification emails that are sent.</li>
+            <li>Enable Service Event Logging&#160;– Activates Windows event logging.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>After making your entries, click&#160;OK.</li>
+            <li>Click&#160;OK&#160;again to save your EMS Check-in Notification Configuration&#160;settings.</li>
+        </ol>
+        <p>Note:&#160;If any issues are encountered starting the service, please visit the online Support Center for a possible solution or call Customer Support.</p>
+    </body>
+</html>

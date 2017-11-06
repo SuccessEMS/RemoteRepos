@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="677" MadCap:lastWidth="842">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Connecting to Your Database Using Active Directory</h1>
+        <p>Most EMS customers connect their databases to EMS applications using the EMSUser account, however, some organizations prefer to tighten security even further by using their own accounts, such as those from Active Directory. This gives them greater control over the account and enables them to set their own passwords instead of relying on the built-in EMSUser account.&#160;</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../Resources/Images/OptFeatGuide/Connecting to Your Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>Concept:&#160;What is EMSUser?<br />EMS employs an application-level security model. &#160;All EMS end-user accounts are provisioned within the EMS application. Connectivity between the EMS database and all EMS components (e.g. EMS Desktop Client, VEMS, EMS Web App, EMS Mobile App, etc.) is managed with one fixed EMS SQL Server user account (EMSUser) that is created during the EMS database installation process. This security model requires that the server authentication for the Microsoft SQL Server where your EMS database resides must be set to a mixed mode (SQL Server and Windows Authentication mode).&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Process Overview:</p>
+        <p>To connect your database to Active Directory, you will essentially be replacing&#160;the EMSUser account with an Active Directory account/group that your organization can define and control.&#160;This method enables you to use the Windows Authentication mode exclusively (instead of SQL Server and Windows Authentication mode) for your server authentication. This process involves the following stages:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li><a href="https://success.emssoftware.com/Knowledge_Base/Connecting_To_Your_Database/030_Configuring_Your_EMS_Database" title="Configuring Your EMS Database">Configure&#160;Your EMS Database</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Knowledge_Base/Connecting_To_Your_Database/050_Configuring_EMS_Desktop_Client" title="Configuring EMS Desktop Client">Configure EMS Desktop Client</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Knowledge_Base/Connecting_To_Your_Database/070_Connecting_Your_EMS_Web-Based_Applications" title="Connecting Your EMS Web-Based Applications">Connect&#160;Your EMS Web-Based Applications</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Knowledge_Base/Connecting_To_Your_Database/090_Finalizing_Your_Database_Connection" title="Finalizing Your Database Connection">Finalize&#160;Your Database Connection</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Knowledge_Base/Connecting_To_Your_Database/Managing_Database_Connections_With_EMS_Services" title="Managing Database Connections With EMS Services">Manage Database Connections With EMS Services</a>
+            </li>
+        </ul>
+    </body>
+</html>

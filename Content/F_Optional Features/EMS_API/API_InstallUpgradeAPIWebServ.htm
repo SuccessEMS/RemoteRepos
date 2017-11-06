@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1386" MadCap:lastWidth="868">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeat_API.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing/Upgrading the EMS API Web Service</h1>
+        <p>Important:&#160; Before beginning the installation process, please do the following:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Install or upgrade your EMS databases as outlined in the&#160;EMS Installation Instructions.</li>
+            <li>Manually&#160;uninstall&#160;any previous versions of the EMS API Web Service on your web server.&#160;</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Download&#160;EMSAPI.msi&#160;onto the web server.</li>
+            <li>Run&#160;EMSAPI.msi.</li>
+            <li>The first screen welcomes you to the EMS API Web Service Setup Wizard.&#160;Click&#160;Next &gt;&#160;to begin the installation process.&#160;The&#160;Select Installation Address&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeat_API/Installing Upgrading the EMS.png" style="visibility: visible;mso-wrap-style: square;width: 513px;height: 420px;" alt="https://success.emssoftware.com/@api/deki/files/1481/EMS_API_-_Installing_API_Service_-Install_Address.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Select the Site, Virtual Directory and Application Pool.&#160; It is recommended that you keep the default settings.&#160;The installation process will create a Physical and Virtual directory on your web server named “EMSAPI” (or whatever value you entered in the Virtual Directory field.)&#160;Click&#160;Next &gt;&#160;to begin the installation process.</li>
+        </ol>
+        <p>Note:&#160; The EMS API should&#160;not&#160;be installed in the same Virtual Directory as other EMS web-based products.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>The&#160;Confirm Installation&#160;screen will appear.&#160;Click&#160;Next &gt;. The&#160;EMS Settings&#160;screen will appear. (the screen shot below is not correct).</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/OptFeat_API/Installing Upgrading the EMS_1.png" style="visibility: visible;mso-wrap-style: square;width: 422px;height: 164px;" alt="https://success.emssoftware.com/@api/deki/files/1482/EMS_API_-_Installing_API_Service__-_Settings.png?revision=1&amp;size=bestfit&amp;width=422&amp;height=164" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Enter your EMS SQL Server Name.</li>
+            <li>Enter your EMS Database:</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>EMS Professional customers – enter “EMSData”</li>
+            <li>EMS Workplace, EMS Campus, EMS Enterprise, EMS Legal and EMS District customers - typically named&#160; “EMS”</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="9">
+            <li>Click&#160;OK.</li>
+            <li>The&#160;Installation Complete&#160;screen will appear.&#160; Click&#160;Close.&#160;</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="746" MadCap:lastWidth="836">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/FMToolkit.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing and Executing the Facility Management Toolkit</h1>
+        <h2>Installation</h2>
+        <p>The followings steps should be performed on the MS SQL Server that hosts your EMS database.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Obtain the SQL files outlined in the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/FM_Toolkit/Installing_FM_Toolkit/03-Obtaining_the_FM_Toolkit_Components" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/FM_Toolkit/Installing_FM_Toolkit/03-Obtaining_the_FM_Toolkit_Components"><span class="Hyperlink">Obtaining the FM Toolkit Components</span></a>&#160;section.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;FMTK Staging DB Install.sql&#160;script against your&#160;master&#160;database.&#160;This will create the&#160;EMS_Staging&#160;database containing one table named&#160;tblRoom.</li>
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;FMTK Update Script.sql&#160;script against your&#160;EMS&#160;database.&#160;This will create a stored procedure in your EMS database named&#160;FMTK_Update_Room.&#160;</li>
+        </ol>
+        <h2>Execution</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Import records from your organization’s facility management system into the&#160;tblRoom&#160;table within the&#160;EMS_Staging&#160;database.</li>
+        </ol>
+        <p>Important Note:&#160;Existing EMS clients wanting to implement the FM Toolkit must “synchronize” existing EMS rooms before activating the toolkit by adding a valid&#160;ExternalReference&#160;value in&#160;tblRoom.&#160;Ignoring this step will result in duplicate records.&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Using&#160;Microsoft SQL Server Management Studio&#160;execute the&#160;FMTK_Update_Room&#160;stored procedure.</li>
+        </ol>
+        <p>Note:&#160; Step 2 (and Step 1 with assistance from your IT Department) can be scheduled to execute automatically using a SQL Job.&#160;Please refer to your MS SQL Server documentation for more information on creating and scheduling a SQL Job.</p>
+        <p>&#160;</p>
+    </body>
+</html>

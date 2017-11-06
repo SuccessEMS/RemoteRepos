@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="475" MadCap:lastWidth="836">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/CISCO_Guide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Obtaining the Installation Files&#160;</h1>
+        <p>Obtain the following components from your EMS Professional Services contact:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>EMS License Key&#160;– The EMS – Cisco TMS Interface is an optional module that requires the appropriate EMS license to activate.</li>
+            <li>CiscoTMSOverlay.sql&#160;&#160;- SQL script that will need to be executed against your EMS database.&#160;This will create EMS – Cisco TMS Interface specific objects (tables and stored procedures).</li>
+            <li>UpdateBookingVCHostFlagFromCiscoTMSSettings.sql&#160; (UPGRADES ONLY)&#160;- SQL script that will need to be executed against your EMS database.&#160;This will upgrade your EMS - Cisco TMS Interface specific objects (tables and stored procedures) to the current release.</li>
+            <li>CiscoTMSServiceSetup.msi&#160;– Service responsible for pushing videoconference bookings from EMS to the Cisco TMS Booking API at timed intervals.</li>
+            <li>EMS.CiscoTMSActivity.dll&#160;– Custom Cisco TMS DLL that will display all EMS – Cisco TMS Interface activity within the EMS application including errors and successfully scheduled videoconferences.&#160;The Cisco TMS Activity DLL also contains an area that allows EMS Administrators to configure various EMS – Cisco TMS Interface settings.</li>
+        </ul>
+    </body>
+</html>

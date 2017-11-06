@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="2678" MadCap:lastWidth="823">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/Polycom1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configuring the EMS Polycom Interface</h1>
+        <h2>Setting Preferences&#160;in EMS Polycom Interface&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Within the Windows Start menu, locate&#160;EMS Polycom Settings. The EMS Polycom Settings screen presents.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Polycom1/Configuring the EMS Polycom.png" style="visibility: visible;mso-wrap-style: square;width: 714px;height: 266px;" alt="https://success.emssoftware.com/@api/deki/files/5005/clipboard_ecb80245eb62d9fbe52d0a0b7c122eb15?revision=1&amp;size=bestfit&amp;width=714&amp;height=266" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Enter your&#160;EMS MS SQL Server name.</li>
+            <li>Enter your&#160;EMS Database name.</li>
+            <li>Specify the&#160;service execution interval.</li>
+            <li>Specify the&#160;Authentication mode&#160;(EMS or Windows).</li>
+            <li>Click&#160;OK.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/Polycom1/Configuring the EMS Polycom_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;Additional EMS&#160;Polycom Interface settings are configured in the Polycom Activity area within EMS.&#160;</p>
+                    <p>Proceed to the next section to complete these steps.</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Setting Preferences in Polycom Activity Area&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the Polycom Realpresence Resource Manager API is running by opening a browser and entering the web service URL (typically&#160;https://&lt;serverID&gt;:&lt;portnumber&gt;/api/rest). The following screen should present:</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/Polycom1/Configuring the EMS Polycom_2.png" style="visibility: visible;mso-wrap-style: square;width: 778px;height: 487px;" alt="https://success.emssoftware.com/@api/deki/files/5004/clipboard_e173c205cf8f17cc621c5b592ca58b198?revision=1&amp;size=bestfit&amp;width=778&amp;height=487" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Log into the EMS desktop application using an EMS user account with Administrator-level access.</li>
+            <li>Click the Polycom Activity button on the tool bar. The Polycom Activity screen will appear.</li>
+            <li>Click the Settings menu option in the upper right&#160;corner of the Polycom Activity screen. </li>
+        </ol>
+        <p>The Polycom Settings screen will present.</p>
+        <p>
+            <br />
+            <img src="../../../Resources/Images/Polycom1/Configuring the EMS Polycom_3.png" style="visibility: visible;mso-wrap-style: square;width: 659px;height: 389px;" alt="https://success.emssoftware.com/@api/deki/files/5003/clipboard_eee8886a5b84d63d428d166c94839694d?revision=1&amp;size=bestfit&amp;width=659&amp;height=389" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>On the&#160;Settings&#160;tab, specify values for the items listed by highlighting the record and clicking the Edit button. Once you configure a setting, click the OK button to save your value.</li>
+        </ol>
+        <ul style="list-style-type: disc;margin-left: 54pt;">
+            <li>Enable Event Logging&#160;– Enables EMS&#160;Polycom Windows Service event logging.</li>
+            <li>Error Email Message&#160;- Subject line of error email notifications.</li>
+            <li>Error “From” Email Address&#160;- Email address (individual or distribution group) that error email notifications will be sent from</li>
+            <li>Error “To” Email Address&#160;- Email address (individual or distribution group) that error email notifications will be sent to.</li>
+            <li>Number of days prior to Event&#160;- Specifies how far in advance of a video-conference date the EMS – Polycom Interface should push the EMS booking(s) to Polycom.</li>
+            <li>SMTP Authentication Type&#160;– Anonymous or Authenticated.</li>
+            <li>SMTP Password&#160;- Specify if SMTP Authentication Type = Authenticated.</li>
+            <li>SMTP Server&#160;– Used to relay error notification emails.</li>
+            <li>SMTP User Name&#160;– Specify if SMTP Authentication Type = Authenticated.</li>
+            <li>Use Reserved Time&#160;– If set to Yes, the booking reserved time will be passed to the Polycom Realpresence Resource Manager API. Otherwise, the event time will be passed.</li>
+            <li>Web Service Domain&#160;– Polycom Realpresence Resource Manager API Web Service Domain.</li>
+            <li>Web Service Password</li>
+            <li>Web Service URL&#160;- URL to Polycom Realpresence Resource Manager API Web Service verified in Step 1.</li>
+            <li>Web Service User Name</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Go to the&#160;Buildings&#160;tab. This tab is used to include/exclude EMS bookings scheduled in specific Buildings, Areas, or Views during processing. To select an item, highlight the record and click the&#160;&gt;&#160;button.</li>
+            <li>Go to the&#160;Event Types&#160;tab. This tab is used to include/exclude EMS bookings scheduled in specific Event Types during processing.</li>
+            <li>Go to the&#160;Status&#160;tab. This tab is used to include/exclude EMS bookings scheduled in specific Statues during processing.</li>
+            <li>Click the&#160;OK&#160;button to save your settings.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="770" MadCap:lastWidth="836">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/RoomWizard.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Room Wizard Communication</h1>
+        <h2>Communication Overview</h2>
+        <p>The RoomWizard unit is the initiator of all communication.</p>
+        <p>Using HTTP and URL query string parameters the RoomWizard unit makes specific requests (using GET) to the EMS RW-Interface which proved an immediate response in an XML format defined by the RoomWizard API.</p>
+        <h2>RoomWizard API Calls Used</h2>
+        <p>The following requests (defined as part of the RoomWizard API) are honored by the EMS-ROOMWIZARD Interface with a summary of the EMS-ROOMWIZARD Interface response:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>about_connector</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Provides the RoomWizard unit with basic information about the EMS-ROOMWIZARD Interface including the interface version and what versions of the RoomWizard API that are supported.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>get_booking</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Provides a list of the day’s events to the RoomWizard unit including (depending on configuration settings) Event Name, Group Name, Group Phone, Group Email Address, and setup information.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Add_booking</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Provides a method for information sent from the RoomWizard unit (Host, Purpose, and Times) and used to create EMS Events.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>edit_booking</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Provides methods for the RoomWizard unit to initiate the Edit/Cancelation of EMS Bookings.</li>
+            <li>Returns success or failure.</li>
+        </ul>
+    </body>
+</html>

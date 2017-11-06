@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2056" MadCap:lastWidth="813">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/FMToolkit.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>How It Works</h1>
+        <h2>The EMS_Staging Database&#160;</h2>
+        <p>The&#160;EMS_Staging&#160;database (created by&#160;FMTK Staging DB Install.sql) is used to stage room records before they are imported into EMS.</p>
+        <p>
+            <img src="../../Resources/Images/FMToolkit/FMToolkit.png" style="visibility: visible;mso-wrap-style: square;width: 380px;height: 254px;" alt="https://success.emssoftware.com/@api/deki/files/1477/FM_Toolkit-Overview-Staging_Database.png?revision=1&amp;size=bestfit&amp;width=380&amp;height=254" />
+        </p>
+        <p>Once you have identified the FM data source within your organization that will be used to create and maintain your EMS room records, you will be required to define/create a process to import room records into the&#160;tblRoom&#160;table within&#160;EMS_Staging.</p>
+        <h2>Maintaining Room Records in EMS&#160;</h2>
+        <p>The&#160;FMTK_Update_Room&#160;stored procedure (created by&#160;FMTK Update Script.sql) contains all of the logic to create your EMS room data.&#160;Records are imported into EMS from the&#160;EMS_Staging&#160;database according to the specifications outlined in the table below:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>EMS_Staging.tblRoomField</p>
+                    </th>
+                    <th>
+                        <p>EMS.tblRoom</p>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Notes</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>ExternalReference</p>
+                    </td>
+                    <td>
+                        <p>Required.&#160; Primary Key.&#160;&#160;Unique identifier that links a room record in your FM system with a room record in EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>BuildingCode</p>
+                    </td>
+                    <td>
+                        <p>BuildingID</p>
+                    </td>
+                    <td>
+                        <p>BuildingCode is matched against&#160;tblBuilding.BuildingCode&#160;to derive the correct Building ID to be stored in&#160;tblRoom.BuildingID.&#160; If BuildingCode can’t be matched in&#160;tblBuilding, the room record&#160;WILL NOT&#160;be created in EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RoomCode</p>
+                    </td>
+                    <td>
+                        <p>Room</p>
+                    </td>
+                    <td>
+                        <p>Required</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RoomDescription</p>
+                    </td>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>Required</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RoomType</p>
+                    </td>
+                    <td>
+                        <p>RoomType</p>
+                    </td>
+                    <td>
+                        <p>RoomType is matched against&#160;tblCategoryGroup.Description&#160;(Room Type table) to derive the correct Room Type ID to be stored in&#160;tblRoom.RoomType.&#160; If the room type can’t be matched in&#160;tblCategoryGroup, a new room type record&#160;WILL&#160;be created.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Floor</p>
+                    </td>
+                    <td>
+                        <p>FloorID</p>
+                    </td>
+                    <td>
+                        <p>Floor is matched against&#160;tblFloor.Description&#160;to derive the correct Floor ID to be stored in&#160;tblRoom.FloorID.&#160; If the floor can’t be matched in tblFloor, a new floor record&#160;WILL&#160;be created.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>RoomSize</p>
+                    </td>
+                    <td>
+                        <p>RoomSize</p>
+                    </td>
+                    <td>
+                        <p>Optional</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Active</p>
+                    </td>
+                    <td>
+                        <p>Active</p>
+                    </td>
+                    <td>
+                        <p>Active = 1.&#160; Inactive = 0.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The FM Toolkit uses the&#160;ExternalReference&#160;field in&#160;EMS_Staging.tblRoom&#160;and the&#160;tblRoom.ExternalReference&#160;field in the EMS database to determine whether a record needs to be added, updated, or inactivated.&#160;</p>
+        <h2>Adding New Records in EMS&#160;</h2>
+        <p>Rooms:&#160; If the&#160;ExternalReference&#160;value in&#160;EMS_Staging.tblRoom&#160;is not found on an existing room record in EMS, a new room will be created.&#160;</p>
+        <p>Important Note:&#160; Existing EMS clients wanting to implement the FM Toolkit must “synchronize” existing EMS rooms before activating the toolkit by adding a valid&#160;ExternalReference&#160;value in&#160;tblRoom.&#160;&#160;Ignoring this step will result in duplicate records.&#160;</p>
+        <p>Room Types:&#160; If the RoomType value in&#160;EMS_Staging.tblRoom&#160;is not found in the existing list of room types in EMS, a new room type will be created.</p>
+        <p>Floors:&#160; If the Floor value for a particular room record in&#160;EMS_Staging.tblRoom&#160;is not found in the existing list of floors in EMS, a new floor will be created.</p>
+        <p>Buildings:&#160; The FM Toolkit does not add or maintain building records in EMS.</p>
+        <h2>Updates to Existing Records in EMS&#160;</h2>
+        <p>If the&#160;ExternalReference value&#160;in&#160;EMS_Staging.tblRoom&#160;is found on an existing room record in EMS, the room will be updated with any changes.</p>
+        <h2>Inactive Room Records&#160;</h2>
+        <p>A room will be inactivated if one of the two conditions outlined below is met:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If an existing room record in EMS does not exist in&#160;EMS_Staging.tblRoom&#160;(based on&#160;ExternalReference).</li>
+            <li>If a room record’s&#160;Active&#160;status in&#160;EMS_Staging.tblRoom&#160;= 0.</li>
+        </ol>
+        <p>Note:&#160; Room records within EMS with an empty External Reference field are excluded from processing.&#160;Therefore, rooms that are not included in your data feed can be added and maintained manually within EMS and will not be impacted by the FM Toolkit.&#160;</p>
+    </body>
+</html>

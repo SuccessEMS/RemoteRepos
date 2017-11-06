@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="430" MadCap:lastWidth="855">
+    <head><title></title>
+        <link href="../../Resources/Stylesheets/OptFeatGuide.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configuring Your EMS Database</h1>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Using Microsoft SQL Server Management Studio,&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Connecting_To_Your_Database_Using_Active_Directory/010_Pre-Installation_Requirements" title="Pre-Installation Requirements">add a login for the EMS Active Directory security group</a>.&#160;</li>
+            <li>Under the User Mapping area, map the login to your EMS database. &#160;Add the&#160;db_datareader&#160;and&#160;db_datawriter&#160;roles. &#160;&#160;</li>
+            <li>Repeat Step 2 for the EMS_Master database.&#160;</li>
+            <li>Using Microsoft SQL Server Management Studio, execute the following statement against your EMS database:&#160;<br />sp_addrolemember 'EMS_Role', 'securitygroup' &#160;</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../Resources/Images/OptFeatGuide/Configuring Your EMS Database.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;Replace&#160;securitygroup&#160;with the name of your EMS Active Directory security group.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Repeat Step 4 for the EMS_Master database.&#160;<br />&#160;</li>
+        </ol>
+    </body>
+</html>

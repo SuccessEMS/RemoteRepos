@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="1791" MadCap:lastWidth="823">
+    <head><title></title>
+        <link href="../../../../Resources/Stylesheets/FloorPlan_Config.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Installing/<MadCap:annotation MadCap:createDate="2017-11-04T15:06:22.9297898-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This topic is similar to one in the Install Guide about the Configuration Tool. Which topic is correct?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-04T15:06:57.1784676-06:00">Upgrading</MadCap:annotation> the Floor Plans Configuration Utility</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../../Resources/Images/FloorPlan_Config/Upgrading and Configuring_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                    </p>
+                </td>
+                <td>
+                    <p>Important:&#160;Before beginning the installation process, please manually&#160;uninstall&#160;any previous versions of the Floor Plan Configuration Tool on your web server.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Run&#160;EMSFloorPlanConfiguration.msi.&#160;The first screen welcomes you to the EMS Floor Plan Configuration Web Site Setup Wizard.&#160;</li>
+            <li>Click&#160;Next &gt;&#160;to begin the installation process.&#160;The&#160;Select Installation Address&#160;screen will appear.</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/FloorPlan_Config/Installing Upgrading the Floor.png" style="visibility: visible;mso-wrap-style: square;width: 512px;height: 420px;" alt="https://success.emssoftware.com/@api/deki/files/1501/Floor_Plan_Module_-_Installing_Web_Service_-_Install_Address.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Select the Site, Virtual Directory and Application Pool.&#160;It is recommended that you keep the default settings.&#160;The installation process will create a Physical and Virtual directory on your web server named “EMSFloorPlanConfiguration” (or whatever value you entered in the Virtual Directory field.)&#160;Click&#160;Next &gt;.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../../Resources/Images/FloorPlan_Config/Upgrading and Configuring_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;The EMS Floor Plan Configuration site should&#160;not&#160;be installed in the same Virtual Directory as other EMS web-based products.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>The&#160;Confirm Installation&#160;screen will appear.&#160;Click&#160;Next &gt;. The&#160;SQL Server Connection&#160;screen will appear.&#160;</li>
+            <li>Enter your EMS SQL Server Name.</li>
+            <li>Enter your EMS Database Name (typically “EMS”).&#160;Click&#160;Next &gt;.</li>
+            <li>The&#160;Floor Plan Web Service URL&#160;screen will appear:</li>
+        </ol>
+        <p>
+            <img src="../../../../Resources/Images/FloorPlan_Config/Installing Upgrading the Floor_1_1.png" style="visibility: visible;mso-wrap-style: square;width: 512px;height: 420px;" alt="https://success.emssoftware.com/@api/deki/files/144/image_56.png?revision=1&amp;size=bestfit&amp;width=513&amp;height=420" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>Enter the URL of your Floor Plan Web Service (step 10&#160;in the&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Floor_Plan/Installing_Floor_Plan_Module/05-Installing/Upgrading_the_Floor_Plan_Web_Service" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Floor_Plan/Installing_Floor_Plan_Module/05-Installing////////Upgrading_the_Floor_Plan_Web_Service">Installing the Floor Plan Web Service</a>&#160;section).</li>
+            <li>The&#160;Installation Complete&#160;screen will appear.&#160;Click&#160;Close.&#160;</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following URL:</li>
+        </ol>
+        <p>http://[ServerName]/emsfloorplanconfiguration&#160;(replace [ServerName] with the name of your web server).</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../../Resources/Images/FloorPlan_Config/Upgrading and Configuring_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Integrated_Authentication_Options/04-Integrated_Windows_Authentication" title="Integrated Windows Authentication">Integrated Windows Authentication</a>&#160;is not supported for EMS Floor Plan.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

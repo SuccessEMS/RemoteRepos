@@ -430,7 +430,11 @@
       <TocEntry
         Title="Configuration &gt; Administration">
         <TocEntry
-          Title="Configure Categories" />
+          Title="Configure Categories">
+          <TocEntry
+            Title="Enable Visitor Management"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EnableVisitorMgmt.htm" />
+        </TocEntry>
         <TocEntry
           Title="Configure Departments" />
         <TocEntry
@@ -480,7 +484,36 @@
         <TocEntry
           Title="Configure Everyday Users" />
         <TocEntry
-          Title="Configure Everyday User Process Templates" />
+          Title="Configure Everyday User Process Templates"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigUserProcessTemplate.htm">
+          <TocEntry
+            Title="Web Template Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_WebTemplateTab.htm" />
+          <TocEntry
+            Title="Booking Rules Tab" />
+          <TocEntry
+            Title="Defaults Tab" />
+          <TocEntry
+            Title="Video Conference Tab" />
+          <TocEntry
+            Title="Rooms Tab" />
+          <TocEntry
+            Title="Categories Tab" />
+          <TocEntry
+            Title="Event Types Tab" />
+          <TocEntry
+            Title="LDAP Groups Tab" />
+          <TocEntry
+            Title="User Defined Fields Tab" />
+          <TocEntry
+            Title="Parameters Tab" />
+          <TocEntry
+            Title="Web Text Tab" />
+          <TocEntry
+            Title="Menu Text Translations Tab" />
+          <TocEntry
+            Title="Terms and Conditions Tab" />
+        </TocEntry>
         <TocEntry
           Title="Configure Everyday User Security Templates" />
         <TocEntry
@@ -1045,13 +1078,20 @@
       <TocEntry
         Title="Other Reservation Functions">
         <TocEntry
-          Title="Record Actual Attendance Numbers for Bookings" />
+          Title="Record Actual Attendance Numbers for Bookings"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_RecordActualAttendance.html" />
         <TocEntry
-          Title="Manage Attendees and Visitors" />
+          Title="Manage Attendees and Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManagAttendeesVisitor.html" />
         <TocEntry
-          Title="View Visitors" />
+          Title="View Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewVisitors.htm" />
         <TocEntry
-          Title="Check In Visitors" />
+          Title="Check In Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CheckInVisitors.htm" />
+        <TocEntry
+          Title="Import a List of Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
       </TocEntry>
       <TocEntry
         Title="The EMS Window">
@@ -1074,7 +1114,7 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditResinResBook.htm" />
         <TocEntry
           Title="Import a List of Visitors to a Booking"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_IG_ImportListVis.html" />
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
       </TocEntry>
       <TocEntry
         Title="The Navigator">
@@ -1252,7 +1292,8 @@
         <TocEntry
           Title="Generate an EMS Billing Report" />
         <TocEntry
-          Title="Generate Visitor Reports" />
+          Title="Generate Visitor Reports"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_GeneratingVisitorRep.html" />
         <TocEntry
           Title="Configure Automated Reports" />
         <TocEntry

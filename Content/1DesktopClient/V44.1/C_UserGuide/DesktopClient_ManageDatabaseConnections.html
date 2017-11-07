@@ -1,27 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1058" MadCap:lastWidth="1228" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="3255" MadCap:lastWidth="1362" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Managing Database Connections</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Managing Database Connections</h1>
+        <h1 class="mt-export-title">Manage Database Connections</h1>
+        <p>If <MadCap:variable name="General.EMS&#160;Desktop Client" /> has been installed on your desktop using the <MadCap:variable name="General.EMS&#160;Desktop Client" /> Web Deployment, you can point to a different database through <MadCap:variable name="General.EMS&#160;Desktop Client" />. Contact your system administrator for guidance in databases to use.</p>
         <p>This topic will provide information on:</p>
         <ol>
-            <li>Changing Databases</li>
-            <li>Creating New Database Connections</li>
+            <li>
+                <MadCap:xref href="#changedatabase">Changing databases</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#createnewdatabaseconnection">Create a new database connection</MadCap:xref>
+            </li>
         </ol>
-        <p>If <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> has been installed on your desktop using the <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> Web Deployment, you can point to a different database through <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />. Contact your system administrator for guidance in databases to use.</p>
-        <h2>Changing Databases</h2>
+        <h2><a name="changedatabase"></a>Changing Databases</h2>
         <ol>
-            <li>On the EMS Menu select File &gt; Change Database to bring up the Database Connections window. <br />Note: Any database connection listed in blue is a system record inherited from the EMS Desktop Client Web Deployment that can not be deleted.</li>
+            <li>On the EMS Menu, select File &gt; Change Database to bring up the Database Connections window. <br /></li>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_ManageDatabase_ChangeDb.gif" />
+        </p>
+        <p>Note: Any database connection listed in blue is a system record inherited from the EMS Desktop Client Web Deployment that can not be deleted.</p>
+        <ol MadCap:continue="true">
             <li>To connect to a database that is not the system database select it from the list of Database Connections then press the 'Connect' button. This will close and reopen the EMS Desktop Client connected to the selected database.<br />Note: The user will need to log in again after changing databases.</li>
         </ol>
-        <h2>Creating New Database Connections</h2>
+        <h2><a name="createnewdatabaseconnection"></a>Create a New Database Connection</h2>
         <ol>
             <li>To create a New connection select 'New' in the Database Connections window (shown above) to bring up the Database Connection window.</li>
             <li>Type in the SQL server and EMS database name then select 'OK' to save the connection. You can delete connections later when you no longer need them.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_UG_ManageDatabase_createnewDb.gif" />
+        </p>
+        <ol MadCap:continue="true">
             <li>For EMS to save this connection it will first check to see if it is a valid connection. If the connection is invalid, it will not be created you will see this error message:</li>
         </ol>
+        <p>
+            <img src="Images/DC_UG_ManageDatabase_error.gif" />
+        </p>
     </body>
 </html>

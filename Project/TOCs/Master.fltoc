@@ -1,1926 +1,774 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc
-  Version="1">
-  <TocEntry
-    Title="InstallationGuides"
-    Link="/Content/A_Installation/1InstallationHome.htm">
-    <TocEntry
-      Title="EMS Desktop Client"
-      Link="/Content/A_Installation/2_DesktopClient/V44.1/2_DesktopClient_Home.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html"></TocEntry>
-      <TocEntry
-        Title="System Requirements and Prerequisites"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_SystemReq.htm" />
-      <TocEntry
-        Title="Installation Instructions"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_INstallationInstruct.html"></TocEntry>
-      <TocEntry
-        Title="Upgrade Considerations"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_UpgradeConsideration.html" />
-      <TocEntry
-        Title="Upgrade Instructions"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_UpgradeInstruct.html" />
-      <TocEntry
-        Title="Downgrade the EMS Desktop Client Web Deploy"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_DowngradeWebDeploy.htm" />
-      <TocEntry
-        Title="Installing Custom Reports in EMS Desktop Client"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_InstallCustomReport.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Web App"
-      Link="/Content/A_Installation/3_WebApp/V44.1/3a_Web App_Introduction.htm"></TocEntry>
-    <TocEntry
-      Title="EMS Mobile App"
-      Link="/Content/A_Installation/4_MobileAppV44.1/4_MobileAppHome.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/3MobileApp/A_InstallationGuide/Mobile_Introduction.html" />
-      <TocEntry
-        Title="Installation and Basic Setup"
-        Link="/Content/3MobileApp/A_InstallationGuide/Mobile_InstallandBasicSetup.html">
-        <TocEntry
-          Title="Architecture"
-          Link="/Content/3MobileApp/A_InstallationGuide/Mobile_Architecture.html" />
-        <TocEntry
-          Title="How Mobile App Data Is Stored on Devices"
-          Link="/Content/3MobileApp/A_InstallationGuide/Mobile_HowAppDataIsStoredonDevices.html" />
-      </TocEntry>
-      <TocEntry
-        Title="System Requirements"
-        Link="/Content/3MobileApp/A_InstallationGuide/Mobile_SysRequirements.html" />
-      <TocEntry
-        Title="What's New"
-        Link="/Content/3MobileApp/A_InstallationGuide/Mobile_WhatsNew.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook"
-      Link="/Content/A_Installation/5_OutlookV44.1/5_OutlookV44.1Home.htm">
-      <TocEntry
-        Title="Introduction to EMS for Outlook"
-        Link="/Content/4Outlook/A_Install/Outlook_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Requirements and Prerequisites for EMS for Outlook"
-        Link="/Content/4Outlook/A_Install/Outlook_IG_ReqsPrereqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Plan Your EMS for Outlook Implementation"
-        Link="/Content/4Outlook/A_Install/Outlook_IG_PlanImplementation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Install or Upgrade EMS for Outlook on Users' Computers"
-        Link="/Content/4Outlook/A_Install/Outlook_IG_InstallUpgrade.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="EMS for Outlook Add-In Is Offline"
-          Link="/Content/4Outlook/A_Install/Outlook_IG_OutlookAddInOffline.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Silent or Unattended EMS for Outlook Installation"
-          Link="/Content/4Outlook/A_Install/Outlook_IG_SilentUnattendedInstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number"
-          Link="/Content/4Outlook/A_Install/Outlook_IG_WhereExchServURLVerNum.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook (Legacy)"
-      Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_InstallOverview_Leg.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_Introduction_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Prerequisites"
-          Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_Prerequistes_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="EMS for Outlook Requirements"
-          Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_OutlookReqs_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="Plan Your EMS for Outlook Implementation"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_PlanImplementation_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Obtain the EMS for Outlook Installation File"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_ObtainOutlookInstallFile_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Install or Upgrade EMS for Outlook on a User's PC"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_InstallUpgradeUserPC_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="EMS for Outlook Add-In Is Offline"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_OutlookAddInOffline_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Silent or Unattended EMS for Outlook Installation"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_SilentUnattendInstall_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number"
-        Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_ExchServURLandVerNum_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook (Prior to Update 8)"
-      Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_InstallOutlook.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="EMS for Outlook Requirements"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_Requirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Obtain the EMS for Outlook Installation File"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_ObtainInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Pre-Installation Requirements"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_PreInstallReq.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Install or Upgrade on a User's PC"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_InstallUpgradeonUserPC.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Silent or Unattended Installation"
-        Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_SilentUnattendedInstall.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="Integration to Microsoft® Exchange"
-      Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_IntegtoMEOverview.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Integration to Exchange Requirements"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_IntegExchanReqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Installation and Upgrade Instructions for the Exchange Integration Web Service"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_InstallUpgradeforEIWservice.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Configure Integration to Exchange"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_ConfigIntegExchange.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Use Application Pool Identity for Integration for Exchange Service Account"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_UseAppPoolIdentif.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Configure EWS Impersonation for Microsoft® Exchange"
-        Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_ConfigEWSImperforME.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Learn More About Exchange Web Services (EWS) Impersonation"
-          Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_LearnMoreaboutEWS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk "
-      Skin="/Project/Skins/TopicToolBar.flskn"
-      ReplaceMergeNode="false">
-      <TocEntry
-        Title="EMS Kiosk Install Overview"
-        Link="/Content/A_Installation/6_Kiosk/A_KioskHome.htm"
-        StartSection="false"
-        SectionNumberReset="continue"
-        VolumeNumberReset="same"
-        ChapterNumberReset="continue"
-        ComputeToc="false"
-        ReplaceMergeNode="false" />
-      <TocEntry
-        Title="Introduction to the EMS Kiosk App"
-        Link="/Content/15Kiosk/A_Install/Kiosk_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Obtain the Installation Files for EMS Kiosk App"
-        Link="/Content/15Kiosk/A_Install/Kiosk_IG_ObtainInstallation.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="System Requirements and Prerequisites for EMS Kiosk App"
-        Link="/Content/15Kiosk/A_Install/Kiosk_IG_SysReqPrereq.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Install or Upgrade the EMS Kiosk App"
-        Link="/Content/15Kiosk/A_Install/Kiosk_IG_InstallUpgrade.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Start the EMS Kiosk App"
-        Link="/Content/15Kiosk/A_Install/Kiosk_IG_StartKioskApp.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk (Legacy)"
-      Skin="/Project/Skins/TopicToolBar.flskn"
-      ReplaceMergeNode="false">
-      <TocEntry
-        Title="Install EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_InstallKioskOverview1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Introduction to EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_Introduction.html" />
-      <TocEntry
-        Title="System Requirements and Prerequisites for EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_SysReqPrereq1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Obtain the Installation Files for EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_ObtainInstallFiles1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Install/Upgrade the EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_InstallUpgradeKiosk1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Start EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_StartKiosk1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Platform Services"
-      Link="/Content/A_Installation/7_PlatformServices/V44.1/7_PlatformServicesHome.htm">
-      <TocEntry
-        Title="Introduction to EMS Platform Services"
-        Link="/Content/5PlatformServices/A_InstallationGuide/Platform_Introduction.html" />
-      <TocEntry
-        Title="Install EMS Platform Services"
-        Link="/Content/5PlatformServices/A_InstallationGuide/Platform_InstallPS.html" />
-      <TocEntry
-        Title="License Requirements for Platform Services"
-        Link="/Content/5PlatformServices/A_InstallationGuide/Platform_LicenseRequirements.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Room Sign App (formerly Glance)"
-      Link="/Content/A_Installation/8_RoomSignAppV44.1/8_RoomSignAppHome.htm">
-      <TocEntry
-        Title="Introduction to the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_RSAOverview.html" />
-      <TocEntry
-        Title="Requirements for the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_RequirementsforRSA.html" />
-      <TocEntry
-        Title="Obtain the Installation Files for EMS Room Sign"
-        Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_ObtainInstallFiles.html" />
-      <TocEntry
-        Title="Architecture for the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_Architecture.html" />
-      <TocEntry
-        Title="Install the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_InstallRSA.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Exchange Room Integration (ERI)"
-      Link="/Content/A_Installation/11_ERI_V44.1/11_ERI_Home.htm">
-      <TocEntry
-        Title="Introduction to ERI"
-        Link="/Content/7ERI/A_Installation/ERI_IG_IntroductiontoERI.html">
-        <TocEntry
-          Title="Architecture of ERI"
-          Link="/Content/7ERI/A_Installation/ERI_ArchitectureofERI.html" />
-        <TocEntry
-          Title="System Requirements of ERI"
-          Link="/Content/7ERI/A_Installation/ERI_IG_SystemRequirements.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Install Exchange Room Integration"
-        Link="/Content/7ERI/A_Installation/ERI_IG_InstallingERI.html" />
-      <TocEntry
-        Title="Exchange Sync Utility"
-        Link="/Content/7ERI/A_Installation/ERI_IG_ExchangeSyncUtility.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Master Calendar"
-      Link="/Content/A_Installation/9_MasterCalendarV8/9_MasterCalendarV8Home.htm">
-      <TocEntry
-        Title="EMS Master Calendar (V8)"
-        Link="/Content/16_MC/A_Installation/MC_EMSMCV8.html" />
-      <TocEntry
-        Title="Requirements for Master Calendar"
-        Link="/Content/16_MC/A_Installation/MC_IG_RequirementforMC.html" />
-      <TocEntry
-        Title="Installation Instructions"
-        Link="/Content/16_MC/A_Installation/MC_IG_InstallationInstruct.html">
-        <TocEntry
-          Title="Obtain Master Calendar Installation Files"
-          Link="/Content/16_MC/A_Installation/MC_IG_ObtainingMCInstallFiles.html" />
-        <TocEntry
-          Title="Run the Master Calendar Installer"
-          Link="/Content/16_MC/A_Installation/MC_IG_RunningMCInstaller.html" />
-        <TocEntry
-          Title="Configure Master Calendar to Use the Master Calendar API Web Service"
-          Link="/Content/16_MC/A_Installation/MC_ConfigUseAPIWebService.html" />
-        <TocEntry
-          Title="Install or Upgrade the Database Component in Master Calendar"
-          Link="/Content/16_MC/A_Installation/MC_InstallUpgradeDatabaseComp.html" />
-        <TocEntry
-          Title="Install or Upgrade the Master Calendar Web Service"
-          Link="/Content/16_MC/A_Installation/MC_InstallUpgradeMCWebService.html" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Campus"
-      Link="/Content/A_Installation/10_CampusV44.1/10_CampusHome.htm">
-      <TocEntry
-        Title="EMS Campus Planning Interface">
-        <TocEntry
-          Title="Introduction"
-          Link="/Content/9CPI/A_InstallationGuide/CPI_Introduction.html" />
-        <TocEntry
-          Title="EMS V44.1 System Requirements"
-          Link="/Content/9CPI/A_InstallationGuide/CPI_Install_44.1SystemRequirements.html" />
-        <TocEntry
-          Title="Obtain the Latest Release of EMS Campus Planning Interface"
-          Link="/Content/9CPI/A_InstallationGuide/CPI_ObtainingLatestReleaseofEMSCPI.html" />
-        <TocEntry
-          Title="Install or Upgrade the EMS Campus Planning Interface"
-          Link="/Content/9CPI/A_InstallationGuide/CPI_InstallUpgrdEMSCPI.html" />
-        <TocEntry
-          Title="Start the EMS Campus Planning Interface"
-          Link="/Content/9CPI/A_InstallationGuide/CPI_StartingEMSCPI.html" />
-      </TocEntry>
-      <TocEntry
-        Title="EMS Campus Web Service and White Paper">
-        <TocEntry
-          Title="Introduction"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Introduction.html" />
-        <TocEntry
-          Title="EMS Campus Web Service Hardware/Software Requirements"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Hardware-SoftwareReq.html" />
-        <TocEntry
-          Title="Obtain the Latest EMS Campus Web Service Components"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ObtainingLatest.html" />
-        <TocEntry
-          Title="Install or Upgrade the EMS Campus Web Service"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Installing-Upgrading.html" />
-        <TocEntry
-          Title="EMS Configuration Steps"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_EMSConfigSteps.html" />
-        <TocEntry
-          Title="Data Models"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_DataModels.html">
-          <TocEntry
-            Title="Banner Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_BannerViewsDataModel.html" />
-          <TocEntry
-            Title="CAMS Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_CAMSViewsDataModel.html" />
-          <TocEntry
-            Title="Colleague (Oracle or SQL) Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ColleagueViews DataModel.html" />
-          <TocEntry
-            Title="Colleague Unidata Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ColleagueUnidataViewsDataMdl.html" />
-          <TocEntry
-            Title="Jenzabar (CX - Informix) Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_JenzabarCXInformix.html" />
-          <TocEntry
-            Title="Jenzabar (EX) Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_JenzabarEXViewsDataMdl.html" />
-          <TocEntry
-            Title="PeopleSoft Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_PeopleSoftViewsData.html" />
-          <TocEntry
-            Title="PowerCampus Views Data Model"
-            Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_PowerCampusViewsDataModel.html" />
+<CatapultToc Version="1" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <TocEntry Title="InstallationGuides" Link="/Content/A_Installation/1InstallationHome.htm">
+        <TocEntry Title="EMS Desktop Client" Link="/Content/A_Installation/2_DesktopClient/V44.1/2_DesktopClient_Home.htm">
+            <TocEntry Title="Introduction" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html" />
+            <TocEntry Title="System Requirements and Prerequisites" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_SystemReq.htm" />
+            <TocEntry Title="Installation Instructions" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_INstallationInstruct.html" />
+            <TocEntry Title="Upgrade Considerations" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_UpgradeConsideration.html" />
+            <TocEntry Title="Upgrade Instructions" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_UpgradeInstruct.html" />
+            <TocEntry Title="Downgrade the EMS Desktop Client Web Deploy" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_DowngradeWebDeploy.htm" />
+            <TocEntry Title="Installing Custom Reports in EMS Desktop Client" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_InstallCustomReport.html" />
         </TocEntry>
-        <TocEntry
-          Title="Web Service Overview"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_WebServiceOverview.html"></TocEntry>
-        <TocEntry
-          Title="Appendix A - Format for Tab-Delimited Files"
-          Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_AppendixAFormatforTab.html" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="Integration to Microsoft Exchange"
-      Link="/Content/A_Installation/12_IntegrationtoMicrosoftExchange/12_IntegrationMicrosoftExchange.htm" />
-  </TocEntry>
-  <TocEntry
-    Title="Configuration Guides"
-    Link="/Content/B_Configuration Guides/1_ConfigurationHome/1_Configuration Home.htm">
-    <TocEntry
-      Title="EMS Desktop Client Configuration Guide"
-      Link="/Content/B_Configuration Guides/2_EMS_Desktop_Client_CG.htm">
-      <TocEntry
-        Title="Configuration &gt; Facililties">
-        <TocEntry
-          Title="Configure Rooms" />
-        <TocEntry
-          Title="Configure Buildings" />
-        <TocEntry
-          Title="Configure Building Hours" />
-        <TocEntry
-          Title="Configure Areas" />
-        <TocEntry
-          Title="Configure Room Types"></TocEntry>
-        <TocEntry
-          Title="Configure Setup Types" />
-        <TocEntry
-          Title="Configure Features" />
-        <TocEntry
-          Title="Configure Floors"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFloors.html" />
-        <TocEntry
-          Title="Configure Floor Plan Diagrams" />
-        <TocEntry
-          Title="Configure Floor Plan Indicators" />
-        <TocEntry
-          Title="Configure Public Views" />
-      </TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Resources"></TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Billing">
-        <TocEntry
-          Title="Configure Rate Schedules" />
-        <TocEntry
-          Title="Configure Pricing Plans" />
-        <TocEntry
-          Title="Configure Calculations" />
-        <TocEntry
-          Title="Configure Accounts" />
-        <TocEntry
-          Title="Configure Payment Types" />
-        <TocEntry
-          Title="Configure Sales Categories" />
-        <TocEntry
-          Title="Configure Billing References" />
-        <TocEntry
-          Title="Configure PO Numbers" />
-        <TocEntry
-          Title="Configure Currencies" />
-      </TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Administration">
-        <TocEntry
-          Title="Configure Categories" />
-        <TocEntry
-          Title="Configure Departments" />
-        <TocEntry
-          Title="Configure Statuses" />
-        <TocEntry
-          Title="Configure Notification Rules" />
-        <TocEntry
-          Title="Configure Customer Notification Rules" />
-        <TocEntry
-          Title="Configure Check-in Notification Rules" />
-        <TocEntry
-          Title="Configure Room Card Formats" />
-        <TocEntry
-          Title="Configure Calendar Formats" />
-        <TocEntry
-          Title="Configure Reservation Wizard Templates" />
-      </TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Other">
-        <TocEntry
-          Title="Configure Event Types" />
-        <TocEntry
-          Title="Configure Customer Types" />
-        <TocEntry
-          Title="Configure Reminder Types" />
-        <TocEntry
-          Title="Configure Comment Types" />
-        <TocEntry
-          Title="Configure Messages" />
-        <TocEntry
-          Title="Configure Special Dates" />
-        <TocEntry
-          Title="Configure User-Defined Fields" />
-        <TocEntry
-          Title="Configure Reservation Sources" />
-        <TocEntry
-          Title="Configure Cancel Reasons" />
-        <TocEntry
-          Title="Configure Attachment Types" />
-        <TocEntry
-          Title="Configure Word Merge Documents" />
-        <TocEntry
-          Title="Configure Calendar Styles" />
-      </TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Everyday User Applications">
-        <TocEntry
-          Title="Configure Everyday Users" />
-        <TocEntry
-          Title="Configure Everyday User Process Templates" />
-        <TocEntry
-          Title="Configure Everyday User Security Templates" />
-        <TocEntry
-          Title="Configure Web App Menus" />
-        <TocEntry
-          Title="Configure Help Text" />
-        <TocEntry
-          Title="Configure Language Translations" />
-      </TocEntry>
-      <TocEntry
-        Title="Configuration &gt; Kiosk">
-        <TocEntry
-          Title="Configure Kiosk Profiles" />
-        <TocEntry
-          Title="Configure Kiosk Menus" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Web App Configuration Guide"
-      Link="/Content/B_Configuration Guides/3_EMS_WebApp_CG.htm" />
-    <TocEntry
-      Title="EMS Mobile App Configuration Guide"
-      Link="/Content/B_Configuration Guides/4_EMS_MobileApp_CG.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Add Mobile Users"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_AddMobileUsers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Deploying the EMS Mobile App"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_DeployMobileApp.html">
-        <TocEntry
-          Title="Change EMS Mobile App Logo (Private Deployment Only)"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ChangeEMSMobileAppLogoPrivDeploy.html" />
-        <TocEntry
-          Title="Configure and Re-Sign EMS Mobile App (Private Deployment Only)"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ConfigRe-signMobilePrivDeploy.html" />
-        <TocEntry
-          Title="Customize Your Mobile App Configuration Using config.json (Private Deployment Only)"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_CustomizeMobileAppUsingConfigJson.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Restrict Users' Mobile App Versions"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_RestrictUsersMobileAppVer.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Change the Help Link Label and URL"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ChangeHelpLinkLabelURL.html" />
-      <TocEntry
-        Title="Configure EMS Mobile QR Codes"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ConfigMobileQRCodes.html" />
-      <TocEntry
-        Title="How Do I Know When To Upgrade the Mobile App and API?"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_HowtoUpgradeMobileApptoAPI.html" />
-      <TocEntry
-        Title="Set EMS Mobile Parameters"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetMobileParameters.html"></TocEntry>
-      <TocEntry
-        Title="Set Up EMS Mobile Authentication"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SetUpMobileAuthen.html">
-        <TocEntry
-          Title="EMS Native Authentication"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_EMSNativeAuthen.html" />
-        <TocEntry
-          Title="LDAP Authentication"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_LDAPAuthen.html" />
-        <TocEntry
-          Title="Open ID Connect Authentication"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_OpenIDConnectAuthen.html">
-          <TocEntry
-            Title="Open ID Connect Authentication Can Be Hosted or Pre-Configured in the EMS Mobile App"
-            Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_OpenIDConnectAuthenHostPreconfig.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry Title="EMS Web App" Link="/Content/A_Installation/3_WebApp/V44.1/3a_Web App_Introduction.htm" />
+        <TocEntry Title="EMS Mobile App" Link="/Content/A_Installation/4_MobileAppV44.1/4_MobileAppHome.htm">
+            <TocEntry Title="Introduction" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_Introduction.html" />
+            <TocEntry Title="Installation and Basic Setup" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_InstallandBasicSetup.html">
+                <TocEntry Title="Architecture" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_Architecture.html" />
+                <TocEntry Title="How Mobile App Data Is Stored on Devices" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_HowAppDataIsStoredonDevices.html" />
+            </TocEntry>
+            <TocEntry Title="System Requirements" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_SysRequirements.html" />
+            <TocEntry Title="What's New" Link="/Content/3MobileApp/A_InstallationGuide/Mobile_WhatsNew.html" />
         </TocEntry>
-        <TocEntry
-          Title="Persistent Authentication"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_PersistentAuthen.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="SAML Authentication"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SAMLAuthen.html">
-          <TocEntry
-            Title="SAML Authentication Can Be Hosted or Pre-Configured in the EMS Mobile App"
-            Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SAMLAuthenHostPreconfig.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry Title="EMS for Microsoft Outlook" Link="/Content/A_Installation/5_OutlookV44.1/5_OutlookV44.1Home.htm">
+            <TocEntry Title="Introduction to EMS for Outlook" Link="/Content/4Outlook/A_Install/Outlook_IG_Introduction.htm" />
+            <TocEntry Title="Requirements and Prerequisites for EMS for Outlook" Link="/Content/4Outlook/A_Install/Outlook_IG_ReqsPrereqs.htm" />
+            <TocEntry Title="Plan Your EMS for Outlook Implementation" Link="/Content/4Outlook/A_Install/Outlook_IG_PlanImplementation.htm" />
+            <TocEntry Title="Install or Upgrade EMS for Outlook on Users' Computers" Link="/Content/4Outlook/A_Install/Outlook_IG_InstallUpgrade.htm">
+                <TocEntry Title="EMS for Outlook Add-In Is Offline" Link="/Content/4Outlook/A_Install/Outlook_IG_OutlookAddInOffline.htm" />
+                <TocEntry Title="Silent or Unattended EMS for Outlook Installation" Link="/Content/4Outlook/A_Install/Outlook_IG_SilentUnattendedInstall.htm" />
+                <TocEntry Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number" Link="/Content/4Outlook/A_Install/Outlook_IG_WhereExchServURLVerNum.htm" />
+            </TocEntry>
         </TocEntry>
-        <TocEntry
-          Title="Using Windows Authentication (NTLM) for EMS Mobile"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_UseWindowsAuthenforMobile.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Using the EMS Platform Services"
-        Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_UseEMSPlatformServices.html">
-        <TocEntry
-          Title="Installing the EMS Platform Services"
-          Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_InstallEMSPlatformServices.html">
-          <TocEntry
-            Title="Connecting With EMS Platform Services"
-            Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_ConnectwithPlatformServices.html" />
+        <TocEntry Title="EMS for Microsoft Outlook (Legacy)" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_InstallOverview_Leg.htm">
+            <TocEntry Title="Introduction" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_Introduction_Leg.htm">
+                <TocEntry Title="Prerequisites" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_Prerequistes_Leg.htm" />
+                <TocEntry Title="EMS for Outlook Requirements" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_OutlookReqs_Leg.htm" />
+            </TocEntry>
+            <TocEntry Title="Plan Your EMS for Outlook Implementation" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_PlanImplementation_Leg.htm" />
+            <TocEntry Title="Obtain the EMS for Outlook Installation File" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_ObtainOutlookInstallFile_Leg.htm" />
+            <TocEntry Title="Install or Upgrade EMS for Outlook on a User's PC" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_InstallUpgradeUserPC_Leg.htm" />
+            <TocEntry Title="EMS for Outlook Add-In Is Offline" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_OutlookAddInOffline_Leg.htm" />
+            <TocEntry Title="Silent or Unattended EMS for Outlook Installation" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_SilentUnattendInstall_Leg.htm" />
+            <TocEntry Title="Where to See Your Exchange Server URL and EMS for Outlook Version Number" Link="/Content/4Outlook/Legacy/A_Install_Leg/Outlook_IG_ExchServURLandVerNum_Leg.htm" />
         </TocEntry>
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook Configuration Guide"
-      Link="/Content/4Outlook/B_Config/Outlook_CG_ConfigOutlookOverview.htm">
-      <TocEntry
-        Title="Configure EMS for Outlook"
-        Link="/Content/4Outlook/B_Config/Outlook_CG_ConfigforOutlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook (Legacy) Configuration Guide"
-      Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_ConfigOverview_Leg.htm">
-      <TocEntry
-        Title="Customize the Desktop Application Label"
-        Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_CustomizeDesktopAppLabel_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="EMS for Outlook System Parameters"
-        Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_SysParameters_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Enable User Access to EMS for Outlook"
-        Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_EnableUserAccess_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Assign EMS Users to Groups"
-        Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_AssignUserstoGroups_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Establish Outlook Booking Templates and Conflict Behavior"
-        Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_EstabBookTempConflBeh_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Microsoft Outlook (Prior to Update 8) Configuration Guide"
-      Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_ConfigOverview.htm">
-      <TocEntry
-        Title="EMS for Outlook Technical Overview"
-        Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_TechnicalOverview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="EMS for Outlook System Parameters"
-        Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_OutlookSysParam.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Enable User Access to EMS for Outlook"
-        Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_EnableUserAccess.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Set Booking Conflict Behavior for EMS for Outlook"
-        Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_SetBookingConBeh.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk Configuration Guide"
-      Link="/Content/B_Configuration Guides/6_EMS Kiosk (V44.1) Configuration Guide.htm">
-      <TocEntry
-        Title="Set Up EMS Kiosk"
-        Link="/Content/15Kiosk/B_Config/Kiosk_CG_SetUpKiosk.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-      <TocEntry
-        Title="Configure EMS Kiosk App Profiles"
-        Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppProfiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Configure EMS Kiosk App Menus"
-        Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppMenus.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk (Legacy) Configuration Guide"
-      Link="/Content/B_Configuration Guides/6_EMS_Kiosk_Legacy_CG.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-      <TocEntry
-        Title="Set Up EMS Kiosk (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_SetUpOverviewLegacy.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Configure EMS Kiosk Menus (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_ConfigEMSKioskMenus1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Configure EMS Kiosk Profiles (Legacy)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_ConfigEMSKioskProfiles1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="EMS Kiosk Parameters"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_KioskParam.html" />
-      <TocEntry
-        Title="EMS Kiosk API Reference (1.0)"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIReference.html">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetProfiles1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskValidate1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetEvents1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskEndNow1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetFloors1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskAddReserv1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetEventTypes1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskAddRoom1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Platform Services Configuration Guide"
-      Link="/Content/B_Configuration Guides/7_EMS_PlatformServices_CG.htm">
-      <TocEntry
-        Title="Configure Platform Services in the Admin Portal"
-        Link="/Content/5PlatformServices/B_ConfigurationGuide/Platform_ConfigPSinAdminPortal.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Exchange Room Integration (ERI) Configuration Guide "
-      Link="/Content/B_Configuration Guides/8_EMS_ExchangeRoomIntegration_CG.htm">
-      <TocEntry
-        Title="Configure Exchange Room Integration (ERI)"
-        Link="/Content/7ERI/B_Config/ERI_Config_ConfigEXR.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Master Calendar Configuration Guide"
-      Link="/Content/B_Configuration Guides/9_EMSMasterCalendar_CG.htm">
-      <TocEntry
-        Title="EMS Master Calendar (V8)"
-        Link="/Content/16_MC/B_Configuration/MC_EMSMCV8.html" />
-      <TocEntry
-        Title="Admin Interface Overview"
-        Link="/Content/16_MC/B_Configuration/MC_AdminInterfaceOverview.html" />
-      <TocEntry
-        Title="Calendar Management"
-        Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CalendarManagement.html">
-        <TocEntry
-          Title="Import Events Into Your Master Calendar System"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ImportEvents.html">
-          <TocEntry
-            Title="Connect Master Calendar to Your EMS Database"
-            Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ConnectMCtoEMSDatabase.html" />
-          <TocEntry
-            Title="Connect to Data Sources"
-            Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ConnectDataSources.html" />
+        <TocEntry Title="EMS for Microsoft Outlook (Prior to Update 8)" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_InstallOutlook.htm">
+            <TocEntry Title="Introduction" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_Introduction.htm" />
+            <TocEntry Title="EMS for Outlook Requirements" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_Requirements.htm" />
+            <TocEntry Title="Obtain the EMS for Outlook Installation File" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_ObtainInstallFiles.htm" />
+            <TocEntry Title="Pre-Installation Requirements" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_PreInstallReq.htm" />
+            <TocEntry Title="Install or Upgrade on a User's PC" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_InstallUpgradeonUserPC.htm" />
+            <TocEntry Title="Silent or Unattended Installation" Link="/Content/4Outlook/PriorU8/A_Install/Outlook_IG_SilentUnattendedInstall.htm" />
         </TocEntry>
-      </TocEntry>
-      <TocEntry
-        Title="Manage an Event from the Event Summary Page"
-        Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ManageEventfromEventSumPg.html">
-        <TocEntry
-          Title="Add Events to Your Personal Email Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_AddEventstoPersonalEmailCal.html" />
-        <TocEntry
-          Title="Add Event Dates"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_AddEventDates.html" />
-        <TocEntry
-          Title="Cancel Event Dates"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CancelEventDates.html" />
-        <TocEntry
-          Title="Copy an Event"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CopyEvent.html" />
-        <TocEntry
-          Title="Edit an Event"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_EditEvent.html" />
-        <TocEntry
-          Title="Un-Cancel an Event"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_Un-CancelEvent.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Manage Events from the Manage Events Page"
-        Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ManageEventsfromManageEventsPg.html">
-        <TocEntry
-          Title="Filter Events on the Manage Events Page"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_FilterEventsManageEventsPg.html" />
-        <TocEntry
-          Title="Approve Pending Event Requests"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ApprovePendingEventRequests.html" />
-        <TocEntry
-          Title="Reject Pending Event Requests"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_RejectPendingEventRequests.html" />
-        <TocEntry
-          Title="Move Rejected Event Requests to Approved Status"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_MoveRejectEventRequeststoAppStatus.html" />
-        <TocEntry
-          Title="Generate a List of Event Requests"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_GenerateListEventRequests.html" />
-        <TocEntry
-          Title="Request Additional Information for Event Requests"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_RequestAddInfoEventRequests.html" />
-        <TocEntry
-          Title="Delete Event Requests"
-          Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_DeleteEventRequests.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Configure Calendar Groupings and Calendars"
-        Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ConfigCalGroupingsandCals.html">
-        <TocEntry
-          Title="Manage Calendars in Master Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageCalendarsinMC.html" />
-        <TocEntry
-          Title="Configure Special Dates"
-          Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ConfigSpecialDates.html" />
-        <TocEntry
-          Title="Manage Calendar URLs"
-          Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageCalURLs.html" />
-        <TocEntry
-          Title="Manage External Links for a Grouping"
-          Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageExtLinksforGrouping.html" />
-        <TocEntry
-          Title="Manage Groupings in Master Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageGroupingsinMC.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Configure Optional Information"
-        Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ConfigOptionalInfo.html">
-        <TocEntry
-          Title="Configure Event Icons"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ConfigEventIcons.html" />
-        <TocEntry
-          Title="Maintain Departments in Master Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_MaintainDeptinMC.html" />
-        <TocEntry
-          Title="Manage Cultures"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageCultures.html" />
-        <TocEntry
-          Title="Manage Custom Field Hints"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageCustomFieldHints.html" />
-        <TocEntry
-          Title="Manage Event Type Views"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageEventTypeViews.html" />
-        <TocEntry
-          Title="Work with Event Locations"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithEventLocations.html" />
-        <TocEntry
-          Title="Work with Event Types"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithEventTypes.html" />
-        <TocEntry
-          Title="Work with Rooms"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithRooms.html" />
-        <TocEntry
-          Title="Work with User Defined Questions (UDQs)"
-          Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithUserDefQuest.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Configure Users and Templates"
-        Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ConfigUsersTemplates.html">
-        <TocEntry
-          Title="Manage Users"
-          Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ManageUsers.html" />
-        <TocEntry
-          Title="Manage User Templates"
-          Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ManageUserTemplates.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Create Custom Reports in Master Calendar"
-        Link="/Content/16_MC/B_Configuration/MC_CreateCustReports.html" />
-      <TocEntry
-        Title="Customize Master Calendar Site Appearance and Behavior"
-        Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomMCSiteAppBehav.html">
-        <TocEntry
-          Title="Broadcast Announcements"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_BroadcastAnnouncements.html" />
-        <TocEntry
-          Title="Customize Help Text in Master Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeHelpText.html" />
-        <TocEntry
-          Title="Customize Menus in Master Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeMenus.html" />
-        <TocEntry
-          Title="Customize Your Master Calendar Site and Automated Emails"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeMCSiteandAutoEmails.html" />
-        <TocEntry
-          Title="Set Default Home Page Behavior"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_SetDefaultHomePgBehavior.html" />
-        <TocEntry
-          Title="Set the Default Home Page Layout"
-          Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_SetDefaultHomePgLayout.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Integrated Authentication for Master Calendar"
-        Link="/Content/16_MC/B_Configuration/MC_IntegAuthenforMC.html">
-        <TocEntry
-          Title="Portal Authentication Methods"
-          Link="/Content/16_MC/B_Configuration/MC_PortalAuthenMethods.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Maintain Master Calendar Software Registration"
-        Link="/Content/16_MC/B_Configuration/MC_MaintainMCSoftwareReg.html" />
-      <TocEntry
-        Title="Manage RSS Feeds"
-        Link="/Content/16_MC/B_Configuration/MC_ManageRSSFeeds.html" />
-      <TocEntry
-        Title="Master Calendar Admin Field Definitions"
-        Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_MCAdminFieldDef.html">
-        <TocEntry
-          Title="Area: Calendar"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaCalendar.html" />
-        <TocEntry
-          Title="Area: Email"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaEmail.html" />
-        <TocEntry
-          Title="Area: Labels"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaLabels.html" />
-        <TocEntry
-          Title="Area: Mobile"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaMobile.html" />
-        <TocEntry
-          Title="Area: Portal Authentication"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaPortAuthen.html" />
-        <TocEntry
-          Title="Area: RSS"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaRSS.html" />
-        <TocEntry
-          Title="Area: Submit"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaSubmit.html" />
-        <TocEntry
-          Title="Area: System Configuration"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaSystemConfig.html" />
-        <TocEntry
-          Title="Area: Tooltip"
-          Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaTooltip.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Master Calendar API"
-        Link="/Content/16_MC/B_Configuration/MC_API/MC_MasterCalAPI.html">
-        <TocEntry
-          Title="Master Calendar API Requirements and Licensing"
-          Link="/Content/16_MC/B_Configuration/MC_API/MC_APIRequirementsLicensing.html" />
-        <TocEntry
-          Title="Verify the Master Calendar API"
-          Link="/Content/16_MC/B_Configuration/MC_API/MC_VerifyMCAPI.html" />
-        <TocEntry
-          Title="Release Notes"
-          Link="/Content/16_MC/B_Configuration/MC_API/MC_ReleaseNotes.html" />
-        <TocEntry
-          Title="API Functions"
-          Link="/Content/16_MC/B_Configuration/MC_API/MC_APIFunctions.html">
-          <TocEntry
-            Title="AddEventWithMultipleDates (Requires Advanced API Option)"
-            Link="/Content/16_MC/B_Configuration/MC_API/MC_API_AddEventwithMultDates.html" />
-          <TocEntry
-            Title="AddEvent (Requires Advanced API Option)"
-            Link="/Content/16_MC/B_Configuration/MC_API/MC_AddEventReqAdvAPIOpt.html">
-            <TocEntry
-              Title="GetCalendar"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetCalendar.html" />
-            <TocEntry
-              Title="GetCalendars"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetCalendars.html" />
-            <TocEntry
-              Title="GetComments"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetComments.html" />
-            <TocEntry
-              Title="GetEvent"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEvent.html" />
-            <TocEntry
-              Title="GetEvents"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEvents.html" />
-            <TocEntry
-              Title="GetEventTypes"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEventTypes.html" />
-            <TocEntry
-              Title="GetFeaturedEvents"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetFeaturedEvents.html" />
-            <TocEntry
-              Title="GetGroupings"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetGroupings.html" />
-            <TocEntry
-              Title="GetLocations"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetLocations.html" />
-            <TocEntry
-              Title="GetUdqs"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_GetUdqs.html" />
-            <TocEntry
-              Title="UpdateEventDate (Requires Advanced API Option)"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_UpdateEventDateReqAdvanAPIOpt.html" />
-            <TocEntry
-              Title="UpdateEvent (Requires Advanced API Option)"
-              Link="/Content/16_MC/B_Configuration/MC_API/MC_UpdateEventReqAdvanAPIOpt.html" />
-          </TocEntry>
+        <TocEntry Title="Integration to Microsoft® Exchange" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_IntegtoMEOverview.htm">
+            <TocEntry Title="Introduction" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_Introduction.htm" />
+            <TocEntry Title="Integration to Exchange Requirements" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_IntegExchanReqs.htm" />
+            <TocEntry Title="Installation and Upgrade Instructions for the Exchange Integration Web Service" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_InstallUpgradeforEIWservice.htm" />
+            <TocEntry Title="Configure Integration to Exchange" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_ConfigIntegExchange.htm" />
+            <TocEntry Title="Use Application Pool Identity for Integration for Exchange Service Account" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_UseAppPoolIdentif.htm" />
+            <TocEntry Title="Configure EWS Impersonation for Microsoft® Exchange" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_ConfigEWSImperforME.htm">
+                <TocEntry Title="Learn More About Exchange Web Services (EWS) Impersonation" Link="/Content/4Outlook/D_IntegExch/IME/Outlook_IME_LearnMoreaboutEWS.htm" />
+            </TocEntry>
         </TocEntry>
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Campus Configuration Guide"
-      Link="/Content/B_Configuration Guides/10_EMS Campus Configuration Guide.htm">
-      <TocEntry
-        Title="Set Up EMS Campus"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SetUpEMSCampusIntro.html" />
-      <TocEntry
-        Title="Overview of Synchronization"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_OverviewofSynchr.html" />
-      <TocEntry
-        Title="Synchronize Campus-Specific Data"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SynchroCampus-SpecificData.html" />
-      <TocEntry
-        Title="Synchronize Facility Data"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SynchroFacilityData.html" />
-      <TocEntry
-        Title="Configure Domains"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigDomains.html" />
-      <TocEntry
-        Title="Configure Academic Units"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigAcademUnit.html" />
-      <TocEntry
-        Title="Configure Instructors"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigInstructors.html" />
-      <TocEntry
-        Title="Configure the Primary Academic Unit for a Subject"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigPrimaryAcadUnitforSub.html" />
-      <TocEntry
-        Title="Configure Course Types"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigCourseType.html" />
-      <TocEntry
-        Title="Configure Course Types/Room Types Matches"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigCourseRoomTypeMatch.html" />
-      <TocEntry
-        Title="Work with Time Block Templates"
-        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_WorkTimeBlockTemp2.html" />
-    </TocEntry>
-    <TocEntry
-      Title="Skype for Business Configuration Guide"
-      Link="/Content/B_Configuration Guides/11_Skype for Business Configuration Guide.htm" />
-    <TocEntry
-      Title="EMS Room Sign App">
-      <TocEntry
-        Title="Best Practices for Device Configuration"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_BestPractDeviceConfSteps.htm" />
-      <TocEntry
-        Title="Configure the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_Config.html" />
-      <TocEntry
-        Title="Configure Profiles"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigProfile.html" />
-      <TocEntry
-        Title="Configure Check In Functionality "
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigCheckInFunct.html" />
-      <TocEntry
-        Title="Configure Edit Booking Functionality"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigEditBookFunct.html" />
-      <TocEntry
-        Title="Configure How Booking Information Displays"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigHowBookInfoDisplay.html" />
-      <TocEntry
-        Title="Configure New Booking Functionality"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigNewBookFunct.html" />
-      <TocEntry
-        Title="Configure Customized Labels, Messages, and Images"
-        Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_CustomLabelsMessImage.html" />
-    </TocEntry>
-  </TocEntry>
-  <TocEntry
-    Title="Everyday User Guides"
-    Link="/Content/D_Everyday User Guides/1_EverydayUserGuideHome.htm">
-    <TocEntry
-      Title="EMS Mobile App Everyday User Guide"
-      Link="/Content/3MobileApp/C_UserGuide/2_EMS Mobile App.htm">
-      <TocEntry
-        Title="Introduction"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_Introduction.html">
-        <TocEntry
-          Title="What's New"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_WhatsNew.html"></TocEntry>
-      </TocEntry>
-      <TocEntry
-        Title="Get Started With EMS Mobile"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_GetStarted.html">
-        <TocEntry
-          Title="Log In, Reset Password, or Create An Account"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_LogInResetPasswordCreateAccount.html" />
-        <TocEntry
-          Title="Enter Your Server URL"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_EnterYourServerURL.html" />
-        <TocEntry
-          Title="Search For Events"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_SearchforEvents.html" />
-        <TocEntry
-          Title="Check In to Meetings"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CheckIntoMeetings.html" />
-        <TocEntry
-          Title="Cancel Meetings"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CancelMeetings.html" />
-        <TocEntry
-          Title="End Meetings Early"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_EndMeetingsEarly.html" />
-        <TocEntry
-          Title="Favorite Locations"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_FavoriteLocations.html" />
-        <TocEntry
-          Title="Remove Favorite Locations"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_RemoveFavoriteLocations.html" />
-        <TocEntry
-          Title="Use QR Codes"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_UseQRCodes.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Attend a Meeting"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_AttendMeeting.html" />
-      <TocEntry
-        Title="Create a Meeting"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CreateMeeting.html">
-        <TocEntry
-          Title="Find a Room"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_FindRoom.html" />
-        <TocEntry
-          Title="Invite People"
-          Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_InvitePeople.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Change a Meeting"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_ChangeMeeting.html" />
-      <TocEntry
-        Title="Use Skype for Business in the EMS Mobile App"
-        Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_UseSkypeforBusiness.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Web App Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/3_EMSWebAppV44.1_UG.htm">
-      <TocEntry
-        Title="Getting Started with the EMS Web App"
-        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_GettingStarted.html">
-        <TocEntry
-          Title="Log In and Out"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_LogginginandOut.html" />
-        <TocEntry
-          Title="Check In To Events"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CheckingIntoEvents.html" />
-        <TocEntry
-          Title="Introduction to the Home Page"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_IntroductiontoHomePage.html" />
-        <TocEntry
-          Title="Create Your Login or Get a New Password"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CreatingYourLoginOrGettingNewPassword.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Browse Events, Locations, and People"
-        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEventsLocationsandPeople.html">
-        <TocEntry
-          Title="Browse Events"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEvents.html" />
-        <TocEntry
-          Title="Browse Locations"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingLocations.html" />
-        <TocEntry
-          Title="View Floor Plans"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ViewingFloorPlans.html" />
-        <TocEntry
-          Title="Locate People"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_LocatingPeople.html" />
-        <TocEntry
-          Title="Event Details Page"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EventDetailsPage.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Make a Reservation in the EMS Web App"
-        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_MakingaResv.html">
-        <TocEntry
-          Title="Ways to Make Reservations"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_WaystoMakeReservations.html" />
-        <TocEntry
-          Title="View Your Events"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ViewingYourEvents.html" />
-        <TocEntry
-          Title="Search for Available Rooms"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_SearchingforAvailableRooms.html" />
-        <TocEntry
-          Title="Book Multiple Rooms"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingMultipleRooms.html" />
-        <TocEntry
-          Title="Book Recurring Meetings"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingRecurringMeetings.html" />
-        <TocEntry
-          Title="Book a Video Conference Room"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingVCRoom.html" />
-      </TocEntry>
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/4_EMSKiosk_UG.htm">
-      <TocEntry
-        Title="Get Started with the EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_GetStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Overview: The EMS Kiosk App Window"
-          Link="/Content/15Kiosk/C_User/Kiosk_UG_OverviewKioskWindow.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="View Your Reservations and Check In to EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_ViewYourRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Book a Desk or Workspace in EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_BookDeskWorkspace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Locate a Person in EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_LocatePerson.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Locate a Space in EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_LocateSpace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="View Today's Events in EMS Kiosk App"
-        Link="/Content/15Kiosk/C_User/Kiosk_UG_ViewTodaysEvents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Kiosk (Legacy) User Guide">
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_GetStarted1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_OverviewKioskWin1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_WorkwithEvents1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewInformation1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_CheckInOnEMSKiosk1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="[%=System.LinkedTitle%]"
-          Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewFloorPlans1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_BookDeskorWorkspace1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_LocatePerson1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_BookRoom1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_LocateSpace1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewInformation1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="[%=System.LinkedTitle%]"
-        Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewTodayEvents1.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Campus Planning Interface Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/5_EMSCampusPlanningInterfaceV44.1_UG.htm">
-      <TocEntry
-        Title="Get Started"
-        Link="/Content/9CPI/C_UserGuide/CPI_UG_GetStarted.html" />
-      <TocEntry
-        Title="Manage User Options in the EMS Campus Planning Interface"
-        Link="/Content/9CPI/C_UserGuide/CPI_UG_ManageUserOptions.html" />
-      <TocEntry
-        Title="EMS Campus Planning Interface Reports"
-        Link="/Content/9CPI/C_UserGuide/HiddenMT/CPI_UG_CampusPlanningInterfaceReports.html">
-        <TocEntry
-          Title="Report Descriptions and Options"
-          Link="/Content/9CPI/C_UserGuide/CPI_UG_ReportDescriptionsAndOptions.html" />
-      </TocEntry>
-      <TocEntry
-        Title="EMS Campus Planning Interface Search Tools"
-        Link="/Content/9CPI/C_UserGuide/CPI_UG_CPISearchTools.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Master Calendar Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/6_EMSMasterCalendarV8_UG.htm">
-      <TocEntry
-        Title="Use EMS Master Calendar (V8)"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseMasterCalendar.html" />
-      <TocEntry
-        Title="Introduction to EMS Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MC_UG_Introduction.html">
-        <TocEntry
-          Title="How Do I Publicize an Event in Master Calendar?"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_HowtoPublicizeEvent.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Log In to Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MC_UG__LogIn.html" />
-      <TocEntry
-        Title="Use Basic Features of EMS Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseBasicFeatures.html"></TocEntry>
-      <TocEntry
-        Title="Use Field Icons in EMS Master Calendar"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseFieldIcons.html">
-        <TocEntry
-          Title="Search by Keyword"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SearchbyKeyword.html" />
-        <TocEntry
-          Title="Export Search Results"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_ExportSearchResults.html" />
-        <TocEntry
-          Title="Search for an Event or Special Date"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SearchforEventorSpecialDate.html" />
-        <TocEntry
-          Title="Use RSS Feeds in EMS Master Calendar"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseRSSFeeds.html" />
-      </TocEntry>
-      <TocEntry
-        Title="User Options"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UserOptions.html">
-        <TocEntry
-          Title="Change Your Password"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_ChangeYourPassword.html" />
-        <TocEntry
-          Title="View Custom Help Text"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewCustomHelpText.html" />
-        <TocEntry
-          Title="View Your Notifications"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewYourNotifications.html" />
-        <TocEntry
-          Title="View Your Requests"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewYourRequests.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Work with Calendars"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_WorkwithCalendars.html">
-        <TocEntry
-          Title="Modify the Calendar Display"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_ModifyCalendarDispaly.html" />
-        <TocEntry
-          Title="Filter Events on the Calendar"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_FilterEventsonCalendar.html" />
-        <TocEntry
-          Title="Set a Timeframe for the Calendar Display"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SetTimeFrameforDisplay.html" />
-        <TocEntry
-          Title="Navigate in the Master Calendar"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_NavinMasterCalendar.html" />
-        <TocEntry
-          Title="Open Events from the Master Calendar"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_OpenEvents.html" />
-        <TocEntry
-          Title="Scroll Through Events on the Calendar"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_ScrollThroughEvents.html" />
-        <TocEntry
-          Title="Subscribe to a Calendar"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendar.html" />
-        <TocEntry
-          Title="Subscribe to a Calendar Using Email"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingEmail.html" />
-        <TocEntry
-          Title="Subscribe to a Calendar Using iCal"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingical.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Work with Events"
-        Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_WorkwithEvents.html">
-        <TocEntry
-          Title="Types of Master Calendar Users"
-          Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_TypesofUsers.html" />
-        <TocEntry
-          Title="Submit an Event"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_SubmitEvents.html" />
-        <TocEntry
-          Title="Additional Info Fields"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_AdditionalInfoFields.html" />
-        <TocEntry
-          Title="Custom, Email, and Attachment Fields"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_CustomEmailAttachmentFields.html" />
-        <TocEntry
-          Title="Event Times Fields"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_EventTimesFields.html" />
-        <TocEntry
-          Title="General Info Fields"
-          Link="/Content/16_MC/C_UserGuide/MC_UG_GeneralInfoFields.html" />
-      </TocEntry>
-      <TocEntry
-        Title="Glossary"
-        Link="/Content/16_MC/C_UserGuide/MC_UG_Glossary.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Outlook Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/7_EMSforMicrosoftOutlookV44.1_UG.htm">
-      <TocEntry
-        Title="EMS for Microsoft Outlook Overview"
-        Link="/Content/4Outlook/C_User/Outlook_UG_UseEMSforOutlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
-      <TocEntry
-        Title="Get Started with EMS for Outlook"
-        Link="/Content/4Outlook/C_User/Outlook_UG_GetStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Microsoft Outlook, EMS for Microsoft Outlook, and EMS Web App Comparison"
-          Link="/Content/4Outlook/C_User/Outlook_UG_OutlookComparisons.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="Create a Reservation in EMS for Microsoft Outlook"
-        Link="/Content/4Outlook/C_User/Outlook_UG_CreateResOverview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Create a Single Reservation"
-          Link="/Content/4Outlook/C_User/Outlook_UG_CreateSingleRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Create a Series Reservation"
-          Link="/Content/4Outlook/C_User/Outlook_UG_CreateSeriesRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Create a Video Conference Reservation"
-          Link="/Content/4Outlook/C_User/Outlook_UG_CreateVideoConRes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Edit or Cancel a Scheduled Event"
-          Link="/Content/4Outlook/C_User/Outlook_UG_EditCancelSchedEvent.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="Use Skype for Business in EMS for Outlook"
-        Link="/Content/4Outlook/C_User/Outlook_UG_UseSkypeforBusiness.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Resolve Booking Conflicts"
-        Link="/Content/4Outlook/C_User/Outlook_UG_ResolveBookingConflicts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="View Known Errors/Alerts for EMS for Outlook"
-        Link="/Content/4Outlook/C_User/Outlook_UG_ViewKnownErrorsAlerts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Outlook (Legacy) User Guide"
-      Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_UseOutlookOverview_Leg.htm">
-      <TocEntry
-        Title="Get Started With EMS for Outlook (Legacy)"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_GetStarted_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Microsoft Outlook, EMS for Microsoft Outlook, and EMS Web App Comparison"
-          Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_MSOutlookVEMSComp_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="Create Reservations in EMS for Microsoft Outlook (Legacy)"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateResOverview_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-        <TocEntry
-          Title="Create a Single Reservation"
-          Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateSingleRes_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Create a Series Reservation"
-          Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateSeriesRes_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Create a Video Conference Reservation"
-          Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateVideoConfRes_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-        <TocEntry
-          Title="Edit or Cancel a Scheduled Event"
-          Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_EditCancelSchedEvent_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      </TocEntry>
-      <TocEntry
-        Title="Create a List of Favorite Rooms"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateListFavRooms_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Use Skype for Business in EMS Outlook"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_UseSkypeBus_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Resolve Booking Conflicts"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_ResolveBookConf_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="View Known Errors/Alerts"
-        Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_ViewKnownErrAlert_Leg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS for Outlook (Prior to Update 8) User Guide"
-      Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_Overview.htm">
-      <TocEntry
-        Title="Get Started With EMS for Outlook"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_GetStarted.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Reserve Space in EMS for Outlook"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ReserveSpace.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Create a Video Conference Reservation"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_CreateVideoConference.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Reserve Recurrent Meetings"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ReserveRecurMeetings.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Cancel Events"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_CancelEvents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Change an Event"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ChangeEvent.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Invite Groups"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_InviteGroups.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Resolve Booking Conflicts"
-        Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ResolveBookConflicts.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Room Sign App (formerly Glance) Everyday User Guide"
-      Link="/Content/D_Everyday User Guides/8_EMSRoomSignApp_UG.htm">
-      <TocEntry
-        Title="Introduction to the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_Introduction.html" />
-      <TocEntry
-        Title="Best Practices for Using the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_BestPracticesforUsing.html" />
-      <TocEntry
-        Title="Get Started with the EMS Room Sign App"
-        Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_GettingStarted.html" />
-      <TocEntry
-        Title="Deploying the EMS Room Sign App on Tablets"
-        Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_DeployingonTablet.html" />
-      <TocEntry
-        Title="Set Up the EMS Room Sign App to Demo on a Desktop Browser (Update 12+)"
-        Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_SettingUpRSAtoDemo.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Skype for Business Configuration Guide"
-      Link="/Content/D_Everyday User Guides/9_EMSSkypeforBusInteg_UG.htm">
-      <TocEntry
-        Title="Skype for Business Integration Overview"
-        Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_SkypeForBusiness_Integration.html" />
-      <TocEntry
-        Title="Introduction to Skype for Business Integration"
-        Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_Introduction.html" />
-      <TocEntry
-        Title="Configure Skype for Business"
-        Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_ConfigureSkypeforBusiness.html" />
-    </TocEntry>
-    <TocEntry
-      Title="EMS Desktop Client User Guide 44.1"
-      Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AboutthisGuide.html">
-      <TocEntry
-        Title="Introduction to EMS Desktop Client"
-        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html" />
-      <TocEntry
-        Title="Launch EMS Desktop Client"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_StartingEMS.html" />
-      <TocEntry
-        Title="Manage Database Connections"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManageDatabaseConnections.html" />
-      <TocEntry
-        Title="User Settings"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_UserSettings.html" />
-      <TocEntry
-        Title="Reservations and Bookings"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReservandBookings.html">
-        <TocEntry
-          Title="Event Timeline" />
-      </TocEntry>
-      <TocEntry
-        Title="Other Reservation Functions">
-        <TocEntry
-          Title="Record Actual Attendance Numbers for Bookings" />
-        <TocEntry
-          Title="Manage Attendees and Visitors" />
-        <TocEntry
-          Title="View Visitors" />
-        <TocEntry
-          Title="Check In Visitors" />
-      </TocEntry>
-      <TocEntry
-        Title="The EMS Window">
-        <TocEntry
-          Title="Work with the EMS Window" />
-        <TocEntry
-          Title="Toolbar Buttons" />
-        <TocEntry
-          Title="Customizing Your Toolbar" />
-      </TocEntry>
-      <TocEntry
-        Title="The Reservation Book">
-        <TocEntry
-          Title="Create a Booking in the Reservation Book"></TocEntry>
-        <TocEntry
-          Title="View and Edit Reservations in the Reservation Book"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewEditReservinResBook.htm" />
-        <TocEntry
-          Title="Edit a Reservation in the Reservation Book"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditResinResBook.htm" />
-        <TocEntry
-          Title="Import a List of Visitors to a Booking"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_IG_ImportListVis.html" />
-      </TocEntry>
-      <TocEntry
-        Title="The Navigator">
-        <TocEntry
-          Title="Overview of the Navigator"></TocEntry>
-        <TocEntry
-          Title="Edit a Reservation in the Navigator" />
-        <TocEntry
-          Title="Add Bookings to a Reservation in the Navigator" />
-        <TocEntry
-          Title="Copy a Reservation in the Navigator" />
-        <TocEntry
-          Title="Change the Status of a Reservation in the Navigator" />
-        <TocEntry
-          Title="Reprice Categories and Room Charges for a Reservation in the Navigator" />
-        <TocEntry
-          Title="Apply a Reservation Discount" />
-        <TocEntry
-          Title="Edit a Booking in the Navigator" />
-        <TocEntry
-          Title="Edit Multiple Bookins in the Navigator" />
-        <TocEntry
-          Title="Move Bookings to a Different Reservation in the Navigator" />
-        <TocEntry
-          Title="Copy Multiple Bookings in the Navigator" />
-        <TocEntry
-          Title="Booking Details and Items Overview">
-          <TocEntry
-            Title="Add Booking Details and Items to Individual Bookings" />
-          <TocEntry
-            Title="Add Booking Details and Items to Multiple Bookings" />
-          <TocEntry
-            Title="Edit Booking Detail Items for Individual Bookings" />
-          <TocEntry
-            Title="Edit Booking Detail Item Charges for Multiple Items" />
-          <TocEntry
-            Title="Copy Booking Details Between Bookings" />
-          <TocEntry
-            Title="Delete Booking Detail Items from Multiple Bookings" />
-          <TocEntry
-            Title="Delete Booking Details from Multiple Bookings" />
-          <TocEntry
-            Title="Edit Charges for Multiple Billable Items" />
-          <TocEntry
-            Title="Edit Count Information for a Booking in the Navigator" />
-          <TocEntry
-            Title="Add Booking Details Wizard" />
-          <TocEntry
-            Title="Copy Booking Details Wizard" />
-          <TocEntry
-            Title="Delete Booking Details Wizard"></TocEntry>
-          <TocEntry
-            Title="Delete Item Wizard" />
-          <TocEntry
-            Title="Add Item Wizard" />
+        <TocEntry Title="EMS Kiosk " Skin="/Project/Skins/TopicToolBar.flskn" ReplaceMergeNode="false">
+            <TocEntry Title="EMS Kiosk Install Overview" Link="/Content/A_Installation/6_Kiosk/A_KioskHome.htm" StartSection="false" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue" ComputeToc="false" ReplaceMergeNode="false" />
+            <TocEntry Title="Introduction to the EMS Kiosk App" Link="/Content/15Kiosk/A_Install/Kiosk_IG_Introduction.htm" />
+            <TocEntry Title="Obtain the Installation Files for EMS Kiosk App" Link="/Content/15Kiosk/A_Install/Kiosk_IG_ObtainInstallation.htm" />
+            <TocEntry Title="System Requirements and Prerequisites for EMS Kiosk App" Link="/Content/15Kiosk/A_Install/Kiosk_IG_SysReqPrereq.htm" />
+            <TocEntry Title="Install or Upgrade the EMS Kiosk App" Link="/Content/15Kiosk/A_Install/Kiosk_IG_InstallUpgrade.htm" />
+            <TocEntry Title="Start the EMS Kiosk App" Link="/Content/15Kiosk/A_Install/Kiosk_IG_StartKioskApp.htm" />
         </TocEntry>
-        <TocEntry
-          Title="Comments and Reminders in the Navigator">
-          <TocEntry
-            Title="Add Multiple Comments and Reminders to a Reservation" />
+        <TocEntry Title="EMS Kiosk (Legacy)" Skin="/Project/Skins/TopicToolBar.flskn" ReplaceMergeNode="false">
+            <TocEntry Title="Install EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_InstallKioskOverview1.htm" />
+            <TocEntry Title="Introduction to EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_Introduction.html" />
+            <TocEntry Title="System Requirements and Prerequisites for EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_SysReqPrereq1.htm" />
+            <TocEntry Title="Obtain the Installation Files for EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_ObtainInstallFiles1.htm" />
+            <TocEntry Title="Install/Upgrade the EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_InstallUpgradeKiosk1.htm" />
+            <TocEntry Title="Start EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/A_Install/Kiosk_IG_StartKiosk1.htm" />
         </TocEntry>
-        <TocEntry
-          Title="User-Defined Fields in the Navigator" />
-        <TocEntry
-          Title="Attachments in the Navigator" />
-        <TocEntry
-          Title="Drawings in the Navigator" />
-        <TocEntry
-          Title="Resource Utility Conflicts Tool" />
-        <TocEntry
-          Title="Approve or Deny Reservation Requests" />
-      </TocEntry>
-      <TocEntry
-        Title="The Calendar">
-        <TocEntry
-          Title="Search with the Calendar" />
-        <TocEntry
-          Title="Search with the Resource Calendar" />
-      </TocEntry>
-      <TocEntry
-        Title="The Reservation Wizard">
-        <TocEntry
-          Title="Fields in the Reservation Wizard"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_FieldsinResWiz.htm" />
-        <TocEntry
-          Title="The Everyday User Reservations Browser">
-          <TocEntry
-            Title="Search Using the Everyday User Reservation Browser" />
+        <TocEntry Title="EMS Platform Services" Link="/Content/A_Installation/7_PlatformServices/V44.1/7_PlatformServicesHome.htm">
+            <TocEntry Title="Introduction to EMS Platform Services" Link="/Content/5PlatformServices/A_InstallationGuide/Platform_Introduction.html" />
+            <TocEntry Title="Install EMS Platform Services" Link="/Content/5PlatformServices/A_InstallationGuide/Platform_InstallPS.html" />
+            <TocEntry Title="License Requirements for Platform Services" Link="/Content/5PlatformServices/A_InstallationGuide/Platform_LicenseRequirements.html" />
         </TocEntry>
-        <TocEntry
-          Title="Create a Reservation in the Reservation Wizard"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CreateResinResWizard.htm" />
-        <TocEntry
-          Title="Book a Video Conference" />
-      </TocEntry>
-      <TocEntry
-        Title="The Browser">
-        <TocEntry
-          Title="Search with the Browser" />
-      </TocEntry>
-      <TocEntry
-        Title="People: Groups and Contacts">
-        <TocEntry
-          Title="Search for People" />
-        <TocEntry
-          Title="Add or Edit Profile Information for People and Groups" />
-        <TocEntry
-          Title="Create an Everyday User from a Group" />
-        <TocEntry
-          Title="Assign an Everyday User to a Group" />
-        <TocEntry
-          Title="Configure Contacts for a Group" />
-        <TocEntry
-          Title="Import Groups" />
-        <TocEntry
-          Title="Print and Export Everyday User Information" />
-        <TocEntry
-          Title="Print and Export Group Information" />
-        <TocEntry
-          Title="Work with Reservations for a Group" />
-        <TocEntry
-          Title="Email a Group" />
-      </TocEntry>
-      <TocEntry
-        Title="The Dashboard">
-        <TocEntry
-          Title="Overview of the EMS Dashboard" />
-        <TocEntry
-          Title="Notifications Tab">
-          <TocEntry
-            Title="Confirmations Vs Notifications: What Is the Difference?" />
+        <TocEntry Title="EMS Room Sign App (formerly Glance)" Link="/Content/A_Installation/8_RoomSignAppV44.1/8_RoomSignAppHome.htm">
+            <TocEntry Title="Introduction to the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_RSAOverview.html" />
+            <TocEntry Title="Requirements for the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_RequirementsforRSA.html" />
+            <TocEntry Title="Obtain the Installation Files for EMS Room Sign" Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_ObtainInstallFiles.html" />
+            <TocEntry Title="Architecture for the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_Architecture.html" />
+            <TocEntry Title="Install the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/A_Installation/RSA_Install_InstallRSA.html" />
         </TocEntry>
-        <TocEntry
-          Title="Reminders Tab" />
-        <TocEntry
-          Title="Everyday User Reservations" />
-        <TocEntry
-          Title="Guest Requests Tab">
-          <TocEntry
-            Title="Manage Requests for Managed Space" />
+        <TocEntry Title="EMS Exchange Room Integration (ERI)" Link="/Content/A_Installation/11_ERI_V44.1/11_ERI_Home.htm">
+            <TocEntry Title="Introduction to ERI" Link="/Content/7ERI/A_Installation/ERI_IG_IntroductiontoERI.html">
+                <TocEntry Title="Architecture of ERI" Link="/Content/7ERI/A_Installation/ERI_ArchitectureofERI.html" />
+                <TocEntry Title="System Requirements of ERI" Link="/Content/7ERI/A_Installation/ERI_IG_SystemRequirements.html" />
+            </TocEntry>
+            <TocEntry Title="Install Exchange Room Integration" Link="/Content/7ERI/A_Installation/ERI_IG_InstallingERI.html" />
+            <TocEntry Title="Exchange Sync Utility" Link="/Content/7ERI/A_Installation/ERI_IG_ExchangeSyncUtility.html" />
         </TocEntry>
-        <TocEntry
-          Title="Wait List Tab" />
-        <TocEntry
-          Title="Reconfirm Dates Tab" />
-        <TocEntry
-          Title="Building Hours Exceptions Tab" />
-        <TocEntry
-          Title="Analytics Tab" />
-        <TocEntry
-          Title="At a Glance Tab" />
-      </TocEntry>
-      <TocEntry
-        Title="Manage Services">
-        <TocEntry
-          Title="Work With and Search for Service Orders" />
-      </TocEntry>
-      <TocEntry
-        Title="Search For Reservations, Bookings, Resources, and Service Orders" />
-      <TocEntry
-        Title="Booking Check In ">
-        <TocEntry
-          Title="Enable Booking Check In" />
-        <TocEntry
-          Title="Ways to Check In" />
-        <TocEntry
-          Title="Manage Booking Check Ins" />
-      </TocEntry>
-      <TocEntry
-        Title="Reports and Queries">
-        <TocEntry
-          Title="Report Descriptions and Options" />
-        <TocEntry
-          Title="Generate an EMS Report" />
-        <TocEntry
-          Title="Generate an EMS Billing Report" />
-        <TocEntry
-          Title="Generate Visitor Reports" />
-        <TocEntry
-          Title="Configure Automated Reports" />
-        <TocEntry
-          Title="Work with Saved Reports" />
-        <TocEntry
-          Title="Work with a Query" />
-      </TocEntry>
-      <TocEntry
-        Title="Billing">
-        <TocEntry
-          Title="Search for Transactions"></TocEntry>
-        <TocEntry
-          Title="Apply Calculations to Billing -- Add to Billing Topic. This is a placeholder" />
-        <TocEntry
-          Title="Quick Reference Guide: Billing and Invoicing" />
-        <TocEntry
-          Title="Work with Invoices" />
-        <TocEntry
-          Title="Types of Transactions" />
-        <TocEntry
-          Title="Work with Transactions" />
-        <TocEntry
-          Title="EMS Billing Reports" />
-        <TocEntry
-          Title="Apply a Reservation Discount" />
-        <TocEntry
-          Title="Bill Multiple Reference and PO Numbers for a Reservation" />
-        <TocEntry
-          Title="Price Categories and Room Charges" />
-      </TocEntry>
-      <TocEntry
-        Title="Confirmations">
-        <TocEntry
-          Title="Send Confirmations"></TocEntry>
-        <TocEntry
-          Title="Generate Printed Confirmations" />
-        <TocEntry
-          Title="Generate Word Merge Documents for Custom Documentation" />
-        <TocEntry
-          Title="View History of Sent Emails" />
-      </TocEntry>
+        <TocEntry Title="EMS Master Calendar" Link="/Content/A_Installation/9_MasterCalendarV8/9_MasterCalendarV8Home.htm">
+            <TocEntry Title="EMS Master Calendar (V8)" Link="/Content/16_MC/A_Installation/MC_EMSMCV8.html" />
+            <TocEntry Title="Requirements for Master Calendar" Link="/Content/16_MC/A_Installation/MC_IG_RequirementforMC.html" />
+            <TocEntry Title="Installation Instructions" Link="/Content/16_MC/A_Installation/MC_IG_InstallationInstruct.html">
+                <TocEntry Title="Obtain Master Calendar Installation Files" Link="/Content/16_MC/A_Installation/MC_IG_ObtainingMCInstallFiles.html" />
+                <TocEntry Title="Run the Master Calendar Installer" Link="/Content/16_MC/A_Installation/MC_IG_RunningMCInstaller.html" />
+                <TocEntry Title="Configure Master Calendar to Use the Master Calendar API Web Service" Link="/Content/16_MC/A_Installation/MC_ConfigUseAPIWebService.html" />
+                <TocEntry Title="Install or Upgrade the Database Component in Master Calendar" Link="/Content/16_MC/A_Installation/MC_InstallUpgradeDatabaseComp.html" />
+                <TocEntry Title="Install or Upgrade the Master Calendar Web Service" Link="/Content/16_MC/A_Installation/MC_InstallUpgradeMCWebService.html" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Campus" Link="/Content/A_Installation/10_CampusV44.1/10_CampusHome.htm">
+            <TocEntry Title="EMS Campus Planning Interface">
+                <TocEntry Title="Introduction" Link="/Content/9CPI/A_InstallationGuide/CPI_Introduction.html" />
+                <TocEntry Title="EMS V44.1 System Requirements" Link="/Content/9CPI/A_InstallationGuide/CPI_Install_44.1SystemRequirements.html" />
+                <TocEntry Title="Obtain the Latest Release of EMS Campus Planning Interface" Link="/Content/9CPI/A_InstallationGuide/CPI_ObtainingLatestReleaseofEMSCPI.html" />
+                <TocEntry Title="Install or Upgrade the EMS Campus Planning Interface" Link="/Content/9CPI/A_InstallationGuide/CPI_InstallUpgrdEMSCPI.html" />
+                <TocEntry Title="Start the EMS Campus Planning Interface" Link="/Content/9CPI/A_InstallationGuide/CPI_StartingEMSCPI.html" />
+            </TocEntry>
+            <TocEntry Title="EMS Campus Web Service and White Paper">
+                <TocEntry Title="Introduction" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Introduction.html" />
+                <TocEntry Title="EMS Campus Web Service Hardware/Software Requirements" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Hardware-SoftwareReq.html" />
+                <TocEntry Title="Obtain the Latest EMS Campus Web Service Components" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ObtainingLatest.html" />
+                <TocEntry Title="Install or Upgrade the EMS Campus Web Service" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_Installing-Upgrading.html" />
+                <TocEntry Title="EMS Configuration Steps" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_EMSConfigSteps.html" />
+                <TocEntry Title="Data Models" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_DataModels.html">
+                    <TocEntry Title="Banner Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_BannerViewsDataModel.html" />
+                    <TocEntry Title="CAMS Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_CAMSViewsDataModel.html" />
+                    <TocEntry Title="Colleague (Oracle or SQL) Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ColleagueViews DataModel.html" />
+                    <TocEntry Title="Colleague Unidata Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_ColleagueUnidataViewsDataMdl.html" />
+                    <TocEntry Title="Jenzabar (CX - Informix) Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_JenzabarCXInformix.html" />
+                    <TocEntry Title="Jenzabar (EX) Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_JenzabarEXViewsDataMdl.html" />
+                    <TocEntry Title="PeopleSoft Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_PeopleSoftViewsData.html" />
+                    <TocEntry Title="PowerCampus Views Data Model" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_PowerCampusViewsDataModel.html" />
+                </TocEntry>
+                <TocEntry Title="Web Service Overview" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_WebServiceOverview.html" />
+                <TocEntry Title="Appendix A - Format for Tab-Delimited Files" Link="/Content/10CampusWebServ/A_InstallationGuide/CampusWeb_AppendixAFormatforTab.html" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="Integration to Microsoft Exchange" Link="/Content/A_Installation/12_IntegrationtoMicrosoftExchange/12_IntegrationMicrosoftExchange.htm" />
     </TocEntry>
-    <TocEntry
-      Title="EMS Academic Planning Options in EMS Desktop Client">
-      <TocEntry
-        Title="Use Academic Planning Options"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/AcadPlan_UG_UseAcadPlanOpt.html" />
-      <TocEntry
-        Title="Academic Planning with EMS"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/01AcadPlan_UG_AcadPlanwithEMS.html" />
-      <TocEntry
-        Title="Overview of the Academic Scheduling Process"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/02AcadPlan_UG_OverviewAcademicScheduling.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Post Publishing Phase"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/03AcadPlan_UG_PostPublishPhase.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Overview of Importing an Academic Term"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/04AcadPlan_UG_OverviewImportAcadTerm.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Synchronize an Academic Term"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/05AcadPlan_UG_SynchronizeAcadTerm.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Synchronize Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/06AcadPlan_UG_SynchronizeCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Define and Edit Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/07AcadPlan_UG_DefineEditCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Overview of Defining and Editing Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/08AcadPlan_UG_OverviewDefineEditCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Enable or Disable a Term for Define and Edit Mode"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/09AcadPlan_UG_EnableDisableTermDefineEditMode.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Review and Edit Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/10AcadPlan_UG_ReviewEditCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Work with Shared Space"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/11AcadPlan_UG_WorkwithSharedSpaces.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Identify New, Edited, or Canceled Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/12AcadPlan_UG_IdentifyNewEditedCanceledCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Overview of Specifying Room Preferences"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/13AcadPlan_UG_OverviewSpecifyRoomPref.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Specify Room Preferences and Requirements"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/14AcadPlan_UG_SpecifyRoomPrefReq.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Review and Verify Room Preferences"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/15AcadPlan_UG_ReviewVerifyRoomPref.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Overview of Room Assignments and Optimization"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/16AcadPlan_UG_OverviewRoomAssignOpt.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="About Creating Scenarios and Optimization"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/17AcadPlan_UG_AboutCreateScenariosOpt.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Create Scenarios"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/18AcadPlan_UG_CreateScenarios.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Assign Rooms"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/19AcadPlan_UG_AssignRooms.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Overview of Publishing an Academic Term"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/20AcadPlan_UG_OverviewPublishAcadTerm.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Publish a Term"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/21AcadPlan_UG_PublishTerm.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Manually Update Course Locations in the SIS"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/22AcadPlan_UG_ManualUpdateCourseLocSIS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Review Reservations and Resolve Room Assignments"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/23AcadPlan_UG_ReviewResResolveRoomAssign.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Unpublish a Previously Published Term"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/24AcadPlan_UG_UnpublishPreviousPubTerm.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Post-Publish Processing of Courses"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/25AcadPlan_UG_Post-PubProcCourses.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Set a Final Exam Schedule"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/26AcadPlan_UG_SetFinalExamSched.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Publish a Final Exam Session"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/27AcadPlan_UG_PubFinalExamSession.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Search with the Academic Browser"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/28AcadPlan_UG_SearchwithAcadBrowser.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Use the Academic Book"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/29AcadPlan_UG_UseAcadBook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Use the Course Navigator"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/30AcadPlan_UG_UseCourseNav.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Available Actions in the Course Navigator"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/31AcadPlan_UG_AvailActionsCourseNav.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Use the Search for Rooms Tool"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/32AcadPlan_UG_UseSearchRoomsTool.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Generate Academic Reports"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/33AcadPlan_UG_GenerateAcadReports.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
-      <TocEntry
-        Title="Enable and Disable a Term for Set Preferences Mode"
-        Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/34AcadPlan_UG_EnableDisableTermSetPrefMode.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    <TocEntry Title="Configuration Guides" Link="/Content/B_Configuration Guides/1_ConfigurationHome/1_Configuration Home.htm">
+        <TocEntry Title="EMS Desktop Client Configuration Guide" Link="/Content/B_Configuration Guides/2_EMS_Desktop_Client_CG.htm">
+            <TocEntry Title="Configuration &gt; Facililties">
+                <TocEntry Title="Configure Rooms" />
+                <TocEntry Title="Configure Buildings" />
+                <TocEntry Title="Configure Building Hours" />
+                <TocEntry Title="Configure Areas" />
+                <TocEntry Title="Configure Room Types" />
+                <TocEntry Title="Configure Setup Types" />
+                <TocEntry Title="Configure Features" />
+                <TocEntry Title="Configure Floors" Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFloors.html" />
+                <TocEntry Title="Configure Floor Plan Diagrams" />
+                <TocEntry Title="Configure Floor Plan Indicators" />
+                <TocEntry Title="Configure Public Views" />
+            </TocEntry>
+            <TocEntry Title="Configuration &gt; Resources" />
+            <TocEntry Title="Configuration &gt; Billing">
+                <TocEntry Title="Configure Rate Schedules" />
+                <TocEntry Title="Configure Pricing Plans" />
+                <TocEntry Title="Configure Calculations" />
+                <TocEntry Title="Configure Accounts" />
+                <TocEntry Title="Configure Payment Types" />
+                <TocEntry Title="Configure Sales Categories" />
+                <TocEntry Title="Configure Billing References" />
+                <TocEntry Title="Configure PO Numbers" />
+                <TocEntry Title="Configure Currencies" />
+            </TocEntry>
+            <TocEntry Title="Configuration &gt; Administration">
+                <TocEntry Title="Configure Categories" />
+                <TocEntry Title="Configure Departments" />
+                <TocEntry Title="Configure Statuses" />
+                <TocEntry Title="Configure Notification Rules" />
+                <TocEntry Title="Configure Customer Notification Rules" />
+                <TocEntry Title="Configure Check-in Notification Rules" />
+                <TocEntry Title="Configure Room Card Formats" />
+                <TocEntry Title="Configure Calendar Formats" />
+                <TocEntry Title="Configure Reservation Wizard Templates" />
+            </TocEntry>
+            <TocEntry Title="Configuration &gt; Other">
+                <TocEntry Title="Configure Event Types" />
+                <TocEntry Title="Configure Customer Types" />
+                <TocEntry Title="Configure Reminder Types" />
+                <TocEntry Title="Configure Comment Types" />
+                <TocEntry Title="Configure Messages" />
+                <TocEntry Title="Configure Special Dates" />
+                <TocEntry Title="Configure User-Defined Fields" />
+                <TocEntry Title="Configure Reservation Sources" />
+                <TocEntry Title="Configure Cancel Reasons" />
+                <TocEntry Title="Configure Attachment Types" />
+                <TocEntry Title="Configure Word Merge Documents" />
+                <TocEntry Title="Configure Calendar Styles" />
+            </TocEntry>
+            <TocEntry Title="Configuration &gt; Everyday User Applications">
+                <TocEntry Title="Configure Everyday Users" />
+                <TocEntry Title="Configure Everyday User Process Templates" />
+                <TocEntry Title="Configure Everyday User Security Templates" />
+                <TocEntry Title="Configure Web App Menus" />
+                <TocEntry Title="Configure Help Text" />
+                <TocEntry Title="Configure Language Translations" />
+            </TocEntry>
+            <TocEntry Title="Configuration &gt; Kiosk">
+                <TocEntry Title="Configure Kiosk Profiles" />
+                <TocEntry Title="Configure Kiosk Menus" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Web App Configuration Guide" Link="/Content/B_Configuration Guides/3_EMS_WebApp_CG.htm" />
+        <TocEntry Title="EMS Mobile App Configuration Guide" Link="/Content/B_Configuration Guides/4_EMS_MobileApp_CG.htm">
+            <TocEntry Title="Introduction" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_Introduction.htm" />
+            <TocEntry Title="Add Mobile Users" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_AddMobileUsers.htm" />
+            <TocEntry Title="Deploying the EMS Mobile App" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_DeployMobileApp.html">
+                <TocEntry Title="Change EMS Mobile App Logo (Private Deployment Only)" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ChangeEMSMobileAppLogoPrivDeploy.html" />
+                <TocEntry Title="Configure and Re-Sign EMS Mobile App (Private Deployment Only)" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ConfigRe-signMobilePrivDeploy.html" />
+                <TocEntry Title="Customize Your Mobile App Configuration Using config.json (Private Deployment Only)" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_CustomizeMobileAppUsingConfigJson.htm" />
+                <TocEntry Title="Restrict Users' Mobile App Versions" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_RestrictUsersMobileAppVer.html" />
+            </TocEntry>
+            <TocEntry Title="Change the Help Link Label and URL" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ChangeHelpLinkLabelURL.html" />
+            <TocEntry Title="Configure EMS Mobile QR Codes" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_ConfigMobileQRCodes.html" />
+            <TocEntry Title="How Do I Know When To Upgrade the Mobile App and API?" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_HowtoUpgradeMobileApptoAPI.html" />
+            <TocEntry Title="Set EMS Mobile Parameters" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetMobileParameters.html" />
+            <TocEntry Title="Set Up EMS Mobile Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SetUpMobileAuthen.html">
+                <TocEntry Title="EMS Native Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_EMSNativeAuthen.html" />
+                <TocEntry Title="LDAP Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_LDAPAuthen.html" />
+                <TocEntry Title="Open ID Connect Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_OpenIDConnectAuthen.html">
+                    <TocEntry Title="Open ID Connect Authentication&#160;Can Be&#160;Hosted or Pre-Configured in the EMS Mobile App" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_OpenIDConnectAuthenHostPreconfig.htm" />
+                </TocEntry>
+                <TocEntry Title="Persistent Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_PersistentAuthen.htm" />
+                <TocEntry Title="SAML Authentication" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SAMLAuthen.html">
+                    <TocEntry Title="SAML Authentication&#160;Can Be&#160;Hosted or Pre-Configured in the EMS Mobile App" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_SAMLAuthenHostPreconfig.htm" />
+                </TocEntry>
+                <TocEntry Title="Using Windows Authentication (NTLM) for EMS Mobile" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_SetUpMobileAuthen/Mobile_UseWindowsAuthenforMobile.html" />
+            </TocEntry>
+            <TocEntry Title="Using the EMS Platform Services" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_UseEMSPlatformServices.html">
+                <TocEntry Title="Installing the EMS Platform Services" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_InstallEMSPlatformServices.html">
+                    <TocEntry Title="Connecting With EMS Platform Services" Link="/Content/3MobileApp/B_ConfigurationGuide/Mobile_UsePlatformServices/Mobile_ConnectwithPlatformServices.html" />
+                </TocEntry>
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS for Microsoft Outlook Configuration Guide" Link="/Content/4Outlook/B_Config/Outlook_CG_ConfigOutlookOverview.htm">
+            <TocEntry Title="Configure EMS for Outlook" Link="/Content/4Outlook/B_Config/Outlook_CG_ConfigforOutlook.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS for Microsoft Outlook (Legacy) Configuration Guide" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_ConfigOverview_Leg.htm">
+            <TocEntry Title="Customize the Desktop Application Label" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_CustomizeDesktopAppLabel_Leg.htm" />
+            <TocEntry Title="EMS for Outlook System Parameters" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_SysParameters_Leg.htm" />
+            <TocEntry Title="Enable User Access to EMS for Outlook" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_EnableUserAccess_Leg.htm" />
+            <TocEntry Title="Assign EMS Users to&#160;Groups" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_AssignUserstoGroups_Leg.htm" />
+            <TocEntry Title="Establish Outlook Booking Templates and Conflict Behavior" Link="/Content/4Outlook/Legacy/B_Config_Leg/Outlook_CG_EstabBookTempConflBeh_Leg.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS for Microsoft Outlook (Prior to Update 8) Configuration Guide" Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_ConfigOverview.htm">
+            <TocEntry Title="EMS for Outlook Technical Overview" Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_TechnicalOverview.htm" />
+            <TocEntry Title="EMS for Outlook System Parameters" Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_OutlookSysParam.htm" />
+            <TocEntry Title="Enable User Access to EMS for Outlook" Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_EnableUserAccess.htm" />
+            <TocEntry Title="Set Booking Conflict Behavior for EMS for Outlook" Link="/Content/4Outlook/PriorU8/B_Config/Outlook_CG_SetBookingConBeh.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS Kiosk Configuration Guide" Link="/Content/B_Configuration Guides/6_EMS Kiosk (V44.1) Configuration Guide.htm">
+            <TocEntry Title="Set Up EMS Kiosk" Link="/Content/15Kiosk/B_Config/Kiosk_CG_SetUpKiosk.htm" />
+            <TocEntry Title="Configure EMS Kiosk App Profiles" Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppProfiles.htm" />
+            <TocEntry Title="Configure EMS Kiosk App Menus" Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppMenus.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS Kiosk (Legacy) Configuration Guide" Link="/Content/B_Configuration Guides/6_EMS_Kiosk_Legacy_CG.htm">
+            <TocEntry Title="Set Up EMS Kiosk (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_SetUpOverviewLegacy.htm" />
+            <TocEntry Title="Configure EMS Kiosk Menus (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_ConfigEMSKioskMenus1.htm" />
+            <TocEntry Title="Configure EMS Kiosk Profiles (Legacy)" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_ConfigEMSKioskProfiles1.htm" />
+            <TocEntry Title="EMS Kiosk Parameters" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_KioskParam.html" />
+            <TocEntry Title="EMS Kiosk API Reference (1.0)" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIReference.html">
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetProfiles1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskValidate1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetEvents1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskEndNow1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetFloors1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskAddReserv1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskGetEventTypes1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/B_Config/Kiosk_CG_APIKioskAddRoom1.htm" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Platform Services Configuration Guide" Link="/Content/B_Configuration Guides/7_EMS_PlatformServices_CG.htm">
+            <TocEntry Title="Configure Platform Services in the Admin Portal" Link="/Content/5PlatformServices/B_ConfigurationGuide/Platform_ConfigPSinAdminPortal.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Exchange Room Integration (ERI) Configuration Guide " Link="/Content/B_Configuration Guides/8_EMS_ExchangeRoomIntegration_CG.htm">
+            <TocEntry Title="Configure Exchange Room Integration (ERI)" Link="/Content/7ERI/B_Config/ERI_Config_ConfigEXR.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Master Calendar Configuration Guide" Link="/Content/B_Configuration Guides/9_EMSMasterCalendar_CG.htm">
+            <TocEntry Title="EMS Master Calendar (V8)" Link="/Content/16_MC/B_Configuration/MC_EMSMCV8.html" />
+            <TocEntry Title="Admin Interface Overview" Link="/Content/16_MC/B_Configuration/MC_AdminInterfaceOverview.html" />
+            <TocEntry Title="Calendar Management" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CalendarManagement.html">
+                <TocEntry Title="Import Events Into Your Master Calendar System" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ImportEvents.html">
+                    <TocEntry Title="Connect Master Calendar to Your EMS Database" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ConnectMCtoEMSDatabase.html" />
+                    <TocEntry Title="Connect to Data Sources" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ConnectDataSources.html" />
+                </TocEntry>
+            </TocEntry>
+            <TocEntry Title="Manage an Event from the Event Summary Page" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ManageEventfromEventSumPg.html">
+                <TocEntry Title="Add Events to Your Personal Email Calendar" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_AddEventstoPersonalEmailCal.html" />
+                <TocEntry Title="Add Event Dates" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_AddEventDates.html" />
+                <TocEntry Title="Cancel Event Dates" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CancelEventDates.html" />
+                <TocEntry Title="Copy an Event" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_CopyEvent.html" />
+                <TocEntry Title="Edit an Event" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_EditEvent.html" />
+                <TocEntry Title="Un-Cancel an Event" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_Un-CancelEvent.html" />
+            </TocEntry>
+            <TocEntry Title="Manage Events from the Manage Events Page" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ManageEventsfromManageEventsPg.html">
+                <TocEntry Title="Filter Events on the Manage Events Page" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_FilterEventsManageEventsPg.html" />
+                <TocEntry Title="Approve Pending Event Requests" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_ApprovePendingEventRequests.html" />
+                <TocEntry Title="Reject Pending Event Requests" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_RejectPendingEventRequests.html" />
+                <TocEntry Title="Move Rejected Event Requests to Approved Status" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_MoveRejectEventRequeststoAppStatus.html" />
+                <TocEntry Title="Generate a List of Event Requests" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_GenerateListEventRequests.html" />
+                <TocEntry Title="Request Additional Information for Event Requests" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_RequestAddInfoEventRequests.html" />
+                <TocEntry Title="Delete Event Requests" Link="/Content/16_MC/B_Configuration/MC_CalMan/MC_DeleteEventRequests.html" />
+            </TocEntry>
+            <TocEntry Title="Configure Calendar Groupings and Calendars" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ConfigCalGroupingsandCals.html">
+                <TocEntry Title="Manage Calendars in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageCalendarsinMC.html" />
+                <TocEntry Title="Configure Special Dates" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ConfigSpecialDates.html" />
+                <TocEntry Title="Manage Calendar URLs" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageCalURLs.html" />
+                <TocEntry Title="Manage External Links for a Grouping" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageExtLinksforGrouping.html" />
+                <TocEntry Title="Manage Groupings in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_ConGrpCal/MC_ManageGroupingsinMC.html" />
+            </TocEntry>
+            <TocEntry Title="Configure Optional Information" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ConfigOptionalInfo.html">
+                <TocEntry Title="Configure Event Icons" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ConfigEventIcons.html" />
+                <TocEntry Title="Maintain Departments in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_MaintainDeptinMC.html" />
+                <TocEntry Title="Manage Cultures" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageCultures.html" />
+                <TocEntry Title="Manage Custom Field Hints" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageCustomFieldHints.html" />
+                <TocEntry Title="Manage Event Type Views" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_ManageEventTypeViews.html" />
+                <TocEntry Title="Work with Event Locations" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithEventLocations.html" />
+                <TocEntry Title="Work with Event Types" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithEventTypes.html" />
+                <TocEntry Title="Work with Rooms" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithRooms.html" />
+                <TocEntry Title="Work with User Defined Questions (UDQs)" Link="/Content/16_MC/B_Configuration/MC_ConOp/MC_WorkwithUserDefQuest.html" />
+            </TocEntry>
+            <TocEntry Title="Configure Users and Templates" Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ConfigUsersTemplates.html">
+                <TocEntry Title="Manage Users" Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ManageUsers.html" />
+                <TocEntry Title="Manage User Templates" Link="/Content/16_MC/B_Configuration/MC_ConUsTp/MC_ManageUserTemplates.html" />
+            </TocEntry>
+            <TocEntry Title="Create Custom Reports in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_CreateCustReports.html" />
+            <TocEntry Title="Customize Master Calendar Site Appearance and Behavior" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomMCSiteAppBehav.html">
+                <TocEntry Title="Broadcast Announcements" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_BroadcastAnnouncements.html" />
+                <TocEntry Title="Customize Help Text in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeHelpText.html" />
+                <TocEntry Title="Customize Menus in Master Calendar" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeMenus.html" />
+                <TocEntry Title="Customize Your Master Calendar Site and Automated Emails" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_CustomizeMCSiteandAutoEmails.html" />
+                <TocEntry Title="Set Default Home Page Behavior" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_SetDefaultHomePgBehavior.html" />
+                <TocEntry Title="Set the Default Home Page Layout" Link="/Content/16_MC/B_Configuration/MC_CusApBh/MC_SetDefaultHomePgLayout.html" />
+            </TocEntry>
+            <TocEntry Title="Integrated Authentication for Master Calendar" Link="/Content/16_MC/B_Configuration/MC_IntegAuthenforMC.html">
+                <TocEntry Title="Portal Authentication Methods" Link="/Content/16_MC/B_Configuration/MC_PortalAuthenMethods.html" />
+            </TocEntry>
+            <TocEntry Title="Maintain Master Calendar Software Registration" Link="/Content/16_MC/B_Configuration/MC_MaintainMCSoftwareReg.html" />
+            <TocEntry Title="Manage RSS Feeds" Link="/Content/16_MC/B_Configuration/MC_ManageRSSFeeds.html" />
+            <TocEntry Title="Master Calendar Admin Field Definitions" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_MCAdminFieldDef.html">
+                <TocEntry Title="Area: Calendar" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaCalendar.html" />
+                <TocEntry Title="Area: Email" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaEmail.html" />
+                <TocEntry Title="Area: Labels" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaLabels.html" />
+                <TocEntry Title="Area: Mobile" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaMobile.html" />
+                <TocEntry Title="Area: Portal Authentication" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaPortAuthen.html" />
+                <TocEntry Title="Area: RSS" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaRSS.html" />
+                <TocEntry Title="Area: Submit" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaSubmit.html" />
+                <TocEntry Title="Area: System Configuration" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaSystemConfig.html" />
+                <TocEntry Title="Area: Tooltip" Link="/Content/16_MC/B_Configuration/MC_AdFldDef/MC_AreaTooltip.html" />
+            </TocEntry>
+            <TocEntry Title="Master Calendar API" Link="/Content/16_MC/B_Configuration/MC_API/MC_MasterCalAPI.html">
+                <TocEntry Title="Master Calendar API Requirements and Licensing" Link="/Content/16_MC/B_Configuration/MC_API/MC_APIRequirementsLicensing.html" />
+                <TocEntry Title="Verify the Master Calendar API" Link="/Content/16_MC/B_Configuration/MC_API/MC_VerifyMCAPI.html" />
+                <TocEntry Title="Release Notes" Link="/Content/16_MC/B_Configuration/MC_API/MC_ReleaseNotes.html" />
+                <TocEntry Title="API Functions" Link="/Content/16_MC/B_Configuration/MC_API/MC_APIFunctions.html">
+                    <TocEntry Title="AddEventWithMultipleDates (Requires Advanced API Option)" Link="/Content/16_MC/B_Configuration/MC_API/MC_API_AddEventwithMultDates.html" />
+                    <TocEntry Title="AddEvent (Requires Advanced API Option)" Link="/Content/16_MC/B_Configuration/MC_API/MC_AddEventReqAdvAPIOpt.html">
+                        <TocEntry Title="GetCalendar" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetCalendar.html" />
+                        <TocEntry Title="GetCalendars" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetCalendars.html" />
+                        <TocEntry Title="GetComments" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetComments.html" />
+                        <TocEntry Title="GetEvent" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEvent.html" />
+                        <TocEntry Title="GetEvents" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEvents.html" />
+                        <TocEntry Title="GetEventTypes" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetEventTypes.html" />
+                        <TocEntry Title="GetFeaturedEvents" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetFeaturedEvents.html" />
+                        <TocEntry Title="GetGroupings" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetGroupings.html" />
+                        <TocEntry Title="GetLocations" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetLocations.html" />
+                        <TocEntry Title="GetUdqs" Link="/Content/16_MC/B_Configuration/MC_API/MC_GetUdqs.html" />
+                        <TocEntry Title="UpdateEventDate (Requires Advanced API Option)" Link="/Content/16_MC/B_Configuration/MC_API/MC_UpdateEventDateReqAdvanAPIOpt.html" />
+                        <TocEntry Title="UpdateEvent (Requires Advanced API Option)" Link="/Content/16_MC/B_Configuration/MC_API/MC_UpdateEventReqAdvanAPIOpt.html" />
+                    </TocEntry>
+                </TocEntry>
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Campus Configuration Guide" Link="/Content/B_Configuration Guides/10_EMS Campus Configuration Guide.htm">
+            <TocEntry Title="Set Up EMS Campus" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SetUpEMSCampusIntro.html" />
+            <TocEntry Title="Overview of Synchronization" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_OverviewofSynchr.html" />
+            <TocEntry Title="Synchronize Campus-Specific Data" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SynchroCampus-SpecificData.html" />
+            <TocEntry Title="Synchronize Facility Data" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_SynchroFacilityData.html" />
+            <TocEntry Title="Configure Domains" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigDomains.html" />
+            <TocEntry Title="Configure Academic Units" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigAcademUnit.html" />
+            <TocEntry Title="Configure Instructors" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigInstructors.html" />
+            <TocEntry Title="Configure the Primary Academic Unit for a Subject" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigPrimaryAcadUnitforSub.html" />
+            <TocEntry Title="Configure Course Types" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigCourseType.html" />
+            <TocEntry Title="Configure Course Types/Room Types Matches" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_ConfigCourseRoomTypeMatch.html" />
+            <TocEntry Title="Work with Time Block Templates" Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_WorkTimeBlockTemp2.html" />
+        </TocEntry>
+        <TocEntry Title="Skype for Business Configuration Guide" Link="/Content/B_Configuration Guides/11_Skype for Business Configuration Guide.htm" />
+        <TocEntry Title="EMS Room Sign App">
+            <TocEntry Title="Best Practices for Device Configuration" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_BestPractDeviceConfSteps.htm" />
+            <TocEntry Title="Configure the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_Config.html" />
+            <TocEntry Title="Configure Profiles" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigProfile.html" />
+            <TocEntry Title="Configure Check In Functionality " Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigCheckInFunct.html" />
+            <TocEntry Title="Configure Edit Booking Functionality" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigEditBookFunct.html" />
+            <TocEntry Title="Configure How Booking Information Displays" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigHowBookInfoDisplay.html" />
+            <TocEntry Title="Configure New Booking Functionality" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_ConfigNewBookFunct.html" />
+            <TocEntry Title="Configure Customized Labels, Messages, and Images" Link="/Content/6RoomSignApp/A_44.1/B_Configuration/RSA_CG_CustomLabelsMessImage.html" />
+        </TocEntry>
     </TocEntry>
-  </TocEntry>
-  <TocEntry
-    Title="Release Notes">
-    <TocEntry
-      Title="Release Notes V44.1"></TocEntry>
-    <TocEntry
-      Title="Release Notes V44"></TocEntry>
-    <TocEntry
-      Title="Release Notes V43" />
-    <TocEntry
-      Title="Release Notes V8" />
-  </TocEntry>
-  <TocEntry
-    Title="Integrations">
-    <TocEntry
-      Title="Integrations"
-      Link="/Content/E_Integrations/1_Integrations.htm">
-      <TocEntry
-        Title="Microsoft Exchange Integration"
-        Link="/Content/E_Integrations/2_Microsoft_Exchange_Integrations.htm"></TocEntry>
-      <TocEntry
-        Title="Human Resources Information Systems (HRIS)"
-        Link="/Content/E_Integrations/3_HumanResources (HR).htm" />
-      <TocEntry
-        Title="Occupancy Sensors"
-        Link="/Content/E_Integrations/4_Sensors.htm" />
-      <TocEntry
-        Title="Video Conferencing"
-        Link="/Content/E_Integrations/5_VideoConferencing.htm" />
+    <TocEntry Title="Everyday User Guides" Link="/Content/D_Everyday User Guides/1_EverydayUserGuideHome.htm">
+        <TocEntry Title="EMS Desktop Client User Guide 44.1" Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AboutthisGuide.html">
+            <TocEntry Title="Introduction to EMS Desktop Client" Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html" />
+            <TocEntry Title="Launch EMS Desktop Client" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_StartingEMS.html" />
+            <TocEntry Title="Manage Database Connections" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManageDatabaseConnections.html" />
+            <TocEntry Title="User Settings" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_UserSettings.html" />
+            <TocEntry Title="Reservations and Bookings" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReservandBookings.html" />
+            <TocEntry Title="Other Reservation Functions">
+                <TocEntry Title="Record Actual Attendance Numbers for Bookings" />
+                <TocEntry Title="Manage Attendees and Visitors" />
+                <TocEntry Title="View Visitors" />
+                <TocEntry Title="Check In Visitors" />
+            </TocEntry>
+            <TocEntry Title="The EMS Window">
+                <TocEntry Title="Work with the EMS Window" />
+                <TocEntry Title="Toolbar Buttons" />
+                <TocEntry Title="Customizing Your Toolbar" />
+            </TocEntry>
+            <TocEntry Title="The Reservation Book">
+                <TocEntry Title="Create a Booking in the Reservation Book" />
+                <TocEntry Title="View and Edit Reservations in the Reservation Book" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewEditReservinResBook.htm" />
+                <TocEntry Title="Edit a Reservation in the Reservation Book" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditResinResBook.htm" />
+                <TocEntry Title="Import a List of Visitors to a Booking" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_IG_ImportListVis.html" />
+            </TocEntry>
+            <TocEntry Title="The Navigator">
+                <TocEntry Title="Overview of the Navigator" />
+                <TocEntry Title="Edit a Reservation in the Navigator" />
+                <TocEntry Title="Add Bookings to a Reservation in the Navigator" />
+                <TocEntry Title="Copy a Reservation in the Navigator" />
+                <TocEntry Title="Change the Status of a Reservation in the Navigator" />
+                <TocEntry Title="Reprice Categories and Room Charges for a Reservation in the Navigator" />
+                <TocEntry Title="Apply a Reservation Discount" />
+                <TocEntry Title="Edit a Booking in the Navigator" />
+                <TocEntry Title="Edit Multiple Bookins in the Navigator" />
+                <TocEntry Title="Move Bookings to a Different Reservation in the Navigator" />
+                <TocEntry Title="Copy Multiple Bookings in the Navigator" />
+                <TocEntry Title="Booking Details and Items Overview">
+                    <TocEntry Title="Add Booking Details and Items to Individual Bookings" />
+                    <TocEntry Title="Add Booking Details and Items to Multiple Bookings" />
+                    <TocEntry Title="Edit Booking Detail Items for Individual Bookings" />
+                    <TocEntry Title="Edit Booking Detail Item Charges for Multiple Items" />
+                    <TocEntry Title="Copy Booking Details Between Bookings" />
+                    <TocEntry Title="Delete Booking Detail Items from Multiple Bookings" />
+                    <TocEntry Title="Delete Booking Details from Multiple Bookings" />
+                    <TocEntry Title="Edit Charges for Multiple Billable Items" />
+                    <TocEntry Title="Edit Count Information for a Booking in the Navigator" />
+                    <TocEntry Title="Add Booking Details Wizard" />
+                    <TocEntry Title="Copy Booking Details Wizard" />
+                    <TocEntry Title="Delete Booking Details Wizard" />
+                    <TocEntry Title="Delete Item Wizard" />
+                    <TocEntry Title="Add Item Wizard" />
+                </TocEntry>
+                <TocEntry Title="Comments and Reminders in the Navigator">
+                    <TocEntry Title="Add Multiple Comments and Reminders to a Reservation" />
+                </TocEntry>
+                <TocEntry Title="User-Defined Fields in the Navigator" />
+                <TocEntry Title="Attachments in the Navigator" />
+                <TocEntry Title="Drawings in the Navigator" />
+                <TocEntry Title="Resource Utility Conflicts Tool" />
+                <TocEntry Title="Approve or Deny Reservation Requests" />
+            </TocEntry>
+            <TocEntry Title="The Calendar">
+                <TocEntry Title="Search with the Calendar" />
+                <TocEntry Title="Search with the Resource Calendar" />
+            </TocEntry>
+            <TocEntry Title="The Reservation Wizard">
+                <TocEntry Title="Fields in the Reservation Wizard" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_FieldsinResWiz.htm" />
+                <TocEntry Title="The Everyday User Reservations Browser">
+                    <TocEntry Title="Search Using the Everyday User Reservation Browser" />
+                </TocEntry>
+                <TocEntry Title="Create a Reservation in the Reservation Wizard" Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CreateResinResWizard.htm" />
+                <TocEntry Title="Book a Video Conference" />
+            </TocEntry>
+            <TocEntry Title="The Browser">
+                <TocEntry Title="Search with the Browser" />
+            </TocEntry>
+            <TocEntry Title="People: Groups and Contacts">
+                <TocEntry Title="Search for People" />
+                <TocEntry Title="Add or Edit Profile Information for People and Groups" />
+                <TocEntry Title="Create an Everyday User from a Group" />
+                <TocEntry Title="Assign an Everyday User to a Group" />
+                <TocEntry Title="Configure Contacts for a Group" />
+                <TocEntry Title="Import Groups" />
+                <TocEntry Title="Print and Export Everyday User Information" />
+                <TocEntry Title="Print and Export Group Information" />
+                <TocEntry Title="Work with Reservations for a Group" />
+                <TocEntry Title="Email a Group" />
+            </TocEntry>
+            <TocEntry Title="The Dashboard">
+                <TocEntry Title="Overview of the EMS Dashboard" />
+                <TocEntry Title="Notifications Tab">
+                    <TocEntry Title="Confirmations Vs Notifications: What Is the Difference?" />
+                </TocEntry>
+                <TocEntry Title="Reminders Tab" />
+                <TocEntry Title="Everyday User Reservations" />
+                <TocEntry Title="Guest Requests Tab">
+                    <TocEntry Title="Manage Requests for Managed Space" />
+                </TocEntry>
+                <TocEntry Title="Wait List Tab" />
+                <TocEntry Title="Reconfirm Dates Tab" />
+                <TocEntry Title="Building Hours Exceptions Tab" />
+                <TocEntry Title="Analytics Tab" />
+                <TocEntry Title="At a Glance Tab" />
+            </TocEntry>
+            <TocEntry Title="Manage Services">
+                <TocEntry Title="Work With and Search for Service Orders" />
+            </TocEntry>
+            <TocEntry Title="Search For Reservations, Bookings, Resources, and Service Orders" />
+            <TocEntry Title="Booking Check In ">
+                <TocEntry Title="Enable Booking Check In" />
+                <TocEntry Title="Ways to Check In" />
+                <TocEntry Title="Manage Booking Check Ins" />
+            </TocEntry>
+            <TocEntry Title="Reports and Queries">
+                <TocEntry Title="Report Descriptions and Options" />
+                <TocEntry Title="Generate an EMS Report" />
+                <TocEntry Title="Generate an EMS Billing Report" />
+                <TocEntry Title="Generate Visitor Reports" />
+                <TocEntry Title="Configure Automated Reports" />
+                <TocEntry Title="Work with Saved Reports" />
+                <TocEntry Title="Work with a Query" />
+            </TocEntry>
+            <TocEntry Title="Billing">
+                <TocEntry Title="Search for Transactions" />
+                <TocEntry Title="Apply Calculations to Billing -- Add to Billing Topic. This is a placeholder" />
+                <TocEntry Title="Quick Reference Guide: Billing and Invoicing" />
+                <TocEntry Title="Work with Invoices" />
+                <TocEntry Title="Types of Transactions" />
+                <TocEntry Title="Work with Transactions" />
+                <TocEntry Title="EMS Billing Reports" />
+                <TocEntry Title="Apply a Reservation Discount" />
+                <TocEntry Title="Bill Multiple Reference and PO Numbers for a Reservation" />
+                <TocEntry Title="Price Categories and Room Charges" />
+            </TocEntry>
+            <TocEntry Title="Confirmations">
+                <TocEntry Title="Send Confirmations" />
+                <TocEntry Title="Generate Printed Confirmations" />
+                <TocEntry Title="Generate Word Merge Documents for Custom Documentation" />
+                <TocEntry Title="View History of Sent Emails" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Mobile App Everyday User Guide" Link="/Content/3MobileApp/C_UserGuide/2_EMS Mobile App.htm">
+            <TocEntry Title="Introduction" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_Introduction.html">
+                <TocEntry Title="What's New" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_WhatsNew.html" />
+            </TocEntry>
+            <TocEntry Title="Get Started With EMS Mobile" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_GetStarted.html">
+                <TocEntry Title="Log In, Reset Password, or Create An Account" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_LogInResetPasswordCreateAccount.html" />
+                <TocEntry Title="Enter Your Server URL" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_EnterYourServerURL.html" />
+                <TocEntry Title="Search For Events" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_SearchforEvents.html" />
+                <TocEntry Title="Check In to Meetings" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CheckIntoMeetings.html" />
+                <TocEntry Title="Cancel Meetings" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CancelMeetings.html" />
+                <TocEntry Title="End Meetings Early" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_EndMeetingsEarly.html" />
+                <TocEntry Title="Favorite Locations" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_FavoriteLocations.html" />
+                <TocEntry Title="Remove Favorite Locations" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_RemoveFavoriteLocations.html" />
+                <TocEntry Title="Use QR Codes" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_UseQRCodes.html" />
+            </TocEntry>
+            <TocEntry Title="Attend a Meeting" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_AttendMeeting.html" />
+            <TocEntry Title="Create a Meeting" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_CreateMeeting.html">
+                <TocEntry Title="Find a Room" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_FindRoom.html" />
+                <TocEntry Title="Invite People" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_InvitePeople.html" />
+            </TocEntry>
+            <TocEntry Title="Change a Meeting" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_ChangeMeeting.html" />
+            <TocEntry Title="Use Skype for Business in the EMS Mobile App" Link="/Content/3MobileApp/C_UserGuide/MobileApp_UserGuide_UseSkypeforBusiness.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Web App Everyday User Guide" Link="/Content/D_Everyday User Guides/3_EMSWebAppV44.1_UG.htm">
+            <TocEntry Title="Getting Started with the EMS Web App" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_GettingStarted.html">
+                <TocEntry Title="Log In and Out" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_LogginginandOut.html" />
+                <TocEntry Title="Check In To Events" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CheckingIntoEvents.html" />
+                <TocEntry Title="Introduction to the Home Page" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_IntroductiontoHomePage.html" />
+                <TocEntry Title="Create Your Login or Get a New Password" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CreatingYourLoginOrGettingNewPassword.html" />
+            </TocEntry>
+            <TocEntry Title="Browse Events, Locations, and People" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEventsLocationsandPeople.html">
+                <TocEntry Title="Browse Events" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEvents.html" />
+                <TocEntry Title="Browse Locations" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingLocations.html" />
+                <TocEntry Title="View Floor Plans" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ViewingFloorPlans.html" />
+                <TocEntry Title="Locate People" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_LocatingPeople.html" />
+                <TocEntry Title="Event Details Page" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EventDetailsPage.html" />
+            </TocEntry>
+            <TocEntry Title="Make a Reservation in the EMS Web App" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_MakingaResv.html">
+                <TocEntry Title="Ways to Make Reservations" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_WaystoMakeReservations.html" />
+                <TocEntry Title="View Your Events" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ViewingYourEvents.html" />
+                <TocEntry Title="Search for Available Rooms" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_SearchingforAvailableRooms.html" />
+                <TocEntry Title="Book Multiple Rooms" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingMultipleRooms.html" />
+                <TocEntry Title="Book Recurring Meetings" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingRecurringMeetings.html" />
+                <TocEntry Title="Book a Video Conference Room" Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingVCRoom.html" />
+            </TocEntry>
+        </TocEntry>
+        <TocEntry Title="EMS Kiosk Everyday User Guide" Link="/Content/D_Everyday User Guides/4_EMSKiosk_UG.htm">
+            <TocEntry Title="Get Started with the EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_GetStarted.htm">
+                <TocEntry Title="Overview: The EMS Kiosk App Window" Link="/Content/15Kiosk/C_User/Kiosk_UG_OverviewKioskWindow.htm" />
+            </TocEntry>
+            <TocEntry Title="View Your Reservations and Check In to EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_ViewYourRes.htm" />
+            <TocEntry Title="Book a Desk or Workspace in EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_BookDeskWorkspace.htm" />
+            <TocEntry Title="Locate a Person in EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_LocatePerson.htm" />
+            <TocEntry Title="Locate a Space in EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_LocateSpace.htm" />
+            <TocEntry Title="View Today's Events in EMS Kiosk App" Link="/Content/15Kiosk/C_User/Kiosk_UG_ViewTodaysEvents.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS Kiosk (Legacy) User Guide">
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_GetStarted1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_OverviewKioskWin1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_WorkwithEvents1.htm">
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewInformation1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_CheckInOnEMSKiosk1.htm" />
+                <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewFloorPlans1.htm" />
+            </TocEntry>
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_BookDeskorWorkspace1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_LocatePerson1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_BookRoom1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_LocateSpace1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewInformation1.htm" />
+            <TocEntry Title="[%=System.LinkedTitle%]" Link="/Content/15Kiosk/Kiosk(Legacy)/C_User/Kiosk_UG_ViewTodayEvents1.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS Campus Planning Interface Everyday User Guide" Link="/Content/D_Everyday User Guides/5_EMSCampusPlanningInterfaceV44.1_UG.htm">
+            <TocEntry Title="Get Started" Link="/Content/9CPI/C_UserGuide/CPI_UG_GetStarted.html" />
+            <TocEntry Title="Manage User Options in the EMS Campus Planning Interface" Link="/Content/9CPI/C_UserGuide/CPI_UG_ManageUserOptions.html" />
+            <TocEntry Title="EMS Campus Planning Interface Reports" Link="/Content/9CPI/C_UserGuide/HiddenMT/CPI_UG_CampusPlanningInterfaceReports.html">
+                <TocEntry Title="Report Descriptions and Options" Link="/Content/9CPI/C_UserGuide/CPI_UG_ReportDescriptionsAndOptions.html" />
+            </TocEntry>
+            <TocEntry Title="EMS Campus Planning Interface Search Tools" Link="/Content/9CPI/C_UserGuide/CPI_UG_CPISearchTools.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Master Calendar Everyday User Guide" Link="/Content/D_Everyday User Guides/6_EMSMasterCalendarV8_UG.htm">
+            <TocEntry Title="Use EMS Master Calendar (V8)" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseMasterCalendar.html" />
+            <TocEntry Title="Introduction to EMS Master Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_Introduction.html">
+                <TocEntry Title="How Do I Publicize an Event in Master Calendar?" Link="/Content/16_MC/C_UserGuide/MC_UG_HowtoPublicizeEvent.html" />
+            </TocEntry>
+            <TocEntry Title="Log In to Master Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG__LogIn.html" />
+            <TocEntry Title="Use Basic Features of EMS Master Calendar" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseBasicFeatures.html" />
+            <TocEntry Title="Use Field Icons in EMS Master Calendar" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseFieldIcons.html">
+                <TocEntry Title="Search by Keyword" Link="/Content/16_MC/C_UserGuide/MC_UG_SearchbyKeyword.html" />
+                <TocEntry Title="Export Search Results" Link="/Content/16_MC/C_UserGuide/MC_UG_ExportSearchResults.html" />
+                <TocEntry Title="Search for an Event or Special Date" Link="/Content/16_MC/C_UserGuide/MC_UG_SearchforEventorSpecialDate.html" />
+                <TocEntry Title="Use RSS Feeds in EMS Master Calendar" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UseRSSFeeds.html" />
+            </TocEntry>
+            <TocEntry Title="User Options" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_UserOptions.html">
+                <TocEntry Title="Change Your Password" Link="/Content/16_MC/C_UserGuide/MC_UG_ChangeYourPassword.html" />
+                <TocEntry Title="View Custom Help Text" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewCustomHelpText.html" />
+                <TocEntry Title="View Your Notifications" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewYourNotifications.html" />
+                <TocEntry Title="View Your Requests" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_ViewYourRequests.html" />
+            </TocEntry>
+            <TocEntry Title="Work with Calendars" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_WorkwithCalendars.html">
+                <TocEntry Title="Modify the Calendar Display" Link="/Content/16_MC/C_UserGuide/MC_UG_ModifyCalendarDispaly.html" />
+                <TocEntry Title="Filter Events on the Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_FilterEventsonCalendar.html" />
+                <TocEntry Title="Set a Timeframe for the Calendar Display" Link="/Content/16_MC/C_UserGuide/MC_UG_SetTimeFrameforDisplay.html" />
+                <TocEntry Title="Navigate in the Master Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_NavinMasterCalendar.html" />
+                <TocEntry Title="Open Events from the Master Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_OpenEvents.html" />
+                <TocEntry Title="Scroll Through Events on the Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_ScrollThroughEvents.html" />
+                <TocEntry Title="Subscribe to a Calendar" Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendar.html" />
+                <TocEntry Title="Subscribe to a Calendar Using Email" Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingEmail.html" />
+                <TocEntry Title="Subscribe to a Calendar Using iCal" Link="/Content/16_MC/C_UserGuide/MC_UG_SubscribetoCalendarUsingical.html" />
+            </TocEntry>
+            <TocEntry Title="Work with Events" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_WorkwithEvents.html">
+                <TocEntry Title="Types of Master Calendar Users" Link="/Content/16_MC/C_UserGuide/MasterCalendar_UserGuide_TypesofUsers.html" />
+                <TocEntry Title="Submit an Event" Link="/Content/16_MC/C_UserGuide/MC_UG_SubmitEvents.html" />
+                <TocEntry Title="Additional Info Fields" Link="/Content/16_MC/C_UserGuide/MC_UG_AdditionalInfoFields.html" />
+                <TocEntry Title="Custom, Email, and Attachment Fields" Link="/Content/16_MC/C_UserGuide/MC_UG_CustomEmailAttachmentFields.html" />
+                <TocEntry Title="Event Times Fields" Link="/Content/16_MC/C_UserGuide/MC_UG_EventTimesFields.html" />
+                <TocEntry Title="General Info Fields" Link="/Content/16_MC/C_UserGuide/MC_UG_GeneralInfoFields.html" />
+            </TocEntry>
+            <TocEntry Title="Glossary" Link="/Content/16_MC/C_UserGuide/MC_UG_Glossary.html" />
+        </TocEntry>
+        <TocEntry Title="EMS for Outlook Everyday User Guide" Link="/Content/D_Everyday User Guides/7_EMSforMicrosoftOutlookV44.1_UG.htm">
+            <TocEntry Title="EMS for Microsoft Outlook Overview" Link="/Content/4Outlook/C_User/Outlook_UG_UseEMSforOutlook.htm" />
+            <TocEntry Title="Get Started with EMS for Outlook" Link="/Content/4Outlook/C_User/Outlook_UG_GetStarted.htm">
+                <TocEntry Title="Microsoft Outlook, EMS for Microsoft Outlook, and EMS Web App Comparison" Link="/Content/4Outlook/C_User/Outlook_UG_OutlookComparisons.htm" />
+            </TocEntry>
+            <TocEntry Title="Create a Reservation in EMS for Microsoft Outlook" Link="/Content/4Outlook/C_User/Outlook_UG_CreateResOverview.htm">
+                <TocEntry Title="Create a Single Reservation" Link="/Content/4Outlook/C_User/Outlook_UG_CreateSingleRes.htm" />
+                <TocEntry Title="Create a Series Reservation" Link="/Content/4Outlook/C_User/Outlook_UG_CreateSeriesRes.htm" />
+                <TocEntry Title="Create a Video Conference Reservation" Link="/Content/4Outlook/C_User/Outlook_UG_CreateVideoConRes.htm" />
+                <TocEntry Title="Edit or Cancel a Scheduled Event" Link="/Content/4Outlook/C_User/Outlook_UG_EditCancelSchedEvent.htm" />
+            </TocEntry>
+            <TocEntry Title="Use Skype for Business in EMS for Outlook" Link="/Content/4Outlook/C_User/Outlook_UG_UseSkypeforBusiness.htm" />
+            <TocEntry Title="Resolve Booking Conflicts" Link="/Content/4Outlook/C_User/Outlook_UG_ResolveBookingConflicts.htm" />
+            <TocEntry Title="View Known Errors/Alerts for EMS for Outlook" Link="/Content/4Outlook/C_User/Outlook_UG_ViewKnownErrorsAlerts.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS for Outlook (Legacy) User Guide" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_UseOutlookOverview_Leg.htm">
+            <TocEntry Title="Get Started With EMS for Outlook (Legacy)" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_GetStarted_Leg.htm">
+                <TocEntry Title="Microsoft Outlook, EMS for Microsoft Outlook, and EMS Web App Comparison" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_MSOutlookVEMSComp_Leg.htm" />
+            </TocEntry>
+            <TocEntry Title="Create Reservations in EMS for Microsoft Outlook (Legacy)" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateResOverview_Leg.htm">
+                <TocEntry Title="Create a Single Reservation" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateSingleRes_Leg.htm" />
+                <TocEntry Title="Create a Series Reservation" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateSeriesRes_Leg.htm" />
+                <TocEntry Title="Create a Video Conference Reservation" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateVideoConfRes_Leg.htm" />
+                <TocEntry Title="Edit or Cancel a Scheduled Event" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_EditCancelSchedEvent_Leg.htm" />
+            </TocEntry>
+            <TocEntry Title="Create a List of Favorite Rooms" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_CreateListFavRooms_Leg.htm" />
+            <TocEntry Title="Use Skype for Business in EMS Outlook" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_UseSkypeBus_Leg.htm" />
+            <TocEntry Title="Resolve Booking Conflicts" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_ResolveBookConf_Leg.htm" />
+            <TocEntry Title="View Known Errors/Alerts" Link="/Content/4Outlook/Legacy/C_User_Leg/Outlook_UG_ViewKnownErrAlert_Leg.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS for Outlook (Prior to Update 8) User Guide" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_Overview.htm">
+            <TocEntry Title="Get Started With EMS for Outlook" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_GetStarted.htm" />
+            <TocEntry Title="Reserve Space in EMS for Outlook" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ReserveSpace.htm" />
+            <TocEntry Title="Create a Video Conference Reservation" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_CreateVideoConference.htm" />
+            <TocEntry Title="Reserve Recurrent Meetings" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ReserveRecurMeetings.htm" />
+            <TocEntry Title="Cancel Events" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_CancelEvents.htm" />
+            <TocEntry Title="Change an Event" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ChangeEvent.htm" />
+            <TocEntry Title="Invite Groups" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_InviteGroups.htm" />
+            <TocEntry Title="Resolve Booking Conflicts" Link="/Content/4Outlook/PriorU8/C_User/Outlook_UG_ResolveBookConflicts.htm" />
+        </TocEntry>
+        <TocEntry Title="EMS Room Sign App (formerly Glance) Everyday User Guide" Link="/Content/D_Everyday User Guides/8_EMSRoomSignApp_UG.htm">
+            <TocEntry Title="Introduction to the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_Introduction.html" />
+            <TocEntry Title="Best Practices for Using the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_BestPracticesforUsing.html" />
+            <TocEntry Title="Get Started with the EMS Room Sign App" Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_GettingStarted.html" />
+            <TocEntry Title="Deploying the EMS Room Sign App on Tablets" Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_DeployingonTablet.html" />
+            <TocEntry Title="Set Up the EMS Room Sign App to Demo on a Desktop Browser (Update 12+)" Link="/Content/6RoomSignApp/A_44.1/C_UserGuide/RSA_UG_SettingUpRSAtoDemo.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Skype for Business Configuration Guide" Link="/Content/D_Everyday User Guides/9_EMSSkypeforBusInteg_UG.htm">
+            <TocEntry Title="Skype for Business Integration Overview" Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_SkypeForBusiness_Integration.html" />
+            <TocEntry Title="Introduction to Skype for Business Integration" Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_Introduction.html" />
+            <TocEntry Title="Configure Skype for Business" Link="/Content/13Skype/C_UserGuide/SkypeforBusiness_UserGuide_ConfigureSkypeforBusiness.html" />
+        </TocEntry>
+        <TocEntry Title="EMS Academic Planning Options in EMS Desktop Client">
+            <TocEntry Title="Use Academic Planning Options" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/AcadPlan_UG_UseAcadPlanOpt.html" />
+            <TocEntry Title="Academic Planning with EMS" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/01AcadPlan_UG_AcadPlanwithEMS.html" />
+            <TocEntry Title="Overview of the Academic Scheduling Process" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/02AcadPlan_UG_OverviewAcademicScheduling.htm" />
+            <TocEntry Title="Post Publishing Phase" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/03AcadPlan_UG_PostPublishPhase.htm" />
+            <TocEntry Title="Overview of Importing an Academic Term" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/04AcadPlan_UG_OverviewImportAcadTerm.htm" />
+            <TocEntry Title="Synchronize an Academic Term" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/05AcadPlan_UG_SynchronizeAcadTerm.htm" />
+            <TocEntry Title="Synchronize Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/06AcadPlan_UG_SynchronizeCourses.htm" />
+            <TocEntry Title="Define and Edit Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/07AcadPlan_UG_DefineEditCourses.htm" />
+            <TocEntry Title="Overview of Defining and Editing Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/08AcadPlan_UG_OverviewDefineEditCourses.htm" />
+            <TocEntry Title="Enable or Disable a Term for Define and Edit Mode" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/09AcadPlan_UG_EnableDisableTermDefineEditMode.htm" />
+            <TocEntry Title="Review and Edit Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/10AcadPlan_UG_ReviewEditCourses.htm" />
+            <TocEntry Title="Work with Shared Space" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/11AcadPlan_UG_WorkwithSharedSpaces.htm" />
+            <TocEntry Title="Identify New, Edited, or Canceled Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/12AcadPlan_UG_IdentifyNewEditedCanceledCourses.htm" />
+            <TocEntry Title="Overview of Specifying Room Preferences" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/13AcadPlan_UG_OverviewSpecifyRoomPref.htm" />
+            <TocEntry Title="Specify Room Preferences and Requirements" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/14AcadPlan_UG_SpecifyRoomPrefReq.htm" />
+            <TocEntry Title="Review and Verify Room Preferences" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/15AcadPlan_UG_ReviewVerifyRoomPref.htm" />
+            <TocEntry Title="Overview of Room Assignments and Optimization" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/16AcadPlan_UG_OverviewRoomAssignOpt.htm" />
+            <TocEntry Title="About Creating Scenarios and Optimization" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/17AcadPlan_UG_AboutCreateScenariosOpt.htm" />
+            <TocEntry Title="Create Scenarios" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/18AcadPlan_UG_CreateScenarios.htm" />
+            <TocEntry Title="Assign Rooms" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/19AcadPlan_UG_AssignRooms.htm" />
+            <TocEntry Title="Overview of Publishing an Academic Term" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/20AcadPlan_UG_OverviewPublishAcadTerm.htm" />
+            <TocEntry Title="Publish a Term" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/21AcadPlan_UG_PublishTerm.htm" />
+            <TocEntry Title="Manually Update Course Locations in the SIS" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/22AcadPlan_UG_ManualUpdateCourseLocSIS.htm" />
+            <TocEntry Title="Review Reservations and Resolve Room Assignments" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/23AcadPlan_UG_ReviewResResolveRoomAssign.htm" />
+            <TocEntry Title="Unpublish a Previously Published Term" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/24AcadPlan_UG_UnpublishPreviousPubTerm.htm" />
+            <TocEntry Title="Post-Publish Processing of Courses" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/25AcadPlan_UG_Post-PubProcCourses.htm" />
+            <TocEntry Title="Set a Final Exam Schedule" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/26AcadPlan_UG_SetFinalExamSched.htm" />
+            <TocEntry Title="Publish a Final Exam Session" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/27AcadPlan_UG_PubFinalExamSession.htm" />
+            <TocEntry Title="Search with the Academic Browser" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/28AcadPlan_UG_SearchwithAcadBrowser.htm" />
+            <TocEntry Title="Use the Academic Book" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/29AcadPlan_UG_UseAcadBook.htm" />
+            <TocEntry Title="Use the Course Navigator" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/30AcadPlan_UG_UseCourseNav.htm" />
+            <TocEntry Title="Available Actions in the Course Navigator" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/31AcadPlan_UG_AvailActionsCourseNav.htm" />
+            <TocEntry Title="Use the Search for Rooms Tool" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/32AcadPlan_UG_UseSearchRoomsTool.htm" />
+            <TocEntry Title="Generate Academic Reports" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/33AcadPlan_UG_GenerateAcadReports.htm" />
+            <TocEntry Title="Enable and Disable a Term for Set Preferences Mode" Link="/Content/8Campus/A_V44.1/C_UserGuide_AcadPl/34AcadPlan_UG_EnableDisableTermSetPrefMode.htm" />
+        </TocEntry>
     </TocEntry>
-  </TocEntry>
-  <TocEntry
-    Title="Optional Features"
-    Link="/Content/F_Optional Features/1_OptionalFeaturesHome.htm">
-    <TocEntry
-      Title="EMS API Home"
-      Link="/Content/F_Optional Features/2_EMS_API_Home.htm" />
-    <TocEntry
-      Title="EMS Floor Plan"
-      Link="/Content/F_Optional Features/3_EMS_FloorPlansHome.htm" />
-    <TocEntry
-      Title="EMS Facility Management Toolkit"
-      Link="/Content/F_Optional Features/4_EMS_Facility_Management_Toolkit_Home.htm" />
-    <TocEntry
-      Title="EMS Human Resources Toolkit"
-      Link="/Content/F_Optional Features/5_EMS_HumanResourcesToolkitHome.htm" />
-    <TocEntry
-      Title="CISCO TMS Interface"
-      Link="/Content/F_Optional Features/6_CISCO_TMS_InterfaceHome.htm" />
-    <TocEntry
-      Title="Polycom Integration"
-      Link="/Content/F_Optional Features/7_Polycom_Integration_Home.htm" />
-  </TocEntry>
-  <TocEntry
-    Title="Glossary"
-    Link="/Content/G_Glossary/1_Glossary.htm"
-    Skin="/Project/Skins/HomeSearchBar.flskn"
-    StartSection="false"
-    SectionNumberReset="continue"
-    VolumeNumberReset="same"
-    ChapterNumberReset="continue"
-    ComputeToc="false"
-    ReplaceMergeNode="false"></TocEntry>
+    <TocEntry Title="Release Notes">
+        <TocEntry Title="Release Notes V44.1" />
+        <TocEntry Title="Release Notes V44" />
+        <TocEntry Title="Release Notes V43" />
+        <TocEntry Title="Release Notes V8" />
+    </TocEntry>
+    <TocEntry Title="Integrations">
+        <TocEntry Title="Integrations" Link="/Content/E_Integrations/1_Integrations.htm">
+            <TocEntry Title="Microsoft Exchange Integration" Link="/Content/E_Integrations/2_Microsoft_Exchange_Integrations.htm" />
+            <TocEntry Title="Human Resources Information Systems (HRIS)" Link="/Content/E_Integrations/3_HumanResources (HR).htm" />
+            <TocEntry Title="Occupancy Sensors" Link="/Content/E_Integrations/4_Sensors.htm" />
+            <TocEntry Title="Video Conferencing" Link="/Content/E_Integrations/5_VideoConferencing.htm" />
+        </TocEntry>
+    </TocEntry>
+    <TocEntry Title="Optional Features" Link="/Content/F_Optional Features/1_OptionalFeaturesHome.htm">
+        <TocEntry Title="EMS API Home" Link="/Content/F_Optional Features/2_EMS_API_Home.htm" />
+        <TocEntry Title="EMS Floor Plan" Link="/Content/F_Optional Features/3_EMS_FloorPlansHome.htm" />
+        <TocEntry Title="EMS Facility Management Toolkit" Link="/Content/F_Optional Features/4_EMS_Facility_Management_Toolkit_Home.htm" />
+        <TocEntry Title="EMS Human Resources Toolkit" Link="/Content/F_Optional Features/5_EMS_HumanResourcesToolkitHome.htm" />
+        <TocEntry Title="CISCO TMS Interface" Link="/Content/F_Optional Features/6_CISCO_TMS_InterfaceHome.htm" />
+        <TocEntry Title="Polycom Integration" Link="/Content/F_Optional Features/7_Polycom_Integration_Home.htm" />
+    </TocEntry>
+    <TocEntry Title="Glossary" Link="/Content/G_Glossary/1_Glossary.htm" Skin="/Project/Skins/HomeSearchBar.flskn" StartSection="false" SectionNumberReset="continue" VolumeNumberReset="same" ChapterNumberReset="continue" ComputeToc="false" ReplaceMergeNode="false" />
 </CatapultToc>

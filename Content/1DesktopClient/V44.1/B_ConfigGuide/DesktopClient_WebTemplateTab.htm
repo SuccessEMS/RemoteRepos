@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2804" MadCap:lastWidth="1212">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Web Template Tab</h1>
+        <p>The table below provides information on configuring the Web Template tab.</p>
+        <table style="width: 100%;mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 245px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Description</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Read-only information.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Mode</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Determines how a user can make a reservation in <MadCap:variable name="General.EMS&#160;Web App" />.
+</p>
+                        <ul>
+                            <li>Request - Everyday Users can complete a simple online form requesting a
+room. Unlike the Self Serve mode, this mode does not provide
+options for the Everyday User to view real-time room availability. In
+addition, requests must be reviewed, approved, and manually
+processed into actual reservations by an <MadCap:variable name="General.EMS&#160;Desktop Client" /> user. The room
+is not taken out of inventory until this step has occurred.
+</li>
+                            <li>Self Serve - Registered Everyday Users can view real-time room
+availability (in list or grid views) and create actual reservations in the
+EMS database. Rooms can be booked in a confirmed or request
+status based on your configuration and business process.
+</li>
+                        </ul>
+                        <p>Note: You must select this option if the Everyday Users who are attached to
+this Everyday User Process Template must be able to request rooms that
+have a video conferencing feature.
+</p>
+                        <ul>
+                            <li>Service Only Request - Allows Everyday Users to request a service (for
+example, catering, A/V equipment, and so on) for a location that is
+not managed in EMS.
+</li>
+                        </ul>
+                        <p>Note: Various settings within the Everyday User Process template are
+enabled/disabled based on the selected mode.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Menu Text</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The menu text or link that an <MadCap:variable name="General.EMS&#160;Web App" /> user sees when requesting a room
+using this Everyday User Process template.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Available to New Everyday Users
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Select this option if this Everyday User Process template is to be automatically
+assigned to newly registered Everyday Users.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Enable for Mobile Device</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Select this option if this Everyday Process template is to be available (in an
+appropriate format) on a mobile device browser.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Outlook</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Enables the Everyday Process template for use with the EMS for Outlook
+Add-in.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Parent Menu</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The parent menu item on the <MadCap:variable name="General.EMS&#160;Web App" /> main menu under which the name
+of this template appears.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Reserve Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Available only for Self Serve mode. The default status that is applied to
+reservations that are booked in rooms identified as 'reserveable' on the
+Rooms tab.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Request Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Available only for Self Serve mode. The default status that is applied to
+reservations that are booked in rooms identified as 'requestable' on the
+Rooms tab.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Conflict Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Available only for Self Serve mode. The default status that is applied to
+bookings made by Everyday Users attached to this template that result in a
+conflict (the room is already booked).</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Cancel Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Available only for Self Serve mode. The default status that is applied to
+bookings that are canceled by Everyday Users who are attached to this
+template.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Rule Violation Status</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Enabled only if Outlook is selected. Used in conjunction with the EMS
+for Outlook module. If you carry out an action in the EMS for Outlook
+module that violates a category date/time restriction, then the booking is
+changed to this status.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Default Setup Type</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The setup type that is selected by default for a room search when a Everyday User who is attached to this template is reserving a room in the <MadCap:variable name="General.EMS&#160;Web App" />. The
+Everyday User can always select a different value.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Allow Invitations</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Enabled only if your organization has purchased the optional Plan a
+Meeting (PAM) module. Select this option if users who are attached to
+this template must be able to see the free/busy schedules of the
+attendees. The Everyday User can choose a date and time that is convenient
+for all attendees and then send invitations through the <MadCap:variable name="General.EMS&#160;Web App" />, which
+attendees receive and can manage through Outlook.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Allow Everyday User Personalization</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Select this option if Everyday Users must be able to use the Options feature
+to customize their settings on <MadCap:variable name="General.EMS&#160;Web App" /> pages.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Menu Sequence</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Enter a number that indicates the order in which this menu option is
+relative to other menu items that fall under the same parent menu. Items
+are ordered from lowest to highest sequence number, with the item with
+the lowest sequence number appearing first.
+</p>
+                        <p>Note: If you leave the sequence set to the default value of zero for all
+menu items, then by default, the items are displayed
+alphabetically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Available at Checkout</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">Select this option if the Everyday Users who are attached to this template
+must be able to select category resource items on the <MadCap:variable name="General.EMS&#160;Web App" /> “checkout
+page” (the last page in the Room Request process) in <MadCap:variable name="General.EMS&#160;Web App" />.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">&#160;</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">&#160;</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

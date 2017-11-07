@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1661" MadCap:lastWidth="1280">
+    <head>
+    </head>
+    <body>
+        <h1>Booking Rules Tab</h1>
+        <ol>
+            <li>Open the <span class="button">Booking Rules </span>tab.</li>
+            <li>In the <span class="button">Booking Requirements</span> pane, do the following:</li>
+        </ol>
+        <ul>
+            <li>In the <span class="button">Max. No. Bookings Allowed Per Reservation</span> field, enter the maximum number of bookings that a new reservation can contain.</li>
+            <li>In the <span class="button">Max. No. Minutes Allowed</span> field, enter the maximum number of minutes for which a new reservation can be created. (This setting is not enforced when a user edits a booking.)</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>Use the time of day and number of days or the number of hours to dictate how far in advance of an event a booking can be canceled.</li>
+        </ol>
+        <ul>
+            <li>To use a specific cutoff time, select <span class="button">Use Cancellation Cutoff Time</span>, and in the C<span class="button">utoff Time and Number of Days</span> fields, specify a time of day and a number of days, respectively. For example, if you enter 3 p.m. and one day, then cancellation must take place before 3 <span style="font-variant: small-caps;">p.m.</span> on the day before the event.</li>
+            <li>To use the number of hours instead of a specific time as a cutoff, clear <span class="button">Use Cancellation Cutoff Time</span> and in the <span class="button">Cancellation Cutoff Hours</span> field, specify a number of hours. For example, if you enter 24, then bookings cannot be canceled less than 24 hours before they are to take place, regardless of the time of day.</li>
+        </ul>
+        <ol start="4">
+            <li>Optionally, select one or both of the following:</li>
+        </ol>
+        <ul>
+            <li><span class="button">Cancel Booking in Progress</span>—An Everyday User can cancel a booking that is currently in progress. If you select this option, then the Cancel Booking in Progress Status option is enabled. The status that you select here is applied to bookings that an Everyday User cancels after the booking is already in progress.</li>
+            <li><span class="button">End Booking in Progress</span>—An Everyday User can end a booking that is in progress early, which makes the room available to other Everyday Users.</li>
+        </ul>
+        <ol start="5">
+            <li>In the fields in the <span class="button">Booking Days</span> panel, indicate how far into the future bookings can be made and how much lead time is required to make a booking.</li>
+        </ol>
+        <ul>
+            <li>If you select <span class="button">Range of Days</span> from the first dropdown menu, then you must also specify a value for Only Allow New Bookings within Range of This Many Days. If you select Specific Date, then you must specify a value for Only Allow New Bookings Prior to This Date to dictate the future range.</li>
+            <li>The second dropdown menu sets the lead time requirement. If you choose Range of Days, you must indicate a cutoff time or cutoff hours as you did for cancellations. If you choose Specific Date, you must select a date in the Only Allow New Bookings After This Date field.</li>
+        </ul>
+        <ol start="6">
+            <li>Optionally, to restrict bookings for reservations made in <MadCap:variable name="General.EMS&#160;Web App" />, enter a value for one or both of the following:</li>
+        </ol>
+        <ul>
+            <li><span class="button">Max. No. Bookings Per Day</span>—Restricts the maximum number of bookings that are allowed per day. The default value of zero indicates that no restrictions are imposed.</li>
+            <li><span class="button">Max. No. Bookings per Date Range</span>—Restricts the maximum number of bookings that are allowed per date range. The default value of zero indicates that no restrictions are imposed.</li>
+        </ul>
+        <ol start="7">
+            <li>Continue with any other configuration for the templates as needed; otherwise, click <span class="button">OK </span>to save the changes to the template. For an Everyday User to be able to view and use this template, you must assign the user to the template. </li>
+        </ol>
+    </body>
+</html>

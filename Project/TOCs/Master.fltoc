@@ -379,33 +379,72 @@
       Title="EMS Desktop Client Configuration Guide"
       Link="/Content/B_Configuration Guides/2_EMS_Desktop_Client_CG.htm">
       <TocEntry
-        Title="Configuration &gt; Facililties">
+        Title="Authentication Options for EMS Desktop Client"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AuthenticationOptions.html" />
+      <TocEntry
+        Title="Configuration &gt; Facililties"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFacil.html">
         <TocEntry
-          Title="Configure Rooms" />
+          Title="Configure Rooms"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigRooms.html" />
         <TocEntry
-          Title="Configure Buildings" />
+          Title="Configure Buildings"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuilding.html" />
         <TocEntry
-          Title="Configure Building Hours" />
+          Title="Configure Building Hours"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuildingHours.html" />
         <TocEntry
-          Title="Configure Areas" />
+          Title="Configure Areas"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigAreas.html" />
         <TocEntry
-          Title="Configure Room Types"></TocEntry>
+          Title="Configure Room Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigRoomType.html"></TocEntry>
         <TocEntry
-          Title="Configure Setup Types" />
+          Title="Configure Setup Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigSetupType.html" />
         <TocEntry
-          Title="Configure Features" />
+          Title="Configure Features"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFeatures.html" />
         <TocEntry
           Title="Configure Floors"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFloors.html" />
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFloors.html"></TocEntry>
         <TocEntry
-          Title="Configure Floor Plan Diagrams" />
+          Title="Configure Floor Plans"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFloorPlans.html" />
         <TocEntry
-          Title="Configure Floor Plan Indicators" />
-        <TocEntry
-          Title="Configure Public Views" />
+          Title="Configure Public Views"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigPublicViews.html" />
       </TocEntry>
       <TocEntry
-        Title="Configuration &gt; Resources"></TocEntry>
+        Title="Configuration &gt; Resources">
+        <TocEntry
+          Title="Overview of Configuring Resources"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverviewConfigRes.html" />
+        <TocEntry
+          Title="Categories, Resources, Services - What's the Difference?"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_CategoriesResourcesServices_WhatsDiff.htm" />
+        <TocEntry
+          Title="Configure Services for a Category"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigureServicesforCat.htm"></TocEntry>
+        <TocEntry
+          Title="Configure Groupings for a Resource"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigGroupingsResource.html" />
+        <TocEntry
+          Title="Configure Resources for a Category"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html" />
+        <TocEntry
+          Title="Import Resources for a Category" />
+        <TocEntry
+          Title="Configure Multiple Resources (Resource Configuration Wizard)" />
+        <TocEntry
+          Title="Define Production Areas and Production Items for a Catering Resource" />
+        <TocEntry
+          Title="Define Resource Selections and Selection Items" />
+        <TocEntry
+          Title="Configure Pricing for a Resource in the Edit Pricing Window" />
+        <TocEntry
+          Title="Export Pricing Information for a Resource" />
+      </TocEntry>
       <TocEntry
         Title="Configuration &gt; Billing">
         <TocEntry
@@ -490,29 +529,41 @@
             Title="Web Template Tab"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_WebTemplateTab.htm" />
           <TocEntry
-            Title="Booking Rules Tab" />
+            Title="Booking Rules Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_BookingRulesTab.htm" />
           <TocEntry
-            Title="Defaults Tab" />
+            Title="Defaults Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_DefaultsTab.htm" />
           <TocEntry
-            Title="Video Conference Tab" />
+            Title="Video Conference Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_VCtab.htm" />
           <TocEntry
-            Title="Rooms Tab" />
+            Title="Rooms Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_RoomsTab.htm" />
           <TocEntry
-            Title="Categories Tab" />
+            Title="Categories Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_CategoryTab.htm" />
           <TocEntry
-            Title="Event Types Tab" />
+            Title="Event Types Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_EventTypeTab.htm" />
           <TocEntry
-            Title="LDAP Groups Tab" />
+            Title="LDAP Groups Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_LDAPGroupTab.htm" />
           <TocEntry
-            Title="User Defined Fields Tab" />
+            Title="User Defined Fields Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_UDFTab.htm" />
           <TocEntry
-            Title="Parameters Tab" />
+            Title="Parameters Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ParametersTab.htm" />
           <TocEntry
-            Title="Web Text Tab" />
+            Title="Web Text Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_WebTextTab.htm" />
           <TocEntry
-            Title="Menu Text Translations Tab" />
+            Title="Menu Text Translations Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_MenuTextTab.htm" />
           <TocEntry
-            Title="Terms and Conditions Tab" />
+            Title="Terms and Conditions Tab"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_TermsConditionsTab.htm" />
         </TocEntry>
         <TocEntry
           Title="Configure Everyday User Security Templates" />
@@ -520,6 +571,9 @@
           Title="Configure Web App Menus" />
         <TocEntry
           Title="Configure Help Text" />
+        <TocEntry
+          Title="Configure Web Text"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigWebText.htm" />
         <TocEntry
           Title="Configure Language Translations" />
       </TocEntry>
@@ -530,6 +584,8 @@
         <TocEntry
           Title="Configure Kiosk Menus" />
       </TocEntry>
+      <TocEntry
+        Title="New entry" />
     </TocEntry>
     <TocEntry
       Title="EMS Web App Configuration Guide"

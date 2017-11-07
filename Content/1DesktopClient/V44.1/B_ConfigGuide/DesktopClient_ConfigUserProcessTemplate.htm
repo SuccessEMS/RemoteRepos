@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2344" MadCap:lastWidth="1280">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2619" MadCap:lastWidth="1123">
     <head>
     </head>
     <body>
@@ -7,32 +7,60 @@
         <p>Note:&#160;"Web Process Templates" Are Now Called "Everyday User Process Templates"</p>
         <p>If you have previously used older versions of EMS, you may know booking templates as "Web Process Templates." These are now called "Everyday User Process Templates." These templates define user access and booking behavior in EMS Web App, EMS Mobile App, and EMS for Outlook. Similarly, you may know permissions templates, which control what an Everyday User is able to do, as "Web Security Templates." These are now called "Everyday User Security Templates."</p>
         <ol>
-            <li>On the EMS menu bar, click Configuration &gt; Everyday Applications &gt; Everyday User Process Templates. The Everyday User Process Templates window opens on the Everyday User Template tab.</li>
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Everyday Applications</span> &gt; <span class="button">Everyday User Process Templates</span>. The Everyday User Process Templates window opens on the Everyday User Template tab.</li>
         </ol>
-        <p>&#160;</p>
         <p>
             <img src="Images/DC_CG_EverydayUserProcTemp.png" />
         </p>
         <p>This window lists the process templates that have been defined for your EMS Web App implementation. The pre-defined user called "(unauthenticated user)" is included in all EMS implementations; you use this template to manage settings for anonymous or “guest” users. For a user to be able to view and use this template, you must assign the user to the template. See Configuring Users.</p>
         <p>Tip: To view all everyday user process templates in your EMS database, regardless of status, under Show, click Inactive.</p>
         <ol MadCap:continue="true">
-            <li>Click New. The Everyday User Process Template dialog box displays. Enter the information for the new everyday user process template as needed.</li>
+            <li>Click <span class="button">New</span>. The Everyday User Process Template dialog box displays. Enter the information for the new everyday user process template as needed.</li>
             <li>	Enter the information for the new web process template as needed. See:</li>
         </ol>
-        <p>•	Web Template tab</p>
-        <p>•	Booking Rules tab</p>
-        <p>•	Defaults tab</p>
-        <p>•	Video Conference tab</p>
-        <p>•	Rooms tab</p>
-        <p>•	Categories tab</p>
-        <p>•	Event Types tab</p>
-        <p>•	LDAP Groups tab</p>
-        <p>•	User Defined Fields tab</p>
-        <p>Parameters tab</p>
-        <p>Web Text tab</p>
-        <p>Menu Text Translations tab</p>
-        <p>Terms and Conditions tab</p>
-        <p>&#160;</p>
-        <p>&#160;</p>
+        <ul>
+            <li>
+                <MadCap:xref href="DesktopClient_WebTemplateTab.htm">Web Template Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_BookingRulesTab.htm">Booking Rules Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_DefaultsTab.htm">Defaults Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_VCtab.htm">Video Conference Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_RoomsTab.htm">Rooms Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_CategoryTab.htm">Category Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_EventTypeTab.htm">Event Type Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_LDAPGroupTab.htm">LDAP&#160;Groups Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_UDFTab.htm">User-Defined Fields (UDF)&#160;Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_ParametersTab.htm">Parameters Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_WebTextTab.htm">Web Text Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_MenuTextTab.htm">Menu Text Translations Tab</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_TermsConditionsTab.htm">Terms and Conditions Tab</MadCap:xref>
+            </li>
+        </ul>
+        <p>Warning:&#160;The cache must be cleared in the <MadCap:variable name="General.EMS&#160;Web App" /> whenever parameter changes are made in the <MadCap:variable name="General.EMS&#160;Desktop Client" />.</p>
+        <p>Tip:&#160;The Request Status field is used to configure booking templates for the "Request/Approval" booking model, in which everyday users request space and administrative users approve those requests (using the Dashboard menu icon). For example, if you set this field to Request, then the booking will not be finalized until an administrator has approved it.</p>
+        <p>If you are configuring a template for booking desks and workspaces or "hoteling," see Creating Templates for Desks and Workspaces. </p>
     </body>
 </html>

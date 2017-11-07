@@ -1,38 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="6" MadCap:lastHeight="575.7333" MadCap:lastWidth="875" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1844" MadCap:lastWidth="1123" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Configuring Room Types</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Room Types</h1>
-        <p class="Body">A<em> room type</em> is the class or category of the room, for example a meeting room, an auditorium, a workspace, a multi-purpose room, and so on. Users can use room types&#160;to filter search results.</p>
-        <p class="StepNumberBegin">1. On the {{product_dtc}} menu bar, click Configuration &gt; Facilities &gt; <strong>Room Types</strong>.&#160;The Room Types window opens. This window lists all the room types that are currently configured in your {{product}} database.</p>
-        <p class="FigureCaptionColumn mt-indent-1"><em>Room Types window</em>
+        <h1 class="mt-export-title">Configure Room Types</h1>
+        <p class="Body">A<em> <span class="button">room type</span></em> is the class or category of the room, for example a meeting room, an auditorium, a workspace, a multi-purpose room, and so on. Users can use room types&#160;to filter search results.</p>
+        <ol>
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> menu bar, click Configuration &gt; Facilities &gt; <strong>Room Types</strong>.&#160;The Room Types window opens. This window lists all the room types that are currently configured in your <MadCap:variable name="General.Product" /> database.</li>
+        </ol>
+        <p class="FigureCaptionColumn mt-indent-1"><em>Room Types Window</em>
         </p>
         <p class="AnchorFigure">
-            <img border="0" class="internal" />
+            <img border="0" class="internal" src="Images/DC_CG_ConfigRoomTypes1.png" />
         </p>
-        <p class="StepNumberContinued">2. Click <strong>New</strong>.&#160;The Room Type dialog box opens.</p>
-        <p class="FigureCaptionColumn">3. In the <strong>Room Type</strong> field, enter a name or description for the new room type.&#160;The room type can be a maximum of 50 characters, including spaces.</p>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;You Can Use&#160;"Override" Rooms to Classify Un-Configured Space</strong>
-                        </p><pre class="script" mt-export-translate="no" xml:space="preserve">
-wiki.page("/Knowledge_Base/FAQs/Why_Does_My_Reservation_Have_an_Override_Room%3F")</pre>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="StepNumberContinued">4. If you want {{product_webapp}} users to see this room type when they are searching for available space, leave <strong>Available to Everyday Users</strong>&#160;selected.</p>
-        <p class="StepNumberContinued">5. Click <strong>OK</strong>.&#160;The Room Type dialog box closes. You return to the Room Types window with the newly configured room type automatically selected.</p>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Room Type</a><a>Configuring Rooms</a>
-        </p>
+        <ol MadCap:continue="true">
+            <li>Click <strong>New</strong>.&#160;The Room Type dialog box opens.</li>
+            <li>In the <strong>Room Type</strong> field, enter a name or description for the new room type.&#160;The room type can be a maximum of 50 characters, including spaces.</li>
+            <li>If you want <MadCap:variable name="General.EMS&#160;Web App" /> users to see this room type when they are searching for available space, leave <strong>Available to Everyday Users</strong>&#160;selected.</li>
+            <li>Click <strong>OK</strong>.&#160;The Room Type dialog box closes. You return to the Room Types window with the newly configured room type automatically selected.</li>
+        </ol>
+        <p>Tip: You Can Use "Override" Rooms to Classify Un-Configured Space</p>
+        <p>An Override Room is used in EMS to loosely define useable space which is not formally configured. For example, a building may have private offices which are not configured as spaces available for public use, but you may need to select such a space for an attendee who is participating remotely in a video conference. In order to provide company employees the ability to schedule meetings in these private rooms, Override Rooms can be configured in EMS.</p>
+        <h2>Configure an Override Room</h2>
+        <ol>
+            <li>Name the space in a way that indicates an Override Room (for example, "Override Area1”).</li>
+            <li>Classify the room as "Override Description.”</li>
+        </ol>
+        <p>In the example above, "Override Area 1” can be used repeatedly to serve as a placeholder for any meeting request which will occur in an un-configured space.</p>
+        <p>For example, on Monday a user makes a reservation for "Override Area 1” and names it "Meeting in Mike Thompson’s Office,” and on Wednesday another user makes a reservation for "Override Area 1” and names it "Meet Guests in Lobby Reception Area Prior to Building Tour” EMS does not track availability for events booked in Override Rooms; however, EMS reports on events that are scheduled in an override room as it would for an event scheduled for any other room.</p>
     </body>
 </html>

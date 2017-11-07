@@ -1,15 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3760" MadCap:lastWidth="1123">
     <head><title mt-export-translate="no">Configuring Groupings for a Resource</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Groupings for a Resource</h1><pre class="script" mt-export-translate="no" xml:space="preserve">wiki.page("EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/030_Configuring_Groupings_for_a_Resource");</pre>
-        <br />
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a>
+        <h1 class="mt-export-title">Configuring Groupings for a Resource</h1>
+        <p>Within a category, you can organize resources by <span class="button">Groupings</span>. For example, you might configure Beverages, Entrees, and Desserts groupings for a Food Service category. The Beverage grouping might contain resources such as soda and coffee, the Entrees grouping might contain resources such as fish and beef, and so on. You can configure groupings for a category at the time that you are configuring resources for the category, or you can carry out the configuration as a separate activity.</p>
+        <ol>
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Resources</span>. A list of all the categories that are currently configured in your EMS database and for which you can configure resources opens.</li>
+            <li>Select the category for which you are configuring the grouping. The Resources window opens. This window lists all the resources that are currently configured in your EMS database for the selected category and that have a status of Active.</li>
+        </ol>
+        <p>Resources Window</p>
+        <p>
+            <img src="Images/DC_CG_ConfigGroupRes1.jpg" />
         </p>
+        <ol MadCap:continue="true">
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul>
+            <li>To view all resources for the category in your EMS database, regardless of status, under Show, click Inactive.</li>
+            <li>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string.</li>
+        </ul>
+        <ol start="4">
+            <li>Click <span class="button">Groupings</span>. The Groupings window opens. This window lists all the groupings that are currently configured in your EMS database for the selected category.</li>
+        </ol>
+        <p>Groupings Window</p>
+        <p>
+            <img src="Images/DC_CG_ConfigGroupRes2.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="button">New</span>. The Grouping dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigGroupRes3.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>In the Grouping field, enter a name or description for the new grouping(maximum 50 characters, including spaces).</li>
+            <li>In the Sequence field, enter a number that determines the order in which the groupings are displayed in EMS Web App. Groupings are ordered from lowest to highest sequence number, with the grouping with the lowest sequence number being displayed first. If you leave the sequence set to the default value of zero for all groupings, then by default, the groupings are displayed alphabetically.</li>
+            <li>Click <span class="button">OK</span>. The Grouping dialog box closes. You return to the Grouping window with the newly configured grouping automatically selected.</li>
+            <li>Click <span class="button">Close</span>. The Grouping dialog box closes. The Resources dialog box remains open.</li>
+            <li>Optionally, see Configuring Resources for a Category.</li>
+        </ol>
     </body>
 </html>

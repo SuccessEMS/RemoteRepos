@@ -1,12 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="4170" MadCap:lastWidth="1123">
     <head><title mt-export-translate="no">Configuring Field Behavior for Billing Reference and PO Numbers</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Field Behavior for Billing Reference and PO Numbers</h1><pre class="script" mt-export-translate="no" xml:space="preserve">
-wiki.page("/Knowledge_Base/Establishing_Billing_Reference_and_PO_Behavior")</pre>
-<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+        <h1 class="mt-export-title">Configure Field Behavior for Billing Reference and PO Numbers</h1>
+        <p>Billing Reference and PO numbers can be added to rooms and services. As an Admin, you can customize the behavior of these fields and when and where they appear and are required at many levels.</p>
+        <p>The lowest level where you set Billing Reference and PO field behavior (All Reservations, Booking Templates, Rooms, Services) overrides other settings (click to expand).</p>
+        <p>For example, if you set behavior for a room, it will override settings from a booking template. This ensures that the room billing behavior is not changed by the booking template, so you can always charge for a special room.</p>
+        <p>
+            <img src="Images/DC_Config_ConfigEverydayUserApp/DC_CG_ConfigFieldBehav_1.jpg" />
+        </p>
+        <p>From the <MadCap:variable name="General.EMS&#160;Desktop Client" />, you can set parameters for all reservations and for each booking template to control whether these fields are required, validated, and appear to users. You can also configure specific rooms and categories to prompt users to enter values in these fields. For example, you could globally set the Billing Reference field to appear for all reservations in your system, but then you could also set one booking template, a room and a few service categories to also prompt the user for PO numbers. Your settings for the booking template would override the global settings, and the prompts for the room and service categories would override both the global setting and the booking template setting.</p>
+        <h2><a name="GloballySetBehavior"></a>Globally Set Behavior for All Reservations</h2>
+        <p>You can set global parameters for Billing Reference and PO Number field behavior as shown below (Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab):</p>
+        <p>Tip:&#160;These settings default to "No."</p>
+        <p>
+            <img src="Images/DC_Config_ConfigEverydayUserApp/DC_CG_ConfigFieldBehav_2.jpg" />
+        </p>
+        <h2><a name="SetBehavior"></a>Set Behavior for a Booking Template</h2>
+        <p>You can set behavior for Billing Reference and PO Number fields for a specific template when you configure the template, which will override settings at the Global level. These settings default to "No."</p>
+        <ol>
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Everyday Applications</span> &gt; <span class="button">Everyday User Process Templates</span>.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_Config_ConfigEverydayUserApp/DC_CG_ConfigFieldBehav_3.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>The Everyday User Process Templates window opens on the Everyday User Template tab. Select <span class="button">New </span>or select a template and click <span class="button">Edit</span>.</li>
+            <li>
+                <p>From the screen that presents, use the parameters highlighted below to control field behavior.</p>
+            </li>
+        </ol>
+        <p>
+            <img src="Images/DC_Config_ConfigEverydayUserApp/DC_CG_ConfigFieldBehav_4.jpg" />
+        </p>
+    </body>
 </html>

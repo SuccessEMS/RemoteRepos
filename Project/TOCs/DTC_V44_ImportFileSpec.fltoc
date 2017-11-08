@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Import File Specifications" Link="/Content/DTC_V44_ImportFileSpec/Import File Specifications.htm" />
+    <TocEntry Title="Holiday Import File Specification" Link="/Content/DTC_V44_ImportFileSpec/Holiday Import File Specification.htm" />
+    <TocEntry Title="Room Import File Specification" Link="/Content/DTC_V44_ImportFileSpec/Room Import File Specification.htm" />
+    <TocEntry Title="Resource Import File Specification" Link="/Content/DTC_V44_ImportFileSpec/Resource Import File Specification.htm" />
+    <TocEntry Title="Group Import File Specifications" Link="/Content/DTC_V44_ImportFileSpec/Group Import File Specifications.htm" />
+    <TocEntry Title="Reservation Import File Specifications" Link="/Content/DTC_V44_ImportFileSpec/Reservation Import File Specifications.htm" />
+    <TocEntry Title="Course Schedule Import File Specifications" Link="/Content/DTC_V44_ImportFileSpec/Course Schedule Import File.htm" />
+    <TocEntry Title="Importing Spreadsheets" Link="/Content/DTC_V44_ImportFileSpec/Importing Spreadsheets.htm" />
+</CatapultToc>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Core Configuration - Booking Elements" />
+  <TocEntry
+    Title="Configuring Categories" />
+  <TocEntry
+    Title="Configuring Departments" />
+  <TocEntry
+    Title="Configuring Statuses" />
+  <TocEntry
+    Title="Configuring Notification Rules" />
+  <TocEntry
+    Title="Configuring Group Notification Rules" />
+  <TocEntry
+    Title="Configuring Room Card Formats" />
+  <TocEntry
+    Title="Configuring Calendar Formats" />
+  <TocEntry
+    Title="Configuring Reservation Wizard Templates" />
+  <TocEntry
+    Title="Configuring Check-in Notification Rules (Excludes Professional)" />
+  <TocEntry
+    Title="Types of Notification Rules" />
+  <TocEntry
+    Title="System Administration Configuration – Settings" />
+  <TocEntry
+    Title="Editing System Parameters" />
+  <TocEntry
+    Title="Importing Registration Information" />
+  <TocEntry
+    Title="Configuring the Confirmation Email Subject Line" />
+  <TocEntry
+    Title="Configuring Email Settings" />
+  <TocEntry
+    Title="Configuring Required Fields in the Reservation Wizard" />
+  <TocEntry
+    Title="Core Configuration - Groups and Contacts" />
+  <TocEntry
+    Title="Configuring Groups" />
+  <TocEntry
+    Title="Configuring Additional Information for a Group" />
+  <TocEntry
+    Title="Configuring Contacts" />
+  <TocEntry
+    Title="Editing Group Information" />
+  <TocEntry
+    Title="Importing Groups" />
+  <TocEntry
+    Title="Core Configuration – Billing" />
+  <TocEntry
+    Title="Overview of Billing in EMS" />
+  <TocEntry
+    Title="Configuring Rate Schedules" />
+  <TocEntry
+    Title="Exporting Pricing Information for Billable Items (Rooms or Resources)" />
+  <TocEntry
+    Title="Configuring Pricing Plans" />
+  <TocEntry
+    Title="Configuring Calculations" />
+  <TocEntry
+    Title="Configuring Accounts" />
+  <TocEntry
+    Title="Configuring Payment Types" />
+  <TocEntry
+    Title="Configuring Sales Categories" />
+  <TocEntry
+    Title="Configuring Billing Reference and PO Numbers" />
+  <TocEntry
+    Title="Configuring Currencies" />
+</CatapultToc>

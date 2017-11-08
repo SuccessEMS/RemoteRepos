@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Overview of Billing in EMS</h1>
+        <p>In EMS,&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/010_Overview_of_Billing_in_EMS#RTF526174655f7363686564756c"><span class="Hyperlink">rate schedules</span></a>&#160;and&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/010_Overview_of_Billing_in_EMS#RTF50726963696e675f706c616e"><span class="Hyperlink">pricing plans</span></a>&#160;allow you to define the pricing for your resources and rooms so that the pricing is automatically applied to the resources or rooms when a reservation is made.</p>
+        <h2 class="Heading2">Rate Schedules</h2>
+        <p>A&#160;rate schedule&#160;is a pricing sheet that lists&#160;prices for billable items in your EMS database. For example, if your organization is an academic organization, then at the most basic of levels, you would configure three different rate schedules for the three primary groups that book events at your facilities—an Internal group (students, faculty, staff, and so on), an External group (outside organizations that are not affiliated with your organization in any way), and an Alumni group. These rate schedules could detail the prices for such things as the room charge, A/V equipment charges, catering charges, and so on.</p>
+        <p>Rate Schedule example</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 184px;" alt="emssg_CoreConfigurationBilling_image001.png" />
+        </p>
+        <p>Four factors affect how pricing is applied for a rate schedule</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">Pricing method (flat rate, hourly rate, and so on)</li>
+            <li style="list-style-type: disc;">Calculations (taxes, gratuities, and so on)</li>
+            <li style="list-style-type: disc;">Discount percentage</li>
+            <li style="list-style-type: disc;">Minimum/maximum charge</li>
+        </ul>
+        <p>You specify the pricing method, and if applicable, the discount percentage, and the minimum and maximum charges when you assign the prices to billable items based on your rate schedules. You can assign calculations directly to a category, a group, a group type, a resource, or a room or you can assign calculations through pricing plans. (See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/010_Overview_of_Billing_in_EMS#Calculations" title="Overview of Billing in EMS"><span class="Hyperlink">Calculations</span></a>)</p>
+        <h3 class="Heading3">Rate Schedules and Billable Items (rooms and resources)&#160;</h3>
+        <p>After you define your organization’s rate schedules, you have three options for&#160;manually&#160;assigning the prices to billable items (rooms and resources) based on these schedules:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>During the configuration of a room or resource. When you are configuring a room or resource, the configuration dialog box contains a Pricing tab. This tab lists all the rate schedules that are currently configured in your EMS database. You can specify the pricing method for the billable item that you are configuring for each rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms" title="Configuring Rooms"><span class="Hyperlink">Configu</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms"><span class="Hyperlink">ring Rooms</span></a>&#160;and&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category"><span class="Hyperlink">Configuring Resources for a Category</span></a>.)</li>
+            <li>After all necessary rooms and resources are configured. Both the Rooms window and the Resources window contain a Pricing button. You can click Pricing to open an Edit Pricing window. You can use the options on this window to specify the pricing method for the billable items (rooms and resources) for a selected rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms" title="Configuring Rooms"><span class="Hyperlink">Configu</span></a><a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms" title="Configuring Rooms"><span class="Hyperlink">ring Rooms</span></a>&#160;and&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category"><span class="Hyperlink">Configuring Resources for a Category</span></a>.)</li>
+            <li>Where rate schedules are defined. The Rate Schedules window has a Pricing button. After you have defined a rate schedule, you can select a rate schedule in the Rate Schedules window and click Pricing to open an Edit Pricing window. You can use the options on this window to specify the pricing method for every billable item for the rate schedule. You can also specify a discount percentage for the item, a minimum charge for the item, a maximum charge for the item, or any combination of these options. (See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/020_Configuring_Rate_Schedules" title="Configuring Rate Schedules"><span class="Hyperlink">Configuring Rate Schedules</span></a>.)</li>
+        </ul>
+        <h2 class="Heading2"><a name="Calculations"></a><a href="https://success.emssoftware.com/EMS_V44.Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" title="EMS_V44.Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations">Calculations</a>&#160;</h2>
+        <p>Calculations&#160;are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. A calculation can be applied to a resource item every time a group uses the item, or the calculation can be applied only when a particular pricing plan is used for a group’s reservation. For a calculation to be applied&#160;every time&#160;a group uses a resource item, the calculation must be defined not only for the resource item, but also, for the group that is using the item. For a calculation to be applied to a resource item on as-needed basis, then you must use pricing plans.</p>
+        <h2 class="Heading2"><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/030_Configuring_Pricing_Plans" title="Configuring Pricing Plans">Pricing Plans</a>&#160;</h2>
+        <p>Concept:&#160;A&#160;pricing plan&#160;bundles rate schedules. When your users apply a pre-configured pricing plan to a reservation, EMS automatically calculates the pricing for the billable items that are reserved for an event.</p>
+        <p>You can use a pricing plan to customize the pricing for a specific group type or even a specific group. When you configure a group type or group, you can assign a default pricing plan to the group type or group. When your users book a reservation for the group type or group, then the default pricing plan is applied to the reservation and EMS automatically calculates the pricing for the billable items that are reserved for the group’s reservation. For example, consider the following rate schedules:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Rate Schedule</p>
+                    </th>
+                    <th>
+                        <p>Charges</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Internal</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge - $10/hour (event time). 100% discount.</p>
+                        <p>• A/V (for example, overhead projector) - $20/unit. 100% discount.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge - $10/hour (event time). $50 minimum.</p>
+                        <p>• A/V (for example, overhead projector) - $20/unit.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Alumni</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge - $10/hour (event time). $50 minimum. 25% discount.</p>
+                        <p>• A/V (for example, overhead projector) - $20/unit. 25% discount.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Standard</p>
+                    </td>
+                    <td>
+                        <p>• Catering (for example, coffee) - $5/unit. 5% sales tax.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Based on the rate schedules that are defined above, you would configure your pricing plans&#160;as shown in the figure below.</p>
+        <p>Pricing Plans example</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 290px;" alt="emssg_CoreConfigurationBilling_image002.png" />
+        </p>
+        <p>Note that these three pricing plans do not make a distinction between External for Profit groups and External for Non-Profit groups; however, if you want to customize the pricing so that External for Profit groups pay sales tax, but External Not For Profit groups do not, you could configure the following pricing plans:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Pricing Plan</p>
+                    </th>
+                    <th>
+                        <p>Billable Item</p>
+                    </th>
+                    <th>
+                        <p>Rate Schedule</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Internal</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge</p>
+                        <p>• A/V</p>
+                        <p>• Catering</p>
+                    </td>
+                    <td>
+                        <p>• Internal</p>
+                        <p>• Internal</p>
+                        <p>• Standard</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External for Profit</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge</p>
+                        <p>• A/V</p>
+                        <p>• Catering</p>
+                    </td>
+                    <td>
+                        <p>• External</p>
+                        <p>• External</p>
+                        <p>• Standard</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External Not For Profit</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge</p>
+                        <p>• A/V</p>
+                        <p>• Catering</p>
+                    </td>
+                    <td>
+                        <p>• Alumni</p>
+                        <p>• Internal</p>
+                        <p>• Standard (No Tax)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Alumni</p>
+                    </td>
+                    <td>
+                        <p>• Room Charge</p>
+                        <p>• A/V</p>
+                        <p>• Catering</p>
+                    </td>
+                    <td>
+                        <p>• Alumni</p>
+                        <p>• Internal</p>
+                        <p>• Standard</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>A pricing plan is also required to apply calculations correctly to invoiced items. A calculation can be applied to a resource item every time a group uses the item, or the calculation can be applied only when particular pricing plan is used for a group’s reservation. For a calculation to be applied&#160;every time&#160;a group uses a resource item, the calculation must be defined not only for the resource item, but also for the group that is using the item. For a calculation to be applied to a resource item on as needed basis, then you must use pricing plans. When you are configuring a pricing plan, you have the option to:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Have no calculations associated with the pricing plan.</li>
+            <li>Add charges&#160;in addition&#160;to what a group already pays.</li>
+            <li>Override a group’s set charges with different charges.</li>
+        </ul>
+        <p>Also, the pricing for a billable item is determined at the time that the item is reserved for an event. If your users do not select a pricing plan at the time they are making a reservation, no pricing information is retrieved. If your users select a pricing plan after the fact, or if they change the pricing plan for a reservation, then they can update the prices of the billable items that are reserved for the event only by using the Update Pricing function in the Navigator.</p>
+    </body>
+</html>

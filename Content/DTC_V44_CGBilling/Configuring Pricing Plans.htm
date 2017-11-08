@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Pricing Plans</h1>
+        <p>A&#160;pricing plan&#160;bundles different&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/020_Configuring_Rate_Schedules" title="Configuring Rate Schedules"><span class="Hyperlink">rate schedules</span></a>. When you&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies#RTF436f6e6669677572696e675f"><span class="Hyperlink">configure</span></a>&#160;a pricing plan, you can not only specify different rates schedules for the billable items in the plan, but also you can specify the calculation that is to be applied to a billable item when the plan is used for a group’s reservation. After you configure pricing plans, you can assign a default plan to a group’s record. Whenever a user makes a reservation for the group, the default pricing plan is displayed automatically in the Pricing Plan field on the Billing tab of the Reservation Wizard.</p>
+        <p>Tip:&#160;To help you keep track of your pricing plans and how they are used (for instance, to keep track of all your discounts),&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/140_Exporting_Pricing_Information_for_a_Room" title="Exporting Pricing Information for a Room"><span class="Hyperlink">export your pricing plans</span></a>&#160;periodically.&#160;</p>
+        <h2 class="Heading2">Configuring Pricing Plans&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Billing &gt;&#160;Pricing Plans.&#160;The Pricing Plans window opens. This window lists all the pricing plans that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emssg_CoreConfigurationBilling_image008.png" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Optionally, to view all pricing plans, regardless of status, under Show, click Inactive.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.&#160;The Pricing Plan dialog box opens. The Pricing Plan tab is the active tab.&#160;&#160;&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 352px;" alt="emssg_CoreConfigurationBilling_image009.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>In the Pricing Plan field, enter a name or description for the new plan (maximum of 30 characters, including spaces).</li>
+            <li>Optionally, on the Calculation Type dropdown list, select the type of calculation that is to be applied to a resource when the plan is used for a group’s reservation and then go to&#160;Step 5; otherwise, go to&#160;Step 6.</li>
+        </ol>
+        <ul style="list-style-type: circle;margin-left: 90pt;">
+            <li style="list-style-type: circle;">In Addition to Group—The group must pay the calculations that are set for the billable items in the pricing plan&#160;in addition&#160;to any calculations that it must always pay.</li>
+            <li style="list-style-type: circle;">Override Group—Override any calculations that are defined at the Group level and pay what is defined for the billable items in the pricing plan.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Open the Calculations tab, and on the Available list select the calculation, or CTRL-click to&#160;select the multiple calculations that are to always apply to this pricing plan, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>If the appropriate calculation is not available, you can configure it.&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" title="Configuring Calculations"><span class="Hyperlink">Configuring Calculations</span></a>.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Open the Rate Schedules tab, and for each resource category (including Room Charge) that is to have its price set by this pricing plan, double-click in the Rate Schedule field, and then select the appropriate rate schedule from the dropdown list.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>If you do not select a rate schedule for a resource category, or for the Room Charge, then the pricing for these items is set to zero in the pricing plan.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Click&#160;OK.&#160;The Pricing Plan dialog box closes. You return to the Pricing Plans window with the newly configured pricing plan automatically selected.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Core Configuration - Booking Elements"
+    Link="/Content/DTC_V44_CGBookElements/Core Configuration Booking.htm" />
+  <TocEntry
+    Title="Configuring Categories"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Categories.htm" />
+  <TocEntry
+    Title="Configuring Departments"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Departments.htm" />
+  <TocEntry
+    Title="Configuring Statuses"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Statuses.htm" />
+  <TocEntry
+    Title="Configuring Notification Rules"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Notification Rules.htm" />
+  <TocEntry
+    Title="Configuring Group Notification Rules"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Group Notification.htm" />
+  <TocEntry
+    Title="Configuring Room Card Formats"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Room Card Formats.htm" />
+  <TocEntry
+    Title="Configuring Calendar Formats"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Calendar Formats.htm" />
+  <TocEntry
+    Title="Configuring Reservation Wizard Templates"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Reservation Wizard.htm" />
+  <TocEntry
+    Title="Configuring Check-in Notification Rules (Excludes Professional)"
+    Link="/Content/DTC_V44_CGBookElements/Configuring Check in Notification.htm" />
+  <TocEntry
+    Title="Types of Notification Rules"
+    Link="/Content/DTC_V44_CGBookElements/Types of Notification Rules.htm" />
+</CatapultToc>

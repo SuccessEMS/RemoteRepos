@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Calculations</h1>
+        <p>Calculations&#160;are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. Both pricing methods and calculations determine the final cost for a billable item; however, unlike pricing, which is applied when a billable item is reserved (and retained, even if the price for the item later changes), calculations are figured each time a confirmation or an invoice is generated. When you&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations#RTF436f6e6669677572655f6361"><span class="Hyperlink">configure</span></a>&#160;a calculation, you must specify the rate for the calculation, the calculation sequence (the order in which the calculation is carried out relative to other calculations), and if applicable, the minimum charge for the calculation. You must also indicate whether the calculation should be carried out on the base amount or on a running total, and whether the result of the calculation should be added to the base amount and then considered in subsequent calculations. For example, consider the following four calculations for a base amount of $1,000.00:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Item</p>
+                    </th>
+                    <th>
+                        <p>Calculated on</p>
+                    </th>
+                    <th>
+                        <p>Calculation Result</p>
+                    </th>
+                    <th>
+                        <p>Running Total</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>• Gratuity 10%</p>
+                        <p>• Calc Sequence = 1</p>
+                        <p>• Calc on Base = Yes</p>
+                        <p>• Calc Incl in Tot = Yes</p>
+                    </td>
+                    <td>
+                        <p>$1000</p>
+                    </td>
+                    <td>
+                        <p>$100</p>
+                    </td>
+                    <td>
+                        <p>$1100</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>• Sales Tax 5%</p>
+                        <p>• Calc Sequence = 2</p>
+                        <p>• Calc on Base = No</p>
+                        <p>• Calc Incl in Tot = Yes</p>
+                    </td>
+                    <td>
+                        <p>$1100</p>
+                    </td>
+                    <td>
+                        <p>$55</p>
+                    </td>
+                    <td>
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>• State Tax 5%</p>
+                        <p>• Calc Sequence = 3</p>
+                        <p>• Calc on Base = Yes</p>
+                        <p>• Calc Incl in Tot = No</p>
+                    </td>
+                    <td>
+                        <p>$1000</p>
+                    </td>
+                    <td>
+                        <p>$50</p>
+                    </td>
+                    <td>
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>• Federal Tax 10%</p>
+                        <p>• Calc Sequence = 4</p>
+                        <p>• Calc on Base = No</p>
+                        <p>• Calc Incl in Tot = No</p>
+                    </td>
+                    <td>
+                        <p>$1155</p>
+                    </td>
+                    <td>
+                        <p>$115.50</p>
+                    </td>
+                    <td>
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Total Calculations:</p>
+                    </td>
+                    <td colspan="2">
+                        <p>$320.50</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Grand Total (Base + Calculations):</p>
+                    </td>
+                    <td colspan="2">
+                        <p>$1320.50</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After you configure calculations, you can&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations#RTF41737369676e5f63616c6375"><span class="Hyperlink">assign</span></a>&#160;the calculations to a category, group, group type, resource, or room.</p>
+        <h2 class="Heading2"><a name="RTF436f6e6669677572655f6361"></a>To configure calculations&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>On the EMS menu bar, click Configuration &gt; Billing &gt; Calculations.&#160;The Calculations window opens. This window lists all the calculations that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emssg_CoreConfigurationBilling_image010.png" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Optionally, to show all calculations, regardless of status, under Show, click Inactive.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.&#160;The Calculation dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 334px;" alt="emssg_CoreConfigurationBilling_image011.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new calculation.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Calculation</p>
+                    </td>
+                    <td>
+                        <p>The name or description for the calculation.</p>
+                        <p>Note:&#160;The calculation can be a maximum of 30 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account</p>
+                    </td>
+                    <td>
+                        <p>Optional field. The account within your internal accounting system that should be credited with the revenue.</p>
+                        <p>Note:&#160;If the appropriate account is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/050_Configuring_Accounts" title="Configuring Accounts"><span class="Hyperlink">Configuring Account</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/050_Configuring_Accounts" title="Configuring Accounts"><span class="Hyperlink">s</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Currency</p>
+                    </td>
+                    <td>
+                        <p>The currency symbol that is used to display the results of the calculation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Rate</p>
+                    </td>
+                    <td>
+                        <p>The percentage for the calculation rate, for example 5%.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sequence</p>
+                    </td>
+                    <td>
+                        <p>The order in which multiple calculations are to be carried out.</p>
+                        <p>Note:&#160;This value is critical when multiple calculations are to be carried out and the order of the calculations affects the resulting value.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Minimum Charge</p>
+                    </td>
+                    <td>
+                        <p>Optional field. The minimum charge that is to applied to a billable item for which this calculation applies.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Base</p>
+                        <p>Include in Total</p>
+                    </td>
+                    <td>
+                        <p>• Both Base and Include in Total selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the current running total to make a new running total. The result is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</p>
+                        <p>• Only Include in Total selected—The calculation is carried out on the&#160;current&#160;running total and the result of the calculation is added to the current running total to make a new running total. The result of the calculation is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</p>
+                        <p>• Only Base selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</p>
+                        <p>• Neither Base nor Include in Total selected—The calculation is carried out on the&#160;current&#160;running total. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Inactive</p>
+                    </td>
+                    <td>
+                        <p>Leave this option blank to add the calculation as an active calculation. Select this option to inactivate the calculation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Click OK.&#160;The Calculation dialog box closes. You return to the Calculations window with the newly configured calculation automatically selected.</li>
+            <li>Optionally, continue to&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations#To_assign_calculations" title="Configuring Calculations"><span class="Hyperlink">To assign calculations</span></a>”.</li>
+        </ol>
+        <h2 class="Heading2"><a name="RTF41737369676e5f63616c6375"></a>To assign calculations&#160;</h2>
+        <p>After you configure a calculation, you can assign the calculation to a category, group, group type, resource, or room from the Calculations window.</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Remember, you also have the option of assigning calculations to a category, group, group type, resource, or room at the time that you are configuring the category, group, group type, resource, or room. The advantage to assigning a calculation after you configure it is that you can assign the calculation to multiple items in a single step.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, click Configuration &gt; Billing &gt; Calculations to open the Calculations window.</li>
+            <li>Click Assign.&#160;The Assign Calculations dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 392px;" alt="emssg_CoreConfigurationBilling_image012.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Calculation dropdown list, select the calculation that you are assigning.</li>
+            <li>On the Assign To dropdown list, select the item (category, group, group type, resource, or room) to which you are assigning the calculation.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Item Selected</p>
+                    </th>
+                    <th>
+                        <p>Comments</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Category</p>
+                    </td>
+                    <td>
+                        <p>A list of all categories that are currently configured in your EMS database is displayed. If you assign a calculation at the category level, then the calculation is assigned to all resources that are configured for the category. To assign a calculation to a specific resource in a category, then select&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations#RTF5265736f75726365"><span class="Hyperlink">Resource</span></a>&#160;on the Assign To dropdown list.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Group</p>
+                    </td>
+                    <td>
+                        <p>A list of all groups that are currently configured in your EMS database is displayed. Two additional fields are displayed—Group Type and Starts with. Optionally, select a Group Type and/or enter a search string in the Starts with Field to filter the list of groups that are displayed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Group Type</p>
+                    </td>
+                    <td>
+                        <p>A list of all group types that are currently configured in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a name="RTF5265736f75726365"></a>Resource</p>
+                    </td>
+                    <td>
+                        <p>A Category dropdown list opens. Select the appropriate category for the resource. A list of all resources that are currently configured for the selected category in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room</p>
+                    </td>
+                    <td>
+                        <p>A Building dropdown list opens. Select the appropriate building. A list of all the rooms that are currently configured for the selected building in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>On the Available list, select the item, or CTRL-click to select the multiple items to which the calculation is being assigned, and then click the Move button (&gt;) to move the selected items to the Selected list.</li>
+            <li>Click Close.&#160;The Assign Calculations dialog box closes. You return to the Calculations window.</li>
+        </ol>
+    </body>
+</html>

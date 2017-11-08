@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T09:34:24.4159394-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T09:34:50.6296617-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBookElements.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBookElements.docx" />
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdConfig.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdConfig.docx" />
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGGroupCon.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGGroupCon.docx" />
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBilling.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBilling.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Core Configuration Booking.htm"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Categories.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Categories_2.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Categories.htm"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Departments.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Departments_1.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Departments_2.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Departments.htm"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Statuses.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Statuses_1.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Statuses.htm"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_1.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.gif"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_2.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.jpg"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_1.gif"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_4.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_2.gif"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.gif"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Notification Rules.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Group Notification.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Group Notification_1.png"
+      TimeStamp="11/8/2017 9:34:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Group Notification_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Group Notification.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Room Card Formats.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Room Card Formats_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Room Card Formats.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calendar Formats.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calendar Formats_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calendar Formats_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Calendar Formats.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Reservation Wizard.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Reservation Wizard_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Reservation Wizard_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Reservation Wizard_3.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Reservation Wizard_4.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Reservation Wizard.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Check in Notification.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Check in Notification_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Check in Notification.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Types of Notification Rules.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/System Administration Configuration.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Editing System Parameters.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Editing System Parameters_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Editing System Parameters.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Importing Registration Information.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Importing Registration Information_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Importing Registration Information.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring the Confirmation.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring the Confirmation.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Email Settings.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Email Settings.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Required Fields.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Required Fields.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Core Configuration Groups.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_3.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_4.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_5.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_6.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_7.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Groups_8.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Groups.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information_3.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information_4.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Additional Information_5.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Additional Information.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Contacts.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Contacts_1.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Contacts_2.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Contacts_3.png"
+      TimeStamp="11/8/2017 9:34:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Contacts_4.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Contacts.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Editing Group Information.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Editing Group Information.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Importing Groups.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Importing Groups_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Importing Groups.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Core Configuration Billing.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Overview of Billing in EMS.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Overview of Billing in EMS_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Overview of Billing in EMS.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Rate Schedules.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Rate Schedules_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Rate Schedules_2.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Rate Schedules.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Exporting Pricing Information.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Exporting Pricing Information_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Exporting Pricing Information_2.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Exporting Pricing Information.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Pricing Plans.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Pricing Plans_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Pricing Plans.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calculations.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calculations_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Calculations_2.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Calculations.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Accounts.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Accounts_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Accounts.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Payment Types.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Payment Types_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Payment Types.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Sales Categories.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Sales Categories_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Sales Categories.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Billing Reference.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Billing Reference_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Billing Reference_2.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Billing Reference.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Currencies.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBookElements/Configuring Currencies_1.png"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBookElements/Configuring Currencies.htm"
+      TimeStamp="11/8/2017 9:34:38 AM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGBookElements.fltoc"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGBookElements.css"
+      TimeStamp="11/8/2017 9:34:37 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigureenabled" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="stepnumbercontinued" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+    <StyleName
+      Name="stepresultnobullet" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablebodycenter" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-0000ff" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="mt-font-size-36" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

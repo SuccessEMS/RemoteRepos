@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_Deploy_V44.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Decision Guide - Web Deployment Versus Conventional Deployment</h1>
+        <h2 class="Heading2">What are My Deployment Options?&#160;</h2>
+        <p>There are two different deployment options for the Desktop Client:&#160;</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">EMS Desktop Web Deployment&#160;</li>
+            <li style="list-style-type: disc;">​Conventional Deployment</li>
+        </ul>
+        <h3 class="Heading3">EMS Desktop Web Deployment&#160;</h3>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/Decision Guide Web Deployment.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;EMS Desktop Web Deployment (V44+ and V44.1) is an alternative method for installing EMS Desktop Client locally on individual user machines&#160;</p>
+        <p>This solution is not a replacement for the EMS Web Client (discontinued after V43), but rather, it is an alternative to using Microsoft® methods of deployment, such as SCCM. Administrators can use it to host EMS Desktop Client&#160;on a web server, with the ability to push the URL to any EMS Administrators so they can download&#160;EMS Desktop Client&#160;without needing Administrative Privileges on their local machine.&#160;</p>
+        <p>The web deploy application is installed on your web server. The EMS Desktop Application is included within this installation. Once installed, end users point&#160;their web browsers to the EMS Web Deployment&#160;Application, which points them with&#160;a link to download the EMS Desktop Client. (See also:&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/01-Introduction#Understanding User Types" title="Introduction"><span class="Hyperlink">Types of EMS Users</span></a>).&#160;Once a user downloads and runs that link, the EMS Desktop Client is installed in the user's profile on that workstation. Once installed, the EMS Desktop Client will check the server for an updated version of the client each time the client is launched. If a new version is available, then it will automatically download and install the update.</p>
+        <h3 class="Heading3">​Conventional Deployment&#160;</h3>
+        <p>Conventional Deployment works like previous releases&#160;of EMS. The downloadable installer is in the form of a MSI file. Once the software is installed on the Admin Users workstation, it connects directly to the database. optionally it can be configured to connect to the Desktop Client API included in the Web Deployment option.&#160;</p>
+        <p>Note:&#160;The Web Deployment method also adds an application layer (in the form of a web service), to the architecture of the application. Instead of the Desktop Client connecting directly to the Database server as it has in the past. All connections are routed through the Desktop Client API (Included with Web Deploy). this can add additional benefit for Security Considerations, or multi-region deployments. For further information on this feature is detailed&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_the_Easy_Deployment_with_a_Conventional_EMS_Desktop_Client_Deployment" title="To Use the Easy Deployment with a Conventional EMS Desktop Client Deployment"><span class="Hyperlink">here.</span></a></p>
+        <h2 class="Heading2">Features of Each Deployment Method&#160;</h2>
+        <p>The&#160;table below&#160;outlines the features available between the two deployment methods.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Feature</p>
+                    </th>
+                    <th>
+                        <p>Desktop Web Deployment</p>
+                    </th>
+                    <th>
+                        <p>Conventional Deployment</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Admin Rights required on the workstation</p>
+                    </td>
+                    <td>
+                        <p>No</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Number of installations per workstation</p>
+                    </td>
+                    <td>
+                        <p>1 Per User</p>
+                    </td>
+                    <td>
+                        <p>Once for all users of the workstation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Installation Location</p>
+                    </td>
+                    <td>
+                        <p>Users Profile</p>
+                    </td>
+                    <td>
+                        <p>Location can be specified during installation</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Requires a Web Server</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                    </td>
+                    <td>
+                        <p>No</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Can adopt customer specific, deployment procedures</p>
+                    </td>
+                    <td>
+                        <p>No</p>
+                    </td>
+                    <td>
+                        <p>Yes (Requires IT Assistance)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Able To deploy without user intervention</p>
+                    </td>
+                    <td>
+                        <p>No</p>
+                    </td>
+                    <td>
+                        <p>Yes (Requires IT Assistance)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Updates are handled...</p>
+                    </td>
+                    <td>
+                        <p>From the Web Service on the server</p>
+                    </td>
+                    <td>
+                        <p>Must be re-pushed to individual workstations.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>IT has control of when updates are pushed</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                    </td>
+                    <td>
+                        <p>Yes</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Network Connection to the database</p>
+                    </td>
+                    <td>
+                        <p>Desktop Client API</p>
+                    </td>
+                    <td>
+                        <p>Direct TCP connection or Desktop Client API</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_Deploy_V44/Decision Guide Web Deployment_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;To enable SSL, you first make changes to the EMS Desktop Client .msi file.&#160;See Also:&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Configuring_HTTP%2F%2FHTTPS_After_Installation" title="Enabling SSL on Web Deploy"><span class="Hyperlink">Enabling SSL</span></a>.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

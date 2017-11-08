@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGResources.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Resources for a Category</h1>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;Resources&#160;(also called&#160;booking detail items) are the individual items or services that your users can reserve for an event.&#160;</p>
+        <p>Resources are grouped by category. For example, a furniture category might contain tables and chairs as the resources. Although you can use categories to track setup notes, meeting attendees, and activities for a booking, you do not configure resources for these categories. You must configure&#160;resources only for service categories.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt;&#160;Resources.&#160;A list of all the categories that are currently configured in your EMS database&#160;and&#160;for which you can configure resources opens.&#160;If the appropriate category is not listed, you can configure it.</li>
+            <li>Select the category for which you are configuring the resources. The Resources window opens. This window lists all the resources that are currently configured in your EMS database for the selected category and that have a status of Active.</li>
+        </ol>
+        <p>Example of a Resources window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_1.png" style="visibility: visible;mso-wrap-style: square;width: 809px;height: 641px;" alt="https://success.emssoftware.com/@api/deki/files/4114/clipboard_e7dad8cf637757ec21a712a75eb35bd6b?revision=1&amp;size=bestfit&amp;width=809&amp;height=641" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To view all resources for the category in your EMS database, regardless of status, under Show, click&#160;Inactive.</li>
+            <li>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string (not case-sensitive, but characters must be in exact order).</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Tip:&#160;The remainder of this procedure describes how to configure a resource “from scratch.” You can also configure a resource by copying an existing resource. Select the resource that you want to copy, click Copy, and then continue to&#160;Step 5of this procedure.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>On the Resources dialog box, click&#160;New.&#160;The Resource dialog box opens.</li>
+        </ol>
+        <p>Resource dialog box, Resource tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_3.png" style="visibility: visible;mso-wrap-style: square;width: 788px;height: 693px;" alt="https://success.emssoftware.com/@api/deki/files/4115/clipboard_e340cbb546250aae9b71823a6485ccc43?revision=1&amp;size=bestfit&amp;width=788&amp;height=693" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Enter the information for the new resource.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>The name or description of the resource.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces. Resource items are displayed alphabetically in EMS. As a result, when you are configuring a group of similar items, you might want to start the name of each with a common feature. For example, if you have black, white, and blue linens, a good way to name them would be “Linens, black,” “Linens, white,” and so on.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Grouping</p>
+                    </td>
+                    <td>
+                        <p>If needed, select a grouping.</p>
+                        <p>Note:&#160;If no groupings are available, or if the appropriate grouping is not available, you can always configure a grouping, and then edit the resource at a later date to place it in a grouping.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account</p>
+                    </td>
+                    <td>
+                        <p>Select the internal account which is to receive the revenue from the use of the resource.</p>
+                        <p>Note:&#160;If the appropriate account is not available, you can configure it.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sequence</p>
+                    </td>
+                    <td>
+                        <p>Enter a number that determines the order in which the resource is displayed in a list with other resources in either EMS or EMS Web App. Resources are ordered from lowest to highest sequence number, with the resource with the lowest sequence number being displayed first.</p>
+                        <p>Note:&#160;If you leave the sequence set to the default value of zero for all resources, then by default, the resources are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Package</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the resource is to be a package.</p>
+                        <p>Note:&#160;A package is a collection of related resources.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Use Package Item Prices</p>
+                    </td>
+                    <td>
+                        <p>Available only if Package is selected. Select this option if the package price is to be the sum total of the prices for the individual resources that make up the package; otherwise, you can define a different price for the package on the Pricing tab.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a name="RTF4f7665727269646544657363"></a>Override Description</p>
+                    </td>
+                    <td>
+                        <p>Select this option to allow your EMS users to edit the description when they are adding it&#160;to a booking.</p>
+                        <p>Note:&#160;A common use for this feature is to configure a resource called “Other” for each of your resource categories which users can rename to whatever non-inventory item is needed when they select it.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Maintain Inventory</p>
+                    </td>
+                    <td>
+                        <p>Select this option if you have a limited number of this item and you want EMS to notify your users if they attempt to overbook it.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Quantity Available</p>
+                    </td>
+                    <td>
+                        <p>Available only if you select Maintain Inventory. Enter the number of resource items of this type that your organization has in its inventory.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External Reference</p>
+                    </td>
+                    <td>
+                        <p>Links the resource to an outside program if needed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Internal</p>
+                    </td>
+                    <td>
+                        <p>Indicates that the resource is internal to your organization.</p>
+                        <p>Note:&#160;Used for internal reporting purposes only. The resource is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Production Item</p>
+                    </td>
+                    <td>
+                        <p>Available only if the category to which you are adding the resource has been designated as using production items.&#160;Select this option if this resource item is to be a production item.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Serves</p>
+                    </td>
+                    <td>
+                        <p>The number of users that can be served by the resource. For example, one lunch buffet might serve ten people.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Min. Quantity</p>
+                    </td>
+                    <td>
+                        <p>The minimum quantity required when selecting the resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Alert</p>
+                    </td>
+                    <td>
+                        <p>Enter a message that is to be displayed when a user adds the resource to a booking in the EMS client.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Notes</p>
+                    </td>
+                    <td>
+                        <p>Any other additional information that is pertinent to the item itself, the use of the item, and so on. Notes displayed in EMS and EMS Web App are printed on confirmations and the Setup Worksheet report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>{{product_webapp}} Settings</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Available to Everyday Users</p>
+                    </td>
+                    <td>
+                        <p>To have this resource be an available option for EMS Web App users who select this category, leave Available on Web selected.</p>
+                        <p>Note:&#160;Not available if&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category#RTF4f7665727269646544657363"><span class="Hyperlink">Override Description</span></a>&#160;is selected.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td>
+                        <p>Select this option if you want this resource to be displayed on the “checkout” page (the last page in the Room Request process) in EMS Web App.</p>
+                        <p>Note:&#160;Not available if Available to Everyday Users is&#160;not&#160;selected.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hide Special Instructions</p>
+                    </td>
+                    <td>
+                        <p>Do not show any special instructions for the resource in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Display Alert to Everyday Users</p>
+                    </td>
+                    <td>
+                        <p>If an alert has been configured for the resource, then display this alert when a user adds this resource to a booking in EMS Web App.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Tip:&#160;You can click&#160;Spelling&#160;to spell check the information that you entered for the resource before you save it.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>You can&#160;continue to one or more of the subsequent procedures in this topic; otherwise, click&#160;OK&#160;to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+            <li>After you have configured the resource:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If this is the first time that you have configured resources for the category, and the category is Catering or Resources, w Service Orders, you must also configure at least one default service type.&#160;</li>
+            <li>You can define production items for the resource and/or define selections for the resource.&#160;</li>
+        </ul>
+        <h2 class="Heading2">Assigning&#160;Calculations To a Resource&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box , and then open the&#160;Calculations&#160;tab.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Remember, you can also assign calculations at the category level as well. If you have already assigned calculations to a resource’s category, then these calculations are automatically applied to new resources for the category. These calculations are displayed in the Selected list after you click OK and save the resource.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>Resource dialog box, Calculations tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 455px;" alt="emssg_CoreConfigurationResources_image009.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>On the Available list, select the calculation, or CTRL-click to select the multiple calculations that are to apply to this resource, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If the appropriate calculation is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" title="Configuring Calculations"><span class="Hyperlink">Configuring Calculations</span></a>.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click OK to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">Configuring&#160;Pricing for a Resource&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>You can also configure the resource price on the Edit Pricing window&#160;or when you are configuring rate schedules.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box, and then open the&#160;Pricing&#160;tab.</li>
+        </ol>
+        <p>Resource dialog box, Pricing tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 468px;" alt="emssg_CoreConfigurationResources_image010.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>For each rate schedule, select the pricing method, which determines the cost for reserving the resource. (See the table on the next page.)</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If the appropriate rate schedule is not available, you can configure it.&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Pricing Method</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Half Day/Full Day (Event Time)</p>
+                    </td>
+                    <td>
+                        <p>The total number of hours for the event is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the resource. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Half Day/Full Day (Reserved Time)</p>
+                    </td>
+                    <td>
+                        <p>The total number of hours for the reservation (event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the resource. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Event Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the event time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Reserved Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Service Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the service (resource). This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Specific)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the number of hours indicated when adding the resource to a booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Unit</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is applied to the resource, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If the appropriate rate schedule is not available, you can configure it.&#160;</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>After you select a pricing method, click in the appropriate fields to select the currently displayed amount, and edit the amount as needed.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the resource price for a booking. If the pricing method is Unit, then this value is applied in total to a resource, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Discount</p>
+                    </td>
+                    <td>
+                        <p>You can use a discount with any pricing method. If you specify a discount for a resource, then the actual price, the discount percentage, and the discounted amount are displayed on confirmations and invoices.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Min. Charge</p>
+                        <p>Max. Charge</p>
+                    </td>
+                    <td>
+                        <p>The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a resource, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a resource, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Flat Price</p>
+                    </td>
+                    <td>
+                        <p>A resource price that remains constant regardless of the total number of hours booked for the resource. Used in conjunction with Hourly (Event Time) and Hourly (Reserved Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Half Day Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Full Day Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hours</p>
+                    </td>
+                    <td>
+                        <p>Multiplier used in calculating the resource price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click OK to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">Associating an&#160;Image With a Resource&#160;</h2>
+        <p>You can associate an image with a resource if the image is in one of the following formats—.gif, .jpeg, .jpg, .bmp, .wmf, or .png and ideally, it should not be larger than 615 x 350 pixels. If you attach an image larger than this, you might not be able to view the image without scrolling. Any images that you associate with the resource are displayed only in EMS Web App. They are not displayed in the EMS client.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box, and then open the&#160;Images&#160;tab.</li>
+        </ol>
+        <p>Resource dialog box, Images tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 468px;" alt="emssg_CoreConfigurationResources_image011.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>To display an image of the resource in the EMS Web App interface, click New to open the Find Image dialog box, and then browse to and select the image.&#160;The Find Image dialog box closes. You remain on the Images tab with an entry for the image displayed on the tab.</li>
+            <li>Optionally, after selecting the image, click in the&#160;Web Long Description field and enter a description of the resource.&#160;The value that you enter here defines the “long desc” attribute for web content accessibility.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click&#160;OK&#160;to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">Editing&#160;Production Items for a Resource&#160;</h2>
+        <p>The Production Items tab lists&#160;all&#160;the production items that have been defined in your EMS database.&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Services for a.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationResources_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>The Production Items tab is available only if you did not select Production Item on the Resource tab when you are configuring the resource.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box, and then open the&#160;Production Items&#160;tab.</li>
+        </ol>
+        <p>Resource dialog box, Production Items tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_7.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 465px;" alt="emssg_CoreConfigurationResources_image012.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Optionally, do one or more of the following to filter the production items that are displayed:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Select a production area. (The default value is (all)).</li>
+            <li>To filter the displayed production items based on the Item name, in the&#160;Filter&#160;field, enter a search string.</li>
+            <li>Select&#160;Show Selected&#160;Only.&#160;Only those production items that have previously been selected for the resource are displayed.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Select a production item and change the quantity for the item.&#160;If you do not want a production item to be assigned to the resource, make sure that the quantity for the item is set to zero.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click OK to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">Excluding&#160;Rooms for a Resource&#160;</h2>
+        <p>This feature enables you to prevent a resource from being allocated for a specific room.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box, and then open the&#160;Excluded Rooms&#160;tab.</li>
+        </ol>
+        <p>Resource dialog box, Excluded Rooms tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_8.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 470px;" alt="emssg_CoreConfigurationResources_image013.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Select the search criteria by which to search for the excluded rooms.</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Building&#160;</li>
+            <li>Room Type:&#160;leave the default value of (all), or select a specific room type.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the&#160;Available&#160;list, select the room (CTRL-click to select&#160;multiple rooms) from which the resource item is to be excluded, and then Move (&gt;) to the Selected list.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click&#160;OK&#160;to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">Creating a Package for a Resource&#160;</h2>
+        <p>A&#160;package&#160;is a group of resources.&#160;You can combine a list of related resources into a&#160;package&#160;to streamline booking. For example, an Instructor A/V package might include a laser pointer, a mobile microphone, and a flip chart. You select the items for a resource package on the Package Items tab of the Resource dialog box. You can set the price for a package to be the sum total of the individual resources that make up the package, or you can set an independent price for the package.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_9.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Note:&#160;The Package Items tab is available only if you select Package on the Resource tab when you are configuring the resource.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the Resource dialog box, and then open the&#160;Packaged Items&#160;tab.&#160;The tab displays all the resources that have been configured for the selected category.</li>
+        </ol>
+        <p>Resource dialog box, Package Items tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Resources for_10.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 468px;" alt="emssg_CoreConfigurationResources_image014.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Optionally, to filter the display, click&#160;Show Selected Only.&#160;Only those resource items that have previously been selected to be part of the resource package are displayed.</li>
+            <li>For each resource item that is to be included in the package, double-click in the&#160;Quantity&#160;field, and then enter the appropriate quantity for the resource item.</li>
+            <li>Continue with any other optional configuration for the resource as needed; otherwise, click&#160;OK&#160;to close the Resource dialog box and return to the Resources window. The newly configured resource is automatically selected in the window.</li>
+        </ol>
+    </body>
+</html>

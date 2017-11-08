@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_VideoDispInter.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring the Academic Import Utility</h1>
+        <p>The Academic Import Utility (AIU) is an optional, add-on component for EMS that is designed to manually import from your Student Information System, or SIS. For each scheduled class that is being imported, a single reservation with multiple bookings is created. One booking is created for each date on which the class meets. All class reservations created by the import process are assigned to one Group (customer, client, and so on) that you have configured in your EMS database.&#160;The imported class data can be one of two formats,&#160;tab-delimited&#160;or&#160;fixed width. In addition, prior to using the AIU, you should have certain&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/230_Academic_Import_Utility/010_Configuring_the_Academic_Import_Utility#RTF436f6e666967757265645f69"><span class="Hyperlink">items</span></a>&#160;configured in your EMS database.</p>
+        <p>To import data, you must&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/230_Academic_Import_Utility/010_Configuring_the_Academic_Import_Utility#RTF436f6e6669677572655f7365"><span class="Hyperlink">configure</span></a>&#160;a session for each block of data (i.e. quarter or semester). After you have configured a session, AIU saves the settings for use in both the initial import and any subsequent re-import. When a session is re-imported, only events in the import file that have changed since the last import are recreated in the EMS database. This prevents the unnecessary re-import of unchanged events and the associated invalidation of large ranges of reservation numbers. After configuring a session, you import the session.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import.png" style="visibility: visible;mso-wrap-style: square;width: 42px;height: 35px;" alt="emssg_appendixacademic_ExclamationPoint.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Creating reservations can take an extended time and must be performed when no users are logged on to EMS. (To log off active users, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/070_Viewing_and_Emailing_Logged-In_Users" title="Viewing and Emailing Logged-In Users"><span class="Hyperlink">Viewing and Emailing Logged-In Users</span></a>”.) The time required to create reservations varies depending on the amount of data involved and the processing power of the computer making the reservations. After the import process completes, the system automatically displays a report listing booking conflicts, if any.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>Reservations that were added to the EMS database using the AIU can be removed from the database using the AIU as well. Deleting a session removes all reservations created using the session.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Before you configure an AIU session, you should review the Academic Import Days of the Week setting in your system parameters. This setting dictates whether the AIU interprets days of the week based on their position within the data (with options for Sunday first or Monday first) or based on specific text entries (Su = Sunday, M = Monday, and so on). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters" title="System Parameters"><span class="Hyperlink">System Parameters</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>All fields are required unless noted otherwise.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Field Sequence</p>
+                    </th>
+                    <th>
+                        <p>Max Width</p>
+                    </th>
+                    <th>
+                        <p>Type</p>
+                    </th>
+                    <th>
+                        <p>Format</p>
+                    </th>
+                    <th>
+                        <p>Example</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Department</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>ACCT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Course</p>
+                    </td>
+                    <td>
+                        <p>2</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>101</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Section</p>
+                    </td>
+                    <td>
+                        <p>3</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>CourseTitle</p>
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>50</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>Intro to Accounting</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Instructor</p>
+                    </td>
+                    <td>
+                        <p>5</p>
+                    </td>
+                    <td>
+                        <p>50</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>Bob Smith</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Days</p>
+                    </td>
+                    <td>
+                        <p>6</p>
+                    </td>
+                    <td>
+                        <p>7</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>Parameter driven.&#160; Positional or specific text.</p>
+                        <p>e.g. “M W F” for Positional, Monday First</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Building</p>
+                    </td>
+                    <td>
+                        <p>7</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>AC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room</p>
+                    </td>
+                    <td>
+                        <p>8</p>
+                    </td>
+                    <td>
+                        <p>20</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified</p>
+                    </td>
+                    <td>
+                        <p>101</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>BegTime</p>
+                    </td>
+                    <td>
+                        <p>9</p>
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Zero Filled (Numerics only)</p>
+                    </td>
+                    <td>
+                        <p>1400</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EndTime</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Zero Filled (Numerics only)</p>
+                    </td>
+                    <td>
+                        <p>1450</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>StartDate (Optional)</p>
+                    </td>
+                    <td>
+                        <p>11</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Date</p>
+                    </td>
+                    <td>
+                        <p>Formatted (mm/dd/yyyy)</p>
+                    </td>
+                    <td>
+                        <p>8/30/2007</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EndDate (Optional)</p>
+                    </td>
+                    <td>
+                        <p>12</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Date</p>
+                    </td>
+                    <td>
+                        <p>Formatted (mm/dd/yyyy)</p>
+                    </td>
+                    <td>
+                        <p>12/17/2007</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Attendance (Optional)</p>
+                    </td>
+                    <td>
+                        <p>13</p>
+                    </td>
+                    <td>
+                        <p>5</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Zero Filled (Numerics only)</p>
+                    </td>
+                    <td>
+                        <p>35</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2">Fixed width format&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>All fields are required unless noted otherwise.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Column</p>
+                    </th>
+                    <th>
+                        <p>Width</p>
+                    </th>
+                    <th>
+                        <p>Field Type</p>
+                    </th>
+                    <th>
+                        <p>Format</p>
+                    </th>
+                    <th>
+                        <p>Example</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Department</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>ACCT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Course</p>
+                    </td>
+                    <td>
+                        <p>11</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>101</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Section</p>
+                    </td>
+                    <td>
+                        <p>21</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>1</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>CourseTitle</p>
+                    </td>
+                    <td>
+                        <p>31</p>
+                    </td>
+                    <td>
+                        <p>225</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>Intro to Accounting</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Instructor</p>
+                    </td>
+                    <td>
+                        <p>81</p>
+                    </td>
+                    <td>
+                        <p>50</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>Bob Smith</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Days</p>
+                    </td>
+                    <td>
+                        <p>131</p>
+                    </td>
+                    <td>
+                        <p>7</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>Parameter driven. Positional or specific text.</p>
+                        <p>e.g. “M W F” for Positional, Monday First</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Building</p>
+                    </td>
+                    <td>
+                        <p>138</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>AC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room</p>
+                    </td>
+                    <td>
+                        <p>148</p>
+                    </td>
+                    <td>
+                        <p>20</p>
+                    </td>
+                    <td>
+                        <p>Alpha numeric</p>
+                    </td>
+                    <td>
+                        <p>Left Justified, Trailing Spaces</p>
+                    </td>
+                    <td>
+                        <p>101</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>BegTime</p>
+                    </td>
+                    <td>
+                        <p>168</p>
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Right Justified, Zero Filled (numerics only)</p>
+                    </td>
+                    <td>
+                        <p>0800</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EndTime</p>
+                    </td>
+                    <td>
+                        <p>172</p>
+                    </td>
+                    <td>
+                        <p>4</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Right Justified, Zero Filled (numerics only)</p>
+                    </td>
+                    <td>
+                        <p>1450</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>StartDate (Optional)</p>
+                    </td>
+                    <td>
+                        <p>176</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Date</p>
+                    </td>
+                    <td>
+                        <p>Formatted (mm/dd/yyyy)</p>
+                    </td>
+                    <td>
+                        <p>08/30/2007</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>EndDate (Optional)</p>
+                    </td>
+                    <td>
+                        <p>186</p>
+                    </td>
+                    <td>
+                        <p>10</p>
+                    </td>
+                    <td>
+                        <p>Date</p>
+                    </td>
+                    <td>
+                        <p>Formatted (mm/dd/yyyy)</p>
+                    </td>
+                    <td>
+                        <p>12/17/2007</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Attendance (Optional)</p>
+                    </td>
+                    <td>
+                        <p>196</p>
+                    </td>
+                    <td>
+                        <p>5</p>
+                    </td>
+                    <td>
+                        <p>Numeric</p>
+                    </td>
+                    <td>
+                        <p>Right Justified, Zero Filled (numerics only)</p>
+                    </td>
+                    <td>
+                        <p>00035</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 class="Heading2"><a name="RTF436f6e666967757265645f69"></a>Configured items for the AIU&#160;</h2>
+        <p>Prior to using the AIU, you should have the following items configured in your EMS database:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Item</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Group</p>
+                    </td>
+                    <td>
+                        <p>When reservations are created through the import process, one Group (client, customer, and so on) is the reservation holder for all reservations. You might want to define a group that is used specifically for the reservations that are created through the import process, for example, Registrar's Office.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>New Bookings Status</p>
+                    </td>
+                    <td>
+                        <p>When running the AIU, you must specify a status for the new bookings that are created. This status must of the “Book Space” status type. While you can use an existing status such as Confirmed, it is generally best to create a new status (for example, Academic - Confirmed) to denote the imported data.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>You must create a conflict status to give to the new bookings if the room they require is already booked. This status should have a status type of either “Info Only” or “Wait,” as those types of bookings can be created even if there is already a confirmed booking in the room. Academic - Conflict is a commonly used name for this status.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cross List Status</p>
+                    </td>
+                    <td>
+                        <p>You must create a status to apply to bookings when the system encounters conflicts within an import file (i.e., the same class with different names). This status should have a status type of either “Info Only” or “Wait.”</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Override Status</p>
+                    </td>
+                    <td>
+                        <p>You can configure the settings in an AIU session to allow AIU bookings to override existing bookings, if appropriate. The status is changed for the existing bookings and the room is reserved for the imported bookings. You must create an override status to apply to the bookings that have been bumped. This status should have a status type of either “Info Only” or “Wait.”</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In addition, you might want to define a unique Event Type and Setup Type that is to be used solely for class reservations.</p>
+        <p>To import data, you must&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/230_Academic_Import_Utility/010_Configuring_the_Academic_Import_Utility#RTF436f6e6669677572655f7365"><span class="Hyperlink">configure</span></a>&#160;a session for each block of data (i.e., quarter or semester). After you have configured a session, AIU saves the settings for use in both the initial import and any subsequent re-import. When a session is re-imported, only events in the import file that have changed since the last import are recreated in the EMS database. This prevents the unnecessary re-import of unchanged events and the associated invalidation of large ranges of reservation numbers. After configuring a session, you&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/230_Academic_Import_Utility/010_Configuring_the_Academic_Import_Utility#RTF496d706f7274696e675f6461"><span class="Hyperlink">import</span></a>&#160;the data for the session.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import.png" style="visibility: visible;mso-wrap-style: square;width: 42px;height: 35px;" alt="emssg_appendixacademic_ExclamationPoint.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Creating reservations can take an extended time and must be performed when no users are logged in to EMS. (To log off active users, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/070_Viewing_and_Emailing_Logged-In_Users" title="Viewing and Emailing Logged-In Users"><span class="Hyperlink">Viewing and Emailing Logged-In Users</span></a>”.) The time required to create reservations varies depending on the amount of data involved and the processing power of the computer making the reservations. After the import process completes, the system automatically displays a report listing booking conflicts, if any.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>Reservations that were added to the EMS database using the AIU can be removed from the database using the AIU as well. Deleting a session removes all reservations created using the session.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Before you configure an AIU session, you should review the Academic Import Days of the Week setting in your system parameters. This setting dictates whether the AIU interprets days of the week based on their position within the data (with options for Sunday first or Monday first) or based on specific text entries (Su = Sunday, M = Monday, and so on). See&#160;Appendix A, “<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters" title="System Parameters"><span class="Hyperlink">System Parameters</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h2 class="Heading2"><a name="RTF436f6e6669677572655f7365"></a>To configure an AIU session&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>This section describes the steps for configuring a new session for the AIU. If you simply need to load an existing session, then after opening the Sessions window, skip to&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/230_Academic_Import_Utility/010_Configuring_the_Academic_Import_Utility#To_import_the.0Adata_into_the_session" title="Configuring the Academic Import Utility"><span class="Hyperlink">To import the data into the session</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Reservations &gt; Academic Import &gt; Academic Import Utility.&#160;The Sessions window opens. This window lists all the sessions that are currently configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 354px;" alt="emssg_appendixacademic_image001.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.&#160;The Session dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 390px;" alt="emssg_appendixacademic_image002.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new AIU session.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Session Code</p>
+                    </td>
+                    <td>
+                        <p>A unique identifier for the session, for example, SPRING08.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>An expanded definition of the session code, for example, Spring Semester 2008.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Start Date</p>
+                        <p>End Date</p>
+                    </td>
+                    <td>
+                        <p>The start date and end date for the session, for example, 1/15/08 and<br />5/31/08.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Group</p>
+                    </td>
+                    <td>
+                        <p>The reservation holder for all reservations in the session. For example, Registrar's Office. You can select a value from the Group dropdown list, or you can click the Search icon&#160;<img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display_1.png" style="visibility: visible;mso-wrap-style: square;width: 36px;height: 36px;" alt="emssg_appendixacademic_image003.png" />&#160;to open the Groups window and create the necessary group. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups" title="Configuring Groups"><span class="Hyperlink">Configuring Groups</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Event Type</p>
+                    </td>
+                    <td>
+                        <p>Select a value from the dropdown list. If none of the event types that are currently configured in your EMS database meets your needs, then you can configure a type (for example, Academic). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types"><span class="Hyperlink">Configuring Event Types</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Setup Type</p>
+                    </td>
+                    <td>
+                        <p>Select a value from the dropdown list. If none of the event types that are currently configured in your EMS database meets your needs, then you can configure a type (for example, Classroom). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/030_Configuring_Setup_Types" title="Configuring Setup Types"><span class="Hyperlink">Configuring Setup Types</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Status</p>
+                    </td>
+                    <td>
+                        <p>The status for the new bookings that are created.</p>
+                        <p>Note:&#160;While you can use an existing status such as Confirmed, it is generally best to create a new status (for example, Academic - Confirmed) to denote the imported data. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available after you specify a Status. Select a value from the dropdown list. If none of the statuses that are currently configured in your EMS database meets your needs, then you can configure a status (for example, Academic - Conflict). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Confi</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">guring Statuses</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Use Cross List Status</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the system is to apply a special status to classes that are cross-listed in the import file. (The class appears twice in the file, with each occurrence having a different name.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cross List Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available if you select Use Cross List Status. The status that is to be applied to cross-listed classes. Select a value from the dropdown list. If none of the statuses that are currently configured in your EMS database meets your needs, then you can configure a status (for example, Academic - Cross List). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Override Existing Bookings</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the system is to give import file events precedence over existing events in the EMS database.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Override Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available if you select Override Existing Bookings. The status that is to be applied to existing events if they are overridden by imported events. Select a value from the dropdown list. If none of the statuses that are currently configured in your EMS database meets your needs, then you can configure a status (for example, Academic - Conflict). See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reservation Source</p>
+                    </td>
+                    <td>
+                        <p>Select a source for the reservation. If none of the sources that are currently configured in your EMS database meets your needs, you can configure a source. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/090_Configuring_Reservation_Sources" title="Configuring Reservation Sources"><span class="Hyperlink">Configuring Reservation Sources</span></a>”.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Click OK.&#160;The Session dialog box closes. You return to the Sessions window with the newly configured session displayed in the window.</li>
+            <li>Continue to&#160;“To import the data into the session.”</li>
+        </ol>
+        <h2 class="Heading2">To&#160;import the data into the session&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Select the session that you are using for importing classes, and then click Load.&#160;The first of three AIU windows opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 366px;" alt="emssg_appendixacademic_image004.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click the Search icon&#160;<img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display_1.png" style="visibility: visible;mso-wrap-style: square;width: 36px;height: 36px;" alt="emssg_appendixacademic_image003.png" />&#160;to browse to and select the file that you are importing.</li>
+            <li>On the Import Format dropdown list, select the format for the file (Fixed Width or Tab Delimited).</li>
+            <li>Click Next.&#160;Two results are possible:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If any of the records in the import file have any issues (missing data, data that is not in the correct format, data that falls outside the start and/or end dates, and so on) a message opens that details the issue and if applicable, the number that cannot be imported, and asking if you want to continue. You can click No in the message, and then correct the errors in the file before you load the file again, or you can click Yes in the message, and then click Next to continue.</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_appendixacademic_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Optionally, you can also do one or both of the following:</p>
+                        <ul style="list-style-type: square;margin-left: 36pt;">
+                            <li>You can click View Errors for more information.</li>
+                            <li>•&#160;You can click Export Errors to export the errors in the import file an an XML format.</li>
+                        </ul>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>The import file is complete and there are no issues with the file, so no message opens. Click Next to continue.</li>
+        </ul>
+        <p>The second of three AIU windows opens. This window lists the academic Building and the Room that are currently reserved for&#160;all&#160;the classes in the import file. For a new import file, the Building/Room combinations have a status of Assigned or Do not Import. Unassigned classes must be assigned to a room in EMS. Classes with a status of “Do Not Import” are not to be assigned to a room in EMS.&#160;</p>
+        <p>&#160;&#160;<img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 368px;" alt="emssg_appendixacademic_image005.png" /></p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Optionally, select a different View option and/or a different Building option to filter the information that is displayed in the window. (The default display is all views (Assigned, Unassigned, and Do not Import) for all buildings.)</li>
+            <li>Select an unassigned class, or CTRL-click to select the multiple unassigned classes, and then click Assign.&#160;The Room Selector dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 384px;" alt="emssg_appendixacademic_image006.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>On the Building dropdown list, select the building or view by which to filter the available rooms list.</li>
+            <li>On the Available rooms list, select the room to which the classes are to be assigned, and then click OK.&#160;Two results are possible:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If you selected a single class to assign to the room, then the class status is changed to Assigned in the AIU window. The EMS Building code and EMS room name are displayed for the class in the AIU window.</li>
+            <li>If you selected multiple classes to assign to the same room, then a message opens asking you if you are sure that you want to assign all the selected items to the same room. Click Yes in the message. The class status is changed to Assigned for all the selected classes in the AIU window. The EMS Building code and EMS room name are displayed for the classes in the AIU window.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="9">
+            <li>Click Next.&#160;The third AIU window opens. In the right pane, the window lists the dates for which bookings will be created for the selected classes.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_7.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 370px;" alt="emssg_appendixacademic_image007.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="10">
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To add more booking dates, select the date in the left pane, and then click the Add button to open the Date Pattern dialog box and specify the date patterns for the bookings that should be created.</li>
+            <li>To delete booking dates, select the date in the right pane, and then click Delete.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="11">
+            <li>After you have added or deleted the necessary booking dates, click Finish.&#160;A message appears indicating that the session was successfully imported.</li>
+            <li>Click OK to close the message and return to the Sessions window.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

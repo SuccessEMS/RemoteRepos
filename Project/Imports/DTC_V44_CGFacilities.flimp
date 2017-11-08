@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:42:09.3781217-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-08T12:42:23.9820545-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGFacilities.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGFacilities.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Core Configuration Facilities.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Core Configuration Facilities.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floors.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floors_1.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Floors.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Features.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Features_1.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Features.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Setup Types.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Setup Types_1.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Setup Types.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Room Types.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Room Types_1.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Room Types_2.png"
+      TimeStamp="11/8/2017 12:42:19 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Room Types.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_3.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_4.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_5.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Buildings.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Areas.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Areas_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Areas_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Areas.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_3.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_4.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_5.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Building Hours.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Overview of Configuring Rooms.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Importing Rooms.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Importing Rooms.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Room Pricing on.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Room Pricing on.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Public Views.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Public Views_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Public Views_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Public Views.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_3.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_4.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_5.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Floor Plans_6.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Floor Plans.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Exporting Pricing Information.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_1.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_2.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_3.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_4.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_5.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_6.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_7.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_8.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_9.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_10.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_11.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_12.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_13.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_14.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_15.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGFacilities/Configuring Rooms_16.png"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGFacilities/Configuring Rooms.htm"
+      TimeStamp="11/8/2017 12:42:21 PM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGFacilities.fltoc"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGFacilities.css"
+      TimeStamp="11/8/2017 12:42:20 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+  </UsedCharacterStyles>
+</MsWordImport>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdTools.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Override Existing Bookings Utility</h1>
+        <p>In some situations, such as a building closure, a scheduled maintenance repair, a priority event, and so on, you might need to “bump” one or more bookings from their scheduled location. You&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/050_Override_Existing_Bookings_Utility#RTF5573696e675f4f4542557469"><span class="Hyperlink">use</span></a>&#160;the Override Existing Bookings Utility to bump all the bookings that meet specific criteria and place them in a Conflict status. A new all day booking that uses the settings (Event Name, Event Type, and Group) that you specify is created in place of these bumped bookings.</p>
+        <h2 class="Heading2"><a name="RTF5573696e675f4f4542557469"></a>To use the Override Existing Bookings Utility&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Tools &gt; Override Existing Bookings Utility.</li>
+        </ol>
+        <p>The Override Existing Bookings Utility window opens.</p>
+        <p>Override Existing Bookings Utility window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Override Existing Bookings.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 554px;" alt="emssg_SysAdminTools_image014.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Do the following to search for the rooms that contain the bookings that you are bumping:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>On the Building dropdown list, select a specific building, area, or view.</li>
+            <li>On the Room Type dropdown list, leave the Room Type set to the default value of (all), or select a specific room type.</li>
+        </ul>
+        <p>A list of all the rooms configured for the selected building, area, or view and that are of the indicated Room Type are displayed on the Available list.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Select the room, or CTRL-click to select the multiple rooms that contain the bookings that you are bumping, and then click the Move button (&gt;) to move the selected rooms to the Selected list.</li>
+            <li>Repeat&#160;Step 2&#160;and&#160;Step 3&#160;until you have selected all the rooms that contain the bookings that you are bumping.</li>
+            <li>Enter a Start Date and an End Date to filter the list of bookings that you are bumping for the selected rooms.</li>
+            <li>Optionally, to see a list of the bookings that you are bumping, click View Bookings; otherwise, go to&#160;Step 7.</li>
+        </ol>
+        <p>The View Bookings window opens. A list of all rooms with the bookings that you are bumping is displayed in the window.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Optionally, you can select a booking in this window, and then click Open to open the booking’s reservation in the Navigator for a more detailed examination, and you can also click Export to export the list of bookings to an Excel spreadsheet. After you have viewed the bookings and/or exported the booking, click Close to close the View Bookings window and return to the Override Existing Bookings Utility window.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>View Bookings window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Override Existing Bookings_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 222px;" alt="emssg_SysAdminTools_image015.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Specify the event type, event name, the status, and the group for the new all day bookings that are to be created in place of the bumped bookings.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If the appropriate event type is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types"><span class="Hyperlink">Configuring Event Types</span></a>”.&#160;If the appropriate status is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.You can select a group from the Group dropdown list, or you can search for a group. If the appropriate group is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups" title="Configuring Groups"><span class="Hyperlink">Configuring Groups</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>Select the Override Existing Bookings Conflict Status (the status to which the bumped bookings are changed).</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If the appropriate status is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.&#160;If you select a status with a Cancel type, a Cancel Status dialog box opens. You must enter a cancel reason and indicate who cancelled the booking for Cancel type status. Optionally, you can also enter notes about the booking cancellation.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="9">
+            <li>To update the reservation status to the status for the new all day bookings, leave Update Reservation Status; otherwise, clear this option to leave the reservation status unchanged.</li>
+            <li>Click Finish.</li>
+        </ol>
+        <p>A message appears indicating that the existing bookings (which are all the bookings the meet the search criteria) will be overridden and set to the conflict status that you selected and asking you if it is OK to continue.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="11">
+            <li>Click Yes.</li>
+        </ol>
+        <p>The message closes and the Navigator opens, displaying the new all day bookings with their new status.</p>
+    </body>
+</html>

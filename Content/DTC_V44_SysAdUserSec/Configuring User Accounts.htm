@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdUserSec.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring User Accounts</h1>
+        <p>Users&#160;are the people who log in to EMS, whether they are making reservations or just using the system in a read-only capacity. When your EMS application is first installed, it is installed with a default user admin account with “admin” for both the User ID and password. As EMS recommends, for security reasons, after you log in to EMS the first time using “admin” as both the username and password, at a minimum, you should change the account password. Ideally, you should&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/050_Configuring_User_Security_for_Multiple_User_Accounts#RTF436f6e6669677572696e675f"><span class="Hyperlink">configure</span></a>&#160;an entirely new administrator account with a new username and password. You must also configure all the necessary accounts for your users, which includes assigning processes to the user account. You can create user accounts entirely from “scratch,” or you can copy an existing user account, and then make the necessary edits to the account for another user. You can also&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#RTF4578706f72745f7573657261"><span class="Hyperlink">export</span></a>&#160;a list of all your user accounts to an Excel spreadsheet.</p>
+        <p>Note: Instead of configuring user accounts individually, you can configure a template and then assign all users who are to have the same security settings to a given user template. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/030_Configuring_User_Templates" title="Configuring User Templates"><span class="Hyperlink">Configuring User Templates</span></a>”&#160;and&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/040_Configuring_Academic_User_Templates" title="Configuring Academic User Templates"><span class="Hyperlink">Configuring Academic User Templates</span></a>.</p>
+        <h2 class="Heading2">To&#160;configure a user account&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Security &gt; Users. </li>
+        </ol>
+        <p>The Users window opens. This window lists the names and types for all users who currently have an account for your EMS installation and that have a status of Active.</p>
+        <p>Users window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emssg_SysAdminSecurity_image001.png" />
+        </p>
+        <p>Tip: Optionally, to show all user accounts, regardless of status, under Show, click Inactive.</p>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>The remainder of this procedure describes how to configure a user account “from scratch.” You can also configure a user account by copying an existing account. Select the user account that you want to copy, click Copy, and then continue to&#160;Step 3.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.</li>
+        </ol>
+        <p>The User dialog box opens.</p>
+        <p>User dialog box</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 406px;" alt="emssg_SysAdminSecurity_image002.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new user and define the user access for each of the following—categories, processes, building configuration, room access, statuses and queries, and for EMS Academic Planning, academic properties and processes as well. See:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#User_information" title="Configuring User Accounts" class="Hyperlink">User information</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Event.0AProperties" title="Configuring User Accounts" class="Hyperlink">Event Properties</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Categories" title="Configuring User Accounts" class="Hyperlink">Categories</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Processes" title="Configuring User Accounts" class="Hyperlink">Processes</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Configure.0ABuildings" title="Configuring User Accounts" class="Hyperlink">Configure Buildings</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Room_Access" title="Configuring User Accounts" class="Hyperlink">Room Access</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Statuses" title="Configuring User Accounts" class="Hyperlink">Statuses</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Queries" title="Configuring User Accounts" class="Hyperlink">Queries</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Academic_Properties.0A(EMS_Campus_Only)" title="Configuring User Accounts" class="Hyperlink">Academic Properties (EMS Campus Only)</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Processes.0A(EMS_Campus_Only)" title="Configuring User Accounts" class="Hyperlink">Processes (EMS Campus Only</a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Processes.0A(EMS_Campus_Only)" title="Configuring User Accounts" class="Hyperlink">)</a>
+            </li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Click OK.</li>
+        </ol>
+        <p>The User dialog box closes. You return to the Users window with the newly configured user automatically selected.</p>
+        <h3 class="Heading3">User information&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box (see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”), and then make sure that User is selected.</li>
+            <li>Enter the user information.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>At a minimum, to create a new user account, you must enter the user name, the user type, and the user ID and password. All other information is optional and can be added at later dates when needed.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Name</p>
+                    </td>
+                    <td>
+                        <p>First and last name for the user.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Administrator</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the user is to be an EMS administrator.</p>
+                        <p>Note:&#160;If you select this option, then only Event Properties remains displayed on the User dialog box as an EMS administrative user has access to all EMS functions (categories, processes, buildings, rooms, statuses, and queries).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Initials</p>
+                    </td>
+                    <td>
+                        <p>The user’s initials, which are printed at the bottom of all reports as well as the date and time that the user ran the report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Login</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>User ID</p>
+                    </td>
+                    <td>
+                        <p>The ID that the user must use to log in to EMS.</p>
+                        <p>Note:&#160;The User ID must be 20 characters or less, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Password</p>
+                    </td>
+                    <td>
+                        <p>The password that the user must use to log in to EMS.</p>
+                        <p>Note:&#160;The user can change this password. See the&#160;EMS User’s Manual.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Network ID</p>
+                    </td>
+                    <td>
+                        <p>If you enter a value in this field, the user is automatically logged in to EMS based on the user’s Windows credentials without being asked to enter a user ID and password.</p>
+                        <p>Note:&#160;Enter the network domain along with the network ID, such as DOMAIN\john.doe.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External Reference</p>
+                    </td>
+                    <td>
+                        <p>Links the user account to an outside program, if needed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Contact Information</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Phone</p>
+                    </td>
+                    <td>
+                        <p>The phone number for the user. This value is not printed on any correspondence (reports, emails, and so on) from the user.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fax</p>
+                    </td>
+                    <td>
+                        <p>The fax number for the user. This value is not printed on any correspondence (reports, emails, and so on) from the user.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email Address</p>
+                    </td>
+                    <td>
+                        <p>The email for the user. This value is not printed on any reports that the user generates; however, this is a required value if the user wants to email reports or confirmations from EMS using the SMTP email option.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Job Information</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Title</p>
+                    </td>
+                    <td>
+                        <p>The user’s title, such as Mr., Ms., and so on.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Notes</p>
+                    </td>
+                    <td>
+                        <p>Any additional information that is relevant to the user.</p>
+                        <p>Note:&#160;This information is not printed on any report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Inactive</p>
+                    </td>
+                    <td>
+                        <p>Leave this option blank to add the user as an active user. Select this option to inactive the user’s account. An inactive user cannot log in to EMS.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>At a minimum, to create a new user account, you must enter the user name, the user type, and the user ID and password. All other information is optional and can be added at later dates when needed.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Event&#160;Properties&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Event Properties.</li>
+        </ol>
+        <p>The User dialog box is refreshed with options for the event security settings for the user.</p>
+        <p>User dialog box, Event Properties</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_SysAdminSecurity_image003.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Specify the event security settings for the user.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <p>Event Properties</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Template</p>
+                    </td>
+                    <td>
+                        <p>If you select a template, then only the Event Properties options remain available. The categories, processes, buildings, rooms, statuses, and queries are automatically assigned to the user based on the selected template. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/030_Configuring_User_Templates" title="Configuring User Templates"><span class="Hyperlink">Configuring User Templates</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Defaults—All the values that you select here (Building, Status, Event Type, Event Name, Event Time, Reservation Source, and Time Zone) are displayed by default when the user opens the Reservation Wizard to make a reservation; however, the user can edit any and all values as needed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>4. Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</p>
+        <h3 class="Heading3">Categories&#160;</h3>
+        <p>You specify the categories that a user can add to a booking or edit for a booking on the Categories tab.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Categories.</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the active categories that you can select for the user.</p>
+        <p>User dialog box, Categories</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 404px;" alt="emssg_SysAdminSecurity_image004.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the category or CTRL-click to select the multiple categories to which a user is to have access, and then click the Move button (&gt;) to move the selected categories to the Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>To add these categories to a booking, a user needs access to the Edit Booking Details process.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Processes&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Processes.</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the processes that you can select for the user.</p>
+        <p>User dialog box, Processes</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_SysAdminSecurity_image005.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the process or CTRL-click to select the multiple processes to which a user is to have access, and then click the Move button (&gt;) to move the selected processes to the Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>For an explanation of each process, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#Event.0AProperties" title="Configuring User Accounts"><span class="Hyperlink">Event processes</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Configure Buildings&#160;</h3>
+        <p>You specify the building configuration rights for a user on the Buildings tab.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>".)</li>
+            <li>Select Configure Buildings.</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the buildings that you can select for the user.</p>
+        <p>User dialog box, Buildings</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_SysAdminSecurity_image006.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the building or CTRL-click to select the multiple buildings to which a user is to have access, and then click the Move button (&gt;) to move the selected buildings to the Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Define and Edit Buildings and Define and Edit Rooms security processes are required for a user to have configuration access to selected buildings.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Room&#160;Access&#160;</h3>
+        <p>You specify the rooms to which a user has access on the Room Access tab.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Room Access.</li>
+        </ol>
+        <p>The User dialog box is refreshed a options for searching for the rooms to add to the user account.</p>
+        <p>User dialog box, Room Access</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 378px;" alt="emssg_SysAdminSecurity_image007.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Search for the rooms to which the user is to have access by doing one or both of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>On the Building dropdown list, select (all) buildings, a specific building, an area, or a view.</li>
+            <li>On the Room Type dropdown list, leave the default value of (all), or select a specific room type.</li>
+        </ul>
+        <p>The Available list is updated with a list of rooms that meet your search criteria.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>On the Available list, select the room or CTRL-click to select the multiple rooms to which a user is to have access, and then click the Move button (&gt;) to move the selected rooms to the appropriate Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>EMS Enterprise has both the View and Book and the View Only access for user security. EMS Professional has just the View and Book access for user security.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>View and Book—A user who has access to the Special - Edit Critical Booking Information process&#160;and&#160;who is assigned to this option can reserve the room, move an event into or out of the room, change the time or status of an event that is scheduled in the room, and add resources to events in the room.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>The Special - View and Book Access On All Rooms process can be used as an alternative to manually assigning all rooms to the View and Book list.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>View Only—A user who is assigned to this option cannot reserve the room, move an event into or out of the room, or change the time or status of an event that is scheduled in the room; however, as long as the user has access to the appropriate category and to the Special - Edit Booking Details process, the user can view events in the room and add resources to events in the room.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Statuses&#160;</h3>
+        <p>You select the statuses to which a user is to have access on the Statuses tab. A user needs access to a status in order to create a reservation with the status or edit a booking with the status.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Statuses.</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the active event statuses that you can select for the user.</p>
+        <p>User dialog box, Statuses</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_7.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 404px;" alt="emssg_SysAdminSecurity_image008.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the status or CTRL-click to select the multiple statuses to which a user is to have access, and then click the Move button (&gt;) to move the selected statuses to the Selected list.</li>
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Queries&#160;</h3>
+        <p>You specify the queries that a user can run on the Queries tab.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>You can specify the queries to run by user only in EMS Enterprise. All queries are available to all users in EMS Professional.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Queries.</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the defined queries that you can select for the user account.</p>
+        <p>User dialog box, Queries</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_8.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 404px;" alt="emssg_SysAdminSecurity_image009.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the query or CTRL-click to select the multiple queries to which a user is to have access, and then click the Move button (&gt;) to move the selected queries to the Selected list.</li>
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Academic Properties (EMS Campus Only)&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Academic Properties.</li>
+        </ol>
+        <p>The User dialog box is refreshed with options for the academic security settings for the user.</p>
+        <p>User dialog box, Academic Properties (EMS Academic Planning only)</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_9.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_SysAdminSecurity_image010.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Specify the academic security settings for the user.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Type</p>
+                    </td>
+                    <td>
+                        <p>• Domain—The domain (typically renamed to campus or school) to which the user belongs.</p>
+                        <p>• Academic Unit—The academic unit (typically renamed to academic department or division) to which the user belongs.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Domain</p>
+                    </td>
+                    <td>
+                        <p>The domain to which the user belongs.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Academic Unit</p>
+                    </td>
+                    <td>
+                        <p>Available only if the user is assigned the type of “Academic Unit.” The academic unit to which the user belongs.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Template</p>
+                    </td>
+                    <td>
+                        <p>The academic template to which the user is assigned. The template determines the academic processes to which the user has access. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/040_Configuring_Academic_User_Templates" title="Configuring Academic User Templates"><span class="Hyperlink">Configuring Academic User Templates</span></a>”.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h3 class="Heading3">Processes (EMS Campus Only)&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>If needed, open the User dialog box. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">To configure a user accoun</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/020_Configuring_User_Accounts#To_configure.0Aa_user_account" title="Configuring User Accounts"><span class="Hyperlink">t</span></a>”.)</li>
+            <li>Select Processes (under Academic Properties).</li>
+        </ol>
+        <p>The User dialog box is refreshed with a list of all the academic processes that you can select for the user.</p>
+        <p>User dialog box, Academic Processes (EMS Academic Planning only)</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_10.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_SysAdminSecurity_image011.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>On the Available list, select the academic process or CTRL-click to select the multiple academic event processes to which a user is to have access, and then click the Move button (&gt;) to move the selected processes to the Selected list.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>For an explanation of each process, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/100_System_Administration_Configuration_-_User_Security/010_Overview_of_User_Processes#Academic.0Aevent_processes" title="Overview of User Processes"><span class="Hyperlink">Academic event processes</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the user as needed; otherwise, click OK to close the User dialog box and return to the Users window with the newly configured user automatically selected in the window.</li>
+        </ol>
+        <h2 class="Heading2">To&#160;export a list of user accounts&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Security &gt; Users.</li>
+        </ol>
+        <p>The Users window opens. This window lists the names and types for all users who currently have an account for your EMS installation.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click Export.</li>
+        </ol>
+        <p>The Save As dialog box opens. The default file name is User List.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminSecurity_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>The default file type is Microsoft Excel Workbook (*.xls) and you cannot change this.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Optionally, change the file name, and save the file in a location of your choosing.</li>
+        </ol>
+    </body>
+</html>

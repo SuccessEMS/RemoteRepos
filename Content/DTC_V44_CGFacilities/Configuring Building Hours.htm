@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGFacilities.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Building Hours</h1>
+        <p>By default, when you configure&#160;a building, the building hours are set to Open All Day, which means that the building is open 24 hours a day, 7 days a week, 365 days a year. If needed, you can configure the hours for a building so that a building is open only for a specified time period on a particular date or for a given date range. You can also configure the hours so that a building is closed all day. You can configure&#160;the hours for a building for a single date, or you can configure&#160;the hours for multiple dates in a single step.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>In the EMS client, configured building hours do not prevent a user from scheduling events outside these hours. A user is merely warned that the event is being scheduled outside normal operating hours. In VEMS, users cannot schedule events outside the configured building hours. Setup and teardown hours must also fall within the configured building hours for an event that is scheduled in VEMS.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <h2 class="Heading2">To configure&#160;building hours for a single date&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Facilities &gt; Building Hours.&#160;The Building Hours window opens. This window lists all the buildings and their operating hours that are configured in your EMS database.</li>
+        </ol>
+        <p>Building Hours window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 420px;" alt="emssg_corefacilities_image019.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>In the Date field, leave the default value of the current day’s date, or select a different date.</li>
+            <li>Select the building, or CTRL-click to select the multiple buildings for which you are changing the hours, and then click Change.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If you select multiple buildings, then the Building Hours dialog box reflects the hours for the building that is last in the list of selected buildings.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>The Building Hours dialog box opens.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 296px;" alt="emssg_corefacilities_image020.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Set the new hours for the buildings as appropriate.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Set Building Hours</p>
+                    </td>
+                    <td>
+                        <p>Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your EMS users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                        <p>Note:&#160;VEMS users cannot make reservations outside of building hours.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Closed All Day</p>
+                    </td>
+                    <td>
+                        <p>Select this option to close the building for the entire day. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
+                        <p>• If you do&#160;not&#160;select Web Only, then none of your users (EMS or VEMS) can make reservations on this date in the selected buildings.</p>
+                        <p>• If you do you select Web Only, then your EMS users can make reservations on this date in the selected buildings; however, your VEMS users cannot.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Open All Day</p>
+                    </td>
+                    <td>
+                        <p>The default value. Leave this option selected to have the building remain open for the entire holiday.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Click OK.</li>
+        </ol>
+        <p>The Building Hours dialog box closes. You return to the Building Hours window.</p>
+        <h2 class="Heading2">To configure building hours for multiple dates&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Facilities &gt; Building Hours.&#160;The Building Hours window opens. This window lists all the buildings and their operating hours that are configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 418px;" alt="emssg_corefacilities_image021.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click Wizard.&#160;The Building Hours Wizard opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 392px;" alt="emssg_corefacilities_image022.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Click Add Dates.&#160;The Date Pattern dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 194px;" alt="emssg_corefacilities_image023.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Enter the appropriate date pattern, and then click OK. (Both the Start Date and End Date are required values.)&#160;The Date Pattern dialog box closes. You return to the Building Hours Wizard. The dates that meet the pattern that you specified are displayed in the Building Hours Wizard. If any of the dates that meet the pattern are holidays, then the name of the holiday is displayed next to the date.</li>
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>To view information about a date that is marked as a holiday, select the date, and then click Holidays.</li>
+            <li>To remove any dates from the list, select the date, or CTRL-click to select multiple dates, and then click Remove.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Click Next.&#160;The Building Hours Wizard is updated with a list of all the buildings that have been configured in your EMS database.</li>
+        </ol>
+        <p>Building Hours Wizard with a list of configured buildings</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Building Hours_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emssg_corefacilities_image024.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Select the building, or CTRL-click to select the multiple buildings for which you are configuring the hours, and then click the Move button (&gt;) to move the buildings to the Selected list.</li>
+            <li>Click Next.&#160;The Building Hours Wizard is updated with options for configuring the building hours for the selected buildings.</li>
+            <li>Set the new hours for the buildings as appropriate.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Set Building Hours</p>
+                    </td>
+                    <td>
+                        <p>Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your EMS users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                        <p>Note:&#160;VEMS users cannot make reservations outside of building hours.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Closed All Day</p>
+                    </td>
+                    <td>
+                        <p>Select this option to close the building for the entire day. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
+                        <p>• If you do&#160;not&#160;select Web Only, then none of your users (EMS or VEMS) can make reservations on this date in the selected buildings.</p>
+                        <p>• If you do you select Web Only, then your EMS users can make reservations on this date in the selected buildings; however, your VEMS users cannot.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Open All Day</p>
+                    </td>
+                    <td>
+                        <p>The default value. Leave this option selected to have the building remain open for the entire holiday.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="10">
+            <li>Click Finish.&#160;The Building Hours Wizard closes. You return to the Building Hours window.</li>
+        </ol>
+    </body>
+</html>

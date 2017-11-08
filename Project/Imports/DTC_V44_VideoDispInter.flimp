@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:41:14.6234763-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-08T12:41:28.8899981-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_VideoDispInter.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_VideoDispInter.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_VideoDispInter/Video Display Interface.htm"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display_1.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display_2.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44_VideoDispInter/Configuring the Video Display.htm"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44_VideoDispInter/Academic Import Utility.htm"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_1.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_2.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_3.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_4.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_5.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_6.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_VideoDispInter/Configuring the Academic Import_7.png"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44_VideoDispInter/Configuring the Academic Import.htm"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../TOCs/DTC_V44_VideoDispInter.fltoc"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_VideoDispInter.css"
+      TimeStamp="11/8/2017 12:41:26 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+  </UsedCharacterStyles>
+</MsWordImport>

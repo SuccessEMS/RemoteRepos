@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Core Configuration – Facilities" Link="/Content/DTC_V44_CGFacilities/Core Configuration Facilities.htm" />
+    <TocEntry Title="Configuring Floors" Link="/Content/DTC_V44_CGFacilities/Configuring Floors.htm" />
+    <TocEntry Title="Configuring Features" Link="/Content/DTC_V44_CGFacilities/Configuring Features.htm" />
+    <TocEntry Title="Configuring Setup Types" Link="/Content/DTC_V44_CGFacilities/Configuring Setup Types.htm" />
+    <TocEntry Title="Configuring Room Types" Link="/Content/DTC_V44_CGFacilities/Configuring Room Types.htm" />
+    <TocEntry Title="Configuring Buildings" Link="/Content/DTC_V44_CGFacilities/Configuring Buildings.htm" />
+    <TocEntry Title="Configuring Areas" Link="/Content/DTC_V44_CGFacilities/Configuring Areas.htm" />
+    <TocEntry Title="Configuring Building Hours" Link="/Content/DTC_V44_CGFacilities/Configuring Building Hours.htm" />
+    <TocEntry Title="Overview of Configuring Rooms" Link="/Content/DTC_V44_CGFacilities/Overview of Configuring Rooms.htm" />
+    <TocEntry Title="Importing Rooms" Link="/Content/DTC_V44_CGFacilities/Importing Rooms.htm" />
+    <TocEntry Title="Configuring Room Pricing on the Edit Pricing Window" Link="/Content/DTC_V44_CGFacilities/Configuring Room Pricing on.htm" />
+    <TocEntry Title="Configuring Public Views" Link="/Content/DTC_V44_CGFacilities/Configuring Public Views.htm" />
+    <TocEntry Title="Configuring Floor Plans" Link="/Content/DTC_V44_CGFacilities/Configuring Floor Plans.htm" />
+    <TocEntry Title="Exporting Pricing Information for a Room" Link="/Content/DTC_V44_CGFacilities/Exporting Pricing Information.htm" />
+    <TocEntry Title="Configuring Rooms" Link="/Content/DTC_V44_CGFacilities/Configuring Rooms.htm" />
+</CatapultToc>

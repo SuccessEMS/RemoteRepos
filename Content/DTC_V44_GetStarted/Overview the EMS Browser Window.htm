@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_GetStarted.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Overview: the EMS Browser Window</h1>
+        <p>Many EMS functional areas use a&#160;Browser&#160;window. For example, the Groups window, the Query Builder window, and the Service Order Management window are all EMS Browser windows. You use an EMS Browser window to search for data, add new data, and edit and/or delete existing data. For example, in the Groups Browser window, you can search for groups or contacts, add new groups or contacts, and edit or delete existing groups or contacts. Regardless of the EMS functional area, all EMS Browser windows have the following features in common:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>A&#160;click and drag&#160;feature that you can use to group data by a specific column, rearrange the order of the data columns, or change the width of a column.&#160;This feature is always indicated by the option to drag and group by a column header at the top of an EMS Browser window. If a window/window pane does not display this option, then the window/window pane is not an EMS Browser window.</li>
+            <li>A&#160;column context menu&#160;that has a multitude of options for sorting data, grouping data, sizing columns and so on.</li>
+            <li>A&#160;filtering&#160;feature that you can use to find and work with a subset of data in the window.&#160;</li>
+            <li>A&#160;column sorting&#160;feature that you can use to sort data by a specific column.&#160;These procedures&#160;are explained using the Groups window; however, the instructions are applicable for any Browser window in EMS.</li>
+        </ul>
+        <h2 class="Heading2">Grouping Data by Columns&#160;</h2>
+        <p>In any browser window, you can drag a column header to the indicated location and group the data by the selected column. You can drag multiple column headers to the location. If you sort data by multiple columns, then the first column is the parent column. All other columns are placed as child columns, and the data is grouped accordingly in the browser window.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 338px;" alt="emssg_GettingStarted_image010.png" />
+        </p>
+        <h2 class="Heading2">Rearranging Columns&#160;</h2>
+        <p>You can rearrange the column order by dragging a column to a new location using the column heading.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 444px;" alt="emssg_GettingStarted_image011.png" />
+        </p>
+        <h2 class="Heading2">Changing Column Width&#160;</h2>
+        <p>You can change the width of a column by hovering on the right side of a column heading until the pointer changes to a double-headed arrow, and then dragging the boundary until the column is the width that you want.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 444px;" alt="emssg_GettingStarted_image012.png" />
+        </p>
+        <h2 class="Heading2">Sorting Columns&#160;</h2>
+        <p>Right-click in any column in a browser window to choose from options for sorting data, grouping data, sizing columns, and so on.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 349px;" alt="emssg_GettingStarted_image013.png" />
+        </p>
+        <h2 class="Heading2">Filtering Data&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Open a browser window, for example, the Groups window.</li>
+            <li>Place your cursor in the data column by which you want to filter the data.&#160;For example, to filter data based on the City for group records, place your cursor in the City column.&#160;A Filter icon is displayed in the column.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 298px;" alt="emssg_GettingStarted_image014.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Click the Filter icon to choose a filter option. Any filter you create is always displayed in the bottom left corner of the browser window</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 442px;" alt="emssg_GettingStarted_image015.png" />
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Custom</p>
+                    </td>
+                    <td>
+                        <p>Opens the Custom AutoFilter dialog box in which you can construct a custom data filter.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Blanks</p>
+                    </td>
+                    <td>
+                        <p>Filters data based on NULL (blank) data for a field. For example, if you click on Blanks in the City column in the Groups window, then all group records for which the City field has a NULL (blank) value are displayed in the Groups window.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Non blanks</p>
+                    </td>
+                    <td>
+                        <p>Filters data based on Not Null (not blank) data for a field. For example, if you click Non blanks in the City column in the Groups window, then all group records for which the City field does&#160;not&#160;have a NULL (blank) value are displayed in the Groups window.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&lt;Specific Data Value&gt;</p>
+                    </td>
+                    <td>
+                        <p>A Filter list also displays each unique value that has been entered for the field. Select a value on this list to filter the data by the value. For example, select “Denver” in the City column of the Groups window to display only those group records that have “Denver” specified as the group’s city.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Optionally, click&#160;Edit Filter&#160;in the lower right corner of the browser window to open the Filter Editor dialog box and edit the current filter.</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To add a new condition to a filter, click the Add/Insert icon.</li>
+            <li>To remove a condition from a filter, click the Delete icon at the end of the filter.</li>
+            <li>To apply a new filter, click&#160;Apply.</li>
+            <li>To close the Edit Filter dialog box and return to the browser window, click&#160;OK.</li>
+        </ul>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 302px;" alt="emssg_GettingStarted_image016.png" />
+        </p>
+        <h2 class="Heading2">Changing the Sort&#160;Order&#160;</h2>
+        <p>When a browser window first opens, data are sorted in ascending order based on the data in the&#160;first&#160;column of the window. For example, when the Groups window first opens, the group records are displayed on the Results tab alphabetically by Group name. To change the sort order of the data in a browser window:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Click once in any column header to display a Sort Order icon.&#160;The Sort Order icon is an “Up” arrow indicating that the data is sorted in ascending order.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_7.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 319px;" alt="emssg_GettingStarted_image017.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click the Sort Order icon to sort the records in descending order by the data in the column.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_GetStarted/Overview the EMS Browser Window_8.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 310px;" alt="emssg_GettingStarted_image018.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Click the Sort Icon again to sort the records in ascending order.</li>
+        </ol>
+    </body>
+</html>

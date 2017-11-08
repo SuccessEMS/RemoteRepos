@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdTools.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Import Reservations Utility</h1>
+        <p>This utility enables you to import existing reservations into your EMS database from a tab-delimited text file. (See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/240_Import_File_Specifications/050_Reservation_Import_File_Specifications" title="Reservation Import File Specifications"><span class="Hyperlink">Reservation Import File Specifications</span></a>&#160;for the import file specifications.) Importing reservations is a two-step process.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Configure&#160;the reservation import. See also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/060_Import_Reservations_Utility/Best_Practices:_Using_the_Reservations_Import_Utility" title="https://success.emssoftware.com/Knowledge_Base/Best_Practices%3A_Using_the_Reservations_Import_Utility"><span class="Hyperlink">Best Practices for Importing Reservations</span></a>.</li>
+            <li>After you configure the import, you must import&#160;the reservations. You an can also delete&#160;an import session.</li>
+        </ol>
+        <p>The procedures below guide you in these tasks.</p>
+        <h2 class="Heading2">To Configure the Reservation Import&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Note:&#160;This section describes the steps for configuring a new reservation import. If you simply need to load an existing import, then after opening the Reservation Import Sessions window, skip to&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/060_mport_Reservations_Utility#To_import_reservations.0Ainto_a_session" title="Import Reservations Utility"><span class="Hyperlink">To import reservations</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/060_mport_Reservations_Utility#To_import_reservations.0Ainto_a_session" title="Import Reservations Utility"><span class="Hyperlink">&#160;into a session</span></a>.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Tools &gt;&#160;Import Reservations Utility.&#160;The Reservation Import Sessions window opens. This window lists all the reservation sessions that have been imported into your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 386px;" alt="emssg_SysAdminTools_image016.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click&#160;New.&#160;The Reservation Import Session dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 324px;" alt="emssg_SysAdminTools_image017.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new import session.&#160;See also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/060_Import_Reservations_Utility/Best_Practices:_Using_the_Reservations_Import_Utility" title="https://success.emssoftware.com/Knowledge_Base/Best_Practices%3A_Using_the_Reservations_Import_Utility" class="Hyperlink">Best Practices for Importing Reservations</a></li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available only if you select a status with a type of Book Space. This status is applied only if the status that you selected results in the imported bookings being in conflict with existing bookings.</p>
+                        <p>Note:&#160;If the appropriate status is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>A name or description for the import session.</p>
+                        <p>Note:&#160;The name can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Event Type</p>
+                    </td>
+                    <td>
+                        <p>Select the event type for the imported reservations.</p>
+                        <p>Note:&#160;If the appropriate event type is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types"><span class="Hyperlink">Configuring Event Types</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Override Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available only Override Existing Bookings is selected. If imported bookings override existing bookings, then select the conflict status into which the overridden bookings are to be placed.</p>
+                        <p>Note:&#160;If the appropriate status is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Override Existing Bookings</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the imported bookings are to override existing bookings.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reservation Source</p>
+                    </td>
+                    <td>
+                        <p>Select a source if applicable.</p>
+                        <p>Note:&#160;If the appropriate reservation source is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/090_Configuring_Reservation_Sources" title="Configuring Reservation Sources"><span class="Hyperlink">Configuring Reservation Sources</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Setup Type</p>
+                    </td>
+                    <td>
+                        <p>Select the setup type for the imported reservations.</p>
+                        <p>Note:&#160;If the appropriate setup type is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/030_Configuring_Setup_Types" title="Configuring Setup Types"><span class="Hyperlink">Configuring Setup Types</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Status</p>
+                    </td>
+                    <td>
+                        <p>Select the status that is to be applied to the imported reservations.</p>
+                        <p>Note:&#160;Only statuses that do not have a Reconfirm Date are available.If the appropriate status is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Click&#160;OK.&#160;The Reservation Import Session dialog box closes. You return to the Reservation Import Sessions window. The newly configured import session is displayed in the window.</li>
+        </ol>
+        <h3 class="Heading3">To Import Reservations Into a Session&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Tools &gt;&#160;Import Reservations Utility&#160;to open the Reservation Import Sessions window.</li>
+            <li>Select the reservation session into which you are importing the reservations, and then click&#160;Load.&#160;The Import Reservations wizard opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 398px;" alt="emssg_SysAdminTools_image018.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Click the Search icon&#160;<img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_3.png" style="visibility: visible;mso-wrap-style: square;width: 36px;height: 36px;" alt="emssg_SysAdminTools_image019.png" />&#160;to browse to and select the file you are importing, and then click&#160;Next.&#160;The Import Reservations wizard displays all the reservations in the import file by the building/room combinations that have been assigned to them.&#160;</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If a Building/Room combination in the import file is identical to a Building Code/Room code in the EMS database, then the record is automatically assigned; otherwise, the record remains unchanged.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 384px;" alt="emssg_SysAdminTools_image020.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>To filter the list,&#160;select a different view on the View dropdown list and/or a different building on the Building dropdown list.</li>
+            <li>To work with room assignments:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To Assign a Room, select a Building/Room Combination, or CTRL-click to select multiple combinations, and then click&#160;Assign&#160;to open the Room Selector dialog box and select the room in your EMS database.</li>
+            <li>To Exclude a Room from the Import, select a Building/Room Combination, or CTRL-click to select multiple combinations, and then click&#160;Do Not Import. This&#160;excludes all the reservations that are assigned to this Building/Room combination.</li>
+            <li>To Unassign a Room, select a Building/Room Combination, or CTRL-click to select multiple combinations, and then click&#160;Unassign.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Click&#160;Next.&#160;The Import Reservations Wizard displays all groups that are assigned to reservations in the import file.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 384px;" alt="emssg_SysAdminTools_image021.png" />
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminTools_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>If a group name in the import file is identical to a group name in the EMS database, then the record is automatically assigned; otherwise, the record remains unassigned.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>To work with groups:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To Assign a Group,&#160;select a group, or CTRL-click to select multiple groups, and then click&#160;Assign&#160;to open the Groups window, and select the group in your EMS database for which all reservations that are assigned to the selected group will be made.</li>
+            <li>To Exclude a Group From the Import, select a group, or CTRL-click to select multiple groups, and then click&#160;Do Not Import&#160;to exclude all reservations that are assigned to this group.</li>
+            <li>To Unassign a&#160;Group,&#160;select a group, or CTRL-click to select multiple groups, and then click&#160;Unassign&#160;to undo a Group assignment.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>Click&#160;Finish.&#160;A message opens indicating that the reservations were imported successfully.</li>
+            <li>Click&#160;OK&#160;to close the message and the Import Reservations Wizard and return to the Reservation Import Sessions window.</li>
+        </ol>
+        <h2 class="Heading2">To Delete&#160;a Reservation Import&#160;</h2>
+        <p>You can delete a reservation import session. If you delete an import session, all reservations in the session are deleted. Because you cannot recover these reservations other than to repeat the import process, make certain you want to delete the session.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Tools &gt;&#160;Import Reservations Utility.&#160;The Reservation Import Sessions window opens. This window lists all the reservation sessions that have been imported into your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 374px;" alt="emssg_SysAdminTools_image022.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Select the import session that you are deleting, and then click&#160;Delete.&#160;A message opens informing you that all reservations related to the session will be deleted and asking you if it is&#160;OK&#160;to continue.</li>
+            <li>Click&#160;Yes.&#160;The message closes. The import session is deleted.</li>
+        </ol>
+    </body>
+</html>

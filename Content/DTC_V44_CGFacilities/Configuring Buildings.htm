@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGFacilities.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Buildings</h1>
+        <p>A&#160;building&#160;is a physical location that contains one or more spaces (rooms, open areas, and so on) that your users can reserve for an event. Buildings are one of the core data items that you must configure&#160;so that your users can make reservations in EMS.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS Desktop Client menu bar, click Configuration &gt; Facilities &gt;&#160;Buildings.&#160;The Buildings window opens. This window lists all the buildings that are currently configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 368px;" alt="emssg_corefacilities_image009.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click&#160;New.&#160;The Building configuration dialog opens on the Building tab.&#160;&#160;&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_corefacilities_image010.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information as appropriate for the building using the subtopics in this topic.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Room Types_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Tips:</p>
+                        <p>By default, when you configure a building, the building hours are set to Open All Day. To change these hours, see&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/070_Configuring_Building_Hours" title="Configuring Building Hours"><span class="Hyperlink">Configuring Building Hours</span></a>.</p>
+                        <p>Only the building name, the building code, and the time zone are required fields. All other fields on all other tabs are optional and can be configured at a later date if needed.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Building</p>
+                    </td>
+                    <td>
+                        <p>Required field. The name of the building.</p>
+                        <p>Note:&#160;The building name can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Building Code</p>
+                    </td>
+                    <td>
+                        <p>Required field. Abbreviated text that conveys the building name or description. For example, if a building is named the Conference Building, then a code for the building could be CONF.</p>
+                        <p>Note:&#160;The building code can be a maximum of 20 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Notes</p>
+                    </td>
+                    <td>
+                        <p>Free form text that provides any additional information or description about the building.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>URL</p>
+                    </td>
+                    <td>
+                        <p>The URL (website address) for a web page that provides more information about the building (for example, MapQuest).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Notes on Confirmation</p>
+                    </td>
+                    <td>
+                        <p>Include the building notes in any confirmations that are printed for events that are scheduled in the building.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Time Zone</p>
+                    </td>
+                    <td>
+                        <p>Required field. Select the time zone in which the building resides.</p>
+                        <p>Note:&#160;If you are configuring buildings in EMS Enterprise, then you can select a unique time zone for each building. If you are configuring buildings in EMS Professional, then all buildings must belong to the same time zone.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Currency</p>
+                    </td>
+                    <td>
+                        <p>Select the currency that is to be used for pricing all rooms in the building.</p>
+                        <p>Note:&#160;If the appropriate currency is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies" title="Configuring Currencies"><span class="Hyperlink">Configuring Currencies</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External Reference</p>
+                    </td>
+                    <td>
+                        <p>Links the building to an outside program, if needed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cost Per Sq. Ft./Meter Per Yr.</p>
+                    </td>
+                    <td>
+                        <p>Building cost. Used on the Room Utilization report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Annual Operating Hours</p>
+                    </td>
+                    <td>
+                        <p>Total number of hours that the building is open during a calendar year. Used on the Room Utilization report.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Continue with any other configuration for the building as needed; otherwise, click&#160;OK&#160;to close the Building dialog box and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+        <h2 class="Heading2">Categories Tab&#160;</h2>
+        <p>You can restrict specific categories to specific buildings only in EMS Enterprise. All categories are available to all buildings in EMS Professional.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>From the Building configuration page, click&#160;the Categories tab.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_corefacilities_image012.png" />
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Room Types_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Tip:&#160;The Available to All Buildings list in the lower right pane displays all the categories that are always available to all buildings and you cannot edit this list. You can also link buildings and categories when you are configuring categories. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories"><span class="Hyperlink">Configuring Categories</span></a>.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Select the categories you want&#160;to be available for use in the building, and then use the arrow buttons to move the them to the Selected list.</li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click&#160;OK&#160;to close the Building dialog box and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+        <h2 class="Heading2">Associating&#160;an Image With a Building</h2>
+        <p>Images are displayed as thumbnails in both EMS and VEMS when a user views details about a building. You can associate an image with a building if the image is in one of the following formats—.gif, .jpeg, .jpg, .bmp, .wmf, or .png and ideally, it should not be larger than 615 x 350 pixels. If you attach an image larger than this, you might not be able to view the image without scrolling.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>From the Building configuration page, click&#160;the Images tab.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_corefacilities_image013.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>To have an image of the building display&#160;in EMS and VEMS when a user is viewing building details, click&#160;New&#160;to open the Find Image dialog box, and then browse to and select the image.&#160;The Find Image dialog box closes. You remain on the Images tab with an entry for the image displayed on the tab.</li>
+            <li>Optionally, click in the&#160;Web Long Description&#160;field and enter a description of the building. The value that you enter here defines the “long desc” attribute for web content accessibility.</li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click&#160;OK&#160;to close the Building dialog box and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+        <h2 class="Heading2">Setting Values&#160;for the user defined fields (UDFs)</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>From the Building configuration dialog, click&#160;the UDFs tab.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 402px;" alt="emssg_corefacilities_image014.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>For each UDF that has been defined for the building, select the UDF, and then click the&#160;Set Value&#160;button to open a dialog box in which you can set the value for the UDF.</li>
+            <li>Continue with any other configuration for the building as needed; otherwise, click&#160;OK&#160;to close the Building dialog box and return to the Buildings window.</li>
+        </ol>
+        <h2 class="Heading2">Specifying Unregistered Attendee/Visitor Behavior&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>The Visitor Management tab is displayed only if your organization has purchased and installed the optional Visitor Management module, which enables front-desk users such as reception to check in visitors, print badges, access lists of visitors, and run reports. The values that you specify on this tab are used when a new visitor checks into your building.&#160;<br />See Also:&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client/120_Other_Reservation_Functions/050_Managing_Attendees_and_Visitors/Checking_Visitors_Into_a_Meeting" title="Checking Visitors Into a Meeting"><span class="Hyperlink">Visitor Management</span></a>.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>From the Building configuration dialog, click the Visitor Management tab.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Buildings_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 392px;" alt="emssg_corefacilities_image015.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Enter the information for the new unregistered visitor/attendee.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Category</p>
+                    </td>
+                    <td>
+                        <p>Select an Attendee type category. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories"><span class="Hyperlink">Configuring Categories</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Room</p>
+                    </td>
+                    <td>
+                        <p>The Override room that is booked for the unregistered visitor’s/attendee’s reservation.</p>
+                        <p>Note:&#160;Typically, you would want to book an Override room named something such as Other Space, Unregistered Space, or so on. See&#160;<a href="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/090_Configuring_Rooms" title="Configuring Rooms"><span class="Hyperlink">Configuring Rooms</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Status</p>
+                    </td>
+                    <td>
+                        <p>The status that is used for an unregistered visitor’s/attendee’s reservation. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Event Type</p>
+                    </td>
+                    <td>
+                        <p>The event type that is used for the unregistered visitor’s/attendee’s reservation.</p>
+                        <p>Note:&#160;Typically, you would want to use an event type named something such as Unregistered Visitor, Unregistered Attendee or so on.&#160;See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types"><span class="Hyperlink">Configuring Event Types</span></a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Event Name</p>
+                    </td>
+                    <td>
+                        <p>The event name that is used for the unregistered visitor’s/attendee’s reservation.</p>
+                        <p>Note:&#160;You can include the variable for Group Name (the name of the group that the visitor/attendee is seeing) in the subject line as described in the Legend. For example, “Unregistered Visitor for%1%” would result in “Unregistered Visitor for Academic Affairs” being displayed in the subject line.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>End Time</p>
+                    </td>
+                    <td>
+                        <p>The booking for the unregistered visitor/attendee is created from the current time until the end time that you specify.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Continue with any other configuration for the building as needed; otherwise, click&#160;OK&#160;to close the Building dialog box and return to the Buildings window. The newly configured building is displayed in the window.</li>
+        </ol>
+    </body>
+</html>

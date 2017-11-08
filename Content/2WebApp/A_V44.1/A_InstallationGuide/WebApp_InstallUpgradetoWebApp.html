@@ -1,85 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1202.813" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="2956" MadCap:lastWidth="924" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Installing or Upgrading to the EMS Web App</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Installing or Upgrading to the EMS Web App</h1>
-        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');
-</pre>
-        <ol>
-            <li>Manually <strong>uninstall </strong>any previous versions of {{product_VEMS}} or {{product_webapp}}&#160;on your web server.&#160;</li>
-            <li>Verify that <a title="Hardware and Software Requirements">Requirements and Prerequisites</a> have been met.</li>
-            <li>Download the <strong><span><span>EMSWebApplication.</span></span>msi</strong> file onto the web server that will be running {{product_webapp}}.</li>
-            <li>Run <strong><span><span>EMSWebApplication.</span></span>msi</strong>.</li>
-            <li>The first screen welcomes you to the&#160;{{product_webapp}}&#160;Setup Wizard.&#160;Click <strong>Next </strong>to begin the installation process.<br /><img alt="" class="internal default" style="width: 516px;height: 403px;" width="516px" height="403px" /></li>
-            <li>In the&#160;<em>Destination Folder</em> screen, select the destination folder. &#160;<br /><img alt="" class="internal default" /><br />    The installation process will create a new physical directory on your web server based on the destination folder path you entered.&#160;Click <strong>Next</strong>.</li>
-        </ol>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span>&#160;</strong>Choosing a folder above other than the default will create a new physical directory on your web server at that location.&#160;If your organization uses Internet Information Services (IIS), make sure that the user account used for IIS (IUSR&#160;and/or IIS_IUSRS) has access to this new installation directory. To learn more,&#160;<strong>See Also&#160;</strong><a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/01-Introduction/Installing_EMS_Web_App/Windows_2008//2008_R2_Web_Server_Setup_Guide">Windows 2008/2008 R2 Web&#160;Server Setup Guide</a> or <a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/01-Introduction/Installing_EMS_Web_App/Windows_Server_2012//2012_R2_Web_Server_Setup_Guide">Windows 2012/2012 R2 Web Server Setup Guide</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>{{product_webapp}}&#160;should <strong>not </strong>be installed in the same physical directory as other EMS web-based products OR under a site running another version of {{product_VEMS}} or {{product_webapp}}.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <ol>
-            <li value="7">In the&#160;<em>SQL Server and database information</em> screen that appears, enter your SQL Instance Name and your Database Name and click <strong>Next</strong>.</li>
-        </ol>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip: </span></strong>The database name is&#160;typically “EMS.”</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="mt-indent-1">
-            <img alt="" class="internal default" />
+        <h1>Installing or Upgrading to the EMS Web App</h1>
+        <p>1. Manually <strong>uninstall </strong>any previous versions of {{product_VEMS}} or {{product_webapp}}&#160;on your web server.&#160;</p>
+        <p>2. Verify that <a title="Hardware and Software Requirements">Requirements and Prerequisites</a> have been met.</p>
+        <p>3. Download the <strong>EMSWebApplication.msi</strong> file onto the web server that will be running {{product_webapp}}.</p>
+        <p>4. Run <strong>EMSWebApplication.msi</strong>.</p>
+        <p>5. The first screen welcomes you to the&#160;{{product_webapp}}&#160;Setup Wizard.&#160;Click <strong>Next </strong>to begin the installation process.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupNext.png" />
         </p>
-        <ol start="8">
-            <li>In the <em>Virtual Directory information</em> screen that appears, the Virtual Directory Name will default to the destination folder you specified (in Step 6 above).&#160; It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EmsWebApp” in the example above.)&#160;Click <strong>Next</strong>.<br /><img alt="" class="internal default" /></li>
-        </ol>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+        <p>6. In the&#160;<em>Destination Folder</em> screen, select the destination folder.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupDestinationFolder.png" />
+        </p>
+        <p> &#160;<br /><br />   The installation process will create a new physical directory on your web server based on the destination folder path you entered.&#160;Click <strong>Next</strong>.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
+                    <td>
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
                     </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-a52a2a">:</span></strong>{{product_webapp}} should <strong>not </strong>be installed in the same virtual directory as other EMS web-based products OR under a site running another version of {{product_webapp}}.</p>
+                    <td>
+                        <p><strong>Tip:&#160;</strong>Choosing a folder above other than the default will create a new physical directory on your web server at that location.&#160;If your organization uses Internet Information Services (IIS), make sure that the user account used for IIS (IUSR&#160;and/or IIS_IUSRS) has access to this new installation directory. To learn more,&#160;<strong>See Also&#160;</strong><a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/01-Introduction/Installing_EMS_Web_App/Windows_2008//2008_R2_Web_Server_Setup_Guide">Windows 2008/2008 R2 Web&#160;Server Setup Guide</a> or <a title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides_(V44.1)/01-Introduction/Installing_EMS_Web_App/Windows_Server_2012//2012_R2_Web_Server_Setup_Guide">Windows 2012/2012 R2 Web Server Setup Guide</a>.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <ol start="9">
-            <li>On the <em>Ready to install&#160;{{product_webapp}}&#160;</em>screen that appears, click&#160;<strong>Install</strong>.<br /><img alt="" class="internal default" style="width: 512px;height: 407px;" width="512px" height="407px" /></li>
-            <li>On the&#160;<em>Completed the {{product_webapp}} Setup Wizard</em> screen that appears, click <strong>Finish</strong>.&#160;&#160;</li>
-        </ol>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Installation Instructions</a><a mt-export-translate="no">persona:SysAdmin</a><a mt-export-translate="no">versionfourtyfourfunctional:EMSDeploymentENH</a><a mt-export-translate="no">reviewed:LanaJ</a><a>Upgrading VEMS</a><a>QAReview</a><a>Web App Installation</a><a>Upgrade Instructions</a><a>Upgrading</a>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Note: </strong>{{product_webapp}}&#160;should <strong>not </strong>be installed in the same physical directory as other EMS web-based products OR under a site running another version of {{product_VEMS}} or {{product_webapp}}.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>7. In the&#160;<em>SQL Server and database information</em> screen that appears, enter your SQL Instance Name and your Database Name and click <strong>Next</strong>.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tip: </strong>The database name is&#160;typically “EMS.”</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSQLServerdatabase.png" />
         </p>
+        <p>8. In the <em>Virtual Directory information</em> screen that appears, the Virtual Directory Name will default to the destination folder you specified (in Step 6 above).&#160; It is recommended that you keep the default setting.&#160;The installation process will create a virtual directory on your web server based on the virtual directory entered (“EmsWebApp” in the example above.)&#160;Click <strong>Next</strong>.<br /></p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppVirtualDirectory.png" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Warning:</strong>{{product_webapp}} should <strong>not </strong>be installed in the same virtual directory as other EMS web-based products OR under a site running another version of {{product_webapp}}.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>9. On the <em>Ready to install&#160;{{product_webapp}}&#160;</em>screen that appears, click&#160;<strong>Install</strong>.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_InstallUpgradetoWebApp_EMSWebAppSetupReadytoInstall.png" />
+        </p>
+        <p>10. On the&#160;<em>Completed the {{product_webapp}} Setup Wizard</em> screen that appears, click <strong>Finish</strong>.&#160;&#160;</p>
     </body>
 </html>

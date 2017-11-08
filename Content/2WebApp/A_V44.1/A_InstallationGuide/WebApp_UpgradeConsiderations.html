@@ -1,15 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="3555" MadCap:lastWidth="898" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Upgrade Considerations</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Upgrade Considerations</h1>
-        <p>When planning to upgrade from previous versions of {{product_vems}} to the new {{product_webapp}}, you should take the following new features, functionality, and default settings into consideration.</p> <h2>Time Zone Settings</h2> <ul> <li> <p><strong>Web Users should be assigned to a time zone for an optimal experience.</strong></p>  </li>
-</ul> <h2>Configuration and Parameter Settings</h2> <ul> <li><strong>Due to a change in product naming, you will need to update the name of the&#160;<em>Exchange Integration Web Service URL </em>parameter.</strong>&#160;See Also:<a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters/020_EMS_Web_App_System_Parameters"> {{product_webapp}} parameters.</a></li> <li>For an optimal user-interface experience, we recommend keeping text-based&#160;fields and notes (<em>e.g., </em>Room Descriptions, Process Template Descriptions, Event Names, etc.) as brief as possible.</li> <li>New parameters have been introduced: <ul> <li>For organizations who direct everyday users to manually create their own accounts: <ul> <li><em>Sign Up Confirmation Email</em></li> <li><em>Sign Up Success Email</em></li> <li><em>Request Received Email</em></li> <li><em>Password Reset Email</em></li> <li><em>Password Reset Success Email</em></li>  </ul>  </li> <li>Default Home Page of&#160;<em>Site Home&#160;</em>or&#160;<em>My Home (My Home&#160;</em>is the default).</li> <li>Show Infographics on <em>My Home </em>(<em>No&#160;</em>is the default).</li> <li>Default Cancel Reason</li>  </ul>  </li> <li>Some parameters have been updated: <ul> <li><em>Default Account Status for Newly-Created User&#160;</em>(formerly&#160;<em>Security Status for User</em>) - Options are&#160;<em>Active&#160;</em>or&#160;<em>Pending</em>.&#160;<em>Inactive&#160;</em>option has been removed.</li> <li><em>Browse Events - Display Format - </em>Reduced to <em>Daily, Weekly,&#160;</em>and&#160;<em>Monthly&#160;</em>options.</li> <li><em>Setup Type Validation Rule -&#160;</em>No longer affects room searching. Will still handle&#160;<em>Setup Type </em>display and validating attendance against capacties.</li> <li><em>Allow Access to System Check Pages from Any Machine? -&#160;</em>No longer applies to {{product_webapp}} as&#160;<em>SystemCheck.aspx </em>has been removed for this application.</li> <li><em>Default Value for Attendance -&#160;</em>Default is now "1." Existing configurations of this parameter for any value other than "0" will not be affected upon upgrade.</li>  </ul>  </li> <li>Some parameters have been removed for v44.1: <ul> <li><em>Note Label on Account Management -&#160;</em>Field is no longer exposed to the everyday user.</li> <li><em>Number of Hours to Show on Browse for Space -&#160;</em>No longer applicable.</li> <li><em>Maximum Number of Events/Day to Display -&#160;</em>No longer applicable. Maximums now set per view (Daily, Weekly, or Monthly).</li> <li><em>Secondary Event Sort (After Date/Time) -&#160;</em>No longer applicable. All columns are sortable.</li> <li><em>Devices to redirect to mobile site -&#160;</em>No longer applicable as {{product_webapp}} is now mobile-responsive.</li> <li><em>Display Areas as Filter -&#160;</em>Areas are incorporated into&#160;<em>Locations&#160;</em>for searching.</li> <li><em>Allow User to Change Setup Count in Selected Locations Area -&#160;</em>Permanently enabled as part of the new UX design.</li>  </ul>  </li>
-</ul> <h2>Web Menus</h2> <ul> <li><strong>All custom menus&#160;should be reviewed and updated/removed prior to updating in a live environment.</strong></li> <li>Custom menus can be parented under the&#160;<em>Links </em>or <em>Help </em>icon (for organization-specific help pages). Upgrading will re-parent all custom menus under <em>Links.</em></li> <li>Process&#160;templates can be sequenced under <em>Create a Reservation </em>menu&#160;but can&#160;no longer be moved to different menus.</li> <li>Due to the new UI design, system-generated menus cannot be re-sequenced or&#160;relabeled, and you cannot modify their URLs. <h2>Functional Changes</h2> <p>The following changes will show in your new installation due to the new UI&#160;design:</p> <ul> <li>The {{product_webapp}} has been made mobile-responsive. Therefore, mobile-specific pages such as&#160;<em>MobileLogin.aspx&#160;</em>have been removed. Everyday users can instead access&#160;mobile-responsive versions of the same pages used when accessing the {{product_webapp}} on a desktop machine.</li> <li>New <a title="Configuring Everyday Users"><em>Validated </em>checkbox</a> for everyday users: <ul> <li>Only applies to manual authentication creation and&#160;approval process, but checkbox appears for all users regardless.</li> <li>Will be automatically selected for new users created in the {{product}} desktop client and via {{product_hrtk}}.</li> <li>New {{product_hrtk}} installations&#160;will have the&#160;<em>Validated </em>checkbox included in update logic.</li>  </ul>  </li>  </ul> <p class="comment">@Tara, please elaborate on where the update logic is and how this is visible to them during new installations<br /> @Charity, Ask Dustin where he put the logic in the SQL&#160;script if you need to have it specifically called out here.</p> <ul> <li>For tighter security, the&#160;<em>SystemCheck.aspx </em>page and the&#160;<em>Ctrl+Shift+U&#160;</em>keystroke shortcut to access&#160;<em>SystemCheck.aspx&#160;</em>have been removed for the {{product_webapp}}. Some information previously included on <em>SystemCheck.aspx</em>&#160;has been relocated to options within&#160;the&#160;<em>Web Administrator&#160;</em>menu of the {{product_webapp}}: <ul> <li><em>Clear Cache&#160;</em>option</li> <li>License information</li> <li>Server and database connection string</li> <li>Error Log Files</li> <li>Application version and information (relocated to the&#160;<em>About&#160;</em>page)</li>  </ul>  </li>  </ul> <ul> <li>Services, videoconferencing, and reservation management will not be available on the mobile version of the&#160;{{product_webapp}} nor on the {{product_mobile}}.</li> <li>Template personalization will be automatically enabled for all process templates, which means that users will be able to set favorite templates to streamline navigation during the booking process. Favorite templates, for example, will be listed in a dropdown when the user begins booking space.</li> <li>For organizations using the optional Floor Map module, the SVG&#160;file format is no longer&#160;supported for <a title="Viewing Floor Plans">floor map</a> icons/images.</li>  </ul> <h2>Help Text Records</h2> <ul> <li><strong>All help text records&#160;should be reviewed and updated/removed prior to updating in a live environment.</strong></li> <li>Home page web text records&#160;will now belong under <em>Site Home&#160;</em>and can differ for unauthenticated users vs. authenticated users.&#160;&#160;</li> <li>For organizations who direct everyday users to manually create their own accounts, a new text record&#160;for Terms of Use has been introduced.</li> <li>Some help text records have been removed (listed alphabetically by the&#160;database value&#160;<em>LookupKey&#160;</em>for&#160;<em>tblWebText</em>): <ul> <li><em>MenuItem</em></li> <li><em>VEMSAccountManagementHelp</em></li> <li><em>VEMSAddBookingHelpPopup</em></li> <li><em>VEMS_BadBrowserHelp</em></li> <li><em>VEMSBillingReferenceLookupHelp</em></li> <li><em>VEMSClassicRequestPopup</em></li> <li><em>VEMSEditAccountHelp</em></li> <li><em>VEMSEditBookingHelpPopup</em></li> <li><em>VEMSGroupLookupOnPage</em></li> <li><em>VEMSLdapConfigurationHelp</em></li> <li><em>VEMSLoginHelp</em></li> <li><em>VEMSLoginPageMainContent</em></li> <li><em>VEMSLogoutPageMainContent</em></li> <li><em>VEMSLogoutScreenMessage</em></li> <li><em>VEMSMissingOrInvalidExpectedQuerystring</em></li> <li><em>VEMSPONumberLookupHelp</em></li> <li><em>VEMSReservationDetailsHelp</em></li> <li><em>VEMSReservationRecurrenceHelp</em></li> <li><em>VEMSReservationSummaryCheckInSuccess</em></li> <li><em>VEMSReservationSummaryCheckInUnavailable</em></li> <li><em>VEMSRoomRequestHelpPopup</em></li> <li><em>VEMSUDFDetailsHelp</em></li> <li><em>VEMSUserPersonalizationHelp</em></li>  </ul>  </li> <li>Application title help record only applies to <em>Default.aspx </em>(HTML not recommended for this page).</li>  </ul> <h2>CSS (Style)&#160;Settings</h2> <ul> <li><strong>All custom CSS&#160;should be reviewed and updated/removed prior to upgrading in a live environment.</strong></li> <li><em>Custom.CSS </em>now saved under <em>EMSWebApp/Content/Custom/Custom.CSS </em>instead of the <em>Styles </em>folder.</li>  </ul> <h2>Language Translation</h2> <ul> <li><a title="Configuring Language Translations">Language translation</a> is still supported, but administrators should review the new site design to apply new translations where necessary.</li>  </ul> <h2>All Other Customizations</h2> <ul> <li><strong>Any custom logos, custom JavaScript, and all other customizations&#160;should be reviewed and updated/removed prior to updating in a live environment.</strong></li>  </ul>  </li>
-</ul>
-<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+        <h1>Upgrade Considerations</h1>
+        <p>When planning to upgrade from previous versions of VEMS to the new EMS Web App, you should take the following new features, functionality, and default settings into consideration.</p>
+        <h2>Time Zone Settings&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Web Users should be assigned to a time zone for an optimal experience.</li>
+        </ul>
+        <h2>Best Practices&#160;</h2>
+        <p>Display settings and other environmental factors greatly affect the performance of EMS Floorplan.&#160;For an optimal floorplan experience, please follow these&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_Floor_Plans/Installing_EMS_Floor_Plans/07-EMS_Configuration_Steps&amp;mt-draft=false" title="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/EMS_Floor_Plans/Installing_EMS_Floor_Plans/07-EMS_Configuration_Steps&amp;mt-draft=false" class="Hyperlink">Best Practices.&#160;</a></p>
+        <h2>Configuration and Parameter Settings&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Due to a change in product naming, you will need to update the name of the&#160;Exchange Integration Web Service URL&#160;parameter.&#160;See Also:<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/200_System_Parameters/020_EMS_Web_App_System_Parameters" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters/020_EMS_Web_App_System_Parameters"><span class="Hyperlink">EMS Web App parameters.</span></a></li>
+            <li>For an optimal user-interface experience, we recommend keeping text-based&#160;fields and notes (e.g.,&#160;Room Descriptions, Process Template Descriptions, Event Names, etc.) as brief as possible.</li>
+            <li>New parameters have been introduced:</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>For organizations who direct everyday users to manually create their own accounts:</li>
+        </ul>
+        <ul style="list-style-type: square;margin-left: 108pt;">
+            <li>Sign Up Confirmation Email</li>
+            <li>Sign Up Success Email</li>
+            <li>Request Received Email</li>
+            <li>Password Reset Email</li>
+            <li>Password Reset Success Email</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Default Home Page of&#160;Site Home&#160;or&#160;My Home (My Home&#160;is the default).</li>
+            <li>Show Infographics on&#160;My Home&#160;(No&#160;is the default).</li>
+            <li>Default Cancel Reason</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Some parameters have been updated:</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Default Account Status for Newly-Created User&#160;(formerly&#160;Security Status for User) - Options are&#160;Active&#160;or&#160;Pending.&#160;Inactive&#160;option has been removed.</li>
+            <li>Browse Events - Display Format -&#160;Reduced to&#160;Daily, Weekly,&#160;and&#160;Monthly&#160;options.</li>
+            <li>Setup Type Validation Rule -&#160;No longer affects room searching. Will still handle&#160;Setup Type&#160;display and validating attendance against capacties.</li>
+            <li>Allow Access to System Check Pages from Any Machine? -&#160;No longer applies to EMS Web App as&#160;SystemCheck.aspx&#160;has been removed for this application.</li>
+            <li>Default Value for Attendance -&#160;Default is now "1." Existing configurations of this parameter for any value other than "0" will not be affected upon upgrade.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Some parameters have been removed for v44.1:</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Note Label on Account Management -&#160;Field is no longer exposed to the everyday user.</li>
+            <li>Number of Hours to Show on Browse for Space -&#160;No longer applicable.</li>
+            <li>Maximum Number of Events/Day to Display -&#160;No longer applicable. Maximums now set per view (Daily, Weekly, or Monthly).</li>
+            <li>Secondary Event Sort (After Date/Time) -&#160;No longer applicable. All columns are sortable.</li>
+            <li>Devices to redirect to mobile site -&#160;No longer applicable as EMS Web App is now mobile-responsive.</li>
+            <li>Display Areas as Filter -&#160;Areas are incorporated into&#160;Locations&#160;for searching.</li>
+            <li>Allow User to Change Setup Count in Selected Locations Area -&#160;Permanently enabled as part of the new UX design.</li>
+        </ul>
+        <h2>Web Menus&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>All custom menus&#160;should be reviewed and updated/removed prior to updating in a live environment.</li>
+            <li>Custom menus can be parented under the&#160;Links&#160;or&#160;Help&#160;icon (for organization-specific help pages). Upgrading will re-parent all custom menus under&#160;Links.</li>
+            <li>Process&#160;templates can be sequenced under&#160;Create a Reservation&#160;menu&#160;but can&#160;no longer be moved to different menus.</li>
+            <li>Due to the new UI design, system-generated menus cannot be re-sequenced or&#160;relabeled, and you cannot modify their URLs.</li>
+        </ul>
+        <h2>Functional Changes&#160;</h2>
+        <p>The following changes will show in your new installation due to the new UI&#160;design:</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>The EMS Web App has been made mobile-responsive. Therefore, mobile-specific pages such as&#160;MobileLogin.aspx&#160;have been removed. Everyday users can instead access&#160;mobile-responsive versions of the same pages used when accessing the EMS Web App on a desktop machine.</li>
+            <li>New&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Configuring_Web_Users" title="Configuring Everyday Users">Validated&#160;<span class="Hyperlink">checkbox</span></a>&#160;for everyday users:</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Only applies to manual authentication creation and&#160;approval process, but checkbox appears for all users regardless.</li>
+            <li>Will be automatically selected for new users created in the EMS desktop client and via EMS Human Resources Toolkit.</li>
+            <li>New EMS Human Resources Toolkit installations&#160;will have the&#160;Validated&#160;checkbox included in update logic.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>For tighter security, the&#160;SystemCheck.aspx&#160;page and the&#160;Ctrl+Shift+U&#160;keystroke shortcut to access&#160;SystemCheck.aspx&#160;have been removed for the EMS Web App. Some information previously included on&#160;SystemCheck.aspx&#160;has been relocated to options within&#160;the&#160;Web Administrator&#160;menu of the EMS Web App:</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>Clear Cache&#160;option</li>
+            <li>License information</li>
+            <li>Server and database connection string</li>
+            <li>Error Log Files</li>
+            <li>Application version and information (relocated to the&#160;About&#160;page)</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Services, videoconferencing, and reservation management will not be available on the mobile version of the&#160;EMS Web App nor on the EMS Mobile App.</li>
+            <li>Template personalization will be automatically enabled for all process templates, which means that users will be able to set favorite templates to streamline navigation during the booking process. Favorite templates, for example, will be listed in a dropdown when the user begins booking space.</li>
+            <li>For organizations using the optional Floor Map module, the SVG&#160;file format is no longer&#160;supported for&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_Web_App_V44.1/020Browse_Menu/030_Browsing_Locations/Viewing_Floor_Plans" title="Viewing Floor Plans"><span class="Hyperlink">floor map</span></a>&#160;icons/images.</li>
+        </ul>
+        <h2>Help Text Records&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>All help text records&#160;should be reviewed and updated/removed prior to updating in a live environment.</li>
+            <li>Home page web text records&#160;will now belong under&#160;Site Home&#160;and can differ for unauthenticated users vs. authenticated users.&#160;&#160;</li>
+            <li>For organizations who direct everyday users to manually create their own accounts, a new text record&#160;for Terms of Use has been introduced.</li>
+            <li>Some help text records have been removed (listed alphabetically by the&#160;database value&#160;LookupKey&#160;for&#160;tblWebText):</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li>MenuItem</li>
+            <li>VEMSAccountManagementHelp</li>
+            <li>VEMSAddBookingHelpPopup</li>
+            <li>VEMS_BadBrowserHelp</li>
+            <li>VEMSBillingReferenceLookupHelp</li>
+            <li>VEMSClassicRequestPopup</li>
+            <li>VEMSEditAccountHelp</li>
+            <li>VEMSEditBookingHelpPopup</li>
+            <li>VEMSGroupLookupOnPage</li>
+            <li>VEMSLdapConfigurationHelp</li>
+            <li>VEMSLoginHelp</li>
+            <li>VEMSLoginPageMainContent</li>
+            <li>VEMSLogoutPageMainContent</li>
+            <li>VEMSLogoutScreenMessage</li>
+            <li>VEMSMissingOrInvalidExpectedQuerystring</li>
+            <li>VEMSPONumberLookupHelp</li>
+            <li>VEMSReservationDetailsHelp</li>
+            <li>VEMSReservationRecurrenceHelp</li>
+            <li>VEMSReservationSummaryCheckInSuccess</li>
+            <li>VEMSReservationSummaryCheckInUnavailable</li>
+            <li>VEMSRoomRequestHelpPopup</li>
+            <li>VEMSUDFDetailsHelp</li>
+            <li>VEMSUserPersonalizationHelp</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Application title help record only applies to&#160;Default.aspx&#160;(HTML not recommended for this page).</li>
+        </ul>
+        <h2>CSS (Style)&#160;Settings&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>All custom CSS&#160;should be reviewed and updated/removed prior to upgrading in a live environment.</li>
+            <li>Custom.CSS&#160;now saved under&#160;EMSWebApp/Content/Custom/Custom.CSS&#160;instead of the&#160;Styles&#160;folder.</li>
+        </ul>
+        <h2>Language Translation&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" title="Configuring Language Translations" class="Hyperlink">Language translation</a>&#160;is still supported, but administrators should review the new site design to apply new translations where necessary.</li>
+        </ul>
+        <h2>All Other Customizations&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li>Any custom logos, custom JavaScript, and all other customizations&#160;should be reviewed and updated/removed prior to updating in a live environment.</li>
+        </ul>
+    </body>
 </html>

@@ -1,40 +1,45 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html>
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1605" MadCap:lastWidth="950" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Installing .NET Framework</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Installing .NET Framework</h1>
-        <p class="mt-script-comment">Page summary display</p>
-
-<pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');</pre>
-
-<h3>Installing .NET Framework 3.5</h3>
-
-<ol>
-	<li>Navigate to Start &gt; All Programs &gt; Administrative Tools &gt; <strong>Server Manager</strong>.&#160;</li>
-	<li><span class="mt-font-size-10.0pt">In the <strong>Server Manager </strong>interface, click <strong>Features </strong>to display all the installed Features in the right pane.</span></li>
-	<li><span class="mt-font-size-10.0pt">In the Server Manager interface, select <strong>Add Features </strong>to displays a list of possible features.</span></li>
-	<li value="4"><span class="mt-font-size-10.0pt">In the Select Features interface, expand <strong>.NET Framework 3.5.1 Features</strong>.</span></li>
-</ol>
-
-<p style="margin-left: 40px;"><span class="mt-font-size-10.0pt"><img alt="" class="internal" style="width: 226px;height: 49px;" width="226px" height="49px" /></span></p>
-
-<ol>
-	<li value="5"><span class="mt-font-size-10.0pt">Check the box next to <strong>.NET Framework 3.5.1 </strong>and click <strong>Next</strong>.</span></li>
-	<li value="6"><span class="mt-font-size-10.0pt">In the <strong>Confirm Installation Selections </strong>interface, review the selections and then click <strong>Install</strong>.</span></li>
-	<li value="7"><span class="mt-font-size-10.0pt">Allow the installation process to complete and then click <strong>Close</strong>.</span></li>
-</ol>
-
-<h3>Installing .NET Framework 4.5: Regics Only</h3>
-
-<p>Windows Server 2008/2008 R2 does not have a built in way to install <strong>.NET Framework 4.5</strong>. In order to install .NET Framework 4.5, the server admin will need to download the following redistributable to the server and install it following the instructions.</p>
-
-<p><strong>Download Link:</strong>    <a href="http://www.microsoft.com/en-us/download/details.aspx?id=30653"><span style="color: blue;">.NET Framework 4.5</span></a></p>
-
-<p>&#160;</p>
-<hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a></p></body>
+        <h1>Installing .NET Framework</h1>
+        <h2>Installing .NET Framework 3.5 and .NET Framework 4.5</h2>
+        <p>1. In Server Manager, click <strong>Manage </strong>and then select <strong>Add Roles and Features </strong>to start the Add Roles and Features Wizard.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF35ServerManager.png">
+            </img>
+        </p>
+        <p>2. In the <strong>Confirm Installation Selections </strong>interface, review the selections and then click <strong>Install</strong>.</p>
+        <p>3. Allow the installation process to complete and then click <strong>Close</strong>.</p>
+        <p>4. On the <strong>Select installation type </strong>screen, select <strong>Role-based or feature-based installation</strong>.</p>
+        <p>5. Select the target server.</p>
+        <p>6. On the <strong>Select Features </strong>screen, check the box next to <strong>.Net Framework 3.5 Features</strong>.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF35Features.png">
+            </img>
+        </p>
+        <p>7. In the Select Features interface, expand <strong>.NET Framework 3.5 Features</strong>.</p>
+        <p>8. Once expanded, there will be three check boxes. One for <strong>.NET Framework 3.5 </strong>and the other two for <strong>HTTP Activation </strong>and <strong>Non-HTTP Activation</strong>. Check the box next to <strong>.NET Framework 3.5 </strong>and click <strong>Next</strong>.</p>
+        <h2>Installing .NET Framework 4.5: Regics Only</h2>
+        <p> 1. In Server Manager, click Manage and then select Add Roles and Features to start the Add Roles and Features Wizard.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF45ServerManager.png">
+            </img>
+        </p>
+        <p> 2. On the <strong>Select installation type </strong>screen, select <strong>Role-based or feature-based installation</strong>.</p>
+        <p>3. Select the target server.</p>
+        <p>4. On the <strong>Select Features </strong>screen, check the box next to <strong>.Net Framework 4.5 Features</strong>.</p>
+        <p>5. In the Select Features interface, expand <strong>.NET Framework 4.5 Features</strong>.</p>
+        <p>6. Once expanded, there will be three check boxes. These will be <strong>.NET Framework 4.5</strong>, <strong>APS.NET&#160;</strong><strong>4.5 </strong>and <strong>WCF Services</strong>. Check the boxes next to <strong>.NET Framework 4.5 </strong>and <strong>ASP.NET 4.5 </strong>then click <strong>Next</strong>.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Install-IIS2012_NETF45Features.png">
+            </img>
+        </p>
+        <p>7. In the <strong>Confirm Installation Selections </strong>interface, review the selections and then click <strong>Install</strong>.</p>
+        <p>8. Allow the installation process to complete and then click <strong>Close</strong>.</p>
+        <p>&#160;</p>
+    </body>
 </html>

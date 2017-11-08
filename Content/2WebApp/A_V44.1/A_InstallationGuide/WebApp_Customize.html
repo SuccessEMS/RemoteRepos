@@ -1,31 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2793.28" MadCap:lastWidth="1190" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="4597" MadCap:lastWidth="999" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Customizing EMS Web App</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Customizing EMS Web App</h1>
-        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');
-</pre>
-        <p>After you have installed the&#160;{{product_webapp}},&#160;you can customize many aspects of it. You can change the “look and feel” of the {{product_webapp}} by inserting your own logo. Experienced web developers can also modify the system’s style sheet to change fonts and colors.&#160;&#160;</p><pre class="script-css" mt-export-translate="no" xml:space="preserve">
-
-.columbia-article-topic #mt-toc-container {
-    display:block !important; 
-}
-#mt-toc-container {
-    display: block !important;
-}
-</pre>
+        <h1>
+            <MadCap:annotation MadCap:createDate="2017-11-01T22:30:37.2402341-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does this topic belong in the Config Guide instead of Install Guide?s" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-01T22:30:58.3702393-06:00">Customizing</MadCap:annotation> EMS Web App</h1>
         <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                    <td valign="top">
                         <img alt="" class="internal default" style="width: 26px;height: 26px;" width="26px" height="26px" />
                     </td>
                     <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Important:</span></strong>Do not alter any of the {{product_webapp}} web page files themselves. <strong>The maintenance agreement for {{product_webapp}} extends <em>to the original page content only</em></strong>.</p>
+                        <p><strong><span class="mt-color-669933">Important:</span></strong>Do not alter any of the {{product_webapp}} web page files themselves. <strong>The maintenance agreement for {{product_webapp}} extends <em>to the original page content only</em></strong>.</p>
                     </td>
                 </tr>
             </tbody>
@@ -35,11 +24,11 @@ template('MindTouch/Controls/PageOverview');
         <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                    <td valign="top">
                         <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
                     </td>
                     <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>Be sure to maintain&#160;the aspect ratio of&#160;135px&#160;wide&#160;X 40px&#160;high.The system will accept nearly any size logo image, but you should avoid images more than 200 pixels wide and images that are too tall&#160;to avoid extra scrolling.</p>
+                        <p><strong><span class="mt-color-669933">Tip:</span></strong>Be sure to maintain&#160;the aspect ratio of&#160;135px&#160;wide&#160;X 40px&#160;high.The system will accept nearly any size logo image, but you should avoid images more than 200 pixels wide and images that are too tall&#160;to avoid extra scrolling.</p>
                     </td>
                 </tr>
             </tbody>
@@ -55,11 +44,11 @@ template('MindTouch/Controls/PageOverview');
         <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                    <td valign="top">
                         <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />
                     </td>
                     <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Concept:</span></strong>A Custom Link enables you to build a link based on&#160;the <em>Browse Events </em>page that will display only events meeting your specified criteria. For example,&#160;you can create a link that only displays events in a specific Building or of a specific Event Type. Essentially, the link&#160;pre-filters the event listing displayed to a specific building, event type, Group, etc. Once you generate the link, then you can insert it in emails or websites.</p>
+                        <p><strong><span class="mt-color-669933">Concept:</span></strong>A Custom Link enables you to build a link based on&#160;the <em>Browse Events </em>page that will display only events meeting your specified criteria. For example,&#160;you can create a link that only displays events in a specific Building or of a specific Event Type. Essentially, the link&#160;pre-filters the event listing displayed to a specific building, event type, Group, etc. Once you generate the link, then you can insert it in emails or websites.</p>
                     </td>
                 </tr>
             </tbody>
@@ -69,25 +58,27 @@ template('MindTouch/Controls/PageOverview');
             <li>Log into {{product_webapp}} using a user ID that belongs to a Everyday User Security Template containing the <em>Web&#160;</em><em>Administrator</em> Role.&#160; For information on how to configure a user and/or Everyday User Security Template, see <a title="Configuring Everyday Users">Configuring Everyday Users</a>&#160;and <a title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_VEMS/010_Configuring_Web_Templates">Configuring Templates</a>.</li>
             <li>Under the dropdown&#160;menu next to your name, click <strong><em>Creat<em><strong>e</strong></em> Custom Link</em></strong>.</li>
         </ol>
-        <p class="mt-indent-1">
-            <img alt="" class="internal" style="width: 289px;height: 258px;" width="289px" height="258px" />
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Customize_CustomizingLinks.png" style="width: 320px;height: 281px;" />
         </p>
         <ol start="3">
-            <li>Specify the pre-filters that will control what displays when users click your custom link.<br /><img alt="" class="internal" style="width: 866px;height: 930px;" width="866px" height="930px" /><table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;"><tbody><tr><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top"><img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" /></td><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top"><p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tips:</span></strong><br />                To display a custom logo other than the default logo used for your {{product_webapp}} site, enter the logo filename and server path&#160;in the<strong> Logo</strong> field.&#160;The logo needs to be stored&#160;in the {{product_webapp}} physical directory on your web server (typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\</em>).</p><p class="NoteTipWarningText">Select the&#160;<strong>Ignore Everyday User Application Display Settings</strong>&#160;option if you want all events within your criteria to display to&#160;users using this link regardless of everyday user display&#160;settings&#160;(essentially,&#160;ignoring configuration rules that would normally hide certain events from view).<br /><br />                Select the<strong> Collapse Bookings to Reservation-Level</strong> option to collapse booking information so that only the reservation information shows.&#160;</p></td></tr></tbody></table></li>
+            <li>Specify the pre-filters that will control what displays when users click your custom link.<br /><p><img src="Images/A_InstallationGuide/WA_Customize_GenerateCustomLink.png" style="width: 870px;height: 929px;" /></p><table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;"><tbody><tr><td valign="top"><img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" /></td><td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top"><p><strong><span class="mt-color-669933">Tips:</span></strong><br />                To display a custom logo other than the default logo used for your {{product_webapp}} site, enter the logo filename and server path&#160;in the<strong> Logo</strong> field.&#160;The logo needs to be stored&#160;in the {{product_webapp}} physical directory on your web server (typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\</em>).</p><p>Select the&#160;<strong>Ignore Everyday User Application Display Settings</strong>&#160;option if you want all events within your criteria to display to&#160;users using this link regardless of everyday user display&#160;settings&#160;(essentially,&#160;ignoring configuration rules that would normally hide certain events from view).<br /><br />                Select the<strong> Collapse Bookings to Reservation-Level</strong> option to collapse booking information so that only the reservation information shows.&#160;</p></td></tr></tbody></table></li>
         </ol>
         <table align="center" border="0" cellpadding="0" cellspacing="0">
+            <col style="width: 446px;" />
+            <col />
             <tbody>
                 <tr>
-                    <td style="width: 157px;">
+                    <td>
                         <p>
-                            <img alt="" class="internal" style="width: 140px;height: 142px;" width="140px" height="142px" />
+                            <img src="Images/A_InstallationGuide/WA_Customize_CollapseBookingsToResEnabled.png" style="width: 130px;height: 130px;" />
                         </p>
                         <p><em><span>Collapse Bookings to&#160;Reservation Level Enabled</span></em>
                         </p>
                     </td>
                     <td style="width: 144px;">
                         <p>
-                            <img alt="" class="internal" style="width: 142px;height: 367px;" width="142px" height="367px" />
+                            <img src="Images/A_InstallationGuide/WA_Customize_CollapseBookingsToResDisabled.png" style="width: 114px;height: 294px;" />
                         </p>
                         <p><em><span>Collapse Bookings to&#160;Reservation Level Disabled</span></em>
                         </p>
@@ -95,22 +86,20 @@ template('MindTouch/Controls/PageOverview');
                 </tr>
             </tbody>
         </table>
-        <ol>
-            <li value="10">Click the <strong>Generate Link</strong> button to display a friendly URL and HTML code that can be added to a web page, email, etc.&#160; The URL can also be used to test your Custom Link.</li>
-        </ol>
-        <p align="center">
-            <img alt="" class="internal" style="width: 1004px;height: 370px;" width="1004px" height="370px" />
+        <p>10. Click the <strong>Generate Link</strong> button to display a friendly URL and HTML code that can be added to a web page, email, etc.&#160; The URL can also be used to test your Custom Link.</p>
+        <p>
+            <img src="Images/A_InstallationGuide/WA_Customize_GenerateLink.png" style="width: 999px;height: 335px;" />
         </p>
         <h2>Customizing JavaScript</h2>
         <p>With custom JavaScript, you can extend the functionality of {{product_webapp}} to suit your business needs.&#160;</p>
         <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                    <td valign="top">
                         <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
                     </td>
                     <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>Including custom JavaScript on {{product_webapp}} pages can affect performance.</p>
+                        <p><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>Including custom JavaScript on {{product_webapp}} pages can affect performance.</p>
                     </td>
                 </tr>
             </tbody>
@@ -121,12 +110,17 @@ template('MindTouch/Controls/PageOverview');
         <ol>
             <li>Enable Custom JavaScript.&#160;</li>
             <li>Open the {{product_webapp}} <em>web.config </em>file <em>(</em>typically,&#160;<em>C:\inetpub\wwwroot\EMSWebApp\web.config).</em></li>
-        </ol><pre class="script" mt-export-translate="no" xml:space="preserve">
-wiki.page("Learn_About_Our_Applications/Learn_About_Managing_EMS/EMS_Cloud_Customers%3A_Modifying_the_web.config_File")</pre>
+        </ol>
+        <p mt-export-translate="no">
+Tip for EMS Cloud Customers: Modifications to the web.config file must be performed by EMS Cloud Operations. To request these changes, please contact EMS Support.</p>
+        <p>Important: If you do not have a customer login, register here.</p>
+        <p>Option 1 (Recommended): Submit a Ticket directly via the EMS Support Portal</p>
+        <p>Option 2: Email support@emssoftware.com</p>
+        <p>Option 3 (Recommended for critical issues only): Phone (800) 288-4565</p>
         <ol start="3">
             <li>Locate the following node under the <em>&lt;appSettings&gt;</em> node:</li>
         </ol>
-        <p class="mt-indent-1">&lt;add key="allowCustomJs" value="false" /&gt;</p>
+        <p>&lt;add key="allowCustomJs" value="false" /&gt;</p>
         <ol>
             <li value="2">Change the <em>false </em>value to <em>true.</em></li>
             <li>Save the file.</li>
@@ -141,18 +135,15 @@ wiki.page("Learn_About_Our_Applications/Learn_About_Managing_EMS/EMS_Cloud_Custo
         <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
+                    <td valign="top">
                         <img alt="" class="internal default" style="width: 26px;height: 25px;" width="26px" height="25px" />
                     </td>
                     <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>If you include the script in both places, it could cause problems.</p>
+                        <p><strong><span class="mt-color-b22222">Warning</span><span class="mt-color-336699">:</span></strong>If you include the script in both places, it could cause problems.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
         <p>&#160;</p>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:SysAdmin</a><a>Customizing EMS Web App</a><a>custom logo</a>
-        </p>
     </body>
 </html>

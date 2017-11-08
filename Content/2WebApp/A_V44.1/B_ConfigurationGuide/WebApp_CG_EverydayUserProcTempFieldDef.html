@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="8250" MadCap:lastWidth="965" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Everyday User Process Template Field Definitions</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Everyday User Process Template Field Definitions</h1>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Click here to see the screenshot&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template_1.png" style="visibility: visible;mso-wrap-style: square;width: 965px;height: 750px;" alt="https://success.emssoftware.com/@api/deki/files/6270/ConfigureEverydayUserProcessTemplate.png?revision=1" />
+        </p>
+        <h2>Everyday User Process&#160;Template Tab&#160;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>Read-only information.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Mode</p>
+                    </td>
+                    <td>
+                        <p>Determines how a user can make a reservation in EMS Web App.</p>
+                        <p>Request&#160;- users can complete a simple online form requesting a room. Unlike the Self Serve mode, this mode does not allow&#160;the user to view real-time room availability. In addition, requests must be reviewed, approved, and manually processed into actual reservations by an EMS Desktop Client user. The room does not show as Reserved&#160;until this step has occurred.</p>
+                        <p>Note: The "Request" mode is only for guest users. If you are upgrading to EMS V44 from an older version, any roles that were defined in Request mode will be set to inactive.</p>
+                        <p>Self&#160;Serve&#160;- Registered users can see real-time room availability (in list or grid views) and make&#160;</p>
+                        <p>Note: If users&#160;require&#160;video conferencing, you must choose this option.</p>
+                        <p>Service Only Request&#160;- Allows users to request a service (for example, catering, A/V equipment, and so on) for a location that is not managed in EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Menu Text</p>
+                    </td>
+                    <td>
+                        <p>The menu text or link that a EMS Web App user sees when requesting a room using this everyday user process template.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Available to New Users</p>
+                    </td>
+                    <td>
+                        <p>Select this option if this everyday user process template is to be automatically assigned to newly registered users.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Reserve Status</p>
+                    </td>
+                    <td>
+                        <p>Available only for Self Serve mode. The default status that is applied to reservations that are booked in rooms identified as 'reservable' on the Rooms tab.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Request Status</p>
+                    </td>
+                    <td>
+                        <p>Available only for Self Serve mode. The default status that is applied to reservations that are booked in rooms identified as 'requestable' on the Rooms tab.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Conflict Status</p>
+                    </td>
+                    <td>
+                        <p>Available only for Self Serve mode. The default status that is applied to bookings made by users attached to this template that result in a conflict (the room is already booked).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Cancel Status</p>
+                    </td>
+                    <td>
+                        <p>Available only for Self Serve mode. The default status that is applied to bookings that are canceled by users who are attached to this template.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Rule Violation Status</p>
+                    </td>
+                    <td>
+                        <p>Enabled only if Outlook is selected. Used in conjunction with the EMS for Outlook module. If you carry out an action in the EMS for Outlook module that violates a booking restriction, then the booking is changed to this status.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Default Setup Type</p>
+                    </td>
+                    <td>
+                        <p>The setup type that is selected by default for a room search when a user who is attached to this template is reserving a room in EMS Web App. The user can always select a different value.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Allow user Personalization</p>
+                    </td>
+                    <td>
+                        <p>Select this option if users must be able to use the Options feature to customize their settings on EMS Web App pages.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Menu Sequence</p>
+                    </td>
+                    <td>
+                        <p>Enter a number that indicates the order in which this menu option is relative to other menu items that fall under the same parent menu. Items are ordered from lowest to highest sequence number, with the item with the lowest sequence number appearing first.</p>
+                        <p>Note:&#160;If you leave the sequence set to the default value of zero for all menu items, then by default, the items are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Video Conference</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the users who are attached to this template must be able to request rooms that have a video conferencing feature.</p>
+                        <p>Note:&#160;This option is available only for EMS Enterprise. It is not available for EMS Professional. To use the Video Conference option correctly with a everyday user process template, the Self Serve Mode must be selected for the template.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Enable for Web App</p>
+                    </td>
+                    <td>
+                        <p>Select this option if this process template should be available on EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Enable for Mobile</p>
+                    </td>
+                    <td>
+                        <p>Select this option if this everyday user process template is to be available (in an appropriate format) on a mobile device browser.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Enable for Outlook</p>
+                    </td>
+                    <td>
+                        <p>Enables the everyday user process template for use with the EMS for Outlook module.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>&#160;</p>
+                        <p>Enable Integration to Microsoft Exchange</p>
+                    </td>
+                    <td>
+                        <p>Enables the integration of templates with your organization's Exchange server (typically, when&#160;your organization does not use EMS for Outlook.&#160;Enabled only if your organization has purchased the optional&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_for_Microsoft%C2%AE_Outlook_V44.1/Integration_to_Microsoft%C2%AE_Exchange" title="http://success.emssoftware.com/Admin_Guides_(V44.1)/EMS_Authentication%2C_Modules%2C_Services%2C_Interfaces%2C_and_Optional_Components/Integration_to_Exchange"><span class="Hyperlink">Integration&#160;to Exchange</span></a>&#160;module. Select this option if users who are attached to this template must be able to see the free/busy schedules of the attendees. The user can choose a date and time that is convenient for all attendees and then send invitations through EMS Web App, which attendees receive and can manage through Outlook.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Additional Tabs for Booking Template Configuration&#160;</h2>
+        <p>This section provides a conceptual overview of the additional tabs on the&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Process_Templates" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Templates"><span class="Hyperlink">Booking Template Configuration</span></a>&#160;page.</p>
+        <h2>Booking Rules&#160;Tab&#160;&#160;</h2>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;You can use this tab to control very specific timing on how&#160;users can book, cancel, or end&#160;events. &#160;</p>
+        <p>This section contains two areas</p>
+        <ol>
+            <li>Booking Requirements</li>
+            <li>Booking Days</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Click here to see the screenshot&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template_2.png" style="visibility: visible;mso-wrap-style: square;width: 965px;height: 750px;" alt="https://success.emssoftware.com/@api/deki/files/6271/ConfigureEverydayUserProcessTemplateBookingRulesTab.png?revision=1" />
+        </p>
+        <h2>Booking Rules Tab,&#160;Booking Requirements Area&#160;</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>Field</p>
+                </td>
+                <td>
+                    <p>Description</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                    <p>Max. No. Bookings Allowed Per Reservation</p>
+                </td>
+                <td>
+                    <p>Maximum number of bookings that a new reservation can contain.</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Max. No. Minutes Allowed</p>
+                </td>
+                <td>
+                    <p>Maximum number of minutes for which a new reservation can be created&#160;(not enforced when a user edits a booking).</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Use Cancellation Cutoff Time</p>
+                </td>
+                <td>
+                    <p>Whether the booking has a cutoff when cancelations can no longer be made.</p>
+                    <p>Cutoff Time&#160;and&#160;Number of Days&#160;control how far in advance the cutoff is set.&#160;For example, if you enter 3 p.m. and one day, then cancelation must take place before 3 p.m. on the day before the event.</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cancellation Cutoff Hours</p>
+                </td>
+                <td>
+                    <p>The number of hours before an event when cancelations can be made.&#160; For example, if you enter 24, then bookings cannot be canceled less than 24 hours before they are to take place, regardless of the time of day. If using this setting, clear the Use Cancelation Cutoff Time field.&#160;</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cancel Booking in Progress</p>
+                </td>
+                <td>
+                    <p>Allows users to cancel events in progress.&#160;If selected, the&#160;Cancel Booking in Progress Status&#160;option is enabled. Use this field to specify&#160;a status to display on this&#160;this type of cancelation (configured separately. See&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="Configuring Statuses"><span class="Hyperlink">Configuring Statuses</span></a>).&#160;</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Cancel Booking in Progress Status</p>
+                </td>
+                <td>
+                    <p>Sets the status for bookings that are canceled when in progress.</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>End Booking in Progress</p>
+                </td>
+                <td>
+                    <p>Allows users to&#160;end in-progress bookings&#160;early, which makes the space&#160;available to other users.</p>
+                </td>
+                <td>
+                    <p>&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Booking Rules Tab, Booking Days Area&#160;</h2>
+        <p>
+            <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;You can use this Area&#160;to indicate how far into the future bookings can be made and how much lead time is required to make a booking.&#160;&#160;</p>
+        <p>Fields change&#160;depending on your initial selections in&#160;Range of Days&#160;and&#160;Specific Date.&#160;The second dropdown menu sets the lead time requirement and you must select a date in the&#160;Only Allow New Bookings After This Date&#160;field.</p>
+        <table>
+            <tr>
+                <td>
+                    <p>Field</p>
+                </td>
+                <td>
+                    <p>Description</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Specific Date</p>
+                </td>
+                <td>
+                    <p>If you select&#160;Specific Date, then you must specify a value for&#160;Only Allow New Bookings Prior to This Date&#160;to dictate the future range.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>Only allow new bookings within Range of this Many Days<br />Set a date in this field if you want&#160;bookings to only be allowed after this date.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>Use New Booking Cutoff Time<br />Enter the cutoff&#160;time and number of days at which point you wish to&#160;require the Everyday User to submit bookings by&#160;that time and number of days.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>New Booking Cutoff&#160;Hours<br />Enter a value in this field if you want new bookings to only be accepted after the number of hours indicated.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Range of Days</p>
+                </td>
+                <td>
+                    <p>Selecting this option from the first dropdown means the user will only be allowed to make bookings within a range of days. You must also specify a value for&#160;Only Allow New Bookings within Range of This Many Days, and&#160;you must also indicate a cutoff time or cutoff hours as you did for cancelations</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>Only allow new bookings within Range of this Many Days<br />Set a number in this field to allow bookings within the number of the days specified&#160;(e.g.:&#160;365&#160;would allow an everyday user to create bookings within 365 days).</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>Max No. Bookings Per&#160;Day<br />Number of&#160;bookings allowed within 24-hour period.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>Max No. Bookings Per Date Range&#160;<br />Number of bookings&#160;allowed&#160;within&#160;Range of Days.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>New Booking Cutoff&#160;Hours<br />Enter a value in this field if you want new bookings to only be accepted after the number of hours indicated.</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Defaults Tab&#160;&#160;</h2>
+        <p>You can use this tab to set&#160;the default values for Event Type, Event Name, Building, Event Time Start/End, and Time Zone to automatically populate the Room Requests page when users make reservations; users can edit them as needed.&#160;</p>
+        <p>Event Type and Building values are pre-configured.<br /></p>
+        <p>See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types"><span class="Hyperlink">Configuring Event Types</span></a>,&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/070_Configuring_Buildings" title="Configuring Buildings"><span class="Hyperlink">Configuring Buildings</span></a>, and&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/Configuration_%253E_Everyday_User_Applications/Getting_Started_With_Configuring_Everyday_User_Templates/Configuring_Everyday_User_Templates/Configuring_Default_Start_And_End_Time_Field_Behavior_For_New_Bookings" title="Default Start And End Time Field Behavior For New Bookings"><span class="Hyperlink">Setting Default Start and End Times</span></a>.</p>
+        <h2>Video Conference Tab&#160;</h2>
+        <p>You can use this tab to control how users can make video conferencing reservations.&#160;This tab is available only in EMS Enterprise and only if the Video Conference option was selected on the everyday template tab. For information on how to configure the information on this tab correctly so that assigned&#160;users make video conferencing reservations, see&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/210_Video_Conferencing" title="Video Conferencing"><span class="Hyperlink">Video Conferencing</span></a>.</p>
+        <h2>Rooms Tab&#160;&#160;</h2>
+        <p>This tab enables you to associate the everyday template with specific space. To begin, specify Building (all buildings, a&#160;specific building, an area, or a view)&#160;and Room Type search criteria.&#160;These are pre-configured.</p>
+        <p>See Also:&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/070_Configuring_Buildings" title="Configuring Buildings" class="Hyperlink">Configuring Buildings</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/060_Configuring_Areas" title="Configuring Areas" class="Hyperlink">Configuring Areas</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/010_Configuring_Public_Views" title="Configuring Public Views" class="Hyperlink">Configuring Public Views</a>
+            </li>
+            <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms/Configuring_Rooms" title="Configuring Rooms" class="Hyperlink">Configuring Rooms</a>&#160;and&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/050_Configuring_Room_Types" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types/Configuring_Room_Types" class="Hyperlink">Configuring Room Types</a></li>
+        </ol>
+        <p>You can move one or more (CTRL-click) rooms from the Available list to the Request or Reserve panes for this template. This controls&#160;the space that&#160;users assigned to this everyday template can book.</p>
+        <ul>
+            <li>Reserve pane:&#160;rooms that can be reserved without approval (booked in&#160;the Reserve Status on the everyday template tab).</li>
+            <li>Request pane:&#160;rooms that require approval (booked in&#160;the Request Status on the everyday template tab).</li>
+        </ul>
+        <h2>Categories Tab&#160;&#160;</h2>
+        <p>This tab enables you to set the pre-configured&#160;categories of services that users assigned to the template can add to their bookings by moving them from the Available list&#160;to the Selected list.&#160;These are pre-configured.&#160;See&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories"><span class="Hyperlink">Configuring Categories</span></a>.&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template_3.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                    </p>
+                </td>
+                <td>
+                    <p>Tip:&#160;If your Administrator has configured an "Attendee" type category, and assigned it to the booking template, users can invite or remove&#160;attendees on the Services page.</p>
+                </td>
+            </tr>
+        </table>
+        <h2>Event Types Tab&#160;</h2>
+        <p>This tab enables you to set which&#160;event types users of this template can choose from during the booking process&#160;by moving them from the Available list&#160;to the Selected list,&#160;or to the Available To All everyday process Templates list.&#160;</p>
+        <h2>LDAP Groups Tab&#160;</h2>
+        <p>You use this tab to assign Everyday User process templates to users based on LDAP Groups that are defined in your directory service, for example, Active&#160;Directory.&#160;Everyday user process templates that are assigned via LDAP do not need to be explicitly assigned to user records. When users log in, they “inherit” the everyday user process templates based on the LDAP groups to which they belong. To assign the one or&#160;more&#160;LDAP group, select and&#160;move them from the Available list&#160;to the Selected list.&#160;See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/Optional_Features/Integrated_Authentication_Options/05-LDAP_Authentication" title="LDAP Authentication"><span class="Hyperlink">LDAP Authentication</span></a>.</p>
+        <h2>User Defined Fields Tab&#160;&#160;</h2>
+        <p>You can use this tab to control the behavior of your implementation's customized fields for this template&#160;by moving one or more from the Available pane to the Required or Optional panes.&#160;These fields are pre-configured.&#160;See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/080_Configuring_User_Defined_Fields_(UDFs)" title="Configuring User Defined Fields (UDFs)"><span class="Hyperlink">Configuring User Defined Fields (UDFs)</span></a>.</p>
+        <h2>Parameters Tab&#160;&#160;</h2>
+        <p>This tab enables you to control how&#160;this&#160;everyday user process template is affected by&#160;parameter settings.&#160;</p>
+        <ul>
+            <li>To edit the value for a parameter, select the parameter, and then click&#160;Edit.</li>
+            <li>To reset the value for a parameter to its default global value, select the parameter, and then click Use Global.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template_4.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;The billing parameter,&#160;Billing Reference Validation,&#160;includes a special&#160;option that affects whether users are prompted to enter billing and PO information and whether they are validated.&#160;</p>
+                    <p>
+                        <img src="../../../Resources/Images/WebApp_CG_EverydayUserProcTempFieldDef1/Everyday User Process Template_5.png" style="visibility: visible;mso-wrap-style: square;width: 278px;height: 201px;" alt="https://success.emssoftware.com/@api/deki/files/4957/clipboard_ea6879d89b0506b5ebb5ccfebce3ac341?revision=1&amp;size=bestfit&amp;width=278&amp;height=201" />
+                    </p>
+                    <p>Users will see the Billing Reference field during the booking process parameters are&#160;set at either the reservation, room, or category level.&#160;Whether the Billing Reference field displays is based on four settings: global, template, room-level setting, category-level setting. The booking template setting overrides the global setting. The room and category level settings can both override the template setting. After the Admin decides whether to display the field, user entries will be validated based on the value in the "Billing Reference Validation" parameter set (above) on the template.</p>
+                    <p>Billing Reference field options:</p>
+                    <ul style="list-style-type: disc;margin-left: 36pt;">
+                        <li>Show (Prompt)</li>
+                        <li>Require</li>
+                        <li>Validate (Show and Require)</li>
+                        <li>Don't Show</li>
+                    </ul>
+                    <p>Additionally, the&#160;Billing Reference Validation&#160;parameter will always determine whether it is optional, required, or required and validated.&#160;</p>
+                    <p>See Also:&#160;</p>
+                    <ul style="list-style-type: disc;margin-left: 36pt;">
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms/Configuring_Rooms" title="Configuring Rooms" class="Hyperlink">Configuring Rooms</a>
+                        </li>
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories" class="Hyperlink">Configuring Categories</a>
+                        </li>
+                        <li><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/Configuring_Field_Behavior_for_Billing_Reference_and_PO_Numbers" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/Configuring_Field_Behavior_for_Billing_Reference_and_PO_Numbers" class="Hyperlink">Configuring Field Behavior for Billing Reference and PO Numbers</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <h2>Help Text Tab&#160;&#160;</h2>
+        <p>This tab enables you to control the help text that displays to users when they are using this template.&#160;By default, help text items inherit their settings from the global Help Text list. (See&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/070_Configuring_Help_Text" title="EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/070_Configuring_Web_Text"><span class="Hyperlink">Configuring Help Text</span></a>). You can use the list of help text items on the Help Text tab to override the settings for this particular template if needed.</p>
+        <ul>
+            <li>To edit the value for a help text item, select the item, and then click&#160;Edit.</li>
+            <li>To reset the value for an item to its default global value, select the item, and then click Use Global.</li>
+        </ul>
+        <h3>Menu Text Translations Tab&#160;&#160;</h3>
+        <p>This tab enables you to control how your EMS Web App translations appear to users of this template.You only&#160;need to provide information on this tab if a foreign language translation has been defined for everyday templates. See&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" title="Configuring Web Cultures"><span class="Hyperlink">Configuring Language Translations.&#160;</span></a>For each translation shown here, you can click in the Text field&#160;and enter the appropriate translation for the menu text (the menu text or link that a EMS Web App user sees when requesting a room using this everyday user process template).</p>
+        <h3>Terms and Conditions Tab&#160;&#160;</h3>
+        <p>You can use this tab to set your template to require that its users agree to special Terms and Conditions before submitting reservations. In the text area, you can create&#160;a Terms and Conditions message that presents when a user selects a room.</p>
+        <ul>
+            <li>Design (selected by default) means you use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on).</li>
+            <li>HTML means you use&#160;HTML code to format the message (spacing, number of lines, capitalization, and so on) to format your&#160;Terms and Conditions.</li>
+        </ul>
+    </body>
+</html>

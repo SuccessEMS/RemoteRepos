@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4247" MadCap:lastWidth="1000">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/WebApp_AddingReservationDetails.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Adding Reservation Details</h1>
+        <p>If you open an existing reservation or&#160;create a new one,&#160;the Reservation Summary page opens. This area enables you to modify bookings within a reservation, such as requesting services and adding attendees.</p>
+        <p>The Reservation Details option displays detailed summary information (the Reservation ID, the Event Name, the Event Type, and so on) for the selected reservation and all its bookings as well as attendees and any services that were requested for the bookings.</p>
+        <p>
+            <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details.png" alt="https://success.emssoftware.com/@api/deki/files/3887/Myeventresdetails.png?revision=4" />
+        </p>
+        <p>
+            <MadCap:annotation MadCap:createDate="2017-11-07T20:27:58.4047336-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This content below—down to the heading &quot;Reservation Tasks&quot;— is a wiki that links to a topic in the hidden Outlook folder &quot;Using EMS &gt; EMS Desktop Client.&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-07T20:27:59.6124548-07:00">What</MadCap:annotation>'s the difference between a "reservation" and a "booking?"&#160;A&#160;Reservation&#160;consists&#160;of one&#160;or more&#160;Bookings.&#160;That's it.</p>
+        <p>Every booking belongs to a reservation. EMS lets you have&#160;multiple bookings under a single reservation. When you have multiple bookings in a reservation, each booking&#160;can be independent of the other, such as reserving a set of rooms for an event, or can be a series of bookings under a&#160;Recurring&#160;reservation.</p>
+        <p>Each booking can contain&#160;multiple&#160;Booking Details, which are the resources and services required to support the booking (such as catering and room setup).</p>
+        <p>
+            <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_1.png" style="width: 1445px; height: 1574px;" alt="https://success.emssoftware.com/@api/deki/files/3917/reservationsbookingsdiagram.png?revision=3&amp;size=bestfit&amp;width=511&amp;height=556" />
+        </p>
+        <h2>Reservations: Who and What</h2>
+        <p>A&#160;reservation&#160;is the "who and what" of an event. For example, the Academic Planning Board&#160;(the who) may reserve space for a Semester Kickoff&#160;event&#160;(the what).&#160;</p>
+        <h3>Bookings: Where and When</h3>
+        <p>A&#160;booking&#160;is the "where and when" of an event. For example, the Academic Planning Board schedules the conference room (the where) for a staff meeting on the second Monday in January (the when). The Academic Planning Board&#160;now has a single reservation with a single booking in EMS. If, however, they schedule&#160;the conference room (the where) for a staff meeting on the second Monday of each month for a year (the when), then the board now has a single reservation with 12 bookings.</p>
+        <h4>Booking Details</h4>
+        <p>A booking can have one or more booking details associated with it.&#160;Booking details&#160;are the resources (items for the meeting)&#160;or services (people and their activities)&#160;that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for the Academic Planning Board’s staff meeting, the resources could&#160;include catering (coffee service, bagels and muffins, and so on) and A/V equipment, plus the services of&#160;a person bringing in and setting up a projector, moving&#160;a speaker’s podium, and so on). &#160;</p>
+        <h4>Service Orders</h4>
+        <p>System Administrators configure "buckets" of these details as "Categories," which streamlines the process of adding details to bookings.&#160;</p>
+        <p>
+            <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;Services, Categories, and Resources: What's the Difference?</p>
+        <p>In EMS, you may hear these terms used&#160;interchangeably sometimes, however, they are different concepts.</p>
+        <p>A&#160;Category&#160;in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc.&#160;When you configure a Category, however, it must be of six&#160;Category&#160;types:&#160;Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to&#160;behave slightly differently when&#160;added to a booking. For example, a Notes/Activities/Attendees&#160;type service category&#160;does not require the EMS Administrator to configure items&#160;under it and there is nothing for a person to “select” from these types of services.</p>
+        <p>By contrast, a&#160;service category that has a type of&#160;Catering,&#160;Resource with Service Order, or a Resource without a&#160;Service Order Category,&#160;will require the Administrator to create items&#160;under it. For example, an&#160;"AV Equipment" service &#160;category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart, whiteboard, (under AV Equipment).&#160;The person requesting the service for this meeting would then select&#160;AV equipment; then&#160;flipchart&#160;and&#160;whiteboard&#160;would be typical options to add to the event.&#160;</p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_3.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>Tip:&#160;The following Category Types allow&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/070_Defining_Production_Areas_and_Production_Items_for_a_Resource" title="Defining Production Areas and Production Items for a Catering Resource">Production Items</a>: Catering, Resources with Service Orders, and Resources Without Service Orders.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Furthermore, a Category can&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories">be configured&#160;to "Use States"&#160;</a>so that when a service is requested with a meeting, it can be managed through a review and approval process in the Manage Services toolbar option&#160;<img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_4.png" style="visibility: visible;mso-wrap-style: square;width: 97px;height: 52px;" alt="https://success.emssoftware.com/@api/deki/files/5970/clipboard_e9d0b1d823c09fb0734a820c64ddd5789.png?revision=1&amp;size=bestfit&amp;width=61&amp;height=33" />&#160;in EMS Desktop Client.&#160;</p>
+        <p>See Also:&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Working_With_Reservations_And_Bookings/Working_With_Your_Reservations%3A_The_Navigator/030_Adding_Services%2C_Equipment%2C_and_Resources_to_a_Meeting" title="Adding Services, Equipment, and Resources to a Meeting" class="Hyperlink">Adding Services&#160;</a></p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_3.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                    </p>
+                </td>
+                <td>
+                    <p>Tip:&#160;You may be able to see floorplans for rooms.&#160;See Also:&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_Web_App_V44.1/020Browse_Menu/030_Browsing_Locations/Viewing_Floor_Plans" title="https://success.emssoftware.com/EMS_V44.1/Using_EMS/Using_the_EMS_Web_App/020Browse_Menu/030_Browsing_Locations/Viewing_Floorplans"><span class="Hyperlink">Viewing Floorplans</span></a></p>
+                </td>
+            </tr>
+        </table>
+        <h2>Reservation Tasks&#160;</h2>
+        <p>Use the&#160;Reservation Tasks&#160;area to take available actions on this event:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Reservation Task</p>
+                    </th>
+                    <th>
+                        <p>What You Can Do</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Booking Tools</p>
+                    </td>
+                    <td>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cancel Reservation</p>
+                    </td>
+                    <td>
+                        <p>Cancel the reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>View Service Availability</p>
+                    </td>
+                    <td>
+                        <p>Opens a Service Availability window where you can choose from allowable&#160;booking templates to add services.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Send Invitation</p>
+                    </td>
+                    <td>
+                        <p>Sends invitations to recipients you specify.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Add to my Calendar</p>
+                    </td>
+                    <td>
+                        <p>Adds the reservation and all its bookings to your personal (Outlook) calendar.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Attachments&#160;</h2>
+        <p>The Attachments tab is available if the reservation type required attachments; it provides&#160;the attachment description, file name, and notes&#160;about the attachment. You can:</p>
+        <p>•&#160;Delete&#160;an attachment from a reservation or request.</p>
+        <p>•&#160;Attach&#160;another file to the reservation or request, click Attach File. A dialog box opens where you can&#160;select the attachment. (Allowed formats are .csv, .doc, .gif, .pdf, .txt, .xls, .xlsx, and .tif.</p>
+        <h2>Bookings for the Reservation&#160;</h2>
+        <p>The lower portion of the Reservation Summary page shows bookings for this reservation and (if you have permissions)&#160;enables you to add another booking,&#160;edit or delete existing bookings, and&#160;take other actions on those bookings.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Action</p>
+                    </th>
+                    <th>
+                        <p>Result</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../../../Resources/Images/WebApp_AddingReservationDetails/Adding Reservation Details_5.png" alt="https://success.emssoftware.com/@api/deki/files/3904/addicon.png?revision=1&amp;size=bestfit&amp;width=17&amp;height=16" />&#160;Cancel Booking</p>
+                    </td>
+                    <td>
+                        <p>Cancel selected bookings for the reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Attendance</p>
+                    </td>
+                    <td>
+                        <p>Booking headcount.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Setup Type</p>
+                    </td>
+                    <td>
+                        <p>Setup Types are defined by your Administrator, and define which services, resources, and room types can be used for the booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Status</p>
+                    </td>
+                    <td>
+                        <p>Stage in the booking process for the booking, such as Requested, Reserved, Pending.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

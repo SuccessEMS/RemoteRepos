@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3048" MadCap:lastWidth="924" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Security Templates</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configuring Security Templates</h1>
+        <p>A security template specifies&#160;which menu items are available to the users who are assigned to the template, which event information&#160;fields can be viewed, and other information.</p>
+        <p>1. On the {{product}} menu bar, click Configuration &gt; Everyday User Applications&gt; <strong>Everyday User Security Template</strong>s.&#160;The Everyday User Security Templates window opens. This window lists the one user role (unauthenticated user) used in the {{product_webapp}} and {{product_mobile}},&#160;as well as any other security templates that have been defined.</p>
+        <p>
+            <img src="Images/B_ConfigurationGuide/WA_ConfigSecurityTemps_EUSecurityTemps.png" style="width: 467px;height: 491px;" />
+        </p>
+        <div class="EXPAND_CLASS">
+            <dl class="mt-indent-3">
+                <dt>Concept:&#160;The "(unauthenticated user)" role controls what happens when users do not have a log in access an EMS Everyday User application such as {{product_webapp}} and {{product_mobile}}.</dt>
+                <dd>Also known as "guests" or "visitors," unauthenticated users may access Everyday Applications without a login if you enable them.&#160;</dd>
+            </dl>
+        </div>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tip: </strong>The remainder of this procedure describes how to configure a security template “from scratch.” You can also configure a security template by copying an existing rule. Select the security template that you wish to <strong>Copy </strong>then skip to Step 3.&#160;</p>
+                        <p>To assign an existing security template to multiple users, <strong>See Also</strong>:&#160;<a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/050_Assigning_Security_Templates_to_Multiple_Everyday_Users">Assigning a Security Template to Multiple Users</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>2. Click <strong>New</strong>.&#160;The Security Template dialog box opens on the Security Template tab.</p>
+        <p>
+            <img src="Images/B_ConfigurationGuide/WA_ConfigSecurityTemps_SecurityTemplateDialogBox.png" style="width: 777px;height: 493px;" />
+        </p>
+        <h2>Entering Security Template Settings</h2>
+        <p>3. <a name="RTF34363233323a20537465704e"></a>Enter the information for the new everyday user role.</p>
+        <table border="0" cellspacing="0" class="emstable">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <p><strong>Option</strong>
+                        </p>
+                    </th>
+                    <th scope="col">
+                        <p><strong>Description</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>The description or name for the security template.</p>
+                        <p><strong>Note</strong>: The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Allow User to Add Groups</p>
+                    </td>
+                    <td>
+                        <p>Selected by default. Users who are attached to this security template can select from a list of existing Groups in your {{product}} database to add to the users' accounts when submitting a request or making a reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Allow User to Add Contacts</p>
+                    </td>
+                    <td>
+                        <p>Select this option if you want users who are attached to this security template to be able to select from a list of existing Contacts in your {{product}} database when submitting a request or making a reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Allow User to Set Default Contact</p>
+                    </td>
+                    <td>
+                        <p>Available only if Allow User to Add Contacts is selected. Select this option if you want users who are attached to this template to be able to specify a default Contact for a selected Group when submitting a request or making a reservation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Assigning Roles to Users</h2>
+        <p>4. Roles are the tasks that an assigned user can do. Open the <strong>Roles </strong>tab, and on the Available list, select the role (CTRL-click to select multiple roles) for the user(s)&#160;are to be assigned to this template, and then Move (&gt;)&#160;to the Selected list.</p>
+        <table border="0" cellspacing="0" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        <p><strong>Role</strong>
+                        </p>
+                    </th>
+                    <th scope="col">
+                        <p><strong>Description</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Allow Check In</p>
+                    </td>
+                    <td>
+                        <p>Allows a user to check in to a&#160;booking&#160;from {{product_webapp}},&#160;the {{product_emsk}}, and {{product_mobile}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Browse Events</p>
+                    </td>
+                    <td>
+                        <p>Provides access to the Events calendar in {{product_webapp}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Browse&#160;</p>
+                    </td>
+                    <td>
+                        <p>Allows a user to browse for available rooms in a Schedule&#160;view.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Create\Edit an Account</p>
+                    </td>
+                    <td>
+                        <p>For the (unauthenticated user) template, allows a new user to create his/her own {{product_webapp}} user account. This new everyday user account is set to active or pending based on your {{product_webapp}} parameter settings. For the authenticated users, this role&#160;determines if an existing everyday user can access the Edit My Account area within {{product_webapp}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Custom Events</p>
+                    </td>
+                    <td>
+                        <p>Provides access to any custom events calendars created.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Delegation</p>
+                    </td>
+                    <td>
+                        <p>Allows {{product_webapp}} users to delegate control of their reservations (new and existing) to other {{product_webapp}} everyday users.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Browse People</p>
+                    </td>
+                    <td>
+                        <p>Allows a {{product_webapp}} user to view a specific Group's reservations for today.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Location Details</p>
+                    </td>
+                    <td>
+                        <p>Allows a user to view details (room type, size, phone, features, setup types, images and so on) about a room.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Login\Logout</p>
+                    </td>
+                    <td>
+                        <p>Allows an anonymous user or “guest” to log in to {{product_webapp}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>View Floor Map</p>
+                    </td>
+                    <td>
+                        <p>Requires the optional Floor Plan module. Allows a {{product_webapp}} user to view and book rooms on a floor plan.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Web Administrator</p>
+                    </td>
+                    <td>
+                        <p>Provides access to various administrative functions within {{product_webapp}} such as clearing the cache, enabling help text edit mode,&#160;and enabling detailed errors.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Setting Tooltip Display</h2>
+        <p>5. The&#160;<strong>Booking Details Display Fields</strong>&#160;tab houses&#160;the information that appears&#160;when a {{product_webapp}} user browses events in the Browse Events area&#160;or browses for space in the Browse for Space Area. Open this&#160;tab, and on the Available list, select the&#160;information you want displayed&#160;(CTRL-click to select multiple items), then&#160;Move (&gt;) to the Selected list.</p>
+        <h2>Finalizing the Template</h2>
+        <p>6. Click <strong>OK</strong>.&#160;The security Template dialog box closes. The changes are saved to the template and you return to the security Templates window.</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tip:&#160;</strong>You can delete a security template by selecting it from the Everyday User Security Template window and clicking&#160;<strong>Delete.&#160;</strong>If the template is assigned to a user, you will be prompted to assign another template to that user before deleting it.&#160;</p>
+                        <p>You can also print a security template information in two ways, using the&#160;<strong>Print&#160;</strong>button: you can print a list of your templates, or a list of user roles showing how&#160;they are mapped to security templates.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="11" MadCap:lastHeight="3330" MadCap:lastWidth="837" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Language Translations for Everyday User Applications</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configuring Language Translations for Everyday User Applications</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="Images/WebApp_Config/Configuring Language Translations.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3864/tech_doc_new.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>New!&#160;Previous versions of EMS referred to this feature as "Web Cultures."</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>If you need to add language translation capability for your Everyday User templates or EMS Kiosk&#160;pages (menu text, menu items, and help text items), then you must configure&#160;language translations. Each&#160;translation&#160;you configure&#160;represents a language for which translations must be provided in your EMS Everyday User Applications.&#160;&#160;</p>
+        <p>
+            <img src="Images/WebApp_Config/Configuring Language Translations_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;<MadCap:annotation MadCap:createDate="2017-11-07T12:19:43.0686251-07:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Wiki Content from &quot;Build Your Language Translation Spreadsheet&quot; up to &quot;Configure Your Language Translations in EMS Desktop Client&quot; " MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-07T12:20:32.5753131-07:00">Concept</MadCap:annotation>:&#160;EMS Provides You with the Latest Translation Files</p>
+        <h2>Build Your&#160;Language Translation Spreadsheet</h2>
+        <ol start="1">
+            <li>EMS Software provides a Microsoft® Excel spreadsheet specific to EMS Web App that contains all of the application labels, page titles, system messages and error messages with their English translations. &#160;</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="Images/WebApp_Config/Configuring Language Translations_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;Values for data items (e.g. Event Types like “Meeting”, “Training”, etc. or Room Types like “Workspace”, “Conference Room”, etc.) configured within EMS or dynamic information that is inputted by an EMS user or Virtual EMS web user (e.g. Event Name like “HR Meeting”, Comments, Special Instructions, etc.) are not translated.&#160;</p>
+                </td>
+            </tr>
+        </table>
+        <ol start="2">
+            <li>The customer is responsible for providing the translated values for the information in the product spreadsheet. Once the&#160;customer returns&#160;the fully translated product spreadsheet to EMS Software,&#160;EMS Software development teams compile the spreadsheet into a product-specific language folder containing a set of files. (We maintain a&#160;language folder for each language).</li>
+            <li>The customer saves the language files&#160;in&#160;the "App_GlobalResources" folder within the EMS Web App physical directory on their web server. (The default path is C:\inetpub\wwwroot\emswebapp\App_GlobalResources\).&#160; &#160;&#160;</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="Images/WebApp_Config/Configuring Language Translations_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" />
+                    </p>
+                </td>
+                <td>
+                    <p>Important:&#160;For the translation to affect an Everyday Applications user,&#160;two conditions should be met: &#160;</p>
+                    <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+                        <li>The language setting should be&#160;<a href="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" title="http://www.windowscentral.com/how-properly-change-system-default-language-windows-10" class="Hyperlink">set in Windows</a></li>
+                        <li>The end&#160;user’s browser Language Preference is set to that specific language and set as the default.&#160;&#160;</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+        <h3>Example Successful Installation</h3>
+        <p>&#160;<img src="Images/WebApp_Config/Configuring Language Translations_3.png" style="visibility: visible;mso-wrap-style: square;width: 377px;height: 24px;" alt="https://success.emssoftware.com/@api/deki/files/5866/translationroot.png?revision=1" /></p>
+        <p>
+            <img src="Images/WebApp_Config/Configuring Language Translations_4.png" style="visibility: visible;mso-wrap-style: square;width: 530px;height: 334px;" alt="https://success.emssoftware.com/@api/deki/files/5867/translationfiles.png?revision=1" />
+        </p>
+        <p>... reflected in EMS as follows (French-Canadian is the example here.)</p>
+        <p>
+            <img src="Images/WebApp_Config/Configuring Language Translations_5.png" style="visibility: visible;mso-wrap-style: square;width: 811px;height: 590px;" alt="https://success.emssoftware.com/@api/deki/files/5868/translationsuccess.png?revision=1" />
+        </p>
+        <p>See Also:&#160;<a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/080_Configuring_Language_Translations" class="Hyperlink">Configuring EMS Language Translation for Everyday User Applications</a></p>
+        <h2>Configure Your Language Translations in EMS Desktop Client&#160;</h2>
+        <ol start="1">
+            <li>On the EMS Desktop Client menu bar, click Configuration &gt; Everyday User Applications&#160;&gt;&#160;Language Translations.&#160;The Language Translations window opens, listing all the translations that are currently configured in your EMS database.</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Config/Configuring Language Translations_6.png" style="visibility: visible;mso-wrap-style: square;width: 459px;height: 485px;" alt="https://success.emssoftware.com/@api/deki/files/4047/clipboard_e11efd2f968c9e02d5a0a0ddb77030304?revision=1&amp;size=bestfit&amp;width=309&amp;height=327" />
+        </p>
+        <ol start="2">
+            <li>Click&#160;New.&#160;The Language Translation&#160;dialog box opens. By default, the language is set to English (United States).</li>
+        </ol>
+        <p>
+            <img src="Images/WebApp_Config/Configuring Language Translations_7.png" style="visibility: visible;mso-wrap-style: square;width: 513px;height: 313px;" alt="https://success.emssoftware.com/@api/deki/files/4048/clipboard_e8b553c3946a0ba605a3d9037360b7558?revision=1&amp;size=bestfit&amp;width=379&amp;height=231" />
+        </p>
+        <ol start="3">
+            <li>In the&#160;Description&#160;field, enter a name or description for the new web culture (up to&#160;50 characters, including spaces).</li>
+            <li>On the&#160;Language&#160;dropdown list, select the language into which the menu text, menu items, and help text items will be translated.</li>
+            <li>Click&#160;OK.&#160;The Language Translation&#160;dialog box closes, returning you to the Language Translations&#160;window with the newly configured translations&#160;automatically selected.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="Images/WebApp_Config/Configuring Language Translations_8.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="File:EMS_V44.1/Using_EMS/EMS_Image_Repository/emssg_VEMSInfo_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>After you configure a language translation, it is displayed on the Translations tab in various configuration areas in EMS.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

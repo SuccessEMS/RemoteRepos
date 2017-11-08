@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="3332" MadCap:lastWidth="1000" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">Configuring Everyday User Process Templates</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>Configuring Everyday User Process Templates</h1>
+        <p><strong>Concept:&#160;"Web Process Templates" Are Now Called "Everyday User Process Templates"</strong>
+            <br />If you have previously used older versions of EMS, you may know booking&#160;templates as "Web Process Templates."&#160;These are now called "Everyday User Process&#160;Templates."&#160;These templates define user access and booking behavior in&#160;{{product_webapp}}, {{product_mobile}}, and {{product_emso}}.&#160;Similarly, you may know permissions templates, which control what an Everyday User is able to do,&#160;as "Web Security Templates." These are now called "Everyday User Security Templates."</p>
+        <div class="EXPAND_CLASS">
+            <p><strong>See Also: </strong><a title="Configuring Security Templates">Configuring Security Templates</a>
+            </p>
+        </div>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_note.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Note: </strong>In {{product_enterprise}}, the guest (unauthenticated user) everyday user process template is always available and you can have an unlimited number of other everyday user process templates.<br />            In {{product_professional}}, the (unauthenticated user) everyday user process template is always available, but you can have only two additional everyday user process templates.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>1. On the {{product}} menu bar, click Configuration &gt; Everyday Applications&#160;&gt; <strong>Everyday User Process Templates</strong>.&#160;The Everyday User Process Templates window opens on the Everyday User Template tab.<a name="RTF37323932343a204669677572"></a>&#160;&#160;&#160;</p>
+        <p>
+            <img src="Images/B_ConfigurationGuide/WA_ConfigEverydayUserProcessTemps_EUProcessTemps.png" style="width: 702px;height: 553px;" />
+        </p>
+        <p>This window lists the process&#160;templates that have been defined for your {{product_webapp}} implementation. The pre-defined user called "(<em>unauthenticated user)"&#160;</em>is included in&#160;all&#160;EMS&#160;implementations; you use this template to manage settings for anonymous or “guest” users.&#160;For a user to be able to view and use this template, you must assign the user to the template. See <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/020_Configuring_Web_Users">Configuring Users</a>.&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tip:&#160;</strong>To view <em>all </em>everyday user process templates in your {{product}} database, regardless of status, under Show, click <strong>Inactive</strong>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>2. Click <strong>New</strong>. The Everyday User Process Template dialog box displays.&#160;Enter the information for the new everyday user process template as needed. &#160;</p>
+        <p>
+            <img src="Images/B_ConfigurationGuide/WA_ConfigEverydayUserProcessTemps_BookaMeetingRoom.png" style="width: 959px;height: 743px;" />
+        </p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Warning: </strong><strong>The cache must be cleared in the EMS Web App whenever parameter changes are made in the EMS Desktop Client.&#160;</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tips:&#160;</strong>The&#160;<strong>Request Status</strong>&#160;field is used to configure booking templates for the "Request/Approval" booking model, in which everyday users&#160;<em>request</em>&#160;space and administrative users approve those requests (using the Dashboard menu icon). For example, if you set this field to&#160;<strong>Request</strong>, then the booking will not be finalized until an administrator has approved it.</p>
+                        <p>If you are configuring a template for booking desks and workspaces or "hoteling," see <a target="_blank" title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/Configuration_%3E_Everyday_User_Applications/Getting_Started_With_Configuring_Everyday_User_Templates/Configuring_Everyday_User_Templates/Configuring_Everyday_User_Templates/Creating_Templates_for_Desks_and_Workspaces">this example</a>.&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Concept:&#160;You Use the Request/Approval Model to Oversee "Managed Space"</p>
+        <h2>
+            <MadCap:annotation MadCap:createDate="2017-11-02T12:21:39.6715852-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Info in Configuring Managed Space H2 is a wiki link from the topic &quot;Configuring Managed Space&quot;: https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Web_App_V44.1/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Process_Templates/Configuring_Managed_Space" MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-02T12:22:36.8183422-06:00">Configuring</MadCap:annotation> Managed Space</h2>
+        <p>Once you have <a title="Configuration &gt; Facilities">configured facilities</a> (rooms, categories, services, resources, and so on), you can configure special process templates for "managed space," which is meeting space that may require additional oversight and an approval process to finalize a reservation. For example, you may wish to configure a large banquet hall as managed space to ensure that any request to use it is approved by a supervisor. That supervisor would use the Dashboard from the {{product_dtc}} menu bar to view requests for space.&#160;</p>
+        <p>
+            <img src="Images/B_ConfigurationGuide/WA_ConfigEverydayUserProcessTemps_Dashboard.png" style="width: 1131px;height: 39px;" />
+        </p>
+        <p>Typically, managed space involves services, expenses, and invoicing that affect&#160;multiple stakeholders and departments, and templates designed for this model are typically assigned to Everyday Users of {{product_webapp}}. By contrast, such templates are <strong>not </strong>recommended for assignment to {{product_emso}} users since Microsoft® Outlook does not show the request status&#160;of such a reservation.</p>
+        <h3><strong>Process Overview:</strong>
+        </h3>
+        <p>To configure a process template to require supervisory approval:<em>&#160;</em></p>
+        <ul style="margin-left: 40px;">
+            <li>When defining an Everyday User Process template for a specialized type of space or room, you set the&#160;<strong>Request Status</strong>&#160;field to&#160;<em>Request&#160;</em>(so it will show as pending in the Dashboard).</li>
+            <li>Assign that template to the appropriate everyday users (typically, {{product_webapp}} users so they can only Request reservations for that specialized space.</li>
+            <li>Designate users in {{product_dtc}} who will <a target="_blank" title="Managing Requests for Managed Space">review and approve this type of space request in the Dashboard</a>.</li>
+        </ul>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_note.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Note:&#160;</strong>in the Everyday User Application Settings section...</p>
+                        <p><strong>Enable for Web App</strong>&#160;means enable the template on {{product_webapp}}.</p>
+                        <p><strong>Enable for Mobile</strong><em>&#160;</em>means enable the template for both the EMS Mobile App and the mobile version of the EMS Web App.</p>
+                        <p><strong>Enable for Outlook</strong>&#160;means enable the template for the EMS for Outlook add-in, which can override booking rules such that users can book a room that is in conflict.&#160;For this situation, you can also configure a system-generated email to be sent to the user if any rooms are not available for dates booked. &#160;An additional tab becomes available if you create a template with the option enabled,&#160;<strong>Outlook Conflict Email</strong>.</p>
+                        <p><strong>Enable Integration to Microsoft Exchange</strong>&#160;means enable the template for Microsoft® Exchange when your organization does not use {{product_emso}}.</p>
+                        <p><strong>See Also:</strong>&#160;<a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_EMS_Web_App/020_Everyday_User_Templates/Configuring_Everyday_User_Templates/Everyday_User_Process_Template_Field_Definitions">Detailed Process Template field definitions</a>.</p>
+                    </td>
+                    <td>&#160;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>You can&#160;continue configuring the booking template on additional tabs or just&#160;click <strong>OK </strong>to save your changes.</p>
+        <h2>
+            <MadCap:annotation MadCap:createDate="2017-11-02T12:22:49.2266417-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Not part of wiki. This section is from the current topic." MadCap:editor="Megan.Laub" MadCap:editDate="2017-11-02T12:23:12.6261242-06:00">Saving</MadCap:annotation> Your Template Settings</h2>
+        <p>When you have completed entries in all tabs as desired, click <strong>OK</strong>. &#160;Your changes to the everyday user templates are saved.&#160;</p>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_tip.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Tip:&#160;</strong>Make sure that you have&#160;defined&#160;your everyday users so you can assign them to your everyday templates.&#160;See <a title="Configuring Everyday Users">Configuring Everyday Users</a>.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

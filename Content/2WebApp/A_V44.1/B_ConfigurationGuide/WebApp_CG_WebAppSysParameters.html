@@ -1,0 +1,1515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="28288" MadCap:lastWidth="911" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title mt-export-translate="no">EMS Web App System Parameters</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1>EMS Web App System Parameters</h1>
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../../../../Users/Megan.laub/Documents/Flare/Resources/Images/tech_doc_note.png" alt="" class="internal default" />
+                    </td>
+                    <td>
+                        <p><strong>Note:&#160;</strong>Text highlighted in blue denotes new parameters added for {{version}}.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table border="0" cellpadding="0" cellspacing="0" class="mt-responsive-table mt-table-big">
+            <tbody>
+                <tr>
+                    <td><strong>Title</strong>
+                    </td>
+                    <td><strong>Configured Where?</strong>
+                    </td>
+                    <td><strong>Area</strong>
+                    </td>
+                    <td><strong>Description</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Auto Create Everyday User Account (for Integrated Authentication)</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>An Everyday User account is automatically created via the integrated authentication process if a new user accesses&#160;the EMS Everyday User Application.</td>
+                </tr>
+                <tr>
+                    <td>On Login Automatically Set Everyday User Time Zone to First Building's Time Zone</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>After an Everyday User logs in, the time zone for the user is set to the time zone for the first building that is stored in the EMS database. If this building, however, is not listed on the Facilities dropdown list, then the time zone is set to the first available time zone on the Time Zone dropdown list, but the user can always select a different value if one is available.</td>
+                </tr>
+                <tr>
+                    <td>Allow Everyday User to Opt-Out of Automatic Emails</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>Allows Everyday Users to specify if they want to receive any automatic emails (e.g., automatic confirmations or cancelations) from {{product_webapp}}.</td>
+                </tr>
+                <tr>
+                    <td>Field Used to Authenticate Everyday User</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Indicates the field (Email Address, Network ID, or External Reference) that is used to authenticate an Everyday User.</td>
+                </tr>
+                <tr>
+                    <td>Require Phone during account creation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>Requires the potential everyday user to complete Phone 1 during manual account creation.</td>
+                </tr>
+                <tr>
+                    <td>Show Billing References Tab on Edit Account</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>Displays a Billing References tab when editing a user account.</td>
+                </tr>
+                <tr>
+                    <td>Default Account Status for Newly-Created User</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>Default status (Active or Pending) for new Everyday User accounts, regardless of account creation method.</td>
+                </tr>
+                <tr>
+                    <td>Default Security Template for User</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>The default Web Security template that is assigned to new Everyday Users.</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Cookie Key</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Appropriate variable to be used if Portal Authentication is enabled by your organization and the parameter Portal Authentication Method is set to "Cookie."</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Email Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Variable to be used if Portal Authentication is enabled and the parameter Portal Authentication Method is set to "ServerVariable."&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication External Reference Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Variable to be used if Portal Authentication is enabled and the parameter Portal Authentication Method is set to "ServerVariable."&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Fax Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Variable to be used if Portal Authentication is enabled and the parameter Portal Authentication Method is set to "ServerVariable."&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Method</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Method of Portal Authentication to be used, if enabled by your organization. Choices are Form, Server Variable, Session, Querystring, and Cookie.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Name Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Variable to be used if Portal Authentication is enabled and the parameter Portal Authentication Method is set to "ServerVariable."&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Phone Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>Variable to be used if Portal Authentication is enabled and the parameter Portal Authentication Method is set to "ServerVariable."&#160;</td>
+                </tr>
+                <tr>
+                    <td>Portal Authentication Variable</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>User variable to be compared against the EMS Everyday User External Reference or Network ID fields if your organization has enabled Portal Authentication. This parameter works in tandem with the choice selected for the parameter Portal Authentication Method (Form, Session, ServerVariable, Cookie, Querystring).</td>
+                </tr>
+                <tr>
+                    <td>Default Rounding Method for Hourly Pricing</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Billing</td>
+                    <td>Allows you to specify the time increment, from one minute to sixty minutes, by which to round the time for hourly pricing.</td>
+                </tr>
+                <tr>
+                    <td>Ignore Room Display to Everyday Users Flag</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>All bookings for all rooms are considered "Private" if this parameter is enabled</td>
+                </tr>
+                <tr>
+                    <td>Room Name Format in Browse Locations</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Locations</td>
+                    <td>Determines how room information is formatted in Browse Locations. Options are Room Description or Room Code</td>
+                </tr>
+                <tr>
+                    <td>Display Setup/Teardown Times</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>If room has setup/teardown times they are always shown irrespective of this parameter. If disabled, then booking level setup/teardown time is not shown to the user .</td>
+                </tr>
+                <tr>
+                    <td>Event Information to Display in Booking on Schedule View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>Determines what information should show in the free/busy bar in the Book. Options include: None, Event Name or Group Name.</td>
+                </tr>
+                <tr>
+                    <td>Start Time on Schedule View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>Determines the start time for the grid.</td>
+                </tr>
+                <tr>
+                    <td>Make Add to Personal Calendar Link Appear</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Booking Details</td>
+                    <td>If enabled, the Add to Personal Calendar link is displayed when the Everyday User views the event details in either Reservation Summary or Booking Details.</td>
+                </tr>
+                <tr>
+                    <td>Show Social Networking Options</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Booking Details</td>
+                    <td>If set to “Yes,” then displays links to various social networking sites when a user views the details of a booking.</td>
+                </tr>
+                <tr>
+                    <td>Collapse Related Bookings to Start Times on Weekly/Monthly Views</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If more than one booking within a reservation takes place on the same day, enabling this parameter will collapse the bookings into a single entries per Start Time. Only applies to Weekly and Daily view.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Browse Event Default Display Format</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>Determines the initial format in which the Browse Events function displays information. Options are: Daily, Weekly, Monthly.</td>
+                </tr>
+                <tr>
+                    <td>Drop Events from Daily View After They Occur</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If enabled, events from the past will no longer appear in Browse Events.</td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <div class="pformat style-wrap" title="Formatted_Paragraph">
+                            <p>Maximum Number of Events/Day to Display</p>
+                        </div>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <div class="pformat style-wrap" title="Formatted_Paragraph">
+                            <p>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</p>
+                        </div>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <div class="pformat style-wrap" title="Formatted_Paragraph">
+                            <p>Browse Events</p>
+                        </div>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <div class="pformat style-wrap" title="Formatted_Paragraph">
+                            <p>Controls the number of events that are available for display, per day, in the daily views of the Browse Events function.&#160;Note:&#160;In some circumstances, you must click a link to see additional events.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maximum Number of Events/Day to Display in Monthly View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>Controls the number of events that are available for display, per day, in the monthly views of the Browse Events function.<br /><br />            Note: In some circumstances, you must click a link to see additional events.</td>
+                </tr>
+                <tr>
+                    <td>Maximum Number of Events/Day to Display in Weekly View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>Controls the number of events that are available for display, per day, in the weekly views of the Browse Events function.<br /><br />            Note: In some circumstances, you must click a link to see additional events.</td>
+                </tr>
+                <tr>
+                    <td>Show End Time in Browse Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If this option is set to No, only start time is shown in Browse Events.</td>
+                </tr>
+                <tr>
+                    <td>Show Group Name in Browse Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If set to Yes,&#160;then the name of the group that is holding an event is shown in Browse Events.</td>
+                </tr>
+                <tr>
+                    <td>Show Group Type Filter in Browse Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If set to “Yes,” then the group type filter is an option in Browse Events.</td>
+                </tr>
+                <tr>
+                    <td>Show Location on Browse Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If set to “Yes,” then the event location is displayed in the calendar view on the Browse Events page.</td>
+                </tr>
+                <tr>
+                    <td>Show Room Type Filter in Browse Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Browse Events</td>
+                    <td>If set to “Yes,” then a Room Type filter is displayed on the Browse Events page.</td>
+                </tr>
+                <tr>
+                    <td>Location Format</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>General</td>
+                    <td>Determines how location information is displayed in Browse Events and Create Reservation (List View). Options are Room Code, Room Description, Building Code - Room Code, Building Code - Room Description, Building Description - Room Code, Building Description - Room Description, Building Description.</td>
+                </tr>
+                <tr>
+                    <td>Allow Email My Password</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Account Management</td>
+                    <td>Allows Everyday Users to email their passwords to themselves.</td>
+                </tr>
+                <tr>
+                    <td>Account to Use for Sending Email</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email - Settings</td>
+                    <td>The email account against which outgoing email from EMS is authenticated. Only required if the SMTP mail server requires authentication.</td>
+                </tr>
+                <tr>
+                    <td>Password of Email Account</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email - Settings</td>
+                    <td>The password for the email account. Only required if the SMTP mail server requires authentication.</td>
+                </tr>
+                <tr>
+                    <td>Name of Email Sender</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>Indicates the "From" name in the reservation summary email generated when an everyday user creates a reservation. Parameter Send Request Summary upon Submit must be enabled, and a reservation summary email must be configured (under Configuration &gt; Everyday User Applications &gt; Everyday User Process Templates &gt; highlight the template and select Confirmation).</td>
+                </tr>
+                <tr>
+                    <td>Email Address of Sender</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>This entry indicates the “From” email address in the reservation summary email that is generated when a Everyday User submits a reservation. Parameter Send Request Summary upon Submit must be enabled, and a reservation summary email must be configured.</td>
+                </tr>
+                <tr>
+                    <td>Name or IP Address of SMTP Server</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email - Settings</td>
+                    <td>SMTP mail server used solely for emails related to everyday user application functionality. This mail server does not apply to emails generated within the desktop client or by any email notification service.</td>
+                </tr>
+                <tr>
+                    <td>SMTP Server Port</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email - Settings</td>
+                    <td>The default email port for your SMTP server.</td>
+                </tr>
+                <tr>
+                    <td>Format for Request Summary</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>Specify a detailed or summarized report for the reservation summary email that is generated when a Everyday User submits a reservation. Parameter Send Request Summary upon Submit must be enabled, and a reservation summary email must be configured.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Send Request Summary upon Submit</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>Determines whether reservation summary information is emailed to the Everyday Users when a reservation is submitted. A reservation summary email must be configured.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Send Confirmation on Cancel</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>Sends the reservation summary if the reservation or a booking is canceled.</td>
+                </tr>
+                <tr>
+                    <td>Default Subject for Email</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Email</td>
+                    <td>This entry appears in the Subject line of email the reservation summary email that is generated when a Everyday User submits a reservation. Parameter Send Request Summary upon Submit must be enabled, and a reservation summary email must be configured. (Provide link or reference to where email is configured.)</td>
+                </tr>
+                <tr>
+                    <td>Floor Plan Web Service URL</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Floor Plan</td>
+                    <td>Used for the Floor Plan module. URL address for the floor mapping web service.</td>
+                </tr>
+                <tr>
+                    <td>Allow Desktop Client User to Change External Reference</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Groups &amp; Contacts</td>
+                    <td>If enabled, a desktop client user can change the External Reference values on Group and Contact records. Customers using HR Toolkit are strongly encouraged to disable this parameter so as not to disrupt the automatic association of these records with Everyday User records.</td>
+                </tr>
+                <tr>
+                    <td>Everyday Users linked to Groups via External Reference</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Groups &amp; Contacts</td>
+                    <td>Links group and Everyday User records if group records are defined as individual employees (i.e., not departments) in your system. When making a new reservation in EMS, the Everyday User field is automatically populated based on the group selected.</td>
+                </tr>
+                <tr>
+                    <td>Area Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label for the Area field.</td>
+                </tr>
+                <tr>
+                    <td>Area Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label for the Area field.</td>
+                </tr>
+                <tr>
+                    <td>Billing Reference Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label for the Billing Reference field.</td>
+                </tr>
+                <tr>
+                    <td>Billing Reference Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label for the Billing Reference field.</td>
+                </tr>
+                <tr>
+                    <td>Building Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label for the Building field.</td>
+                </tr>
+                <tr>
+                    <td>Building Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label for the Building field.</td>
+                </tr>
+                <tr>
+                    <td>Confirmation Grand Total Title</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The label for the Grand Total field on a Confirmation report.</td>
+                </tr>
+                <tr>
+                    <td>Confirmation Subtotal Title</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The label for the Subtotal field on a Confirmation report.</td>
+                </tr>
+                <tr>
+                    <td>Default Phone 1 Label</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>The label for the first phone number field under a Contact when creating or modifying a reservation.</td>
+                </tr>
+                <tr>
+                    <td>Default Phone 2 Label</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>The label for the second phone number field under a Contact when creating or modifying a reservation.</td>
+                </tr>
+                <tr>
+                    <td>1st Contact Title</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>The label for the first Contact field on a Reservation.</td>
+                </tr>
+                <tr>
+                    <td>Group Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label of the Group field. The Group field refers to people within your organization who hold events in your facility (e.g., Employees, Departments, Clients, Customers, etc.).</td>
+                </tr>
+                <tr>
+                    <td>Group Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label of the Group field. The Group field refers to people within your organization who hold events in your facility (e.g., Employees, Departments, Clients, Customers, etc.).</td>
+                </tr>
+                <tr>
+                    <td>PO Number Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label for the PO Number field.</td>
+                </tr>
+                <tr>
+                    <td>PO Number Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label for the PO Number field.</td>
+                </tr>
+                <tr>
+                    <td>Room Size Title</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The label for a Room's Size field.</td>
+                </tr>
+                <tr>
+                    <td>Room Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The plural label of the Room field. The Room field refers to reservable spaces within your organization.</td>
+                </tr>
+                <tr>
+                    <td>Room Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Labels</td>
+                    <td>The singular label of the Room field. The Room field refers to reservable spaces within your organization.</td>
+                </tr>
+                <tr>
+                    <td>2nd Contact Title</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>The label for the second Contact field on a Reservation.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Company Name</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>Label for the Company field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Email Address</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>&#160;Label for the Email Address field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Name</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>Label for the Name field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Notes</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>Label for the Notes field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Phone</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>Label for the Phone Number field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Attendee Visitor</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Labels</td>
+                    <td>Label for the Visitor field of an attendee within an Attendees-type Category.</td>
+                </tr>
+                <tr>
+                    <td>Event Title Plural</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Labels</td>
+                    <td>If updating this parameter, it is recommended that the parameter Event Type Singular is also updated.</td>
+                </tr>
+                <tr>
+                    <td>Event Title Singular</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Labels</td>
+                    <td>If updating this parameter, it is recommended that the parameter Event Type Plural is also updated.</td>
+                </tr>
+                <tr>
+                    <td>Label for "Private" Bookings on Schedule View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>The default label in Browse Locations for events that do not display on web (i.e., the bookings' Event Type and/or Status are not configured to display on the web).</td>
+                </tr>
+                <tr>
+                    <td>Label for Login box</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Authentication</td>
+                    <td>The label for the User ID field on the Login page.</td>
+                </tr>
+                <tr>
+                    <td>This determines whether to authenticate with Ldap.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>Determines whether to authenticate users via LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap Authentication type.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>&#160;<br />            LDAP Authentication Type for your environment. Some directory services don't implement Secure binding. FastBind is a pretty common authentication type. Options are None, Secure, Sealing, Anonymous, Encryption/SecureSocketsLayer, Delegation, FastBind, ReadonlyServer, ServerBind, and Signing.</td>
+                </tr>
+                <tr>
+                    <td>Certificate path to used during SSL Verification</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Certificate Path. Path to the certificate file to be used during SSL (if empty will trust all certificates). Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>List of domains to show on login page</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>Comma-Separated List of Domains:&#160; Skip this step if your organization uses a single domain or does not require domain to be specified.&#160; Otherwise, provide a comma-separated list of your domains.</td>
+                </tr>
+                <tr>
+                    <td>Domain to append to users</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Core Properties tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Domain to append to users. May be necessary if your web server is in a different domain then your users'. Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>LDAP Full Account/User ID</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Full LDAP User ID Format. Do not supply this unless a full path is needed to authenticate. Example: cn={0},ou=staff,o=yourdomain. {0} will be replaced with user input. Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP. &#160;<br />            &#160;</td>
+                </tr>
+                <tr>
+                    <td>LDAP Group Category Name</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Group Category. After binding to your directory service this property should enable&#160; results to be filtered down to groups. For example, if the filter should be "objectClass=groupOfNames" then this property should be groupOfNames. Common properites are: group (Active Directory), groupOfNames (eDirectory, Domino). <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap Group Members Attribute Name.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>After binding to the group object, this should be the property that contains a single member of the group. For example if the member property of your groups are "member=jdoe" then this property should be member. Common properties are: member (Active Directory, eDirectory, Domino). <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Ldap Group Member User Name&#160; Attribute.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>
+                        <br />            LDAP Group Member User Name Attribute. The property of the user object which should be compared to member property of the group in order determine group membership. For example: if your directory service stores members like "member=cn=user,o=Domain", this property should be used. <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>LDAP Group Name</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Group Name. After binding to your directory service, this property should allow us to to get a group object by applying this filter with the group name. For example if the query should be (&amp; (|(objectClass=groupOfNames))(|cn=administrators)),) then this property should be used. Common properties are: name (Active Directory), cn (eDirectory, Domino). <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Domain\User to query Active Directory</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>The user ID of the account {{product_webapp}} will use when contacting Directory Services. In the LDAP Domain\User field, enter a Domain User account&#160;that has rights to query LDAP (example – YourDomain\User)&#160;</td>
+                </tr>
+                <tr>
+                    <td>Password of LDAP user (encrypted)</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>In the Password field, enter a valid Password for the User Account entered in the previous step. Supply only if you are updating the password. (<strong>Note</strong>: It will be stored in an encrypted format)</td>
+                </tr>
+                <tr>
+                    <td>Path used to query Active Directory</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>Path for LDAP Query. Example: <a class="external" href="LDAP://yourdomain.com" rel="freeklink" title="LDAP://yourdomain.com">LDAP://yourdomain.com</a> (<strong>Note</strong>: You probably need to have "LDAP" in all caps). If using Communication Options, leave the LDAP:// off (i.e. youdomain.com:port)</td>
+                </tr>
+                <tr>
+                    <td>LDAP name property to query in Active Directory</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Core Properties tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Name Property. Examples: displayname, distinguishedname, name, givenname. Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>LDAP phone property to query in Active Directory</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Core Properties tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Phone Property. Examples: telephonenumber, homephone, facimiletelephonenumber. Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap protocol Authentication type.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Authentication Type. Authentication to use during binding process (Basic is most common). Choices are Anonymous, Basic, Negotiate, Ntlm, Digest, Sicily, Dpa, Msn, External, and Kerebos. Note:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Search Fitler to use when finding token groups</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Group Search Filter. Active Directory Only. Filter to use when loading Token Groups for a user ---i.e (&amp;(objectClass=Person)(objectClass=user)) ---. <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Root OU to bind during searches</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Search Root. OU for the root of the search (i.e. DC=youdomain,DC=com or o=LDAPRoot). <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Search Fitler to use when locating a user</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>User Search Filter. Filter to use when looking for a user ---i.e. (&amp; (objectClass=Person)(SAMAccountName={0})) or (&amp;(objectClass=Person)(uid={0})) --- {0} will be replaced with user input. <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Ldap protocol version.</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Protocol Version. Current version should be 3. <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap query filter to get security groups</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; LDAP Queries tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP query for security groups. {0} will be replaced by user input. <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Using Active Directory</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Core Properties tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Using Active Directory. If checked, instructs {{product_webapp}} to use Active Directory attributes during queries. <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Should advanced communication options be used</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>Use advanced communication options (requires Communication Options configuration, typically NOT required for Active Directory).&#160;Skip this step for Active Directory environments.&#160; Enabling this checkbox requires that you complete the settings on the Communication Options tab.</td>
+                </tr>
+                <tr>
+                    <td>This determines whether to use LDAP to assign process templates</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Security tab</td>
+                    <td>LDAP</td>
+                    <td>Select the Use LDAP to assign Process Templates checkbox if LDAP will be used to assign Web Process Templates to your Everyday Users. Uncheck this to just use LDAP for authentication.</td>
+                </tr>
+                <tr>
+                    <td>LDAP Account/User ID</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Non-AD Config tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Account/User ID Property. After binding to your directory service, this property should allow us to load a single user. For example if the filter should be: "sameaccountname=xxxx" then this property should be samaccountname. Common properties are: samaccountname (Active Directory), cn (eDirectory, Domino). <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap query to get users</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; LDAP Queries tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP Query to find users. {0} will be replaced by user input. <strong>Note</strong>:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Ldap query to get users</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; LDAP Queries tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>LDAP query to <strong>find</strong> users with space. {0} will be replaced by user supplied input. Note:&#160;The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>Should SSL be used when using advanced options</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Communication Options tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Use SSL. Will force communication to use SSL. <strong>Note</strong>:&#160; The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.</td>
+                </tr>
+                <tr>
+                    <td>tblWebUser field to use when getting LDAP Groups</td>
+                    <td>{{product_webapp}} &gt; LDAPConfiguration.aspx &gt; Core Properties tab&#160;</td>
+                    <td>LDAP</td>
+                    <td>Field to use for LDAP Group Lookup. Choices are Login Name, External Reference, and Network ID. If using LDAP solely for template assignment, this allows you to specfiy a value other than the provided login name to use when looking up group membership. <strong>Note</strong>: The other tabs (Communication Options, Core Properties, Non-AD Config and LDAP Queries) should only be edited with assistance from our Support Department when special circumstances arise with unique configurations of LDAP.&#160;</td>
+                </tr>
+                <tr>
+                    <td>True if allowing attachments</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Message tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Allows users to add and send attachments to meeting attendees when creating a reservation on &#160;{{product_webapp}}.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Pipe delimited list of properties to display</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Directory Service Properties for data.&#160; Available options: Department, JobTitle, OfficeLocation, CompanyName, Manager, AssistantName</td>
+                </tr>
+                <tr>
+                    <td>Pipe delimited list of labels for the properties</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Additional Columns to Display (DisplayName and Email always display). Available options: Department, JobTitle, OfficeLocation, CompanyName, Manager, AssistantName</td>
+                </tr>
+                <tr>
+                    <td>Urls to follow during autodiscovery</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Follow Autodiscover redirects to the these URLs. Values are (|) delimited.</td>
+                </tr>
+                <tr>
+                    <td>PAM method to use to build calendar path</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Where to locate your portion of the OWA path. Choices are LDAP Property, Left portion of email, or Full Email Address (supported in 2003).</td>
+                </tr>
+                <tr>
+                    <td>Calendaring Provider</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Provider. Choose Exchange Web Services for Exchange 2007 (SP1 or later), Exchange 2010 and for all coexistence (Exchange 2003 w/ Exchange 2007 /w Exchange 2010 or Exchange 2007 /w Exchange 2010) scenarios.</td>
+                </tr>
+                <tr>
+                    <td>Url to Exchange Web Service</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>Exchange Integration</td>
+                    <td>Supply this value only if you cannot use AutoDiscover for some reason. NOTE: It is considered a best practice to use AutoDiscover when accessing the Exchange Web Services. If you do not check the box “.. utilize AutoDiscover to locate the best Client Access Server for the user…”, you MUST fill in the URL to Exchange Web Services field.</td>
+                </tr>
+                <tr>
+                    <td>Password of exchange user (encrypted)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Password (Provide only if updating).&#160; Within the Authentication Information section, enter your PAM Account User Name and Password. The User Name should be prefixed with your domain (example – YourDomain\PAM Account.)</td>
+                </tr>
+                <tr>
+                    <td>Domain\user of user to authenticate with</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Username. This is the account which will make the requests. Within the Authentication Information section, enter your PAM Account User Name and Password. The User Name should be prefixed with your domain (example – YourDomain\PAM Account.)</td>
+                </tr>
+                <tr>
+                    <td>Authentication Type of LDAP connection</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Domain\User to query Active Directory</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Query to use for free busy lookup</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>LDAP query to find attendees (including currently logged in user).</td>
+                </tr>
+                <tr>
+                    <td>Query to use for free busy lookup with space</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>LDAP query to find attendees when there is a space in the search string.</td>
+                </tr>
+                <tr>
+                    <td>Format to user for building calendar path</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>Active Directory Mailbox Property Format: i.e.{0} or {0}_[1}</td>
+                </tr>
+                <tr>
+                    <td>Active Directory Properties to replace in format</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>Active Directory Mailbox Properties, i.e. Mailnickname or givenname|sn&#160;</td>
+                </tr>
+                <tr>
+                    <td>Password of LDAP user (encrypted)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Path used to query Active Directory</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>Path to LDAP, i.e. <a class="external" href="LDAP://yourcompany.com" rel="freeklink" title="LDAP://yourcompany.com">LDAP://yourcompany.com</a></td>
+                </tr>
+                <tr>
+                    <td>Query to use for mailbox lookup</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Where to call for free time</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>HTTP path to the Notes Agent. Fully qualified http path to the agent i.e. <a class="external" href="http://YourDominoServer/EmsNDNR.nsf/" rel="freeklink" title="http://YourDominoServer/EmsNDNR.nsf/">http://YourDominoServer/EmsNDNR.nsf/</a></td>
+                </tr>
+                <tr>
+                    <td>True if agents should write debug info to console</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>If enabled, debugging agents should write debug info to console</td>
+                </tr>
+                <tr>
+                    <td>Where to call for free time</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>Where to call for free time.</td>
+                </tr>
+                <tr>
+                    <td>True if agents should generate debug info</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>Check this option to dsiplay debugging information. Should only be enabled when attempting to debug.</td>
+                </tr>
+                <tr>
+                    <td>Authentication Type of LDAP connection</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>Determines the LDAP authentication method when looking-up an attendee.</td>
+                </tr>
+                <tr>
+                    <td>Query to use for free busy lookup</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>LDAP query to find attendees (including currently logged in user). This query is only to be edited when special circumstances arise with unique configurations of Lotus Notes and LDAP. If you choose to edit this query, you should do so only if you are well-versed in developing and editing LDAP queries. Before you begin editing a query, be sure to make a copy of the original query text.</td>
+                </tr>
+                <tr>
+                    <td>Query to use for free busy lookup with space</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>LDAP query to find attendees when there is a space in the search string. This query is only to be edited when special circumstances arise with unique configurations of Lotus Notes and LDAP. If you choose to edit this query, you should do so only if you are well-versed in developing and editing LDAP queries. Before you begin editing a query, be sure to make a copy of the original query text.</td>
+                </tr>
+                <tr>
+                    <td>Path used to query Directory Service</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>Path to LDAP (e.g., <a class="external" href="LDAP://YourCompany.com:10010" rel="freeklink" title="LDAP://YourCompany.com:10010">LDAP://YourCompany.com:10010</a>)</td>
+                </tr>
+                <tr>
+                    <td>Password of Lotus user (encrypted)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Session authentication format</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>True lotus agent is running with SSL</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>True to use LDAP for attendee lookups</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Password of Lotus user (encrypted)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>True if domino is running with session authentication</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Lotus tab</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>PAM Maximum size of attachment to allow</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Message tab</td>
+                    <td>PAM</td>
+                    <td>If attachments are allowed, this parameter sets the maximum file size allowed for an attachment. Attachment upload by mobile not allowed. This setting does not apply to reservations made directly in EMS for Outlook.</td>
+                </tr>
+                <tr>
+                    <td>True is user mailboxes exist on both 2003 and 2007/2010 servers</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Check this box if your Exchange environment has mailboxes on 2000/2003 and 2007/2010 servers. If you are in Mixed Mode, AutoDiscover MUST be utilized.</td>
+                </tr>
+                <tr>
+                    <td>Message Added to meeting request</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Message tab</td>
+                    <td>PAM</td>
+                    <td>Message appended to the bottom of the appointment body. This message is seen by all users.</td>
+                </tr>
+                <tr>
+                    <td>PAM number of results to return in lookup</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Path used for outlook web access</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>Outlook Web Access (OWA) URL (make sure you end with a slash) i.e. <a class="link-https" href="https://mail.dea.com/exchange/" rel="freeklink" title="https://mail.dea.com/exchange/">https://mail.dea.com/exchange/</a></td>
+                </tr>
+                <tr>
+                    <td>True if Outlook web access uses forms based authentication</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Exchange 2000/2003 tab</td>
+                    <td>PAM</td>
+                    <td>Select this option if your Outlook web access uses Forms-Based Authentication (FBA).</td>
+                </tr>
+                <tr>
+                    <td>&#160;</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Select the Authentication Type. Options are: Anonymous (no credentials passed), Default Credentials (security context of running application (App Pool, EMS Client or Outlook), Specify Account (custom account you specify). Note: Please contact Customer Support (or a member of the Professional Services group if you are working with one) to discuss the configuration process for this option.</td>
+                </tr>
+                <tr>
+                    <td>Domain\user of user to authenticate to PAM with</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Custom account to use to authenticate to the Exchange Integration Web Service.</td>
+                </tr>
+                <tr>
+                    <td>Password of account to call PAM withr (encrypted)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Provide this password only if updating.&#160;</td>
+                </tr>
+                <tr>
+                    <td>The text to display above the details link</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Message tab</td>
+                    <td>PAM</td>
+                    <td>Message added to the appointment body, above a link that takes a user to a view-only {{product_webapp}} page for the appointment.&#160;This message is seen by all users.</td>
+                </tr>
+                <tr>
+                    <td>The text to display above the edit link</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Message tab</td>
+                    <td>PAM</td>
+                    <td>Message added to the appointment body, above a link that takes the meeting organizer to the {{product_webapp}} Reservation Summary page for that reservation.&#160;This message is seen by all users, but only the meeting organizer can access the Reservation Summary page to make changes.</td>
+                </tr>
+                <tr>
+                    <td>Use App Pool Identity for authentication</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Use application pool identity when authenticating to calendaring service (only applicable for Exchange 2007/2010 environments, all other situations REQUIRE username and password). This option allows you to set the PAM Account credentials at the Application Pool level instead of storing the credentials in the EMS database (which is done by inputting the PAM Account credentials on the PAMConfig.aspx page). If this option is selected, you must check the box to enable users to appoint delegates.&#160; Using this method allows your organization to maintain absolute control – only IIS applications running in the newly created application pool can run as the PAM Account.</td>
+                </tr>
+                <tr>
+                    <td>True to use AutoDiscover to locate CAS</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Select “.. utilize AutoDiscover to locate the best Client Access Server for the user…”&#160; to locate the best Client Access Server for the user. If you are in Mixed Mode, AutoDiscover MUST be utilized. Note: if you do not check this box, you MUST fill in the Url to Exchange Web Services field.</td>
+                </tr>
+                <tr>
+                    <td>Use EWS Impersonation for PAM</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Account Info tab</td>
+                    <td>PAM</td>
+                    <td>Select this option if delegates should be able to access mailboxes. If not, then FULL ACCESS or DELEGATE (at least Editor) access must be granted to the account for ALL mailboxes.</td>
+                </tr>
+                <tr>
+                    <td>Name of calendar folder (typically calendar)</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>Path to web dav root</td>
+                    <td>Exchange Integration Web Service &gt; PAMConfig.aspx &gt; Tab&#160;</td>
+                    <td>PAM</td>
+                    <td>&#160;</td>
+                </tr>
+                <tr>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>This parameter will be permanently enabled and hidden in the June release. See comments.</td>
+                </tr>
+                <tr>
+                    <td>Exchange Integration Web Service URL</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Integration to Microsoft Exchange</td>
+                    <td>The URL to the optional Integration to Exchange module.&#160; If Exchange Integration is enabled, this URL is inserted into the links within meeting appointments generated by the {{product_webapp}} or EMS for Outlook.</td>
+                </tr>
+                <tr>
+                    <td>Lock Booking Details If Booking Is Locked</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Desktop Client tab</td>
+                    <td>Reservations</td>
+                    <td>If a booking is locked due to being invoiced or age, booking details within the booking are also locked. If this parameter is disabled, however, the booking details remain editable.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Group Bookings by UTC times and keep together on Video Conference Reservations</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Reservations</td>
+                    <td>If enabled, any changes made to a booking belonging to a Video Conference occurrence cascade to the other related bookings within the occurrence. It is strongly recommended that this parameter be enabled if you plan to use EMS for video conference management in multiple rooms.</td>
+                </tr>
+                <tr>
+                    <td>Max Length for Event Name</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Reservations</td>
+                    <td>The maximum number of characters, including spaces, that a user can enter in the Event Name field when creating or editing a new reservation.</td>
+                </tr>
+                <tr>
+                    <td>Update Billing Information When Changing Group</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Reservations</td>
+                    <td>If set to “Yes,” automatically updates the billing information when a user selects a different group for a reservation.</td>
+                </tr>
+                <tr>
+                    <td>Update Room Charge When Room Changes</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>Reservations</td>
+                    <td>If set to “Yes,” automatically updates the room charge when a user selects a different room for a reservation.</td>
+                </tr>
+                <tr>
+                    <td>Show Billing Reference on Reservation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” the Billing Reference is displayed in the Reservation Details.</td>
+                </tr>
+                <tr>
+                    <td>Billing Reference Validation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls what options exist for requiring and validating Billing References. Validation occurs against pre-configured Billing References in the desktop client, either on a Group record or in the global Billing References list under Configuration &gt; Billing &gt; Billing References.</td>
+                </tr>
+                <tr>
+                    <td>PO Number Validation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls what options exist for requiring and validating PO Numbers. Validation occurs against pre-configured PO Numbers in the desktop client, either on a Group record or in the global PO Numbers list under Configuration &gt; Billing &gt; PO Numbers.</td>
+                </tr>
+                <tr>
+                    <td>Reservation Comment Type on Checkout</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Reservation-level Comment to be displayed in the Reservation Details when creating a Reservation. Comment must be configured to Display on Web and include Display Text. Only one Reservation-level Comment per Web Process Template allowed. Comments are configured in the desktop client under Configuration &gt; Other &gt; Comment Types.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Allow Temporary Contacts</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” then a user can specify a temporary contact when making a reservation. Temporary contacts are not saved to the Group record.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Attachments Allowed Extensions</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>The allowed attachment types for room requests.</td>
+                </tr>
+                <tr>
+                    <td>Require Contact Email</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Specify No or Yes to require contact email at checkout.</td>
+                </tr>
+                <tr>
+                    <td>Require Contact Phone</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Specify No or Yes to require a contact phone number at checkout.</td>
+                </tr>
+                <tr>
+                    <td>Show 2nd Contact</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” then the 2nd Contact Name, Phone 1, Phone 2, and Email Address fields are displayed in the Reservation Details.</td>
+                </tr>
+                <tr>
+                    <td>Allow Billing Reference Lookup</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” a user can look up pre-configured Billing References in the Reservation Details. Pre-configured Billing References can exist in the desktop client on a Group record or in the global Billing References list under Configuration &gt; Billing &gt; Billing References.</td>
+                </tr>
+                <tr>
+                    <td>Show PO Number on Reservation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” the PO Number is displayed in the Reservation Details.</td>
+                </tr>
+                <tr>
+                    <td>Allow PO Number Lookup</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” a user can look up pre-configured PO Numbers in the Reservation Details. Pre-configured PO Numbers can exist in the desktop client on the Group record or in the global PO Numbers list under Configuration &gt; Billing &gt; PO Numbers.</td>
+                </tr>
+                <tr>
+                    <td>Enable "Add to Calendar" Checkbox by Default</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Integration to Microsoft Exchange</td>
+                    <td>For templates with Exchange integration. If enabled, the Add to Calendar checkbox is ticked by default which will add automatically add new bookings to the user's Outlook calendar.</td>
+                </tr>
+                <tr>
+                    <td>Display Location Filters and Room Availability to Unauthenticated Users</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Unauthenticated Requests</td>
+                    <td>If enabled, an unauthenticated user can search for rooms and see room availability.</td>
+                </tr>
+                <tr>
+                    <td>Allow Unauthenticated Users to Search for Room by Name</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Unauthenticated Requests</td>
+                    <td>If enabled, an unauthenticated user can specify a room as part of their request.</td>
+                </tr>
+                <tr>
+                    <td>Exclude Closures From Date Calculations</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to Yes, closures are not taken into account on booking rule date calculations.</td>
+                </tr>
+                <tr>
+                    <td>Exclude Weekends From Date Calculations</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to Yes, weekends are not taken into account on booking date calculations.</td>
+                </tr>
+                <tr>
+                    <td>Default Pricing Plan</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Indicates the default pricing plan that is used to display pricing.</td>
+                </tr>
+                <tr>
+                    <td>Default Room Availability View</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>When a user searches for available rooms, this parameter drives the default display. Options are Grid, List or Floor Map.</td>
+                </tr>
+                <tr>
+                    <td>Allow Single-Day Requests for Unavailable Rooms</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Integration to Microsoft Exchange</td>
+                    <td>For templates with Exchange integration. If enabled, a user can make a single-day booking in an unavailable room. If disabled, a user must choose an available room in order to make a single-day booking.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Override Default Room Setup/Teardown Times</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” the default setup/teardown times defined for a room are ignored and the values for Setup Time in Minutes for All Rooms and Teardown Time in Minutes for All Rooms parameters are used instead. These parameters are usually configured for videoconference bookings where setup/teardown times for participating rooms may differ.</td>
+                </tr>
+                <tr>
+                    <td>Setup Time in Minutes For All Rooms</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If enabled, the default setup time defined for a room is ignored and this parameter's value is used instead. The parameter Override Default Room Setup/Teardown Times must also be enabled. This parameter is usually configured for videoconference reservations where setup/teardown times for participating rooms may differ.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Teardown Time in Minutes For All Rooms</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If enabled, the default teardown time defined for a room is ignored and this parameter's value is used instead. The parameter Override Default Room Setup/Teardown Times must also be enabled. This parameter is usually configured for videoconference reservations where setup/teardown times for participating rooms may differ.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Attachments Allowed on Room Request</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether users can submit an attachment as part of creating a reservation.</td>
+                </tr>
+                <tr>
+                    <td>Default Value for Attendance</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>A default value for attendance when users make a room request.</td>
+                </tr>
+                <tr>
+                    <td>Hide Daily Recurrence Option</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Hide the daily recurrence option on the Room Request page.</td>
+                </tr>
+                <tr>
+                    <td>Hide Monthly Recurrence Option</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Hide the monthly recurrence option on the Room Request page.</td>
+                </tr>
+                <tr>
+                    <td>Hide Random Recurrence Option</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Hide the random recurrence option on the Room Request page.</td>
+                </tr>
+                <tr>
+                    <td>Hide Weekly Recurrence Option</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Hide the weekly recurrence option on the Room Request page.</td>
+                </tr>
+                <tr>
+                    <td>Number of Available Rooms on Search</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Specify the number of available rooms listed at a time in search results&#160;(in {{product_webapp}} and {{product_mobile}}; note that this parameter is ignored for {{product_emso}}).&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sequence of Available Rooms upon Search</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Schedule View</td>
+                    <td>Option for how rooms are sorted when a user is viewing rooms in the schedule view. Choices are alphabetically by Room Description or numerically by Book Sequence values configured on the Rooms.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Setup Type Validation Rule</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Determines how Setup Type and Attendance are displayed and handled against room capacities. Four options are available:<br />            • No Setup and No Validation: Do not show the Setup Type field and do not validate the Attendance value against room minimum and maximum capacities.<br />            • Validate But Don't Show: Do not show the Setup Type field but validate the Attendance value against room minimum and maximum capacities.<br />            • Show and Validate: Show the Setup Type field and validate the Attendance and Setup Type against all Setup Type and Capacity pairings for rooms.<br />            • Show But Don't Validate: Show the Setup Type field but do not validate Setup Type or Attendance.</td>
+                </tr>
+                <tr>
+                    <td>Show Additional Filters Initially</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If set to “Yes,” then by default, room searching filters are made immediately available to the everyday user. In the web application, filters are available under "Let Me Search for a Room."</td>
+                </tr>
+                <tr>
+                    <td>Show Attendance on Room Request</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether the Number of People field appears as part of searching for a Room.</td>
+                </tr>
+                <tr>
+                    <td>Show Feature Filter</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether Features appear as a search criteria for a room.</td>
+                </tr>
+                <tr>
+                    <td>Show Floor Filter</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether Floors appear as a search criteria for a room.</td>
+                </tr>
+                <tr>
+                    <td>Show Room Type Filter</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether Room Types appear as a search criteria for a room.</td>
+                </tr>
+                <tr>
+                    <td>Validation of Building Hours</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Controls whether Building Hours are enforced based on the Booking's Event Time or Reserved Time (i.e., the setup and/or teardown time surrounding the booking).</td>
+                </tr>
+                <tr>
+                    <td>Warn User if Room Selected is Not Available for All Dates</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If enabled, a user will be alerted if a selected room is not available for all requested dates.</td>
+                </tr>
+                <tr>
+                    <td>Reservation Source for New Reservation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>Specify the only reservation source that a user can select for a reservation.</td>
+                </tr>
+                <tr>
+                    <td>Show Room Pricing</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Create/Manage Reservations</td>
+                    <td>If enabled, room pricing will be displayed per the selection in the Default Pricing Plan parameter.</td>
+                </tr>
+                <tr>
+                    <td>Require Cancellation Reason</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>If enabled, users must provide a cancellation reason if they opt to cancel a booking. Cancel Reasons are configured within the desktop client under Configuration &gt; Other &gt; Cancel Reasons, and a Cancel Reason must be enabled for the everyday user in order to appear as an option.</td>
+                </tr>
+                <tr>
+                    <td>Allow Add Booking to Reservation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>If enabled, users can add bookings to existing Reservations.</td>
+                </tr>
+                <tr>
+                    <td>Allow Edit UDFs on Reservation</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>If enabled, users can edit User Defined Field values for their existing Reservations.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Allow Reservation Edits</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>If enabled, a Everyday User to edit reservation-level information on existing reservations--specifically, Event Name, Event Type, Group and Contact information, billing information, and a Comment (if one exists).</td>
+                </tr>
+                <tr>
+                    <td>ICS File (Calendar Appointment) Status</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>General</td>
+                    <td>If the user selects Add to Personal Calendar from their existing reservations, this parameter controls if the default calendar appointment status is Busy or Tentative.</td>
+                </tr>
+                <tr>
+                    <td>Show Service Availability</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>Controls whether the View Service Availability option appears when managing an existing reservation. Service Availability includes cutoff times for services enabled for the everyday user as well as Building to which services are available.&#160;</td>
+                </tr>
+                <tr>
+                    <td>Adjust Service Order Times upon Booking Edit</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If set to “Yes,” then Service Order Times are automatically adjusted if the booking time is modified.</td>
+                </tr>
+                <tr>
+                    <td>Allow Edit of Services</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If this option is set to “Yes,” users can edit the services they have added to events.</td>
+                </tr>
+                <tr>
+                    <td>Maintain Inventory</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If this option is set to “Yes,” the system notifies the user if an attempt to reserve a resource would cause the resource to be overbooked. The user must then select a new quantity.</td>
+                </tr>
+                <tr>
+                    <td>Populate Service Setup with Attendance</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If enabled, the Estimated Count field for Catering-type Categories will be populated with the Attendance value.</td>
+                </tr>
+                <tr>
+                    <td>Set Service Time Default from the Event Time</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>If set to “Yes,” then the service start/end times are set by default to the event start/end times.</p>
+                        <p><strong>Note:&#160;</strong>This parameter is not enforced for {{product_emso}}. The service times will default to the event time when it is changed in {{product_emso}}.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Restrict Service Order Times Within Event Times</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If enabled, users cannot specify Service Order Start or End times outside of the event's Start and End times.</td>
+                </tr>
+                <tr>
+                    <td>Show Resource Pricing</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Services</td>
+                    <td>If enabled, resource pricing will be displayed per the selection in the Default Pricing Plan parameter.</td>
+                </tr>
+                <tr>
+                    <td>Allow Access To System Check Pages From Any Machine?</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>System</td>
+                    <td>If disabled, access to SystemCheck.aspx for all applications except the {{product_webapp}}lication is limited to the web server. As of the June 2014 release, the {{product_webapp}}lication will no longer have a SystemCheck.aspx page.</td>
+                </tr>
+                <tr>
+                    <td>{{product_webapp}}lication URL</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>System</td>
+                    <td>The Web App URL that is displayed in emails related to the web app as well as EMS Group Notifications that include cancellation and reconfirmation links.</td>
+                </tr>
+                <tr>
+                    <td>{{product_webapp}}lication Hyperlink Text</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; All Applications tab</td>
+                    <td>System</td>
+                    <td>Controls the text for the Web App URL hyperlink in automatic confirmation emails (Configuration &gt; Everyday User Applications &gt; Everyday User Process Templates &gt; Confirmation &gt; Summary tab.).</td>
+                </tr>
+                <tr>
+                    <td>Allow Unauthenticated Users to Create Requests</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>Unauthenticated Requests</td>
+                    <td>If enabled, unauthenticated users (i.e.,guests) will have the option to request a room. The (unauthenticated user) Web Process Template must also be configured in the desktop client under Configuration &gt; Web &gt; Web Process Templates.</td>
+                </tr>
+                <tr>
+                    <td>Show Group Column on My Events</td>
+                    <td>Desktop Client &gt; System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications tab</td>
+                    <td>My Events</td>
+                    <td>If enabled, the Group column appears when a user is viewing a list of their Reservations.</td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Manual Account Creation - Sign Up Confirmation Email</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Email text sent to a potential web app user as a security measure to confirm their request for an account. Applicable to organizations whose allow automatic account creation instead of account requesting.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Manual Account Creation - Sign Up Success Email</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Email text sent to a new web app user to confirm their account has been created and is active. Email is sent as a result of the user selecting the link within the sign up confirmation email. Applicable to organizations whose allow automatic account creation instead of account requesting.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Manual Account Creation - Request Received Email</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Email text sent to a potential web app user to confirm their request for an account has been received. Applicable to organizations whose allow account requesting instead of automatic account creation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Manual Account Creation - Password Reset Email</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td>Account Management</td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Email text sent as a security measure to a Everyday User who has requested reset of their account password. Not recommended for organizations who utilize integrated authentication.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Manual Account Creation - Password Reset Success Email</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Account Management</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Email text sent to a Everyday User to confirm reset of their password. Not recommended for organizations who utilize integrated authentication.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Default Home Page</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Home Page</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Controls which home page tab appears to Everyday Users--<em>Site Home</em> (help text record for <em>Default.aspx) </em>or <em>My Home</em>). This parameter only applies to authenticated users<em>.</em></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Default Home Page for Unauthenticated Users</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Guest Home Page</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Controls whether <em>Site Home</em> or <em>My Home</em> is the default tab when loading default.aspx. The default value of this parameter is Site Home. This parameter only applies to unauthenticated users. </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Show Infographics on My Home</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Home Page</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Controls whether the infographics about the everyday users's bookings appear on the My Home tab.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mt-noheading mt-column-width-15">
+                        <p>Default Cancel Reason</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-20">
+                        <p>Desktop Client &gt; <em>System Administration &gt; Settings &gt; Parameters &gt; Everyday User Applications </em>tab</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-10">
+                        <p>Create/Manage Reservations</p>
+                    </td>
+                    <td class="mt-noheading mt-column-width-30">
+                        <p>Controls which Cancel Reason, if any, is applied to bookings that are canceled by everyday users. The ability for a user to choose a Cancel Reason does not need to be enabled for a default Cancel Reason to be applied.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="5933" MadCap:lastWidth="1140" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Calculations</h1>
+        <p><span class="button">Calculations&#160;</span>are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. Both pricing methods and calculations determine the final cost for a billable item; however, unlike pricing, which is applied when a billable item is reserved (and retained, even if the price for the item later changes), calculations are figured each time a confirmation or an invoice is generated. When you&#160;configure&#160;a calculation, you must specify the rate for the calculation, the calculation sequence (the order in which the calculation is carried out relative to other calculations), and if applicable, the minimum charge for the calculation. You must also indicate whether the calculation should be carried out on the base amount or on a running total, and whether the result of the calculation should be added to the base amount and then considered in subsequent calculations. For example, consider the following four calculations for a base amount of $1,000.00:</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 290px;" />
+            <col />
+            <col />
+            <col />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Item</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Calculated on</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Calculation Result</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Running Total</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <ul>
+                            <li>Gratuity 10%</li>
+                            <li>Calc Sequence = 1</li>
+                            <li>Calc on Base = Yes</li>
+                            <li>Calc Incl in Tot = Yes</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>$1000</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>$100</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>$1100</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <ul>
+                            <li>Sales Tax 5%</li>
+                            <li>Calc Sequence = 2</li>
+                            <li>Calc on Base = No</li>
+                            <li>Calc Incl in Tot = Yes</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>$1100</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>$55</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <ul>
+                            <li>State Tax 5%</li>
+                            <li>Calc Sequence = 3</li>
+                            <li>Calc on Base = Yes</li>
+                            <li>Calc Incl in Tot = No</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>$1000</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>$50</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <ul>
+                            <li>Federal Tax 10%</li>
+                            <li>Calc Sequence = 4</li>
+                            <li>Calc on Base = No</li>
+                            <li>Calc Incl in Tot = No</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>$1155</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>$115.50</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>$1155</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Total Calculations:</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>$320.50</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Grand Total (Base + Calculations):</p>
+                    </td>
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>$1320.50</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>After you configure calculations, you can&#160;assign&#160;the calculations to a category, group, group type, resource, or room.</p>
+        <h2 class="Heading2">Configure Calculations:&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt; <span class="button">Calculations</span>.&#160;The Calculations window opens. This window lists all the calculations that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations.png" alt="emssg_CoreConfigurationBilling_image010.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to show all calculations, regardless of status, under Show, click <span class="button">Inactive</span></p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>.&#160;The Calculation dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_1.png" alt="emssg_CoreConfigurationBilling_image011.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new calculation.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Calculation</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or description for the calculation.</p>
+                        <p>Note:&#160;The calculation can be a maximum of 30 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Optional field. The account within your internal accounting system that should be credited with the revenue.</p>
+                        <p>Note:&#160;If the appropriate account is not available, you can configure it. See&#160;“Configuring Accounts”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Currency</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The currency symbol that is used to display the results of the calculation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Rate</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The percentage for the calculation rate, for example 5%.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Sequence</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The order in which multiple calculations are to be carried out.</p>
+                        <p>Note:&#160;This value is critical when multiple calculations are to be carried out and the order of the calculations affects the resulting value.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Minimum Charge</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Optional field. The minimum charge that is to applied to a billable item for which this calculation applies.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Base</p>
+                        <p>Include in Total</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <ul>
+                            <li>Both Base and Include in Total selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the current running total to make a new running total. The result is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                            <li>Only Include in Total selected—The calculation is carried out on the&#160;current&#160;running total and the result of the calculation is added to the current running total to make a new running total. The result of the calculation is also added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                            <li>Only Base selected—The calculation is carried out on the&#160;original&#160;base amount. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                            <li>Neither Base nor Include in Total selected—The calculation is carried out on the&#160;current&#160;running total. The result of the calculation is added to the grand total (Base + All Calculations) that is current at the time that the calculation is carried out.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Leave this option blank to add the calculation as an active calculation. Select this option to inactivate the calculation.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Click <span class="button">OK</span>.&#160;The Calculation dialog box closes. You return to the Calculations window with the newly configured calculation automatically selected.</li>
+        </ol>
+        <h2 class="Heading2">Assign Calculations&#160;</h2>
+        <p>After you configure a calculation, you can assign the calculation to a category, group, group type, resource, or room from the Calculations window.</p>
+        <p>Note:&#160;Remember, you also have the option of assigning calculations to a category, group, group type, resource, or room at the time that you are configuring the category, group, group type, resource, or room. The advantage to assigning a calculation after you configure it is that you can assign the calculation to multiple items in a single step.</p>
+        <ol start="1">
+            <li>If needed, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt; <span class="button">Calculations </span>to open the Calculations window.</li>
+            <li>Click <span class="button">Assign</span>.&#160;The Assign Calculations dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Calculations_2.png" alt="emssg_CoreConfigurationBilling_image012.png" />
+        </p>
+        <ol start="3">
+            <li>On the Calculation dropdown list, select the calculation that you are assigning.</li>
+            <li>On the Assign To dropdown list, select the item (category, group, group type, resource, or room) to which you are assigning the calculation.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Item Selected</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Comments</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Category</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>A list of all categories that are currently configured in your EMS database is displayed. If you assign a calculation at the category level, then the calculation is assigned to all resources that are configured for the category. To assign a calculation to a specific resource in a category, then select&#160;Resource&#160;on the Assign To dropdown list.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Group</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A list of all groups that are currently configured in your EMS database is displayed. Two additional fields are displayed—Group Type and Starts with. Optionally, select a Group Type and/or enter a search string in the Starts with Field to filter the list of groups that are displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Group Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>A list of all group types that are currently configured in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Resource</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A Category dropdown list opens. Select the appropriate category for the resource. A list of all resources that are currently configured for the selected category in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Room</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>A Building dropdown list opens. Select the appropriate building. A list of all the rooms that are currently configured for the selected building in your EMS database is displayed.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5">
+            <li>On the Available list, select the item, or CTRL-click to select the multiple items to which the calculation is being assigned, and then click the Move button (&gt;) to move the selected items to the Selected list.</li>
+            <li>Click <span class="button">Close</span>.&#160;The Assign Calculations dialog box closes. You return to the Calculations window.</li>
+        </ol>
+    </body>
+</html>

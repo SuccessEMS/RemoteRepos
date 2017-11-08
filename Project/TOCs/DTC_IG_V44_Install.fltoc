@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Installing EMS Desktop Client V44" Link="/Content/DTC_IG_V44_Install/Installing EMS Desktop Client.htm" />
+    <TocEntry Title="Introduction" Link="/Content/DTC_IG_V44_Install/Introduction.htm" />
+    <TocEntry Title="Customer Support" Link="/Content/DTC_IG_V44_Install/Customer Support.htm" />
+    <TocEntry Title="Backing Up Your Data" Link="/Content/DTC_IG_V44_Install/Backing Up Your Data.htm" />
+    <TocEntry Title="Hardware and Software Requirements" Link="/Content/DTC_IG_V44_Install/Hardware and Software Requirements.htm" />
+    <TocEntry Title="Obtaining the Latest Release of EMS" Link="/Content/DTC_IG_V44_Install/Obtaining the Latest Release.htm" />
+    <TocEntry Title="First Time Installation Instructions" Link="/Content/DTC_IG_V44_Install/First Time Installation Instructions.htm" />
+    <TocEntry Title="Upgrade Instructions" Link="/Content/DTC_IG_V44_Install/Upgrade Instructions.htm" />
+    <TocEntry Title="Downgrade the EMS Desktop Client Web Deploy" Link="/Content/DTC_IG_V44_Install/Downgrade the EMS Desktop.htm" />
+    <TocEntry Title="Installing Custom Reports in EMS Desktop Client" Link="/Content/DTC_IG_V44_Install/Installing Custom Reports.htm" />
+</CatapultToc>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_IG_V44_Install.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Upgrade Instructions</h1>
+        <p>In order to upgrade&#160;EMS, you must perform two operations:</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Run&#160;EMS.ServerInstall.exe&#160;to upgrade the&#160;EMS databases on your database server.&#160; &#160;</li>
+            <li>Either install the client using the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/07-Upgrade_Instructions#EMS_Desktop_Client_Web_Deployment" title="Upgrade Instructions"><span class="Hyperlink">EMS Desktop Client Web Deployment</span></a>, or&#160;run the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/06-First_Time_Installation_Instructions#Individual_Workplace_Installation" title="First Time Installation Instructions"><span class="Hyperlink">EMS Client Install</span></a>.&#160;To determine your client installation, see our&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment" title="Decision Guide - Web Deployment Versus Conventional Deployment"><span class="Hyperlink">Decision Guide</span></a>.</li>
+        </ol>
+        <p>Note:&#160; If you are upgrading from a version of EMS released prior to server version 35, please contact Customer Support.</p>
+        <h2 class="Heading2">Prerequisites&#160;Before Upgrading&#160;</h2>
+        <p>IMPORTANT:&#160; The following EMS components must be upgraded to the new platform.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">Virtual EMS&#160;– See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/01-Introduction/Installing_VEMS/05-Installing%2F%2F%2F%2FUpgrading_Virtual_EMS" title="Installing/Upgrading Virtual EMS"><span class="Hyperlink">Virtual EMS Installation Instructions</span></a>.</li>
+            <li style="list-style-type: disc;">EMS Web Client&#160;– See the&#160;<a href="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/07-Upgrade_Instructionshttp%3A%2F%2Fsuccess.emssoftware.com/EMS_V44/EMS_Version_44_What's_New" title="EMS_V44/EMS_System_Administration/Installing_EMS/07-Upgrade_Instructionshttp://success.emssoftware.com/EMS_V44/EMS_Version_44_What's_New">What’s New</a>&#160;document for important information regarding the Web Client.&#160; Existing versions of the Web Client are&#160;not&#160;compatible with this release.</li>
+            <li style="list-style-type: disc;">EMS Campus Planning Interface (EMS Campus only)&#160;– Formerly known as the EMS Campus Web Client.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Campus/Installing_Campus_Planning_Interface/05-InstallingOrUpgrading_the_EMS_Campus_Planning_Interface" title="Installing/Upgrading the EMS Campus Planning Interface">EMS Campus Planning Interface Installation Instructions</a>.</li>
+            <li style="list-style-type: disc;">EMS Campus Web Service (EMS Campus only)&#160;– If you are upgrading from EMS Campus 2.0, a new version of the EMS Campus Web Service (including the queries.xml and views.sql files) may be required.&#160; Please contact your Client Services Consultant to evaluate and discuss any potential impacts to your installation.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Campus/Installing_EMS_Campus_Web_Service_and_White_Paper/06-Installing%2F%2F%2F%2FUpgrading_the_EMS_Campus_Web_Service" title="Installing/Upgrading the EMS Campus Web Service"><span class="Hyperlink">EMS Campus Web Service Installation Instructions and White Paper</span></a>.</li>
+            <li style="list-style-type: disc;">EMS Email Notification Service&#160;– See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Email_Notification_Service" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/08-Installing_or_Upgrading_the_EMS_Email_Notification_Service"><span class="Hyperlink">Installing or Upgrading the EMS Email Notification Service</span></a>.</li>
+            <li style="list-style-type: disc;">EMS Campus Auto Sync Service (EMS Campus only)&#160;– See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/09-Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)"><span class="Hyperlink">Installing or Upgrading the EMS Campus Auto Sync Service</span></a>.</li>
+            <li style="list-style-type: disc;">PAM Web Service&#160;– Web service used by the optional Plan-a-Meeting and EMS for Outlook modules.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Plan_a_Meeting_(PAM)/Installing_Plan_a_Meeting_(PAM)" title="Installing Plan a Meeting (PAM)">Plan-a-Meeting Installation Instructions</a>.</li>
+            <li style="list-style-type: disc;">EMS for Outlook&#160;– Optional module.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_for_Microsoft%C2%AE_Outlook/Installing_EMS_for_Microsoft%C2%AE_Outlook" title="Installing EMS for Outlook">EMS for Outlook Installation Instructions</a>.</li>
+            <li style="list-style-type: disc;">Custom Report(s)&#160;– If a custom report was developed for you by EMS, please contact Customer Support to request a new Custom Report DLL that is compatible with this version.&#160; Four to six weeks will be required to compile a new DLL, so please plan accordingly.</li>
+            <li style="list-style-type: disc;">EMS Kiosk&#160;– Optional module.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Kiosk/Installing_EMS_Kiosk" title="Installing EMS Kiosk"><span class="Hyperlink">EMS Kiosk Installation Instructions</span></a>.</li>
+            <li style="list-style-type: disc;">Floor Plan Configuration Utility&#160;– Web application used with the optional Floor Plan module.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Floor_Plan/Installing_Floor_Plan" title="Installing Floor Plan Module">Floor Plan Module Installation Instructions</a>.</li>
+            <li style="list-style-type: disc;">EMS Room Diagramming Service&#160;– Web service used by the optional Floor Plan module.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Floor_Plan/Installing_Floor_Plan" title="Installing Floor Plan Module"><span class="Hyperlink">Floor Plan Module Installation Instructions</span></a>.</li>
+            <li style="list-style-type: disc;">HR Toolkit&#160;– Customers using the optional HR Toolkit to feed employee and web user data to EMS should contact their Client Services Consultant to evaluate and discuss any potential impacts to the interface.</li>
+            <li style="list-style-type: disc;">FM Toolkit&#160;– Customers using the optional FM Toolkit to feed facility data to EMS should contact their Client Services Consultant to evaluate and discuss any potential impacts to the interface.</li>
+            <li style="list-style-type: disc;">EMS – Cisco TMS Interface&#160;– Optional interface that feeds video&#160;conferences booked in EMS to Cisco TMS.&#160; See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/CISCO_TMS/Installing_CISCO_TMS/06-EMS_-_Cisco_TMS_Interface_Database_Component_Installation" title="EMS - Cisco TMS Interface Database Component Installation"><span class="Hyperlink">EMS – Cisco TMS Interface Installation Instructions</span></a>.</li>
+            <li style="list-style-type: disc;">EMS API&#160;– Version 1.1.12 or newer required.&#160; See the&#160;<a href="https://success.emssoftware.com/Internal/Archived_Doc/EMS_API_Reference_Guide_V44_(Archived)" title="EMS API Reference Guide">EMS API Reference Guide</a>.</li>
+            <li style="list-style-type: disc;">Video Display Interface&#160;– Customers upgrading from EMS Enterprise 4.0 or below will be required to reconfigure the Scheduled Task to automatically execute the export process.&#160; See the&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client" title="EMS User Manual">EMS User Manual</a>&#160;for instructions.</li>
+        </ul>
+        <h2 class="Heading2">Upgrading the EMS Server Components&#160;</h2>
+        <p>The server upgrade process will upgrade the EMS databases on your MS SQL Server.&#160; If you are&#160;upgrading from EMS Enterprise 4.x or below, your existing&#160;EMSEnterprise_Masterdatabase (which&#160;contains licensing information) will be replaced by a new&#160;EMS_Master&#160;database, and your existing&#160;EMS&#160;database will be upgraded to the current version.</p>
+        <p>Note:&#160; A Microsoft SQL Server SA level account will be required to execute the database upgrade process.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Complete the requirements in&#160;the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/07-Upgrade_Instructions#Important_Considerations_Before_Upgrading" title="Upgrade Instructions">Prerequisites Before Upgrading<span class="Hyperlink">&#160;</span></a>section (above).</li>
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Secure the&#160;EMS.ServerInstall.exe&#160;file.</li>
+            <li>Using&#160;SQL Server Management Studio, back&#160;up your existing EMS databases.</li>
+            <li>Run&#160;EMS.ServerInstall.exe. (This .exe can be run from any PC that has access to your database server.)</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions.png" style="visibility: visible;mso-wrap-style: square;width: 654px;height: 281px;" alt="https://success.emssoftware.com/@api/deki/files/927/EMS_Upgrade_Utility_1.png?revision=1&amp;size=bestfit&amp;width=654&amp;height=281" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>In the Server field,&#160;enter the name of the MS SQL Server.</li>
+            <li>In the Database field, enter the name of the EMS database you wish to upgrade.</li>
+            <li>In the Server Authentication area, specify your MS SQL Server authentication credentials.&#160; If SQL Server Authentication Mode is selected, you will be required to specify a User Name and Password.</li>
+            <li>Click the&#160;Execute&#160;button.&#160; A Backup Database popup&#160;will appear.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/Upgrade Instructions.png" style="visibility: visible;mso-wrap-style: square;width: 483px;height: 161px;" alt="https://success.emssoftware.com/@api/deki/files/928/EMS_Upgrade_Utility_2.png?revision=1&amp;size=bestfit&amp;width=483&amp;height=160" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="10">
+            <li>Click&#160;Yes&#160;to acknowledge that you have backed-up your EMS databases and it is OK to continue. You have completed the upgrade process for the server portion of EMS. Next you will upgrade individual workstations.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_IG_V44_Install/Introduction_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;For information on installing the optional Email Notification Service or the EMS Campus Auto Sync Service (EMS Campus only), see&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Email_Notification_Service" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/08-Installing_or_Upgrading_the_EMS_Email_Notification_Service"><span class="Hyperlink">Installing or Upgrading the EMS Email Notification Service</span></a>&#160;and/or&#160;&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Installing_EMS/09-Installing_or_Upgrading_the_EMS_Campus_Auto_Sync_Service_(EMS_Campus_Only)"><span class="Hyperlink">Installing or Upgrading the EMS Campus Auto Sync Service</span></a>.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3857/tech_doc_warning.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=25" />
+                    </p>
+                </td>
+                <td>
+                    <p>Warning:&#160;If you are upgrading your system&#160;using the EMS&#160;Pro Server Install or EMS Server Install, be sure&#160;to save and remove all custom functions on the EMS database and then re-install the functions after upgrade. This ensures that your custom functions reinstate after installation.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">Upgrading Individual Workstations&#160;</h2>
+        <p>Follow the procedures below to upgrade individual workstations to EMS Desktop Client.&#160;</p>
+        <h3 class="Heading3"><a name="EMS_Desktop_Client_Web_Deployment"></a>EMS Desktop Client Web Deployment&#160;</h3>
+        <p>Note:&#160; Before beginning the installation process, please install or upgrade your EMS databases.</p>
+        <p>Note: EMS Desktop Client Web Deployment is a new feature to EMS Version 44. To see more information about EMS Desktop Client Web Deploy See: Desktop Client&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment" title="Decision Guide - Web Deployment Versus Conventional Deployment"><span class="Hyperlink">Decision Guide</span></a>. If you do not want to use &#160;the EMS Desktop Client Web Deploy option, skip to the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/07-Upgrade_Instructions#Conventional_Desktop_Client_Installation" title="Upgrade Instructions"><span class="Hyperlink">Conventional Desktop Client Installation</span></a>&#160;section.</p>
+        <p>Note:&#160; Existing versions of The EMS Desktop Client Web Deployment must be manually uninstalled.&#160; Be sure to copy and save any files that have been customized.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Manually&#160;uninstall&#160;any previous versions of EMS Desktop Client Web Deployment on your web server.&#160;&#160;</li>
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Download the&#160;EMSDesktopWebDeploySetup.msi&#160;file onto the web server that will be running EMS Desktop Client Web Deployment.</li>
+            <li>Run the&#160;EMSDesktopWebDeploySetup.msi&#160;as an administrator.</li>
+            <li>The first screen welcomes you to the EMS Desktop Client Web Deployment&#160;Setup Wizard.&#160; Click&#160;Next&#160;to begin the installation process.&#160; The&#160;Destination Folder&#160;dialog&#160;will appear.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_1.png" style="visibility: visible;mso-wrap-style: square;width: 495px;height: 387px;" alt="https://success.emssoftware.com/@api/deki/files/915/Web_Deployment_2.png?revision=1&amp;size=bestfit&amp;width=495&amp;height=387" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Select the destination folder where you wish to install the EMS Desktop Web Deployment.&#160; The installation process will create a new physical directory on your web server based on the destination folder path you entered (“EMSDesktopWebDeploy” in the example above.).</li>
+            <li>In the&#160;Web Site URL and Virtual Directory Name&#160;fields, enter your SQL instance name.</li>
+            <li>In the&#160;EMS Database&#160;field, enter your Database Name: the Virtual Directory Name will default to the destination folder specified in Step 6.&#160; It is recommended that you keep the default setting.&#160; The installation process will create a virtual directory on your web server based on the virtual directory entered (“EMS Desktop Web Deploy” in the example above.)&#160;</li>
+            <li>If you will be using a Load Balancer with the EMS&#160;Desktop&#160;Web Deploy application, enter&#160;the Name or IP Address of your server in the&#160;EMS SQL Server&#160;field.&#160;</li>
+            <li>Click&#160;Next.</li>
+        </ol>
+        <p>Note:&#160; The EMS Desktop Client Web Deployment&#160;should&#160;not&#160;be installed in the same virtual directory as other EMS web-based products OR under a site running another version of the EMS Desktop Client Web Deployment.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="11">
+            <li>The&#160;Ready to install&#160;the EMS Desktop Client Web Deployment window will appear.&#160;Click&#160;Install.</li>
+            <li>The&#160;Completed&#160;EMS Desktop Client Web Deployment&#160;Setup Wizard&#160;window will appear.&#160; Click&#160;Finish.&#160;&#160;</li>
+            <li>After following the steps above, verify your EMS Desktop Client Web Deployment installation by opening a browser and entering the address:</li>
+        </ol>
+        <p>http://[ServerName]/EMSDesktopWebDeploy/&#160; (replace [ServerName] with the name of your web server)</p>
+        <p>Note:&#160;&#160;The first time you launch the EMS Desktop Client Web Deployment, it may take a few extra moments for the page to display.&#160; If you encounter any issues, please contact&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/02-Customer_Support" title="Customer Support"><span class="Hyperlink">Customer Support</span></a>&#160;for assistance.</p>
+        <h3 class="Heading3">To Use the EMS Desktop Client Web Deployment&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>To install the EMS Desktop Client, users&#160;will need to access the URL for&#160;the EMS Desktop Client Web Deployment.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_2.png" style="visibility: visible;mso-wrap-style: square;width: 886px;height: 657px;" alt="https://success.emssoftware.com/@api/deki/files/1504/Web_Deployment_5.png?revision=1&amp;size=bestfit&amp;width=754&amp;height=559" />
+        </p>
+        <p>Note: If your browser is set to block popups, it should be disabled so that EMSApplication.exe and the configuration file can be downloaded.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click&#160;Download and Install&#160;the EMS Desktop Client to download the&#160;EMSApplication.exe.</li>
+            <li>Run the&#160;EMSApplication.exe. This will install the client locally from the service:</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_4.png" style="visibility: visible;mso-wrap-style: square;width: 524px;height: 223px;" alt="https://success.emssoftware.com/@api/deki/files/921/Installing.png?revision=1&amp;size=bestfit&amp;width=523&amp;height=223" />
+        </p>
+        <p>Note:&#160;When you launch the EMSApplication.exe, you may be prompted to enter the EMS Desktop Client Web Deployment URL:</p>
+        <p>http://[ServerName]/EMSDesktopWebDeploy/&#160; (replace [ServerName] with the name of your web server)</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>The EMS icon will be placed on the user's desktop.</li>
+        </ol>
+        <p>Note:&#160;When a user launches the client, it will check the EMS Desktop Client Web Deployment for a new version of the Client.</p>
+        <p>Note:&#160;Clients installed through the EMS Desktop Client Web Deployment will not require administrative permission to install.</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="1">
+            <li>If you are upgrading from a significantly&#160;older version of EMS, you will be prompted&#160;to import your registration information.&#160;The Registration screen appears.&#160; Follow the instructions to import your EMS license key.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_5.png" style="visibility: visible;mso-wrap-style: square;width: 610px;height: 610px;" alt="https://success.emssoftware.com/@api/deki/files/904/Import_License.png?revision=1&amp;size=bestfit&amp;width=609&amp;height=609" />
+        </p>
+        <p>Note:&#160;Your license key only needs to be imported once.</p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="2">
+            <li>At the EMS login screen, type&#160;admin&#160;as both the User ID and the Password.</li>
+            <li>Click&#160;OK.</li>
+        </ol>
+        <p>Note:&#160;When an EMS Client is installed through the EMS Desktop Client Web Deployment it will only be able to connect to the EMS instance received from the service.</p>
+        <h3 class="Heading3"><a name="Conventional_Desktop_Client_Installation"></a>To Perform&#160;Conventional Desktop&#160;Client&#160;Installation&#160;</h3>
+        <p>Note:&#160; Existing versions of EMS must be manually uninstalled.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Secure the&#160;EMSClient.msi.</li>
+            <li>Run&#160;EMSClient.msi&#160;on the client workstation. Follow the on-screen prompts. It is recommended that you accept the defaults.</li>
+            <li>Start&#160;EMS&#160;from the shortcut located on your desktop.</li>
+        </ol>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="1">
+            <li>If you are upgrading from a significantly older version of EMS, you will be prompted&#160;to import your registration information.&#160;The Registration screen appears.&#160; Follow the instructions to import your EMS license key.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_3.png" style="visibility: visible;mso-wrap-style: square;width: 610px;height: 610px;" alt="https://success.emssoftware.com/@api/deki/files/929/Registration_Import.png?revision=1&amp;size=bestfit&amp;width=609&amp;height=609" />
+        </p>
+        <ol style="list-style-type: lower-alpha;margin-left: 72pt;" start="2">
+            <li>At the EMS login screen, enter your User ID and Password.</li>
+            <li>Click&#160;OK.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>To install the software on&#160;additional client computers, repeat&#160;steps 1-4&#160;above.<br />Note: Your license key only needs to be imported once.</li>
+        </ol>
+        <h3 class="Heading3">To Install&#160;Additional EMS Services&#160;</h3>
+        <p>The&#160;following&#160;services will also need to be installed if you are interested in using these additional features.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;"><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Services_and_Components/EMS_Automated_Report_Service_Install" title="EMS Automated Report Service Install" class="Hyperlink">Automated Reports Service</a>
+            </li>
+            <li style="list-style-type: disc;"><a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client/081_Booking_Check-in/Enabling_Booking_Check-in" title="Enabling Booking Check-in" class="Hyperlink">Booking Level Check-in Service</a>
+            </li>
+        </ul>
+    </body>
+</html>

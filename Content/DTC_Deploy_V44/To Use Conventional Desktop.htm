@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_Deploy_V44.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">To Use Conventional Desktop Client Deployment</h1>
+        <h2 class="Heading2">What is Conventional Deployment?&#160;</h2>
+        <p>The conventional deployment method is delivered in a typical MSI file. This file can be run directly on a computer, or installed via an administrative push. Standard toolsets for working with MSI files can be used for deployment. If your organization already has polices and systems in place for pushing applications, this may be the preferred way to deploy the desktop client. If you are looking for an easier way to deploy the desktop client, see&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_EMS_Desktop_Client_Web_Deployment" title="/EMS_V44/EMS_System_Administration/EMS_Desktop_Client/Deployment_Options/EMS_Desktop_Web_Deploy"><span class="Hyperlink">EMS Desktop Client Web Deployment Module</span></a>.</p>
+        <p>The information below is intended for&#160;IT System Administrators. You should have a clear understanding of installing software on Windows Workstations as well as understanding how the Windows Registry functions.</p>
+        <h3 class="Heading3">Prerequisite&#160;</h3>
+        <p>The Desktop Client requires that the Windows Component .NET 4.5 be enabled on the client machine. The client must also have access to the EMS Server component (to the&#160;Desktop Client API, or directly&#160;to the EMS Database).</p>
+        <p>If you are using a MAC please see our article Using EMS on a Mac.</p>
+        <h3 class="Heading3">Obtain&#160;the required MSI file&#160;</h3>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Log&#160;in to the EMS support center&#160;at&#160;<a href="http://www.emssoftware.com/support" title="http://www.emssoftware.com/support" class="Hyperlink">http://www.emssoftware.com/support</a></li>
+        </ol>
+        <p>Navigate to&#160;the Software &amp; Documents Library &gt;&#160;New&#160;Releases and Patches &gt;&#160;EMS Desktop Clients (Conventional and Web Deploy)<br /><img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.png" style="visibility: visible;mso-wrap-style: square;width: 665px;height: 204px;" alt="https://success.emssoftware.com/@api/deki/files/1588/webdeploydl.png?revision=1&amp;size=bestfit&amp;width=665&amp;height=204" /><br />&#160;</p>
+        <p>When you install, the application loads into the "Program Files",&#160; "Program Files (x86)", (or a&#160;custom directory that you specify).&#160;The first time the application is run by a user it will prompt the user to enter in the Server and Database. These entries&#160;are saved in the user's registry. The next time the application is accessed, it will not prompt the user for this information again.&#160;If upgrading from a previous version, the desktop client will search for the connection string from the previous version, and update the current version so the user is not&#160;prompted to enter that information.</p>
+        <h3 class="Heading3">Set&#160;the Server Programmatically&#160;</h3>
+        <h4 class="Heading4">Option 1: Set the registry keys for the user&#160;</h4>
+        <p>The Server and Database information are stored in Keys in the following location</p>
+        <p>32bit Machines: HKEY_CURRENT_USER\Software\Dean Evans and Associates\Version44<br />64​bit Machines: HKEY_CURRENT_USER\WOW6432Node\Software\Dean Evans and Associates\Version44</p>
+        <p>Within there will be&#160;two string values, one for server and one for database.</p>
+        <h4 class="Heading4">Option 2: Use switches in the executable&#160;</h4>
+        <p>There are two switches that can be used with the applications executable (ems.exe) You can use these within a shortcut that you give to the user to specify the Server and Database for them.</p>
+        <p>/s=Servername.domain.local<br />/d​=DatabaseName</p>
+        <p>Replace "Servername.domain.local" with the Domain name of your Database Server and DatabaseName with the Database of the Database of EMS that that user needs to connect to.</p>
+        <p>For Example "C:\Program Files(x86)\EMS\EMS.exe /s=Servername.Domain.local /d=DatabaseName"</p>
+        <h3 class="Heading3">Establish Network Connections&#160;</h3>
+        <p>The conventional desktop client connects directly to the database server for all related transactions. The desktop client may also need to connect to the following services.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">EMS Web Server</li>
+            <li style="list-style-type: disc;">SMTP Server</li>
+            <li style="list-style-type: disc;">LDAP Server</li>
+        </ul>
+        <h3 class="Heading3">Network Diagram<a href="https://success.emssoftware.com/Older_Releases_(V44,_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_Conventional_Desktop_Client_Deployment" title="Edit section"><img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.gif" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 16px;" alt="Edit section" /></a></h3>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.jpg" style="visibility: visible;mso-wrap-style: square;width: 608px;height: 381px;" alt="https://success.emssoftware.com/@api/deki/files/1416/Conventional_Deploy_Arch.jpg?revision=1&amp;size=bestfit&amp;width=608&amp;height=381" />
+        </p>
+        <h1 class="Heading1">To Use EMS Desktop Client Web Deployment</h1>
+        <p>EMS Desktop Web Deployment is a new option to Server Version 44 (Released January 2016). This feature allows for easy deployment of the desktop to your end users. It also incorporates a central source for posting application updates. These updates are applied to your end users' computers automatically once deployed to the server.</p>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/Decision Guide Web Deployment.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3858/tech_doc_overview.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=29" />&#160;Concept:&#160;EMS Desktop Web Deployment (V44+ and V44.1) is an alternative method for installing EMS Desktop Client locally on individual user machines&#160;</p>
+        <p>This solution is not a replacement for the EMS Web Client (discontinued after V43), but rather, it is an alternative to using Microsoft® methods of deployment, such as SCCM. Administrators can use it to host EMS Desktop Client&#160;on a web server, with the ability to push the URL to any EMS Administrators so they can download&#160;EMS Desktop Client&#160;without needing Administrative Privileges on their local machine.&#160;</p>
+        <h2 class="Heading2">How it works&#160;</h2>
+        <p>The web deploy application is installed on your web server. The EMS Desktop Application is included within this installation. Once installed, the end users point&#160;their web browsers to the web deploy application, which&#160;links them to download the EMS Client. Once the user downloads and runs that link, the Desktop Client is installed within the&#160;user's profile on that workstation. Once installed, the EMS Desktop Client Application will check the server for a updated version each time the client is launched. If a new version is available, then it will automatically download and install the update.</p>
+        <h2 class="Heading2">Networking Components&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">The Web Server can be accessed by IP Address or Hostname. Port configuration is managed within IIS.</li>
+            <li style="list-style-type: disc;">If HTTPS is leveraged you will need to have a Certificate assigned to the binding within IIS. This certification must be trusted by the workstations that will be running the desktop client.</li>
+            <li style="list-style-type: disc;">The Web Server hosting the Web Deploy Application will need to have access to the Database server. The administrative&#160;users who will be leveraging the desktop client will need access to the Web Server.</li>
+        </ul>
+        <h2 class="Heading2">Optional Connections</h2>
+        <p>The Desktop client can connect to these services.</p>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">SMTP Server</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li style="list-style-type: circle;">This allows Sending email from the desktop client.</li>
+        </ul>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">LDAP Server</li>
+        </ul>
+        <ul style="list-style-type: circle;margin-left: 72pt;">
+            <li style="list-style-type: circle;">Global Address Book Searches</li>
+            <li style="list-style-type: circle;">Admin User Authentication</li>
+            <li style="list-style-type: circle;">Web Process Template Configuration (Assigning LDAP Groups to Web Process Templates)</li>
+        </ul>
+        <h2 class="Heading2">Architecture Diagram&#160;</h2>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.jpg" style="visibility: visible;mso-wrap-style: square;width: 693px;height: 415px;" alt="https://success.emssoftware.com/@api/deki/files/1412/Desktop_Web_Deploy_Arch1.jpg?revision=1&amp;size=bestfit&amp;width=693&amp;height=416" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                    </p>
+                </td>
+                <td>
+                    <p>See Also:&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/CISCO_TMS/Installing_CISCO_TMS/04-Application_Architecture" title="Application Architecture"><span class="Hyperlink">EMS Architecture Diagram</span></a></p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

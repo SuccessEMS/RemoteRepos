@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGFacilities.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Room Pricing on the Edit Pricing Window</h1>
+        <p>You can configure the pricing for a room on the Pricing tab of the Room dialog box, or you can configure the room, and then&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/110_Configuring_Room_Pricing_on_the_Edit_Pricing_window#RTF436f6e666967757265526f6f">configure</a>&#160;the pricing for it at a later date on the Edit Pricing window.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>You can also configure the room price at the time that you are&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms#Configure_Pricing_For_a_Room" title="Configuring Rooms">configuring the room on the Room dialog box</a>, or when&#160;you are&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/020_Configuring_Rate_Schedules" title="Configuring Rate Schedules">configuring rate schedules</a>.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS Desktop Client menu bar, click Configuration &gt; Facilities &gt;&#160;Rooms.&#160;The Rooms window opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Importing Rooms.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 304px;" alt="emssg_corefacilities_image045.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>On the Building dropdown list, select the building, area, or view that contains the rooms that you are pricing.</li>
+            <li>Click&#160;Pricing.&#160;The Edit Pricing window opens.&#160;&#160;&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Room Pricing on.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 369px;" alt="emssg_corefacilities_image046.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>On the Rate Schedule dropdown list, select the rate schedule for which you are pricing the rooms.</li>
+            <li>You can leave the&#160;Room Type&#160;set to the default value of (all), and then click Display to display a list of all&#160;active&#160;rooms for all room types that have been configured in your EMS database.On the Room Type dropdown list, you can select a specific room type, and then click&#160;Display&#160;for a list of all&#160;active&#160;rooms of the selected room type.</li>
+            <li>For each room, select the pricing method, which determines the cost for reserving the room, using the field definitions below.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Pricing Method</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Half Day/Full Day (Event Time)</p>
+                    </td>
+                    <td>
+                        <p>The total number of hours for the event is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the event is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the event is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Half Day/Full Day (Reserved Time)</p>
+                    </td>
+                    <td>
+                        <p>The total number of hours for the reservation (event time and reserved time) is counted and then compared to the number of hours that is indicated in the Hours column. If the total number of hours for the reservation is less than or equal to the hours that are indicated in the Hours column, then the Half Day price is charged for the room. If the total number of hours for the reservation is greater than the hours that are indicated in the Hours column, then the Full Day price is charged for the room.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Event Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the event time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Reserved Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the booking. This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Service Time)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the reserved time (in hours) for the service (resource). This price can be used in conjunction with an initial “flat” fee, as well as minimum and maximum fees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hourly (Specific)</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is multiplied by the number of hours indicated when adding the room to a booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Unit</p>
+                    </td>
+                    <td>
+                        <p>The price that is indicated in the Price column is applied to the room, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>After you select a pricing method, click in the appropriate fields to select the currently displayed amount, and then edit the amount as needed.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the room price for a booking. If the pricing method is Unit, then this value is applied in total to a room, regardless of the event time or reserved time for the booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Discount</p>
+                    </td>
+                    <td>
+                        <p>You can use a discount with any pricing method. If you specify a discount for a room, then the actual price, the discount percentage, and the discounted amount are displayed on confirmations and invoices.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Min. Charge</p>
+                        <p>Max. Charge</p>
+                    </td>
+                    <td>
+                        <p>The values that are indicated in these columns are used in conjunction with the Hourly pricing methods. If you specify a minimum charge for a room, then the system compares this value to the calculated hourly rate and applies the greater of the two charges. Likewise, if you specify a maximum charge for a room, then the system compares this value to the calculated hourly rate and applies the lesser of the two charges.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Flat Price</p>
+                    </td>
+                    <td>
+                        <p>A resource price that remains constant regardless of the total number of hours booked for the room. Used in conjunction with Hourly (Event Time) and Hourly (Reserved Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Half Day Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Full Day Price</p>
+                    </td>
+                    <td>
+                        <p>The dollar amount that is used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Hours</p>
+                    </td>
+                    <td>
+                        <p>Multiplier used in calculating the room price for a booking if the pricing unit is Half Day/Full Day (Event Time) or Half Day/Full Day (Reservation Time).</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>Repeat&#160;Step 4&#160;through&#160;Step 7&#160;for each rate schedule and/or grouping as needed.</li>
+            <li>Click&#160;Close.&#160;The Edit Pricing window closes. The pricing information is saved for the room.</li>
+        </ol>
+    </body>
+</html>

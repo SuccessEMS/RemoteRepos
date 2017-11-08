@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:43:08.6157626-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-08T12:43:22.0802581-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGResources.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGResources.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Core Configuration Resources.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Overview of Configuring Resources.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Services for a.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Services for a_1.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Services for a_2.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Services for a_3.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Configuring Services for a.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Groupings for.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Groupings for_1.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Groupings for_2.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Configuring Groupings for.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_1.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_2.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_3.png"
+      TimeStamp="11/8/2017 12:43:17 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_4.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_5.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_6.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_7.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_8.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_9.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Resources for_10.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Configuring Resources for.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Importing Resources for a.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Importing Resources for a_1.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Importing Resources for a_2.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Importing Resources for a.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources_1.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources_2.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Configuring Multiple Resources.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas_1.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas_2.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas_3.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas_4.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Production Areas_5.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Defining Production Areas.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Resource Selections.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Resource Selections_1.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Resource Selections_2.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Defining Resource Selections_3.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Defining Resource Selections.htm"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Configuring the Pricing for.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Configuring the Pricing for.htm"
+      TimeStamp="11/8/2017 12:43:19 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGResources/Exporting Pricing Information.png"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/DTC_V44_CGResources/Exporting Pricing Information.htm"
+      TimeStamp="11/8/2017 12:43:19 PM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGResources.fltoc"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGResources.css"
+      TimeStamp="11/8/2017 12:43:18 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+  </UsedCharacterStyles>
+</MsWordImport>

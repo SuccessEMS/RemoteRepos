@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_Deploy_V44.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">To Use the Easy Deployment with a Conventional EMS Desktop Client Deployment</h1>
+        <h2 class="Heading2">What is EMS "Easy Deployment"?&#160;</h2>
+        <p>This additional&#160;application layer&#160;on the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment#Conventional_Deployment" title="Decision Guide - Web Deploy Versus Conventional Deployment"><span class="Hyperlink">conventional&#160;EMS deployment method</span></a>&#160;simplifies the deployment process for administrative users&#160;so they can deploy EMS Desktop Client software installations directly to their users' workstations. For an overview, see our&#160;<a href="https://www.youtube.com/watch?v=HnsRawVNDt4" title="https://www.youtube.com/watch?v=HnsRawVNDt4"><span class="Hyperlink">webinar</span></a>.&#160;It does this&#160;by running&#160;all database queries through a Web Service, which&#160;allows the database server to be isolated from the end user network. By using this tool,&#160;your users do not need to first navigate to the EMS web deploy website and&#160;download the application to their local profile.</p>
+        <h3 class="Heading3">What Are My Deployment Options?&#160;</h3>
+        <p>EMS Deployment is a&#160;process you can use to programmatically deploy software to your end user workstations, either via the web or using conventional methods. See the&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment" title="https://success.emssoftware.com/EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deploy_Versus_Conventional_Deployment"><span class="Hyperlink">W</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment" title="Decision Guide - Web Deploy Versus Conventional Deployment"><span class="Hyperlink">eb Deployment VS Conventional Deployment</span></a>&#160;Decision guide&#160;to understand&#160;how&#160;we can handle that process for you. We recommend implementing a deployment method in order to minimize additional legwork to roll out the EMS Desktop Client to your organization.&#160;</p>
+        <h4 class="Heading4">How a Deployment Changes Standard Configurations&#160;</h4>
+        <p>Standard Configuration</p>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.jpg" style="visibility: visible;mso-wrap-style: square;width: 608px;height: 381px;" alt="Conventional Deploy Arch.jpg" />
+        </p>
+        <p>Configuration after completion of this topic</p>
+        <p>
+            <img src="../Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.jpg" style="visibility: visible;mso-wrap-style: square;width: 693px;height: 415px;" alt="Desktop Web Deploy Arch1.jpg" />
+        </p>
+        <h2 class="Heading2">Prerequisites for Easy Deployment&#160;</h2>
+        <ul style="list-style-type: disc;margin-left: 36pt;">
+            <li style="list-style-type: disc;">EMS Desktop Client installed on end users' machines</li>
+            <li style="list-style-type: disc;">EMS Web Deploy Service installed on a web server so&#160;end users are able to access it</li>
+            <li style="list-style-type: disc;">A method&#160;to remotely push a registry value&#160;into end users' registries</li>
+        </ul>
+        <h4 class="Heading4">Modify&#160;the EMS Web Deploy Service&#160;</h4>
+        <p>By default, once you install the Web Deploy Service, users will be able to download and run the desktop client directly from that service. To prevent that, you should&#160;delete or rename the&#160;install.html file&#160;within that service. This will prevent clients from being able to download the client and&#160;ensure that you can maintain the desktop installations via your application delivery policy. This will also keep the application running outside the users' network.</p>
+        <h4 class="Heading4">Modify the Desktop Client&#160;</h4>
+        <p>To connect&#160;the Conventional Desktop Client to to the web service instead of directly to the database, you will need to&#160;add a String Value named "AppFacadeUrl"&#160;to the users' registry:</p>
+        <p>HKEY_CURRENT_USER\SOFTWARE\EMS Software\Version 44.1</p>
+        <p>The Value of this String will be the URL to the Web Service (example:&#160;"<a href="http://yourwebserver.domain.local/em...ktopwebdeploy/" title="http://yourwebserver.domain.local/em...ktopwebdeploy/"><span class="Hyperlink">http://yourwebserver.domain.local/em...ktopwebdeploy/</span></a>").&#160;Once that key is in place, any server and database keys are ignored. To revert back to a direct database connection, simply delete the Registry Key "AppFacadeUrl"</p>
+        <h4 class="Heading4">Updates&#160;</h4>
+        <p>Once the Conventional Desktop client points to the Web service for Connection to the database, it will not auto-update. When it comes time to deploy a new build of the software, you will need to install the updated Web Deploy Version to update the web server side,&#160;then push the updated local client&#160;from the updated MSI file, and deploy it using your standard installation methods. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/To_Use_Conventional_Desktop_Client_Deployment" title="Conventional Desktop Client Deployment"><span class="Hyperlink">Conventional EMS Desktop Client&#160;Deployment&#160;</span></a>for further information.</p>
+        <p>&#160;</p>
+    </body>
+</html>

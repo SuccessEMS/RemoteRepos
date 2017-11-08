@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_VC.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Overview of Video Conferencing Configuration</h1>
+        <p>Standard EMS room configuration is suitable for organizations that use only built-in/fixed video conference rooms for video conferences. For environments that use video conference mobile carts, however, additional configuration options are available to simplify the video conference room/mobile cart request process. When configured properly, EMS searches for all rooms that have a built-in video conferencing feature and it searches for all rooms that can accommodate a mobile video conferencing cart. A room that has a built-in video conferencing feature is displayed in the search results only if the room is available. A room that can accommodate a mobile video conferencing cart is displayed in the search results only if the room is available&#160;and&#160;at least one mobile video conferencing cart is available for selection. The end result of this configuration is that after a reservation is complete, booking details are automatically created for a user and&#160;does not have to add them manually. If a user selects a room that has a built-in conferencing feature, then the feature is indicated for the room. If the user selects a room that uses a mobile video conferencing cart, then the mobile cart is automatically added to the booking. This information can be viewed like any other booking detail in the Navigator and on reports like the Setup Worksheet report.</p>
+        <p>Reservation with video conferencing features automatically added to bookings</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_VC/Overview of Video Conferencing.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 320px;" alt="emssg_appendixvc_image001.png" />
+        </p>
+        <p>You must configure the following three types of rooms to provide enhanced searching capability for rooms that have a video conferencing feature:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Meeting rooms with built-in video conference capability. Room availability for this type of room is based on the true availability of the room for the time slot selected. If a user selects one of these rooms, a booking detail (for example, “Built-in Video Conference Equipment”) is automatically created after the reservation is submitted. This provides indication that a user is requesting use of the video conferencing equipment in the room.</li>
+            <li>Standard meeting rooms that can accommodate a mobile video conferencing cart. Room availability for this scenario is based on the availability of the room&#160;and&#160;on the availability of the mobile video conferencing cart resource pool. For a room to be displayed as available, at least one mobile video conferencing cart must be available for the time slot selected. If a user selects one of these rooms, a booking detail for a mobile video conferencing cart is automatically added to the booking after the reservation is submitted.</li>
+            <li>A room or other location that is not managed in EMS that can accommodate a mobile video conferencing cart. The room is configured as an Override Description room type. Room availability for this scenario is based only on the availability of the mobile video conferencing cart resource pool. If a user selects this room, the user is provided an option for entering a location. After the reservation is submitted, a booking detail for a mobile video conferencing cart is automatically added to the booking.</li>
+        </ul>
+        <p>This behavior is driven in the EMS client by the selection of the video conferencing feature in the Reservation Wizard. In VEMS, after you correctly configure a web process template that has the Video Conference option selected, a VEMS user is not required to make any selections—the search for the feature is carried out automatically and the user can select from a list of available rooms that meet the search criteria.</p>
+    </body>
+</html>

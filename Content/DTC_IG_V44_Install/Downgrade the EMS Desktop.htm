@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_IG_V44_Install.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Downgrade the EMS Desktop Client Web Deploy</h1>
+        <p>When determining whether you&#160;organization wants to revert&#160;to an older version of the EMS Desktop Client,&#160;follow the steps below.</p>
+        <p>Note:&#160;You cannot roll back an EMS Patch once it has been applied. Please read the release notes each month to determine if an upgrade is necessary for your organization. As a best practice, it is recommended that your system remain current on EMS Desktop Client builds and patches.</p>
+        <h2 class="Heading2">To Roll&#160;Back the EMS Desktop Client Web Deploy&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Uninstall the newer version of the EMS Desktop Client Web Deploy.</li>
+            <li>Run the installer for the older&#160;version of the EMS Desktop Client Web Deploy.&#160;</li>
+        </ol>
+        <p>Note:&#160;Once the older version of the EMS Desktop Client Web Deploy is installed, users will need to close EMS before they will be downgraded to the older version of the software.</p>
+        <p>Note: Any user who has an individual install of the EMS Desktop Client will also need to have that&#160;individual install rolled back, by uninstalling the EMS Client and installing the older version.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>After the users' Desktop Clients have been downgraded, they will receive a message stating there is new client software available:</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_IG_V44_Install/Downgrade the EMS Desktop.jpg" style="visibility: visible;mso-wrap-style: square;width: 480px;height: 161px;" alt="https://success.emssoftware.com/@api/deki/files/1463/New_Software_Available.jpg?revision=1&amp;size=bestfit&amp;width=480&amp;height=160" />
+        </p>
+        <p>If you wish to avoid this prompt from presenting to your users, after installing the older version of the EMS Desktop Client Web Deploy, run the following script against the EMS database:</p>
+        <p>Update&#160;tblServerVersion</p>
+        <p>set&#160;ClientVersion&#160;=&#160;NULL</p>
+        <p>If you have further questions, please&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Installing_EMS_Desktop_Client/02-Customer_Support" title="Customer Support"><span class="Hyperlink">contact Customer&#160;Support</span></a>.</p>
+    </body>
+</html>

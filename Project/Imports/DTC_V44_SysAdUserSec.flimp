@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:30:34.8703903-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-08T12:30:51.7723908-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdUserSec.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdUserSec.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/System Administration Configuration.htm"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Overview of User Processes.gif"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/Overview of User Processes.htm"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_1.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_2.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_3.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_4.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_5.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_6.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_7.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_8.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_9.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Accounts_10.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/Configuring User Accounts.htm"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_1.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_2.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_3.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_4.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_5.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_6.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Templates_7.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/Configuring User Templates.htm"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring Academic User.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring Academic User_1.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/Configuring Academic User.htm"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_1.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_2.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_3.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_4.png"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdUserSec/Configuring User Security.htm"
+      TimeStamp="11/8/2017 12:30:50 PM" />
+    <Url
+      Source="../TOCs/DTC_V44_SysAdUserSec.fltoc"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_SysAdUserSec.css"
+      TimeStamp="11/8/2017 12:30:49 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="bulletlev1" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+    <StyleName
+      Name="tablenotewarning" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

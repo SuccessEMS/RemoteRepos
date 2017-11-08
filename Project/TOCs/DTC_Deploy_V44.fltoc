@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="EMS Desktop Client Deployment Options" Link="/Content/DTC_Deploy_V44/EMS Desktop Client Deployment.htm" />
+    <TocEntry Title="Configuring HTTP/HTTPS After Installation" Link="/Content/DTC_Deploy_V44/Configuring HTTP HTTPS After.htm" />
+    <TocEntry Title="Decision Guide - Web Deployment Versus Conventional Deployment" Link="/Content/DTC_Deploy_V44/Decision Guide Web Deployment.htm" />
+    <TocEntry Title="To Use Conventional Desktop Client Deployment" Link="/Content/DTC_Deploy_V44/To Use Conventional Desktop.htm" />
+    <TocEntry Title="To Use the Easy Deployment with a Conventional EMS Desktop Client Deployment" Link="/Content/DTC_Deploy_V44/To Use the Easy Deployment.htm" />
+</CatapultToc>

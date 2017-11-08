@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:29:52.3317520-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-08T12:30:05.5822795-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdTools.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdTools.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/System Administration Tools.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/System Administration Tools.htm"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Group Wizard.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Group Wizard_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Group Wizard_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Group Wizard_3.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Change Group Wizard.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Reservation Wizard.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Reservation Wizard_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Reservation Wizard_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Change Reservation Wizard_3.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Change Reservation Wizard.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Room Administration Wizard_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Room Administration Wizard.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Managing Saved Reports.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Managing Saved Reports_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Managing Saved Reports.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Override Existing Bookings.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Override Existing Bookings_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Override Existing Bookings.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_3.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_4.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_5.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Import Reservations Utility_6.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Import Reservations Utility.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Viewing and Emailing Logged.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Viewing and Emailing Logged_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Viewing and Emailing Logged.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Currency Configuration Wizard.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Currency Configuration Wizard_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Currency Configuration Wizard_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Currency Configuration Wizard_3.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Currency Configuration Wizard.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Deleting Old Data.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Deleting Old Data_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Deleting Old Data.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_1.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_2.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_3.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_4.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Changing Booking Dates and.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdTools/Migrating Data.png"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdTools/Migrating Data.htm"
+      TimeStamp="11/8/2017 12:30:03 PM" />
+    <Url
+      Source="../TOCs/DTC_V44_SysAdTools.fltoc"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_SysAdTools.css"
+      TimeStamp="11/8/2017 12:30:02 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

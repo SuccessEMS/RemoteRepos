@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Getting Started with EMS V44" Link="/Content/DTC_V44_GetStarted/Getting Started with EMS V44.htm" />
+    <TocEntry Title="Introduction" Link="/Content/DTC_V44_GetStarted/Introduction.htm" />
+    <TocEntry Title="Overview of Configuration Windows" Link="/Content/DTC_V44_GetStarted/Overview of Configuration.htm" />
+    <TocEntry Title="Starting EMS" Link="/Content/DTC_V44_GetStarted/Starting EMS.htm" />
+    <TocEntry Title="The EMS Window" Link="/Content/DTC_V44_GetStarted/The EMS Window.htm" />
+    <TocEntry Title="Overview: the EMS Browser Window" Link="/Content/DTC_V44_GetStarted/Overview the EMS Browser Window.htm" />
+    <TocEntry Title="Managing Database Connections" Link="/Content/DTC_V44_GetStarted/Managing Database Connections.htm" />
+</CatapultToc>

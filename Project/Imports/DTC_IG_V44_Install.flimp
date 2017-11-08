@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:45:48.5692705-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T12:46:00.7696546-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/DTC_IG_V44_Install.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/DTC_IG_V44_Install.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Installing EMS Desktop Client.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Introduction.gif"
+      TimeStamp="11/8/2017 12:45:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Introduction.png"
+      TimeStamp="11/8/2017 12:45:56 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Introduction_1.png"
+      TimeStamp="11/8/2017 12:45:56 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Introduction.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Customer Support.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Backing Up Your Data.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Hardware and Software Requirements.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Obtaining the Latest Release.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_1.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_2.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_3.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_4.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_5.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/First Time Installation Instructions_6.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/First Time Installation Instructions.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Upgrade Instructions.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_1.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_2.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Upgrade Instructions_3.png"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Upgrade Instructions.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_IG_V44_Install/Downgrade the EMS Desktop.jpg"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Downgrade the EMS Desktop.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/DTC_IG_V44_Install/Installing Custom Reports.htm"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../TOCs/DTC_IG_V44_Install.fltoc"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_IG_V44_Install.css"
+      TimeStamp="11/8/2017 12:45:57 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="HTML Address" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Emphasis" />
+  </UsedCharacterStyles>
+</MsWordImport>

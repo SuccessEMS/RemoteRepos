@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T12:45:05.8703755-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T12:45:22.7121013-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/DTC_Deploy_V44.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/DTC_Deploy_V44.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_Deploy_V44/EMS Desktop Client Deployment.htm"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/DTC_Deploy_V44/Configuring HTTP HTTPS After.htm"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/Decision Guide Web Deployment.png"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/Decision Guide Web Deployment_1.png"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/DTC_Deploy_V44/Decision Guide Web Deployment.htm"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.png"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.gif"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop.jpg"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.jpg"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_Deploy_V44/To Use Conventional Desktop_1.png"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/DTC_Deploy_V44/To Use Conventional Desktop.htm"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/DTC_Deploy_V44/To Use the Easy Deployment.htm"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../TOCs/DTC_Deploy_V44.fltoc"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_Deploy_V44.css"
+      TimeStamp="11/8/2017 12:45:20 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="mt-font-size-10.0pt" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-font-size-11.0pt" />
+  </UsedCharacterStyles>
+</MsWordImport>

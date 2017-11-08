@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGFacilities.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Overview of Configuring Rooms</h1>
+        <p>A&#160;room&#160;is a physical location that you reserve for an event. You can configure any physical location or space (meeting room, athletic field, lobby, and so on) as a room. The following list is an example of how you might configure rooms for your organization:</p>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>Grand Ballroom</li>
+            <li>Conference Room A</li>
+            <li>Harris Hall Room 200</li>
+            <li>South Soccer Field</li>
+        </ul>
+        <p>EMS uses three&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms#RTF526f6f6d5f636c6173736966"><span class="Hyperlink">classifications</span></a>&#160;of rooms—a standard room, a combination (or “combo”) room, and an override room.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGFacilities/Configuring Features_2.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </th>
+                    <th>
+                        <p>Your organization might use a different term to identify the spaces or locations that are booked for reservations at your facilities. If you want to change the term from “room” to your organization-specific term throughout your EMS system (menus, window and dialog box titles, confirmation headings, and so on), you must change the values for the Room Title Plural and Room Title Singular parameters. See&#160;Appendix A, “<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters" title="System Parameters"><span class="Hyperlink">System Parameters</span></a>”.</p>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+        <p>EMS uses three classifications of rooms—a&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms#RTF5374616e646172645f636f6d"><span class="Hyperlink">standard</span></a>&#160;room, a&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms#RTF5374616e646172645f636f6d"><span class="Hyperlink">combination</span></a>&#160;(or “combo”) room, and an&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/080_Overview_of_Configuring_Rooms#RTF4f766572726964655f726f6f"><span class="Hyperlink">override</span></a>&#160;room.</p>
+        <h2 class="Heading2"><a name="RTF526f6f6d5f636c6173736966"></a>Room classifications&#160;</h2>
+        <p><a name="RTF5374616e646172645f636f6d"></a>Standard and combination rooms</p>
+        <p>A&#160;standard&#160;room is any physical space that can be booked at your facility. You can use standard rooms as components when you configure a&#160;combination&#160;room. You can configure a combination room from two or more standard rooms, or you can configure it based on a logical relationship among multiple rooms. For example, if your organization is a student union, it might have a space that is designated as the Grand Ballroom, which is actually made of three standard rooms—Ballroom A, Ballroom B, and Ballroom C—and you can literally combine or divide these rooms using movable partitions. In another example, you could configure a combination room that is called the West End and this room includes all rooms in the West End of a given building, whether the rooms are contiguous.</p>
+        <p>To configure a combination room, you must first configure the component rooms as standard rooms. You can then configure the combination room and indicate that its components are the previously defined standard rooms. Consider the ballroom example cited above: First, define the standard rooms—Ballroom A, Ballroom B, and Ballroom C. You then configure a room called the Grand Ballroom, give it a classification of “combo room” and indicate that it is made up of three standard rooms—Ballroom A, Ballroom B, and Ballroom C. If you want, you can also configure subsets of the Grand Ballroom, such as Ballroom AB, Ballroom AC, and Ballroom BC. As a result, when the Grand Ballroom is scheduled for an event, the three standard rooms—Ballroom A, Ballroom B, and Ballroom C—are unavailable in EMS. Conversely, if you schedule one of the three standard rooms, for example, Ballroom A, then the Grand Ballroom, Ballroom AB, and Ballroom AC, are unavailable in EMS.&#160;Table 3-1&#160;The table below&#160;summarizes this example.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Room</p>
+                    </th>
+                    <th>
+                        <p>Classification</p>
+                    </th>
+                    <th>
+                        <p>Components</p>
+                    </th>
+                    <th>
+                        <p>Comments</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Ballroom A</p>
+                    </td>
+                    <td>
+                        <p>Standard</p>
+                    </td>
+                    <td>
+                        <p>N/A</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom AB, Ballroom AC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ballroom B</p>
+                    </td>
+                    <td>
+                        <p>Standard</p>
+                    </td>
+                    <td>
+                        <p>N/A</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom AB, Ballroom BC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ballroom C</p>
+                    </td>
+                    <td>
+                        <p>Standard</p>
+                    </td>
+                    <td>
+                        <p>N/A</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom BC, Ballroom AC, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ballroom AB</p>
+                    </td>
+                    <td>
+                        <p>Combo</p>
+                    </td>
+                    <td>
+                        <p>Ballroom A, Ballroom B</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom A, Ballroom B, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ballroom AC</p>
+                    </td>
+                    <td>
+                        <p>Combo</p>
+                    </td>
+                    <td>
+                        <p>Ballroom A, Ballroom C</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom A, Ballroom C, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Ballroom BC</p>
+                    </td>
+                    <td>
+                        <p>Combo</p>
+                    </td>
+                    <td>
+                        <p>Ballroom B, Ballroom C</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if Ballroom B, Ballroom C, or the Grand Ballroom are not already booked.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Grand Ballroom</p>
+                    </td>
+                    <td>
+                        <p>Combo</p>
+                    </td>
+                    <td>
+                        <p>Ballroom A, Ballroom B, Ballroom C</p>
+                    </td>
+                    <td>
+                        <p>Available for booking only if none of the standard rooms or none of the subset ballrooms are not already booked.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>“Override room”</h4>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li><a name="RTF4f766572726964655f726f6f"></a>Override&#160;rom</li>
+        </ul>
+        <p>An&#160;override&#160;room is used to book an event in a space that is not managed in EMS. When you configure an override room, you not only name it in a manner that indicates that the room is an override room (for example, “Override Area”), but also, you classify the room as “Override Description.” When a user is searching for a specific room in the Reservation Wizard, and selects the option of “Override Area,” a Location field is enabled in which they must enter the specific location of this override room. By using an override room, the user can schedule a meeting (for example, Dr. Wilson’s Research Group meeting) without having “Dr. Wilson’s Office” configured as a room in EMS.</p>
+        <p>Events that are scheduled in rooms that are classified as “Override Description” are displayed in Daily reports as taking place in the location name specified, in the building in which the room is configured. Sales and Statistical reports simply report on the use of a room as you defined it, for example as “Override Area.”</p>
+        <p>“Standard and combination rooms”</p>
+    </body>
+</html>

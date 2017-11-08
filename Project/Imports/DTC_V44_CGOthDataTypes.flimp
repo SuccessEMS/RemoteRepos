@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T09:16:07.0318210-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T09:16:57.5961872-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGOthDataTypes.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGOthDataTypes.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Core Configuration Other Data.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Core Configuration Other Data.htm"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Event Types.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Event Types_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Event Types_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Event Types_3.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Event Types.htm"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Group Types.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Group Types_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Group Types_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Group Types.htm"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reminder Types.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reminder Types_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Reminder Types.htm"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Comment Types.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Comment Types_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Comment Types.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Messages.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Messages_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Messages_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Messages_3.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Messages_4.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Messages.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_3.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_4.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_5.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_6.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_7.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Holidays_8.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Holidays.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_1.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_2.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_3.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_4.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_5.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_6.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_7.gif"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reservation Sources.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reservation Sources_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Reservation Sources.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Cancel Reasons.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Cancel Reasons_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Cancel Reasons.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Attachment Types.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Attachment Types_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Attachment Types.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Calendar Styles.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Calendar Styles_1.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGOthDataTypes/Configuring Calendar Styles_2.png"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGOthDataTypes/Configuring Calendar Styles.htm"
+      TimeStamp="11/8/2017 9:16:49 AM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGOthDataTypes.fltoc"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGOthDataTypes.css"
+      TimeStamp="11/8/2017 9:16:48 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Hyperlink" />
+  </UsedCharacterStyles>
+</MsWordImport>

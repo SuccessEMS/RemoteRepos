@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGOthDataTypes.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring User Defined Fields (UDFs)</h1>
+        <p>You can configure&#160;User Defined Fields,&#160;or&#160;UDFs, which are custom fields that store additional information or data for a Building, a Group, a Group with a Reservation, a Reservation, a room, a service order, a guest request, or a web user.</p>
+        <p>For example, for a Reservation, you might want to note the date that the contract for the event was received and if the event was approved by a supervisor. For a guest request, you might want to inquire if alcohol will be served at the event. User defined fields are displayed on the User Defined Fields tab in the Reservation Wizard and on the User Defined Fields tab in the Navigator. If User Defined Fields have been completed for a Reservation, then these fields can be displayed on any confirmations and invoices that are generated for the Reservation.</p>
+        <p>User Defined Fields can also have dependencies, allowing for a parent/child setup.&#160; Based on the answer of the parent, different child User Defined Fields can appear along with the parent.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Other &gt;&#160;User Defined Fields.&#160;The User Defined Fields window opens. This window lists all the User Defined Fields of any type that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.gif" style="visibility: visible;mso-wrap-style: square;width: 700px;height: 539px;" alt="https://success.emssoftware.com/@api/deki/files/1399/UDFScreen.gif?revision=1&amp;size=bestfit&amp;width=700&amp;height=539" />
+        </p>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>To view inactive User Defined Fields in your EMS database, under Show, click&#160;Inactive.</li>
+            <li>To view only a specific type of User Defined Field, on the Type dropdown list, select a different type (Booking, Building, Group, Group/Reservation (which is a Group for which a Reservation has been made), Reservation, Room, Service Order, Guest Request, or Web User).</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click&#160;New.&#160;The User Defined Field dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_1.gif" style="visibility: visible;mso-wrap-style: square;width: 592px;height: 494px;" alt="https://success.emssoftware.com/@api/deki/files/1400/UDFItem.gif?revision=1&amp;size=bestfit&amp;width=592&amp;height=493" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new User Defined Field.&#160;To see more detailed information on UDF Field Types, see below.</li>
+        </ol>
+        <h3 class="Heading3">User Defined Field Options&#160;</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Field Description</p>
+                    </td>
+                    <td>
+                        <p>A name or description for the field.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Field Type</p>
+                        <p>&#160;</p>
+                    </td>
+                    <td>
+                        <p>Select the type of data that the field is to hold (Text, Date, List, or Numeric).</p>
+                        <p>Note:&#160;If you select Text, then an option for displaying a multi-line textbox in EMS and VEMS is available. If you select List, then an Items tab is displayed on the User Defined Field dialog box. You must define the items that are to be displayed in the list. (See&#160;Step 5below.)</p>
+                        <p>If you select List, then the "Allow Multi-Select"&#160;option appears.&#160; This lets your users pick multiple items from the list whenever the User Defined Field is used.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Field Applies To</p>
+                    </td>
+                    <td>
+                        <p>Select the item to which the field applies:</p>
+                        <p>• Booking - Provides the ability for a user to enter a User Defined Field when creating a booking.</p>
+                        <p>• Building - Provides the ability to define a custom Building property for reporting in Query Builder.</p>
+                        <p>• Course - EMS Academic Planning only.</p>
+                        <p>• Group - Provides the ability to enter User Defined Fields inside the group screen for each Group.</p>
+                        <p>• Group/Reservation - The UDF that is assigned to a Group when a new Reservation is created for the Group</p>
+                        <p>• Guest Request - Provides the ability for users to enter a User Defined Field when making a Guest Request.</p>
+                        <p>• Reservation - Provides the ability for users to enter a User Defined Field when making a Reservation.</p>
+                        <p>• Room - Provides the ability to define a custom Room property for reporting in Query Builder.</p>
+                        <p>• Service Order - Provides the ability for users to enter a User Defined Field when adding a Service Order.</p>
+                        <p>• Web User - Provides the ability for users to enter a User Defined Field when inside a web user's options.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Category</p>
+                    </td>
+                    <td>
+                        <p>Available only if you select Service Order for Field Applies To. Select the service order category for which the field applies.</p>
+                        <p>Note:&#160;If the appropriate category is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories"><span class="Hyperlink">Configuring Categories</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Default Value</p>
+                    </td>
+                    <td>
+                        <p>Optional field. You can enter a default value for the User Defined Field. This value is displayed in the field but a user can edit it if needed.</p>
+                        <p>Note:&#160;If you assign a default value to a UDF, then the UDF is always added to the item. For example, if you assign a default value to a UDF that applies to Reservations, then the UDF is always added to any Reservation that any user makes in your EMS system.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Internal</p>
+                    </td>
+                    <td>
+                        <p>Indicates that the UDF is internal to your organization.</p>
+                        <p>Note:&#160;Used for internal reporting purposes only. The UDF is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sequence</p>
+                    </td>
+                    <td>
+                        <p>If a booking, Building, Group, a Group with a Reservation, a Reservation, a room, a service order, a guest request, or a web user is to have multiple User Defined Fields, then specify the display order of these fields. Fields are ordered from lowest to highest sequence number, with the field with the lowest sequence number being displayed first.</p>
+                        <p>Note:&#160;If you leave the sequence set to the default value of zero for all fields, then by default, the fields are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>&#160;&#160;&#160;&#160;&#160;Dependency</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Dependent Upon</p>
+                    </td>
+                    <td>
+                        <p>Select a parent UDF.&#160; Your child UDF will be dependent on that parent.&#160; The parent UDF must be configured first and be a List type.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Answer</p>
+                    </td>
+                    <td>
+                        <p>Select the answer that will cause your child UDF to display with the parent.&#160; If the right answer is not selected the child UDF will not show.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>&#160;&#160;&#160;&#160;&#160;&#160;Value</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Required in {{product_dtc}</p>
+                    </td>
+                    <td>
+                        <p>Select this option if a user must enter a value in the field when making a Reservation in the EMS client.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>&#160;&#160;&#160;&#160;&#160;Virtual EMS/Web App Settings</p>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Display on Web</p>
+                    </td>
+                    <td>
+                        <p>Select this option if you want the User Defined Field to be displayed when users are making a Reservation in VEMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Display Text</p>
+                    </td>
+                    <td>
+                        <p>Enter the text that is to be displayed for the field in VEMS or EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Inactive</p>
+                    </td>
+                    <td>
+                        <p>Leave this option blank to add the User Defined Field an active field. Select this option to inactivate the field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>If you selected any field type other than List, go&#160;Step 5; otherwise, an Items tab is displayed on the dialog box. Open the Items tab, and for each list item for the UDF, do the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>In the Sequence field, enter the sequence for the list item.</li>
+            <li>Items are ordered in a list from lowest to highest sequence number, with the item with the lowest sequence number being displayed first. If you set the sequence for all items to zero, then the items are displayed in the list alphabetically.</li>
+            <li>In the Description field, enter a name or description for the item.</li>
+        </ul>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_2.gif" style="visibility: visible;mso-wrap-style: square;width: 592px;height: 494px;" alt="https://success.emssoftware.com/@api/deki/files/1407/UDFItems.gif?revision=1&amp;size=bestfit&amp;width=592&amp;height=493" />
+        </p>
+        <p>&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Core Configuration Other Data.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreother_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>The description can be a maximum of 50 characters, including spaces.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Optionally, click Spelling to spell check the User Defined Field before you save it.</li>
+            <li>Click OK.&#160;The User Defined Field dialog box will close and you will be returned to the User Defined Fields window.</li>
+        </ol>
+        <h2 class="Heading2">UDF Field Types&#160;</h2>
+        <h3 class="Heading3">Date UDF&#160;</h3>
+        <p>Allows the user to enter a value into a date field</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_3.gif" style="visibility: visible;mso-wrap-style: square;width: 476px;height: 144px;" alt="https://success.emssoftware.com/@api/deki/files/1401/UDFDate.gif?revision=1&amp;size=bestfit&amp;width=476&amp;height=144" />
+        </p>
+        <h4 class="Heading4">List UDF&#160;</h4>
+        <p>Allows the user to select an item or items from a list that you populate.&#160;The "Allow Multi-Select" option lets the user pick more than more than one item from the list.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_4.gif" style="visibility: visible;mso-wrap-style: square;width: 478px;height: 146px;" alt="https://success.emssoftware.com/@api/deki/files/1402/UDFList.gif?revision=1&amp;size=bestfit&amp;width=478&amp;height=146" />
+        </p>
+        <p>Items of a list are configured on the "Items" tab.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_5.gif" style="visibility: visible;mso-wrap-style: square;width: 594px;height: 218px;" alt="https://success.emssoftware.com/@api/deki/files/1406/UDFListItems.gif?revision=1&amp;size=bestfit&amp;width=594&amp;height=218" />
+        </p>
+        <h4 class="Heading4">Numeric UDF&#160;</h4>
+        <p>Allows the user to enter ONLY a number into a text field.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_6.gif" style="visibility: visible;mso-wrap-style: square;width: 479px;height: 145px;" alt="https://success.emssoftware.com/@api/deki/files/1403/UDFNumeric.gif?revision=1&amp;size=bestfit&amp;width=479&amp;height=145" />
+        </p>
+        <h4 class="Heading4">Text UDF&#160;</h4>
+        <p>Allows the user to enter any text into a text field.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGOthDataTypes/Configuring User Defined Fields_7.gif" style="visibility: visible;mso-wrap-style: square;width: 481px;height: 145px;" alt="https://success.emssoftware.com/@api/deki/files/1405/UDFText2.gif?revision=1&amp;size=bestfit&amp;width=481&amp;height=145" />
+        </p>
+    </body>
+</html>

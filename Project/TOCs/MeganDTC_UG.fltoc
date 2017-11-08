@@ -1,9 +1,287 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="System Administration Configuration - User SecurityV44.1" Link="/Content/DTC_V44.1_SysAdUserSec/System Administration Configuration.htm" />
-    <TocEntry Title="Overview of User Processes" Link="/Content/DTC_V44.1_SysAdUserSec/Overview of User Processes.htm" />
-    <TocEntry Title="Configuring Users" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring Users.htm" />
-    <TocEntry Title="Configuring User Templates" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring User Templates.htm" />
-    <TocEntry Title="Configuring Academic User Templates" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring Academic User.htm" />
-    <TocEntry Title="Configuring User Security for Multiple User Accounts" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring User Security.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="User Guide">
+    <TocEntry
+      Title="EMS Desktop Client User Guide 44.1"
+      Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_AboutthisGuide.html">
+      <TocEntry
+        Title="Introduction to EMS Desktop Client"
+        Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html" />
+      <TocEntry
+        Title="Launch EMS Desktop Client"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_StartingEMS.html" />
+      <TocEntry
+        Title="Manage Database Connections"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManageDatabaseConnections.html" />
+      <TocEntry
+        Title="User Settings"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_UserSettings.html" />
+      <TocEntry
+        Title="Reservations and Bookings"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReservandBookings.html"></TocEntry>
+      <TocEntry
+        Title="Other Reservation Functions"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_OtherResFunctions.html">
+        <TocEntry
+          Title="Record Actual Attendance Numbers for Bookings"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_RecordActualAttendance.html" />
+        <TocEntry
+          Title="Manage Attendees and Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManagAttendeesVisitor.html"></TocEntry>
+        <TocEntry
+          Title="View Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewVisitors.htm" />
+        <TocEntry
+          Title="Check In Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CheckInVisitors.htm" />
+        <TocEntry
+          Title="Import a List of Visitors"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
+      </TocEntry>
+      <TocEntry
+        Title="The EMS Window">
+        <TocEntry
+          Title="Work with the EMS Window" />
+        <TocEntry
+          Title="Toolbar Buttons" />
+        <TocEntry
+          Title="Customizing Your Toolbar" />
+      </TocEntry>
+      <TocEntry
+        Title="The Reservation Book">
+        <TocEntry
+          Title="Create a Booking in the Reservation Book"></TocEntry>
+        <TocEntry
+          Title="View and Edit Reservations in the Reservation Book"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewEditReservinResBook.htm" />
+        <TocEntry
+          Title="Edit a Reservation in the Reservation Book"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditResinResBook.htm" />
+        <TocEntry
+          Title="Import a List of Visitors to a Booking"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
+      </TocEntry>
+      <TocEntry
+        Title="The Navigator">
+        <TocEntry
+          Title="Overview of the Navigator"></TocEntry>
+        <TocEntry
+          Title="Edit a Reservation in the Navigator" />
+        <TocEntry
+          Title="Add Bookings to a Reservation in the Navigator" />
+        <TocEntry
+          Title="Copy a Reservation in the Navigator" />
+        <TocEntry
+          Title="Change the Status of a Reservation in the Navigator" />
+        <TocEntry
+          Title="Reprice Categories and Room Charges for a Reservation in the Navigator" />
+        <TocEntry
+          Title="Apply a Reservation Discount" />
+        <TocEntry
+          Title="Edit a Booking in the Navigator" />
+        <TocEntry
+          Title="Edit Multiple Bookins in the Navigator" />
+        <TocEntry
+          Title="Move Bookings to a Different Reservation in the Navigator" />
+        <TocEntry
+          Title="Copy Multiple Bookings in the Navigator" />
+        <TocEntry
+          Title="Booking Details and Items Overview">
+          <TocEntry
+            Title="Add Booking Details and Items to Individual Bookings" />
+          <TocEntry
+            Title="Add Booking Details and Items to Multiple Bookings" />
+          <TocEntry
+            Title="Edit Booking Detail Items for Individual Bookings" />
+          <TocEntry
+            Title="Edit Booking Detail Item Charges for Multiple Items" />
+          <TocEntry
+            Title="Copy Booking Details Between Bookings" />
+          <TocEntry
+            Title="Delete Booking Detail Items from Multiple Bookings" />
+          <TocEntry
+            Title="Delete Booking Details from Multiple Bookings" />
+          <TocEntry
+            Title="Edit Charges for Multiple Billable Items" />
+          <TocEntry
+            Title="Edit Count Information for a Booking in the Navigator" />
+          <TocEntry
+            Title="Add Booking Details Wizard" />
+          <TocEntry
+            Title="Copy Booking Details Wizard" />
+          <TocEntry
+            Title="Delete Booking Details Wizard"></TocEntry>
+          <TocEntry
+            Title="Delete Item Wizard" />
+          <TocEntry
+            Title="Add Item Wizard" />
+        </TocEntry>
+        <TocEntry
+          Title="Comments and Reminders in the Navigator">
+          <TocEntry
+            Title="Add Multiple Comments and Reminders to a Reservation" />
+        </TocEntry>
+        <TocEntry
+          Title="User-Defined Fields in the Navigator" />
+        <TocEntry
+          Title="Attachments in the Navigator" />
+        <TocEntry
+          Title="Drawings in the Navigator" />
+        <TocEntry
+          Title="Resource Utility Conflicts Tool" />
+        <TocEntry
+          Title="Approve or Deny Reservation Requests" />
+      </TocEntry>
+      <TocEntry
+        Title="The Calendar">
+        <TocEntry
+          Title="Search with the Calendar" />
+        <TocEntry
+          Title="Search with the Resource Calendar" />
+      </TocEntry>
+      <TocEntry
+        Title="The Reservation Wizard">
+        <TocEntry
+          Title="Fields in the Reservation Wizard"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_FieldsinResWiz.htm" />
+        <TocEntry
+          Title="The Everyday User Reservations Browser">
+          <TocEntry
+            Title="Search Using the Everyday User Reservation Browser" />
+        </TocEntry>
+        <TocEntry
+          Title="Create a Reservation in the Reservation Wizard"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CreateResinResWizard.htm" />
+        <TocEntry
+          Title="Book a Video Conference" />
+      </TocEntry>
+      <TocEntry
+        Title="The Browser">
+        <TocEntry
+          Title="Search with the Browser" />
+      </TocEntry>
+      <TocEntry
+        Title="People: Groups and Contacts">
+        <TocEntry
+          Title="Search for People" />
+        <TocEntry
+          Title="Add or Edit Profile Information for People and Groups" />
+        <TocEntry
+          Title="Create an Everyday User from a Group" />
+        <TocEntry
+          Title="Assign an Everyday User to a Group" />
+        <TocEntry
+          Title="Configure Contacts for a Group" />
+        <TocEntry
+          Title="Import Groups" />
+        <TocEntry
+          Title="Print and Export Everyday User Information" />
+        <TocEntry
+          Title="Print and Export Group Information" />
+        <TocEntry
+          Title="Work with Reservations for a Group" />
+        <TocEntry
+          Title="Email a Group" />
+      </TocEntry>
+      <TocEntry
+        Title="The Dashboard">
+        <TocEntry
+          Title="Overview of the EMS Dashboard" />
+        <TocEntry
+          Title="Notifications Tab">
+          <TocEntry
+            Title="Confirmations Vs Notifications: What Is the Difference?" />
+        </TocEntry>
+        <TocEntry
+          Title="Reminders Tab" />
+        <TocEntry
+          Title="Everyday User Reservations" />
+        <TocEntry
+          Title="Guest Requests Tab">
+          <TocEntry
+            Title="Manage Requests for Managed Space" />
+        </TocEntry>
+        <TocEntry
+          Title="Wait List Tab" />
+        <TocEntry
+          Title="Reconfirm Dates Tab" />
+        <TocEntry
+          Title="Building Hours Exceptions Tab" />
+        <TocEntry
+          Title="Analytics Tab" />
+        <TocEntry
+          Title="At a Glance Tab" />
+      </TocEntry>
+      <TocEntry
+        Title="Manage Services">
+        <TocEntry
+          Title="Work With and Search for Service Orders" />
+      </TocEntry>
+      <TocEntry
+        Title="Search For Reservations, Bookings, Resources, and Service Orders" />
+      <TocEntry
+        Title="Booking Check In ">
+        <TocEntry
+          Title="Enable Booking Check In" />
+        <TocEntry
+          Title="Ways to Check In" />
+        <TocEntry
+          Title="Manage Booking Check Ins" />
+      </TocEntry>
+      <TocEntry
+        Title="Reports and Queries">
+        <TocEntry
+          Title="Report Descriptions and Options" />
+        <TocEntry
+          Title="Generate an EMS Report" />
+        <TocEntry
+          Title="Generate an EMS Billing Report" />
+        <TocEntry
+          Title="Generate Visitor Reports"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_GeneratingVisitorRep.html" />
+        <TocEntry
+          Title="Configure Automated Reports" />
+        <TocEntry
+          Title="Work with Saved Reports" />
+        <TocEntry
+          Title="Work with a Query" />
+      </TocEntry>
+      <TocEntry
+        Title="Billing">
+        <TocEntry
+          Title="Search for Transactions"></TocEntry>
+        <TocEntry
+          Title="Apply Calculations to Billing -- Add to Billing Topic. This is a placeholder" />
+        <TocEntry
+          Title="Quick Reference Guide: Billing and Invoicing" />
+        <TocEntry
+          Title="Work with Invoices" />
+        <TocEntry
+          Title="Types of Transactions" />
+        <TocEntry
+          Title="Work with Transactions" />
+        <TocEntry
+          Title="EMS Billing Reports" />
+        <TocEntry
+          Title="Apply a Reservation Discount" />
+        <TocEntry
+          Title="Bill Multiple Reference and PO Numbers for a Reservation" />
+        <TocEntry
+          Title="Price Categories and Room Charges" />
+      </TocEntry>
+      <TocEntry
+        Title="Confirmations">
+        <TocEntry
+          Title="Send Confirmations"></TocEntry>
+        <TocEntry
+          Title="Generate Printed Confirmations" />
+        <TocEntry
+          Title="Generate Word Merge Documents for Custom Documentation" />
+        <TocEntry
+          Title="View History of Sent Emails" />
+      </TocEntry>
+    </TocEntry>
+  </TocEntry>
 </CatapultToc>

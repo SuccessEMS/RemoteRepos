@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2197" MadCap:lastWidth="1277" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Accounts</h1>
+        <p>EMS uses&#160;accounts&#160;to indicate where the monies that your organization receives for billable items should be deposited, based on your internal accounting system.</p>
+        <p>Note:&#160;Accounts in EMS are used for reporting purposes only. EMS does not provide any functions for physically moving funds.</p>
+        <p>Examples of accounts include the following:</p>
+        <ul>
+            <li>Facilities Account</li>
+            <li>Catering Fees Account</li>
+            <li>Miscellaneous Charges Accounts</li>
+        </ul>
+        <p><span class="button">Income </span>for each resource or room is recorded into only one account. The account that is credited typically corresponds to the operational department that receives the income credit for the sale of the resource or room. For instance, in this model, room charges might be credited to the Facilities Account and food and beverage resources would be credited to the Catering Account. When you&#160;configure&#160;an account, you must specify both an account name and an account code. After you configure accounts, you can use them to label billable items (rooms, equipment items, and so on). If you invoice out of EMS, then you can run the General Ledger Distribution report to group your receivables by account.</p>
+        <h2 class="Heading2">To Configure Accounts&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt; <span class="button">Accounts</span>. The Accounts window opens. This window lists all the accounts that are currently configured in your EMS database.</li>
+        </ol>
+        <p>Accounts Window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts.png" alt="emssg_CoreConfigurationBilling_image013.png" />
+        </p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>. The Account dialog box opens.</li>
+        </ol>
+        <p>Account Dialog Box</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts_1.png" alt="emssg_CoreConfigurationBilling_image014.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new account.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or description for the account.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>The code for the account. Typically, this is numerical, but it can be abbreviated text that conveys the account name or description.</p>
+                        <p>Note:&#160;The code can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Click <span class="button">OK</span>. The Account dialog box closes. You return to the Accounts window with the newly configured account automatically selected.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Core Configuration - Groups and Contacts" Link="/Content/DTC_V44_CGGroupCon/Core Configuration Groups.htm" />
+    <TocEntry Title="Configuring Groups" Link="/Content/DTC_V44_CGGroupCon/Configuring Groups.htm" />
+    <TocEntry Title="Configuring Additional Information for a Group" Link="/Content/DTC_V44_CGGroupCon/Configuring Additional Information.htm" />
+    <TocEntry Title="Configuring Contacts" Link="/Content/DTC_V44_CGGroupCon/Configuring Contacts.htm" />
+    <TocEntry Title="Editing Group Information" Link="/Content/DTC_V44_CGGroupCon/Editing Group Information.htm" />
+    <TocEntry Title="Importing Groups" Link="/Content/DTC_V44_CGGroupCon/Importing Groups.htm" />
+</CatapultToc>

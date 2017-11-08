@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Types of Notification Rules</h1>
+        <h2 class="Heading2">Booking Notification Rules&#160;</h2>
+        <p>Any of the following notification types are considered booking notifications, and are available when creating new Notification Rules in the wizard:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>New Bookings</li>
+            <li>Changes to Date/Time</li>
+            <li>Room Changes&#160;</li>
+            <li>Status Changes&#160;</li>
+        </ul>
+        <p>​<img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.jpg" style="visibility: visible;mso-wrap-style: square;width: 898px;height: 400px;" alt="https://success.emssoftware.com/@api/deki/files/3963/NotificationBookings2.jpg?revision=1" /></p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>The&#160;Setup Type&#160;field in the Notification Rule Wizard enables you to ensure&#160;that changes to a booking's&#160;room setup will appropriately notify attendees.&#160;(See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/030_Configuring_Setup_Types" title="Configuring Setup Types"><span class="Hyperlink">this section</span></a>&#160;for configuring Setup Types).&#160; You can select one of the existing setup types, or one of the options below.</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>(all)&#160;- The rule will trigger on all Setup Types.</li>
+            <li>(any other than Room default) -&#160;Notifications will trigger for all Setup Types except for the Room's default Setup Type. (To change the default Setup Type you can go to Configuration &gt; Facilities &gt; Rooms, then select a Room and press "Edit"; then make your changes in&#160;the "Default Setup Type" field.)&#160;</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>The&#160;Display New Booking As&#160;field enables you to specify&#160;whether the Notification occurs as&#160;Booking Information&#160;or&#160;Reservation Information. For example, for new reservations that contain multiple bookings (recurring meetings), if Booking Information is selected, then a Notification occurs for every individual booking. If Reservation Information is selected, then a single Notification occurs for the entire reservation.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, VEMS, or both will trigger a Notification.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;The Booking&#160;options described&#160;here&#160;only apply to&#160;EMS Enterprise. In EMS Professional, only one global Booking Notification can be configured at any time in your EMS database and it is only available if a Booking Notification is not currently configured in your EMS database.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">Service Order&#160;Notification Rules&#160;</h2>
+        <p>Any of the following notification types are considered service order notifications:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>New Service Orders</li>
+            <li>Changes to Service Orders</li>
+            <li>Deleted/Canceled&#160;Service Orders</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the&#160;Category&#160;dropdown list, select the category for which the service order Notification is to be generated.&#160;If the appropriate category is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories"><span class="Hyperlink">Con</span></a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories" title="Configuring Categories"><span class="Hyperlink">figuring Categories</span></a>.&#160;<br />After selecting a category, the&#160;State,&#160;Grouping, and&#160;Resource&#160;options&#160;appear.&#160;You can select (all), (multiple), (none), or an individual item on the list.&#160;To notify on a whole category, keep the selections set to (all).</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>State&#160;- Select the corresponding state that you the Notification to trigger on.&#160; "New Service Orders" will have to start in that state.&#160; "Changes To Service Orders" will have to change into that state.&#160; More than one state may be selected.</li>
+            <li>Grouping&#160;- Select the grouping that a resource is in.&#160;These are set at the resource level in EMS.&#160;See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/030_Configuring_Groupings_for_a_Resource" title="Configuring Groupings for a Resource"><span class="Hyperlink">Configuring Groupings</span></a>.</li>
+            <li>Resource&#160;- Select an individual resource from the list.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;When you choose&#160;a Group or Category, all three items (New Service Orders, Changes To Service Orders, and Deletion/Cancelation Of Service Orders) will become auto-selected.&#160;The notification will now only fire on all three.&#160;To set the rule to trigger notifications on only one or two of these three, you must select (all) on both Group and Category.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, VEMS, or both will trigger a Notification.</li>
+        </ol>
+        <h2 class="Heading2">Notification Rules for&#160;Anything On A VIP Event&#160;</h2>
+        <p>VIP Event is an option available when creating a reservation in the Reservation Wizard.&#160;Select this option to notify users&#160;when any changes are made to a VIP Event.&#160;</p>
+        <h2 class="Heading2">New Web Users&#160;Notification Rules&#160;</h2>
+        <p>Select this option to notify users&#160;when a new web user account is created. For&#160;Source, indicate whether additions and/or changes from the EMS Desktop Client, VEMS, or both should trigger a Notification.</p>
+        <h2 class="Heading2">User Defined Field&#160;Notification Rules&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>In&#160;Type&#160;field, select the&#160;User Defined Field&#160;type for which the Notification is to be generated.&#160;If the appropriate UDF is not available, you can configure it. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/080_Configuring_User_Defined_Fields_(UDFs)" title="Configuring User Defined Fields (UDFs)"><span class="Hyperlink">Configuring User Defined Fields (UDFs)</span></a>.</li>
+            <li>Select the UDF for which the Notification is to be generated. (Available UDFs have a field type of&#160;List. UDFs with other field types are not displayed on the User Defined Field dropdown list.)</li>
+            <li>Select the UDF value for which the Notification is to be generated.</li>
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, VEMS, or both will trigger a Notification.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3855/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=50&amp;height=50" />
+                    </p>
+                </td>
+                <td>
+                    <p>Note:&#160;The Service Order options described&#160;here only apply to&#160;EMS Enterprise. In EMS Professional, only one service order Notification per category can be configured at any time in your EMS database.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+    </body>
+</html>

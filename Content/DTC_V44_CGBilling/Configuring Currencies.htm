@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Currencies</h1>
+        <p>A&#160;currency&#160;in EMS is either an abbreviation or symbol that indicates how a room or resources in a category should be charged. For example, the currency for the US dollar could be either USD or $. Because currencies are for informational purposes only and do not affect the pricing or billing of an event, configuration of these items is not required; however, after you&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies#RTF436f6e6669677572655f6375"><span class="Hyperlink">configure</span></a>&#160;currencies, you can assign a default value to a room’s record or a service category’s record. If a reservation is made with multiple currencies, then the billable items, the items’ prices, and the currencies used for items’ charges are broken out by currency in sales reports, in confirmations, in EMS Web App, and so on.</p>
+        <h2 class="Heading2">Configuring Currencies&#160;</h2>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>You can also configure multiple currencies in a single step. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/080_Currency_Configuration_Wizard" title="Currency Configuration Wizard"><span class="Hyperlink">Currency Configuration Wizard</span></a>.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Billing &gt;&#160;Currencies.&#160;The Currencies window opens. This window lists all the currencies that are currently configured in your EMS database and that have a status of Active. To show all currencies, regardless of status, under Show, click Inactive.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Currencies.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 444px;" alt="emssg_CoreConfigurationBilling_image021.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click&#160;New.&#160;The Currency dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Currencies_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 242px;" alt="emssg_CoreConfigurationBilling_image022.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new currency.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>The name or description for the currency.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Symbol</p>
+                    </td>
+                    <td>
+                        <p>Required field. The abbreviation or symbol for the currency, for example, USD or $ for US dollars.</p>
+                        <table>
+                            <tr>
+                                <td>
+                                    <p>
+                                        <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference_2.png" style="visibility: visible;mso-wrap-style: square;width: 50px;height: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" />
+                                    </p>
+                                </td>
+                                <td>
+                                    <p>Tip:&#160;To add special characters, copy and paste from a text file.&#160;</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Trailing Symbol</p>
+                    </td>
+                    <td>
+                        <p>Leave this option blank if the currency symbol is to be displayed in a leading position, for example, $45.00. Select this option if the symbol is to be displayed as the far right hand character.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Note:&#160;As you enter the information for the currency, an example currency entry is displayed in the Sample field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Leave Inactive blank to add the currency as an active currency. Select Inactive to inactivate the currency.</li>
+            <li>Click&#160;OK.&#160;The Currency dialog box closes. You return to the Currencies window with the newly configured currency automatically selected.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

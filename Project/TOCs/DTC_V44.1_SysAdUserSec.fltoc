@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="System Administration Configuration - User SecurityV44.1" Link="/Content/DTC_V44.1_SysAdUserSec/System Administration Configuration.htm" />
+    <TocEntry Title="Overview of User Processes" Link="/Content/DTC_V44.1_SysAdUserSec/Overview of User Processes.htm" />
+    <TocEntry Title="Configuring Users" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring Users.htm" />
+    <TocEntry Title="Configuring User Templates" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring User Templates.htm" />
+    <TocEntry Title="Configuring Academic User Templates" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring Academic User.htm" />
+    <TocEntry Title="Configuring User Security for Multiple User Accounts" Link="/Content/DTC_V44.1_SysAdUserSec/Configuring User Security.htm" />
+</CatapultToc>

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Accounts</h1>
+        <p>EMS uses&#160;accounts&#160;to indicate where the monies that your organization receives for billable items should be deposited, based on your internal accounting system.</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_CoreConfigurationBilling_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Accounts in EMS are used for reporting purposes only. EMS does not provide any functions for physically moving funds.</p>
+                </td>
+            </tr>
+        </table>
+        <p>Examples of accounts include the following:</p>
+        <ul style="list-style-type: square;margin-left: 54pt;">
+            <li>Facilities Account</li>
+            <li>Catering Fees Account</li>
+            <li>Miscellaneous Charges Accounts</li>
+        </ul>
+        <p>Income for each resource or room is recorded into only one account. The account that is credited typically corresponds to the operational department that receives the income credit for the sale of the resource or room. For instance, in this model, room charges might be credited to the Facilities Account and food and beverage resources would be credited to the Catering Account. When you&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies#RTF436f6e6669677572696e675f"><span class="Hyperlink">configure</span></a>&#160;an account, you must specify both an account name and an account code. After you configure accounts, you can use them to label billable items (rooms, equipment items, and so on). If you invoice out of EMS, then you can run the General Ledger Distribution report to group your receivables by account.</p>
+        <h2 class="Heading2">To configure accounts&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Billing &gt; Accounts. The Accounts window opens. This window lists all the accounts that are currently configured in your EMS database.</li>
+        </ol>
+        <p>Accounts window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emssg_CoreConfigurationBilling_image013.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New. The Account dialog box opens.</li>
+        </ol>
+        <p>Account dialog box</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Accounts_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 238px;" alt="emssg_CoreConfigurationBilling_image014.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new account.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>The name or description for the account.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Account</p>
+                    </td>
+                    <td>
+                        <p>The code for the account. Typically, this is numerical, but it can be abbreviated text that conveys the account name or description.</p>
+                        <p>Note:&#160;The code can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Click OK. The Account dialog box closes. You return to the Accounts window with the newly configured account automatically selected.</li>
+        </ol>
+    </body>
+</html>

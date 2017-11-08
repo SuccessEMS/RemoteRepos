@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T09:38:56.1063069-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T09:39:18.6466237-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdConfig.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_SysAdConfig.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/System Administration Configuration.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters_1.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/Editing System Parameters.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Importing Registration Information.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Importing Registration Information_1.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/Importing Registration Information.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Configuring the Confirmation.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/Configuring the Confirmation.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Configuring Email Settings.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/Configuring Email Settings.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_SysAdConfig/Configuring Required Fields.png"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/DTC_V44_SysAdConfig/Configuring Required Fields.htm"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../TOCs/DTC_V44_SysAdConfig.fltoc"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_SysAdConfig.css"
+      TimeStamp="11/8/2017 9:39:10 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

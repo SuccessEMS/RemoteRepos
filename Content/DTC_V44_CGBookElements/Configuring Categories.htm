@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Categories</h1>
+        <p>Categories&#160;(also called&#160;booking details) are the activities, attendees, notes, services, and room charges that you can add to a booking. For example, your organization can create a category called A/V Equipment that contains resources such as flip charts, projectors, and so on. Although you can use categories to track setup notes, meeting attendees, and activities for a booking, you do not configure resources for these categories. You need to configure categories only for services. Configuring a category is a two step process. First, you must create the category. Second, after you create the category, you must define its resources.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click&#160;Configuration &gt; Administration &gt; Categories.&#160;The Categories window opens. This window lists all the categories and their types that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 354px;" alt="emssg_coreadmin_image001.png" />
+        </p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>Optionally, to view all categories in your {{product}} database, regardless of status, under Show, click Inactive.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.&#160;The Category dialog box opens. The Category tab is the active tab.&#160;&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 602px;" alt="emssg_coreadmin_image002.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new category.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Category</p>
+                    </td>
+                    <td>
+                        <p>The name or description for the category, for example, A/V Equipment or Furniture.</p>
+                        <p>Note:&#160;The category can be a maximum of 30 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Sequence</p>
+                    </td>
+                    <td>
+                        <p>If items from multiple categories have been reserved for an event, then the Print Sequence determines the order in which this information is printed on the confirmation. Categories are ordered from lowest to highest sequence number, with the category with the lowest sequence number being displayed first.</p>
+                        <p>Note:&#160;If you leave the print sequence set to the default value of zero for all items, then by default, the items are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Category Type</p>
+                    </td>
+                    <td>
+                        <p>Select a category type that is appropriate for the new category. Typically, the determining factor is how the category is to be used.</p>
+                        <p>• Activities—Agenda-type entries that describe what is to occur during an event, for example: 8:30 a.m. - 9:00 a.m., Registration; 9:00 a.m. - 10:00 a.m, Keynote Speaker, and so on.</p>
+                        <p>• Attendees—Individuals who are attending an event. You can use this category for attendees such as VIPs or guest speakers, or to serve as an attendee checklist for smaller meetings.</p>
+                        <p>• Notes—A free-form block of text that is used to enter clarifying or miscellaneous information about the event. For example, your users can use this booking detail to describe room setup for an event such as “Set room temp. at 70 degrees one hour prior to event” or “Please unlock doors at 7 a.m.”</p>
+                        <p>• Resources, w/o Service Orders—Resources that are assigned to a booking from a Resources, w/o Service Orders category are assigned for the entire event time. Typically used to manage Audio/Visual Equipment and Furniture categories.</p>
+                        <p>• Resources, w Service Orders—Similar to Resources, w/o Service Orders categories with one exception—you must indicate the specific time that the items that are assigned to a booking from this category are needed. The end result is one or multiple service orders with specific services times before, during or after the event.</p>
+                        <p>• Catering—Used to manage catering categories. Provides capability similar to the Resources, w Service Order category in addition to the catering specific fields of Estimated Count, Guaranteed Count, and Actual Count.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Default Service</p>
+                    </td>
+                    <td>
+                        <p>Services are defined at the resource level. (See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category">Configuring Resources for a Category</a>.) After you define your resources and services, then you can edit this category if needed and define a default service.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Default Time in Use</p>
+                    </td>
+                    <td>
+                        <p>Available only if Catering, Resources, w Service Orders, or Resources, w/o Service Orders is selected as the Category Type. Indicates the time that the items in the selected category should be in use—for the Reserved Time or for the Event Time.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Default Quantity</p>
+                    </td>
+                    <td>
+                        <p>Depending the category that was selected, one or more of the following options are available:</p>
+                        <p>• 1</p>
+                        <p>• Setup Count</p>
+                        <p>• Estimated Count</p>
+                        <p>This&#160;setting only applies&#160;to desktop client</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Currency</p>
+                    </td>
+                    <td>
+                        <p>Select the currency that is to be used for pricing all the resources in the category.</p>
+                        <p>Note:&#160;If the appropriate currency is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies" title="Configuring Currencies">Configuring Currencies</a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Available to All Buildings</p>
+                    </td>
+                    <td>
+                        <p>Select this option if resources from this category are to be available to all buildings.</p>
+                        <p>Note:&#160;If you do not select this option, then on the Buildings tab, you must specify the buildings for which resources from this category are to be available.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Allow Resources Notes Edit</p>
+                    </td>
+                    <td>
+                        <p>If selected, EMS users can edit the Notes field for the resource.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Exclude from Services Indicator</p>
+                    </td>
+                    <td>
+                        <p>In various EMS locations (the Reservation Book, the Navigator, the Edit Booking form, and so on) EMS provides an indication that services exist for a booking. Select this option to exclude a category from displaying as a service on the booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Use Production Items</p>
+                    </td>
+                    <td>
+                        <p>Select this option to define production items for the category.</p>
+                        <p>Note:&#160;Production items are defined at the resource level. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category">Configuring Resources for a Category</a>.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p><a name="RTF32383036303a205461626c65"></a>Use States</p>
+                    </td>
+                    <td>
+                        <p>Select this option if you want to define process phases, or states, for the category, for example, “Assigned,” “Out for Delivery,” “Delivered,” and so on.</p>
+                        <p>Note:&#160;After you define your states, then you can edit this category if needed and specify a default state.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>BEO Column</p>
+                    </td>
+                    <td>
+                        <p>Indicates in which column the category is to be displayed when the Banquet Event Order report is printed in its standard two column format. Select Column 1 to display the category in the left column. Select Column 2 to display the category in the right column. See the&#160;EMS User’s Manual&#160;for details about the BEO report.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>External Service</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the provider of the resources for this category is external to your organization, and then select the provider on the Provider dropdown list.</p>
+                        <p>Note:&#160;Available only for a Category Type of Notes and if the EMS system parameter “Show External Service Orders on Categories” is set to “Yes.” See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters/010_EMS_System_Parameters" title="EMS System Parameters">EMS System Parameters</a>.</p>
+                        <p>Note:&#160;If the appropriate service provider is not available, contact&#160;<a href="https://success.emssoftware.com/mailto%3Asupport@emssoftware.com?subject=Customer+Support+Inquiry" title="mailto:support@emssoftware.com?subject=Customer%20Support%20Inquiry">support@emssoftware.com</a>&#160;for assistance in configuring the provider.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Attendees are Visitors</p>
+                    </td>
+                    <td>
+                        <p>Select this option to automatically mark all attendees who are added to a booking as a Visitor. (The Visitor option is automatically selected on the Attendee dialog box.)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Open the Virtual EMS tab and enter the appropriate VEMS information.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Display on Web</p>
+                    </td>
+                    <td>
+                        <p>If selected, VEMS users can view this category if it has been added as a booking detail to one of their bookings.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Expand Groupings</p>
+                    </td>
+                    <td>
+                        <p>If selected, the resource items for a grouping are displayed immediately when a VEMS user makes a reservation. If cleared, only the grouping is displayed and a user must expand the grouping to view the resource items.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Use Specific Cutoff Time</p>
+                    </td>
+                    <td>
+                        <p>Indicates how far in advance of a booking a VEMS user can add, edit, or cancel this category. For example, if you select the Cutoff Time/Number of Days option, and you specify 11:00 a.m. and one day, then VEMS users cannot assign, edit, or cancel categories or resources after 11:00 a.m. on the day before the event.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cutoff Hours</p>
+                    </td>
+                    <td>
+                        <p>Available only if you do not select the Use Specific Cutoff Time option. With this option, the restriction is imposed based on the number of hours before the event occurs rather than time of day.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Default Quantity</p>
+                    </td>
+                    <td>
+                        <p>The default quantity (either 1, Attendance, or Blank) that is automatically filled in by the system when a VEMS user selects an item.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td>
+                        <p>Select this option if this category is to be displayed on the “checkout” page (the last page in the Room Request process) in VEMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Prompt for Billing Reference</p>
+                        <p>Prompt for PO Number</p>
+                    </td>
+                    <td>
+                        <p>Select this option if VEMS users are to be prompted to enter a billing reference and/or PO number when they select a resource from the category.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Allow Add On Weekend</p>
+                    </td>
+                    <td>
+                        <p>Select this option to allow a VEMS user to add a service order to a weekend booking.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Sequence</p>
+                    </td>
+                    <td>
+                        <p>Determines the order in which the category is displayed in a list of categories in VEMS. Categories are ordered from lowest to highest sequence number, with the category with the lowest sequence number being displayed first.</p>
+                        <p>Note:&#160;If you leave the sequence set to the default value of zero for all categories, then by default, the categories are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Minimum Amount</p>
+                    </td>
+                    <td>
+                        <p>The minimum purchase amount that is required for a user to submit a new service order in VEMS for this category.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Inactive</p>
+                    </td>
+                    <td>
+                        <p>Leave this option blank to add the category as an active category. Select this option to inactivate the category.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>If you did&#160;not&#160;select Available to All Buildings then go to&#160;Step 6; otherwise, open the Buildings tab, and on the Available list, select the building, or CTRL-click to select the multiple buildings for which the category is to be available, and then click the Move button (&gt;) to move the selected buildings to the Selected list.</li>
+            <li>Optionally, do one or more of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Open the Calculations tab and on the Available list, select the calculation, or&#160;CTRL-click to select the multiple calculations that are to always apply to this category, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>These calculations apply to all new resources that are added to the category. If the appropriate calculations are not available, you can configure them. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" title="Configuring Calculations">Configuring Calculations</a>.&#160;You can also define calculations at the resource item level. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category">Configuring Resources for a Category</a>.</p>
+                </td>
+            </tr>
+        </table>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Open the Provider tab and enter the contact information for the provider of the items or services in the category.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Select International to drop the&#160;State&#160;and&#160;Zip&#160;fields for an international provider. None of the provider information is displayed or printed anywhere outside of EMS.</p>
+                </td>
+            </tr>
+        </table>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>Open the Terms and Conditions tab and format a Terms and Conditions message that is displayed in VEMS when a VEMS user selects the category.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Design is selected by default. Use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want; otherwise, you can select HTML and enter the necessary HTML code to format the message.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>If you did&#160;not&#160;select Use States, go to&#160;Step 8; otherwise, open the States tab, and then do the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>In the&#160;Description&#160;field, enter a name or description for each state or phase that is to be used for managing this category.The description can be a maximum of 50 characters, including spaces.</li>
+            <li>Optionally, to define a color for each state, select the state, and then click&#160;Set Color&#160;to open the Select Color dialog box and select a color for the state.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>After you have defined the states for a category, you can select a default state on the Category tab. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/010_Configuring_Categories#RTF32383036303a205461626c65" title="Configuring Categories">Use States</a>.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>Click&#160;OK.&#160;The Category dialog box closes. You return to the Categories window with the newly added category automatically selected. You can now define the resource items for the categories. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category">Configu</a><a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" title="Configuring Resources for a Category">ring Resources for a Category</a>.</li>
+        </ol>
+    </body>
+</html>

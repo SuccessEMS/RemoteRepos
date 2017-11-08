@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configuring Check-in Notification Rules (Excludes Professional)</h1>
+        <p>These rules help you automate the process of&#160;reminding users to check in and managing no-shows.&#160;You configure Check-in Notification rules based on rooms, statuses, event types, and/or group types. When you configure a Check-in Notification rule, you can configure it generate an&#160;email&#160;to remind users to check in and to cancel no-showed events.&#160;To do this for&#160;group bookings, all the criteria you specify with these rules must be met. For example, if you specify "Room 100, Confirmed status, Analyst group type," then a Confirmed meeting for a Partner group type in Room 100 does not result in a notification being generated.</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>For notification emails to be sent, the EMS Check-in&#160;Notification Service must be installed and configured. Refer to the EMS Installation instructions for details.</p>
+                </td>
+            </tr>
+        </table>
+        <h2 class="Heading2">To configure Check-in notification rules&#160;</h2>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the&#160;menu bar, click Configuration &gt; Administration &gt; Check-in Notification Rules.&#160;The Check-in Notification Rules window opens. This window lists all the Check-in&#160;notification rules that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Check in Notification.png" style="visibility: visible;mso-wrap-style: square;width: 368px;height: 396px;" alt="https://success.emssoftware.com/@api/deki/files/1374/Check-In_Notification_2.png?revision=1&amp;size=bestfit&amp;width=368&amp;height=396" />
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>Optionally, to view all Check-in notification rules in your EMS database, regardless of status, under Show, click Inactive.</p>
+                </td>
+            </tr>
+        </table>
+        <p>&#160;</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                    <p>&#160;</p>
+                </td>
+                <td>
+                    <p>The remainder of this procedure describes how to configure a Check-in notification rule “from scratch.” You can also configure a Check-in notification rule by copying an existing rule. Select the notification rule that you want to copy, click Copy, and then go to&#160;Step 3.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Click New.&#160;The Check-in Notification Rule dialog box opens. The Check-in Notification Rule tab is the active tab.&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Check in Notification_1.png" style="visibility: visible;mso-wrap-style: square;width: 772px;height: 729px;" alt="https://success.emssoftware.com/@api/deki/files/1375/Check-In_Notification.png?revision=1&amp;size=bestfit&amp;width=772&amp;height=729" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Enter the information for the new Check-in&#160;Notification rule.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Description</p>
+                    </td>
+                    <td>
+                        <p>The name or the description for the notification rule.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Apply Rule</p>
+                    </td>
+                    <td>
+                        <p>When to apply the rule; this&#160;determines when the Check-in notification rule will be applied and trigger. This can be either before or after the Booking Event Start Time.&#160;</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Change Status</p>
+                    </td>
+                    <td>
+                        <p>Select this option if the group’s bookings are to be changed to the status selected on the No Show Status dropdown list.</p>
+                        <p>Note: If the appropriate status is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/050_Core_Configuration_-_Administration/030_Configuring_Statuses" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/050_Core_Configuration_-_Administration/030_Configuring_Statuses"><span class="Hyperlink">Configuring Statuses</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>No Show Status</p>
+                    </td>
+                    <td>
+                        <p>The status to which the group’s bookings are changed if the group “no-shows” (do not check in within the allotted time).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Cancel Reason</p>
+                    </td>
+                    <td>
+                        <p>Optional; available only if the No Show Status is a Cancel Status type. Select a reason for cancelling the “no-show” group.</p>
+                        <p>Note: If the appropriate cancel reason is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/100_Configuring_Cancel_Reasons" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/030_Core_Configuration_-_Other_Data_Types/100_Configuring_Cancel_Reasons"><span class="Hyperlink">Configuring Cancel Reasons</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Send Email</p>
+                    </td>
+                    <td>
+                        <p>If this box is checked it will send a notification email to the selected party/parties (Group, 1st Contact, 2nd Contact, Web User).</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td>
+                        <p>Select a header and/or footer message that is to be displayed on every Check-in notification that is sent.</p>
+                        <p>Note:&#160;If the appropriate message is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/060_Configuring_Messages" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/030_Core_Configuration_-_Other_Data_Types/060_Configuring_Messages"><span class="Hyperlink">Configuring Messages</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Include Virtual Link</p>
+                    </td>
+                    <td>
+                        <p>Includes a link to the reservation summary in Virtual EMS.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Include Cancel Link</p>
+                        <p>Include Check In Link</p>
+                    </td>
+                    <td>
+                        <p>Available only if Change Status is not selected. Provides links in the notification email so that a user can cancel or check into the booking directly from the notification email.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email Group</p>
+                        <p>Email 1st Contact</p>
+                        <p>Email 2nd Contact</p>
+                        <p>Email Web User</p>
+                    </td>
+                    <td>
+                        <p>Select the appropriate options to indicate to whom the Check-in notification is to be sent.</p>
+                        <p>Note:&#160;If the appropriate group, contact, and/or web user is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups"><span class="Hyperlink">Configuring Groups</span></a>”,&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups"><span class="Hyperlink">Configuring Contacts</span></a>”,and/or&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_VEMS/020_Configuring_Web_Users" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/120_VEMS_Configuration/020_Configuring_Web_Users"><span class="Hyperlink">Configuring Web Users</span></a>”.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email From</p>
+                    </td>
+                    <td>
+                        <p>Enter the email address that is to be displayed in the Email From field for the group notification.</p>
+                        <p>Note:&#160;If you leave the Email From field blank, then the Email From address that was defined during the installation and configuration of the EMS Email Notification Service is used.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Email Subject Line</p>
+                    </td>
+                    <td>
+                        <p>Enter the text that is to be displayed in the email subject line. Variables pull in selected data from the event for which the notification is being emailed. You can include variables as described in the Legend. For example,%2% is the code for the group name, so “Notification for %3%” would result in “Notification for Consumer Electronics Association” being displayed in the subject line if "Consumer Electronics Association" was the name of the event.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Do one or more or all the following to set the criteria to trigger&#160;a notification:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 90pt;">
+            <li>Open the&#160;Rooms&#160;tab and do the following to search for the rooms for which the notification is to apply:</li>
+            <li>On the&#160;Building&#160;dropdown list, select one of the following—(all) buildings, a specific building, a specific area, or a specific view.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Categories_1.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_coreadmin_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>If the appropriate building, area, or view is not available, you can configure it. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/050_Configuring_Buildings" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/050_Configuring_Buildings"><span class="Hyperlink">Configuring Buildings</span></a>”,&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/060_Configuring_Areas" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/060_Configuring_Areas"><span class="Hyperlink">Configuring Areas</span></a>”, and/or&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/120_Configuring_Public_Views" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/120_Configuring_Public_Views"><span class="Hyperlink">Configuring Public Views</span></a>”.</p>
+                </td>
+            </tr>
+        </table>
+        <ul style="list-style-type: square;margin-left: 90pt;">
+            <li>On the&#160;Room Type&#160;dropdown list, leave the default value of (all), or select a specific room type.&#160;</li>
+            <li>On the&#160;Available&#160;list, select the room, or CTRL-click to select multiple rooms, and then click the Move button (&gt;) to move the selected rooms to the Selected list.&#160;If the appropriate room type is not available, you can configure it.<br />See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types"><span class="Hyperlink">Configuring Room Types</span></a>”.</li>
+            <li>Open the&#160;Statuses&#160;tab, and on the Available list, select the status, or CTRL-click to select the multiple statuses, and then click the Move button (&gt;) to move the selected statuses to the Selected list.&#160;If the appropriate status type&#160;is not available, you can configure it.<br />See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types"><span class="Hyperlink">Configuring Room Types</span></a>”.</li>
+            <li>Open the&#160;Event Types&#160;tab, and on the Available list, select the event type, or<br />CTRL-click to select the multiple event types, and then click the Move button (&gt;) to move the selected event types to the Selected list.&#160;If the appropriate event&#160;type is not available, you can configure it.<br />See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types"><span class="Hyperlink">Configuring Room Types</span></a>”.</li>
+            <li>Open the&#160;Group Types tab, and on the Available list, select the group type, or<br />CTRL-click to select multiple group types, and then click the Move button (&gt;) to move the selected group types to the Selected list.&#160;If the appropriate group type is not available, you can configure it.<br />See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types" title="https://dea-prod.mindtouch.us/EMS_V44/EMS_System_Administration/Setting_Up_EMS/040_Core_Configuration_-_Facilities/040_Configuring_Room_Types"><span class="Hyperlink">Configuring Room Types</span></a>”.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Click&#160;OK.&#160;The Check-in Notification Rule dialog box closes. You return to the Check-in Notification Rules window with the newly configured notification rule automatically selected.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T09:37:26.2148401-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T09:37:38.8712539-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBilling.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGBilling.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Core Configuration Billing.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS.png"
+      TimeStamp="11/8/2017 9:37:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Overview of Billing in EMS_1.png"
+      TimeStamp="11/8/2017 9:37:35 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Overview of Billing in EMS.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Rate Schedules_2.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Rate Schedules.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Exporting Pricing Information_2.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Exporting Pricing Information.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Pricing Plans.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Calculations.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Calculations_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Calculations_2.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Calculations.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Accounts.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Accounts_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Accounts.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Payment Types.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Payment Types_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Payment Types.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Sales Categories.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Sales Categories_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Sales Categories.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference_2.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Billing Reference.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Currencies.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGBilling/Configuring Currencies_1.png"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGBilling/Configuring Currencies.htm"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGBilling.fltoc"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGBilling.css"
+      TimeStamp="11/8/2017 9:37:36 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigureenabled" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablebodycenter" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

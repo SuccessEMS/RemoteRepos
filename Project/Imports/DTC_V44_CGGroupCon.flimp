@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-08T09:38:12.0791749-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-08T09:38:24.1359581-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGGroupCon.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44_CGGroupCon.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Core Configuration Groups.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_1.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_2.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_3.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_4.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_5.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_6.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_7.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_8.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Configuring Groups.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_1.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_2.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_3.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_4.png"
+      TimeStamp="11/8/2017 9:38:20 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_5.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Configuring Additional Information.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Contacts.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Contacts_1.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Contacts_2.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Contacts_3.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Configuring Contacts_4.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Configuring Contacts.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Editing Group Information.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Editing Group Information.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Importing Groups.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44_CGGroupCon/Importing Groups_1.png"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44_CGGroupCon/Importing Groups.htm"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../TOCs/DTC_V44_CGGroupCon.fltoc"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44_CGGroupCon.css"
+      TimeStamp="11/8/2017 9:38:21 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="stepnumbercontinued" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+    <StyleName
+      Name="stepresultnobullet" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

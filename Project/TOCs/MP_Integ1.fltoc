@@ -1,12 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Crestron Fusion Digital Signage" Link="/Content/MP_Integ1/Crestron Fusion Digital Signage.htm" />
-    <TocEntry Title="Installation &amp; Configuration Guide" Link="/Content/MP_Integ1/Installation Configuration.htm" />
-    <TocEntry Title="Caution Screen and Warning Triangle" Link="/Content/MP_Integ1/MP_Integ.htm" />
-    <TocEntry Title="Installation" Link="/Content/MP_Integ1/Installation.htm" />
-    <TocEntry Title="Resource Isolation: Splitting Application Pools" Link="/Content/MP_Integ1/Resource Isolation Splitting.htm" />
-    <TocEntry Title="Create Data Source" Link="/Content/MP_Integ1/SSRS Reporting.htm" />
-    <TocEntry Title="Introduction" Link="/Content/MP_Integ1/Introduction.htm" />
-    <TocEntry Title="SQL Server Setup" Link="/Content/MP_Integ1/SQL Server Setup.htm" />
-    <TocEntry Title="Upload a Report" Link="/Content/MP_Integ1/Upload a Report.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Crestron Fusion Digital Signage" />
+  <TocEntry
+    Title="Installation &amp; Configuration Guide" />
+  <TocEntry
+    Title="Caution Screen and Warning Triangle" />
+  <TocEntry
+    Title="Installation" />
+  <TocEntry
+    Title="Resource Isolation: Splitting Application Pools" />
+  <TocEntry
+    Title="Create Data Source" />
+  <TocEntry
+    Title="Introduction" />
+  <TocEntry
+    Title="SQL Server Setup" />
+  <TocEntry
+    Title="Upload a Report" />
 </CatapultToc>

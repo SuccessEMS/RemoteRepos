@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2781" MadCap:lastWidth="1174" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Billing Reference and PO Numbers</h1>
+        <p>When you configure billing reference numbers and PO numbers, they are assigned to a “master list.” When end-users&#160;are making a reservation or submitting a reservation request, they can look up the available billing references or PO numbers on this master list and assign the appropriate value to the reservation or request. Because billing references and PO numbers are for informational purposes only and do not affect the pricing or billing of an event, configuration of these items is not required; however, after you configure billing references and PO numbers, you can assign a default value to a group’s record. Whenever a user makes a reservation for the group, the default value is displayed automatically in the Billing Reference field and/or PO number field on the Billing tab of the Reservation Wizard, but a user can change the values if needed.</p>
+        <p>Note:&#160;The following procedure is written from the perspective of billing reference numbers; however, by analogy, you can follow this procedure to configure PO numbers.</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt; <span class="button">Billing Reference Numbers</span>. The Billing Reference Numbers window opens. This window lists a specific number of billing references that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>Tip:&#160;You can set the specific number of records that are to be returned under Options in the top right corner of the Billing References window.</p>
+        <p>Billing Reference Numbers Window</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference.png" alt="emssg_CoreConfigurationBilling_image019.png" />
+        </p>
+        <ol start="2">
+            <li>Optionally, do one or more of the following:</li>
+        </ol>
+        <ul>
+            <li>Click Options, and then select a different number of records that are to be returned in the window.</li>
+            <li>To filter the list based on the Billing Reference, enter a search string in the Find field, and then click Display.</li>
+        </ul>
+        <p>Tip:&#160;The string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;Alu&#160;returns&#160;AlumniNE, but not NEAlumni.</p>
+        <ul>
+            <li>To show both active and inactive billing references, under Show, click Inactive.</li>
+        </ul>
+        <ol start="3">
+            <li>Click <span class="button">New</span>.&#160;The Billing Reference Number dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Billing Reference_1.png" alt="emssg_CoreConfigurationBilling_image020.png" />
+        </p>
+        <ol start="4">
+            <li>Enter information for the billing reference number.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Billing Reference Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Required field. Alphanumeric data allowed.</p>
+                        <p>Note:&#160;The number can be a maximum of 100 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A name or description for the billing reference number.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Any additional information that is pertinent for the billing reference.</p>
+                        <p>Note:&#160;This field is available for reporting in the Query Builder. See the EMS User’s Manual.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5">
+            <li>Leave Inactive blank to add the item as an active billing reference. Select Inactive to inactivate the billing reference.</li>
+            <li>Optionally, to check the spelling for the billing reference before you save it, click Spelling.</li>
+            <li>Click&#160;OK. The Billing Reference Number dialog box closes. You return to the Billing Reference Numbers window with the newly configured reference automatically selected.</li>
+        </ol>
+        <p>Tip:&#160;The following Administration&#160;parameters&#160;control the name of the Billing Reference and PO fields: Billing Reference Title&#160;Singular,&#160;Billing Reference Title Plural, PO Number Title Singular,&#160;PO Number Title Plural.</p>
+    </body>
+</html>

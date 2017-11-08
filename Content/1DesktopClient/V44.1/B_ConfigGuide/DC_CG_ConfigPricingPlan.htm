@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="2276" MadCap:lastWidth="1191" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configure Pricing Plans</h1>
+        <p>A&#160;pricing plan&#160;bundles different&#160;rate schedules. When you&#160;configure&#160;a pricing plan, you can not only specify different rates schedules for the billable items in the plan, but also you can specify the calculation that is to be applied to a billable item when the plan is used for a group’s reservation. After you configure pricing plans, you can assign a default plan to a group’s record. Whenever a user makes a reservation for the group, the default pricing plan is displayed automatically in the Pricing Plan field on the Billing tab of the Reservation Wizard.</p>
+        <p>Tip:&#160;To help you keep track of your pricing plans and how they are used (for instance, to keep track of all your discounts),&#160;export your pricing plans&#160;periodically.&#160;</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt;&#160;<span class="button">Pricing Plans</span>.&#160;The Pricing Plans window opens. This window lists all the pricing plans that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans.png" alt="emssg_CoreConfigurationBilling_image008.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to view all pricing plans, regardless of status, under Show, click <span class="button">Inactive</span>. </p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>.&#160;The Pricing Plan dialog box opens. The Pricing Plan tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Pricing Plans_1.png" alt="emssg_CoreConfigurationBilling_image009.png" />
+        </p>
+        <ol start="3">
+            <li>In the Pricing Plan field, enter a name or description for the new plan (maximum of 30 characters, including spaces).</li>
+            <li>Optionally, on the Calculation Type dropdown list, select the type of calculation that is to be applied to a resource when the plan is used for a group’s reservation and then go to&#160;Step 5; otherwise, go to&#160;Step 6.</li>
+        </ol>
+        <ul>
+            <li>In Addition to Group—The group must pay the calculations that are set for the billable items in the pricing plan&#160;in addition&#160;to any calculations that it must always pay.</li>
+            <li>Override Group—Override any calculations that are defined at the Group level and pay what is defined for the billable items in the pricing plan.</li>
+        </ul>
+        <ol start="5">
+            <li>Open the <span class="button">Calculations </span>tab, and on the Available list select the calculation, or CTRL-click to&#160;select the multiple calculations that are to always apply to this pricing plan, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ol>
+        <p>Tip:&#160;If the appropriate calculation is not available, you can configure it.&#160;See Configure Calculations.</p>
+        <ol start="6">
+            <li>Open the Rate Schedules tab, and for each resource category (including Room Charge) that is to have its price set by this pricing plan, double-click in the Rate Schedule field, and then select the appropriate rate schedule from the dropdown list.</li>
+        </ol>
+        <p>Tip:&#160;If you do not select a rate schedule for a resource category, or for the Room Charge, then the pricing for these items is set to zero in the pricing plan.</p>
+        <ol start="7">
+            <li>Click&#160;<span class="button">OK</span>.&#160;The Pricing Plan dialog box closes. You return to the Pricing Plans window with the newly configured pricing plan automatically selected.</li>
+        </ol>
+    </body>
+</html>

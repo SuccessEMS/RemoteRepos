@@ -562,29 +562,41 @@
       <TocEntry
         Title="Configuration &gt; Other">
         <TocEntry
-          Title="Configure Event Types" />
+          Title="Configure Event Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigEventType.html" />
         <TocEntry
-          Title="Configure Customer Types" />
+          Title="Configure Group Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigGroupType.html" />
         <TocEntry
-          Title="Configure Reminder Types" />
+          Title="Configure Reminder Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigReminderTypes.html" />
         <TocEntry
-          Title="Configure Comment Types" />
+          Title="Configure Comment Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigCommentType.html" />
         <TocEntry
-          Title="Configure Messages" />
+          Title="Configure Messages"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigMessages.htm" />
         <TocEntry
-          Title="Configure Special Dates" />
+          Title="Configure Special Dates"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigSpecialDates.html" />
         <TocEntry
-          Title="Configure User-Defined Fields" />
+          Title="Configure User-Defined Fields"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigUDF.html" />
         <TocEntry
-          Title="Configure Reservation Sources" />
+          Title="Configure Reservation Sources"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigReservSources.html" />
         <TocEntry
-          Title="Configure Cancel Reasons" />
+          Title="Configure Cancel Reasons"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigCancelReasons.html" />
         <TocEntry
-          Title="Configure Attachment Types" />
+          Title="Configure Attachment Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigAttachmentType.html" />
         <TocEntry
-          Title="Configure Word Merge Documents" />
+          Title="Configure Word Merge Documents"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigWordMergeDoc.html" />
         <TocEntry
-          Title="Configure Calendar Styles" />
+          Title="Configure Calendar Styles"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigCalendarStyles.html" />
       </TocEntry>
       <TocEntry
         Title="Configuration &gt; Everyday User Applications">

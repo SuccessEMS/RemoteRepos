@@ -1,16 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Core Configuration - Other Data Types" Link="/Content/DTC_V44_CGOthDataTypes/Core Configuration Other Data.htm" />
-    <TocEntry Title="Configuring Event Types" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Event Types.htm" />
-    <TocEntry Title="Configuring Group Types" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Group Types.htm" />
-    <TocEntry Title="Configuring Reminder Types" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Reminder Types.htm" />
-    <TocEntry Title="Configuring Comment Types" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Comment Types.htm" />
-    <TocEntry Title="Configuring Messages" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Messages.htm" />
-    <TocEntry Title="Configuring Holidays" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Holidays.htm" />
-    <TocEntry Title="Configuring User Defined Fields (UDFs)" Link="/Content/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.htm" />
-    <TocEntry Title="Configuring Reservation Sources" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Reservation Sources.htm" />
-    <TocEntry Title="Configuring Cancel Reasons" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Cancel Reasons.htm" />
-    <TocEntry Title="Configuring Attachment Types" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Attachment Types.htm" />
-    <TocEntry Title="Configuring Word Merge Documents (Optional Module)" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents.htm" />
-    <TocEntry Title="Configuring Calendar Styles" Link="/Content/DTC_V44_CGOthDataTypes/Configuring Calendar Styles.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Core Configuration - Other Data Types"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Core Configuration Other Data.htm" />
+  <TocEntry
+    Title="Configuring Event Types"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/DC_CG_44_ConfigEventTypes.htm" />
+  <TocEntry
+    Title="Configuring Group Types"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Group Types.htm" />
+  <TocEntry
+    Title="Configuring Reminder Types"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Reminder Types.htm" />
+  <TocEntry
+    Title="Configuring Comment Types"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Comment Types.htm" />
+  <TocEntry
+    Title="Configuring Messages"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Messages.htm" />
+  <TocEntry
+    Title="Configuring Holidays"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Holidays.htm" />
+  <TocEntry
+    Title="Configuring User Defined Fields (UDFs)"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring User Defined Fields.htm" />
+  <TocEntry
+    Title="Configuring Reservation Sources"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Reservation Sources.htm" />
+  <TocEntry
+    Title="Configuring Cancel Reasons"
+    Link="/Content/1DesktopClient/44/CG_44/DC_CG_44_ConfigCancelReasons.htm" />
+  <TocEntry
+    Title="Configuring Attachment Types"
+    Link="/Content/1DesktopClient/44/CG_44/DC_UG_44_ConfigAttachTypes.htm" />
+  <TocEntry
+    Title="Configuring Word Merge Documents (Optional Module)"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Word Merge Documents.htm" />
+  <TocEntry
+    Title="Configuring Calendar Styles"
+    Link="/Content/1DesktopClient/44/CG_44/DTC_V44_CGOthDataTypes/Configuring Calendar Styles.htm" />
 </CatapultToc>

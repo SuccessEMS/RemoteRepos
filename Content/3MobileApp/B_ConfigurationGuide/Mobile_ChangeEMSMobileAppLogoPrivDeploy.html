@@ -1,32 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="6" MadCap:lastHeight="591" MadCap:lastWidth="981" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="3366" MadCap:lastWidth="859" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Changing the EMS Mobile App Logo (Private Deployment Only)</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1>Changing the EMS Mobile App Logo (Private Deployment Only)</h1>
-        <p>
-            <MadCap:annotation MadCap:createDate="2017-10-24T12:47:08.7988562-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Steps 1-3 are deki from &quot;Configuring and Re-signing the EMS Mobile App (Private Deployment Only)&quot; in the section &quot;Using Unsigned Builds&quot;" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-24T12:48:07.1813624-06:00">For customers re-signing the application, we provide u</MadCap:annotation>nsigned builds.</p>
+        <h1>Change the EMS Mobile App Logo (Private Deployment Only)</h1>
+        <p>For customers re-signing the application, we provide unsigned builds.</p>
         <ol>
             <li>Store your unsigned EMS Mobile App in a new or empty directory.</li>
             <li>Change the extension of the app to .zip. (e.g., IPhone.App-44.1.xxx-unsigned.ipa -&gt; IPhone.App-44.1.xxx-unsigned.zip.)</li>
             <li>Un-compress/expand the new zip file.</li>
-            <li>
-                <p>To set a custom logo, replace the following logo files:</p>
-            </li>
+            <li>To set a custom logo, replace the following logo files:</li>
         </ol>
-        <h5><strong>IOS</strong>
-        </h5>
+        <h2>IOS</h2>
+        <ol>
+            <li>Rezip all of the extracted files from earlier.</li>
+            <li>Give the new zip file an ipa extension.</li>
+            <li>Using a Mac computer, install fastlane.</li>
+        </ol>
         <ul>
-            <li>assets/src/features/shared/img/logo.png</li>
+            <li>sudo gem install fastlane</li>
         </ul>
-        <h5><strong>Android</strong>
-        </h5>
+        <ol start="4">
+            <li>On your Mac computer, login to https://developer.apple.com and switch to team "Your Team Name."</li>
+            <li>Download your teams Distribution provisioning profile.</li>
+            <li>Double click it to install it.  This file should exist on your system:</li>
+        </ol>
         <ul>
-            <li>res/drawable-mdpi-v4/src_features_shared_img_logo.png</li>
+            <li>~/Library/MobileDevice/Provisioning Profiles/&lt;a guid for your provisioning profile&gt;.mobileprovision</li>
         </ul>
+        <ol start="4">
+            <li>Get your team's existing .p12 file with the cert and private key combined, and then import that into Keychain (by double-clicking it) and then entering the password.</li>
+        </ol>
+        <ul>
+            <li>When the cert is installed successfully you should see iPhone Distribution: &lt;Your Team Name&gt; in your Keychain, with a private key.</li>
+        </ul>
+        <ol start="4">
+            <li>Assuming you have:</li>
+        </ol>
+        <ul>
+            <li>fastlane installed on your Mac</li>
+            <li>the cert &amp; private key installed in Keychain</li>
+            <li>the provisioning profile mentioned above in:   ~/Library....mobileprovision</li>
+        </ul>
+        <ol>
+            <li>Resign your target ipa with this command:</li>
+        </ol>
+        <p>fastlane run resign \</p>
+        <p>ipa:path/to/your/file.ipa \</p>
+        <p>signing_identity:"iPhone Distribution: &lt;Your Team Name&gt;" \</p>
+        <p>provisioning_profile:$HOME/Library/MobileDevice/Provisioning Profiles/&lt;your profile GUID&gt;.mobileprovision \</p>
+        <p>display_name:EMS-Resigned</p>
+        <ol>
+            <li>If you want a bash script that will do this, you can copy this into a file (e.g., resign_enterprise.sh):</li>
+        </ol>
+        <p>#!/bin/bash</p>
+        <p>IPA=relative/path/to/file.ipa</p>
+        <p>IDENTITY="iPhone Distribution: &lt;Your Team Name&gt;"</p>
+        <p>PROFILE=$HOME/Library/MobileDevice/Provisioning Profiles/&lt;your profile GUID&gt;.mobileprovision</p>
+        <p>DISPLAY_NAME=EMS-Resigned</p>
+        <p>fastlane run resign ipa:"$IPA" signing_identity:"$IDENTITY" provisioning_profile:"$PROFILE" display_name:$DISPLAY_NAME</p>
+        <p>Android</p>
+        <p>Rezip all the extracted files from earlier.</p>
+        <p>Note that assets, res, and AndroidManifest.xml are top-level files in an .apk, so be careful to zip the right things up.</p>
+        <p>This CLI command will zip all the files in the current directory into a new zip file in the parent directory:</p>
+        <p>zip -qr ../ems-custom-44.1.xxx.zip ./*</p>
+        <p>Give the new zip file an apk extension (e.g., myapp.zip -&gt; myapp.apk).</p>
+        <p>Sign the new apk file.</p>
+        <p>This is the script we use to sign our app, adjust for your needs:</p>
+        <p>#!/bin/bash</p>
+        <p>APK_TO_SIGN=$1</p>
+        <p>APK_OUTPUT=$2</p>
+        <p>EMS_APK_KEYSTORE_PATH=path/to/your/app.keystore</p>
         <p>&#160;</p>
+        <p>jarsigner -verbose \</p>
+        <p>-sigalg $EMS_APK_SIG_ALG \</p>
+        <p>-digestalg $EMS_APK_DIGEST_ALG \</p>
+        <p>-storepass $EMS_APK_KEYSTORE_PASS \</p>
+        <p>-keystore $EMS_APK_KEYSTORE_PATH \</p>
+        <p>$APK_TO_SIGN $EMS_APK_ALIAS_NAME</p>
+        <p>&#160;</p>
+        <p>zipalign 4 $APK_TO_SIGN $APK_OUTPUT</p>
         <table border="0" cellpadding="0" cellspacing="0" class="tip">
             <tbody>
                 <tr>

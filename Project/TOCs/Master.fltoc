@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <CatapultToc
   Version="1">
   <TocEntry
@@ -31,7 +31,75 @@
     </TocEntry>
     <TocEntry
       Title="EMS Web App"
-      Link="/Content/A_Installation/3_WebApp/V44.1/3a_Web App_Introduction.htm"></TocEntry>
+      Link="/Content/A_Installation/3_WebApp/V44.1/3a_Web App_Introduction.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_Introduction.html">
+        <TocEntry
+          Title="Requirements and Prerequisites"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_RequirementPrerequisites.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Obtain the Installation Files"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_ObtainInstallFiles.html" />
+      <TocEntry
+        Title="Install or Upgrade to the EMS Web App"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_InstallUpgradetoWebApp.html">
+        <TocEntry
+          Title="Upgrade Considerations"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_UpgradeConsiderations.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Optional EMS Web App Features"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_OptionalFeatures.html">
+        <TocEntry
+          Title="Customize EMS Web App"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_Customize.html" />
+      </TocEntry>
+      <TocEntry
+        Title="EMS Mobile Web Application"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_MobileWebApplicaiton.html" />
+      <TocEntry
+        Title="Start EMS Web App"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_StartWebApp.html" />
+      <TocEntry
+        Title="System Architecture"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_SystemArchitecture.html" />
+      <TocEntry
+        Title="Windows Server 2008/2008 R2 Web Server Setup Guide"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_WinWebServGuide2008R2.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Best Practices: Setting Up Your Web Server 2008 or 2008R2"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_BestPracSetUpServer2008R2.html" />
+        <TocEntry
+          Title="Install .NET Framework"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_InstallNETFramework2008.html" />
+        <TocEntry
+          Title="Install Internet Information Services (IIS)"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_Install-IIS2008.html">
+          <TocEntry
+            Title="Add Role Services"
+            Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_AddingRoleServices2008.html" />
+        </TocEntry>
+      </TocEntry>
+      <TocEntry
+        Title="Windows Server 2012/2012 R2 Web Server Setup Guide"
+        Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_WinWebServGuide2012R.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Best Practices: Setting Up Your Web Server 2012 or 2012R2"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_BestPracSetUpServer2012R2.html" />
+        <TocEntry
+          Title="Install .NET Framework"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_InstallNETFramework2012.html" />
+        <TocEntry
+          Title="Install Internet Information Services (IIS)"
+          Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_Install-IIS2012.html">
+          <TocEntry
+            Title="Add Role Services"
+            Link="/Content/2WebApp/A_V44.1/A_InstallationGuide/WebApp_AddRoleServices2012.html" />
+        </TocEntry>
+      </TocEntry>
+    </TocEntry>
     <TocEntry
       Title="EMS Mobile App"
       Link="/Content/A_Installation/4_MobileAppV44.1/4_MobileAppHome.htm">
@@ -589,7 +657,65 @@
     </TocEntry>
     <TocEntry
       Title="EMS Web App Configuration Guide"
-      Link="/Content/B_Configuration Guides/3_EMS_WebApp_CG.htm" />
+      Link="/Content/B_Configuration Guides/3_EMS_WebApp_CG.htm">
+      <TocEntry
+        Title="Configure Everyday Users"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUsers.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Configure Groups and Contacts from an Everyday User"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigGroupsContactsEU.html" />
+        <TocEntry
+          Title="Licensing for Everyday Users"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_LicenseEverydayUsers.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Configure Everyday User Templates"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserTemplates.html">
+        <TocEntry
+          Title="Assign Process Templates to an Everyday User"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_AssignProcessTemplatesEU.html" />
+        <TocEntry
+          Title="Configure Everyday User Process Templates"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigEverydayUserProcessTemps.html" />
+        <TocEntry
+          Title="Configure Confirmation Behavior for Everyday User Applications"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigConfBehEUapps.html" />
+        <TocEntry
+          Title="Configure Managed Space"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigManagedSpace.html" />
+        <TocEntry
+          Title="Everyday User Process Template Field Definitions"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EverydayUserProcTempFieldDef.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Security Templates"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_SecurityTemplates.html">
+        <TocEntry
+          Title="Configure Security Templates"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigSecurityTemps.html" />
+        <TocEntry
+          Title="Assign Security Templates to Multiple Everyday Users"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_AssignSecTempMultEU.html" />
+        <TocEntry
+          Title="Everyday User Security Template Field Definitions"
+          Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EverydayUserSecTempFieldDef.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Email an Everyday User"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_EmailEverydayUser.html" />
+      <TocEntry
+        Title="Configure Web Menus"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigWeb Menus.html" />
+      <TocEntry
+        Title="Configure Help Text"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigHelpText.html" />
+      <TocEntry
+        Title="Configure Language Translations for Everyday User Applications"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_ConfigLangTransEUapps.html" />
+      <TocEntry
+        Title="EMS Web App System Parameters"
+        Link="/Content/2WebApp/A_V44.1/B_ConfigurationGuide/WebApp_CG_WebAppSysParameters.html" />
+    </TocEntry>
     <TocEntry
       Title="EMS Mobile App Configuration Guide"
       Link="/Content/B_Configuration Guides/4_EMS_MobileApp_CG.htm">
@@ -1470,11 +1596,11 @@
           Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_IntroductiontoHomePage.html" />
         <TocEntry
           Title="Create Your Login or Get a New Password"
-          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CreatingYourLoginOrGettingNewPassword.html" />
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CreateLoginOrGetNewPassword.html" />
       </TocEntry>
       <TocEntry
         Title="Browse Events, Locations, and People"
-        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEventsLocationsandPeople.html">
+        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowseEventsLocPeople.html">
         <TocEntry
           Title="Browse Events"
           Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BrowsingEvents.html" />
@@ -1512,7 +1638,94 @@
         <TocEntry
           Title="Book a Video Conference Room"
           Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingVCRoom.html" />
+        <TocEntry
+          Title="Book a Desk or Workspace"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingDeskWorkspace.html" />
+        <TocEntry
+          Title="Add Reservation Details"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_AddingReservationDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Add Services to a Meeting"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_AddingServicestoMtg.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Work with Services"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_WorkingwithServices.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Cancel Your Reservations and Bookings"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_CancelingYourResvandBook.html" />
+        <TocEntry
+          Title="Edit Reservations and Bookings"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EditResvBooking.html" />
+        <TocEntry
+          Title="Invite Attendees with EMS for Outlook"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_InviteAttendeesOutlook.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Notifications in the EMS Web App"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_Notifications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Send Notifications"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_SendingNotifications.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
       </TocEntry>
+      <TocEntry
+        Title="Personalize Your Account"
+        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_PersonalizingYourAcct.html">
+        <TocEntry
+          Title="Change Account Information"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ChangeAccountInfo.html" />
+        <TocEntry
+          Title="Establish Delegates"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EstablishingDelegates.html" />
+        <TocEntry
+          Title="Establish Booking Templates"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EstablBookingTemp.html" />
+        <TocEntry
+          Title="Set Favorite Rooms"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_SettingFavoriteRooms.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Mobile Web App"
+        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_MobileWebApp.html">
+        <TocEntry
+          Title="Using the EMS Web App on Mobile Devices"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_UsingWebApponMobileDev.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="EMS Mobile App Versus EMS Mobile Web App: What is the Difference?"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EMSMobilevsWeb.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Learn About EMS Web App"
+        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_LearningAbout.html">
+        <TocEntry
+          Title="Booking Templates, Requests, and Reservations"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_BookingTemplatesRequestsReserv.html" />
+        <TocEntry
+          Title="Delegates Act as You"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_DelegatesActasYou.html" />
+        <TocEntry
+          Title="MY EVENTS vs. BROWSE EVENTS"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_MyEventsvsBrowseEvents.html" />
+        <TocEntry
+          Title="Notifications Automatically Alert People to Changes in EMS"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_NotifcationsAutomaticallyAlert.html" />
+        <TocEntry
+          Title="EMS for Outlook® (Optional Capability)"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_EMSforOutlookOption.html" />
+        <TocEntry
+          Title="Integration with Exchange Enables You to Use Outlook®"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_IntegrationwithExchangeEnables.html" />
+        <TocEntry
+          Title="Reservations, Bookings, and Booking Details"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_ReservBookingsBookingDetails.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Troubleshooting: Internal Server Error When Viewing My Events in EMS Web App"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_Troubleshooting.html" />
+        <TocEntry
+          Title="Understanding Everyday User Templates"
+          Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_UnderstandingEverydayUser.html" />
+      </TocEntry>
+      <TocEntry
+        Title="Skype for Business in the EMS Web App"
+        Link="/Content/2WebApp/A_V44.1/C_UserGuide/WebApp_SkypeforBusiness.html" />
     </TocEntry>
     <TocEntry
       Title="EMS Kiosk Everyday User Guide"

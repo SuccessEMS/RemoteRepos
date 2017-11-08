@@ -1,15 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title mt-export-translate="no">Configuring Reminder Types</title>
-        
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="2650" MadCap:lastWidth="1055" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Reminder Types</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Reminder Types</h1><pre class="script" mt-export-translate="no" xml:space="preserve">wiki.page("EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/040_Configuring_Reminder_Types");</pre>
-        <br />
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a mt-export-translate="no">persona:SysAdminEMS</a><a>Reminder Types</a><a mt-export-translate="no">reviewed:MarioP</a><a>singlesource</a><a>reused</a>
+        <h1 class="mt-export-title">Configure Reminder Types</h1>
+        <p>A&#160;comment&#160;is a text entry that explains or clarifies a reservation, a booking, a group, or a booking detail that is a service order. A&#160;reminder&#160;is a comment that has a due date associated with it. You can configure&#160;reminder types, which you use to classify or categorize the different reminders that are applicable for your organization’s business needs. For example, if your organization requires a deposit before a tentative reservation can be confirmed, then you might configure a reminder type of “Deposit Due.”</p>
+        <h2 class="Heading2">To Configure a Reminder Type&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Other &gt; Reminder Types.&#160;The Reminder Types window opens. This window lists all the reminder types that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>Reminder Types Window</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reminder Types.png" alt="emssg_coreother_image010.png" />
         </p>
+        <p>Optionally, to view all reminder types in your EMS database, regardless of status, under Show, click Inactive.</p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>.&#160;The Reminder Type dialog box opens.</li>
+        </ol>
+        <p>Reminder Type Dialog Box</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reminder Types_1.png" alt="emssg_coreother_image011.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new reminder type.</li>
+        </ol>
+        <table style="mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Reminder Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or classification for the reminder.</p>
+                        <p>Note:&#160;The reminder type can be a maximum of 30 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Days Allowed</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Enter a value, or leave the default value of zero to use the current day’s date as the basis for calculating the due date for the reminder.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Due Date Based On</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Used in conjunction with the value that is specified in the Days Allowed field.</p>
+                        <ul>
+                            <li>Reminder Added Date—Indicates that the reminder is due within the specified number of days&#160;after&#160;the date on which the reminder was applied.</li>
+                            <li>Event Date—If the reminder is attached to a booking or to a service order, then the reminder is due within the specified number of days&#160;prior&#160;to the booking date. If the reminder is attached to a reservation, then the reminder is due within the specified number of days&#160;prior&#160;to the&#160;first&#160;booking date in the reservation.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Text entry that further defines or explains the reminder type. For example, a reminder called “Final Count for Catering” might have a default note that provides the name and phone number for the contact at the catering company.</p>
+                        <p>Note:&#160;The text that you enter here is displayed by default when you apply the reminder, but you can always edit it or delete it if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Indicates that the reminder type is internal to your organization.</p>
+                        <p>Note:&#160;Used for internal reporting purposes only. The reminder type is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Leave this option blank to add the reminder type as an active reminder type. Select this option to inactivate the reminder type.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Click <span class="button">OK</span>.&#160;The Reminder Type dialog box closes. You return to the Reminder Types window with the newly configured reminder type automatically selected.</li>
+        </ol>
     </body>
 </html>

@@ -1,15 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="5" MadCap:lastHeight="1756" MadCap:lastWidth="1026" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Configuring Reservation Sources</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Reservation Sources</h1><pre class="script" mt-export-translate="no" xml:space="preserve">wiki.page("EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/090_Configuring_Reservation_Sources");</pre>
-        <br />
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a>
+        <h1 class="mt-export-title">Configure Reservation Sources</h1>
+        <p>A <span class="button">reservation source</span> indicates the origination of a reservation request, for example, walk-up, email, <MadCap:variable name="General.EMS&#160;Web App" />, and so on. You can specify a reservation source at the time that the reservation is being made in the Reservation Wizard, or at a later date. You can also specify the reservation source as part of the search criteria when searching for a reservation in the Browser. Configuring a reservation source simply consists of naming or describing the source.</p>
+        <h2 class="Heading2">To configure&#160;a reservation source&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click Configuration &gt; Other &gt; Reservation Sources. The Reservation Sources window opens. This window lists all the reservations sources that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>Reservation Sources window</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reservation Sources.png" alt="emssg_coreother_image028.png" />
         </p>
+        <p>Tip:&#160;Optionally, to view all reservation sources in your EMS database, regardless of status, under Show, click Inactive.</p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>. The Reservation Source dialog box opens.</li>
+        </ol>
+        <p>Reservation Source dialog box</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGOthDataTypes/Configuring Reservation Sources_1.png" alt="emssg_coreother_image029.png" />
+        </p>
+        <ol start="3">
+            <li>In the Reservation Source field, enter a name or description for the new source, for example, Phoned In. </li>
+        </ol>
+        <p>Tip:&#160;The reservation source can be a maximum of 50 characters, including spaces.</p>
+        <ol start="3" MadCap:continue="true">
+            <li>Leave Inactive blank to add the reservation source as an active source. Optionally, select Inactive to inactivate the source. </li>
+            <li>Click <span class="button">OK</span>. The Reservation Source dialog box closes. You return to the Reservation Source window with the newly configured source automatically selected.</li>
+        </ol>
     </body>
 </html>

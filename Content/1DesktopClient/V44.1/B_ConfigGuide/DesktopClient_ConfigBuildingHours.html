@@ -1,103 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="7" MadCap:lastHeight="1117.333" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title mt-export-translate="no">Configuring Building Hours</title>
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="2965.667" MadCap:lastWidth="1072" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Building Hours</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
         <h1 class="mt-export-title">Configuring Building Hours</h1>
         <p class="Body">By configuring building hours, you can set times when buildings and rooms therein are not available for scheduling.&#160;</p>
-        <p class="Body">In the {{product_dtc}}, configured building hours do not prevent a user from scheduling events outside these hours. A user is merely warned that the event is being scheduled outside normal operating hours. In {{product_webapp}, users cannot schedule events outside the configured building hours. Setup and teardown hours must also fall within the configured building hours for an event that is scheduled in {{product_webapp}}.</p>
+        <p class="Body">In the <MadCap:variable name="General.EMS&#160;Desktop Client" />, configured building hours do not prevent a user from scheduling events outside these hours. A user is merely warned that the event is being scheduled outside normal operating hours. In <MadCap:variable name="General.EMS&#160;Web App" />, users cannot schedule events outside the configured building hours. Setup and teardown hours must also fall within the configured building hours for an event that is scheduled in <MadCap:variable name="General.EMS&#160;Web App" />.</p>
         <p class="Body">By default, when you configure&#160;a building, the building hours are set to Open All Day, which means that the building is open 24 hours a day, 7 days a week, 365 days a year. If needed, you can configure the hours for a building so that a building is open only for a specified time period on a particular date or for a given date range. You can also configure the hours so that a building is closed all day. You can configure&#160;the hours for a building for a single date, or you can configure&#160;the hours for multiple dates in a single step.</p>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>You can configure the same hours for multiple buildings using the <a class="F1" title="Configuring&#160;Building Hours for Multiple Dates: Building Hours Wizard">Building Hours Wizard</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="StepNumberBegin">1. On the {{product_dtc}} menu bar, click Configuration &gt; Facilities &gt; <strong>Building Hours</strong>.&#160;The Building Hours window opens. This window lists buildings that are configured in your {{product}} database.</p>
-        <p class="FigureCaptionColumn mt-indent-1"><em>Building Hours window</em>
+        <p class="Body"><strong><span class="mt-color-669933">Tip:</span></strong>You can configure the same hours for multiple buildings using the <a class="F1" title="Configuring&#160;Building Hours for Multiple Dates: Building Hours Wizard">Building Hours Wizard</a>.</p>
+        <ol>
+            <li>On the <MadCap:variable name="General.EMS&#160;Desktop Client" /> menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Facilities </span>&gt; <strong>Building Hours</strong>.&#160;The Building Hours window opens. This window lists buildings that are configured in your <MadCap:variable name="General.Product" /> database.</li>
+        </ol>
+        <p class="FigureCaptionColumn mt-indent-1"><em>Building Hours Window</em>
         </p>
         <p class="AnchorFigure">
-            <img border="0" class="internal" />
+            <img border="0" class="internal" src="Images/DC_CG_ConfigBuildHours_1.png" />
         </p>
-        <p class="StepNumberContinued">2. In the <strong>Date </strong>field, leave the default value of the current day’s date, or select a different date.</p>
-        <p class="StepNumberContinued">3. Select the building, or CTRL-click to select the multiple buildings for which you are changing the hours, and then click <strong>Change</strong>. The Building Hours dialog box opens.</p>
+        <ol MadCap:continue="true">
+            <li>In the <strong>Date </strong>field, leave the default value of the current day’s date, or select a different date.</li>
+            <li>Select the building, or CTRL-click to select the multiple buildings for which you are changing the hours, and then click <strong>Change</strong>. The Building Hours dialog box opens.</li>
+        </ol>
         <p class="FigureCaptionColumn">
-            <img border="0" class="internal" />
+            <img border="0" class="internal" src="Images/DC_CG_ConfigBuildHours_2.png" />
         </p>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../../Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>If you select multiple buildings, then the Building Hours dialog box reflects the hours for the building that is last in the list of selected buildings. You can set the same building hours for multiple buildings at once using the Building Hours Wizard.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="StepNumberContinued">4. Set the new hours for the buildings as appropriate.</p>
-        <table border="0" cellspacing="0" class="emstable" style="border-collapse: collapse;">
+        <p class="StepNumberContinued"><strong><span class="mt-color-669933">Tip:</span></strong>If you select multiple buildings, then the Building Hours dialog box reflects the hours for the building that is last in the list of selected buildings. You can set the same building hours for multiple buildings at once using the Building Hours Wizard.</p>
+        <ol MadCap:continue="true">
+            <li>Set the new hours for the buildings as appropriate.</li>
+        </ol>
+        <table border="0" cellspacing="0" class="TableStyle-PatternedRows" style="border-collapse: collapse;mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');">
             <thead>
-                <tr>
-                    <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th scope="col" style="border: 1pt solid black;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
                         <dl>
                             <dt class="TableColumnHeader">Option</dt>
                         </dl>
                     </th>
-                    <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top">
+                    <th scope="col" style="border-width: 1pt 1pt 1pt medium;border-style: solid solid solid none;border-color: black black black black;-moz-border-top-colors: none;-moz-border-right-colors: none;-moz-border-bottom-colors: none;-moz-border-left-colors: none;border-image: none;background: rgb(229, 229, 229) none repeat scroll 0% 0%;" valign="top" class="TableStyle-PatternedRows-HeadD-Regular-Header1">
                         <p class="TableColumnHeader"><strong>Description</strong>
                         </p>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <dl>
                             <dt class="TableBody">Set Building Hours</dt>
                         </dl>
                     </td>
-                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
-                        <p class="TableBody">Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your {{product_dtc}} users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
-                        <p class="TableNoteNote"><span><strong>Note</strong>: </span>{{product_webapp}} users cannot make reservations outside of building hours.</p>
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="TableBody">Select this option to specify the time period (Open and Close) during which the building is to remain open for the date. Your <MadCap:variable name="General.EMS&#160;Desktop Client" /> users can make reservations on this date in the selected buildings even if the events are scheduled outside the indicated time period. They merely receive a warning that the reservation time exceeds building hours.</p>
+                        <p class="TableNoteNote"><span><strong>Note</strong>: </span><MadCap:variable name="General.EMS&#160;Web App" /> users cannot make reservations outside of building hours.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <dl>
                             <dt class="TableBody">Closed All Day</dt>
                         </dl>
                     </td>
-                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p class="TableBody">Select this option to close the building for the entire day. When you select this option, then a Web Only option is displayed on the Building Hours dialog box.</p>
-                        <p class="TableBulletLev1">• If you do <em><span>not</span></em> select Web Only, then none of your users ({{product_dtc}} or {{product_webapp}}) can make reservations on this date in the selected buildings.</p>
-                        <p class="TableBulletLev1">• If you do you select Web Only, then your {{product_dtc}} users can make reservations on this date in the selected buildings; however, your {{product_webapp}} users cannot.</p>
+                        <p class="TableBulletLev1">• If you do <em><span>not</span></em> select Web Only, then none of your users (<MadCap:variable name="General.EMS&#160;Desktop Client" /> or <MadCap:variable name="General.EMS&#160;Web App" />) can make reservations on this date in the selected buildings.</p>
+                        <p class="TableBulletLev1">• If you do you select Web Only, then your <MadCap:variable name="General.EMS&#160;Desktop Client" /> users can make reservations on this date in the selected buildings; however, your <MadCap:variable name="General.EMS&#160;Web App" /> users cannot.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td style="border: solid black 1.0pt;border-top: none;" valign="top">
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td style="border: solid black 1.0pt;border-top: none;" valign="top" class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
                         <dl>
                             <dt class="TableBody">Open All Day</dt>
                         </dl>
                     </td>
-                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top">
+                    <td style="border-top: none;border-left: none;border-bottom: solid black 1.0pt;border-right: solid black 1.0pt;" valign="top" class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
                         <p class="TableBody">The default value. Leave this option selected to have the building remain open for the entire holiday.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p class="StepNumberContinued">5. Click <strong>OK </strong>to&#160;return to the Building Hours window.</p>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a>
-        </p>
+        <ol MadCap:continue="true">
+            <li>Click <strong>OK </strong>to&#160;return to the Building Hours window.</li>
+        </ol>
     </body>
 </html>

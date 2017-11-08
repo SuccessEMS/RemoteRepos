@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1997" MadCap:lastWidth="1194">
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="2003" MadCap:lastWidth="1311" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Reservations and Bookings</title>
         <meta name="mt-type" value="application/x.deki-text" />
@@ -10,9 +10,18 @@
         <div class="WordSection1">
             <p>The two essential EMS components for meeting and event scheduling are reservations and bookings. To use the EMS Web Client efficiently and effectively, you must understand the structure of a reservation in EMS, the concept of an event timeline for a reservation booking, and how to make a reservation. This section covers the following topics:</p>
             <ul>
-                <li><a title="Reservations and Bookings"><strong>Reservation Structure</strong></a>
+                <li><a title="Reservations and Bookings"><MadCap:xref href="#ReservationStructure">Reservation Structure</MadCap:xref></a>
+                    <ul>
+                        <li>
+                            <MadCap:xref href="#reservations">Reservations</MadCap:xref>
+                        </li>
+                        <li>
+                            <MadCap:xref href="#bookingdetails">Booking Details</MadCap:xref>
+                        </li>
+                    </ul>
                 </li>
-                <li><a title="Reservations and Bookings"><strong>Event Timeline</strong></a>
+                <li>
+                    <MadCap:xref href="#EventTimeline">Event Timeline</MadCap:xref>
                 </li>
             </ul>
             <h3><strong><a id="ReservationStructure" name="ReservationStructure"></a>Reservation Structure</strong>
@@ -24,10 +33,10 @@
                 <li>Booking details</li>
             </ol>
             <p>These three components exist in a hierarchy—a reservation contains one or more bookings and each booking can have one or more details associated with it.</p>
-            <p><strong>Reservations</strong>
+            <p><strong><a name="reservations"></a>Reservations</strong>
             </p>
             <p class="mt-align-justify">A reservation is the who and the what of an event. For example, Group X (the who) can reserve some space for an Event Y (the what). A booking is the where and the when of an event. For example, Group X can schedule the conference room (the where) for a staff meeting on the second Monday in January (the when). Group X now has a single reservation with a single booking in EMS. If, however, Group X schedules the conference room (the where) for a staff meeting on the second Monday of each month for a calendar year (the when), then Group X now has a single reservation with twelve bookings in EMS.</p>
-            <p><strong>Booking Details</strong>
+            <p><strong><a name="bookingdetails"></a>Booking Details</strong>
             </p>
             <p class="mt-align-justify">A booking can have one or more booking details associated with it. Booking details are the resources or services that are needed for an event, the notes for the event, the activities for the event, the room charges for the event, or any combination of these. For example, for Group X’s staff meeting, the resources could include the requested catering (coffee service, bagels and muffins, and so on) and the A/V equipment (a projector, a speaker’s podium, and so on).</p>
             <h3><strong><a id="EventTimeline" name="EventTimeline"></a>Event Timeline</strong>
@@ -38,7 +47,7 @@
                 <li><strong>Setup/Teardown Hours</strong>: The hours, or fractions of hours, that you add to the event time to allow staff to prepare a room for the event or to clean up after the event.</li>
                 <li><strong>Reserved Time</strong>: The total time for which the space (the where) is reserved. This time is the event time plus the setup/teardown time.</li>
             </ul>
-            <table class="TableStyle-PatternedRows" style="mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');width: 454px;" cellspacing="0">
+            <table class="TableStyle-PatternedRows" style="mc-table-style: url('../../../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
                 <thead>
                     <tr class="TableStyle-PatternedRows-Head-Header1">
                         <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1"><strong>Variable&#160;</strong>
@@ -50,7 +59,7 @@
                 <tbody>
                     <tr class="TableStyle-PatternedRows-Body-LightRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Reserved Start Time</td>
-                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">8:00 a.m.</td>
+                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">8:00 <span style="font-variant: small-caps;">a.m.</span></td>
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-DarkerRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Setup Hours</td>
@@ -58,11 +67,11 @@
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-LightRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Event Start Time</td>
-                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">9:00 a.m.&#160;</td>
+                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-LightRows">9:00 <span style="font-variant: small-caps;">a.m.&#160;</span></td>
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-DarkerRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Event End Time</td>
-                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">4:00 p.m.</td>
+                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">4:00 <span style="font-variant: small-caps;">p.m.</span></td>
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-LightRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Teardown Hours</td>
@@ -70,7 +79,7 @@
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-DarkerRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Reserved End Time</td>
-                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">5:30 p.m.</td>
+                        <td data-th="Time" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">5:30 <span style="font-variant: small-caps;">p.m.</span></td>
                     </tr>
                     <tr class="TableStyle-PatternedRows-Body-LightRows">
                         <td data-th="Variable" class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Reserved Time</td>

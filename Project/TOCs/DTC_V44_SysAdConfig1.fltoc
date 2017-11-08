@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="System Administration Configuration – Settings" Link="/Content/DTC_V44_SysAdConfig1/System Administration Configuration.htm" />
-    <TocEntry Title="Editing System Parameters" Link="/Content/DTC_V44_SysAdConfig1/Editing System Parameters.htm" />
-    <TocEntry Title="Importing Registration Information" Link="/Content/DTC_V44_SysAdConfig1/Importing Registration Information.htm" />
-    <TocEntry Title="Configuring the Confirmation Email Subject Line" Link="/Content/DTC_V44_SysAdConfig1/Configuring the Confirmation.htm" />
-    <TocEntry Title="Configuring Email Settings" Link="/Content/DTC_V44_SysAdConfig1/Configuring Email Settings.htm" />
-    <TocEntry Title="Configuring Required Fields in the Reservation Wizard" Link="/Content/DTC_V44_SysAdConfig1/Configuring Required Fields.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="System Administration Configuration – Settings" />
+  <TocEntry
+    Title="Editing System Parameters" />
+  <TocEntry
+    Title="Importing Registration Information" />
+  <TocEntry
+    Title="Configuring the Confirmation Email Subject Line" />
+  <TocEntry
+    Title="Configuring Email Settings" />
+  <TocEntry
+    Title="Configuring Required Fields in the Reservation Wizard" />
 </CatapultToc>

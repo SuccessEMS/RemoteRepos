@@ -516,21 +516,30 @@
       <TocEntry
         Title="Configuration &gt; Billing">
         <TocEntry
-          Title="Configure Rate Schedules" />
+          Title="Overview of Billing Configuration"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_OverviewBilling.htm" />
         <TocEntry
-          Title="Configure Pricing Plans" />
+          Title="Configure Rate Schedules"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigRateSchedule.htm" />
         <TocEntry
-          Title="Configure Calculations" />
+          Title="Configure Pricing Plans"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPricingPlan.htm" />
         <TocEntry
-          Title="Configure Accounts" />
+          Title="Configure Calculations"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCalc.htm" />
         <TocEntry
-          Title="Configure Payment Types" />
+          Title="Configure Accounts"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigAccount.htm" />
+        <TocEntry
+          Title="Configure Payment Types"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPaymentType.htm" />
         <TocEntry
           Title="Configure Sales Categories" />
         <TocEntry
-          Title="Configure Billing References" />
+          Title="Configure Billing References and PO Numbers"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigBillRefPO.htm" />
         <TocEntry
-          Title="Configure PO Numbers" />
+          Title="Establishing Billing Reference and PO Behavior" />
         <TocEntry
           Title="Configure Currencies" />
       </TocEntry>

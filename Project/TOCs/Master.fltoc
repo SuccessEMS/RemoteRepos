@@ -525,6 +525,9 @@
           Title="Configure Pricing Plans"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPricingPlan.htm" />
         <TocEntry
+          Title="Export Pricing Information for Billable Items (Rooms &amp; Resources)"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfo.htm" />
+        <TocEntry
           Title="Configure Calculations"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCalc.htm" />
         <TocEntry
@@ -534,29 +537,36 @@
           Title="Configure Payment Types"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPaymentType.htm" />
         <TocEntry
-          Title="Configure Sales Categories" />
+          Title="Configure Sales Categories"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigSalesCat.htm" />
         <TocEntry
           Title="Configure Billing References and PO Numbers"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigBillRefPO.htm" />
         <TocEntry
-          Title="Establishing Billing Reference and PO Behavior" />
+          Title="Establishing Billing Reference and PO Behavior"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EstablishBillingRef.htm" />
         <TocEntry
-          Title="Configure Currencies" />
+          Title="Configure Currencies"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCurrencies.htm" />
       </TocEntry>
       <TocEntry
         Title="Configuration &gt; Administration">
         <TocEntry
-          Title="Configure Categories">
+          Title="Configure Categories"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigCategory.html">
           <TocEntry
             Title="Enable Visitor Management"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EnableVisitorMgmt.htm" />
         </TocEntry>
         <TocEntry
-          Title="Configure Departments" />
+          Title="Configure Departments"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigDepts.htm" />
         <TocEntry
-          Title="Configure Statuses" />
+          Title="Configure Statuses"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm" />
         <TocEntry
-          Title="Configure Notification Rules" />
+          Title="Configure Notification Rules"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigNotRules.htm" />
         <TocEntry
           Title="Configure Customer Notification Rules" />
         <TocEntry

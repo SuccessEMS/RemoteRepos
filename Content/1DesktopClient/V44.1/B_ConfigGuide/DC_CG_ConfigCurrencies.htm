@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2343" MadCap:lastWidth="948" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBilling.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Currencies</h1>
+        <p>A&#160;<span class="button">currency&#160;</span>in EMS is either an abbreviation or symbol that indicates how a room or resources in a category should be charged. For example, the currency for the US dollar could be either USD or $. Because currencies are for informational purposes only and do not affect the pricing or billing of an event, configuration of these items is not required; however, after you&#160;configure&#160;currencies, you can assign a default value to a room’s record or a service category’s record. If a reservation is made with multiple currencies, then the billable items, the items’ prices, and the currencies used for items’ charges are broken out by currency in sales reports, in confirmations, in EMS Web App, and so on.</p>
+        <p>Tip:&#160;You can also configure multiple currencies in a single step. See&#160;Currency Configuration Wizard.</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Billing </span>&gt;&#160;<span class="button">Currencies</span>.&#160;The Currencies window opens. This window lists all the currencies that are currently configured in your EMS database and that have a status of Active. To show all currencies, regardless of status, under Show, click <span class="button">Inactive</span>.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Currencies.png" alt="emssg_CoreConfigurationBilling_image021.png" />
+        </p>
+        <ol start="2">
+            <li>Click&#160;<span class="button">New</span>.&#160;The Currency dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBilling/Configuring Currencies_1.png" alt="emssg_CoreConfigurationBilling_image022.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new currency.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or description for the currency.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Symbol</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Required field. The abbreviation or symbol for the currency, for example, USD or $ for US dollars.</p>
+                        <p>Tip:&#160;To add special characters, copy and paste from a text file.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Trailing Symbol</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Leave this option blank if the currency symbol is to be displayed in a leading position, for example, $45.00. Select this option if the symbol is to be displayed as the far right hand character.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Note:&#160;As you enter the information for the currency, an example currency entry is displayed in the Sample field.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Leave Inactive blank to add the currency as an active currency. Select Inactive to inactivate the currency.</li>
+            <li>Click&#160;<span class="button">OK</span>.&#160;The Currency dialog box closes. You return to the Currencies window with the newly configured currency automatically selected.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

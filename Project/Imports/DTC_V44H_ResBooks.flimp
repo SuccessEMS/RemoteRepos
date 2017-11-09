@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-09T09:49:09.6810461-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  Stylesheet="../../../../../../../S/Content/Resources/Stylesheets/StylesForHomePage.css"
+  LastImport="2017-11-09T09:50:25.6466329-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_ResBooks.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_ResBooks.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Reservations and Bookings.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Reservations and Bookings.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Reservations Bookings and.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Reservations Bookings and_1.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Reservations Bookings and_2.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Reservations Bookings and.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Event Timeline.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_1.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_2.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_3.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_4.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_5.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_6.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_7.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_8.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_9.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Making a Reservation Using_10.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Making a Reservation Using.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Using the Reservation Book.png"
+      TimeStamp="11/9/2017 9:50:21 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Using the Reservation Book_1.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Using the Reservation Book_2.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Using the Reservation Book_3.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Using the Reservation Book_4.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Using the Reservation Book.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Booking Rooms In the Reservation.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Booking Rooms In the Reservation_1.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Booking Rooms In the Reservation.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_ResBooks/Editing Bookings from the.png"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_ResBooks/Editing Bookings from the.htm"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../TOCs/DTC_V44H_ResBooks.fltoc"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/StylesForHomePage_2.css"
+      TimeStamp="11/9/2017 9:50:22 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+    <Map
+      From="Heading 6"
+      To="h6.Heading 6" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-b22222" />
+    <StyleName
+      Name="mt-color-336699" />
+    <StyleName
+      Name="mt-bgcolor-ffffff" />
+  </UsedCharacterStyles>
+</MsWordImport>

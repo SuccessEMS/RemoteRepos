@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="11236" MadCap:lastWidth="1105" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGGroupCon.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Additional Information for a Group</h1>
+        <p>After you have configured a new group in your EMS database with the basic group information (group identifying information, billing information and/or other information), you have the option of configuring additional information for the group. </p>
+        <p>This topic will provide information that will allow you to:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#CreateWebUserGroup" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Create a Web User from a Group&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#AssignGrouptoWebUser" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Assign a Group to a Web User&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Assigncalc" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Assign Calculations to a Group&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureListBilling" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Configure a List of Billing Reference Numbers&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureListPO" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Configure a List of PO Numbers&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <p>Tip:&#160;When you select a configuration item (contacts, reminders, and so on) for a group in the group-specific window, the right pane for the window is an EMS browser window. See&#160;An EMS Browser Window. For information about configuring a contact for a group, including creating a web user for a contact, see&#160;Configuring Contacts”. For information about editing or deleting a contact for a group, see&#160;Editing Group Information.</p>
+        <h2><a name="CreateWebUserGroup"></a>Create a Web User from a Group&#160;</h2>
+        <p>A&#160;web user&#160;is a registered user who can submit requests for reservations or schedule reservations in VEMS. When you add a new group in your EMS database, you decide the “level” of the group that you are adding. For a group that is added at the individual (personnel/employee) level, you might also need to create a web user from the group. This user can then create and view reservations on behalf of a group or groups in VEMS. You can create only one web user&#160;from&#160;a group. When you create a web user, you can also specify one or more delegates for the web user. A&#160;delegate&#160;is a web user who can create and view reservations on behalf of another web user.</p>
+        <p>The following procedure addresses the creation of a web user at the time that you are configuring a group in EMS. For more information regarding configuration of web users as part of the overall configuration of your VEMS module, please see&#160;Virtual EMS (VEMS) Configuration.</p>
+        <ol start="1">
+            <li>Open the Groups window and search for the group for which you are creating the web user. See&#160;“To search for a group and/or contact”.</li>
+            <li>On the Groups window, select the group, and then click Tools &gt; Create Web User.&#160;A group-specific dialog box opens. The Web User tab is the active tab.</li>
+        </ol>
+        <p>Tip:&#160;The User Defined Fields tab displays the questions that a web user was required to answer when the user requested to create an account through VEMS and it is not relevant to the procedure that is described below.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information.png" alt="emssg_CoreConfigurationGroupsContacts_image009.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new web user.</li>
+        </ol>
+        <p>Tip:&#160;Ideally, you should enter all the necessary information for your web user before you save the web user; however, at any time if you need to access your web user, on the EMS menu bar, click Configuration &gt; Web &gt; Web Users.</p>
+        <table style="mc-table-style: url('../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Automatically populated after you select the group from the Groups window.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Password</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The password that a web user must enter to log in to VEMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Email address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If this information has been entered in the Groups window for the group, then this field is automatically populated after you select the group from the Groups window. If the field is blank, you must enter the full email address for the user. (The user must enter this address to log in to VEMS.)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Phone/Fax</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Optional fields. If this information has been entered for the group, then these fields are automatically populated after you select the group from the Groups window. If the fields are blank, you can enter values if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Optional field.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>External Reference</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Optional field. Links the web user to an outside program if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Network ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Optional field. The web user’s network ID.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Email Opt Out</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if the web user is not to receive automatic emails (such as reservation summary emails) from VEMS. The user will still receive manually sent emails.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Required field. Select the status for the web user:</p>
+                        <p>• Active—The web user can log in to VEMS.</p>
+                        <p>• Inactive—The user cannot log in to VEMS and is instructed to contact the EMS administrator.</p>
+                        <p>• Pending—The web user cannot log in to VEMS and is informed that he/she must check back at a later time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Security Template</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Required field. This determines the web user's access to the system—the menu items that the user can see and the information that the user can view in a tooltip when 'rolling-over' an event in VEMS.</p>
+                        <p>Note:&#160;For detailed information about web security templates, see&#160;“Configuring Web Templates”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Time Zone</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Required field. Select the time zone for the user.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Open the Process Templates tab and on the Available list, select the web process template, or CTRL-click to select the multiple templates to which you are assigning the user, and then click the Move button (&gt;) to move the selected templates to the Selected list.</li>
+        </ol>
+        <p>Tip:&#160;A web process template defines the functions that are available to each type of web user in VEMS when the user is submitting a request for a reservation. For detailed information about web process templates, see&#160;“Configuring Web Templates”.</p>
+        <ol start="5">
+            <li>Open the Groups tab and do one of the following to specify the groups on whose behalf the web user can view and make reservations in VEMS.</li>
+        </ol>
+        <ul>
+            <li>The group (web user) is selected by default. You can leave this group in the Selected list, or you can select the group and click the Remove button (&lt;).</li>
+            <li>Specify any combination of search criteria for the Find field and Group Type, and then click Display to produce a list of all groups that meet the criteria. In the Available list, select a group, or CTRL-click to select multiple groups, and then click the Move button (&gt;) to move the selected groups to the Selected list.</li>
+        </ul>
+        <p>Tip:&#160;If you leave the Find field blank, then a list of all currently active groups for the selected group type is displayed. If you enter a search string in the Find field, the string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example,&#160;And&#160;returns&#160;Anderson, Scott, but not Cooper, Anderson.</p>
+        <ol start="6">
+            <li>Open the Delegates tab, and on the Search by dropdown list, do one of the following to specify the delegates for the web user:</li>
+        </ol>
+        <ul>
+            <li>Leave the Find field blank, and then click Display to open a list of&#160;all&#160;currently available web users. Select a user, or CTRL-click to select multiple web users, and then click the Move button (&gt;) to move the selected web users to the Selected list.</li>
+            <li>On the Search By dropdown list, select the option by which to search (Email Address or User Name), and in the Find field, enter the string by which to filter your search, and then click Display. Select a web user, or CTRL-click to select web multiple users, and then click the Move button (&gt;) to move the selected users to the Selected list.</li>
+        </ul>
+        <p>Tip:&#160;The string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bob<a href="mailto:.worth@emssoftware.com" title="mailto:.worth@emssoftware.com">.worth@emssoftware.com</a>&#160;but not&#160;<a href="mailto:dbobbett@emssoftware.com" title="mailto:dbobbett@emssoftware.com">dbobbett@emssoftware.com</a>.</p>
+        <ol start="7">
+            <li>Optionally, click Spelling to spell check any information that you manually entered for the web user.</li>
+            <li>Click OK.&#160;The dialog box for creating a web user closes and a message opens indicating that the web user was created successfully.</li>
+            <li>Click OK to close the message and return to the Groups window.</li>
+        </ol>
+        <h2><a name="AssignGrouptoWebUser"></a>Assign a Group to a Web User&#160;</h2>
+        <p>When you add a new group in your EMS database, you should also assign the group to a web user. This web user can then create and view reservations on behalf of the group in VEMS. You can assign a group to one or more web users.</p>
+        <ol start="1">
+            <li>Open the Groups window and search for the group to which you are assigning the web user. See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/010_Configuring_Groups#To_search_for_a_group_and.2For_contact" title="Configuring Groups">To search for a group and/or contact</a>”.</li>
+            <li>On the Groups window, select the group, and then click Tools &gt; Assign to Web Users.&#160;The Assign Group dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_1.png" alt="emssg_CoreConfigurationGroupsContacts_image010.png" />
+        </p>
+        <ol start="3">
+            <li>Do one of the following to select the web users whom you are assigning to the group:</li>
+        </ol>
+        <ul>
+            <li>Leave the Find field blank, and then click Display to open a list of&#160;all&#160;currently active web users. Select the web user, or CTRL-click to select multiple web users, and then click the Move button (&gt;) to move the selected web users to the Selected list.</li>
+            <li>In the Search By dropdown list, select the option by which to search (Email Address or User Name) and then in the Find field, enter the string by which to filter your search, and then click Display. Select the web user, or CTRL-click to select multiple web users, and then click the Move button (&gt;) to move the selected users to the Selected list.</li>
+        </ul>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>The string is not case-sensitive, but your search is limited to the exact order of the characters in the string and the string must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bob<a href="mailto:.worth@emssoftware.com" title="mailto:.worth@emssoftware.com">.worth@emssoftware.com</a>&#160;but not&#160;<a href="mailto:dbobbett@emssoftware.com" title="mailto:dbobbett@emssoftware.com">dbobbett@emssoftware.com</a>.</p>
+                </td>
+            </tr>
+        </table>
+        <ol start="4">
+            <li>Click <span class="button">Finish</span>.&#160;A message opens indicating that the group was assigned successfully.</li>
+            <li>Click <span class="button">OK </span>to close the message and return to the Groups window.</li>
+        </ol>
+        <h2><a name="Assigncalc"></a>Assign Calculations to a Group&#160;</h2>
+        <p>Calculations&#160;are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. When you configure a group, you can assign the calculations that are to always apply to the group.</p>
+        <ol start="1">
+            <li>Open the Groups window and search for the group to which you are assigning the calculations. See&#160;“To search for a group and/or contact”.</li>
+            <li>On the Groups window, select the group, and then click <span class="button">Open</span>.&#160;A group-specific window opens. The group is automatically selected in the window.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_2.png" alt="emssg_CoreConfigurationGroupsContacts_image011.png" />
+        </p>
+        <ol start="3">
+            <li>In the left pane of the group-specific window, select <span class="button">Calculations</span>.&#160;The right pane of the group-specific window displays any calculations that have already been assigned to the group.</li>
+            <li>Click <span class="button">Edit</span>.&#160;The Calculations dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_3.png" alt="emssg_CoreConfigurationGroupsContacts_image012.png" />
+        </p>
+        <ol start="5">
+            <li>On the Available list, select the calculation, or CTRL-click to select the multiple calculations that are to always apply to this group, and then click the Move button (&gt;) to move the selected calculations to the Selected list.</li>
+        </ol>
+        <p>Tip:&#160;If the appropriate calculation is not available, you can configure it. See&#160;“Configuring Calculations”. Remember, you can also assign calculations to a group type. (See&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/030_Configuring_Group_Types" title="Configuring Group Types">Configuring Group Types</a>”.) If you have already assigned calculations for this group’s type, then these calculations are automatically applied to the group. The calculations are displayed in the Selected list after you click OK and save the group.</p>
+        <ol start="6">
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click OK to close the Calculations dialog box and return to the group-specific window.</li>
+        </ol>
+        <h2><a name="ConfigureListBilling"></a>Configure a List of Billing Reference Numbers&#160;</h2>
+        <p>You can configure a master list of billing reference numbers that are specific to the group.</p>
+        <ol start="1">
+            <li>Open the Groups window and search for the group for which you are configuring the master billing reference numbers list. See&#160;“To search for a group and/or contact”.</li>
+            <li>On the Groups window, select the group, and then click Open.&#160;A group-specific window opens. The group is automatically selected in the window.</li>
+            <li>In the left pane of the group-specific window, select Billing References. A list of all currently active billing reference numbers for the group is displayed in the right pane of the group-specific window.</li>
+            <li>Optionally, to display all billing reference numbers regardless of status, click Show Inactive.&#160;Any inactive billing reference numbers are displayed in italics in the right pane.</li>
+            <li>Click <span class="button">New</span>.&#160;The Billing Reference dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_4.png" alt="emssg_CoreConfigurationGroupsContacts_image013.png" />
+        </p>
+        <ol start="6">
+            <li>Enter the information for the new billing reference number.</li>
+        </ol>
+        <table style="mc-table-style: url('../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Billing Reference Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The billing reference number that is associated with the group.</p>
+                        <p>Note:&#160;The reference can be alphanumeric and it has a maximum of 100 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A description of the billing reference number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Any other comments or statements that are applicable for the billing reference number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Leave this option blank to add the reference as an active reference (the billing reference number is to be available when a reservation is made for the group). Select this option to inactivate the billing reference number.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="7">
+            <li>Optionally, click <span class="button">Spelling </span>to spell check the information for the billing reference number before you save it.</li>
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click <span class="button">OK </span>to close the Billing Reference Number dialog box and return to the group-specific window.</li>
+        </ol>
+        <h2><a name="ConfigureListPO"></a>Configure a List of PO Numbers&#160;</h2>
+        <p>You can configure a master list of PO numbers that are specific to the group. That way, if you need to edit the group information, instead of having to manually enter a new or different PO number, you can simply select it from this master list.</p>
+        <ol start="1">
+            <li>Open the Groups window and search for the group for which you are configuring the master PO numbers list. See&#160;“To search for a group and/or contact”.</li>
+            <li>On the Groups window, select the group, and then click <span class="button">Open</span>. A group-specific window open. The group is automatically selected in the window.</li>
+            <li>In the left pane of the group-specific window, select PO Numbers.&#160;A list of all currently active PO numbers for the group is displayed in the right pane of the group-specific window.</li>
+            <li>Optionally, to display all PO numbers regardless of status, click Show Inactive.&#160;Any inactive PO numbers are displayed in italics in the right pane.</li>
+            <li>Click <span class="button">New</span>.&#160;The PO Number dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Additional Information_5.png" alt="emssg_CoreConfigurationGroupsContacts_image014.png" />
+        </p>
+        <ol start="6">
+            <li>Enter the information for the new PO number.</li>
+        </ol>
+        <table style="mc-table-style: url('../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>PO Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The PO number that is associated with the group.</p>
+                        <p>Note:&#160;The reference can be alphanumeric and it has a maximum of 100 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>A description of the PO number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Any other comments or statements that are applicable for the PO number.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Leave this option blank to add the PO number as an active number (the PO number is to be available when a reservation is made for the group). Select this option to inactivate the PO number.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="7">
+            <li>Optionally, click <span class="button">Spelling </span>to spell check the information for the PO number before you save it.</li>
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click <span class="button">OK </span>to close the PO Number dialog box and return to the group-specific window.</li>
+        </ol>
+    </body>
+</html>

@@ -686,7 +686,20 @@
           Title="Configure Kiosk Menus" />
       </TocEntry>
       <TocEntry
-        Title="New entry" />
+        Title="Configure Groups (Toolbar Icon)">
+        <TocEntry
+          Title="Configure Groups">
+          <TocEntry
+            Title="Configure Additional Information for a Group" />
+          <TocEntry
+            Title="Editing Group Information" />
+          <TocEntry
+            Title="Importing Groups" />
+        </TocEntry>
+        <TocEntry
+          Title="Configure Contacts"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigContacts.htm" />
+      </TocEntry>
     </TocEntry>
     <TocEntry
       Title="EMS Web App Configuration Guide"

@@ -559,11 +559,14 @@
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EnableVisitorMgmt.htm" />
         </TocEntry>
         <TocEntry
-          Title="Configure Departments" />
+          Title="Configure Departments"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigDepts.htm" />
         <TocEntry
-          Title="Configure Statuses" />
+          Title="Configure Statuses"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm" />
         <TocEntry
-          Title="Configure Notification Rules" />
+          Title="Configure Notification Rules"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigNotRules.htm" />
         <TocEntry
           Title="Configure Customer Notification Rules" />
         <TocEntry

@@ -11,13 +11,13 @@
         Link="/Content/1DesktopClient/V44.1/A_InstallationGuide/DC_IG_Introduction.html" />
       <TocEntry
         Title="Launch EMS Desktop Client"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_StartingEMS.html" />
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_StartEMS.html" />
       <TocEntry
         Title="Manage Database Connections"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManageDatabaseConnections.html" />
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageDBConn.html" />
       <TocEntry
         Title="User Settings"
-        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_UserSettings.html" />
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_UserSettings.html" />
       <TocEntry
         Title="Reservations and Bookings"
         Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReservandBookings.html"></TocEntry>
@@ -26,10 +26,10 @@
         Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_OtherResFunctions.html">
         <TocEntry
           Title="Record Actual Attendance Numbers for Bookings"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_RecordActualAttendance.html" />
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_RecActAttend.html" />
         <TocEntry
           Title="Manage Attendees and Visitors"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_ManagAttendeesVisitor.html"></TocEntry>
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageAttendeesVisitor.html"></TocEntry>
         <TocEntry
           Title="View Visitors"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewVisitors.htm" />

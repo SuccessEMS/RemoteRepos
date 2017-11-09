@@ -1,14 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Core Configuration – Billing" Link="/Content/DTC_V44_CGBilling/Core Configuration Billing.htm" />
-    <TocEntry Title="Overview of Billing in EMS" Link="/Content/DTC_V44_CGBilling/Overview of Billing in EMS.htm" />
-    <TocEntry Title="Configuring Rate Schedules" Link="/Content/DTC_V44_CGBilling/Configuring Rate Schedules.htm" />
-    <TocEntry Title="Exporting Pricing Information for Billable Items (Rooms or Resources)" Link="/Content/DTC_V44_CGBilling/Exporting Pricing Information.htm" />
-    <TocEntry Title="Configuring Pricing Plans" Link="/Content/DTC_V44_CGBilling/Configuring Pricing Plans.htm" />
-    <TocEntry Title="Configuring Calculations" Link="/Content/DTC_V44_CGBilling/Configuring Calculations.htm" />
-    <TocEntry Title="Configuring Accounts" Link="/Content/DTC_V44_CGBilling/Configuring Accounts.htm" />
-    <TocEntry Title="Configuring Payment Types" Link="/Content/DTC_V44_CGBilling/Configuring Payment Types.htm" />
-    <TocEntry Title="Configuring Sales Categories" Link="/Content/DTC_V44_CGBilling/Configuring Sales Categories.htm" />
-    <TocEntry Title="Configuring Billing Reference and PO Numbers" Link="/Content/DTC_V44_CGBilling/Configuring Billing Reference.htm" />
-    <TocEntry Title="Configuring Currencies" Link="/Content/DTC_V44_CGBilling/Configuring Currencies.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Core Configuration – Billing"
+    Link="/Content/DTC_V44_CGBilling/Core Configuration Billing.htm" />
+  <TocEntry
+    Title="Overview of Billing in EMS"
+    Link="/Content/DTC_V44_CGBilling/Overview of Billing in EMS.htm" />
+  <TocEntry
+    Title="Configuring Rate Schedules"
+    Link="/Content/DTC_V44_CGBilling/Configuring Rate Schedules.htm" />
+  <TocEntry
+    Title="Exporting Pricing Information for Billable Items (Rooms or Resources)"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfo.htm" />
+  <TocEntry
+    Title="Configuring Pricing Plans"
+    Link="/Content/DTC_V44_CGBilling/Configuring Pricing Plans.htm" />
+  <TocEntry
+    Title="Configuring Calculations"
+    Link="/Content/DTC_V44_CGBilling/Configuring Calculations.htm" />
+  <TocEntry
+    Title="Configuring Accounts"
+    Link="/Content/DTC_V44_CGBilling/Configuring Accounts.htm" />
+  <TocEntry
+    Title="Configuring Payment Types"
+    Link="/Content/DTC_V44_CGBilling/Configuring Payment Types.htm" />
+  <TocEntry
+    Title="Configuring Sales Categories"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigSalesCat.htm" />
+  <TocEntry
+    Title="Configuring Billing Reference and PO Numbers"
+    Link="/Content/DTC_V44_CGBilling/Configuring Billing Reference.htm" />
+  <TocEntry
+    Title="Configuring Currencies"
+    Link="/Content/DTC_V44_CGBilling/Configuring Currencies.htm" />
 </CatapultToc>

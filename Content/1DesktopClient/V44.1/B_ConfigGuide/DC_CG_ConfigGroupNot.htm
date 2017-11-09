@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="9452" MadCap:lastWidth="1105" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Group Notification Rules</h1>
+        <p><span class="button">Group notification rules</span> determine the conditions under which groups that are holding events at your facility are reminded through an email notification about their events. You&#160;configure&#160;group notifications based on rooms, statuses, event types, group types, and/or categories. A group notification is generated only if all the criteria that you specified is met. For example, if you specify Room 100, Confirmed status&#160;with&#160;catering, then a Confirmed meeting in Room 100&#160;without&#160;a catering service order does&#160;not&#160;result in a notification being generated. Group notification emails contain a summary of the group's events. For example, if a group has a weekly Friday meeting (a booking) that continues for several months, and you define a group notification rule with a monthly frequency, then the group receives a notification email once a month that lists all the Friday meetings for the month.</p>
+        <p>Note:&#160;Configuring Group Notification Rules is similar to configuring notification rules for individuals. If you are familiar with this process, you can apply the same rules for groups.</p>
+        <p>You can configure multiple group notifications in EMS Enterprise. You can configure only a single group notification in EMS Professional. For notification emails to be sent, the EMS Email Notification Service must be installed and configured. Refer to the EMS Installation instructions for details.</p>
+        <p>This section contains information on the following:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#ConfigureGroupNot">Configure a Group Notification&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Set">Set the Confirmation Rules for a Group Notification Email&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <h2 class="Heading2"><a name="ConfigureGroupNot"></a>Configure a Group Notification&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Administration </span>&gt; <span class="button">Group Notification Rules</span>.&#160;The Group Notification Rules window opens. This window lists all the group notification rules that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Group Notification.png" alt="emssg_coreadmin_image013.png" />
+        </p>
+        <p>Tips:&#160;Optionally, to view all group email notification rules in your EMS database, regardless of status, under Show, click Inactive.</p>
+        <p>The remainder of this procedure describes how to configure a group email notification rule “from scratch.” You can also configure a group email notification rule by copying an existing rule. Select the notification rule that you want to copy, click Copy, and then go to&#160;Step 3.</p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>.&#160;The Group Notification Rule dialog box opens. The Group Notification Rule tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_GroupNot1.png" alt="emssg_coreadmin_image014.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new group notification rule.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Description</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or description for the group notification rule.</p>
+                        <p>Note:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select a header and/or footer message that is to be displayed on every notification that is sent to the group.</p>
+                        <p>Note:&#160;If the appropriate message is not available, you can configure it. See&#160;“<a href="../1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigMessages.htm" title="Configuring Messages" alt="Configuring Messages">Configuring Messages</a>”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Email Format</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select the format (HTML or Plain Text) for the email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Frequency</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select the frequency with which the notification is to be sent.</p>
+                        <p>• Daily—You must indicate how many days prior to/after the Booking Date/Last Booking Date that the notification is to be sent.</p>
+                        <p>• Weekly—You must select the day on which the notification is to be sent and for which bookings. (For example, every Friday for bookings that start on the following Monday).</p>
+                        <p>• Monthly—You must indicate how many days prior to the end of the month that the notification is to be sent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Multiple Bookings Only</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Available only in EMS Workplace. Select this option to notify users if they have multiple bookings on a particular day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Send Confirmation</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option to attach a full detailed confirmation to the group email; otherwise, leave this option blank to have the group email contain only a simple listing of bookings.</p>
+                        <p>Note:&#160;The contents of the full confirmation email are determined by the confirmation settings that you specify. See&#160;“To specify the confirmation settings for a group notification email”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Email Notification At/Time Zone</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select the time of day (based on the time zone) at which the email notification is to be sent.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Include Cancel Link</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Available only if Send Confirmation is not selected. Provides a link in the notification email so that a user can cancel the booking directly from the notification email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Include Reconfirm Link/Reconfirm Status</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Available only if Send Confirmation is not selected. Provides a link in the notification email so that a user can reconfirm the booking directly from the notification email. If you select this option, then you must also select a Reconfirm Status that is to be applied to the booking.</p>
+                        <p>Note:&#160;If the appropriate status is not available, you can configure it. See&#160;“<a href="../1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm" title="Configuring Statuses" alt="Configuring Statuses">Configuring Statuses</a>”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Email Group</p>
+                        <p>Email 1st Contact</p>
+                        <p>Email 2nd Contact</p>
+                        <p>Email Web User</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select the appropriate options to indicate to whom the group notification is to be sent.</p>
+                        <p>Note:&#160;If the appropriate group, contact, and/or web user is not available, you can configure it. See&#160;“Configuring Groups”,&#160;“<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigContacts.html" title="Configuring Contacts" alt="Configuring Contacts">Configuring Contacts</a>”, and/or&#160;“Configuring Web Users”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Email From</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Enter the email address that is to be displayed in the Email From field for the group notification.</p>
+                        <p>Note:&#160;If you leave the Email From field blank, then the Email From address that was defined during the installation and configuration of the EMS Email Notification Service is used.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Email Subject Line</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Enter the text that is to be displayed in the email subject line. Variables pull in selected data from the event for which the notification is being emailed. You can include variables as described in the Legend. For example,%2% is the code for the group name, so “Notification for %2%” would result in “Notification for Consumer Electronics Association” being displayed in the subject line. By default, email notifications for booking-level notifications also display the actual booking date (and not just the first booking date of the reservation) in the subject line of the email.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Leave this option blank to add a group email notification rule as an active rule. Select this option to Inactivate the group notification rule.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Do one or more or all the following to set the criteria that triggers the generation of the notification:</li>
+        </ol>
+        <ul>
+            <li>Open the <span class="button">Rooms </span>tab, you can search for the rooms by Building and Room Type. On the Available list, select rooms, (CTRL-click to select multiple rooms), and then Move them (&gt;) to the Selected list.</li>
+            <li>Open the <span class="button">Statuses </span>tab, and specify statuses that should trigger notifications.</li>
+            <li>Open the <span class="button">Event Types</span> tab, and specify event types that should trigger notifications.</li>
+            <li>Open the <span class="button">Group Types</span> tab, and specify group types that should trigger notifications.</li>
+            <li>Open the <span class="button">Categories</span> tab, and specify categories that should trigger notifications.</li>
+        </ul>
+        <ol start="5">
+            <li>Click <span class="button">OK</span>.&#160;The Group Notification Rule dialog box closes. You return to the Group Notification Rules window with the newly configured notification rule automatically selected.</li>
+            <li>If you selected Send Confirmation for the notification rule, then continue to&#160;the next section.</li>
+        </ol>
+        <h2 class="Heading2"><a name="Set"></a>Set the Confirmation Rules for a Group Notification Email&#160;</h2>
+        <ol start="1">
+            <li>If you have not already done so, on the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Administration </span>&gt; <span class="button">Group Notification Rules</span> to open the Group Notification Rules window.</li>
+            <li>Select the rule for which you are specifying the confirmation settings, and then click <span class="button">Confirmation</span>.&#160;The Confirmation Settings dialog box opens. The Date Range tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_GroupNot2.png" alt="emssg_coreadmin_image015.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Specify the settings for the confirmation. At a minimum, you must specify buildings and statuses. All other information is optional.</li>
+        </ol>
+        <ul>
+            <li><span class="button">Date Range</span> tab—The department name that appears at the top of a printed confirmation.</li>
+            <li><span class="button">Buildings </span>tab—Select the specific buildings, areas, and/or views that are to be included in the confirmation. Note: If the appropriate building, area, and/or views is not available, you can configure it. See “Configuring Buildings”, “Configuring Areas”, and/or “Configuring Public Views”. </li>
+            <li><span class="button">Categories </span>tab—Select the specific booking details that are to be included in the confirmation.Note: If the appropriate category is not available, you can configure it. See “Configuring Categories”. </li>
+            <li><span class="button">Statuses </span>tab—Select the specific statuses that are to be included in the confirmation.Note: If the appropriate status is not available, you can configure it. See “Configuring Statuses”. </li>
+            <li><span class="button">Options </span>tab—Format settings for a printed confirmation.  See the following table for option descriptions.</li>
+        </ul>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Confirmation Title</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Appears bold and centered at the top of the confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Pre-configured blocks of text that appear in the header and footer of the confirmation.</p>
+                        <p>Note:&#160;If the appropriate message is not available, you can configure it. See&#160;“Configuring Messages”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Paper Size</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The size of the paper on which the confirmation is printed. Values are Letter, Legal, and A4.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Print Comments</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Include the reservation’s comments in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Print Reminders</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Include the reservation’s reminders in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Print Cancel Reasons</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Include reasons for cancellation in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Print User Defined Fields</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Include user defined fields and their values in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Suppress Reserved Time</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Hide the reserved time for the booking and show only the event time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Suppress Location</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Hide the location for the reservation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Suppress Pricing</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Do not show the reservation’s room charges or resource charges in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Suppress Logo</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Do not show your organization’s logo in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Suppress Item Notes</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Do not show resource notes for any booking items in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Suppress Item Special Instructions</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Do not show special instructions for any booking items in the printed confirmation.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Limit Bookings to Those With Details in Selected Categories</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Show only those bookings in the printed confirmation that contain details for the categories that are selected on the Categories tab.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><MadCap:variable name="General.EMS&#160;Web App" /> Options Tab—Select your settings for EMS Web App. See the following table for option descriptions.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Display Web App Link</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option to include a link (URL) to the reservation in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Web App Link Message</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>The message that is to be included with the link.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Note:&#160;At a minimum, you must specify buildings and statuses. All other information is optional.</p>
+        <ol start="4">
+            <li>Click <span class="button">OK</span>.&#160;The Confirmation Settings dialog box closes. You return to the Group Notification Rules window with the notification rule still selected.</li>
+        </ol>
+    </body>
+</html>

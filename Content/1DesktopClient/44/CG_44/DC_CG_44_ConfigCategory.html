@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="12" MadCap:lastHeight="12638" MadCap:lastWidth="846" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Categories</title>
+        <meta name="mt-type" value="application/x.deki-text" />
+        <meta name="mt-unsafe" value="true" />
+    </head>
+    <body>
+        <h1 class="mt-export-title">Configure Categories</h1>
+        <p>In EMS, you may hear these terms used interchangeably sometimes, however, they are different concepts.</p>
+        <p>A Category in EMS is anything you might add to a Booking such as Catering, Audio Visual, Furniture, Security, Notes, Attendee Names, Agendas etc. When you configure a Category, however, it must be of six Category types: Activities, Attendees, Catering, Notes, Resources with Service Orders, or Resources Without Service Orders. These types cause the service to behave slightly differently when added to a booking. For example, a Notes/Activities/Attendees type service category does not require the EMS Administrator to configure items under it and there is nothing for a person to “select” from these types of services.</p>
+        <p>By contrast, a service category that has a type of Catering, Resource with Service Order, or a Resource without a Service Order Category, will require the Administrator to create items under it. For example, an "AV Equipment" service  category (configured as a Resource without a Service Order Category type) might have items under it such as a flip chart, whiteboard, (under AV Equipment). The person requesting the service for this meeting would then select AV equipment; then flipchart and whiteboard would be typical options to add to the event.</p>
+        <p>Tip: The following Category Types allow Production Items: Catering, Resources with Service Orders, and Resources Without Service Orders.</p>
+        <ol>
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Administration </span>&gt; <strong>Categories</strong>.&#160;The Categories window opens, where you can define categories of services you can add to booking templates. This window lists all the Categories and their types that are currently configured in your EMS database and that have a status of Active.&#160;To filter&#160;all Categories regardless of status, under Show, click <strong>Inactive</strong>.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGBookElements/Configuring Categories.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 354px;" alt="emssg_coreadmin_image001.png" />
+        </p>
+        <p><strong>Tip:&#160;</strong>You can define a Category here with the Category Type of Attendees to enable users to add attendees to a booking on the <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;<a title="Working with Services">Services </a>page. If you define this Category and then add it to a booking template for Everyday Users, then they can control attendees as part of editing Services.</p>
+        <ol MadCap:continue="true">
+            <li>Click <strong>New</strong>.&#160;The Category dialog box opens on the Category tab.&#160;</li>
+        </ol>
+        <p class="mt-indent-2">
+            <img alt="" class="internal default" src="Images/DC_CG_ConfigCat1.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Enter the information for the new Category.</li>
+        </ol>
+        <table border="0" cellspacing="0" style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p><strong>Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p><strong>Description</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Category</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name or description for the Category, for example, A/V Equipment or Furniture (maximum of 30 characters, including spaces)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Print Sequence</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>If items from multiple Categories have been reserved for an event, then the Print Sequence determines the order in which this information is printed on the Confirmation and other reports. Categories are ordered from lowest to highest sequence number, with the Category with the lowest sequence number being displayed first.</p>
+                        <p><strong>Note</strong>:&#160;If you leave the print sequence set to the default value of zero for all items, then by default, the items are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Category Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Typically, the determining factor is how the category is to be used.</p>
+                        <p>• <strong>Activities</strong>—Agenda-type entries that describe what is to occur during an event, for example: 8:30 a.m. - 9:00 a.m., Registration; 9:00 a.m. - 10:00 a.m, Keynote Speaker, and so on.</p>
+                        <p>• <strong>Attendees<a id="Category%2525252BAttendees" name="Category%2525252BAttendees"></a></strong>—Individuals who are attending an event. You can use this category for attendees such as VIPs or guest speakers, or to serve as an attendee checklist for smaller meetings.</p>
+                        <p class="mt-indent-1"><strong>Note</strong>: The "Attendee" Category Type does not typically&#160;relate to attendees invited to a meeting using the optional Integration to Microsoft Exchange module for EMS Web App or&#160;EMS Mobile App or using EMS for Outlook.</p>
+                        <p>• <strong>Notes</strong>—A free-form block of text that is used to enter clarifying or miscellaneous information about the event. For example, your users can describe room setup for an event such as “Set room temp. at 70 degrees one hour prior to event” or “Please unlock doors at 7 a.m.”</p>
+                        <p>• <strong>Resources&#160;w/o Service Orders</strong>—Resources that are assigned to a booking from this Category Type are assigned for the entire event time. Typically, this Category Type is&#160;used to manage Audio/Visual Equipment and Furniture categories.</p>
+                        <p>• <strong>Resources&#160;w/ Service Orders</strong>—Similar to Resources&#160;w/o Service Orders categories with one exception—you must indicate the specific time that the items assigned to a booking are needed. The end result is one or multiple service orders with specific services times before, during or after the event. Typically, this Category Type is used manage staffing for an event.</p>
+                        <p>• <strong>Catering</strong>—Used to manage categories specific to food &amp; beverage service. Provides capability similar to the Resources, w/ Service Order category in addition to the catering specific fields of Estimated Count, Guaranteed Count, and Actual Count.</p>
+                        <p><strong>Tip:&#160;</strong>If you choose&#160;<strong>Resources w/o Service Orders</strong>,&#160;<strong>Resources w/ Service Orders</strong>, or Catering, then the <a title="Configuring Categories">Use Production Items option</a> becomes available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Default Service</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Services are defined at the resource level. (See&#160;Configuring Resources for a Category.) After you define your resources and services, then you can edit this category if needed and define a default service.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Default Time in Use</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Available only if Catering, Resources&#160;w/ Service Orders, or Resources&#160;w/o Service Orders is selected as the Category Type. Indicates the time that the items in the selected category should be in use—for the Reserved Time or for the Event Time.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Default Quantity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Depending the category that was selected, one or more of the following options are available:</p>
+                        <p>• 1</p>
+                        <p>• Setup Count</p>
+                        <p>• Estimated Count</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Currency</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select the currency to be used for pricing all the resources in the category.</p>
+                        <p><strong>Note</strong>:&#160;If the appropriate currency is not available, you can configure it. See <a rel="internal" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies" href="DC_CG_ConfigCurrencies.htm" alt="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/090_Configuring_Currencies">Configuring Currencies</a>.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Available to All Buildings</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if resources from this category are to be available to all buildings.</p>
+                        <p><strong>Note</strong>:&#160;If you do not select this option, then on the Buildings tab, you must specify the buildings for which resources from this category are to be available.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Allow Resources Notes Edit</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If selected, EMS Desktop Client users can edit the Notes field for the resource.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Exclude from Services Indicator</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>In various EMS locations (the Reservation Book, the Navigator, the Edit Booking form, and so on) EMS provides an indication that services exist for a booking. Select this option to exclude a category from displaying as a service on the booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Use Production Items</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option to define production items for the category. Production Items are typically used for Catering Category Types where <MadCap:variable name="General.Product" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> software&#160;will be used by a production kitchen.</p>
+                        <p><strong>Note</strong>:&#160;Production items are defined at the resource level. See Configuring Resources for a Category.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Use States</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if you want to define process phases, or states, for the category, for example, “Assigned,” “Out for Delivery,” “Delivered,” and so on.</p>
+                        <p><strong>Note</strong>:&#160;After you define your states, then you can edit this category if needed and specify a default state.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>BEO Column</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Indicates in which column the category is to be displayed when the Banquet Event Order report is printed in its standard two column format. Select Column 1 to display the category in the left column. Select Column 2 to display the category in the right column. See&#160;<a title="EMS_V44.1/Using_EMS/EMS_Desktop_Client_User_Manual"><em>Using EMS</em></a>&#160;for details about the BEO report.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>External Service</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if the provider of the resources for this category is external to your organization, and then select the provider on the Provider dropdown list.</p>
+                        <p><strong>Note</strong>:&#160;Available only for a Category Type of Notes and if the EMS system parameter “Show External Service Orders on Categories” is set to “Yes.” See EMS System Parameters.</p>
+                        <p><strong>Note</strong>:&#160;If the appropriate service provider is not available, contact EMS Support&#160;for assistance in configuring the provider.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Attendees are Visitors</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Select this option to automatically mark all attendees who are added to a booking as a Visitor. (The Visitor option is automatically selected on the Attendee dialog box.)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>Open the Everyday Applications&#160;tab and enter the appropriate&#160;information.&#160;</li>
+        </ol>
+        <p class="mt-indent-1">
+            <img alt="" class="internal" src="Images/DC_CG_ConfigCat2.png" />
+        </p>
+        <p>Important: Settings on this tab control behavior for Everyday User Applications:&#160;<MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />. <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />, and <MadCap:variable name="General.Mobile" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</p>
+        <table border="0" cellspacing="0" style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th scope="col" class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p><strong>Field</strong>
+                        </p>
+                    </th>
+                    <th scope="col" class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p><strong>Description</strong>
+                        </p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Display to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If selected, <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> and <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;users can view this category if it has been added as a booking detail to one of their bookings.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Expand Groupings</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>If selected, the resource items for a grouping are displayed immediately when a <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;user makes a reservation. If cleared, only the grouping is displayed and a user must expand the grouping to view the resource items. Typically, this option is selected if an option has a small list of resources within the category.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Use Specific Cutoff Time</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Indicates how far in advance of a booking a <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;user can add, edit, or cancel this category. For example, if you select the Cutoff Time/Number of Days option, and you specify 11:00 a.m. and one day, then <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;users cannot assign, edit, or cancel categories or resources after 11:00 a.m. on the day before the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Cutoff Hours</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Available only if you do not select the Use Specific Cutoff Time option. With this option, the restriction is imposed based on the number of hours before the event occurs rather than time of day.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Default Quantity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The default quantity (either 1, Attendance, or Blank) that is automatically filled in by the system when a <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;user selects an item.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if this category is to be displayed as part of the initial&#160;Room Request process in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />. If not selected, <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> users must first complete the Room Request process before they can request the category.</p>
+                        <p>Note:&#160;For example, if an Attendee type Category is associated with a booking template and this option is selected, then users will be able to add or remove attendees&#160;<em>during</em>&#160;the booking. If it is de-selected, by contrast, they will only be able to manage attendees on the Reservation Details &gt; Services page once the reservation is created and they are in edit mode.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Prompt for Billing Reference</p>
+                        <p>Prompt for PO Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option if <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> users are to be prompted to enter a billing reference and/or PO number when they select a resource from the category.&#160;</p>
+                        <p>Note:&#160;Selecting these options does not&#160;<em>require&#160;</em>the user to enter these values, only that they will be prompted to enter values. The behavior of these fields (required, validated, or displayed)&#160;is controlled in the&#160;Billing Reference Validation and PO Number Validation&#160;<MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;<a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters/020_EMS_Web_App_System_Parameters">parameter settings</a> in <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.&#160;Users will see the Billing Reference field during the booking process when this parameter is set at either the reservation, room, or category level.&#160;Whether the Billing Reference field displays is based on four settings: global, template, room-level setting, category-level setting. The booking template setting overrides the global setting. The room and category level settings can both override the template setting. After the Admin decides whether to display the field, user entries will be validated based on the value in the "Billing Reference Validation" parameter set on the template.</p>
+                        <p>Billing Reference field options:</p>
+                        <ul>
+                            <li>Show (Prompt)</li>
+                            <li>Require</li>
+                            <li>Validate (Show and Require)</li>
+                            <li>Don't Show</li>
+                        </ul>
+                        <p>Additionally, the&#160;<strong>Billing Reference Validation</strong>&#160;parameter will always determine whether it is optional, required, or required and validated.&#160;</p>
+                        <p><strong>See Also:&#160;</strong><a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/Configuring_Field_Behavior_for_Billing_Reference_and_PO_Numbers">Configuring Field Behavior for Billing Reference and PO Numbers</a>
+                        </p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Allow Add On Weekend</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option to allow a <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> user to add a service order to a Saturday or Sunday&#160;booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Sequence</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Determines the order in which the category is displayed in a list of categories in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />. Categories are ordered from lowest to highest sequence number, with the category with the lowest sequence number being displayed first.</p>
+                        <p><strong>Note</strong>:&#160;If you leave the sequence set to the default value of zero for all categories, then by default, the categories are displayed alphabetically.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Minimum Amount</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The minimum purchase amount that is required for a user to submit a new service order in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />&#160;for this category.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Leave this option blank to add the category as an active category. Select this option to inactivate the category.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>If you did&#160;<em>not</em>&#160;select Available to All Buildings then go to&#160;Step 6; otherwise, open the Buildings tab, and on the Available list, select the building, or CTRL-click to select the multiple buildings for which the category is to be available, and then click the Move button (&gt;) to move the selected buildings to the Selected list.</li>
+            <li>Optionally, do one or more of the following:</li>
+        </ol>
+        <ul>
+            <li>Open the Calculations tab and on the Available list, select the calculation&#160;(CTRL-click to select multiple calculations) you always want to&#160;apply to this category, and then Move (&gt;) the them to the Selected list.&#160;These calculations apply to all new resources that are added to the category. If the appropriate calculations are not available, you can configure them. See <a rel="internal" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations" href="DC_CG_ConfigCalc.htm" alt="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/070_Core_Configuration_-_Billing/040_Configuring_Calculations">Configuring Calculations</a>.&#160;You can also define calculations at the resource item level. See Configuring Resources for a Category.</li>
+            <li>Open the Provider tab and enter the contact information for the provider of the items or services in the category.&#160;Select International to drop the State and Zip fields for an international provider. None of the provider information is displayed or printed anywhere outside of EMS Desktop Client.</li>
+            <li>Open the Terms and Conditions tab and format a Terms and Conditions message that must be acknowledged by <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> or <MadCap:variable name="General.EMS for Outlook Add-in" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> users&#160;when&#160;they&#160;select&#160;the category.&#160;Design is selected by default. Use the standard Windows plain text formatting options to format the message (spacing, number of lines, capitalization, and so on) so that it is displayed the way that you want; otherwise, you can select HTML and enter the necessary HTML code to format the message.</li>
+        </ul>
+        <ol start="7">
+            <li>If you did&#160;<em>not</em>&#160;select Use States, go to&#160;Step 8; otherwise, open the States tab, and then do the following:</li>
+        </ol>
+        <ul>
+            <li>In the <strong>Description </strong>field, enter a name or description for each state or phase that is to be used for managing this category (maximum of 50 characters, including spaces</li>
+            <li>Optionally, to define a color for each state, select the state, and then click <strong>Set Color</strong> to open the Select Color dialog box and select a color for the state.</li>
+            <li>After you have defined the states for a category, you can select a default state on the Category tab. See Use States.</li>
+        </ul>
+        <ol start="8">
+            <li>Click <strong>OK</strong>.&#160;The Category dialog box closes. You return to the Categories window with the newly added category automatically selected. You can now define the resource items for the categories. See Configuring Resources for a Category.</li>
+        </ol>
+    </body>
+</html>

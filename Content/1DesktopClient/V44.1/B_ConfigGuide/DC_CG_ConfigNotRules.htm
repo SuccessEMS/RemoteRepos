@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="8989" MadCap:lastWidth="965" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Configure Notification Rules</h1>
+        <p><span class="button">Notification Rules</span> determine which EMS users are emailed about&#160;additions or changes&#160;are made in EMS. You can set these rules to trigger for new or changed&#160;bookings or service orders, changes to VIP events, new Everyday User accounts, or when specific&#160;UDF options are selected. Triggers are based on rooms, statuses, event types, group types, setup types,&#160;and/or categories.</p>
+        <p>For a Notification to be generated, all the criteria in the rule&#160;must be met. Typically, notifications are an internal function for reservation schedulers and service providers, but when you are configuring a Notification Rule, you can specify the email address for whomever you wish to receive an Email Notification.</p>
+        <p>This topic contains information on the following:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#ConfigureNotRule">To Configure a Notification Rule</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#BookingNotRules">Booking Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ServiceOrderNotificationRules">Service Order&#160;Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#NotficationRulesforAnything">Notification Rules for&#160;Anything On A VIP Event</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#NewWebUsers">New Everyday Users&#160;Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#UDFRules">User Defined Field&#160;Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#SelectUsersNotify">Select Users to Notify&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#SelectingRoomsReqNot">Selecting Rooms Requiring Notifications&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#SelectBookingStatus">Select Booking Statuses Requiring Notifications&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#SelectEvent">Select Event Types Requiring Notifications&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#CopyNotRule">Copy a Notification Rule&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <p>Note:&#160;The EMS Email Notification Service must be installed and configured for Email Notifications to be sent.&#160;See the&#160;Email Notification Service Install Instructions&#160;for details.</p>
+        <p>The timing of notification emails also depends&#160;on settings in&#160;three EMS system parameters:</p>
+        <ul>
+            <li>Exclude Building Closures on Notifications</li>
+            <li>Exclude Weekends on Notifications</li>
+            <li>Ignore Building Closure/Weekend Notification Settings Beyond xx Days</li>
+            <li>&#160;See&#160;System Parameters.</li>
+        </ul>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept: Why Set Notification Rules?</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>EMS enables you to set detailed rules that trigger when notifications are sent to people and groups. This highly customizable feature guides you through a series of screens where you fine-tune your notification rules so that notices are more meaningful and timely, and so that notices automatically go to the right people at the right time. You can set your rules to trigger notifications for specific people, rooms, event statuses, and event types. Take extra time with this step and revisit your rules regularly to make sure they are continuing to serve your needs.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <h2><a name="ConfigureNotRule"></a>To Configure a Notification Rule</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Administration </span>&gt;&#160;<span class="button">Notification Rules</span>.&#160;The Rules window opens, listing all active Notification Rules configured in your implementation.&#160;To view any de-activated Rules, select&#160;Inactive&#160;in the&#160;Show&#160;section.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.gif" alt="https://success.emssoftware.com/@api/deki/files/1379/RulesScreen.gif?revision=1" />
+        </p>
+        <ol start="2">
+            <li>Click&#160;<span class="button">New</span>.&#160;The Notification Rule Wizard opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_2.png" alt="https://success.emssoftware.com/@api/deki/files/4205/clipboard_e5c94863311ba9891f256c82ce106c750?revision=1&amp;size=bestfit&amp;width=947&amp;height=625" />
+        </p>
+        <ol start="3">
+            <li>In the&#160;<b>Description</b>&#160;field, enter a name or description for the new Notification.</li>
+            <li>Leave the&#160;<span class="button">Inactive&#160;</span>box unchecked to add the Notification Rule as an active Rule.&#160;</li>
+            <li>Select the&#160;<span class="button">Notification&#160;Type</span>; these&#160;are defined&#160;below and your selection in this field changes additional fields that become available.</li>
+        </ol>
+        <h2><a name="BookingNotRules"></a>Booking Notification Rules</h2>
+        <p>Any of the following notification types are considered booking notifications, and are available when creating new Notification Rules in the wizard:</p>
+        <ul>
+            <li>New Bookings</li>
+            <li>Changes to Date/Time</li>
+            <li>Room Changes&#160;</li>
+            <li>Status Changes&#160;</li>
+        </ul>
+        <p>​<img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.jpg" alt="https://success.emssoftware.com/@api/deki/files/3963/NotificationBookings2.jpg?revision=1" /></p>
+        <ol start="1">
+            <li>The&#160;Setup Type&#160;field in the Notification Rule Wizard enables you to ensure&#160;that changes to a booking's&#160;room setup will appropriately notify attendees.&#160;(See&#160;this section&#160;for configuring Setup Types).&#160;You can select one of the existing setup types, or one of the options below.</li>
+        </ol>
+        <ul>
+            <li>(all)&#160;- The rule will trigger on all Setup Types.</li>
+            <li>(any other than Room default) -&#160;Notifications will trigger for all Setup Types except for the Room's default Setup Type. (To change the default Setup Type you can go to Configuration &gt; Facilities &gt; Rooms, then select a Room and press "Edit"; then make your changes in&#160;the "Default Setup Type" field.)&#160;</li>
+        </ul>
+        <ol start="2">
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>The&#160;Display New Booking As&#160;field enables you to specify&#160;whether the Notification occurs as&#160;Booking Information&#160;or&#160;Reservation Information. For example, for new reservations that contain multiple bookings (recurring meetings), if Booking Information is selected, then a Notification occurs for every individual booking. If Reservation Information is selected, then a single Notification occurs for the entire reservation.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, <MadCap:variable name="General.EMS&#160;Web App" />, or both will trigger a Notification.</li>
+        </ol>
+        <p>Note:&#160;The Booking&#160;options described&#160;here&#160;only apply to&#160;EMS Enterprise. In EMS Professional, only one global Booking Notification can be configured at any time in your EMS database and it is only available if a Booking Notification is not currently configured in your EMS database.</p>
+        <h2><a name="ServiceOrderNotificationRules"></a>Service Order&#160;Notification Rules</h2>
+        <p>Any of the following notification types are considered service order notifications:</p>
+        <ul>
+            <li>New Service Orders</li>
+            <li>Changes to Service Orders</li>
+            <li>Deleted/Canceled&#160;Service Orders</li>
+        </ul>
+        <ol start="1">
+            <li>On the&#160;Category&#160;dropdown list, select the category for which the service order Notification is to be generated.&#160;If the appropriate category is not available, you can configure it. See&#160;Configuring Categories.&#160;<br />After selecting a category, the&#160;State,&#160;Grouping, and&#160;Resource&#160;options&#160;appear.&#160;You can select (all), (multiple), (none), or an individual item on the list.&#160;To notify on a whole category, keep the selections set to (all).</li>
+        </ol>
+        <ul>
+            <li>State&#160;- Select the corresponding state that you the Notification to trigger on.&#160; "New Service Orders" will have to start in that state.&#160; "Changes To Service Orders" will have to change into that state.&#160; More than one state may be selected.</li>
+            <li>Grouping&#160;- Select the grouping that a resource is in.&#160;These are set at the resource level in EMS.&#160;See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/030_Configuring_Groupings_for_a_Resource" title="Configuring Groupings for a Resource">Configuring Groupings</a>.</li>
+            <li>Resource&#160;- Select an individual resource from the list.</li>
+        </ul>
+        <p>Note:&#160;When you choose&#160;a Group or Category, all three items (New Service Orders, Changes To Service Orders, and Deletion/Cancelation Of Service Orders) will become auto-selected.&#160;The notification will now only fire on all three.&#160;To set the rule to trigger notifications on only one or two of these three, you must select (all) on both Group and Category.</p>
+        <ol start="2">
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, <MadCap:variable name="General.EMS&#160;Web App" />, or both will trigger a Notification.</li>
+        </ol>
+        <h2><a name="NotficationRulesforAnything"></a>Notification Rules for&#160;Anything On A VIP Event</h2>
+        <p>VIP Event is an option available when creating a reservation in the Reservation Wizard.&#160;Select this option to notify users&#160;when any changes are made to a VIP Event.&#160;</p>
+        <h2><a name="NewWebUsers"></a>New Everyday Users&#160;Notification Rules</h2>
+        <p>Select this option to notify users&#160;when a new Everyday User account is created. For&#160;Source, indicate whether additions and/or changes from the EMS Desktop Client, <MadCap:variable name="General.EMS&#160;Web App" />, or both should trigger a Notification.</p>
+        <h2><a name="UDFRules"></a>User Defined Field&#160;Notification Rules</h2>
+        <ol start="1">
+            <li>In&#160;<span class="button">Type&#160;</span>field, select the&#160;User Defined Field&#160;type for which the Notification is to be generated.&#160;If the appropriate UDF is not available, you can configure it. See&#160;Configuring User Defined Fields (UDFs).</li>
+            <li>Select the UDF for which the Notification is to be generated. (Available UDFs have a field type of&#160;List. UDFs with other field types are not displayed on the User Defined Field dropdown list.)</li>
+            <li>Select the UDF value for which the Notification is to be generated.</li>
+            <li>Next to the&#160;Notification triggers if change occurs within...&#160;field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For&#160;Source, indicate whether additions and/or changes in the&#160;EMS Desktop Client, <MadCap:variable name="General.EMS&#160;Web App" />, or both will trigger a Notification.</li>
+        </ol>
+        <p>Note:&#160;The Service Order options described&#160;here only apply to&#160;EMS Enterprise. In EMS Professional, only one service order Notification per category can be configured at any time in your EMS database.</p>
+        <h2 class="Heading2"><a name="SelectUsersNotify"></a>Select Users to Notify&#160;</h2>
+        <ol start="6">
+            <li>Click&#160;<span class="button">Next</span>.&#160;The Users window opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.png" alt="https://success.emssoftware.com/@api/deki/files/4206/clipboard_e2efff6b89bea461320394707aabedb26?revision=1&amp;size=bestfit&amp;width=946&amp;height=622" />
+        </p>
+        <ol start="7">
+            <li>Select&#160;users and email addresses to which to&#160;send notifications:</li>
+        </ol>
+        <ol start="1" MadCap:continue="true">
+            <li>On the&#160;Available&#160;list, select the EMS user, or CTRL-click to select the multiple users who are to receive the email Notification, and then click the move button (&gt;) to move the selected users to the Selected list.&#160;If the appropriate user is not available, you can configure it. See&#160;Configuring User Accounts.</li>
+            <li>In the&#160;Email Address&#160;field, for each user and/or group that is to receive the email Notification, enter the appropriate email address, and then click Add.<br />OR<br />Leave the Email Address field blank, and then click&#160;Add&#160;to open the Select Names dialog box in which you can search for and add the necessary email addresses from your Groups/Contacts lists, your Global Address List, or your Outlook address book.</li>
+            <li>The following additional options are available on this screen:</li>
+        </ol>
+        <ul>
+            <li>Group Users Tied To Rule&#160;- This Rule controls how users are notified as a group. &#160;If a user is designated on the Rule&#160;as&#160;recipient and this option is selected, then no notifications will fire. &#160;If, however, this option is not selected and that user triggers it,&#160;the notifications will go to all the&#160;other&#160;users and email recipients designated as recipients on the Rule.</li>
+            <li>Send to Event Coordinator&#160;- Send notifications to&#160;the Reservation Event Coordinator's&#160;email address or dashboard when checked.</li>
+            <li>Send To Everyday User&#160;- Send notifications to the Everyday User's email address when checked.</li>
+            <li>Send to Reservation Group/Contacts&#160;- Send notifications to the first contact's email address, or the group's email address.</li>
+        </ul>
+        <h2 class="Heading2"><a name="SelectingRoomsReqNot"></a>Selecting Rooms Requiring Notifications&#160;</h2>
+        <ol start="1">
+            <li>If you have not selected New Everyday Users, click&#160;<span class="button">Next</span>.&#160;The Rooms window opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_1.gif" alt="https://success.emssoftware.com/@api/deki/files/1390/NotificationPage3.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+        </p>
+        <ol start="9" MadCap:continue="true">
+            <li>Search for the rooms to which the Notification applies:</li>
+        </ol>
+        <ul start="1">
+            <li>For&#160;Building, select one of the following—(all) buildings, a specific building, a specific area, or a specific view.</li>
+            <li>For&#160;Room Type, leave the default value of (all), or select a specific room type.</li>
+        </ul>
+        <p>Tip:&#160;To search for active and inactive rooms, select&#160;Show <span class="button">Inactive</span>.</p>
+        <p style="text-align: left;">If the appropriate building, area, room type, or view is not available, you can configure it. See&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuilding.html">Configuring Buildings</MadCap:xref>,&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigAreas.html">Configure Areas</MadCap:xref>,&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigRoomType.html">Configure Room Types</MadCap:xref>,&#160;and/or&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigPublicViews.html">Configure Public Views</MadCap:xref>.</p>
+        <ol start="10" MadCap:continue="true">
+            <li>On the&#160;Available&#160;list, select a room, or CTRL-click to select multiple rooms, and then click the Move button (&gt;) to move the selected rooms to the Selected list.</li>
+            <li>Click&#160;<span class="button">Next</span>.&#160;The Statuses window opens.</li>
+        </ol>
+        <h2 class="Heading2"><a name="SelectBookingStatus"></a>Select Booking Statuses Requiring Notifications&#160;</h2>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_2.gif" alt="https://success.emssoftware.com/@api/deki/files/1391/NotificationPage4.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+        </p>
+        <ol start="1">
+            <li>On the&#160;Available&#160;list, select the booking status, or CTRL-click to select the multiple statuses for which the Notification is to apply, and then click the Move button (&gt;) to move the selected statuses to the Selected list.If the appropriate status is not available, you can configure it. See&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm">Configure Statuses</MadCap:xref>.</li>
+        </ol>
+        <h2><a name="SelectEvent"></a>Select Event Types Requiring Notifications&#160;</h2>
+        <ol start="1">
+            <li>Click&#160;<span class="button">Next</span>.&#160;The Event Types window opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.gif" alt="https://success.emssoftware.com/@api/deki/files/1392/NotificationPage5.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+        </p>
+        <ol start="14" MadCap:continue="true">
+            <li>On the&#160;Available&#160;list, select the event type, or CTRL-click to select the multiple event types for which the Notification is to apply, and then click the Move button (&gt;) to move the selected event types to the Selected list.If the appropriate event type is not available, you can configure it. See&#160;<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigEventType.html" title="Configuring Event Types" alt="Configuring Event Types">Configuring Event Types</a>.</li>
+        </ol>
+        <ol start="15" MadCap:continue="true">
+            <li>Click <span class="button">Finish</span>.&#160;The Notification Rule Wizard closes. You return to the Rules window with the newly configured Notification Rule automatically selected.</li>
+        </ol>
+        <h2><a name="CopyNotRule"></a>Copy a Notification Rule&#160;</h2>
+        <p>Notification Rules can be configured by making a copy of an existing Rule.&#160;</p>
+        <ol>
+            <li>On the Notification Rules screen click the&#160;<span class="button">Copy&#160;</span>button.&#160;The Rule will be completely the same as the previous one, except for the Description having "Copy of " added to the beginning of the name.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.gif" alt="https://success.emssoftware.com/@api/deki/files/1379/RulesScreen.gif?revision=1&amp;size=bestfit&amp;width=382&amp;height=384" />
+        </p>
+    </body>
+</html>

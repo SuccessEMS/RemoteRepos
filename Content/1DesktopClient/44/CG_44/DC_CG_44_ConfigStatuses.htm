@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4270" MadCap:lastWidth="948" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Statuses</h1>
+        <p>A <span class="button">status </span>automates the booking workflow, especially for booking requests that must be approved and then completed. A status is one of four core data items that you must configure so that your users can make reservations.</p>
+        <p>Tip: You can associate a status to reservations and to bookings, but only booking-level statuses affects room availability. Every booking must have a status.</p>
+        <p>You may wish to configure your own statuses to automate the booking request workflow, such as “Confirmed,” “Tentative,” “Wait List,” and “Canceled.” You can configure as many statuses as you need and give them any names you want; however, you must always assign one of the four following status types to a status:</p>
+        <ul>
+            <li>Book Space</li>
+            <li>Wait</li>
+            <li>Info Only</li>
+            <li>Cancel</li>
+        </ul>
+        <p>Important:&#160;Status type determines if a room remains available to other users. </p>
+        <p>The name that you assign to a status is a convenient label that assists you in managing your organization’s business. The status type is what is actually used by EMS to determine if a room must be taken out of inventory.</p>
+        <h2 class="Heading2">To configure statuses&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Administration </span>&gt; <span class="button">Statuses</span>.&#160;The Statuses window opens. This window lists all the statuses that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Statuses.png" alt="emssg_coreadmin_image005.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to view all statuses in your EMS database, regardless of status, under Show, click <span class="button">Inactive</span>.</p>
+        <ol start="2">
+            <li>Click <span class="button">New</span>.&#160;The Status dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../1DesktopClient/V44.1/B_ConfigGuide/Images/DC_CG_ConfigStatuses1.jpg" alt="emssg_coreadmin_image006.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the information for the new status.</li>
+        </ol>
+        <table style="mc-table-style: url('../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The name of the status.</p>
+                        <p>Note:&#160;The status can be a maximum of 30 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Status Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Required. You must select one of the following four values:</p>
+                        <p>• Book Space—The room is taken out of inventory and cannot be reserved by another booking. (The system prevents the space from being double-booked.)</p>
+                        <p>• Cancel—Booking information is retained, but the room is released back into inventory.</p>
+                        <p>• Info Only—Booking information is retained, but the space is not taken out of inventory.</p>
+                        <p>• Wait—Booking information is retained in case the space becomes available prior to the event date. Wait bookings show up on the Wait List Report and in the Dashboard.</p>
+                        <p>Note:&#160;If you are configuring a conflict status, then it must Status Type Info Only or Wait.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Reserved Color</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The color that is used by this status in the Reservation Book to indicate&#160;reserved&#160;time. When the reserved time extends before or after event time, thin bars of this color extend out from the beginning and/or end of the event. To use the system default colors, click Default.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Event Color</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The color for events of this status in the Navigator and Reservation Book. To use the system default colors, click Default.</p>
+                        <p>Note:&#160;Lighter colors are the better colors to use for events because they make it easier to read the event name in the Reservation Book, which is in black text.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Reconfirm Date</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option if you want the system to require a reconfirm date when a reservation is made in EMS. When a user gives a booking a status that requires a reconfirm date, the system displays an additional field, prompting the user to enter the date. You can identify bookings with a reconfirm date in the Dashboard.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Commits Inventory</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if the status should remove resources from inventory.</p>
+                        <p>Note:&#160;Typically, you would select this option for a status with a Book Space type whereas you would&#160;not&#160;select this option for a status with a Cancel type.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Leave this option blank to add the status as an active status. Select this option to inactivate the status.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Virtual EMS Settings</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Display on Web</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option to display the event details for bookings with this status in VEMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Allow Booking Edit</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option to allow the editing of bookings with this status in VEMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Allow Service Edit</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option to allow the editing of services for bookings with this status in VEMS.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Allow Booking Cancellation</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Select this option to allow the canceling of bookings with this status in VEMS.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="4">
+            <li>Click OK.&#160;The Status dialog box closes. You return to the Statuses window with the newly configured status automatically selected.</li>
+        </ol>
+    </body>
+</html>

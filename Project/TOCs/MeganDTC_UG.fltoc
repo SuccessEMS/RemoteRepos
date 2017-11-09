@@ -41,18 +41,24 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
       </TocEntry>
       <TocEntry
-        Title="The EMS Window">
+        Title="The EMS Window"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EMSWindow.html">
         <TocEntry
-          Title="Work with the EMS Window" />
+          Title="Work with the EMS Window"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_WorkwithEMSWindow.htm" />
         <TocEntry
-          Title="Toolbar Buttons" />
+          Title="Toolbar Buttons"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ToolbarButtons.html" />
         <TocEntry
-          Title="Customizing Your Toolbar" />
+          Title="Customizing Your Toolbar"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CustomizeToolbar.html" />
       </TocEntry>
       <TocEntry
-        Title="The Reservation Book">
+        Title="The Reservation Book"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_UseReservationBook.html">
         <TocEntry
-          Title="Create a Booking in the Reservation Book"></TocEntry>
+          Title="Create a Booking in the Reservation Book"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_BookRoomsResBook.html"></TocEntry>
         <TocEntry
           Title="View and Edit Reservations in the Reservation Book"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewEditReservinResBook.htm" />

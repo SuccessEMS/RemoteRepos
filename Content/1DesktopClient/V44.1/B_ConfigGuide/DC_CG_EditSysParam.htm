@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="4" MadCap:lastHeight="1907" MadCap:lastWidth="1619" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdConfig.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Edit System Parameters</h1>
+        <p><span class="button">System parameters </span>are global settings that affect all your EMS users, your EMS Web App users, or your EMS Kiosk users. The parameters are grouped first by system (All Applications, EMS Desktop Client, EMS Web App, or EMS Kiosk) and then by the functional areas that they affect (Billing, Email, and so on). When any system is first installed, the parameters are set to their default value. Although you can edit the value for a system parameter whenever necessary, you typically set the value for a system parameter when you are configuring your EMS Desktop Client, EMS Web App, or EMS Kiosk implementations.</p>
+        <p>See Also: System Parameters definitions.</p>
+        <ol>
+            <li>On the EMS menu bar, click <span class="button">System Administration </span>&gt; <span class="button">Settings </span>&gt; <span class="button">Parameters</span>. The Parameters window opens, listing all the current settings for parameters that affect all EMS users (All Applications tab), EMS&#160;Desktop Client users, all EMS Web App (and EMS Mobile App) users (Everyday User Applications tab), and all EMS Kiosk users (Kiosk tab). The All Applications tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_EditSysParam1.png" alt="emssg_SysAdminConfiguration_image001.png" />
+        </p>
+        <ol start="2">
+            <li>Open the tab that contains the parameter that you are editing.</li>
+        </ol>
+        <p>Tip:&#160;You can filter the list by area, by the parameter description, or both. To filter by the parameter description, enter a search string in the Filter field (characters must be in exact order but are not case-sensitive). For example, a search string of Security will result in both Security Status for a User and Default Security Template for a User.</p>
+        <p>To change field labels as they appear to your end-users, filter by "Labels" in the Area field.</p>
+        <ol MadCap:continue="true">
+            <li>Select the parameter that you are editing, and click <span class="button">Edit</span>. The Parameter dialog box opens, showing information you can edit for the parameter.</li>
+        </ol>
+        <p>Tip:&#160;Each type of parameter may have special options that impact Everyday Users; this affects EMS Web App and EMS Mobile App.</p>
+        <ol MadCap:continue="true">
+            <li>Edit the parameter as needed, and click <span class="button">OK</span>. The Parameter dialog box closes. You return to the Parameters window with the edited parameter automatically selected.</li>
+            <li>Confirm in the Value column that you have correctly edited the value for the parameter.</li>
+            <li>Click <span class="button">Close</span>.</li>
+        </ol>
+        <ul>
+            <li>If you edited EMS Desktop Client parameters, you might have to log out and then log back in to EMS Desktop Client for your changes to take effect.</li>
+            <li>If you edited Everyday User Applications parameters, a message opens indicating that you must clear the EMS Web App cache for the changes to take affect. Click OK to close the message, and then clear the EMS Web App cache by logging in to EMS Web App, clicking Admin &gt; Admin Functions, and then clicking Clear Cache.</li>
+            <li>If you edited EMS Kiosk parameters, a message opens indicating that EMS Kiosk parameters have changed, and that you must clear the EMS Kiosk cache for the changes to take affect. Click OK to close the message, and then clear the EMS Kiosk cache by opening the EMS Kiosk config.aspx page.</li>
+        </ul>
+    </body>
+</html>

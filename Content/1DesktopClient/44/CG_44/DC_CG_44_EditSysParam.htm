@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdConfig.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Editing System Parameters</h1>
+        <p>System parameters&#160;are global settings that affect all your EMS users, your VEMS users, or your EMS Kiosk users. The parameters are grouped first by system (EMS, VEMS, or EMS Kiosk) and then by the functional areas that they affect (Billing, Email, and so on). When any system is first installed, the parameters are set to their default value. Although you can&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/090_System_Administration_Configuration_-_Settings/010_Editing_System_Parameters#RTF45646974696e675f73797370"><span class="Hyperlink">edit</span></a>&#160;the value for a system parameter whenever necessary, you typically set the value for a system parameter at the time you are configuring your EMS, VEMS, and EMS Kiosk implementations.</p>
+        <h2 class="Heading2">To&#160;edit system parameters&#160;</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>
+                            <img src="../Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminConfiguration_small_reminder.png" />
+                        </p>
+                    </td>
+                    <td>
+                        <p>See&#160;Appendix A, “<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters" title="System Parameters"><span class="Hyperlink">System Parameters</span></a>,”&#160;for detailed definitions of the available system parameters and their default values.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click System Administration &gt; Settings &gt; Parameters.</li>
+        </ol>
+        <p>The Parameters window opens. This window lists all the current global settings for the parameters that affect all EMS users (EMS tab), all VEMS users (Virtual tab), and all EMS Kiosk users (Kiosk tab). The EMS tab is the active tab.</p>
+        <p>Parameters window, EMS tab</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 510px;" alt="emssg_SysAdminConfiguration_image001.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Open the tab that contains the parameter that you are editing.</li>
+            <li>Optionally, filter the list by area, by the parameter description, or both.</li>
+        </ol>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminConfiguration_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>To filter by the parameter description, enter a search string in the Filter field. The search string is limited to the exact order of the characters in the string, but the string is not case-sensitive, and it can appear anywhere in the search results. For example, a search string of&#160;Security&#160;both&#160;Security&#160;Status for a User and Default&#160;Security&#160;Template for a User.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Select the parameter that you are editing, and then click Edit.</li>
+        </ol>
+        <p>The Parameter dialog box opens. This dialog box displays the information that you can edit for the selected parameter.</p>
+        <table>
+            <tr>
+                <td>
+                    <p>
+                        <img src="../Resources/Images/DTC_V44_SysAdConfig/Editing System Parameters.png" style="visibility: visible;mso-wrap-style: square;width: 35px;height: 41px;" alt="emssg_SysAdminConfiguration_small_reminder.png" />
+                    </p>
+                </td>
+                <td>
+                    <p>See&#160;Appendix A, “<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/200_System_Parameters" title="System Parameters"><span class="Hyperlink">System Parameters</span></a>,”&#160;for detailed definitions of the available system parameters and their default values.</p>
+                </td>
+            </tr>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>Edit the parameter as needed, and then click OK.</li>
+        </ol>
+        <p>The Parameter dialog box closes. You return to the Parameters window with the edited parameter automatically selected.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Confirm in the Value column that you have correctly edited the value for the parameter.</li>
+            <li>Click Close.</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If you edited EMS parameters, you might have to log out and then log back in to EMS to have the changes take effect.</li>
+            <li>If you edited VEMS parameters, a message opens indicating that virtual parameters have changed, and that you must clear the VEMS cache for the changes to take affect. Click OK to close the message, and then clear the VEMS cache by logging in to VEMS, clicking Admin &gt; Admin Functions, and then clicking Clear Cache.</li>
+            <li>If you edited EMS Kiosk parameters, a message opens indicating that kiosk parameters have changed, and that you must clear the kiosk cache for the changes to take affect. Click OK to close the message, and then clear the kiosk cache by opening the EMS Kiosk config.aspx page.</li>
+        </ul>
+    </body>
+</html>

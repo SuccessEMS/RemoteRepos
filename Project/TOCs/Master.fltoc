@@ -622,7 +622,14 @@
       <TocEntry
         Title="Configuration &gt; Everyday User Applications">
         <TocEntry
-          Title="Configure Everyday Users" />
+          Title="Configure Everyday Users">
+          <TocEntry
+            Title="Licensing for Everyday Users" />
+          <TocEntry
+            Title="Emailing an Everyday User" />
+          <TocEntry
+            Title="Configure Groups and Contacts from an Everyday User" />
+        </TocEntry>
         <TocEntry
           Title="Configure Everyday User Process Templates"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigUserProcessTemplate.htm">
@@ -703,6 +710,85 @@
         <TocEntry
           Title="Configure Contacts"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigContacts.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="System Administration &gt; Settings">
+        <TocEntry
+          Title="Edit System Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EditSysParam.htm" />
+        <TocEntry
+          Title="Import Registration Information"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportRegInfo.htm" />
+        <TocEntry
+          Title="Configure the Confirmation Email Subject Line" />
+        <TocEntry
+          Title="Configure Email Settings" />
+        <TocEntry
+          Title="Sending Email From EMS" />
+        <TocEntry
+          Title="Set Global Email Preference to SMTP and My Personal Email Preference to Outlook" />
+        <TocEntry
+          Title="Configure Required Fields in the Reservation Wizard" />
+      </TocEntry>
+      <TocEntry
+        Title="System Administration &gt; Security">
+        <TocEntry
+          Title="Overview of Security Configuration" />
+        <TocEntry
+          Title="User Processes" />
+        <TocEntry
+          Title="Configure Users" />
+        <TocEntry
+          Title="Configure User Templates" />
+        <TocEntry
+          Title="Configure Academic User Templates" />
+        <TocEntry
+          Title="Configure User Security for Multiple User Accounts" />
+      </TocEntry>
+      <TocEntry
+        Title="System Administration &gt; Tools">
+        <TocEntry
+          Title="Change Group Wizard" />
+        <TocEntry
+          Title="Change Reservation Wizard" />
+        <TocEntry
+          Title="Room Administration Wizard" />
+        <TocEntry
+          Title="Manage Saved Reports" />
+        <TocEntry
+          Title="Override Existing Bookings Utility" />
+        <TocEntry
+          Title="Import Reservations Utility">
+          <TocEntry
+            Title="Best Practices: Using the Reservations Import Utility" />
+        </TocEntry>
+        <TocEntry
+          Title="View and Email Logged-In Users" />
+        <TocEntry
+          Title="Currency Configuration Wizard" />
+        <TocEntry
+          Title="Deleting Old Data" />
+        <TocEntry
+          Title="Edit Booking Dates and/or Statuses" />
+        <TocEntry
+          Title="Migrate Data" />
+        <TocEntry
+          Title="Configure Field Behavior for Billing Reference and PO Numbers" />
+        <TocEntry
+          Title="Video Display Interface" />
+      </TocEntry>
+      <TocEntry
+        Title="System Parameters">
+        <TocEntry
+          Title="EMS Desktop Client Parameters" />
+        <TocEntry
+          Title="EMS Web App Parameters" />
+        <TocEntry
+          Title="EMS for Outlook Parameters" />
+        <TocEntry
+          Title="EMS Kiosk Parameters" />
+        <TocEntry
+          Title="EMS Mobile App Parameters" />
       </TocEntry>
     </TocEntry>
     <TocEntry

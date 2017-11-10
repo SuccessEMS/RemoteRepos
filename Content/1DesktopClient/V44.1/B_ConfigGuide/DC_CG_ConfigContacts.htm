@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="11092" MadCap:lastWidth="1105" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="11212" MadCap:lastWidth="1071" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head>
         <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
         <link href="../Resources/Stylesheets/DTC_V44_CGGroupCon.css" rel="stylesheet" />
@@ -16,7 +16,9 @@
             <li>
                 <MadCap:xref href="#ConfigureContactManually" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Manually&#160;Configure Contacts</MadCap:xref>
             </li>
-            <li>Configure a Contact from a Group</li>
+            <li>
+                <MadCap:xref href="#ConfigContact" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Configure a Contact from a Group&#160;</MadCap:xref>
+            </li>
             <li>
                 <MadCap:xref href="#CreateEverydayUser" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Create an Everyday User from a Contact&#160;</MadCap:xref>
             </li>
@@ -305,160 +307,126 @@
             <li>Click <span class="button">Tools </span>&gt; <span class="button">Create Everyday User from Contact</span>. A contact-specific dialog box opens. The Everyday User tab is the active tab.</li>
         </ol>
         <p>The User Defined Fields tab displays the questions that an Everyday User was required to answer when the user requested to create an account through <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> and it is not relevant to the procedure that is described below.</p>
-        <p>Contact-specific dDialog Box, Everyday User tab</p>
+        <p>Contact-specific Dialog Box, Everyday User tab</p>
         <p>
             <img src="Images/DC_CG_ConfigContacts1.PNG" alt="emssg_CoreConfigurationGroupsContacts_image019.png" />
         </p>
         <ol start="5">
             <li>Enter the information for the new Everyday User.</li>
         </ol>
-        <table>
-            <tr>
-                <td>
-                    <p>
-                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
-                    </p>
-                </td>
-                <td>
-                    <p>Ideally, you should enter all the necessary information for your Everyday User before you save the Everyday User; however, at any time if you need to access your Everyday User, on the EMS menu bar, click Configuration &gt; Web &gt; Everyday Users.</p>
-                </td>
-            </tr>
-        </table>
-        <p>&#160;</p>
-        <table>
+        <p>Tip:&#160;Ideally, you should enter all the necessary information for your Everyday User before you save the Everyday User; however, at any time if you need to access your Everyday User, on the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Everyday User Applications</span> &gt; <span class="button">Everyday Users</span>.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
             <thead>
-                <tr>
-                    <th>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
                         <p>Field</p>
                     </th>
-                    <th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
                         <p>Description</p>
                     </th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>Name</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
                         <p>Automatically populated after you select the contact.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <p>Password</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p>The password that an Everyday User must enter to log in to <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>Email address</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
                         <p>If this information has been entered for the contact, then this field is automatically populated after you select the contact. If the field is blank, you must enter the full email address for the user. (The user must enter this address to log in to <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.)</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <p>Phone/Fax</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p>Optional fields. If this information has been entered for the contact, then these fields are automatically populated after you select the contact. If the fields are blank, you can enter values if needed.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>Notes</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
                         <p>Optional field.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <p>External Reference</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p>Optional field. Links the Everyday User to an outside program if needed.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>Network ID</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
                         <p>Optional field. The Everyday User’s network ID.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <p>Email Opt Out</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p>Select this option if the Everyday User is not to receive automatic emails (such as reservation summary emails) from <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />. The user will still receive manually sent emails.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
                         <p>Status</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
                         <p>Required field. Select the status for the Everyday User:</p>
-                        <p>• Active—The Everyday User can log in to <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</p>
-                        <p>• Inactive—The user cannot log in to <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> and is instructed to contact the EMS administrator.</p>
-                        <p>• Pending—The Everyday User cannot log in to <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> and is informed that he/she must check back at a later time.</p>
+                        <ul>
+                            <li style="text-align: left;"><b>Active</b>—The Everyday User can log in to <MadCap:variable name="General.EMS&#160;Web App" />.</li>
+                            <li style="text-align: left;"><b>Inactive</b>—The user cannot log in to <MadCap:variable name="General.EMS&#160;Web App" /> and is instructed to contact the EMS administrator.</li>
+                            <li style="text-align: left;"><b>Pending</b>—The Everyday User cannot log in to <MadCap:variable name="General.EMS&#160;Web App" /> and is informed that he/she must check back at a later time.</li>
+                        </ul>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
                         <p>Security Template</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
                         <p>Required field. This determines the Everyday User's access to the system—the menu items that the user can see and the information that the user can view in a tooltip when 'rolling-over' an event in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</p>
-                        <p>Note:&#160;For detailed information about web security templates, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_VEMS/010_Configuring_Web_Templates" title="Configuring Web Templates">Configuring Web Templates</a>”.</p>
+                        <p>Note:&#160;For detailed information about Everyday User security templates, see&#160;“Configuring Everyday User Process Templates”.</p>
                     </td>
                 </tr>
-                <tr>
-                    <td>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
                         <p>Time Zone</p>
                     </td>
-                    <td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
                         <p>Required field. Select the time zone for the user.</p>
                     </td>
                 </tr>
             </tbody>
         </table>
-        <p>&#160;</p>
-        <table>
-            <tr>
-                <td>
-                    <p>
-                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
-                    </p>
-                </td>
-                <td>
-                    <p>Ideally, you should enter all the necessary information for your Everyday User before you save the Everyday User; however, at any time if you need to access your Everyday User, on the EMS menu bar, click Configuration &gt; Web &gt; Everyday Users.</p>
-                </td>
-            </tr>
-        </table>
         <ol start="6">
-            <li>Open the Process Templates tab and on the Available list, select the web process template or CTRL-click to select the multiple templates to which to which you are assigning the user, and then click the Move button (&gt;) to move the selected templates to the Selected list.</li>
+            <li>Open the Process Templates tab and on the Available list, select the Everyday User Process template or CTRL-click to select the multiple templates to which to which you are assigning the user, and then click the Move button (&gt;) to move the selected templates to the Selected list.</li>
         </ol>
-        <table>
-            <tr>
-                <td>
-                    <p>
-                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
-                    </p>
-                </td>
-                <td>
-                    <p>A web process template defines the functions that are available to each type of Everyday User in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> when the user is submitting a request for a reservation. For detailed information about web process templates, see&#160;“<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/01-Introduction/Setting_Up_VEMS/010_Configuring_Web_Templates" title="Configuring Web Templates">Configuring Web Templates</a>”.</p>
-                </td>
-            </tr>
-        </table>
+        <p>Tip:&#160;An Everyday User Process template defines the functions that are available to each type of Everyday User in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> when the user is submitting a request for a reservation. For detailed information about Everyday User Process templates, see&#160;“Configuring Everyday User Process Templates”.</p>
         <ol start="7">
             <li>Open the Groups tab and do one of the following to specify the groups on whose behalf the Everyday User can view and make reservations in <MadCap:variable name="General.EMS&#160;Web App" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />.</li>
         </ol>
@@ -466,18 +434,7 @@
             <li>The contact’s group is selected by default. You can leave this group in the Selected list, or you can select the group and click the Remove button (&lt;).</li>
             <li>Specify any combination of search criteria for the Find field and Group Type, and then click Display to produce a list of all groups that meet the criteria. In the Available list, select a group, or CTRL-click to select multiple groups, and then click the Move button (&gt;) to move the selected groups to the Selected list.</li>
         </ul>
-        <table>
-            <tr>
-                <td>
-                    <p>
-                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
-                    </p>
-                </td>
-                <td>
-                    <p>If you leave the Find field blank, then a list of all currently active groups for the selected group type is displayed. If you enter a search string in the Find field, the string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;AAA&#160;returns&#160;AAAColorado, but not Colorado AAA.</p>
-                </td>
-            </tr>
-        </table>
+        <p>Note:&#160;If you leave the Find field blank, then a list of all currently active groups for the selected group type is displayed. If you enter a search string in the Find field, the string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;AAA&#160;returns&#160;AAAColorado, but not Colorado AAA.</p>
         <ol start="8">
             <li>Open the Delegates tab, and on the Search by dropdown list, do one of the following to specify the delegates for the Everyday User:</li>
         </ol>
@@ -485,22 +442,11 @@
             <li>Leave the Find field blank, and then click Display to open a list of&#160;all&#160;currently available Everyday Users. Select an Everyday User, or CTRL-click to select multiple Everyday Users, and then click the Move button (&gt;) to move the selected Everyday Users to the Selected list.</li>
             <li>On the Search By dropdown list, select the option by which to search (Email Address or User Name), and in the Find field, enter the string by which to filter your search, and then click Display. Select an Everyday User, or CTRL-click to select multiple Everyday Users, and then click the Move button (&gt;) to move the selected Everyday Users to the Selected list.</li>
         </ul>
-        <table>
-            <tr>
-                <td>
-                    <p>
-                        <img src="../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups.png" alt="emssg_CoreConfigurationGroupsContacts_small_reminder.png" />
-                    </p>
-                </td>
-                <td>
-                    <p>The string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bob<a href="mailto:.worth@dea.com" title="mailto:.worth@dea.com">.worth@dea.com</a>&#160;but not&#160;<a href="mailto:dbobbett@dea.com" title="mailto:dbobbett@dea.com">dbobbett@dea.com</a>.</p>
-                </td>
-            </tr>
-        </table>
+        <p>Note:&#160;The string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, if searching by Email Address, a search string of&#160;bob&#160;returns&#160;bob<a href="mailto:.worth@dea.com" title="mailto:.worth@dea.com">.worth@dea.com</a>&#160;but not&#160;<a href="mailto:dbobbett@dea.com" title="mailto:dbobbett@dea.com">dbobbett@dea.com</a>.</p>
         <ol start="9">
-            <li>Optionally, click Spelling to spell check any information that you manually entered for the user.</li>
-            <li>Click OK. The dialog box for creating an Everyday User closes and a message opens indicating that the Everyday User was created successfully.</li>
-            <li>Click OK to close the message and return to the group-specific window.</li>
+            <li>Optionally, click <span class="button">Spelling </span>to spell check any information that you manually entered for the user.</li>
+            <li>Click <span class="button">OK</span>. The dialog box for creating an Everyday User closes and a message opens indicating that the Everyday User was created successfully.</li>
+            <li>Click <span class="button">OK </span>to close the message and return to the group-specific window.</li>
         </ol>
     </body>
 </html>

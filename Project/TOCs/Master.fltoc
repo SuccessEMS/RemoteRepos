@@ -753,17 +753,23 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigUserSecMultAcct.htm" />
       </TocEntry>
       <TocEntry
-        Title="System Administration &gt; Tools">
+        Title="System Administration &gt; Tools"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_SystemAdminTools.html">
         <TocEntry
-          Title="Change Group Wizard" />
+          Title="Change Group Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ChangeGroupWiz.htm" />
         <TocEntry
-          Title="Change Reservation Wizard" />
+          Title="Change Reservation Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ChangeResWiz.htm" />
         <TocEntry
-          Title="Room Administration Wizard" />
+          Title="Room Administration Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_RoomAdminWizard.htm" />
         <TocEntry
-          Title="Manage Saved Reports" />
+          Title="Manage Saved Reports"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ManageSavedReport.htm" />
         <TocEntry
-          Title="Override Existing Bookings Utility" />
+          Title="Override Existing Bookings Utility"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverrideExistingBookUtil.html" />
         <TocEntry
           Title="Import Reservations Utility">
           <TocEntry

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5263" MadCap:lastWidth="1585" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdUserSec.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure User Security for Multiple User Accounts</h1>
+        <p>If you configure users individually (that is, you are not using user templates) and you need to mass assign security to multiple users (for example, you have added a new room and many of your users need access to the room), then you can&#160;use&#160;the User Security function. You can use the User Security function to mass assign security for categories, processes, rooms, and statues for multiple users that have been individually configured.</p>
+        <p>This topic will provide information on:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#ConfigureUserSecurityMutlipleAccout">Configure User Security for Multiple User Accounts&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureCategory">Configure Mass User Security for a Category&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureProcess">Configure Mass User Security for a Process&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureRoom">Configure Mass User Security for a Room&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureStatus">Configure Mass User Security for a Status&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <p>Tip:&#160;If you need to mass assign security for queries to multiple users, you can do so from within the Query Builder itself. See the EMS User’s Manual for detailed information.</p>
+        <h2 class="Heading2"><a name="ConfigureUserSecurityMutlipleAccout"></a>Configure User Security for Multiple User Accounts&#160;</h2>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">System Administration</span> &gt; <span class="button">Security </span>&gt; <span class="button">User Security</span>. The User Security dialog box opens.</li>
+        </ol>
+        <p>User Security Dialog Box</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security.png" alt="emssg_SysAdminSecurity_image022.png" />
+        </p>
+        <ol start="2">
+            <li>On the Type dropdown list, select the item for which you are configuring user security—Category, Process, Room, or Status.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigureCategory"></a>Configure Mass User Security for a Category&#160;</h2>
+        <ol start="1">
+            <li>On the Category dropdown list, select the specific category for which you are configuring user security. The User Security dialog box is refreshed with a list of all individual users who do&#160;not&#160;have access to the selected category (the left Users list), and a list of all individual users who do have access to the selected category (the right Users list). All administrator users are displayed as well. (By default, an administrator user has access to all categories in an EMS database, and therefore, this list is not enabled.)</li>
+        </ol>
+        <p>User Security dialog box, Categories</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_1.png" alt="emssg_SysAdminSecurity_image023.png" />
+        </p>
+        <ol start="2">
+            <li>On the left Users list, select the user, or CTRL-click to select the multiple users who are to have access to the selected category, and then click the Move (&gt;) button to move the selected users to the right Users list.</li>
+            <li>Continue with any other security configuration as needed; otherwise, click <span class="button">Close </span>to close the User Security dialog box.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigureProcess"></a>Configure Mass User Security for a Process&#160;</h2>
+        <ol start="1">
+            <li>On the Process dropdown list, select the specific process for which you are configuring user security. The User Security dialog box is refreshed with a list of all individual users who do&#160;not&#160;have access to the selected process (the left Users list), and a list of all individual users who do have access to the selected process (the right Users list). All administrator users are displayed as well. (By default, an administrator user has access to all processes in an EMS database, and therefore, this list is not enabled.)</li>
+        </ol>
+        <p>User Security dialog box, Processes</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_2.png" alt="emssg_SysAdminSecurity_image024.png" />
+        </p>
+        <ol start="2">
+            <li>On the left Users list, select the user, or CTRL-click to select the multiple users who are to have access to the selected process, and then click the Move (&gt;) button to move the selected users to the right Users list.</li>
+            <li>Continue with any other security configuration as needed; otherwise, click <span class="button">Close </span>to close the User Security dialog box.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigureRoom"></a>Configure Mass User Security for a Room&#160;</h2>
+        <ol start="1">
+            <li>On the Building dropdown list, select a building, and then on the Room dropdown list select the specific room in the building for which you are configuring user security. The User Security dialog box is refreshed with a list of all individual users who do&#160;not&#160;have access to the selected room (the left Users list), a list of all individual users who have View and Book access to the selected room and a list of all individual users who have View Only access to the room. All administrator users are displayed as well. (By default, an administrator user has access to all processes in an EMS database, and therefore, this list is not enabled.)</li>
+        </ol>
+        <p>User Security dialog box, Rooms</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_3.png" alt="emssg_SysAdminSecurity_image025.png" />
+        </p>
+        <ol start="2">
+            <li>On the left Users list, select the user, or CTRL-click to select the multiple users who are to have access to the selected room, and then click the Move (&gt;) button to move the selected users to the appropriate Users list.</li>
+        </ol>
+        <p>Tip:&#160;EMS Enterprise has both the View and Book and the View Only access for user security. EMS Professional has just the View and Book access for user security.</p>
+        <ul>
+            <li><span class="button">View and Book</span>—A user who has access to the Special - Edit Critical Booking Information process&#160;and&#160;who is assigned to this option can reserve the room, move an event into or out of the room, change the time or status of an event that is scheduled in the room, and add resources to events in the room.</li>
+        </ul>
+        <p>Tip:&#160;The Special - View and Book Access On All Rooms process can be used as an alternative to manually assigning all rooms to the View and Book list.</p>
+        <ul>
+            <li><span class="button">View Only</span>—A user who is assigned to this option cannot reserve the room, move an event into or out of the room, or change the time or status of an event that is scheduled in the room; however, as long as the user has access to the appropriate category and to the Special - Edit Booking Details process, the user can view events in the room and add resources to events in the room.</li>
+        </ul>
+        <ol start="3">
+            <li>Continue with any other security configuration as needed; otherwise, click <span class="button">Close </span>to close the User Security dialog box.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigureStatus"></a>Configure Mass User Security for a Status&#160;</h2>
+        <ol start="1">
+            <li>On the Status dropdown list, select the specific status for which you are configuring user security. The User Security dialog box is refreshed with a list of all individual users who do&#160;not&#160;have access to the selected status (the left Users list), and a list of all individual users who do have access to the selected status (the right Users list). All administrator users are displayed as well. (By default, an administrative user has access to all statuses in an EMS database, and therefore, this list is not enabled.)</li>
+        </ol>
+        <p>User Security dialog box, Statuses</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdUserSec/Configuring User Security_4.png" alt="emssg_SysAdminSecurity_image026.png" />
+        </p>
+        <ol start="2">
+            <li>On the left Users list, select the user, or CTRL-click to select the multiple users who are to have access to the selected status, and then click the Move (&gt;) button to move the selected users to the right Users list.</li>
+            <li>Continue with any other security configuration as needed; otherwise, click <span class="button">Close </span>to close the User Security dialog box.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

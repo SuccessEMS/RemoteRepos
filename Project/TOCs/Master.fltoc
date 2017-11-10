@@ -712,7 +712,8 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigContacts.htm" />
       </TocEntry>
       <TocEntry
-        Title="System Administration &gt; Settings">
+        Title="System Administration &gt; Settings"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_SystemAdministrationSettings.htm">
         <TocEntry
           Title="Edit System Parameters"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EditSysParam.htm" />
@@ -720,22 +721,24 @@
           Title="Import Registration Information"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportRegInfo.htm" />
         <TocEntry
-          Title="Configure the Confirmation Email Subject Line" />
+          Title="Configure the Confirmation Email Subject Line"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigConfEmailSubLine.htm" />
         <TocEntry
-          Title="Configure Email Settings" />
+          Title="Configure Email Settings"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigEmailSet.html" />
         <TocEntry
-          Title="Sending Email From EMS" />
+          Title="Set Global Email Preference to SMTP and My Personal Email Preference to Outlook"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_SetGlobalEmailPrefSMTP.htm" />
         <TocEntry
-          Title="Set Global Email Preference to SMTP and My Personal Email Preference to Outlook" />
-        <TocEntry
-          Title="Configure Required Fields in the Reservation Wizard" />
+          Title="Configure Required Fields in the Reservation Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigReqFieldsinResWiz.html" />
       </TocEntry>
       <TocEntry
-        Title="System Administration &gt; Security">
+        Title="System Administration &gt; Security"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_SysAdminSecurity.html">
         <TocEntry
-          Title="Overview of Security Configuration" />
-        <TocEntry
-          Title="User Processes" />
+          Title="Overview of User Processes"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_OverviewUserProc.htm" />
         <TocEntry
           Title="Configure Users" />
         <TocEntry

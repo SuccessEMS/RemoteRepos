@@ -1,15 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="1932" MadCap:lastWidth="1619" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Configuring Email Settings</title>
-        
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Email Settings</h1><pre class="script" mt-export-translate="no" xml:space="preserve">wiki.page("EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/090_System_Administration_Configuration_-_Settings/040_Configuring_Email_Settings");</pre>
-        <br />
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>singlesource</a><a>reused</a>
+        <h1>Configure Email Settings</h1>
+        <p>The system administration email settings determine how your EMS implementation interacts with your organization’s email standard—will it interact with Microsoft Outlook or must you configure it to use a simple mail transfer protocol (SMTP), which is the default value? After installation of your EMS system, you must&#160;configure&#160;these settings.</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">System Administration</span> &gt; <span class="button">Settings </span>&gt;&#160;<span class="button">Email Settings</span>.&#160;The Email Settings dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_SysAdConfig/Configuring Email Settings.png" alt="emssg_SysAdminConfiguration_image005.png" />
+        </p>
+        <ol start="2">
+            <li>Use one of the following methods to configure email:</li>
+        </ol>
+        <ul>
+            <li>Leave<span class="button">&#160;Use SMTP&#160;</span>selected, and then enter the appropriate values for Mode, Server, and Port in the SMTP Email panel.</li>
+            <li>Select&#160;<span class="button">Use Microsoft Outlook Only</span>.</li>
+            <li>Select&#160;<span class="button">SMTP for Mass Email Only Otherwise Use Microsoft Outlook</span>, and then enter the appropriate values for Mode, Server, and Port in the SMTP Email panel.&#160;Select this third option if you want to use Outlook or Lotus Notes for all of your individual emails but use the mass email function found in the Browser and the Calendar. If you select this option and you use Lotus Notes, then individual emails open in the mass email window, but they are still sent via Lotus Notes.</li>
+            <li>Select&#160;<span class="button">Use Lotus Notes</span>. (Available only if Lotus Notes is installed on your computer.)</li>
+        </ul>
+        <ol start="3">
+            <li>Click&#160;<span class="button">OK</span>.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_SendEmailfromEMS.png" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         </p>
     </body>
 </html>

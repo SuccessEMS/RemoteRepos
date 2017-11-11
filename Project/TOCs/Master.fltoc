@@ -790,17 +790,23 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_VideoDisplayInterf.htm" />
       </TocEntry>
       <TocEntry
-        Title="System Parameters">
+        Title="System Parameters"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_SystemParam.htm">
         <TocEntry
-          Title="EMS Desktop Client Parameters" />
+          Title="EMS Desktop Client Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DCSystemParam.htm" />
         <TocEntry
-          Title="EMS Web App Parameters" />
+          Title="EMS Web App Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_WebAppParam.htm" />
         <TocEntry
-          Title="EMS for Outlook Parameters" />
+          Title="EMS for Outlook Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_OutlookSysParam.htm" />
         <TocEntry
-          Title="EMS Kiosk Parameters" />
+          Title="EMS Kiosk Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_KioskParam.htm" />
         <TocEntry
-          Title="EMS Mobile App Parameters" />
+          Title="EMS Mobile App Parameters"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_MobileAppParam.htm" />
       </TocEntry>
     </TocEntry>
     <TocEntry

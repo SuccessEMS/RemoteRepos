@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5013" MadCap:lastWidth="1585" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_SysAdTools.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Booking Move/Change Status Wizard</h1>
+        <p>The Booking Move/Change Status Wizard allows you to change critical information (date and/or status) for&#160;multiple&#160;bookings across&#160;multiple reservations in a single step.</p>
+        <p>Tip:&#160;Your users have access to the Change Booking Date/Time Wizard and the Change Booking Status Wizard in the Navigator. They can use these wizards to change critical booking information for multiple bookings in a single reservation.</p>
+        <p>This topic will provide the following information:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#UseWizard" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Use the Booking Move/Change Status Wizard</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Move" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Move Multiple Bookings to a Different Date&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Change" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Change the status for multiple bookings&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <h2><a name="UseWizard"></a>Use the Booking Move/Change Status Wizard</h2>
+        <ol start="1">
+            <li>On the EMS main menu, click <span class="button">System Administration </span>&gt; <span class="button">Tools </span>&gt; <span class="button">Booking Move/Change Status Wizard</span>.&#160;The Booking Move/Change Status Wizard opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and.png" alt="emssg_SysAdminTools_image029.png" />
+        </p>
+        <ol start="2">
+            <li>In the <span class="button">Start Date</span> field, enter the starting date for the bookings for which you are changing the date and/or status, and in the End Date field, enter the ending date.</li>
+            <li>Leave the default values set to (all) for the other search criteria (Building, Status, and Event Type), or optionally, select different values as needed.</li>
+        </ol>
+        <p>Tip:&#160;For Building, you can select (all) buildings, a specific building, a specific area, or a specific view.</p>
+        <ol start="4">
+            <li>Click <span class="button">Get Data</span>.&#160;The Select Bookings window opens. This window displays all the bookings that meet your search criteria.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_1.png" alt="emssg_SysAdminTools_image030.png" />
+        </p>
+        <ol start="5">
+            <li>Continue to one of the following:</li>
+        </ol>
+        <ul>
+            <li>To move multiple bookings to a different date below.</li>
+            <li>To change the status for multiple bookings.</li>
+        </ul>
+        <h2><a name="Move"></a>Move Multiple Bookings to a Different Date&#160;</h2>
+        <ol start="1">
+            <li>Select the booking, or CTRL-click to select the multiple bookings for which you are changing the date.</li>
+            <li>On the Select Bookings window, click Move.&#160;The Move Bookings dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_2.png" alt="emssg_SysAdminTools_image031.png" />
+        </p>
+        <ol start="3">
+            <li>Select a different value for the date, and then click <span class="button">OK</span>. The Results window opens. This window displays a list of all the selected bookings, whether the date change was successful.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Value</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Reschedule Booking Earlier</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The default value. Reschedule the bookings to an earlier date that is based on the number of days that you specify.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Reschedule Booking Later</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Reschedule the bookings to a later date based on the number of days that you specify.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Reschedule Booking to Specific Date</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Reschedule the bookings to a new date that you specify.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>The Results Window </p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_3.png" alt="emssg_SysAdminTools_image032.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to view only the bookings for the selected reservation that were NOT successfully changed, select Show Unchanged Only. To view the details for a specific booking that was changed, select the booking, and then click <span class="button">Go To</span>.</p>
+        <ol start="4">
+            <li>Click Close to close the Change Booking Date Results window and return to the Select Bookings window.</li>
+            <li>Repeat&#160;Step 1&#160;through&#160;Step 4&#160;until you have moved all the bookings as needed.</li>
+            <li>Do one of the following:</li>
+        </ol>
+        <ul>
+            <li>If you are done moving bookings to a different date, click Close to close the Select Bookings window.</li>
+            <li>If you also want to change the status for any of the bookings, continue&#160;to the next section.</li>
+        </ul>
+        <h2><a name="Change"></a>Change the status for multiple bookings&#160;</h2>
+        <ol start="1">
+            <li>Select the booking, or CTRL-click to select the multiple bookings for which you are changing the status.</li>
+            <li>On the Select Bookings window, click <span class="button">Change Status</span>.&#160;The Change Status dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_4.png" alt="emssg_SysAdminTools_image033.png" />
+        </p>
+        <ol start="3">
+            <li>On the Status dropdown list, select the new status for the bookings.</li>
+        </ol>
+        <p>Tip:&#160;If you select any type of Canceled status, then three additional fields—Reason, Who Canceled and Notes—are displayed on the Change Booking Status window. You must enter data in all three of these fields before you can continue in the Wizard.</p>
+        <ol start="4">
+            <li>Enter a Reconfirm Date if it is required for the new status that you selected.</li>
+            <li>Optionally, select Update Reservation Status to have the reservation-level status changed as well.</li>
+            <li>Click <span class="button">Finish</span>.&#160;The Results window opens. This window displays a list of all the selected bookings, whether the status change was successful or not.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_SysAdTools/Changing Booking Dates and_3.png" alt="emssg_SysAdminTools_image032.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to view only the bookings for the selected reservation that were NOT successfully changed, select Show Unchanged Only. To view the details for a specific booking that was changed, select the booking, and then click <span class="button">Go To</span>.</p>
+        <ol start="7">
+            <li>Click <span class="button">Close </span>to close the Change Booking Status Results window and return to the Select Bookings window.</li>
+            <li>Repeat&#160;Step 1&#160;through&#160;Step 7&#160;until you have changed the status for all the bookings as needed.</li>
+            <li>Do one of the following:</li>
+        </ol>
+        <ul>
+            <li>If you are done changing the status for the bookings, click <span class="button">Close </span>to close the Select Bookings window.</li>
+            <li>If you also want to move any of the bookings to a new date, see section above, “To change the status for multiple bookings”.</li>
+        </ul>
+    </body>
+</html>

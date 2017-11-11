@@ -1,15 +1,310 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title mt-export-translate="no">Configuring Additional Information for a Group</title>
-        
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="9646" MadCap:lastWidth="1071">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Configuring Additional Information for a Group</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Configuring Additional Information for a Group</h1><pre class="script" mt-export-translate="no" xml:space="preserve">wiki.page("EMS_V44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/080_Core_Configuration_-_Groups_and_Contacts/020_Configuring_Additional_Information_for_a_Group");</pre>
-        <br />
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>Web User</a><a>Group</a><a>Calculations</a><a>Reference Numbers</a><a>PO Numbers</a><a>singlesource</a><a>reused</a>
+        <h1 class="mt-export-title">Configuring Additional Information for a Group</h1>
+        <p>After you have configured a new group in your EMS database with the basic group information (group identifying information, billing information and/or other information), you have the option of configuring additional information for the group.</p>
+        <p>This topic will provide information that will allow you to:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#CreateEverydayUserGroup">Create an Everyday User from a Group</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#AssignGroup">Assign a Group to an Everyday User   Edit Section</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#AssignCalc">Assign Calculations to a Group</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigList">Configure a List of Billing Reference Numbers</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureListofPO">Configure a List of PO Numbers</MadCap:xref>
+            </li>
+        </ul>
+        <h2><a name="CreateEverydayUserGroup"></a>Create an Everyday User from a Group</h2>
+        <p>An "Everyday User" is a registered user who can submit requests for reservations or schedule reservations in EMS Web App. When you add a new group in your EMS database, you decide the “level” of the group that you are adding. For a group that is added at the individual (personnel/employee) level, you might also need to create an everyday user from the group. This user can then create and view reservations on behalf of a group or groups in EMS Web App. You can create only one everyday user from a group. When you create an everyday user, you can also specify one or more delegates for the everyday user. A delegate is an everyday user who can create and view reservations on behalf of another everyday user. See Also: Configuring Everyday Users.</p>
+        <ol>
+            <li>Open the Groups window and search for the group for which you are creating the everyday user.</li>
+            <li>On the Groups window, select the group, and then click <span class="button">Tools </span>&gt; <span class="button">Create Everyday User</span>. A group-specific dialog box opens. the everyday user tab is the active tab.</li>
+        </ol>
+        <p>Tip: The User Defined Fields tab shows the prompts an everyday user must answer when requesting an account through EMS Web App and it is not relevant to the procedure described below.</p>
+        <ol MadCap:continue="true">
+            <li>Enter the information for the new everyday user. You can make additional changes later.</li>
+        </ol>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Field</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Name
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+Automatically populated after you select the group from the Groups window.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Password
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+The password that an everyday user must enter to log in to EMS Web App.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Email address
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+If this information has been entered in the Groups window for the group, then this field is automatically populated after you select the group from the Groups window. If the field is blank, you must enter the full email address for the user. (The user must enter this address to log in to EMS Web App.)</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Phone/Fax
+
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Optional fields. If this information has been entered for the group, then these fields are automatically populated after you select the group from the Groups window. If the fields are blank, you can enter values if needed.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Notes
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+Optional field.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">External Reference
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+Optional field. Links the everyday user to an outside program if needed.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Network ID
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+Optional field. the everyday user’s network ID.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Email Opt Out
+
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">Select this option if the everyday user is not to receive automatic emails (such as reservation summary emails) from EMS Web App. The user will still receive manually sent emails.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Status
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>
+Required field. Select the status for the everyday user:
+
+</p>
+                        <ul>
+                            <li><span class="button">Active</span>—the everyday user can log in to EMS Web App.
+
+</li>
+                            <li><span class="button">Inactive</span>—The user cannot log in to EMS Web App and is instructed to contact the EMS administrator.
+
+</li>
+                            <li><span class="button">Pending</span>—the everyday user cannot log in to EMS Web App and is informed that he/she must check back at a later time.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Security Template
+
+Required field</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">This determines the everyday user's access to the system—the menu items that the user can see and the information that the user can view in a tooltip when 'rolling-over' an event in EMS Web App.
+
+Note: For detailed information about web security templates, see Configuring Web Templates.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">Time Zone
+
+</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">Required field. Select the time zone for the user.</td>
+                </tr>
+            </tbody>
+        </table>
+        <ol MadCap:continue="true">
+            <li>Open the Everyday User Process Templates tab and on the Available list, select one or more process templates (use CTRL-click to select multiples) to which you are assigning the user, and Move (&gt;) them to the Selected list.</li>
+        </ol>
+        <p>Tip: A "process template" defines the functions available to each type of everyday user in EMS Web App when they submit a request for a reservation. For detailed information about process templates, see Configuring Web Templates.</p>
+        <ol MadCap:continue="true">
+            <li>Open the Groups tab, where you specify the groups on whose behalf the everyday user can view and make reservations in EMS Web App. You can use the Find and Group Type fields, and then click Display to search for specific groups. In the Available list, select one or more groups and move (&gt;) them to the Selected list. If you do not search and simply click Display, the list shows all active groups in your system.</li>
+            <li>Open the <span class="button">Delegates </span>tab, where you specify the delegates for the everyday user. You can search for specific delegates and move (&gt;) them to the Selected list.</li>
+        </ol>
+        <p>Tip: The Spelling option enables you to spell-check any information that you manually entered for the everyday user.</p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="button">OK</span>. The dialog box for creating an everyday user closes and a message opens indicating that the everyday user was created successfully.</li>
+            <li>Click <span class="button">OK </span>to close the message and return to the Groups window.</li>
+        </ol>
+        <h2><a name="AssignGroup"></a>Assign a Group to an Everyday User   Edit Section</h2>
+        <p>When you add a new group in your EMS database, you should also assign the group to an everyday user. This everyday user can then create and view reservations on behalf of the group in EMS Web App. You can assign a group to one or more everyday users.</p>
+        <ol>
+            <li>Open the Groups window and search for the group to which you are assigning the everyday user. </li>
+            <li>On the Groups window, select the group, and then click <span class="button">Tools </span>&gt; <span class="button">Assign to Everyday Users</span>. The Assign Group dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigAddInfoGroup1.jpg" />
         </p>
+        <ol MadCap:continue="true">
+            <li>Do one of the following to select the everyday users whom you are assigning to the group:</li>
+        </ol>
+        <ul>
+            <li>Leave the Find field blank, and then click Display to open a list of all currently active everyday users. Select the everyday user, or CTRL-click to select multiple everyday users, and then Move (&gt;) to the Selected list.</li>
+            <li>In the Search By dropdown list, select the option by which to search (Email Address or User Name) and then in the Find field, enter a search string, and then click Display. Select the everyday user (CTRL-click to select multiple users), and then Move (&gt;) to the Selected list.</li>
+        </ul>
+        <ol start="4">
+            <li>Click <span class="button">Finish</span>. A message opens indicating that the group was assigned successfully.</li>
+            <li>Click <span class="button">OK </span>to close the message and return to the Groups window.</li>
+        </ol>
+        <h2><a name="AssignCalc"></a>Assign Calculations to a Group</h2>
+        <p>Calculations are additional charges that can be applied to billable items (a category, a group, a group type, a resource, or a room) such as gratuity or sales tax. When you configure a group, you can assign the calculations that are to always apply to the group.</p>
+        <ol>
+            <li>Open the Groups window and search for the group to which you are assigning the calculations. See Search for a Group and/or Contact.</li>
+            <li>On the Groups window, select the group, and then click <span class="button">Open</span>. A group-specific window opens. The group is automatically selected in the window.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigAddInfoGroup2.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>In the left pane of the group-specific window, select <span class="button">Calculations</span>. The right pane of the group-specific window displays any calculations that have already been assigned to the group.</li>
+            <li>Click <span class="button">Edit</span>. The Calculations dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigAddInfoGroup3.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>On the Available list, select the calculation (CTRL-click to select multiple calculations) that you want to always apply to this group, and then Move (&gt;) to the Selected list.</li>
+        </ol>
+        <p>Tip:&#160;If the appropriate calculation is not available, you can configure it. See Configuring Calculations.</p>
+        <p>Remember, you can also assign calculations to a group type. (See Configuring Group Types.) If you have already assigned calculations for this group’s type, then these calculations are automatically applied to the group. The calculations show in the Selected list after you click OK and save the group.</p>
+        <ol MadCap:continue="true">
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click OK to close the Calculations dialog box and return to the group-specific window.</li>
+        </ol>
+        <h2><a name="ConfigList"></a>Configure a List of Billing Reference Numbers</h2>
+        <p>You can configure a master list of billing reference numbers that are specific to the group.</p>
+        <ol>
+            <li>Open the Groups window and search for the group for which you are configuring the master billing reference numbers list.</li>
+            <li>On the Groups window, select the group, and then click <span class="button">Open</span>. A group-specific window opens showing the group as automatically selected.</li>
+            <li>In the left pane of the group-specific window, select Billing References. A list of all currently active billing reference numbers for the group shows in the right pane of the group-specific window.</li>
+        </ol>
+        <p>Tip: You can display all billing reference numbers regardless of status by clicking Show Inactive. Any inactive billing reference numbers show in italics in the right pane.</p>
+        <ol MadCap:continue="true">
+            <li>Click <span class="button">New</span>. The Billing Reference dialog box opens.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigAddInfoGroup4.jpg" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>
+                <p>Enter the information for the new billing reference number.</p>
+            </li>
+        </ol>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Option</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Billing Reference Number
+
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">The billing reference number that is associated with the group.
+
+Note: The reference can be alphanumeric and it has a maximum of 100 characters, including spaces.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Description
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+A description of the billing reference number.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Notes
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+Any other comments or statements that are applicable for the billing reference number.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Inactive
+</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+Leave this option blank to add the reference as an active reference (the billing reference number is to be available when a reservation is made for the group). Select this option to inactivate the billing reference number.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tip: You can click Spelling to spell-check the information for the PO number before you save it.</p>
+        <ol MadCap:continue="true">
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click OK to close the Billing Reference Number dialog box and return to the group-specific window.</li>
+        </ol>
+        <h2><a name="ConfigureListofPO"></a>Configure a List of PO Numbers</h2>
+        <p>You can configure a master list of PO numbers that are specific to the group. That way, if you need to edit the group information, instead of having to manually enter a new or different PO number, you can simply select it from this master list.</p>
+        <p>1. Open the Groups window and search for the group for which you are configuring the master PO numbers list.</p>
+        <p>2. On the Groups window, select the group, and then click Open. A group-specific window open. The group is automatically selected in the window.</p>
+        <p>3. In the left pane of the group-specific window, select PO Numbers. A list of all currently active PO numbers for the group shows in the right pane.</p>
+        <p>Tip: You can display all PO numbers regardless of status: click Show Inactive. Inactive PO numbers show in italics.</p>
+        <p>4. Click New. The PO Number dialog box opens.</p>
+        <p>
+            <img src="Images/DC_CG_ConfigAddInfoGroup5.jpg" />
+        </p>
+        <ol start="5">
+            <li>Enter the information for the new PO number.</li>
+        </ol>
+        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/PatternedRows.css');margin-left: auto;margin-right: auto;" class="TableStyle-PatternedRows" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">Option</th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">PO Number
+
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The PO number that is associated with the group.
+
+</p>
+                        <p>Note: The reference can be alphanumeric and it has a maximum of 100 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">Description
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+A description of the PO number.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">Notes
+</td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+Any other comments or statements that are applicable for the PO number.</td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">Inactive
+</td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+Leave this option blank to add the PO number as an active number (the PO number is to be available when a reservation is made for the group). Select this option to inactivate the PO number.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tip: You can click <span class="button">Spelling </span>to spell-check the information for the PO number before you save it.</p>
+        <ol MadCap:continue="true">
+            <li>Continue with any other optional configuration for the group as needed; otherwise, click <span class="button">OK </span>to close the dialog box and return to the group-specific window.</li>
+        </ol>
+        <p>&#160;</p>
     </body>
 </html>

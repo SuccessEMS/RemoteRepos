@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="8989" MadCap:lastWidth="965" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html xml:lang="en-us" MadCap:lastBlockDepth="5" MadCap:lastHeight="12656" MadCap:lastWidth="1122" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title></title>
         <link href="../Resources/Stylesheets/DTC_V44_CGBookElements1.css" rel="stylesheet" />
     </head>
@@ -44,12 +44,11 @@
             </li>
         </ul>
         <p>Note:&#160;The EMS Email Notification Service must be installed and configured for Email Notifications to be sent.&#160;See the&#160;Email Notification Service Install Instructions&#160;for details.</p>
-        <p>The timing of notification emails also depends&#160;on settings in&#160;three EMS system parameters:</p>
+        <p>The timing of notification emails also depends&#160;on settings in&#160;the following three EMS system parameters (See&#160;System Parameters):</p>
         <ul>
             <li>Exclude Building Closures on Notifications</li>
             <li>Exclude Weekends on Notifications</li>
             <li>Ignore Building Closure/Weekend Notification Settings Beyond xx Days</li>
-            <li>&#160;See&#160;System Parameters.</li>
         </ul>
         <MadCap:dropDown>
             <MadCap:dropDownHead>
@@ -85,7 +84,7 @@
             <li>Room Changes&#160;</li>
             <li>Status Changes&#160;</li>
         </ul>
-        <p>​<img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules.jpg" alt="https://success.emssoftware.com/@api/deki/files/3963/NotificationBookings2.jpg?revision=1" /></p>
+        <p>​<img src="Images/DC_CG_ConfigNot1.png" alt="https://success.emssoftware.com/@api/deki/files/3963/NotificationBookings2.jpg?revision=1" /></p>
         <ol start="1">
             <li>The&#160;Setup Type&#160;field in the Notification Rule Wizard enables you to ensure&#160;that changes to a booking's&#160;room setup will appropriately notify attendees.&#160;(See&#160;this section&#160;for configuring Setup Types).&#160;You can select one of the existing setup types, or one of the options below.</li>
         </ol>
@@ -107,7 +106,7 @@
             <li>Deleted/Canceled&#160;Service Orders</li>
         </ul>
         <ol start="1">
-            <li>On the&#160;Category&#160;dropdown list, select the category for which the service order Notification is to be generated.&#160;If the appropriate category is not available, you can configure it. See&#160;Configuring Categories.&#160;<br />After selecting a category, the&#160;State,&#160;Grouping, and&#160;Resource&#160;options&#160;appear.&#160;You can select (all), (multiple), (none), or an individual item on the list.&#160;To notify on a whole category, keep the selections set to (all).</li>
+            <li>On the&#160;Category&#160;dropdown list, select the category for which the service order Notification is to be generated.&#160;If the appropriate category is not available, you can configure it. See&#160;<MadCap:xref href="DesktopClient_ConfigCategory.html">Configure Categories</MadCap:xref>.&#160;<br />After selecting a category, the&#160;State,&#160;Grouping, and&#160;Resource&#160;options&#160;appear.&#160;You can select (all), (multiple), (none), or an individual item on the list.&#160;To notify on a whole category, keep the selections set to (all).</li>
         </ol>
         <ul>
             <li>State&#160;- Select the corresponding state that you the Notification to trigger on.&#160; "New Service Orders" will have to start in that state.&#160; "Changes To Service Orders" will have to change into that state.&#160; More than one state may be selected.</li>
@@ -137,7 +136,7 @@
             <li>Click&#160;<span class="button">Next</span>.&#160;The Users window opens.</li>
         </ol>
         <p>
-            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.png" alt="https://success.emssoftware.com/@api/deki/files/4206/clipboard_e2efff6b89bea461320394707aabedb26?revision=1&amp;size=bestfit&amp;width=946&amp;height=622" />
+            <img src="Images/DC_CG_ConfigNot2.png" alt="https://success.emssoftware.com/@api/deki/files/4206/clipboard_e2efff6b89bea461320394707aabedb26?revision=1&amp;size=bestfit&amp;width=946&amp;height=622" />
         </p>
         <ol start="7">
             <li>Select&#160;users and email addresses to which to&#160;send notifications:</li>
@@ -158,7 +157,7 @@
             <li>If you have not selected New Everyday Users, click&#160;<span class="button">Next</span>.&#160;The Rooms window opens.</li>
         </ol>
         <p>
-            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_1.gif" alt="https://success.emssoftware.com/@api/deki/files/1390/NotificationPage3.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+            <img src="Images/DC_CG_ConfigNot3.png" alt="https://success.emssoftware.com/@api/deki/files/1390/NotificationPage3.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
         </p>
         <ol start="9" MadCap:continue="true">
             <li>Search for the rooms to which the Notification applies:</li>
@@ -174,21 +173,26 @@
             <li>Click&#160;<span class="button">Next</span>.&#160;The Statuses window opens.</li>
         </ol>
         <h2 class="Heading2"><a name="SelectBookingStatus"></a>Select Booking Statuses Requiring Notifications&#160;</h2>
-        <p>
-            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_2.gif" alt="https://success.emssoftware.com/@api/deki/files/1391/NotificationPage4.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
-        </p>
         <ol start="1">
-            <li>On the&#160;Available&#160;list, select the booking status, or CTRL-click to select the multiple statuses for which the Notification is to apply, and then click the Move button (&gt;) to move the selected statuses to the Selected list.If the appropriate status is not available, you can configure it. See&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm">Configure Statuses</MadCap:xref>.</li>
+            <li>
+                <p>Click <span class="button">Next</span>. The Statuses window opens, where you can specify the status of an event that should trigger a notification.</p>
+            </li>
+            <li>
+                <p>Move (&gt;) booking statuses (use CTRL-click to select multiple statuses) that should trigger a notification from the <span class="button">Available </span>list to the Selected list. If the appropriate status is not listed, you can configure it. See&#160;<MadCap:xref href="../1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm">Configure Statuses</MadCap:xref>.</p>
+            </li>
         </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigNot4.png" alt="https://success.emssoftware.com/@api/deki/files/1391/NotificationPage4.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+        </p>
         <h2><a name="SelectEvent"></a>Select Event Types Requiring Notifications&#160;</h2>
         <ol start="1">
-            <li>Click&#160;<span class="button">Next</span>.&#160;The Event Types window opens.</li>
+            <li>Click&#160;<span class="button">Next</span>.&#160;The Event Types window opens, where you can specify the type of event that should trigger a notification.</li>
         </ol>
         <p>
-            <img src="../Resources/Images/DTC_V44_CGBookElements/Configuring Notification Rules_3.gif" alt="https://success.emssoftware.com/@api/deki/files/1392/NotificationPage5.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
+            <img src="Images/DC_CG_ConfigNot5.png" alt="https://success.emssoftware.com/@api/deki/files/1392/NotificationPage5.gif?revision=1&amp;size=bestfit&amp;width=949&amp;height=625" />
         </p>
         <ol start="14" MadCap:continue="true">
-            <li>On the&#160;Available&#160;list, select the event type, or CTRL-click to select the multiple event types for which the Notification is to apply, and then click the Move button (&gt;) to move the selected event types to the Selected list.If the appropriate event type is not available, you can configure it. See&#160;<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigEventType.html" title="Configuring Event Types" alt="Configuring Event Types">Configuring Event Types</a>.</li>
+            <li>Move (&gt;) event types (use CTRL-click to select multiple statuses) that should trigger a notification from the Available list to the Selected list. If the appropriate event type is not listed, you can configure it. See&#160;<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigEventType.html" title="Configuring Event Types" alt="Configuring Event Types">Configuring Event Types</a>.</li>
         </ol>
         <ol start="15" MadCap:continue="true">
             <li>Click <span class="button">Finish</span>.&#160;The Notification Rule Wizard closes. You return to the Rules window with the newly configured Notification Rule automatically selected.</li>

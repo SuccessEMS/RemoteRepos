@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="8" MadCap:lastHeight="11170" MadCap:lastWidth="1071" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGGroupCon.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Configure Groups</h1>
+        <p>A <span class="button">group </span>is a team of users for which reservations are made at your facilities. A group can be as granular as a single person, or it can represent an entire organization or department of people (for example, an Academic Affairs group). A group is one of the four core data items that you must configure so that your users can make reservations. A group can be an internal or external entity and it can be an organization or an individual. If you want to first confirm that a group has not already been configured, you can search for the group.</p>
+        <p>This topic will provide information on the following:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#SearchforGroupContact">Search for a Group and/or Contact</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureGroup">Configure&#160;Groups&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <p>Tip:&#160;Your organization might use a different term (such as client, customer, and so on) to identify the entities for which reservations are made at your facilities. To change the term from “group” to your organization-specific term throughout your EMS system (menus, window and dialog box titles, confirmation headings, and so on), you must edit the "Group Title Plural"&#160;and "Group Title Singular" parameters. See&#160;Editing System Parameters.</p>
+        <p>Additionally, if your organization has licensed EMS Human Resources Toolkit, this affects how data is imported for your users, groups, and contacts; see the HR Toolkit Installation Guide.</p>
+        <h2 class="Heading2"><a name="SearchforGroupContact"></a>Search for a Group and/or Contact</h2>
+        <ol start="1">
+            <li>On the toolbar, click the Groups icon.&#160;The Groups window opens. The Results tab is the active tab. By default, when the Results tab first opens, it lists the first 1000 groups that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_2.png" alt="emssg_CoreConfigurationGroupsContacts_image002.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to change the number of records that are displayed in the Groups window, click Options, and then on the Group Options dialog box, select a different number of records to return.</p>
+        <ol start="2">
+            <li>Open the Filter tab and set your search criteria.</li>
+        </ol>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Display</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>• Group—Display all groups that meet your search criteria on the Results tab.</p>
+                        <p>• Contact—Display all contacts that meet your search criteria on the Results tab.</p>
+                        <p>Note:&#160;When a list of contacts is displayed, the contact’s group is also displayed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Search Fields</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>• Starts with—The string is not case-sensitive, but your search is limited to the exact order of the characters in the string, and the string must begin with the information for which you are searching. For example,&#160;Assoc&#160;returns&#160;Association of Broadcasters but not Biomedical Student Association.</p>
+                        <p>• Contains—Your search is limited to the exact order of the characters in the string, but the string is not case-sensitive, and the string can be found anywhere in your search results. For example,&#160;Assoc&#160;returns both&#160;Association of Broadcasters and Biomedical Student&#160;Association.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Group</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Fields are available if you select Groups for Display. Enter values as needed in any or all fields.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Contact</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Fields are available only if you select Contacts for Display. Leave all fields set to their default search values to search for all active contacts that are currently configured in your EMS database, or enter values as needed in any or all fields.</p>
+                        <p>Note:&#160;If you select Contact, then both the Group fields and the Contact fields are available for searching. If you enter data in both sets of fields when you are searching for a contact, then your search criteria must be met for both the contact&#160;and&#160;the contact’s group for the contact to be displayed on the Results tab.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td colspan="2" class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Note:&#160;To reset the Filter at any time to its default settings, click Reset Filter.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="3">
+            <li>Click&#160;<span class="button">Get Data</span>.&#160;The Results tab opens with a list of search results that meet all your search criteria.</li>
+            <li>
+                <p>To further filter the display on the Results tab, in the Search field, enter a search string. The list of groups is dynamically updated as you enter your search string. Your search is limited to the exact order of the characters in the string, but the string is not case-sensitive, and it can appear anywhere in your search results. For example, a search string of Assoc returns both Association of Broadcasters and Biomedical Student Association.</p>
+            </li>
+        </ol>
+        <h2><a name="ConfigureGroup"></a>Configure&#160;Groups&#160;</h2>
+        <p>The following procedure describes the basic information that an EMS administrator typically configures for a group. Groups configured this way are generally a satisfactory starting point for the reservationists at your organization, and they always have the option of configuring additional information for a group if needed. For example, they can configure comments or reminders for a group. Your reservationists can also configure and/or edit a groups “on the fly” during the reservation process.</p>
+        <p>Tip: Remember that before you configure a group, you might want to search for the group to verify that it has not already been configured.</p>
+        <ol start="1">
+            <li>On the toolbar, click the <span class="button">Groups </span>icon.&#160;When the Results tab first opens, it lists up the first 1000 groups that are currently configured in your EMS database and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_3.png" alt="emssg_CoreConfigurationGroupsContacts_image003.png" />
+        </p>
+        <ol start="2">
+            <li>Click&#160;<span class="button">New</span>.&#160;The Group dialog box opens. The Group tab is the active tab.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_4.png" alt="emssg_CoreConfigurationGroupsContacts_image004.png" />
+        </p>
+        <ol start="3">
+            <li>Enter the summary information for the new group.</li>
+        </ol>
+        <p>Tip:&#160;The only required information is the group name. All other information on all tabs is optional and can be added at a later date when needed.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Name</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Required field. The name of the group.</p>
+                        <p>Note:&#160;The name can be a maximum of 50 characters, including spaces.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Address</p>
+                        <p>City</p>
+                        <p>ST</p>
+                        <p>Country</p>
+                        <p>Zip</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The street or mailing address for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>International</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option to drop the State and Zip fields for an international group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Group Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>If the appropriate group type is not available, you can configure it. See&#160;“Configuring Group Types”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Phone</p>
+                        <p>Fax</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The phone number and fax number for the group.</p>
+                        <p style="text-align: left;">Note:&#160;The Phone and Fax fields have a dropdown list available from which you can select a different value (Fax, Mobile, Other, or Phone) for the field label, or you can enter a user-defined value. To enter a user-defined value, double-click the current field label to select it, and then enter the user-defined value over the selected label.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Email Address</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The email address for the group.</p>
+                        <p>Note:&#160;If your computer is connected to a network, click the Search icon&#160;to open a Global Address Lookup dialog box and search for the email address.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>URL</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The URL for the group’s website.</p>
+                        <p>Note: Everyday Users can link to this group's web site on EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Default Contact</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Populated with the name of the default contact for the group&#160;after&#160;you have defined default contacts for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Require Contacts</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option if the group is to&#160;always require&#160;a contact when a reservation is being made for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>VIP</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select this option if the group is to be designated as a VIP group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Available to Web Users</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option if users are to be able to look up the group in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Inactive</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Leave this option blank to add the group as an active group. Select this option to inactivate the group.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tip:&#160;The only required information is the group name. All other information on all tabs is optional and can be added at a later date when needed.</p>
+        <ol start="4">
+            <li>Optionally, do one or both of the following;.</li>
+        </ol>
+        <ul>
+            <li>Open the Billing Information tab and add the default billing information for the group. The values you specify here will be used as the default values when a new reservation is made for the group. An EMS user can change these values if needed.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_6.png" alt="emssg_CoreConfigurationGroupsContacts_image006.png" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept: Entering Billing Info Here Assigns It To The Group</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>This means that whenever a member of this group books space, this billing info will be applied to the booking. Therefore, the best practice is to first define you Pricing Plans, Payment Types, and other billing info before defining it here for the group.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Pricing Plan</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If the appropriate pricing plan is not available, you can configure it. See&#160;Configuring Pricing Plans.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Payment Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p style="text-align: left;">If the appropriate payment type is not available, you can configure it. See&#160;Configuring Payment Types.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Salesperson</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The salesperson for the event.</p>
+                        <p>Note:&#160;An EMS user is designated as a Salesperson at the time that the user’s account is configured. If you do not see the appropriate user in the list, you can edit an existing user account, or create a new user account as needed. See&#160;Configuring User Accounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Event Coordinator</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The event coordinator for the group.</p>
+                        <p>Note:&#160;An EMS user is designated as an Event Coordinator at the time that the user’s account is configured. If you do not see the appropriate user in the list, you can edit an existing user account, or create a new user account as needed. See&#160;Configuring User Accounts.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Sales Category</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p style="text-align: left;">If the appropriate sales category is not available, you can configure it. See&#160;Configuring Sales Categories.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Status</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The status is a way to indicate the standing or ranking of the group. The default values are the following:</p>
+                        <ul>
+                            <li><span class="button">OK</span>—A reservation can be made for the group. (In your organization, this status could indicate that the group is current in payments due.)</li>
+                            <li><span class="button">Warning</span>—If a group status is set to Warning, then a Warning message opens when you make a reservation for the group. It does not, however, prevent a reservation from being made for the group.</li>
+                            <li><span class="button">Bad</span>—If a group status is set to Bad, then reservations cannot be made for the group.</li>
+                        </ul>
+                        <p>Note:&#160;You can always change the default values for these group statuses. See&#160;Editing System Parameters.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Billing Reference Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>You can manually enter data into the field, or you can click the Search icon&#160;to open a master list of billing reference numbers and select a reference.</p>
+                        <p>Note:&#160;To define a list of eligible billing references that are specific to the group, see&#160;Configuring Additional Information for a Group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>PO Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>You can manually enter data into the field, or you can click the Search icon&#160;to open a master list of PO Numbers and select a PO number.</p>
+                        <p>Note:&#160;To define a list of eligible PO numbers that are specific to the group, see&#160;Configuring Additional Information for a Group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>External Reference</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Links the group to an outside program, if needed.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>If the appropriate account is not available, you can configure it. See&#160;Configuring Accounts.</p>
+                        <p>Note:&#160;This field is displayed only if the EMS system parameter “Show Account Field on Group” is set to “Yes.” See&#160;EMS System Parameters.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tip:&#160;The values that you specify here are the default values that are applied when a new reservation is made for the group. An EMS user can change these values if needed.</p>
+        <ul>
+            <li>Open the <span class="button">Other </span>tab and add any other identifying information for the group as needed.</li>
+        </ul>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_7.png" alt="emssg_CoreConfigurationGroupsContacts_image007.png" />
+        </p>
+        <table style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Network ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The Windows login for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Personnel Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Organization number for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Badge Number</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Badge number for the group.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Other ID</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>Any secondary ID for the group.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="5">
+            <li>Click&#160;<span class="button">OK</span>.&#160;The Group dialog box closes and a group-specific window opens with the newly configured group automatically selected. You can use the options on this window to carry out additional configuration for the group. See&#160;Configuring Additional Information for a Group.</li>
+        </ol>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGGroupCon/Configuring Groups_8.png" alt="emssg_CoreConfigurationGroupsContacts_image008.png" />
+        </p>
+    </body>
+</html>

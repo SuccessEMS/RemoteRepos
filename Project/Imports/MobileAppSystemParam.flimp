@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="true"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-11T09:55:55.2655159-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Jen.Naused\Desktop\11-1-17\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-11T09:56:07.0303143-07:00">
+  <Files>
+    <Url
+      Source="../../../../Documents/MobileAppSystemParam.docx"
+      AbsoluteSource="file:///C:/Users/Jen.Naused/Documents/MobileAppSystemParam.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/MobileAppSystemParam/KeyValue tblRegistry Name.htm"
+      TimeStamp="11/11/2017 9:56:02 AM" />
+    <Url
+      Source="../TOCs/MobileAppSystemParam.fltoc"
+      TimeStamp="11/11/2017 9:56:02 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/MobileAppSystemParam.css"
+      TimeStamp="11/11/2017 9:56:02 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles />
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles />
+  <UsedCharacterStyles />
+</MsWordImport>

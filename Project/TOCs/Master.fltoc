@@ -771,24 +771,23 @@
           Title="Override Existing Bookings Utility"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverrideExistingBookUtil.html" />
         <TocEntry
-          Title="Import Reservations Utility">
-          <TocEntry
-            Title="Best Practices: Using the Reservations Import Utility" />
-        </TocEntry>
+          Title="Import Reservations Utility"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportResUtil.htm"></TocEntry>
         <TocEntry
-          Title="View and Email Logged-In Users" />
+          Title="View and Email Logged-In Users"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ViewEmailLoggedUsers.htm" />
         <TocEntry
-          Title="Currency Configuration Wizard" />
+          Title="Deleting Old Data"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DeleteOldData.htm" />
         <TocEntry
-          Title="Deleting Old Data" />
+          Title="Currency Configuration Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_CurrencyConfigWiz.htm" />
         <TocEntry
-          Title="Edit Booking Dates and/or Statuses" />
+          Title="Booking Move/Change Status Wizard"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_BookingMoveChangeStatusWiz.htm" />
         <TocEntry
-          Title="Migrate Data" />
-        <TocEntry
-          Title="Configure Field Behavior for Billing Reference and PO Numbers" />
-        <TocEntry
-          Title="Video Display Interface" />
+          Title="Video Display Interface"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_VideoDisplayInterf.htm" />
       </TocEntry>
       <TocEntry
         Title="System Parameters">

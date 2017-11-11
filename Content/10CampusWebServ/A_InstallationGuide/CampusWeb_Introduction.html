@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1378.333" MadCap:lastWidth="967" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1098" MadCap:lastWidth="902" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Introduction</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
@@ -8,82 +8,39 @@
         <h1>
             <MadCap:annotation MadCap:createDate="2017-10-25T11:52:27.3368684-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Does Campus Web Service have a configuration guide or is the CampusWeb_EMSConfigSteps all the configuration info?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T11:53:08.5506446-06:00">Introduction</MadCap:annotation>
         </h1>
-        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');
-</pre>
         <p><span><span>EMS Campus uses a web service to manage communication between the EMS Campus database and the Student Information System (SIS). The web service reads courses and course-related data from the SIS database. Then, once a schedule for a term is published, the web service updates course room assignments in the SIS.&#160; This document provides an overview of the EMS Campus Web Service and outlines the installation process.</span></span>
         </p>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-            <tbody>
-                <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img alt="" class="internal default" style="width: 26px;height: 26px;" width="26px" height="26px" />
-                    </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Important:</span></strong>If you are upgrading from EMS Campus 2.x, a new version of the EMS Campus Web Service including the queries.xml and views.sql files may be required.&#160; Tab-delimited file format specifications may also have changed for the Courses.txt file.&#160; Please contact your Client Services Consultant to evaluate and discuss any potential impacts to your installation.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <p>Important:&#160;If you are upgrading from EMS Campus 2.x, a new version of the EMS Campus Web Service including the queries.xml and views.sql files may be required.&#160; Tab-delimited file format specifications may also have changed for the Courses.txt file.&#160; Please contact your Client Services Consultant to evaluate and discuss any potential impacts to your installation.</p>
         <h2>
             <MadCap:annotation MadCap:createDate="2017-10-25T10:43:07.3674757-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This section info and below were deki from Learn About Our Applications &gt; Gerenal FAQs &gt; How Does EMS Integrate with Other Software and Hardware." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T10:44:08.9718325-06:00">Course</MadCap:annotation> Data: Student Information Systems (SIS)</h2>
-        <p class="p_1">EMS integrates with most commercial and many custom SIS/ERP systems, saving your institution time and eliminating data entry duplication.&#160;The optional&#160;EMS Campus Web Service provides&#160;bi-directional integration so that course data and instructor information is pulled into EMS, and&#160;rooms assigned in EMS are then&#160;written back to the SIS. With SIS integration, you can:</p>
+        <p>EMS integrates with most commercial and many custom SIS/ERP systems, saving your institution time and eliminating data entry duplication.&#160;The optional&#160;EMS Campus Web Service provides&#160;bi-directional integration so that course data and instructor information is pulled into EMS, and&#160;rooms assigned in EMS are then&#160;written back to the SIS. With SIS integration, you can:</p>
         <ul class="ul_1">
-            <li class="li_1">Pull course and instructor information from the SIS to create multiple scheduling scenarios.</li>
-            <li class="li_1">Quickly publish selected scheduling scenarios for students and instructors to view.</li>
-            <li class="li_1">Allow departments to collaborate online for a paperless planning process.</li>
-            <li class="li_1">Easily identify all new data moved into EMS for review.</li>
-            <li class="li_1">Report on seat fill percentage, time block availability, utilization trends, and more.</li>
+            <li>Pull course and instructor information from the SIS to create multiple scheduling scenarios.</li>
+            <li>Quickly publish selected scheduling scenarios for students and instructors to view.</li>
+            <li>Allow departments to collaborate online for a paperless planning process.</li>
+            <li>Easily identify all new data moved into EMS for review.</li>
+            <li>Report on seat fill percentage, time block availability, utilization trends, and more.</li>
         </ul>
-        <p class="p_2"><span class="span_1">See Also:&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Installing_%26_Configuring_EMS_Academic_Planning/Installing_EMS_Campus_Web_Service" title="Installing EMS Campus Web Service and White Paper"><span class="span_2">EMS Campus Web Service White Paper</span></a><span class="span_3">.</span>
+        <p><span class="span_1">See Also:&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Installing_%26_Configuring_EMS_Academic_Planning/Installing_EMS_Campus_Web_Service" title="Installing EMS Campus Web Service and White Paper"><span class="span_2">EMS Campus Web Service White Paper</span></a><span class="span_3">.</span>
         </p>
         <h3>Supported SIS</h3>
-        <p class="p_3">You can manually or automatically synchronize your campus-specific SIS data (Instructors, Course Types, Subjects, and Terms) with EMS, using the following supported SIS.</p>
-        <p class="p_4">• Ellucian’s Banner</p>
-        <p class="p_4">• Ellucian’s Colleague (on SQL or Oracle platform)</p>
-        <p class="p_4">• Ellucian’s PowerCampus</p>
-        <p class="p_4">• Oracle’s Peoplesoft</p>
-        <p class="p_4">• Jenzabar CX and EX</p>
-        <table class="table_1">
-            <col style="width: 63pt;">
-            </col>
-            <col style="width: 658pt;">
-            </col>
-            <tbody>
-                <tr>
-                    <td class="td_1">
-                        <p class="p_5">
-                            <img src="../../Resources/Images/Course Data/Course Data Student Information.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3856/tech_doc_tip.png?revision=1&amp;size=bestfit&amp;width=35&amp;height=35" class="img_1">
-                            </img>
-                        </p>
-                    </td>
-                    <td class="td_1">
-                        <p class="p_6"><span class="span_4">Tip:&#160;</span><span class="span_5">Non-SIS customers can still streamline data entry by importing tab-delimited lists of people/groups, rooms, resources, reservations, and (for EMS Campus), final exam schedules.&#160;</span><span class="span_4">See Also:&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/240_Import_File_Specifications" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/240_Import_File_Specifications"><span class="span_2">Import File Specifications</span></a><span class="span_5">.</span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="td_1">
-                        <p class="p_5">
-                            <img src="../../Resources/Images/Course Data/Course Data Student Information_1.png" style="height: 50px;width: 50px;" alt="https://success.emssoftware.com/@api/deki/files/3859/tech_doc_note.png?revision=1&amp;size=bestfit&amp;width=26&amp;height=26" class="img_1">
-                            </img>
-                        </p>
-                    </td>
-                    <td class="td_1">
-                        <p class="p_6"><span class="span_4">Important:&#160;</span><span class="span_5">If you do <MadCap:annotation MadCap:createDate="2017-10-25T10:42:11.2984582-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="This is just deki to customer support options. Use snippet here?" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T10:42:47.4988690-06:00">not</MadCap:annotation> have a customer login, register&#160;</span><a href="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx" title="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx"><span class="span_6">here</span></a><span class="span_5">.</span>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <p class="p_7"><span class="span_1">Option 1</span><span class="span_3">&#160;</span><span class="span_1">(Recommended):</span><span class="span_3">&#160;Submit a Ticket directly via the&#160;</span><a href="https://support.emssoftware.com/" title="https://support.emssoftware.com"><span class="span_2">EMS Support Portal</span></a>
+        <p>You can manually or automatically synchronize your campus-specific SIS data (Instructors, Course Types, Subjects, and Terms) with EMS, using the following supported SIS.</p>
+        <ul>
+            <li>Ellucian’s Banner</li>
+            <li>Ellucian’s Colleague (on SQL or Oracle platform)</li>
+            <li>Ellucian’s PowerCampus</li>
+            <li>Oracle’s Peoplesoft</li>
+            <li>Jenzabar CX and EX</li>
+        </ul>
+        <p>Tip: <span class="span_5">Non-SIS customers can still streamline data entry by importing tab-delimited lists of people/groups, rooms, resources, reservations, and (for EMS Campus), final exam schedules.&#160;</span><span class="span_4">See Also:&#160;</span><a href="https://success.emssoftware.com/?title=Installation_%26_Setup_Guides/EMS_Client_V44.1/Setting_Up_EMS_Desktop_Client/240_Import_File_Specifications" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/240_Import_File_Specifications"><span class="span_2">Import File Specifications</span></a><span class="span_5">.</span></p>
+        <p><span class="span_4">Important:&#160;</span><span class="span_5">If you do not have a customer login, register&#160;</span><a href="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx" title="https://www.dea.com/ServiceAndSupport/RequestAccess.aspx"><span class="span_6">here</span></a><span class="span_5">.</span>
         </p>
-        <p class="p_7"><span class="span_1">Option 2:</span><span class="span_3">&#160;Email&#160;</span><a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com"><span class="span_6">support@emssoftware.com</span></a>
+        <p><span class="span_1">Option 1</span><span class="span_3">&#160;</span><span class="span_1">(Recommended):</span><span class="span_3">&#160;Submit a Ticket directly via the&#160;</span><a href="https://support.emssoftware.com/" title="https://support.emssoftware.com"><span class="span_2">EMS Support Portal</span></a>
         </p>
-        <p class="p_7"><span class="span_1">Option 3 (Recommended for critical issues only):</span><span class="span_3">&#160;Phone (800) 288-4565</span>
-        </p><pre class="script" mt-export-translate="no" xml:space="preserve">&#160;</pre>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>EMS Campus Web Service and White Paper</a><a>EMS Campus Web Service Install</a><a>EMS Campus White Paper</a><a mt-export-translate="no">persona:SysAdminCampus</a>
+        <p><span class="span_1">Option 2:</span><span class="span_3">&#160;Email&#160;</span><a href="mailto:support@emssoftware.com" title="mailto:support@emssoftware.com"><span class="span_6">support@emssoftware.com</span></a>
         </p>
+        <p><span class="span_1">Option 3 (Recommended for critical issues only):</span><span class="span_3">&#160;Phone (800) 288-4565</span>
+        </p>
+        <p>&#160;</p>
     </body>
 </html>

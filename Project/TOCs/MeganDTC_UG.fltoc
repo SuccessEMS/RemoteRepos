@@ -70,9 +70,11 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportListVis.html" />
       </TocEntry>
       <TocEntry
-        Title="The Navigator">
+        Title="The Navigator"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_WorkwithResNavigator.htm">
         <TocEntry
-          Title="Overview of the Navigator"></TocEntry>
+          Title="Overview of the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_NavigatorOverview.html"></TocEntry>
         <TocEntry
           Title="Edit a Reservation in the Navigator" />
         <TocEntry
@@ -88,7 +90,7 @@
         <TocEntry
           Title="Edit a Booking in the Navigator" />
         <TocEntry
-          Title="Edit Multiple Bookins in the Navigator" />
+          Title="Edit Multiple Bookings in the Navigator" />
         <TocEntry
           Title="Move Bookings to a Different Reservation in the Navigator" />
         <TocEntry
@@ -98,9 +100,11 @@
           <TocEntry
             Title="Add Booking Details and Items to Individual Bookings" />
           <TocEntry
+            Title="Add Booking Details and Items to Existing Bookings" />
+          <TocEntry
             Title="Add Booking Details and Items to Multiple Bookings" />
           <TocEntry
-            Title="Edit Booking Detail Items for Individual Bookings" />
+            Title="Edit Booking Detail Items for Individual Bookings"></TocEntry>
           <TocEntry
             Title="Edit Booking Detail Item Charges for Multiple Items" />
           <TocEntry

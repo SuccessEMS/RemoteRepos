@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="2143" MadCap:lastWidth="1585" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_VideoDispInter.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">The Video Display Interface</h1>
+        <p>The EMS <span class="button">Video Display Interface</span> (VDI) is an optional, add-on component for EMS that exports meeting and event information to a video display system such as Janus, Target Vision, and so on. It does this by periodically saving booking information to a file which the video display system then retrieves and displays on video monitors. You use the windows-based Task Scheduler to set the frequency at which the EMS Video Display Interface program (EMS.exe) runs. This program stores the booking information and creates the export file. You set parameters in EMS that define the types of bookings that are to be included in the export file (based on buildings, statuses, and so on), where the exported file should reside, and other information. You must manually export the booking information once and create the export file before you can configure EMS to automatically export the information.</p>
+        <p>To integrate EMS with your video display, you will:</p>
+        <ul>
+            <li>Run the tool from EMS Desktop Client</li>
+            <li>Configure settings for exporting booking information</li>
+            <li>Export the data to your video display system</li>
+            <li>Configure Windows Task Scheduler to automatically export data at a regular interval</li>
+        </ul>
+        <p>1. On the EMS menu bar, click <span class="button">System Administration </span>&gt; <span class="button">Tools </span>&gt; <span class="button">Video Display Interface</span>. The Video Display Interface dialog box opens. The Date Range tab is the active tab.</p>
+        <p>Video Display Interface</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_VideoDispInter/Configuring the Video Display.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 350px;" alt="emssg_appendixdisplay_image001.png" />
+        </p>
+        <ol start="2">
+            <li>Specify the settings for exporting the booking information:</li>
+        </ol>
+        <ul>
+            <li>The first time you configure the VDI, or if you edit your VDI settings, you must specify a date range for the system to save the settings. Going forward, the system automatically exports the information only for the bookings that are taking place on the current day’s date based on the frequency that you specify.</li>
+            <li>To export data for a different date or date range, on a one-time only basis, enter the date or range. If the export is to contain only bookings taking place in a particular time frame, check the Use Specific Times box and enter the starting and ending times. After this manual update, the system reverts to exporting data for the current day’s date based on the frequency that you specify.</li>
+            <li>In the Format field, select the pre-defined VDI export format. (If you select PowerPoint as the pre-defined VDI export format, then the Bookings for Slide fields is enabled. You must also indicate the number of bookings that are to appear on a slide.)</li>
+            <li>In the Export File Path, click the Search icon&#160;to open Export File Path dialog box and browse to and select the file to which you are exporting the data, or you can manually enter the full path to the file with the file name and extension.</li>
+            <li>On the Buildings tab, Statuses tab, Event Types tab, and Group Types tab, specify the building/room, status, event type, and group criteria by which to filter the booking information that you are exporting.</li>
+        </ul>
+        <ol start="3">
+            <li>Click&#160;<span class="button">Export</span>.&#160;A message appears indicating that the export file was created successfully.</li>
+        </ol>
+        <ol start="4">
+            <li>Click&#160;<span class="button">OK</span>.</li>
+        </ol>
+        <p>Tip:&#160;After you configure your export settings, you can click&#160;<span class="button">Memorize&#160;</span>to save the export settings as a memorized report so that you do not have to specify the export settings every time you export your meeting and event information. If you save the export settings as a memorized report, you can make the report public (available to all users in your EMS database) or private (available only to you.)</p>
+        <p>After you have manually run the export once, you can set up the system to export events automatically. Following the steps outlined in your Windows operating system documentation, use the Task Scheduler to define a scheduled task that executes EMS.exe on a regular basis (typically once each day). The file is located in the folder in which the client portion of the EMS system is installed. (The default is C:\Program Files\ EMS [PRODUCT NAME and VERSION NUMBER]). Before existing the Task Scheduler, select “Open advanced properties for this task when I click Finish” and append /vdi to the end of the EMS path in the “Run” textbox, for example:<br />“C:\Program Files\EMS [PRODUCT NAME and VERSION NUMBER]\EMS.exe”/vdi.</p>
+    </body>
+</html>

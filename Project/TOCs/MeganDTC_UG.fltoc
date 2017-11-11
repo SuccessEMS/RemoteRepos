@@ -76,6 +76,9 @@
           Title="Overview of the Navigator"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_NavigatorOverview.html"></TocEntry>
         <TocEntry
+          Title="Get Familiar with the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GetFamwithNav.html" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
           Title="Edit a Reservation in the Navigator" />
         <TocEntry
           Title="Add Bookings to a Reservation in the Navigator" />

@@ -1,0 +1,85 @@
+/*<meta sourceDocument="C:\Users\Jen.Naused\Documents\DesktopClientParmameters.docx" />*/
+
+p
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 8pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+h1.Heading1
+{
+	page-break-after: avoid;
+	page-break-inside: avoid;
+	margin-top: 12pt;
+	margin-bottom: 0pt;
+	mc-heading-level: 1;
+	font-family: 'Calibri Light';
+	color: #2F5496;
+	font-size: 16pt;
+	font-weight: normal;
+}
+
+p.p_1
+{
+	margin-bottom: 0pt;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+td.td_1
+{
+	vertical-align: middle;
+	padding-left: 0pt;
+	padding-right: 0pt;
+}
+
+span.span_1
+{
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+}
+
+p.p_2
+{
+	margin-bottom: 0pt;
+}
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+

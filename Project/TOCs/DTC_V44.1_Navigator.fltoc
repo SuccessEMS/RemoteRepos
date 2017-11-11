@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Getting Familiar with the Navigator" Link="/Content/DTC_V44.1_Navigator/Getting Familiar with the.htm" />
+    <TocEntry Title="Edit a Reservation in the Navigator" Link="/Content/DTC_V44.1_Navigator/Edit a Reservation in the.htm" />
+    <TocEntry Title="Copy a Reservation in the Navigator" Link="/Content/DTC_V44.1_Navigator/Copy a Reservation in the.htm" />
+    <TocEntry Title="Changing the Status for a Reservation from the Reservation Summary Tab" Link="/Content/DTC_V44.1_Navigator/Changing the Status for a.htm" />
+    <TocEntry Title="Repricing Categories and Room Charges for a Reservation" Link="/Content/DTC_V44.1_Navigator/Repricing Categories and Room.htm" />
+    <TocEntry Title="Applying a Reservation Discount" Link="/Content/DTC_V44.1_Navigator/Applying a Reservation Discount.htm" />
+    <TocEntry Title="Editing a Booking in the Navigator" Link="/Content/DTC_V44.1_Navigator/Editing a Booking in the Navigator.htm" />
+    <TocEntry Title="Editing Multiple Bookings in the Navigator" Link="/Content/DTC_V44.1_Navigator/Editing Multiple Bookings.htm" />
+    <TocEntry Title="Moving Bookings to a Different Reservation" Link="/Content/DTC_V44.1_Navigator/Moving Bookings to a Different.htm" />
+    <TocEntry Title="Copying Multiple Bookings in the Navigator" Link="/Content/DTC_V44.1_Navigator/Copying Multiple Bookings.htm" />
+    <TocEntry Title="Booking Details and Items Overview" Link="/Content/DTC_V44.1_Navigator/Booking Details and Items.htm" />
+    <TocEntry Title="Adding Booking Details and Items to Individual Bookings" Link="/Content/DTC_V44.1_Navigator/Adding Booking Details and.htm" />
+    <TocEntry Title="Adding Booking Details and Items to Existing Bookings" Link="/Content/DTC_V44.1_Navigator/Tip If you close the Resource.htm" />
+    <TocEntry Title="Adding Booking Detail Items to Multiple Bookings" Link="/Content/DTC_V44.1_Navigator/Adding Booking Detail Items.htm" />
+    <TocEntry Title="Editing Items for Individual Bookings" Link="/Content/DTC_V44.1_Navigator/Editing Items for Individual.htm" />
+    <TocEntry Title="Editing Charges for Multiple Billable Items" Link="/Content/DTC_V44.1_Navigator/Editing Charges for Multiple.htm" />
+    <TocEntry Title="Copying Booking Details Between Bookings" Link="/Content/DTC_V44.1_Navigator/Copying Booking Details Between.htm" />
+    <TocEntry Title="Deleting Booking Detail Items from Multiple Bookings" Link="/Content/DTC_V44.1_Navigator/Deleting Booking Detail Items.htm" />
+    <TocEntry Title="Deleting Booking Details from Multiple Bookings" Link="/Content/DTC_V44.1_Navigator/Deleting Booking Details from.htm" />
+    <TocEntry Title="Editing Charges for Multiple Billable Items" Link="/Content/DTC_V44.1_Navigator/Editing Charges for Multiple_1.htm" />
+    <TocEntry Title="Editing Count Information for a Booking" Link="/Content/DTC_V44.1_Navigator/Editing Count Information.htm" />
+    <TocEntry Title="Add Booking Details Wizard" Link="/Content/DTC_V44.1_Navigator/Add Booking Details Wizard.htm" />
+    <TocEntry Title="Using the Copy Booking Details Wizard" Link="/Content/DTC_V44.1_Navigator/Using the Copy Booking Details.htm" />
+    <TocEntry Title="Using the Delete Booking Details Wizard" Link="/Content/DTC_V44.1_Navigator/Using the Delete Booking Details.htm" />
+    <TocEntry Title="Using the Delete Item Wizard" Link="/Content/DTC_V44.1_Navigator/Using the Delete Item Wizard.htm" />
+    <TocEntry Title="Add Item Wizard" Link="/Content/DTC_V44.1_Navigator/Add Item Wizard.htm" />
+    <TocEntry Title="Working with Comments and Reminders in the Navigator" Link="/Content/DTC_V44.1_Navigator/Working with Comments and.htm" />
+    <TocEntry Title="Adding Multiple Comments and Reminders to a Reservation" Link="/Content/DTC_V44.1_Navigator/Adding Multiple Comments and.htm" />
+    <TocEntry Title="Working with User Defined Fields in the Navigator" Link="/Content/DTC_V44.1_Navigator/Working with User Defined.htm" />
+    <TocEntry Title="Working with Attachments in the Navigator" Link="/Content/DTC_V44.1_Navigator/Working with Attachments in.htm" />
+    <TocEntry Title="Working with Drawings in the Navigator" Link="/Content/DTC_V44.1_Navigator/Working with Drawings in the.htm" />
+    <TocEntry Title="Running the Resource Utility Conflicts Tool" Link="/Content/DTC_V44.1_Navigator/Running the Resource Utility.htm" />
+    <TocEntry Title="Approving or Denying Reservation Requests" Link="/Content/DTC_V44.1_Navigator/Approving or Denying Reservation.htm" />
+</CatapultToc>

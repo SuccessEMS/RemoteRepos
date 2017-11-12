@@ -462,14 +462,17 @@
             Title="Room Configuration Wizard"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_RoomConfigWiz.htm" />
           <TocEntry
-            Title="Configure Room Pricing" />
+            Title="Configure Room Pricing"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigRoomPricing.htm" />
           <TocEntry
-            Title="Configure Override Rooms" />
+            Title="Configure Override Rooms"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigOverrideRooms.htm" />
           <TocEntry
             Title="Configure and Generate Room QR Codes"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigGenerRoomQRCode.htm" />
           <TocEntry
-            Title="Import Rooms" />
+            Title="Import Rooms"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportRooms.htm" />
         </TocEntry>
         <TocEntry
           Title="Configure Buildings"
@@ -506,11 +509,24 @@
       <TocEntry
         Title="Configuration &gt; Resources">
         <TocEntry
+          Title="Categories, Resources, Services - What's the Difference?"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_CategoriesResourcesServices_WhatsDiff.htm" />
+        <TocEntry
           Title="Overview of Configuring Resources"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverviewConfigRes.html" />
         <TocEntry
-          Title="Categories, Resources, Services - What's the Difference?"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_CategoriesResourcesServices_WhatsDiff.htm" />
+          Title="Configure Resources for a Category"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html">
+          <TocEntry
+            Title="Resource Configuration Wizard"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ResourceConfigWiz.htm" />
+        </TocEntry>
+        <TocEntry
+          Title="Import Resources for a Category"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportResforCat.htm" />
+        <TocEntry
+          Title="Define Resource Selections and Selection Items"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DefineResourceSel.htm" />
         <TocEntry
           Title="Configure Services for a Category"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigureServicesforCat.htm"></TocEntry>
@@ -518,20 +534,14 @@
           Title="Configure Groupings for a Resource"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigGroupingsResource.html" />
         <TocEntry
-          Title="Configure Resources for a Category"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html" />
+          Title="Define Production Areas and Production Items for a Catering Resource"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DefineProdAreaItems.htm" />
         <TocEntry
-          Title="Import Resources for a Category" />
+          Title="Configure Pricing for a Resource in the Edit Pricing Window"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPricingResourceEditPriceWin.htm" />
         <TocEntry
-          Title="Configure Multiple Resources (Resource Configuration Wizard)" />
-        <TocEntry
-          Title="Define Production Areas and Production Items for a Catering Resource" />
-        <TocEntry
-          Title="Define Resource Selections and Selection Items" />
-        <TocEntry
-          Title="Configure Pricing for a Resource in the Edit Pricing Window" />
-        <TocEntry
-          Title="Export Pricing Information for a Resource" />
+          Title="Export Pricing Information for a Resource"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricInfo.htm" />
       </TocEntry>
       <TocEntry
         Title="Configuration &gt; Billing">
@@ -546,7 +556,7 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPricingPlan.htm" />
         <TocEntry
           Title="Export Pricing Information for Billable Items (Rooms &amp; Resources)"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfo.htm" />
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfoBillableItems.htm" />
         <TocEntry
           Title="Configure Calculations"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCalc.htm" />
@@ -842,6 +852,34 @@
         <TocEntry
           Title="EMS Mobile App Parameters"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_MobileAppParam.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Import Files to Streamline Data Entry"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportFileSpec.htm">
+        <TocEntry
+          Title="Special Date Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_SpecialDateImportFileSpec.htm" />
+        <TocEntry
+          Title="Room Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_RoomImportFileSpec.htm" />
+        <TocEntry
+          Title="Resource Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ResourceImportFileSpec.htm" />
+        <TocEntry
+          Title="Group Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_GroupImportFileSpec.htm" />
+        <TocEntry
+          Title="Reservation Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ResImportFileSpec.htm" />
+        <TocEntry
+          Title="Final Exam Schedule Import File Specification"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_FinalExamSchedImportFileSpec.htm" />
+      </TocEntry>
+      <TocEntry
+        Title="Video Conferencing"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_VC.html">
+        <TocEntry
+          Title="Configure Video Conferencing Capabilities" />
       </TocEntry>
     </TocEntry>
     <TocEntry

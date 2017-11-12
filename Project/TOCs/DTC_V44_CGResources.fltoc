@@ -1,14 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Core Configuration – Resources" Link="/Content/DTC_V44_CGResources/Core Configuration Resources.htm" />
-    <TocEntry Title="Overview of Configuring Resources" Link="/Content/DTC_V44_CGResources/Overview of Configuring Resources.htm" />
-    <TocEntry Title="Configuring Services for a Category" Link="/Content/DTC_V44_CGResources/Configuring Services for a.htm" />
-    <TocEntry Title="Configuring Groupings for a Resource" Link="/Content/DTC_V44_CGResources/Configuring Groupings for.htm" />
-    <TocEntry Title="Configuring Resources for a Category" Link="/Content/DTC_V44_CGResources/Configuring Resources for.htm" />
-    <TocEntry Title="Importing Resources for a Category" Link="/Content/DTC_V44_CGResources/Importing Resources for a.htm" />
-    <TocEntry Title="Configuring Multiple Resources (Resource Configuration Wizard)" Link="/Content/DTC_V44_CGResources/Configuring Multiple Resources.htm" />
-    <TocEntry Title="Defining Production Areas and Production Items for a Catering Resource" Link="/Content/DTC_V44_CGResources/Defining Production Areas.htm" />
-    <TocEntry Title="Defining Resource Selections and Selection Items" Link="/Content/DTC_V44_CGResources/Defining Resource Selections.htm" />
-    <TocEntry Title="Configuring the Pricing for a Resource on the Edit Pricing Window" Link="/Content/DTC_V44_CGResources/Configuring the Pricing for.htm" />
-    <TocEntry Title="Exporting Pricing Information for a Resource" Link="/Content/DTC_V44_CGResources/Exporting Pricing Information.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Core Configuration – Resources"
+    Link="/Content/DTC_V44_CGResources/Core Configuration Resources.htm" />
+  <TocEntry
+    Title="Overview of Configuring Resources"
+    Link="/Content/DTC_V44_CGResources/Overview of Configuring Resources.htm" />
+  <TocEntry
+    Title="Configuring Services for a Category"
+    Link="/Content/DTC_V44_CGResources/Configuring Services for a.htm" />
+  <TocEntry
+    Title="Configuring Groupings for a Resource"
+    Link="/Content/DTC_V44_CGResources/Configuring Groupings for.htm" />
+  <TocEntry
+    Title="Configuring Resources for a Category"
+    Link="/Content/DTC_V44_CGResources/Configuring Resources for.htm" />
+  <TocEntry
+    Title="Importing Resources for a Category"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportResforCat.htm" />
+  <TocEntry
+    Title="Configuring Multiple Resources (Resource Configuration Wizard)"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ResourceConfigWiz.htm" />
+  <TocEntry
+    Title="Defining Production Areas and Production Items for a Catering Resource"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DefineProdAreaItems.htm" />
+  <TocEntry
+    Title="Defining Resource Selections and Selection Items"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_DefineResourceSel.htm" />
+  <TocEntry
+    Title="Configuring the Pricing for a Resource on the Edit Pricing Window"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigPricingResourceEditPriceWin.htm" />
+  <TocEntry
+    Title="Exporting Pricing Information for a Resource"
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricInfo.htm" />
 </CatapultToc>

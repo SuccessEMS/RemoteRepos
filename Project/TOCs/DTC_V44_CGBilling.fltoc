@@ -12,7 +12,7 @@
     Link="/Content/DTC_V44_CGBilling/Configuring Rate Schedules.htm" />
   <TocEntry
     Title="Exporting Pricing Information for Billable Items (Rooms or Resources)"
-    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfo.htm" />
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricingInfoBillableItems.htm" />
   <TocEntry
     Title="Configuring Pricing Plans"
     Link="/Content/DTC_V44_CGBilling/Configuring Pricing Plans.htm" />

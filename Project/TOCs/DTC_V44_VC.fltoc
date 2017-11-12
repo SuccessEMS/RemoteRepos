@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Video Conferencing" Link="/Content/DTC_V44_VC/Video Conferencing.htm" />
-    <TocEntry Title="Overview of Video Conferencing Configuration" Link="/Content/DTC_V44_VC/Overview of Video Conferencing.htm" />
-    <TocEntry Title="Configuring Video Conferencing Capabilities" Link="/Content/DTC_V44_VC/Configuring Video Conferencing.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Video Conferencing"
+    Link="/Content/DTC_V44_VC/Video Conferencing.htm" />
+  <TocEntry
+    Title="Overview of Video Conferencing Configuration"
+    Link="/Content/DTC_V44_VC/Overview of Video Conferencing.htm" />
+  <TocEntry
+    Title="Configuring Video Conferencing Capabilities"
+    Link="/Content/1DesktopClient/44/CG_44/DC_CG_44_ConfigVCCapabil.htm" />
 </CatapultToc>

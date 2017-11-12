@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4092" MadCap:lastWidth="1342" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../../../Resources/Stylesheets/DTC_V44_CGResources.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Define Resource Selections and Selection Items</h1>
+        <p>After you configure a resource for a category, you can&#160;define&#160;selections&#160;and&#160;selection items&#160;for the resource. A&#160;<span class="button">selection&#160;</span>is used when you offer choices with a resource. For example, a resource named Catered Breakfast might have the following description—Catered breakfast includes the choice of one standard entree, two sides, and assorted mini-muffins, juice, and coffee. The selection of standard entree might include the selection items of french toast, pancakes, or scrambled eggs. The side selection items might include bacon, sausage, and sliced fruit. If selection items have been defined for a resource, then an EMS user or an <MadCap:variable name="General.EMS&#160;Web App" />&#160;user must&#160;make a selection for the resource.</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Resources</span>. A list of all the categories that are currently configured in your EMS database&#160;and&#160;for which you can configure resources opens.</li>
+        </ol>
+        <ol start="2">
+            <li>Select the category for which you are configuring the resources. The Resources window opens. This window lists all the resources that are currently configured in your EMS database for the selected category and that have a status of Active.</li>
+        </ol>
+        <p>Example of a Resources window</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGResources/Defining Resource Selections.png" alt="emssg_CoreConfigurationResources_image026.png" />
+        </p>
+        <ol start="3">
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul>
+            <li>To view all resources for the category in your EMS database, regardless of status, under Show, click Inactive.</li>
+            <li>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string.</li>
+        </ul>
+        <p>Tip:&#160;The search string is not case-sensitive, but your search is limited to the exact order of the characters in the string and it must begin with the information for which you are searching. For example, a search string of&#160;Cold&#160;returns&#160;Cold&#160;Boxed Lunches, but not Sandwiches (Cold).</p>
+        <ol start="4">
+            <li>Select the resource for which you are configuring the selections, and then click <span class="button">Selections</span>. The Selections window opens. This window lists all the selections that have been configured for the selected resource and that have a status of Active.</li>
+        </ol>
+        <p>Selections Window</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGResources/Defining Resource Selections_1.png" alt="emssg_CoreConfigurationResources_image027.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to show all selections for the resource, regardless of status, under Show, click Inactive. </p>
+        <ol start="5">
+            <li>Click <span class="button">New</span>. The Selection dialog box opens. The Selection tab is the active tab.</li>
+        </ol>
+        <p>Selection Dialog Box, Selection Tab</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGResources/Defining Resource Selections_2.png" alt="emssg_CoreConfigurationResources_image028.png" />
+        </p>
+        <ol start="6">
+            <li>In the Description field, enter a description or name for the selection, for example, Breakfast Entrees.</li>
+        </ol>
+        <p>Tip:&#160;The description can be a maximum of 255 characters, including spaces.</p>
+        <ol start="7">
+            <li>Optionally, do one or more or all the following:</li>
+        </ol>
+        <ul>
+            <li>In the Sequence field, enter a number that determines the order in which the selection is displayed in a list with other selections.</li>
+        </ul>
+        <p>Tip:&#160;Selections are ordered from lowest to highest sequence number, with the selection with the lowest sequence number being displayed first. If you leave the sequence set to the default value of zero for all selections, then by default, the selections are displayed alphabetically.</p>
+        <ul>
+            <li>In the Min Pick field, enter the minimum number of selection items that a user is required to pick.</li>
+            <li>In the Max Pick field, enter the maximum number of selections items that a user is allowed to pick.</li>
+        </ul>
+        <p>Tip:&#160;The maximum pick must be less than or equal to the number of selection items that are configured for the selection.</p>
+        <ol start="8">
+            <li>Open the Items tab, and in the Description field, enter a description or name for each selection item.</li>
+        </ol>
+        <p>Tip:&#160;The description can be a maximum of 255 characters, including spaces.</p>
+        <p>Selection dialog box, Items tab</p>
+        <p>
+            <img src="../../../Resources/Images/DTC_V44_CGResources/Defining Resource Selections_3.png" alt="emssg_CoreConfigurationResources_image029.png" />
+        </p>
+        <ol start="9">
+            <li>Optionally, for each selection item, do one or both of the following:</li>
+        </ol>
+        <ul>
+            <li>In the Sequence field, enter a number to sort the selection items on the tab.</li>
+        </ul>
+        <p>Tip:&#160;Selection items are ordered from lowest to highest sequence number, with the selection item with the lowest sequence number being displayed first. If you leave the sequence set to the default value of zero for all selection items, then by default, the selection items are displayed alphabetically.</p>
+        <ul>
+            <li>In the Notes field, enter any optional information that is pertinent for the item.</li>
+        </ul>
+        <ol start="10">
+            <li>Click <span class="button">OK</span>. You return to the Selections window with the newly configured resource selection automatically selected.</li>
+        </ol>
+    </body>
+</html>

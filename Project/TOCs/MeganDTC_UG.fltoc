@@ -79,27 +79,38 @@
           Title="Get Familiar with the Navigator"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GetFamwithNav.html" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
         <TocEntry
-          Title="Edit a Reservation in the Navigator" />
+          Title="Edit a Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditResinNav.html" />
         <TocEntry
-          Title="Add Bookings to a Reservation in the Navigator" />
+          Title="Add Bookings to a Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddBooktoResinNav.html" />
         <TocEntry
-          Title="Copy a Reservation in the Navigator" />
+          Title="Copy a Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CopyResinNav.html" />
         <TocEntry
-          Title="Change the Status of a Reservation in the Navigator" />
+          Title="Change the Status of a Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ChangeStatusResfromResSum.html" />
         <TocEntry
-          Title="Reprice Categories and Room Charges for a Reservation in the Navigator" />
+          Title="Reprice Categories and Room Charges for a Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_RepricCatRoomChargeRes.html" />
         <TocEntry
-          Title="Apply a Reservation Discount" />
+          Title="Apply a Reservation Discount"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ApplyReservDiscount.html" />
         <TocEntry
-          Title="Edit a Booking in the Navigator" />
+          Title="Edit a Booking in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditBookinNav.html" />
         <TocEntry
-          Title="Edit Multiple Bookings in the Navigator" />
+          Title="Edit Multiple Bookings in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditMultipleBookinNav.html" />
         <TocEntry
-          Title="Move Bookings to a Different Reservation in the Navigator" />
+          Title="Move Bookings to a Different Reservation in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_MoveBooktoDifRes.html" />
         <TocEntry
-          Title="Copy Multiple Bookings in the Navigator" />
+          Title="Copy Multiple Bookings in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CopyMultipleBookinNav.html" />
         <TocEntry
-          Title="Booking Details and Items Overview">
+          Title="Booking Details and Items Overview"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_BookDetailsItemsOverview.htm">
           <TocEntry
             Title="Add Booking Details and Items to Individual Bookings" />
           <TocEntry

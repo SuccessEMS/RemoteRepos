@@ -112,51 +112,73 @@
           Title="Booking Details and Items Overview"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_BookDetailsItemsOverview.htm">
           <TocEntry
-            Title="Add Booking Details and Items to Individual Bookings" />
+            Title="Add Booking Details and Items to Individual Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddBookDetItemtoIndivBookings.htm" />
           <TocEntry
-            Title="Add Booking Details and Items to Existing Bookings" />
+            Title="Add Booking Details and Items to Existing Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddBookDetsItemstoExistBook.html" />
           <TocEntry
-            Title="Add Booking Details and Items to Multiple Bookings" />
+            Title="Add Booking Details and Items to Multiple Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddItemstoMultBook.html" />
           <TocEntry
-            Title="Edit Booking Detail Items for Individual Bookings"></TocEntry>
+            Title="Edit Booking Detail Items for Individual Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditItemsforIndividBook.html"></TocEntry>
           <TocEntry
-            Title="Edit Booking Detail Item Charges for Multiple Items" />
+            Title="Edit Booking Detail Item Charges for Multiple Items"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditChargforMultpBillItem.html" />
           <TocEntry
-            Title="Copy Booking Details Between Bookings" />
+            Title="Copy Booking Details Between Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CopyBookDetBetwBookings.htm" />
           <TocEntry
-            Title="Delete Booking Detail Items from Multiple Bookings" />
+            Title="Delete Booking Detail Items from Multiple Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_DeleteBookDetItemMultBook.htm" />
           <TocEntry
-            Title="Delete Booking Details from Multiple Bookings" />
+            Title="Delete Booking Details from Multiple Bookings"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_DeleteBookDetailsMultBook.htm" />
           <TocEntry
-            Title="Edit Charges for Multiple Billable Items" />
+            Title="Edit Charges for Multiple Billable Items"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditChargforMultpBillItem.html" />
           <TocEntry
-            Title="Edit Count Information for a Booking in the Navigator" />
+            Title="Edit Count Information for a Booking in the Navigator"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditCountInfoforBook.html" />
           <TocEntry
-            Title="Add Booking Details Wizard" />
+            Title="Add Booking Details Wizard"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddBookDetailsWizard.htm" />
           <TocEntry
-            Title="Copy Booking Details Wizard" />
+            Title="Copy Booking Details Wizard"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CopyBookDetailsWzd.html" />
           <TocEntry
-            Title="Delete Booking Details Wizard"></TocEntry>
+            Title="Delete Booking Details Wizard"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_DeleteBookDetailsWzd.html"></TocEntry>
           <TocEntry
-            Title="Delete Item Wizard" />
+            Title="Delete Item Wizard"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_DeleteItemWizard.html" />
           <TocEntry
-            Title="Add Item Wizard" />
+            Title="Add Item Wizard"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddItemWizard.htm" />
         </TocEntry>
         <TocEntry
-          Title="Comments and Reminders in the Navigator">
+          Title="Comments and Reminders in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CommRemindinNav.html">
           <TocEntry
-            Title="Add Multiple Comments and Reminders to a Reservation" />
+            Title="Add Multiple Comments and Reminders to a Reservation"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AddMultCommRemintoRes.htm" />
         </TocEntry>
         <TocEntry
-          Title="User-Defined Fields in the Navigator" />
+          Title="User-Defined Fields in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_UserDefFieldsinNav.html" />
         <TocEntry
-          Title="Attachments in the Navigator" />
+          Title="Attachments in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AttachmentsinNav.html" />
         <TocEntry
-          Title="Drawings in the Navigator" />
+          Title="Drawings in the Navigator"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_DrawingsinNav.html" />
         <TocEntry
-          Title="Resource Utility Conflicts Tool" />
+          Title="Resource Utility Conflicts Tool"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_RunResourceUtility.html" />
         <TocEntry
-          Title="Approve or Deny Reservation Requests" />
+          Title="Approve or Deny Reservation Requests"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ApprovDenyReservReq.html" />
       </TocEntry>
       <TocEntry
         Title="The Calendar">

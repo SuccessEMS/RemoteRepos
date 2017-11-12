@@ -9,22 +9,22 @@
         <p>This topic will discuss the following installation steps:</p>
         <ul>
             <li>
-                <MadCap:xref href="#PrepInstallEMSServerComp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Preparation: Installing EMS Server Components</MadCap:xref>
+                <MadCap:xref href="#PrepInstallEMSServerComp">Preparation: Installing EMS Server Components</MadCap:xref>
             </li>
             <li>
-                <MadCap:xref href="#InstallEMSonUsersComp" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Installing EMS on User's Computers</MadCap:xref>
+                <MadCap:xref href="#InstallEMSonUsersComp">Installing EMS on User's Computers</MadCap:xref>
             </li>
             <li>
-                <MadCap:xref href="#DCWebDeployment" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">EMS Desktop Client Web Deployment</MadCap:xref>
+                <MadCap:xref href="#DCWebDeployment">EMS Desktop Client Web Deployment</MadCap:xref>
             </li>
             <li>
-                <MadCap:xref href="#InstallWebDeployMethod" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Install EMS Desktop Client (Web Deployment Method)</MadCap:xref>
+                <MadCap:xref href="#InstallWebDeployMethod">Install EMS Desktop Client (Web Deployment Method)</MadCap:xref>
             </li>
             <li>
-                <MadCap:xref href="#InstallDCConventional" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Installing [%=General.EMS&#160;Desktop Client%] (Conventional Method)</MadCap:xref>
+                <MadCap:xref href="#InstallDCConventional">Installing [%=General.EMS&#160;Desktop Client%] (Conventional Method)</MadCap:xref>
             </li>
             <li>
-                <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref>
+                <MadCap:xref href="#ObtainInstallFilesDC">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref>
             </li>
         </ul>
         <p>In order to install EMS, you must perform two operations&#160;:</p>
@@ -60,7 +60,7 @@
         <ol>
             <li><a title="First Time Installation Instructions">EMS Desktop Client Web Deployment</a>
             </li>
-            <li><a rel="internal" href="../C_UserGuide/DesktopClient_UsingDeleteBookingDetailsWzd.html">Installing EMS Desktop Client (Conventional Method)</a>
+            <li><a rel="internal" href="../C_UserGuide/DC_UG_DeleteBookDetailsWzd.html">Installing EMS Desktop Client (Conventional Method)</a>
             </li>
         </ol>
         <div class="NoteBox"><strong>Tip:&#160;See Also</strong>: <a title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/EMS_Desktop_Client_Deployment_Options/Decision_Guide_-_Web_Deployment_Versus_Conventional_Deployment">Decision Guide</a></div>
@@ -134,12 +134,12 @@
             <li>Click <strong>OK</strong>.</li>
         </ol>
         <div class="NoteBox"><strong>Note:</strong>&#160;When an EMS Client is installed through the EMS Desktop Client Web Deployment it will only be able to connect to the EMS instance received from the service.</div>
-        <h2><a name="InstallDCConventional"></a>Installing <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> (Conventional Method)</h2>
-        <p>Follow these instructions to conventionally&#160;install the <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />on individual workstations.</p>
+        <h2><a name="InstallDCConventional"></a>Installing <MadCap:variable name="General.EMS&#160;Desktop Client" /> (Conventional Method)</h2>
+        <p>Follow these instructions to conventionally&#160;install the <MadCap:variable name="General.EMS&#160;Desktop Client" />on individual workstations.</p>
         <h4>Pre-Installation Instructions</h4>
         <ol>
             <li>Enable the Windows Component .NET 4.5 be on the client machine. The client must also have access to the EMS Server component (to the&#160;Desktop Client API, or directly&#160;to the EMS Database).</li>
-            <li>Obtain&#160;the Required MSI file (see <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below). </li>
+            <li>Obtain&#160;the Required MSI file (see <MadCap:xref href="#ObtainInstallFilesDC">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below). </li>
             <li>Log&#160;in to the EMS Product Portal. </li>
             <li>Navigate to&#160;the Software &amp; Documents Library &gt;&#160;New&#160;Releases and Patches &gt;&#160;EMS Desktop Clients (Conventional and Web Deploy)<br /><img alt="" />   &#160;</li>
         </ol>
@@ -158,7 +158,7 @@
         <p class="mt-indent-1">Replace "<code>Servername.domain.local</code>" with the Domain name of your Database Server and <code>DatabaseName </code>with the Database of the Database of EMS that that user needs to connect to.</p>
         <p class="mt-indent-1">For Example "<code>C:\Program Files(x86)\EMS\EMS.exe /s=Servername.Domain.local /d=DatabaseName</code>"</p>
         <h5 id="Establish_Network_Connections-1925">4. Establish Network Connections</h5>
-        <p>The conventional <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" /> connects directly to the database server for all related transactions. The <MadCap:variable name="General.EMS&#160;Desktop Client" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />may also need to connect to the following services:</p>
+        <p>The conventional <MadCap:variable name="General.EMS&#160;Desktop Client" /> connects directly to the database server for all related transactions. The <MadCap:variable name="General.EMS&#160;Desktop Client" />may also need to connect to the following services:</p>
         <ul>
             <li>EMS Web Server</li>
             <li>SMTP Server</li>
@@ -166,7 +166,7 @@
         </ul>
         <ol start="1">
             <li>Verify that the prerequisite software has been installed.</li>
-            <li>Secure the <strong>EMSClient.msi</strong>. (See <MadCap:xref href="#ObtainInstallFilesDC" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below.)</li>
+            <li>Secure the <strong>EMSClient.msi</strong>. (See <MadCap:xref href="#ObtainInstallFilesDC">Obtain Installation Files for [%=General.EMS&#160;Desktop Client%]</MadCap:xref> below.)</li>
             <li>Run <strong>EMSClient.msi </strong>on the client workstation. Follow the on-screen prompts. It is recommended that you accept the defaults.</li>
             <li>Start <strong>EMS </strong>from the shortcut located on your desktop.</li>
             <li>In the Provide Server Parameters dialog box, enter the name of your EMS Server and Database.</li>

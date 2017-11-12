@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1" sourceDocument="C:\Users\Jen.Naused\Documents\ConfiguringAdministration.docx">
-    <TocEntry Title="Configuring Room Card Formats" Link="/Content/ConfiguringAdministration/Configuring Room Card Formats.htm" />
-    <TocEntry Title="Configure Calendar Formats" Link="/Content/ConfiguringAdministration/Configure Calendar Formats.htm" />
-    <TocEntry Title="Configure Reservation Wizard Templates" Link="/Content/ConfiguringAdministration/Configure Reservation Wizard.htm" />
-    <TocEntry Title="How Do I Configure EMS for Meeting Requests and Approvals (Managed Space)?" Link="/Content/ConfiguringAdministration/How Do I Configure EMS for.htm" />
-    <TocEntry Title="Where Does The Information in Confirmations Come From In EMS?" Link="/Content/ConfiguringAdministration/Where Does The Information.htm" />
+<CatapultToc
+  Version="1"
+  sourceDocument="C:\Users\Jen.Naused\Documents\ConfiguringAdministration.docx">
+  <TocEntry
+    Title="Configuring Room Card Formats"
+    Link="/Content/ConfiguringAdministration/DC_CG_ConfigRoomCardFormat.htm" />
+  <TocEntry
+    Title="Configure Calendar Formats"
+    Link="/Content/ConfiguringAdministration/Configure Calendar Formats.htm" />
+  <TocEntry
+    Title="Configure Reservation Wizard Templates"
+    Link="/Content/ConfiguringAdministration/Configure Reservation Wizard.htm" />
+  <TocEntry
+    Title="How Do I Configure EMS for Meeting Requests and Approvals (Managed Space)?"
+    Link="/Content/ConfiguringAdministration/How Do I Configure EMS for.htm" />
+  <TocEntry
+    Title="Where Does The Information in Confirmations Come From In EMS?"
+    Link="/Content/ConfiguringAdministration/Where Does The Information.htm" />
 </CatapultToc>

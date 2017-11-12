@@ -453,14 +453,31 @@
         Title="Configuration &gt; Facililties"
         Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigFacil.html">
         <TocEntry
-          Title="Configure Rooms"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigRooms.html" />
+          Title="Overview of Configuring Rooms"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverviewConfigRooms.html">
+          <TocEntry
+            Title="Configure Rooms"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigRooms.html"></TocEntry>
+          <TocEntry
+            Title="Room Configuration Wizard" />
+          <TocEntry
+            Title="Configure Room Pricing" />
+          <TocEntry
+            Title="Configure Override Rooms" />
+          <TocEntry
+            Title="Configure and Generate Room QR Codes" />
+          <TocEntry
+            Title="Import Rooms" />
+        </TocEntry>
         <TocEntry
           Title="Configure Buildings"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuilding.html" />
         <TocEntry
           Title="Configure Building Hours"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuildingHours.html" />
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigBuildingHours.html">
+          <TocEntry
+            Title="Building Hours Wizard" />
+        </TocEntry>
         <TocEntry
           Title="Configure Areas"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigAreas.html" />
@@ -578,11 +595,14 @@
           Title="Configure Check-in Notification Rules"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCheckinNot.htm" />
         <TocEntry
-          Title="Configure Room Card Formats" />
+          Title="Configure Room Card Formats"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigRoomCardFormat.htm" />
         <TocEntry
-          Title="Configure Calendar Formats" />
+          Title="Configure Calendar Formats"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCalFormat.htm" />
         <TocEntry
-          Title="Configure Reservation Wizard Templates" />
+          Title="Configure Reservation Wizard Templates"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigResWiz.htm" />
       </TocEntry>
       <TocEntry
         Title="Configuration &gt; Other">

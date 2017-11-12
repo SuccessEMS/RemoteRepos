@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:sourceDocument="C:\Users\Jen.Naused\Documents\Configuration Facilities.docx" xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="5751" MadCap:lastWidth="1342" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../../../Resources/Stylesheets/Configuration Facilities.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Room Configuration Wizard</h1>
+        <p class="p_1">The <span class="button">Room Configuration Wizard </span>enables you to&#160;configure multiple rooms at one time. These rooms should&#160;have the following properties in common:</p>
+        <ul class="ul_1">
+            <li class="li_1">Room type</li>
+            <li class="li_1">Setup hours</li>
+            <li class="li_1">Teardown hours</li>
+            <li class="li_1">Features</li>
+            <li class="li_1">Setup types</li>
+        </ul>
+        <p>This topic provides information on the following:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#Using">Using the Room Configuration Wizard</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureFeatures">Configure Features for Multiple Rooms&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Exclude">Exclude Resources for Multiple Rooms&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureCommon">Configure Common Setup Types for Multiple Rooms&#160;</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureCommonUDF">Configure Common UDFs for Multiple Rooms&#160;</MadCap:xref>
+            </li>
+        </ul>
+        <h2><a name="Using"></a>Using the Room Configuration Wizard</h2>
+        <ol>
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt; <span class="button">Facilities </span>&gt;&#160;<span class="button">Rooms</span>.&#160;The Rooms window opens.</li>
+        </ol>
+        <p class="figurecaptioncolumn_1">
+            <img src="../../../Resources/Images/Configuration Facilities/Room Configuration Wizard.png" alt="emssg_corefacilities_image039.png" class="img_1" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Click&#160;<span class="button">Wizard</span>.&#160;The Room Configuration Wizard opens, with Features tab (in the Items pane) active.&#160;&#160;&#160;</li>
+        </ol>
+        <p class="stepnumberbegin_1">
+            <img src="../../../Resources/Images/Configuration Facilities/Room Configuration Wizard_1.png" class="img_1" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Select the common properties for all the rooms that you are configuring and enter the appropriate values.</li>
+        </ol>
+        <table class="TableStyle-PatternedRows" style="mc-table-style: url('../Resources/TableStyles/PatternedRows.css');" cellspacing="0">
+            <col class="TableStyle-PatternedRows-Column-Regular" style="width: 271px;" />
+            <col class="TableStyle-PatternedRows-Column-Regular" />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p class="tablecolumnheader_1">Option</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p class="tablecolumnheader_1">Comment</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="tablebody_1">Room Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="tablebody_1">If the appropriate room type is not listed, you can configure it.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p class="tablebody_1">Floor</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p class="tablebody_1">If the appropriate floor is not listed, you can configure it.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="tablebody_1">Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="tablebody_1">If the appropriate account is not listed, you can configure it.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p class="tablebody_1">Default Setup Type</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p class="stepnumberbegin">If the appropriate setup type is not listed, you can configure it.&#160;</p>
+                        <p class="tablenotenote">Note:&#160;A user can override this value when reserving the room, or when editing the event.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="tablebody_1">Setup Hours</p>
+                        <p class="tablebody_1">Teardown Hours</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="stepnumberbegin">These settings establish the default setup and teardown hours for the room, which are automatically added to the beginning and end of the event time that user specifies in the Reservation Wizard or in EMS Web App. A user can override these default values in the Reservation Wizard.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p class="p_2">Available to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p class="tablebody_1">Select&#160;if events that are scheduled in the room are to be displayed in EMS Web App.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p class="tablebody_1">Active</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p class="tablebody_1">Select either Yes or No to activate or inactivate a room.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p class="p_2">Prompt for Billing Reference</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p class="tablebody_1">Select to prompt for a billing reference when a room is selected for a booking.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p class="tablebody_1">Requires Check In</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p class="tablebody_1">Requires bookings within this room to be checked-in to beginning at a certain number of minutes prior to the Booking Start Time.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Tip:&#160;If you are configuring a room in EMS Academic Planning, then Academic Space is also a common property that you can configure.</p>
+        <ol MadCap:continue="true">
+            <li>If you want the events scheduled in the room to display in EMS Web App, select&#160;<span class="button">Available to Everyday Users</span>.</li>
+            <li>If these rooms are to be active&#160;(available immediately for booking events), select&#160;<span class="button">Active</span>. (Yes is selected by default). Otherwise, select&#160;No.</li>
+            <li>Click&#160;<span class="button">Next</span>.&#160;The Room Configuration Wizard presents so you can search&#160;for the rooms you want to&#160;configure.</li>
+        </ol>
+        <p class="figurecaptioncolumn_1">
+            <img src="../../../Resources/Images/Configuration Facilities/Room Configuration Wizard_3.png" alt="emssg_corefacilities_image041.png" class="img_1" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Enter any combination of search criteria, by&#160;Building and&#160;Room Type.&#160;</li>
+            <li>On the Available list, select the room (CTRL-click to select multiple rooms) to be configured, and then Move (&gt;)&#160;to the Selected list.</li>
+            <li>Click&#160;<span class="button">Finish</span>.&#160;The Room Configuration Wizard closes. A message opens indicating that the room properties were set successfully.</li>
+            <li>Click&#160;<span class="button">OK</span>.&#160;The message closes. You return to the Rooms window. The newly configured rooms are displayed in the window.</li>
+        </ol>
+        <h2 class="Heading2"><a name="ConfigureFeatures"></a>Configure Features for Multiple Rooms&#160;</h2>
+        <ol>
+            <li>If all the rooms should have the same features, under Items, select&#160;Features.</li>
+            <li>On the Available list, select the feature (CTRL-click to select multiple features) you want&#160;the rooms&#160;to have. If the appropriate features are not available, you can configure them. See&#160;Configuring Features.</li>
+            <li>If any of the rooms that you select for configuration have existing features and you want to drop these existing features and apply only the new features, select <span class="button">Overwrite Existing</span>; otherwise, the new features are simply appended to the list of existing features.</li>
+            <li>Continue with any other optional configuration for the room as needed; otherwise, click&#160;<span class="button">Next&#160;</span>to continue in the&#160;Room Configuration wizard.&#160;</li>
+        </ol>
+        <h2><a name="Exclude"></a>Exclude Resources for Multiple Rooms&#160;</h2>
+        <ol>
+            <li>Under Items, select&#160;<span class="button">Excluded Resources</span>.&#160;The Excluded Resources tab opens.</li>
+            <li>Select the category that contains the resources that are to be excluded.&#160;The category’s resources are displayed in the Available list.</li>
+            <li>On the Available list, CTRL-click to select multiple resources you want&#160;excluded from the rooms.</li>
+            <li>If any of the rooms you select for configuration have existing resources and you want to drop these existing resources and apply only the new resources, select&#160;Overwrite Existing; otherwise, the new resources are simply appended to the list of existing resources.</li>
+            <li>Click the Move button (&gt;) to move the selected resources to the Selected list.</li>
+            <li>Continue with any other optional configuration for the room as needed; otherwise, click&#160;<span class="button">Next&#160;</span>to continue in the&#160;Room Configuration wizard.</li>
+        </ol>
+        <h2><a name="ConfigureCommon"></a>Configure Common Setup Types for Multiple Rooms&#160;</h2>
+        <ol>
+            <li>Under Items, select&#160;<span class="button">Setup Types</span>.&#160;The Setup Types tab opens.</li>
+            <li>If any of the rooms you select for configuration have existing setup types and you want to drop them and apply only the new setup types, select&#160;<span class="button">Overwrite Existing</span>; otherwise, the new setup types are simply appended to the list of existing setup types.</li>
+            <li>For each applicable setup type, select&#160;<span class="button">In Use</span>, and then use&#160;the Min. Capacity and/or Max. Capacity fields&#160;to set headcount limits&#160;for the setup type.</li>
+            <li>Continue with any other optional configuration for the room as needed; otherwise, click&#160;<span class="button">Next&#160;</span>to continue in the&#160;Room Configuration wizard.&#160;</li>
+        </ol>
+        <h2><a name="ConfigureCommonUDF"></a>Configure Common UDFs for Multiple Rooms&#160;</h2>
+        <ol>
+            <li>Click&#160;<span class="button">User Defined Fields</span>.&#160;The User Defined Fields tab opens. All the UDFs that have a type of Room are displayed on the tab.</li>
+            <li>If any of the rooms &#160;you select for configuration have existing UDFs with set values and you want to drop them and apply only the new values, select&#160;<span class="button">Overwrite Existing</span>; otherwise, the new values are simply appended to the list of existing values.</li>
+            <li>For each UDF&#160;you configure for the room, do the following:<ol><li>Select the UDF.</li><li>Click&#160;<span class="button">Set Value</span>&#160;to open a Value dialog box.</li><li>Enter the value for the UDF in the Value field, and then click <span class="button">OK </span>to close the dialog box and return to the User Defined Fields tab.</li></ol></li>
+            <li>Continue with any other optional configuration for the room as needed; otherwise, click&#160;<span class="button">Next&#160;</span>to continue in the&#160;Room Configuration wizard.&#160;</li>
+        </ol>
+        <p class="figurecaptioncolumn_1">&#160;</p>
+    </body>
+</html>

@@ -7,11 +7,11 @@
     Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigEverydayUser.htm" />
   <TocEntry
     Title="Licensing for Everyday Users"
-    Link="/Content/Configuring Everyday Users/Licensing for Everyday Users.htm" />
+    Link="/Content/Configuring Everyday Users/DC_CG_LicensingEverydayUser.htm" />
   <TocEntry
     Title="Assigning Templates to Everyday Users"
     Link="/Content/Configuring Everyday Users/Assigning Templates to Everyday.htm" />
   <TocEntry
     Title="Configure Groups and Contacts from an Everyday User"
-    Link="/Content/Configuring Everyday Users/Configure Groups and Contacts.htm" />
+    Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigGroupsContactsEverydayUser.htm" />
 </CatapultToc>

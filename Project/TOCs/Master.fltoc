@@ -566,7 +566,11 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigStatuses.htm" />
         <TocEntry
           Title="Configure Notification Rules"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigNotRules.htm" />
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigNotRules.htm">
+          <TocEntry
+            Title="Types of Notification Rules"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_TypesNotifiRules.htm" />
+        </TocEntry>
         <TocEntry
           Title="Configure Group Notification Rules"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigGroupNot.htm" />
@@ -626,11 +630,17 @@
           Title="Configure Everyday Users"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigEverydayUser.htm">
           <TocEntry
-            Title="Licensing for Everyday Users" />
+            Title="Licensing for Everyday Users"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_LicensingEverydayUser.htm" />
           <TocEntry
-            Title="Emailing an Everyday User" />
+            Title="Emailing an Everyday User"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_EmailingEverydayUser.html" />
           <TocEntry
-            Title="Configure Groups and Contacts from an Everyday User" />
+            Title="Configure Groups and Contacts from an Everyday User"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigGroupsContactsEverydayUser.htm" />
+          <TocEntry
+            Title="Assign Templates to Everyday Users"
+            Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_AssignTempEverydayUser.htm" />
         </TocEntry>
         <TocEntry
           Title="Configure Everyday User Process Templates"
@@ -703,10 +713,10 @@
             Title="Configure Additional Information for a Group"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigAddInfoGroup.html" />
           <TocEntry
-            Title="Editing Group Information"
+            Title="Edit Group Information"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_EditGroupInfo.htm" />
           <TocEntry
-            Title="Importing Groups"
+            Title="Import Groups"
             Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ImportGroup.htm" />
         </TocEntry>
         <TocEntry

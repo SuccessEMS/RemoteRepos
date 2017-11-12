@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="true"
+  KeepSourceLinks="true"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-11T11:57:28.9161302-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Jen.Naused\Desktop\11-1-17\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-11T11:57:39.3565659-07:00">
+  <Files>
+    <Url
+      Source="../../../../Documents/ConfiguringAdministration.docx"
+      AbsoluteSource="file:///C:/Users/Jen.Naused/Documents/ConfiguringAdministration.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configuring Room Card Formats.png"
+      TimeStamp="11/11/2017 11:57:35 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configuring Room Card Formats_1.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/ConfiguringAdministration/Configuring Room Card Formats.htm"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Calendar Formats.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Calendar Formats_1.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Calendar Formats_2.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Calendar Formats_3.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/ConfiguringAdministration/Configure Calendar Formats.htm"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_1.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_2.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_3.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_4.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Configure Reservation Wizard_5.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/ConfiguringAdministration/Configure Reservation Wizard.htm"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/ConfiguringAdministration/How Do I Configure EMS for.htm"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Images/ConfiguringAdministration/Where Does The Information.png"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/ConfiguringAdministration/Where Does The Information.htm"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../TOCs/ConfiguringAdministration.fltoc"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/ConfiguringAdministration.css"
+      TimeStamp="11/11/2017 11:57:36 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles>
+    <StyleName
+      Name="Heading 1" />
+  </NewTopicStyles>
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="body" />
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="notetipwarningtext" />
+    <StyleName
+      Name="stepnumberbegin" />
+    <StyleName
+      Name="stepnumbercontinued" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+    <StyleName
+      Name="stepresultnobullet" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

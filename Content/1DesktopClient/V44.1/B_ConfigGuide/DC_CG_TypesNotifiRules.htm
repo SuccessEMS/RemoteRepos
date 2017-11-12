@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="3247" MadCap:lastWidth="1376">
+    <head>
+    </head>
+    <body>
+        <h1>Types of Notification Rules</h1>
+        <p>This topic details the types of notification Rules in EMS:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#Booking">Booking Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Service">Service Order Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#Notification">Notification Rules for Anything On A VIP Event</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#New">New Everyday Users Notification Rules</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#User">User Defined Field Notification Rules</MadCap:xref>
+            </li>
+        </ul>
+        <h2><a name="Booking"></a>Booking Notification Rules</h2>
+        <p>Any of the following notification types are considered booking notifications, and are available when creating new Notification Rules in the wizard:</p>
+        <ul>
+            <li>New Bookings</li>
+            <li>Changes to Date/Time</li>
+            <li>Room Changes</li>
+            <li>Status Changes</li>
+        </ul>
+        <ol>
+            <li>The Setup Type field in the Notification Rule Wizard enables you to ensure that changes to a booking's room setup will appropriately notify attendees. You can select one of the existing setup types, or one of the options below.</li>
+        </ol>
+        <ul>
+            <li>(<span class="button">all</span>) - The rule will trigger on all Setup Types.</li>
+            <li>(<span class="button">any other than Room default</span>) - Notifications will trigger for all Setup Types except for the Room's default Setup Type. (To change the default Setup Type you can go to <span class="button">Configuration </span>&gt; <span class="button">Facilities </span>&gt; <span class="button">Rooms</span>, then select a Room and click <span class="button">Edit</span>; then make your changes in the "Default Setup Type" field.)</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>Next to the <span class="button">Notification triggers if change occurs within</span>... field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>The <span class="button">Display New Booking As</span> field enables you to specify whether the Notification occurs as Booking Information or Reservation Information. For example, for new reservations that contain multiple bookings (recurring meetings), if Booking Information is selected, then a Notification occurs for every individual booking. If Reservation Information is selected, then a single Notification occurs for the entire reservation.</li>
+            <li>For <span class="button">Source</span>, indicate whether additions and/or changes in the EMS Desktop Client, EMS Web App, or both will trigger a Notification.</li>
+        </ol>
+        <p>Note: The Booking options described here only apply to EMS Enterprise. In EMS Professional, only one global Booking Notification can be configured at any time in your EMS database and it is only available if a Booking Notification is not currently configured in your EMS database.</p>
+        <h2><a name="Service"></a>Service Order Notification Rules</h2>
+        <p>Any of the following notification types are considered service order notifications:</p>
+        <ul>
+            <li>New Service Orders</li>
+            <li>Changes to Service Orders</li>
+            <li>Deleted/Canceled Service Orders</li>
+        </ul>
+        <ol>
+            <li>On the Category dropdown list, select the category for which the service order Notification is to be generated. If the appropriate category is not available, you can configure it. See Configuring Categories. </li>
+            <li>After selecting a category, the State, Grouping, and Resource options appear. You can select (all), (multiple), (none), or an individual item on the list. To notify on a whole category, keep the selections set to (all).</li>
+        </ol>
+        <ul>
+            <li><span class="button">State—</span>Select the corresponding state that you the Notification to trigger on.  "New Service Orders" will have to start in that state.  "Changes To Service Orders" will have to change into that state.  More than one state may be selected.</li>
+            <li><span class="button">Grouping<span class="button">—</span></span>Select the grouping that a resource is in. These are set at the resource level in EMS. See Configuring Groupings.</li>
+            <li><span class="button">Resource<span class="button">—</span></span>Select an individual resource from the list.</li>
+        </ul>
+        <p>Note: When you choose a Group or Category, all three items (New Service Orders, Changes To Service Orders, and Deletion/Cancelation Of Service Orders) will become auto-selected. The notification will now only fire on all three. To set the rule to trigger notifications on only one or two of these three, you must select (all) on both Group and Category.</p>
+        <ol start="3">
+            <li>Next to the Notification triggers if change occurs within... field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For Source, indicate whether additions and/or changes in the EMS Desktop Client, EMS Web App, or both will trigger a Notification.</li>
+        </ol>
+        <h2><a name="Notification"></a>Notification Rules for Anything On A VIP Event</h2>
+        <p>VIP Event is an option available when creating a reservation in the Reservation Wizard. Select this option to notify users when any changes are made to a VIP Event.</p>
+        <h2><a name="New"></a>New Everyday Users Notification Rules</h2>
+        <p>Select this option to notify users when a new everyday user account is created. For Source, indicate whether additions and/or changes from the EMS Desktop Client, EMS Web App, or both should trigger a Notification.</p>
+        <h2><a name="User"></a>User Defined Field Notification Rules</h2>
+        <ol>
+            <li>In Type field, select the User Defined Field type for which the Notification is to be generated. If the appropriate UDF is not available, you can configure it. See Configuring User Defined Fields (UDFs).</li>
+            <li>Select the UDF for which the Notification is to be generated. (Available UDFs have a field type of List. UDFs with other field types are not displayed on the User Defined Field dropdown list.)</li>
+            <li>Select the UDF value for which the Notification is to be generated.</li>
+            <li>Next to the <span class="button">Notification triggers if change occurs within</span>... field, you can specify the timeframe (in days or hours) leading up to the booking when notifications generate. Enter a number and select "Days" or "Hours" from the dropdown.</li>
+            <li>For <span class="button">Source</span>, indicate whether additions and/or changes in the EMS Desktop Client, EMS Web App, or both will trigger a Notification.</li>
+        </ol>
+        <p>Note: The Service Order options described here only apply to EMS Enterprise. In EMS Professional, only one service order Notification per category can be configured at any time in your EMS database.</p>
+    </body>
+</html>

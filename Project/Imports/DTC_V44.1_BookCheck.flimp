@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-11T21:14:34.1053708-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-11T21:14:50.9306423-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_BookCheck.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_BookCheck.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44.1_BookCheck/Booking Check in.htm"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_BookCheck/What is Booking Level Check.htm"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Enabling Booking Check In.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Enabling Booking Check In_1.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Enabling Booking Check In_2.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Enabling Booking Check In_3.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_BookCheck/Enabling Booking Check In.htm"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Managing Check In.gif"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Managing Check In_1.gif"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_BookCheck/Managing Check In.htm"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_1.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In.gif"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_2.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_3.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_4.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_5.png"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_BookCheck/Ways to Check In_1.gif"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_BookCheck/Ways to Check In.htm"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_BookCheck.fltoc"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_BookCheck.css"
+      TimeStamp="11/11/2017 9:14:48 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="mt-indent-2" />
+    <StyleName
+      Name="Normal (Web)" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+  </UsedCharacterStyles>
+</MsWordImport>

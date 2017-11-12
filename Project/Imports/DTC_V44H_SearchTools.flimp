@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-11T19:53:19.7725777-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-11T19:53:39.9523156-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_SearchTools.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_SearchTools.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Search Tools.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Search Tools.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_1.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_2.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_3.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_4.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_5.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_6.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_7.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_8.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_9.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_10.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Browser_11.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Searching with the Browser.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_1.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_2.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_3.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_4.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_5.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Calendar_6.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Searching with the Calendar.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource.png"
+      TimeStamp="11/11/2017 7:53:36 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_1.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_2.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_3.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_4.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_5.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Searching with the Resource_6.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Searching with the Resource.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_1.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_2.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_3.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_4.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_5.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_SearchTools/Managing Service Orders_6.png"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Managing Service Orders.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/DTC_V44H_SearchTools/Searching with the Web Reservations.htm"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../TOCs/DTC_V44H_SearchTools.fltoc"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44H_SearchTools.css"
+      TimeStamp="11/11/2017 7:53:37 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

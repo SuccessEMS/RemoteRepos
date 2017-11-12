@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Booking Check-in" Link="/Content/DTC_V44.1_BookCheck/Booking Check in.htm" />
+    <TocEntry Title="What is Booking-Level Check In?" Link="/Content/DTC_V44.1_BookCheck/What is Booking Level Check.htm" />
+    <TocEntry Title="Enabling Booking Check In" Link="/Content/DTC_V44.1_BookCheck/Enabling Booking Check In.htm" />
+    <TocEntry Title="Managing Check In" Link="/Content/DTC_V44.1_BookCheck/Managing Check In.htm" />
+    <TocEntry Title="Ways to Check In" Link="/Content/DTC_V44.1_BookCheck/Ways to Check In.htm" />
+</CatapultToc>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Search Tools" Link="/Content/DTC_V44H_SearchTools/Search Tools.htm" />
+    <TocEntry Title="Searching with the Browser" Link="/Content/DTC_V44H_SearchTools/Searching with the Browser.htm" />
+    <TocEntry Title="Searching with the Calendar" Link="/Content/DTC_V44H_SearchTools/Searching with the Calendar.htm" />
+    <TocEntry Title="Searching with the Resource Calendar" Link="/Content/DTC_V44H_SearchTools/Searching with the Resource.htm" />
+    <TocEntry Title="Managing Service Orders" Link="/Content/DTC_V44H_SearchTools/Managing Service Orders.htm" />
+    <TocEntry Title="Searching with the Web Reservations Browser" Link="/Content/DTC_V44H_SearchTools/Searching with the Web Reservations.htm" />
+</CatapultToc>

@@ -183,9 +183,11 @@
       <TocEntry
         Title="The Calendar">
         <TocEntry
-          Title="Search with the Calendar" />
+          Title="Search with the Calendar"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchwithCalendar.html" />
         <TocEntry
-          Title="Search with the Resource Calendar" />
+          Title="Search with the Resource Calendar"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchwithResourCal.html" />
       </TocEntry>
       <TocEntry
         Title="The Reservation Wizard">
@@ -195,18 +197,21 @@
         <TocEntry
           Title="The Everyday User Reservations Browser">
           <TocEntry
-            Title="Search Using the Everyday User Reservation Browser" />
+            Title="Search Using the Everyday User Reservations Browser"
+            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchEverydayUserBrow.htm" />
         </TocEntry>
         <TocEntry
           Title="Create a Reservation in the Reservation Wizard"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CreateResinResWizard.htm" />
         <TocEntry
-          Title="Book a Video Conference" />
+          Title="Book a Video Conference"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_BookingaVC.html" />
       </TocEntry>
       <TocEntry
         Title="The Browser">
         <TocEntry
-          Title="Search with the Browser" />
+          Title="Search with the Browser"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchwithBrowser.html" />
       </TocEntry>
       <TocEntry
         Title="People: Groups and Contacts">
@@ -266,15 +271,20 @@
           Title="Work With and Search for Service Orders" />
       </TocEntry>
       <TocEntry
-        Title="Search For Reservations, Bookings, Resources, and Service Orders" />
+        Title="Search For Reservations, Bookings, Resources, and Service Orders"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SrchResBookResSvcOrder.html" />
       <TocEntry
-        Title="Booking Check In ">
+        Title="Booking Check In "
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_BookCheckIn.html">
         <TocEntry
-          Title="Enable Booking Check In" />
+          Title="Enable Booking Check In"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DesktopClient_EnablingBookingCheckIn.html" />
         <TocEntry
-          Title="Ways to Check In" />
+          Title="Ways to Check In"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_WaystoCheckIn.html" />
         <TocEntry
-          Title="Manage Booking Check Ins" />
+          Title="Manage Check In"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageCheckIn.html" />
       </TocEntry>
       <TocEntry
         Title="Reports and Queries">

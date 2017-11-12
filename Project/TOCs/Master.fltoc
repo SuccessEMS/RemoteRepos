@@ -507,13 +507,11 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigPublicViews.html" />
       </TocEntry>
       <TocEntry
-        Title="Configuration &gt; Resources">
+        Title="Configuration &gt; Resources"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverviewConfigRes.html">
         <TocEntry
           Title="Categories, Resources, Services - What's the Difference?"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_CategoriesResourcesServices_WhatsDiff.htm" />
-        <TocEntry
-          Title="Overview of Configuring Resources"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_OverviewConfigRes.html" />
         <TocEntry
           Title="Configure Resources for a Category"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html">
@@ -544,10 +542,8 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ExportPricInfo.htm" />
       </TocEntry>
       <TocEntry
-        Title="Configuration &gt; Billing">
-        <TocEntry
-          Title="Overview of Billing Configuration"
-          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_OverviewBilling.htm" />
+        Title="Configuration &gt; Billing"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_OverviewBilling.htm">
         <TocEntry
           Title="Configure Rate Schedules"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigRateSchedule.htm" />
@@ -580,7 +576,8 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigCurrencies.htm" />
       </TocEntry>
       <TocEntry
-        Title="Configuration &gt; Administration">
+        Title="Configuration &gt; Administration"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigAdmin.htm">
         <TocEntry
           Title="Configure Categories"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigCategory.html">
@@ -618,7 +615,8 @@
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigResWiz.htm" />
       </TocEntry>
       <TocEntry
-        Title="Configuration &gt; Other">
+        Title="Configuration &gt; Other"
+        Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigOther.html">
         <TocEntry
           Title="Configure Event Types"
           Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigEventType.html" />
@@ -733,9 +731,11 @@
       <TocEntry
         Title="Configuration &gt; Kiosk">
         <TocEntry
-          Title="Configure Kiosk Profiles" />
+          Title="Configure Kiosk Profiles"
+          Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppProfiles.htm" />
         <TocEntry
-          Title="Configure Kiosk Menus" />
+          Title="Configure Kiosk Menus"
+          Link="/Content/15Kiosk/B_Config/Kiosk_CG_ConfigKioskAppMenus.htm" />
       </TocEntry>
       <TocEntry
         Title="Configure Groups (Toolbar Icon)">
@@ -879,7 +879,8 @@
         Title="Video Conferencing"
         Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_VC.html">
         <TocEntry
-          Title="Configure Video Conferencing Capabilities" />
+          Title="Configure Video Conferencing Capabilities"
+          Link="/Content/1DesktopClient/V44.1/B_ConfigGuide/DC_CG_ConfigVCCapabilities.htm" />
       </TocEntry>
     </TocEntry>
     <TocEntry

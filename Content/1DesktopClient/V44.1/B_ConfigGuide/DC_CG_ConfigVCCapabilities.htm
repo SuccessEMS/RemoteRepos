@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="6531" MadCap:lastWidth="1342">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="6927" MadCap:lastWidth="1342">
     <head>
     </head>
     <body>
@@ -9,17 +9,27 @@
             <li>
                 <MadCap:xref href="#ConfigureVCRoomFeatures">Configuring Video Conference Room Features</MadCap:xref>
             </li>
-            <li>Configure Video Conference Services</li>
+            <li>
+                <MadCap:xref href="#ConfigureVCServices">Configure Video Conference Services (Categories and Resources)  </MadCap:xref>
+            </li>
             <li>Configure Rooms With Video Conference Equipment.</li>
-            <li>Configure Room Overrides.</li>
-            <li>Configure Event Types.</li>
-            <li>Configure Video Conference Booking Templates to Use the (Above).</li>
-            <li>Configure Notifications and Reports.</li>
+            <li>
+                <MadCap:xref href="DC_CG_ConfigOverrideRooms.htm">Configure Override Rooms</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="DesktopClient_ConfigEventType.html">Configure Event Types</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#booktemplate">Configure a Video Conference Booking Template</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#ConfigureNotandReport">Configure Notifications and Reports  </MadCap:xref>
+            </li>
         </ul>
         <h2 class="Heading2"><a name="ConfigureVCRoomFeatures"></a>Configuring Video Conference Room Features</h2>
         <p>A <span class="button">feature </span>is a built-in or permanent attribute of a room, such as a network connection, a built-in plasma TV, window, and so on. Your users can use features as criteria when they are searching for a room. They can also filter the available rooms that can be reserved for an event by room features. After you configure different room features for your organization, you must indicate which rooms have these features.</p>
         <ol>
-            <li>Configure Room Features in EMS Desktop Client to reflect your video conferencing equipment options, such as a projector or a webcam. For detailed instructions, See Also: Configuring Features.</li>
+            <li>Configure Room Features in EMS Desktop Client to reflect your video conferencing equipment options, such as a projector or a webcam. For detailed instructions, See Also: <MadCap:xref href="DesktopClient_ConfigFeatures.html">Configuring Features</MadCap:xref>.</li>
         </ol>
         <p>Tip:&#160;Be sure to select <span class="button">Tied to Resource</span> when configuring a video conference Feature. This links the room to video conferencing equipment and services and streamlines the booking process. If you want EMS Web App users to see this feature when they are searching for available space, leave <span class="button">Available to Everyday Users</span> selected.</p>
         <p>
@@ -32,180 +42,64 @@
         <p>
             <img src="Images/DC_CG_ConfigVC2.png" />
         </p>
-        <ul>
-            <li>A resource for a mobile video conferencing cart, for example, Mobile Video Conferencing Cart.</li>
-        </ul>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Configuring Video Conferencing.png" alt="emssg_appendixvc_ExclamationPoint.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>You must select the Maintain Inventory option when you are configuring this resource and you must enter a value in the Quantity Available field.</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <h2 class="Heading2">Configuring a Built-in Video Conference Room&#160;</h2>
-        <ol start="1">
-            <li>Search for a room for which the video conferencing feature that you defined in&#160;Step 1.</li>
-            <li>Select the room, and then click&#160;Edit.&#160;The Room dialog box opens.</li>
-            <li>Open the Features tab on the Room dialog box, and on the Available list, select this video conferencing feature.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>The feature is designated as being “tied to a resource.”</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <p>The Resource Selector dialog box opens.</p>
-        <p>
-            <img src="../../../Resources/Images/DTC_V44_VC/Configuring Video Conferencing_1.png" alt="emssg_appendixvc_image002.png" />
-        </p>
-        <ol start="4">
-            <li>Select the resource that you designated for built-in video conferencing equipment.&#160;The Selected list on the Features tab is updated with the selected feature/resource combination.</li>
-            <li>Click&#160;OK&#160;to save your changes.</li>
-            <li>Repeat this procedure for every room in your organization that has built-in video conferencing features.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>Remember, you can use the Room Configuration Wizard to mass assign a feature to multiple rooms in a single step. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/030_Room_Administration_Wizard" title="Room Administration Wizard">Room Administration Wizard</a>.</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <h2 class="Heading2">Configuring A Room That Accommodates a Mobile Video Conferencing Cart&#160;</h2>
-        <ol start="1">
-            <li>Search for a room for which the video conferencing feature that you defined in&#160;Step 1&#160;of&#160;To configure features and resources&#160;is applicable. (See&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms#To_search_for_a_room" title="Configuring Rooms">To search for a room</a>.)</li>
-            <li>Select the room, and then click&#160;Edit.&#160;The Room dialog box opens.</li>
-            <li>Open the Features tab on the Room dialog box, and on the Available list, select this video conferencing feature.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>The feature is designated as being “tied to a resource.”</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <p>The Resource Selector dialog box opens.</p>
-        <p>
-            <img src="../../../Resources/Images/DTC_V44_VC/Configuring Video Conferencing_2.png" alt="emssg_appendixvc_image003.png" />
-        </p>
-        <ol start="4">
-            <li>Select the resource that you designated for the mobile video conferencing cart.&#160;The Selected list on the Features tab is updated with the selected feature/resource combination.</li>
-            <li>Click&#160;OK&#160;to save your changes.</li>
-            <li>Repeat this procedure for every room in your organization that can accommodate a mobile video conferencing cart.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>Remember, you can use the Room Configuration Wizard to mass assign a feature to multiple rooms in a single step. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/030_Room_Administration_Wizard" title="Room Administration Wizard">Room Administration Wizard</a>.</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <h2 class="Heading2">Configuring&#160;an Override Room That Can Accommodate a Mobile Video Conferencing Cart&#160;</h2>
-        <ol start="1">
-            <li>Configure an override room (for example, “Other”). See&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/040_Core_Configuration_-_Facilities/Configuring_Rooms" title="Configuring Rooms">Configuring Rooms</a>.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>When you configure this room, make sure to select Override Description for the room classification.</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <ol start="2">
-            <li>On the Room dialog box, in the Available list, select the video conferencing feature that you defined in&#160;Step 1&#160;of&#160;To configure features and resources.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>The feature is designated as being “tied to a resource.”</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <p>The Resource Selector dialog box opens.</p>
-        <p>
-            <img src="../../../Resources/Images/DTC_V44_VC/Configuring Video Conferencing_3.png" alt="emssg_appendixvc_image004.png" />
-        </p>
-        <ol start="3">
-            <li>Select the resource that you designated for the mobile video conferencing cart.&#160;The Selected list on the Features tab is updated with the selected feature/resource combination.</li>
-            <li>Click&#160;OK&#160;to save your changes.</li>
-            <li>Repeat this procedure for every override room that can accommodate a mobile video conferencing cart at your organization.</li>
-        </ol>
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        <p>
-                            <img src="../../../Resources/Images/DTC_V44_VC/Video Conferencing.png" alt="emssg_appendixvc_small_reminder.png" />
-                        </p>
-                    </th>
-                    <th>
-                        <p>Remember, you can use the Room Configuration Wizard to mass assign a feature to multiple rooms in a single step. See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/110_System_Administration_Tools/030_Room_Administration_Wizard" title="Room Administration Wizard">Room Administration Wizard</a>.</p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <h2 class="Heading2"><a name="RTF436f6e6669677572696e675f"></a>Configure a Video Conference Web Process Template&#160;</h2>
-        <ol start="1">
-            <li>Configure two video conferencing specific event types—one event type that is used to designate which of the bookings in the reservation is the host location (for example, “Host VC”) and one event type that is applied to all the other bookings in the reservation (for example, “VC”). See&#160;<a href="https://success.emssoftware.com/Older_Releases_(V44%2C_V43)/EMS_Version_44/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/030_Core_Configuration_-_Other_Data_Types/020_Configuring_Event_Types" title="Configuring Event Types">Configuring Event Types</a></li>
-            <li>Configure a web process template with the following characteristics:</li>
+        <h2><a name="ConfigureVCServices"></a>Configure Video Conference Services (Categories and Resources)  </h2>
+        <p>Configure several service categories to represent additional services to be performed for the video conference, such as A/V Setup, and a Mobile Video Conference Cart.</p>
+        <ol>
+            <li>Configure a category for video conferencing services. <MadCap:xref href="DesktopClient_ConfigCategory.html">Click here for detailed instructions on Configuring Categories</MadCap:xref>.</li>
+            <li>Configure resources and services within the Category for equipment, setup, tear down, etc. For detailed instructions, See Also: <MadCap:xref href="DesktopClient_ConfigResourcesforCat.html">Configuring Resources for a Category</MadCap:xref>. Depending on your organization, you may need to configure two types of video conferencing resources for the category that you just created:</li>
         </ol>
         <ul>
-            <li>The mode is Self Serve.</li>
-            <li>The Video Conference option is selected for the template.</li>
-            <li>The two Event Types that you created in&#160;Step 1&#160;are selected for the template.</li>
-            <li>On the Video Conference tab:</li>
-            <li>On the Feature dropdown list, select the video conferencing feature that you defined in&#160;Step 1&#160;of&#160;To configure features and resources.</li>
-            <li>On the Host Event Type dropdown list, select the video conferencing host Event Type that you defined in&#160;Step 1.</li>
+            <li>Built-in video conferencing equipment, such as a Built-in Video Conference Equipment (Note: Do not select the <span class="button">Maintain Inventory</span> option).</li>
+            <li>A Mobile Video Conferencing Cart (Note: Be sure to select the Maintain Inventory option , plus a value in the Quantity Available field).</li>
         </ul>
-        <p>&#160;</p>
+        <p>Tip: You can use the Room Configuration Wizard to mass-assign a feature to multiple rooms in a single step. Additionally, you may need to set the Status for these services to Request if your organization requires approvals.</p>
+        <p>For detailed instructions, See Also: Room Administration Wizard.</p>
+        <h2><a name="booktemplate"></a>Configure a Video Conference Booking Template</h2>
+        <p>For detailed instructions, see Configuring an Everyday User Booking Template and use the example below.</p>
+        <p>Tip: Video conferences are typically reserved in EMS Web App due to its streamlined permissions management and ease of use (especially the Calendar view). If you have a significant number of users who book video conferences in EMS Desktop Client, especially if they have limited access and may not be comfortable using the more expert users' booking process, you may wish to create a video conference template for the Reservation Wizard. Familiarize yourself with the process here and then for detailed instructions, See Also: Creating Reservation Wizard templates.</p>
+        <ol>
+            <li>Set the Mode to <span class="button">Self Serve</span>. and the Video Conference option is selected for the template. If your organization requires such meetings to be approved, use <span class="button">Requested Request Status</span>.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigVC3.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Move Categories (Resources and Services) for setup, teardown, equipment, and so forth, as you defined above, into the Selected panel on the Categories tab. Below is an example showing all "VC" (video conference) service categories for an organization enabled for users to select when booking with this template.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigVC4.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Move Rooms (which you defined above) on the Rooms tab to the Selected panel. If your organization requires video conference-equipped rooms to go through an approval process, use the Request panel on the lower right.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigVC5.png" />
+        </p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>Concept: Override Rooms Can "Override" Normal Room Configuration and Setup/Teardown Times</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <p>Users will be able to change configuration and start and end time defaults that would normally come from the room definition, in order to accommodate extra video conferencing equipment and services.</p>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+        <ol MadCap:continue="true">
+            <li>Move Event Types (which you defined above) on the Event Types tab to the <span class="button">Selected </span>panel.</li>
+        </ol>
+        <p>
+            <img src="Images/DC_CG_ConfigVC6.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>
+                <p>On the Video Conference tab, select the video conferencing feature you defined in Step 1 (above).</p>
+            </li>
+            <li>
+                <p>Complete fields on the remaining tabs as needed and click <span class="button">OK </span> to save.</p>
+            </li>
+        </ol>
+        <h2><a name="ConfigureNotandReport"></a>Configure Notifications and Reports</h2>
+        <p>To set how and when users are notified about the meeting and any changes to it (particularly as equipment and service requests move through the approval process), <MadCap:xref href="DC_CG_ConfigNotRules.htm">Configure Notification Rules</MadCap:xref>.</p>
+        <p>Tips:&#160;Notification Rules are highly recommended if you integrate with CISCO TMS.</p>
+        <p>The most common report run on video conferences is the Setup Worksheet report, set to automatically run daily or weekly, and to deliver to stakeholders' inboxes. For detailed instructions, See Also: EMS Setup Worksheet.</p>
     </body>
 </html>

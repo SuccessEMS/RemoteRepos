@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xml:lang="en-us" MadCap:lastBlockDepth="6" MadCap:lastHeight="4392" MadCap:lastWidth="1342" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44_CGResources.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Resource Configuration Wizard</h1>
+        <p>When you configure resources for a category, you have the option of configuring a single resource at a time through the Resources window, or you can use the Resource Configuration Wizard to configure multiple resources. You typically use the Resource Configuration Wizard to configure multiple resources that have common properties such as the grouping, the account, and the EMS Web App&#160;settings. Instead of configuring these resources individually with these same properties, you can use the Resource Configuration Wizard to&#160;configurethese resources in a single step.</p>
+        <ol start="1">
+            <li>On the EMS menu bar, click <span class="button">Configuration </span>&gt;&#160;<span class="button">Resources</span>.&#160;A list of all the categories that are currently configured in your EMS database&#160;and&#160;for which you can configure resources opens.</li>
+            <li>Select the category for which you are configuring the resources.&#160;The Resources window opens. This window lists all the resources that are currently configured in your EMS database for the selected category and that have a status of Active.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources.png" alt="https://success.emssoftware.com/@api/deki/files/4117/clipboard_edd6023a2ffca8b7ec3986a3943e70e94?revision=1&amp;size=bestfit&amp;width=809&amp;height=641" />
+        </p>
+        <ol start="3">
+            <li>Optionally, do one or both of the following:</li>
+        </ol>
+        <ul>
+            <li>To view all resources for the category in your EMS database, regardless of status, under Show, click Inactive.</li>
+            <li>To filter the displayed resources based on the Resource name, in the Filter field, enter a search string.</li>
+        </ul>
+        <ol start="4">
+            <li>Click&#160;<span class="button">Wizard</span>.&#160;The Resource Configuration Wizard opens.</li>
+        </ol>
+        <p>Resource Configuration Wizard</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources_1.png" alt="https://success.emssoftware.com/@api/deki/files/4116/clipboard_e8746c2cf2f97cd75c50b5ca301345933?revision=1&amp;size=bestfit&amp;width=786&amp;height=635" />
+        </p>
+        <ol start="5">
+            <li>Configure the properties as needed for the new resources.</li>
+        </ol>
+        <table style="mc-table-style: url('../1DesktopClient/V44.1/Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <col style="width: 257px;" />
+            <col />
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Field</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Grouping</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select the grouping for the resources.</p>
+                        <p>Note:&#160;If the appropriate grouping is not available, you can configure it. See&#160;“Configuring Groupings for a Resource”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Account</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>Select the internal account which is to receive the revenue from the use of the resource.</p>
+                        <p>Note:&#160;If the appropriate account is not available, you can configure it. See&#160;“Configuring Accounts”.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Serves</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>The number of users that can be served by the resource. For example, one lunch buffet might serve ten people.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Min. Quantity</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>The minimum quantity of the resource that a user must order.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Internal</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>Select this option and leave Yes selected to indicate that the resource is internal to your organization.</p>
+                        <p>Note:&#160;Used for internal reporting purposes only. The resource is not printed on external documents such as confirmations and invoices, and it is not hidden in any area of your EMS application.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-DarkerRows">
+                        <p>Available to Everyday Users</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-DarkerRows">
+                        <p>If these resources must be available for EMS Web App users who select this category, select this option, and then leave Yes selected. To remove these resources as an option for EMS Web App, select No.</p>
+                        <p>Note:&#160;Not available if&#160;<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html#RTF4f7665727269646544657363">Override Description</a>&#160;is selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyE-Regular-LightRows">
+                        <p>Available at Checkout</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyD-Regular-LightRows">
+                        <p>If these resources are to be displayed on the “checkout” page (the last page in the Room Request process) in EMS Web App, then select this option, and then leave Yes selected. Tor remove these resources from the “checkout” page, select No.</p>
+                        <p>Note:&#160;Not available if Available to Everyday Users is&#160;not&#160;selected.</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-PatternedRows-Body-DarkerRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-DarkerRows">
+                        <p>Active</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-DarkerRows">
+                        <p>To add the resources as active resources to the EMS database, select this option, and then leave Yes selected. To inactivate these resources, select No.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol start="6">
+            <li>Click&#160;<span class="button">Next</span>.&#160;The second page of the Resource Configuration Wizard opens. All the resources that are currently configured in your EMS database for the selected category and that have a status of Active are displayed on the page.</li>
+        </ol>
+        <p>Resource Configuration Wizard, Second page</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44_CGResources/Configuring Multiple Resources_2.png" alt="emssg_CoreConfigurationResources_image020.png" />
+        </p>
+        <p>Tip:&#160;Optionally, to show all resources for the category that are in your EMS database regardless of status, under Show, click Inactive.</p>
+        <ol start="7">
+            <li>On the Available list, select the resource, or CTRL-click to select the multiple resources that you are configuring with these properties, and then click the Move button (&gt;) to move the selected resources to the Selected list.</li>
+            <li>Click&#160;<span class="button">Finish</span>.&#160;A message appears indicating that the resource properties were set successfully.</li>
+            <li>Click&#160;<span class="button">OK</span>.&#160;The message and the Resource Configuration Wizard close.</li>
+        </ol>
+        <p>Tip:&#160;You must configure the other properties for the resources, such as the pricing, individually. See&#160;“<a href="../1DesktopClient/V44.1/B_ConfigGuide/DesktopClient_ConfigResourcesforCat.html" title="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category" alt="EMS_V44.1/Installing_and_Setting_Up_EMS/EMS_Desktop_Client/Setting_Up_EMS_Desktop_Client/060_Core_Configuration_-_Resources/040_Configuring_Resources_for_a_Category">Configuring Resources for a Category</a>”.</p>
+    </body>
+</html>

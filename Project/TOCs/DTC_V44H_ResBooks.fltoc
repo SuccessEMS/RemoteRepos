@@ -1,10 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultToc Version="1">
-    <TocEntry Title="Reservations and Bookings V44H" Link="/Content/DTC_V44H_ResBooks/Reservations and Bookings.htm" />
-    <TocEntry Title="Reservations, Bookings, and Booking Details" Link="/Content/DTC_V44H_ResBooks/Reservations Bookings and.htm" />
-    <TocEntry Title="Event Timeline" Link="/Content/DTC_V44H_ResBooks/Event Timeline.htm" />
-    <TocEntry Title="Making a Reservation Using the Reservation Wizard" Link="/Content/DTC_V44H_ResBooks/Making a Reservation Using.htm" />
-    <TocEntry Title="Using the Reservation Book" Link="/Content/DTC_V44H_ResBooks/Using the Reservation Book.htm" />
-    <TocEntry Title="Booking Rooms In the Reservation Book" Link="/Content/DTC_V44H_ResBooks/Booking Rooms In the Reservation.htm" />
-    <TocEntry Title="Editing Bookings from the Reservation Book" Link="/Content/DTC_V44H_ResBooks/Editing Bookings from the.htm" />
+<CatapultToc
+  Version="1">
+  <TocEntry
+    Title="Reservations and Bookings V44H"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Reservations and Bookings.htm" />
+  <TocEntry
+    Title="Reservations, Bookings, and Booking Details"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Reservations Bookings and.htm" />
+  <TocEntry
+    Title="Event Timeline"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Event Timeline.htm" />
+  <TocEntry
+    Title="Making a Reservation Using the Reservation Wizard"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Making a Reservation Using.htm" />
+  <TocEntry
+    Title="Using the Reservation Book"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Using the Reservation Book.htm" />
+  <TocEntry
+    Title="Booking Rooms In the Reservation Book"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Booking Rooms In the Reservation.htm" />
+  <TocEntry
+    Title="Editing Bookings from the Reservation Book"
+    Link="/Content/1DesktopClient/44/UG_44/DTC_V44H_ResBooks/Editing Bookings from the.htm" />
 </CatapultToc>

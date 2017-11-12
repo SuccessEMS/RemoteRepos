@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-11T16:22:53.5829703-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  Stylesheet="../../Content/Resources/Stylesheets/StylesForHomePage.css"
+  LastImport="2017-11-11T16:23:47.6385313-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Navigator.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Navigator.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_2.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_3.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_4.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_5.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_6.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_7.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_8.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_9.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_10.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_11.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_12.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_13.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_14.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_15.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Getting Familiar with the_16.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Getting Familiar with the.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Edit a Reservation in the.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Edit a Reservation in the_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Edit a Reservation in the.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copy a Reservation in the.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copy a Reservation in the_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copy a Reservation in the_2.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Copy a Reservation in the.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Changing the Status for a.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Changing the Status for a_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Changing the Status for a_2.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Changing the Status for a.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Repricing Categories and Room.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Repricing Categories and Room_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Repricing Categories and Room_2.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Repricing Categories and Room.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Applying a Reservation Discount.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Applying a Reservation Discount.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing a Booking in the Navigator.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing a Booking in the Navigator_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing a Booking in the Navigator.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_1.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_2.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_3.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_4.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_5.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_6.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_7.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_8.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_9.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Multiple Bookings_10.png"
+      TimeStamp="11/11/2017 4:23:26 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing Multiple Bookings.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Moving Bookings to a Different.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Moving Bookings to a Different_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Moving Bookings to a Different.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copying Multiple Bookings.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copying Multiple Bookings_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Copying Multiple Bookings.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Booking Details and Items.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_2.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Booking Details and Items_3.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Booking Details and Items.htm"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_2.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_3.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_4.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_5.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_6.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Details and_7.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Adding Booking Details and.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_2.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_3.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_4.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_5.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_6.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_7.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_8.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_9.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_10.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_11.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_12.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Tip If you close the Resource_13.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Tip If you close the Resource.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Detail Items.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Booking Detail Items_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Adding Booking Detail Items.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Items for Individual.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing Items for Individual.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Charges for Multiple.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing Charges for Multiple.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copying Booking Details Between.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Copying Booking Details Between_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Copying Booking Details Between.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Deleting Booking Detail Items.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Deleting Booking Detail Items_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Deleting Booking Detail Items_2.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Deleting Booking Detail Items.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Deleting Booking Details from.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Deleting Booking Details from_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Deleting Booking Details from.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing Charges for Multiple_1.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Count Information.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Editing Count Information_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Editing Count Information.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_2.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_3.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_4.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_5.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_6.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_7.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Booking Details Wizard_8.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Add Booking Details Wizard.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Using the Copy Booking Details.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Using the Copy Booking Details_1.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Using the Copy Booking Details.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Using the Delete Booking Details.png"
+      TimeStamp="11/11/2017 4:23:27 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Using the Delete Booking Details.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Using the Delete Item Wizard.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Using the Delete Item Wizard.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Add Item Wizard.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Add Item Wizard.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with Comments and.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with Comments and_1.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Working with Comments and.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Adding Multiple Comments and.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Adding Multiple Comments and.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with User Defined.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with User Defined.gif"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Working with User Defined.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with Attachments in.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with Attachments in_1.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Working with Attachments in.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Working with Drawings in the.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Working with Drawings in the.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Running the Resource Utility.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Running the Resource Utility_1.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Navigator/Running the Resource Utility_2.png"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Running the Resource Utility.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Navigator/Approving or Denying Reservation.htm"
+      TimeStamp="11/11/2017 4:23:29 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_Navigator.fltoc"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/StylesForHomePage_3.css"
+      TimeStamp="11/11/2017 4:23:28 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="anchornote" />
+    <StyleName
+      Name="figurecaptioncolumn" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebodybold" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablebulletlev2" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="emphasislink" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

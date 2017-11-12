@@ -1,70 +1,232 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="7" MadCap:lastHeight="929.5466" MadCap:lastWidth="767" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
-    <head><title mt-export-translate="no">Topic</title>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="3226" MadCap:lastWidth="876" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+        <link href="../../Resources/TableStyles/PatternedRows.css" rel="stylesheet" MadCap:stylesheetType="table" /><title mt-export-translate="no">Topic</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1 class="mt-export-title">Topic</h1>
-        <p class="mt-script-comment">Page summary display</p><pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');</pre>
-        <div class="EXPAND_CLASS">
-            <dl class="mt-indent-3">
-                <dt>In This Section (click to expand)</dt>
-                <dd><pre class="script" mt-export-translate="no" xml:space="preserve">
-wiki.tree{depth: 7};</pre>
-                </dd>
-            </dl>
-        </div>
-        <p>blah blah blah</p>
-        <p><strong><span class="mt-color-669933">Process Overview:</span></strong>
-        </p>
-        <p class="mt-indent-1">To [do the task in this topic], you will</p>
-        <ul class="mt-indent-1">
-            <li>[step 1]</li>
-            <li>[step 2]</li>
-            <li>and so on...</li>
+        <h1>EMS Campus Planning Interface Reports</h1>
+        <p>There are six academic reports available in the EMS Campus Planning Interface to assist you in monitoring and maintaining your academic unit’s courses and instructors. They can be accessed under the Reports option on the EMS Campus Planning Interface menu bar. For any academic report, you can specify the parameters, options, and format for the report, or you can generate the report according to memorized settings. Not all reports require the same parameters, nor do they all have the same options available. In addition, you can generate different reports in different formats.</p>
+        <p>This section covers the following topics:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="#Generateanacademicreport">Generate an academic report</MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="#UnderstandReportDesOpt">Report descriptions and options</MadCap:xref>
+            </li>
         </ul>
-        <h2>Heading One</h2>
-        <p>blah blah</p>
+        <h2><a name="Generateanacademicreport"></a>Generate an academic report:&#160;</h2>
+        <ol start="1">
+            <li>On the EMS Campus Planning Interface menu bar, click Reports to open the Reports menu, and then click the option for the report that you are generating. For example, to generate the Course List report, click&#160;Reports&#160;&gt;&#160;Course List.</li>
+            <li>On the&#160;Setup&#160;dropdown list, do one of the following:</li>
+        </ol>
+        <ul>
+            <li>To generate the report according to the filter settings that you want (parameters, options, and so on), leave user-specified selected, then go to Step 3.</li>
+            <li>To run the report with filter settings that have been saved, or memorized, select the memorized report, and then go to Step 5.</li>
+        </ul>
+        <ol start="3">
+            <li>On the&#160;Date Range&#160;tab, select the domain, term, and scenario for which you are generating the report.</li>
+            <li>Specify the report parameters, options, and format.</li>
+        </ol>
+        <p>Tip:&#160;For brevity and ease, the parameters and options that are available for each report are not discussed here. Instead, the options are discussed in “Report Descriptions and Options." Contact your EMS administrator if you need assistance in generating any of these reports.</p>
+        <ol start="5">
+            <li>Optionally, in the Report Comment field, enter a comment that is to be printed on the report. The comment can be a maximum of 255 characters, including spaces.</li>
+            <li>Click&#160;Generate Report. Two tabs are opened in your browser.<br></br>One tab is named &lt; &gt; Report and the second tab is simply named the same as the report that you generated. For example, if you generated the Course List report, then the first tab is named Course List Report and the second tab is named Course List. An onscreen preview of the report opens on the second tab. Use your browser’s scroll features to scroll through a multiple page report. To close the report and return to the EMS Campus Planning Interface, close the second tab.</li>
+        </ol>
+        <p>Tip:&#160;Unless you change the filter settings, all subsequent reports are generated and printed according to the parameters and options that you have specified and in the format that you specified.</p>
+        <h2><a name="UnderstandReportDesOpt"></a>Report descriptions and options:&#160;</h2>
+        <p>This section provides a description of every report that is available in the EMS Campus Planning Interface.</p>
+        <p>It also defines the options that are available for each report:</p>
+        <ul>
+            <li>Course List</li>
+            <li>Course Preferences</li>
+            <li>Preferences Summary</li>
+            <li>Instructor Back to Back</li>
+            <li>Instructor Summary</li>
+            <li>Final Exam Schedule</li>
+        </ul>
+        <h3>Course List&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Provides a list of courses and course dates.</p>
+                        <p>Note: This report is often sent out to academic units for review when the Domain Scheduler is finished with room assignments.</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>There are options to include courses without room assignments and to print User Defined Fields that are associated with courses. Formats include:</p>
+                        <ul>
+                            <li>By Course</li>
+                            <li>By Instructor</li>
+                            <li>By Academic Department By Course</li>
+                            <li>By Academic Department By Instructor</li>
+                            <li>By Day of Week</li>
+                            <li>By Location</li>
+                            <li>By Estimated Enrollment</li>
+                            <li>By Start Time</li>
+                            <li>By Subject</li>
+                            <li>By Course Type</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Course Preferences&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Used after Set Preferences mode to provide a list of courses and course dates with their preferences and requirements.</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>Format Choices:</p>
+                        <ul>
+                            <li>By Course</li>
+                            <li>By Academic Department By Course</li>
+                            <li>By Academic Department by Instructor</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Preferences Summary&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>After running an optimization scenario, this report is used to summarize the following information:</p>
+                        <ul>
+                            <li>The number of each type of preference or requirement.</li>
+                            <li>The number of the preferences that can be met from the optimization process.</li>
+                            <li>The number of preferences that cannot be met from the optimization process.</li>
+                        </ul>
+                        <p>You can generate this report for each different scenario that was optimized.</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Instructor Back-to-Back&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Lists the courses that have instructors who are scheduled to teach two courses at the same time (Conflicts) and instructors who are teaching back to back in different locations within the time gap that is specified in Options.</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <ul>
+                            <li>The days of the week that are to be included in the instructor’s schedule.</li>
+                            <li>The time gap (in minutes) between classes on the specified days that determines “back to back.”</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Instructor Summary&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>This report includes the following values per instructor:</p>
+                        <ul>
+                            <li>Number of sections</li>
+                            <li>Number of teaching hours</li>
+                            <li>Number of credit hours</li>
+                            <li>Total estimated enrollment</li>
+                            <li>Total actual enrollment</li>
+                            <li>Number of sections in Prime Time</li>
+                            <li>Number of Time Block violations</li>
+                        </ul>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <p>N/A</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Final Exam Schedule&#160;</h3>
+        <table style="mc-table-style: url('../../Resources/TableStyles/PatternedRows.css');" class="TableStyle-PatternedRows" cellspacing="0">
+            <thead>
+                <tr class="TableStyle-PatternedRows-Head-Header1">
+                    <th class="TableStyle-PatternedRows-HeadE-Regular-Header1">
+                        <p>Description</p>
+                    </th>
+                    <th class="TableStyle-PatternedRows-HeadD-Regular-Header1">
+                        <p>Options</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="TableStyle-PatternedRows-Body-LightRows">
+                    <td class="TableStyle-PatternedRows-BodyB-Regular-LightRows">
+                        <p>Displays a list of courses with their corresponding final exam date, time, and room as assigned by the final exam session.</p>
+                    </td>
+                    <td class="TableStyle-PatternedRows-BodyA-Regular-LightRows">
+                        <ul>
+                            <li>All Assigned: All courses that have been assigned to a room by the final exam session</li>
+                            <li>Different Rooms: All courses that have been scheduled in room that was not the same that was used all semester for the course for the final exam</li>
+                            <li>Unassigned: All courses that have not been scheduled in a room for the final exam</li>
+                            <li>Final Exam Not Scheduled: All courses for which no final exam was scheduled</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <p>&#160;</p>
-        <div class="EXPAND_CLASS">
-            <dl>
-                <dt>
-                    <img alt="" class="internal default" style="width: 26px;height: 29px;" width="26px" height="29px" />&#160;<span class="mt-color-669933">Concept:</span> [title of concept]&#160;</dt>
-                <dd>describe here</dd>
-            </dl>
-            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-                <tbody>
-                    <tr>
-                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                            <img src="../../../../Users/Megan.laub/Documents/Flare/Content/Resources/Images/tech_doc_tip.png" alt="" class="internal default" style="width: 35px;height: 35px;" width="35px" height="35px" />
-                        </td>
-                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                            <p class="NoteTipWarningText"><strong><span class="mt-color-669933">Tip:</span></strong>[replace this text]</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>&#160;</p>
-            <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
-                <tbody>
-                    <tr>
-                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                            <img src="../../../../Users/Megan.laub/Documents/Flare/Content/Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px" />
-                        </td>
-                        <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                            <p class="NoteTipWarningText"><span class="mt-color-669900"><strong>Note: </strong></span>[replace this text]</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>&#160;</p>
-            <h3>Heading Two</h3>
-            <p>blah blah blah</p>
-        </div>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
-        </p>
+        <p>&#160;</p>
     </body>
 </html>

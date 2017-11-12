@@ -1,11 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="4" MadCap:lastHeight="3947" MadCap:lastWidth="862" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="2919" MadCap:lastWidth="928" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Installing/Upgrading the EMS Campus Web Service</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
         <h1>Installing/Upgrading the EMS Campus Web Service</h1>
-        <p class="mt-script-comment">Page summary display</p> <pre class="script" mt-export-translate="no" xml:space="preserve">
-template('MindTouch/Controls/PageOverview');</pre> <p><a name="_Toc385925083"></a><strong>Important:</strong>&#160; Before beginning the installation process, please do the following:</p> <ul style="margin-left: 40px;"> <li>Install or upgrade your EMS databases as outlined in the <a title="Installing EMS"><em>EMS Installation Instructions</em></a>.</li> <li>Manually <strong><u>uninstall</u></strong>any previous versions of the EMS Campus Web Service on your web server.&#160;</li></ul> <ol> <li>Verify that the prerequisite software has been installed.</li> <li>Verify/confirm that the <strong>View.sql</strong> file has been executed against your SIS database.&#160; (Required for both first time installations AND upgrades.)</li> <li>Download the <strong>EMSCampusWebService.msi </strong>file onto the web server that will be running the web service.</li> <li>Run <strong>EMSCampusWebService.msi</strong></li> <li>The first screen welcomes you to the EMS Campus Web Service Setup Wizard.&#160; Click <strong>Next &gt;</strong> to begin the installation process.&#160; The <em>Select Installation Address</em> screen will appear.</li></ol> <p>&#160;</p> <p align="center"><img alt="" class="internal" style="width: 513px;height: 420px;" width="513px" height="420px" /></p> <p align="center">&#160;</p> <ol> <li value="6"><a name="OLE_LINK2"></a><a name="OLE_LINK1"></a>Select the Site, Virtual Directory and Application Pool.&#160; It is recommended that you keep the default settings.&#160; The installation process will create a Physical and Virtual directory on your web server named “EMSCampusWebService” (or whatever value you entered in the Virtual Directory field.)&#160; Click <strong>Next &gt;</strong>.</li></ol> <p><strong>Note:</strong>&#160; The EMS Campus Web Service should <u>not</u> be installed in the same Virtual Directory as other EMS web-based products.<br /> &#160;</p> <ol> <li value="7">The <em>Confirm Installation</em> screen will appear.&#160; Click <strong>Next &gt;</strong>.&#160; The <em>SIS Settings</em> screen will appear.</li></ol> <p>&#160;</p> <p align="center"><img alt="" class="internal" style="width: 622px;height: 431px;" width="622px" height="431px" /></p> <p>&#160;</p> <ol> <li value="8">In the <em>Get data from</em> section, choose either <strong>Flat File</strong> or <strong>SIS/CRM</strong> based on your SIS data source.</li></ol> <ul style="margin-left: 40px;"> <li><strong>Flat File</strong></li></ul> <p style="margin-left: 40px;">Choose this option if you will be outputting your SIS data to tab-delimited files.&#160;The EMS Campus Web Service will connect to and read information from these files which must conform to a specific format.&#160; See Appendix A for file format specifications.&#160; If you choose this option, please skip to Step 13.</p> <ul style="margin-left: 40px;"> <li><strong>SIS/CRM</strong></li></ul> <p style="margin-left: 40px;">Choose this option if EMS Campus will be tied directly to your SIS database.&#160;The EMS Campus Web Service will connect directly to and read information from your SIS.</p> <ol> <li value="9">In the <em>SIS/CRM Settings</em> section, select your <strong>Connection Type</strong> based on the Database Management System that your SIS uses:</li></ol> <ul style="margin-left: 40px;"> <li><strong>SQLClient</strong> – MS SQL Server</li> <li><strong>OracleClient</strong> – Oracle</li> <li><strong>ODBC</strong> – Other ODBC-compliant database</li></ul> <ol> <li value="10">Select your Connection Method.</li></ol> <ul style="margin-left: 40px;"> <li><strong>Data Source Name</strong> – The DSN for your SIS database if you selected <strong>OracleClient</strong> or <strong>ODBC</strong>.&#160; This option requires an ODBC Data Source created via the ODBC Data Source Administrator.</li> <li><strong>Server</strong> /<strong> Database</strong> – Your SIS server name and database name if you selected <strong>SQLClient</strong>.</li></ul> <ol> <li value="11">Enter the <strong>User ID</strong> / <strong>Password </strong>for your SIS.&#160; The account created in the ‘Installing the EMS Campus Views’ section in this document should be used.</li> <li>Click the <strong>Verify Connection</strong> button to confirm a successful connection to your SIS database.</li> <li>In the <em>EMS Settings</em> section, enter your EMS <strong>Server Name</strong> / <strong>Database Name</strong>.&#160;</li> <li>Click the <strong>Verify Connection</strong> button to confirm a successful connection to your EMS Campus database.</li> <li>Click <strong>Done</strong>.&#160; The <em>Installation Complete</em> screen will appear.&#160; Click <strong>Close</strong>.&#160; EMS Campus clients using the tab-delimited file option should skip to Step 19.</li> <li>Secure the <strong>Queries.xml</strong> file provided by your Client Services Consultant.</li> <li>On your web server, navigate to the CustomConfig folder within your EMS Campus Web Service directory (typically C:\Inetpub\wwwroot\EMSCampusWebService\CustomConfig).</li> <li>Replace the existing <strong>Queries.xml</strong> file with the new <strong>Queries.xml</strong> file (required for new EMS Campus installations AND upgrades.)</li> <li>After following the steps above, verify your installation by opening a browser and entering the following URL:</li></ol> <p><strong><u>http://[ServerName]/EMSCampusWebService/EMSCampusService.asmx</u></strong>(replace [ServerName] with the name of your web server)</p> <p>The following screen should appear:</p> <p>&#160;</p> <p align="center"><img alt="" class="internal" width="862px" height="466px" src="Images/CampusWebService.gif" style="width: 862px;height: 466px;" /></p><hr class="mt-export-separator" /><p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a><a>EMS Campus Web Service and White Paper</a><a>EMS Campus Web Service Install</a><a>EMS Campus White Paper</a><a mt-export-translate="no">persona:SysAdminCampus</a></p></body>
+        <p><a name="_Toc385925083"></a><strong>Important:</strong>&#160; Before beginning the installation process, please do the following:</p>
+        <ul>
+            <li>Install or upgrade your EMS databases as outlined in the <a title="Installing EMS"><em>EMS Installation Instructions</em></a>.</li>
+            <li>Manually <strong>uninstall</strong>any previous versions of the EMS Campus Web Service on your web server.&#160;</li>
+        </ul>
+        <ol>
+            <li>Verify that the prerequisite software has been installed.</li>
+            <li>Verify/confirm that the <strong>View.sql</strong> file has been executed against your SIS database.&#160; (Required for both first time installations AND upgrades.)</li>
+            <li>Download the <strong>EMSCampusWebService.msi </strong>file onto the web server that will be running the web service.</li>
+            <li>Run <strong>EMSCampusWebService.msi</strong></li>
+            <li>The first screen welcomes you to the EMS Campus Web Service Setup Wizard.&#160; Click <strong>Next &gt;</strong> to begin the installation process.&#160; The <em>Select Installation Address</em> screen will appear.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal" src="Images/CampusWeb_InstallUpgrade1.png" />
+        </p>
+        <ol>
+            <li value="6"><a name="OLE_LINK2"></a><a name="OLE_LINK1"></a>Select the Site, Virtual Directory and Application Pool.&#160; It is recommended that you keep the default settings.&#160; The installation process will create a Physical and Virtual directory on your web server named “EMSCampusWebService” (or whatever value you entered in the Virtual Directory field.)&#160; Click <strong>Next &gt;</strong>.</li>
+        </ol>
+        <p><strong>Note:</strong>&#160; The EMS Campus Web Service should not be installed in the same Virtual Directory as other EMS web-based products.<br /></p>
+        <ol>
+            <li value="7">The <em>Confirm Installation</em> screen will appear.&#160; Click <strong>Next &gt;</strong>.&#160; The <em>SIS Settings</em> screen will appear.</li>
+        </ol>
+        <p>
+            <img alt="" class="internal" src="Images/CampusWeb_InstallUpgrade2.png" />
+        </p>
+        <ol>
+            <li value="8">In the <em>Get data from</em> section, choose either <strong>Flat File</strong> or <strong>SIS/CRM</strong> based on your SIS data source.</li>
+        </ol>
+        <ul>
+            <li><strong>Flat File</strong>
+            </li>
+        </ul>
+        <p>Choose this option if you will be outputting your SIS data to tab-delimited files.&#160;The EMS Campus Web Service will connect to and read information from these files which must conform to a specific format.&#160; See Appendix A for file format specifications.&#160; If you choose this option, please skip to Step 13.</p>
+        <ul>
+            <li><strong>SIS/CRM</strong>
+            </li>
+        </ul>
+        <p>Choose this option if EMS Campus will be tied directly to your SIS database.&#160;The EMS Campus Web Service will connect directly to and read information from your SIS.</p>
+        <ol>
+            <li value="9">In the <em>SIS/CRM Settings</em> section, select your <strong>Connection Type</strong> based on the Database Management System that your SIS uses:</li>
+        </ol>
+        <ul>
+            <li><strong>SQLClient</strong> – MS SQL Server</li>
+            <li><strong>OracleClient</strong> – Oracle</li>
+            <li><strong>ODBC</strong> – Other ODBC-compliant database</li>
+        </ul>
+        <ol>
+            <li value="10">Select your Connection Method.</li>
+        </ol>
+        <ul>
+            <li><strong>Data Source Name</strong> – The DSN for your SIS database if you selected <strong>OracleClient</strong> or <strong>ODBC</strong>.&#160; This option requires an ODBC Data Source created via the ODBC Data Source Administrator.</li>
+            <li><strong>Server</strong> /<strong> Database</strong> – Your SIS server name and database name if you selected <strong>SQLClient</strong>.</li>
+        </ul>
+        <ol>
+            <li value="11">Enter the <strong>User ID</strong> / <strong>Password </strong>for your SIS.&#160; The account created in the ‘Installing the EMS Campus Views’ section in this document should be used.</li>
+            <li>Click the <strong>Verify Connection</strong> button to confirm a successful connection to your SIS database.</li>
+            <li>In the <em>EMS Settings</em> section, enter your EMS <strong>Server Name</strong> / <strong>Database Name</strong>.&#160;</li>
+            <li>Click the <strong>Verify Connection</strong> button to confirm a successful connection to your EMS Campus database.</li>
+            <li>Click <strong>Done</strong>.&#160; The <em>Installation Complete</em> screen will appear.&#160; Click <strong>Close</strong>.&#160; EMS Campus clients using the tab-delimited file option should skip to Step 19.</li>
+            <li>Secure the <strong>Queries.xml</strong> file provided by your Client Services Consultant.</li>
+            <li>On your web server, navigate to the CustomConfig folder within your EMS Campus Web Service directory (typically C:\Inetpub\wwwroot\EMSCampusWebService\CustomConfig).</li>
+            <li>Replace the existing <strong>Queries.xml</strong> file with the new <strong>Queries.xml</strong> file (required for new EMS Campus installations AND upgrades.)</li>
+            <li>After following the steps above, verify your installation by opening a browser and entering the following URL:</li>
+        </ol>
+        <p><strong>http://[ServerName]/EMSCampusWebService/EMSCampusService.asmx</strong>(replace [ServerName] with the name of your web server)</p>
+        <p>The following screen should appear:</p>
+        <p>
+            <img alt="" class="internal" src="Images/CampusWeb_InstallUpgrade3.png" />
+        </p>
+        <p>&#160;</p>
+    </body>
 </html>

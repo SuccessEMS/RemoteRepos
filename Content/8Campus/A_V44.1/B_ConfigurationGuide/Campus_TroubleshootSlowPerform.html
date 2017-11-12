@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="4" MadCap:lastHeight="916" MadCap:lastWidth="892" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="334" MadCap:lastWidth="928" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Troubleshooting: Slow Performance When De-Synchronizing Terms</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
@@ -12,7 +12,7 @@
         </p>
         <p>The log file of the database grows exponentially while the un-synch process is running and an unusually high number (millions) of records generate in the tblcampuscourse and tblcampuscoursedates tables.</p>
         <p>This issue is due to old data from previous versions of the EMS auto-sync service. The workaround is to clean up this old data, by truncating the table as follows:</p>
-        <p style="text-indent: 0.5in;"><span class="mt-font-tahoma">TRUNCATE TABLE dbo.tblCampusCourseHistory<br />TRUNCATE TABLE dbo.tblCampusCourseDatesHistory</span>
-        </p>
+        <p>TRUNCATE TABLE dbo.tblCampusCourseHistory</p>
+        <p>TRUNCATE TABLE dbo.tblCampusCourseDatesHistory</p>
     </body>
 </html>

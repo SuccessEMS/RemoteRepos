@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="1636" MadCap:lastWidth="928">
+    <head>
+    </head>
+    <body>
+        <h1>Installing or Upgrading the EMS Campus Auto Sync Service</h1>
+        <p>Functionality exists within EMS Campus that allows Domain Schedulers to manually process post-publish course changes made in your SIS to EMS.  The EMS Campus Auto Sync Service automates this process.</p>
+        <p>The EMS Campus Auto Sync Service must be installed on a computer/server that is connected to the network and is running 24 hours a day.</p>
+        <p>IMPORTANT:  Existing versions of the EMS Campus Auto Sync Service must be manually uninstalled.  Install the EMS Campus Auto Sync Service on one computer/server only.</p>
+        <p>To install the EMS Campus Auto Sync Service:</p>
+        <ol>
+            <li>Verify that the prerequisite software is installed.</li>
+            <li>Manually uninstall any existing versions of the EMS Campus Auto Sync Service.</li>
+            <li>Download the EMSCampusAutoSyncSetup.msi onto the server that will be running the service.</li>
+            <li>Double-click EMSCampusAutoSyncSetup.msi. Follow the on-screen prompts.  It is recommended that you accept the defaults.</li>
+            <li>Within your Microsoft Windows Start menu, locate EMS Campus Auto Sync.  The EMS Campus Auto Sync Configuration screen will appear.</li>
+        </ol>
+        <p>
+            <img src="Images/Auto_Sync_Setup_5.png" />
+        </p>
+        <ol MadCap:continue="true">
+            <li>Set the Auto Sync Interval.  DEA recommends setting this value to at least 30 minutes.  It is very important that EMS Campus Auto Sync has plenty of time to synchronize with the SIS and process any changes.</li>
+            <li>In the Databases section of the dialog box, you will see a sample database and server (named ‘server’ and ‘database.’) Select this entry, click Edit, and change the values to your EMS server and database name.</li>
+        </ol>
+        <p>
+            <img src="Images/Auto_Sync_Setup_6.png" />
+        </p>
+        <p>On the Database tab of the Database dialog box, complete the following:</p>
+        <ul>
+            <li>Server/Database – EMS server and database name</li>
+            <li>EMS Authentication/Windows Authentication – The method of authentication to this database.</li>
+            <li>Enable Service Event Logging – Activates Windows event logging.</li>
+        </ul>
+        <ol MadCap:continue="true">
+            <li>After making your entries, click OK.</li>
+            <li>Click OK again to save your EMS Campus Auto Sync Configuration settings.</li>
+        </ol>
+        <p>Note:  If any issues are encountered starting the service, please visit the online Support Center for a possible solution or call Customer Support.</p>
+        <p>The EMS Campus Auto Sync Service is now enabled.  See the To automatically process courses post-publish section in the EMS User’s Manual and the EMS System Parameters section within the EMS Setup Guide for information on how to configure the auto sync feature.</p>
+    </body>
+</html>

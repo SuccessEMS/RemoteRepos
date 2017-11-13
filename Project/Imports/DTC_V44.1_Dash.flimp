@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-12T18:56:03.1654725-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-12T18:56:15.1574160-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Dash.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Dash.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/The Dashboard.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Working with the Dashboard.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Working with the Dashboard_1.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Working with the Dashboard.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed.gif"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed_1.gif"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Managing Requests for Managed_2.gif"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Managing Requests for Managed.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Guest Requests Tab.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Guest Requests Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Notifications Tab.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Notifications Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Reminders Tab.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Reminders Tab_1.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Reminders Tab_2.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Reminders Tab_3.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Reminders Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Everyday User Reservations.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Everyday User Reservations.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Wait List Tab.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Wait List Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Reconfirm Dates Tab.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Reconfirm Dates Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Building Hours Exceptions.png"
+      TimeStamp="11/12/2017 6:56:12 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Building Hours Exceptions.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Analytics Tab.png"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Analytics Tab_1.png"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/Analytics Tab_2.png"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/Analytics Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Dash/At A Glance Tab.png"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Dash/At A Glance Tab.htm"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_Dash.fltoc"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_Dash.css"
+      TimeStamp="11/12/2017 6:56:13 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="bold" />
+  </UsedCharacterStyles>
+</MsWordImport>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-12T18:31:12.2607771-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-12T18:31:32.4510373-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_WorkBookDetItChIn.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_WorkBookDetItChIn.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_WorkBookDetItChIn/Working with Booking Details.png"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_WorkBookDetItChIn/Working with Booking Details_1.png"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_WorkBookDetItChIn/Working with Booking Details_2.png"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_WorkBookDetItChIn/Working with Booking Details.htm"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_WorkBookDetItChIn.fltoc"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_WorkBookDetItChIn.css"
+      TimeStamp="11/12/2017 6:31:30 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 4"
+      To="h4.Heading 4" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="body" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 4" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

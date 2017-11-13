@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-12T18:29:31.0337156-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-12T18:29:52.5746084-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_ManServOr.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_ManServOr.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_1.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_2.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_3.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_4.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_5.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_ManServOr/Managing Service Orders_6.png"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_ManServOr/Managing Service Orders.htm"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_ManServOr/Can a Booking Have More Than.htm"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_ManServOr/EMS Terminology Details Categories.htm"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_ManServOr.fltoc"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_ManServOr.css"
+      TimeStamp="11/12/2017 6:29:48 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="link" />
+  </UsedCharacterStyles>
+</MsWordImport>

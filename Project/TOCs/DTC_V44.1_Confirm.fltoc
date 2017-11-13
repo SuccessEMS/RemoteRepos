@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Confirmations" Link="/Content/DTC_V44.1_Confirm/Confirmations.htm" />
+    <TocEntry Title="Sending Confirmations" Link="/Content/DTC_V44.1_Confirm/Sending Confirmations.htm" />
+    <TocEntry Title="Generating a Single Confirmation at a Time" Link="/Content/DTC_V44.1_Confirm/Generating a Single Confirmation.htm" />
+    <TocEntry Title="Generating Word Merge Documents for Custom Documentation" Link="/Content/DTC_V44.1_Confirm/Generating Word Merge Documents.htm" />
+    <TocEntry Title="Can I Change the Date Format for Confirmations?" Link="/Content/DTC_V44.1_Confirm/Can I Change the Date Format.htm" />
+    <TocEntry Title="Confirmations vs. Notifications, What's the Difference?" Link="/Content/DTC_V44.1_Confirm/Confirmations vs Notifications.htm" />
+    <TocEntry Title="Viewing a History of Sent Emails" Link="/Content/DTC_V44.1_Confirm/Viewing a History of Sent.htm" />
+</CatapultToc>

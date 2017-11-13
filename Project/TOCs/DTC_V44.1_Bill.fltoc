@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Billing" Link="/Content/DTC_V44.1_Bill/Billing.htm" />
+    <TocEntry Title="Overview of Billing in EMS" Link="/Content/DTC_V44.1_Bill/Overview of Billing in EMS.htm" />
+    <TocEntry Title="Billing and Invoicing Quick Reference Guide" Link="/Content/DTC_V44.1_Bill/Billing and Invoicing Quick.htm" />
+    <TocEntry Title="Working with Invoices" Link="/Content/DTC_V44.1_Bill/Working with Invoices.htm" />
+    <TocEntry Title="Searching for Transactions" Link="/Content/DTC_V44.1_Bill/Searching for Transactions.htm" />
+    <TocEntry Title="Types of Transactions" Link="/Content/DTC_V44.1_Bill/Types of Transactions.htm" />
+    <TocEntry Title="Working with Transaction" Link="/Content/DTC_V44.1_Bill/Working with Transaction.htm" />
+    <TocEntry Title="Generating an EMS Billing Report" Link="/Content/DTC_V44.1_Bill/Generating an EMS Billing.htm" />
+    <TocEntry Title="Applying a Reservation Discount" Link="/Content/DTC_V44.1_Bill/Applying a Reservation Discount.htm" />
+    <TocEntry Title="Applying Calculations to Billing" Link="/Content/DTC_V44.1_Bill/Applying Calculations to Billing.htm" />
+    <TocEntry Title="Billing Multiple Reference and PO Numbers for a Reservation" Link="/Content/DTC_V44.1_Bill/Billing Multiple Reference.htm" />
+    <TocEntry Title="Pricing Categories and Room Charges" Link="/Content/DTC_V44.1_Bill/Pricing Categories and Room.htm" />
+</CatapultToc>

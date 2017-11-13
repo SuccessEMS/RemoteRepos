@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" xml:lang="en-us">
+    <head><title></title>
+        <link href="../Resources/Stylesheets/DTC_V44.1_Bill.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="Heading1">Working with Invoices</h1>
+        <p>You can generate an invoice in EMS Desktop Client based on a specific booking date or date range, a reservation number, or both. For example, you can generate invoices for all bookings from May 1 through May 14, for all bookings in reservation number 22, or for all bookings in reservation number 22 that occurred between May 1 and May 14. You can generate multiple invoices for the same booking, with each invoice showing the charges for a different category (such as room charges on one invoice, catering charges on another invoice, and so on). This might be necessary in situations in which you must produce multiple invoices for the same booking if the departments within your organization bill separately for the services they provide. You can also reprint an invoice and void an invoice.</p>
+        <p>You can work with invoices for a single reservation, or you can batch process multiple invoices. If you want to work with invoices for a single reservation, you do so through the Transactions tab in the Navigator. If you want to work with a batch of invoices, you do so through the EMS Desktop Client Billing menu: Billing &gt; Invoices &gt;&#160;Invoicing.</p>
+        <h2 class="Heading2">Generating an Invoice&#160;</h2>
+        <p>Tip: Before you generate an invoice, you should generate the Billing Worksheet report. See&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/070_Reports_and_Queries/Generating_an_EMS_Billing_Report" title="Generating an EMS Billing Report"><span class="Hyperlink">Generating an EMS Billing Report</span></a>.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>Do one of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li><a href="https://success.emssoftware.com/EMS_V44.1/Working_With_Reservations_And_Bookings/Working_With_Your_Reservations:_The_Navigator/010_Navigator_Overview#Opening_a_Reservation_in_the_Navigator" title="Getting Familiar with the Navigator"><span class="Hyperlink">Open the reservation in the Navigator</span></a>&#160;and on the Transactions tab, click New &gt;&#160;Invoice.</li>
+            <li>On the EMS Desktop Client menu bar, click Billing &gt; Invoices &gt;&#160;Invoicing.</li>
+        </ul>
+        <p>The Invoicing window opens.</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 389px;" alt="emsum_Billing_image001.png" />
+        </p>
+        <p>Tip:&#160;On the Setup dropdown list, you can select a saved, or&#160;memorized, invoice. If you select a memorized confirmation, then the only changes that you can make are to the dates and/or times on the Date Range tab.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Review and make changes as needed, using the table below.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Field</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <h5 class="Heading5">Date Range tab&#160;</h5>
+                        <h5 class="Heading5"><a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/030_Billing/020_Working_with_Invoices" title="Edit section"><img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices.gif" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 16px;" alt="Edit section" /></a>
+                        </h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Department</p>
+                    </td>
+                    <td>
+                        <p>Select the department that is creating the invoices. The department name and address is printed at the top of the invoice.</p>
+                        <p>Note:&#160;This field is automatically populated if you have a default department assigned to your user account but you can select a different value if needed.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Reservation Number</p>
+                    </td>
+                    <td>
+                        <p>Automatically populated if you are generating an invoice from the Transaction tab; otherwise, enter a reservation number.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Starting Date</p>
+                        <p>Ending Date</p>
+                    </td>
+                    <td>
+                        <p>Automatically populated with the first (starting) booking date and the last (ending) booking date for the selected reservation when you are generating an invoice from the Transaction tab; otherwise, enter the date range of the bookings for which you are generating the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Use Specific Times</p>
+                    </td>
+                    <td>
+                        <p>If only a specific time for the bookings is to be invoiced (for example, the bookings are from 8 am to 5 pm and you want to invoice the booking from only 8 am to noon), click&#160;Use Specific Times&#160;and then enter a specific time period.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Invoice Date</p>
+                    </td>
+                    <td>
+                        <p>The default value is the current day’s date. You can leave this value as is, or enter a different date.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Due Date</p>
+                    </td>
+                    <td>
+                        <p>The default value is 30 days from the current day’s date. (Your Administrator may&#160;have configured a different default value for this field.) You can leave in the field as is, or you can enter a different date.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h5 class="Heading5">Buildings tab/Categories tab/Statuses tab/Group Types tab&#160;</h5>
+                        <h5 class="Heading5"><a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/030_Billing/020_Working_with_Invoices" title="Edit section"><img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices.gif" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 16px;" alt="Edit section" /></a>
+                        </h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Open the appropriate tab on the window and select the buildings, resource categories, booking statuses, and group types that are to be invoiced. This information is displayed on the invoice.To select a building, category, and so on, select the item in the Available list (CTRL-click to select multiple items), and then click the Move button (&gt;) to move the items to the Selected list.</p>
+                        <p>Note: You can click the&#160;Show Inactive&#160;option for both categories and statuses, to show inactive categories and statuses, so you can select these inactive items as part of your filtering criteria.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <h5 class="Heading5">Options tab—Format settings for a printed confirmation&#160;</h5>
+                        <h5 class="Heading5"><a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/030_Billing/020_Working_with_Invoices" title="Edit section"><img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices.gif" style="visibility: visible;mso-wrap-style: square;width: 16px;height: 16px;" alt="Edit section" /></a>
+                        </h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Header Message</p>
+                        <p>Footer Message</p>
+                    </td>
+                    <td>
+                        <p>Select the header message and footer message that is to be printed on the invoice. By default, the header and footer messages are printed on every page of the invoice. To print the header only on the first page of the invoice, clear the&#160;Print Header on Each Page&#160;option.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Currency</p>
+                    </td>
+                    <td>
+                        <p>Select the currency that indicates how a room or resources in a category should be charged.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Comments</p>
+                    </td>
+                    <td>
+                        <p>Include the comments for the reservation in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Reminders</p>
+                    </td>
+                    <td>
+                        <p>Include the reminders for the reservation in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print User Defined Fields</p>
+                    </td>
+                    <td>
+                        <p>Include user-defined fields and their values in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Suppress Reserved Time</p>
+                    </td>
+                    <td>
+                        <p>Do not show the reserved time on the printed invoice. (Instead, only the event time is included on the printed invoice.)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Item Notes</p>
+                    </td>
+                    <td>
+                        <p>Include the notes for any booking items in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Zero Priced Items</p>
+                    </td>
+                    <td>
+                        <p>Include resources for which there was no charge in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Item Selections</p>
+                    </td>
+                    <td>
+                        <p>Include any resource item selections in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Header On Each Page</p>
+                    </td>
+                    <td>
+                        <p>Include the selected Header message on each page of the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Suppress Logo</p>
+                    </td>
+                    <td>
+                        <p>Do not show your department’s/organization’s logo on the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Billing Reference Allocation</p>
+                    </td>
+                    <td>
+                        <p>Include the billing reference numbers for the event as well as the percentage of charges that is allocated to each number in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Category Subtotals</p>
+                    </td>
+                    <td>
+                        <p>Include the subtotal charges by category in the printed invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Display Messages as HTML</p>
+                    </td>
+                    <td>
+                        <p>If you have defined any HTML messages, then select this option to display the HTML version of these messages in the printed invoice; otherwise, the message is displayed in plain text.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <p>Tip:&#160;If needed, you can always save these settings. See&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/070_Reports_and_Queries/020_Working_with_Saved_Reports" title="Working with Saved Reports"><span class="Hyperlink">Working with Saved Reports</span></a>.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="3">
+            <li>Click&#160;Generate.&#160;The generated invoices are displayed in the Invoicing dialog box. By default, invoices with a zero balance are not shown.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_1.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 334px;" alt="emsum_Billing_image002.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Optionally, you can do one or more of the following to work with the invoices that are displayed; otherwise, if you are satisfied with the invoices, you can go to the next step&#160;to post the invoice.</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To show zero balance invoices in the window, clear the&#160;Hide Zero Balances&#160;option.</li>
+            <li>To preview an invoice, select the invoice (CTRL-click to select multiple invoices), and then click Preview.&#160;An onscreen preview of the selected invoices opens, titled “Invoice Preview” (to distinguish the invoices from those that have been posted). The invoices also do not have invoice numbers, which are not issued until you post the invoices. The preview window contains options for printing a hard copy of the invoices, for emailing the invoices (see&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client/120_Other_Reservation_Functions/020_Sending_Email_from_EMS" title="Sending Email from EMS"><span class="Hyperlink">Sending Email from EMS</span></a>), and so on. Select the option or options that best fit your working needs.</li>
+            <li>To change the criteria for the invoices, click&#160;Filter&#160;to return to the Invoicing window After changing the criteria, you can generate the invoices again.</li>
+        </ul>
+        <p>Onscreen preview of an in-progress invoice</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_2.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 399px;" alt="emsum_Billing_image003.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="5">
+            <li>To post an invoice, select the invoice (CTRL-click to select multiple invoices), and then click&#160;Final.&#160;A message opens warning you that you are about to post and print (#) invoices, and asking you if want to continue.</li>
+            <li>Click&#160;Yes.&#160;The message closes and an onscreen preview of the&#160;final&#160;invoices opens. The preview is titled “Invoices” and each invoice has been issued an invoice number. The preview window contains options for printing a hard copy of the invoices, for emailing the invoices (see&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/Other_Reservation_Functions/020_Sending_Email_from_EMS" title="https://success.emssoftware.com/EMS_V44.1/Using_EMS/Using_EMS_Desktop_Client/080_Reservations_and_Bookings/Other_Reservation_Functions/020_Sending_Email_from_EMS"><span class="Hyperlink">Sending Email from EMS</span></a>), and so on. Select the option or options that best fit your working needs.&#160;</li>
+        </ol>
+        <p>Onscreen preview of a posted invoice</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_3.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 372px;" alt="emsum_Billing_image004.png" />
+        </p>
+        <p>After you generate and post an invoice, the message “Items have been invoiced” is displayed in red text on the Reservation Summary tab, the Booking Summary tab, and the &lt;Booking Detail&gt; Summary tab in the Navigator. The booking detail folder in which the invoiced items reside now has a green background in the Booking Details pane and the icon for each invoiced item also has a green background in the Items pane. Also, the invoice is permanently saved, and you cannot edit it. You can make changes to the balance due for a reservation only by creating an adjustment or by voiding the invoice and regenerating it after you edit the booking information. (Because invoiced bookings are locked and cannot be edited, you must void the invoice before you can edit the bookings.)</p>
+        <h2 class="Heading2">Reprinting an Invoice&#160;</h2>
+        <p>You can reprint both non-voided and voided invoices. You can reprint invoices&#160;for only one department at a time&#160;from the Billing area of EMS. Reprinting an invoice does not recalculate the invoice. The invoice is simply printed as it appeared when it was first generated. You can&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft®_Outlook/Using_EMS/EMS_Desktop_Client/030_Billing/020_Working_with_Invoices#RTF537065636966795f72657072"><span class="Hyperlink">specify</span></a>&#160;the invoices that you are reprinting, or you can&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft®_Outlook/Using_EMS/EMS_Desktop_Client/030_Billing/020_Working_with_Invoices#RTF5365617263685f7265707269"><span class="Hyperlink">search</span></a>&#160;for invoices that meet specific criteria, and then select specific invoices to reprint from the list of search results.</p>
+        <p>To reprint invoices for one or more departments, you must select the reservation in the Navigator, open the Transactions tab and CTRL-click to select the multiple invoices that you are reprinting, and then use the Reprint option on the Transactions tab.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS Desktop Client menu bar, click Billing &gt; Other &gt;&#160;Reprint Invoices.&#160;The Reprint Invoices dialog box opens.</li>
+        </ol>
+        <p>Reprint Invoices dialog box</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_4.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 382px;" alt="emsum_Billing_image005.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>Select the&#160;Department&#160;that generated the invoices. This field is automatically populated if you have a default department assigned to your user account, but you can select a different value if needed.</li>
+            <li>In the&#160;Invoice No.&#160;field, enter the number of the invoice that you wish to reprint, and then click&#160;Add.&#160;The invoice is displayed (by number) in the lower right Invoice pane.</li>
+            <li>Repeat&#160;Step&#160;3&#160;until you have added all the invoices that you wish to reprint.</li>
+            <li>Leave the reprinting criteria set to their default values, or change them as needed using the table below.</li>
+        </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <p>Option</p>
+                    </th>
+                    <th>
+                        <p>Description</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Invoices</p>
+                    </td>
+                    <td>
+                        <p>The invoice type that you are reprinting—Non Voided (the default value) or Voided.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Format</p>
+                    </td>
+                    <td>
+                        <p>Select the sort order for the reprinted invoices. The default value is By Reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>First Transaction Date</p>
+                        <p>Last Transaction Date</p>
+                    </td>
+                    <td>
+                        <p>Leave these values blank to reprint the invoice for all bookings; otherwise, enter the date range of the bookings for which you are reprinting the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Header on Each Page</p>
+                    </td>
+                    <td>
+                        <p>Leave this option selected to print the invoice header on every page of the invoice.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Print Transactions</p>
+                    </td>
+                    <td>
+                        <p>Select this option to include any associated transactions (deposits, payments, and so on) in the reprinted invoice.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="6">
+            <li>Click&#160;OK.&#160;An onscreen preview of the invoices opens. The preview is titled “Invoices.” The preview window contains options for printing a hard copy of the invoices, for exporting the invoices to a .pdf, emailing the invoice (see&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft%C2%AE_Outlook/Using_EMS/EMS_Desktop_Client/120_Other_Reservation_Functions/020_Sending_Email_from_EMS" title="Sending Email from EMS"><span class="Hyperlink">Sending Email from EMS</span></a>) and so on. Select the option or options that best fits your working needs.</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_5.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 445px;" alt="emsum_Billing_image006.png" />
+        </p>
+        <h2 class="Heading2">Voiding an Invoice&#160;</h2>
+        <p>You can void an invoice only if the invoice has&#160;not&#160;been paid. If payments have been made against an invoice, you must first void the payments.You can void invoices&#160;for only one department at a time. When you void an invoice, the invoice is removed from the Ageing report and its associated bookings are unlocked. You can specify invoices to void, or you can search for invoices that meet specific criteria, and then select specific invoices to void from the list of search results.</p>
+        <p>Tip:&#160;You can also void an invoice from the Transactions tab when a reservation is selected in the Navigator.</p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="1">
+            <li>On the EMS menu bar, click Billing &gt; Other &gt;&#160;Void Invoices.&#160;The Void Invoices dialog box opens.&#160;</li>
+        </ol>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_6.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 379px;" alt="emsum_Billing_image009.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="2">
+            <li>In the&#160;Department&#160;field, select the department that generated the invoices.</li>
+            <li>In the&#160;Invoice No.&#160;field, enter the number of the invoice that you are voiding, and then click&#160;Add.</li>
+        </ol>
+        <p>Two results are possible:</p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If payments have&#160;not&#160;been applied to the invoice, then a Void Reason dialog box opens. Continue to&#160;Step 4.</li>
+        </ul>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_7.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 148px;" alt="emsum_Billing_image010.png" />
+        </p>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>If payments have been applied to the invoice, then an error message opens indicating that payments have been applied to the invoice and it cannot be voided. You must void the payments first before you can continue with voiding the invoice. See&#160;<a href="https://success.emssoftware.com/001_Using_EMS__(V44.1)/Using_EMS_for_Microsoft®_Outlook/Using_EMS/EMS_Desktop_Client/030_Billing/040_Working_with_Transactions#To_void_a_transaction" title="Working with Transactions"><span class="Hyperlink">Voiding a transaction</span></a>.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="4">
+            <li>Enter a reason for voiding the invoice, and then click&#160;OK.&#160;The invoice is displayed (by number) in the lower right Invoice pane.</li>
+            <li>Repeat&#160;Step 3&#160;and&#160;Step 4&#160;until you have selected all the invoices from the same department that you are voiding.</li>
+            <li>Do one of the following:</li>
+        </ol>
+        <ul style="list-style-type: square;margin-left: 36pt;">
+            <li>To review an invoice before you void it, go&#160;Step 7.</li>
+            <li>To void an invoice without reviewing it, go to&#160;Step 8.</li>
+        </ul>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="7">
+            <li>Optionally, before you void a selected invoice, you can review it to ensure that it is indeed an invoice that you want to void. In the lower right Invoice pane, select the invoice, or CTRL-click to select multiple invoices, and then click&#160;Preview.&#160;An onscreen preview of the selected invoices opens. The preview is titled “Invoices.” The preview window contains options for printing a hard copy of the invoices, for exporting the invoices to a .pdf, and so on.&#160;Select the option or options that best fit your working needs. For example, before you void an invoice, you might want to email a copy of the invoice to a colleague to confirm that the invoice should be voided.</li>
+        </ol>
+        <p>Onscreen preview of an invoice selected for voiding</p>
+        <p>
+            <img src="../Resources/Images/DTC_V44.1_Bill/Working with Invoices_8.png" style="visibility: visible;mso-wrap-style: square;width: 812px;height: 449px;" alt="emsum_Billing_image011.png" />
+        </p>
+        <ol style="list-style-type: decimal;margin-left: 36pt;" start="8">
+            <li>In the lower right Invoice pane, select the invoice,&#160;or CTRL-click to select the multiple invoices that you are voiding, and then click&#160;OK.&#160;A message opens asking you if you are sure that you want to void the selected invoices.</li>
+            <li>Click&#160;Yes.&#160;A message opens indicating that the invoices have been voided.</li>
+            <li>Click&#160;OK.&#160;The message and the Void Invoices dialog box close. The Void column is set to Yes on the Transactions tab for each of the voided invoices in the Navigator.</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Concept:&#160;Calculations&#160;are additional charges that can be applied to billable items based on an associated group or individual, a category or service, or a room.</p>
+        <p>... such as gratuity or sales tax. Both pricing methods and calculations determine the final cost for a billable item; however, unlike pricing, which is applied when a billable item is reserved (and retained, even if the price for the item later changes), calculations are figured each time a confirmation or an invoice is generated. If a event has associated calculations (which are assigned to groups or individuals, categories and services, and rooms), you will see these in the&#160;<a href="https://success.emssoftware.com/EMS_V44.1/Managing_EMS_Desktop_Client/030_Billing/020_Working_with_Invoices" title="https://success.emssoftware.com/EMS_V44.1/Using_EMS/Using_EMS_Desktop_Client/030_Billing/020_Working_with_Invoices"><span class="Hyperlink">invoicing process</span></a>.&#160;</p>
+    </body>
+</html>

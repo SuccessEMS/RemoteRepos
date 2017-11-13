@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Reports and Queries" Link="/Content/DTC_V44.1_RepQuer/Reports and Queries.htm" />
+    <TocEntry Title="Generating an EMS Report" Link="/Content/DTC_V44.1_RepQuer/Generating an EMS Report.htm" />
+    <TocEntry Title="Configuring Automated Reports" Link="/Content/DTC_V44.1_RepQuer/Configuring Automated Reports.htm" />
+    <TocEntry Title="Working with Saved Reports" Link="/Content/DTC_V44.1_RepQuer/Working with Saved Reports.htm" />
+    <TocEntry Title="Report Descriptions and Options" Link="/Content/DTC_V44.1_RepQuer/Report Descriptions and Options.htm" />
+    <TocEntry Title="Working with a Query" Link="/Content/DTC_V44.1_RepQuer/Working with a Query.htm" />
+    <TocEntry Title="Generating an EMS Billing Report" Link="/Content/DTC_V44.1_RepQuer/Generating an EMS Billing.htm" />
+</CatapultToc>

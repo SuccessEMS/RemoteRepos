@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-12T18:27:46.6453769-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-12T18:28:10.2141997-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Confirm.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Confirm.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Confirmations.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Confirmations.htm"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Sending Confirmations.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Sending Confirmations.htm"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Generating a Single Confirmation.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Generating a Single Confirmation_1.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Generating a Single Confirmation_2.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Generating a Single Confirmation.htm"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Generating Word Merge Documents.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Generating Word Merge Documents_1.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Generating Word Merge Documents.htm"
+      TimeStamp="11/12/2017 6:28:09 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Can I Change the Date Format.htm"
+      TimeStamp="11/12/2017 6:28:09 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Confirmations vs Notifications.htm"
+      TimeStamp="11/12/2017 6:28:09 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Confirm/Viewing a History of Sent.png"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Confirm/Viewing a History of Sent.htm"
+      TimeStamp="11/12/2017 6:28:09 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_Confirm.fltoc"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_Confirm.css"
+      TimeStamp="11/12/2017 6:28:08 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="List Paragraph" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="link" />
+  </UsedCharacterStyles>
+</MsWordImport>

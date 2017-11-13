@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="false"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-12T18:27:04.4638220-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="true"
+  LastImport="2017-11-12T18:27:17.6127126-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Bill.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44.1/User Guide/DTC_V44.1_Bill.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Billing.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Overview of Billing in EMS.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Billing and Invoicing Quick.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Billing and Invoicing Quick.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices.gif"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_1.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_2.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_3.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_4.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_5.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_6.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_7.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Invoices_8.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Working with Invoices.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Searching for Transactions.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Searching for Transactions_1.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Searching for Transactions_2.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Searching for Transactions_3.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Searching for Transactions_4.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Searching for Transactions.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Types of Transactions.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction_1.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction_2.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction_3.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction_4.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Working with Transaction_5.png"
+      TimeStamp="11/12/2017 6:27:14 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Working with Transaction.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Generating an EMS Billing.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Applying a Reservation Discount.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Applying a Reservation Discount.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Applying Calculations to Billing.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Billing Multiple Reference.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Billing Multiple Reference_1.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Billing Multiple Reference_2.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Billing Multiple Reference.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Pricing Categories and Room.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Pricing Categories and Room_1.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44.1_Bill/Pricing Categories and Room_2.png"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/DTC_V44.1_Bill/Pricing Categories and Room.htm"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../TOCs/DTC_V44.1_Bill.fltoc"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44.1_Bill.css"
+      TimeStamp="11/12/2017 6:27:15 PM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+    <Map
+      From="Heading 5"
+      To="h5.Heading 5" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="anchorfigure" />
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="Heading 5" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="Normal (Web)" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="mt-color-669933" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="Strong" />
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="link" />
+  </UsedCharacterStyles>
+</MsWordImport>

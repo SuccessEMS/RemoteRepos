@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Other Reservation Functions" Link="/Content/DTC_V44.1_OthResFun/Other Reservation Functions.htm" />
+    <TocEntry Title="Recording Actual Attendance Numbers for Booking" Link="/Content/DTC_V44.1_OthResFun/Recording Actual Attendance.htm" />
+    <TocEntry Title="Generating Printed Confirmations" Link="/Content/DTC_V44.1_OthResFun/Generating Printed Confirmations.htm" />
+    <TocEntry Title="Managing Attendees and Visitors" Link="/Content/DTC_V44.1_OthResFun/Managing Attendees and Visitors.htm" />
+    <TocEntry Title="Check In Visitors" Link="/Content/DTC_V44.1_OthResFun/Check In Visitors.htm" />
+    <TocEntry Title="Generating Visitor Reports" Link="/Content/DTC_V44.1_OthResFun/Generating Visitor Reports.htm" />
+</CatapultToc>

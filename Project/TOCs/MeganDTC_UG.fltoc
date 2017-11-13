@@ -300,7 +300,8 @@
         Title="Reports and Queries"
         Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReportsQueries.html">
         <TocEntry
-          Title="Report Descriptions and Options" />
+          Title="Report Descriptions and Options"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReportDescriptionsOptions.html" />
         <TocEntry
           Title="Generate an EMS Report" />
         <TocEntry

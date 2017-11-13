@@ -124,9 +124,6 @@
             Title="Edit Booking Detail Items for Individual Bookings"
             Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditItemsforIndividBook.html"></TocEntry>
           <TocEntry
-            Title="Edit Booking Detail Item Charges for Multiple Items"
-            Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EditChargforMultpBillItem.html" />
-          <TocEntry
             Title="Copy Booking Details Between Bookings"
             Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CopyBookDetBetwBookings.htm" />
           <TocEntry
@@ -214,27 +211,37 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchwithBrowser.html" />
       </TocEntry>
       <TocEntry
-        Title="People: Groups and Contacts">
+        Title="People: Groups and Contacts"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_PeopleGroupsContacts.html">
         <TocEntry
-          Title="Search for People" />
+          Title="Search for People"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SearchforPeople.html" />
         <TocEntry
-          Title="Add or Edit Profile Information for People and Groups" />
+          Title="Add or Edit Profile Information for People and Groups"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_WorkInfoAboutGroupsIndiv.html" />
         <TocEntry
-          Title="Create an Everyday User from a Group" />
+          Title="Create an Everyday User from a Group"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_CreateEverydayUserfromGroup.htm" />
         <TocEntry
-          Title="Assign an Everyday User to a Group" />
+          Title="Assign an Everyday User to a Group"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_AssignEverydayUserstoGroup.html" />
         <TocEntry
-          Title="Configure Contacts for a Group" />
+          Title="Configure Contacts for a Group"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ConfigureContactsforGroup.html" />
         <TocEntry
-          Title="Import Groups" />
+          Title="Import Groups"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ImportGroups.html" />
         <TocEntry
-          Title="Print and Export Everyday User Information" />
+          Title="Print and Export Everyday User Information"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_PrintExportEverdayUserInfo.html" />
         <TocEntry
-          Title="Print and Export Group Information" />
+          Title="Print and Export Group Information"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_PrintExportGroupInfo.html" />
         <TocEntry
           Title="Work with Reservations for a Group" />
         <TocEntry
-          Title="Email a Group" />
+          Title="Email a Group"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EmailaGroup.htm" />
       </TocEntry>
       <TocEntry
         Title="The Dashboard">
@@ -266,9 +273,11 @@
           Title="At a Glance Tab" />
       </TocEntry>
       <TocEntry
-        Title="Manage Services">
+        Title="Manage Services"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageServices.html">
         <TocEntry
-          Title="Work With and Search for Service Orders" />
+          Title="Work With and Search for Service Orders"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageServices.html" />
       </TocEntry>
       <TocEntry
         Title="Search For Reservations, Bookings, Resources, and Service Orders"
@@ -328,15 +337,23 @@
           Title="Price Categories and Room Charges" />
       </TocEntry>
       <TocEntry
-        Title="Confirmations">
+        Title="Confirmations"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_Confirmations.html">
         <TocEntry
-          Title="Send Confirmations"></TocEntry>
+          Title="Send Confirmations"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_SendConfirmations.html"></TocEntry>
         <TocEntry
-          Title="Generate Printed Confirmations" />
+          Title="Generate a Single Confirmation at a Time"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenSingConfirmatTime.html" />
         <TocEntry
-          Title="Generate Word Merge Documents for Custom Documentation" />
+          Title="Generate Printed Confirmations"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GeneratePrintedConfirmations.html" />
         <TocEntry
-          Title="View History of Sent Emails" />
+          Title="Generate Word Merge Documents for Custom Documentation"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenerateMergeDocsCustomDoc.html" />
+        <TocEntry
+          Title="View History of Sent Emails"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewHistorySentEmails.html" />
       </TocEntry>
     </TocEntry>
   </TocEntry>

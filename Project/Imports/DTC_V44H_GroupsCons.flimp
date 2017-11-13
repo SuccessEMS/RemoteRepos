@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsWordImport
+  PreserveSourceStyles="false"
+  KeepSourceLinks="false"
+  ConvertInlineFormatting="true"
+  AddContinuedLinks="false"
+  AddContinuedFromLinks="false"
+  ContinuedLinkFormat="(continued in {title})"
+  ContinuedFromLinkFormat="(continued from {title})"
+  UseMaxCharLimit="false"
+  UseMinCharLimit="true"
+  MaxCharLimit="10000"
+  MinCharLimit="50"
+  FilenameLength="24"
+  GeneratePageLayouts="true"
+  UseFirstHeadingAsTopicTitle="true"
+  ConvertEquations="true"
+  LastCollectTime="2017-11-13T08:01:52.5446243-07:00"
+  ProjectName="Success"
+  ProjectFolder="C:\Users\Megan.laub\Documents\My Projects\Success1\"
+  AutoSync="false"
+  AutoFitTables="false"
+  UseHeaderRows="false"
+  LastImport="2017-11-13T08:02:15.8590611-07:00">
+  <Files>
+    <Url
+      Source="../../../../MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_GroupsCons.docx"
+      AbsoluteSource="file:///C:/Users/Megan.laub/Documents/MigrateWordDocs/DTC V44/UserGuide/DTC_V44H_GroupsCons.docx" />
+  </Files>
+  <ExcludedFiles />
+  <CollectedSourceFiles />
+  <SkippedSourceFiles />
+  <GeneratedFiles>
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Groups and Contacts V44H.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_1.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_2.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_3.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_4.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_5.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_6.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_7.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Searching for and Configuring_8.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Searching for and Configuring.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_1.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_2.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_3.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_4.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_5.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_6.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_7.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_8.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Configuring Additional Information_9.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Configuring Additional Information.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Editing Information About.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Editing Information About_1.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Editing Information About_2.png"
+      TimeStamp="11/13/2017 8:02:12 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Editing Information About.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Importing Groups.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Importing Groups_1.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Importing Groups.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Working with Reservations.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Working with Reservations_1.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Working with Reservations_2.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Working with Reservations_3.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Working with Reservations_4.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Working with Reservations.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Emailing a Group.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Printing and Exporting Group.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Printing and Exporting Group_1.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Printing and Exporting Group.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Printing and Exporting Web.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Printing and Exporting Web_1.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Images/DTC_V44H_GroupsCons/Printing and Exporting Web_2.png"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/DTC_V44H_GroupsCons/Printing and Exporting Web.htm"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../TOCs/DTC_V44H_GroupsCons.fltoc"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+    <Url
+      Source="../../Content/Resources/Stylesheets/DTC_V44H_GroupsCons.css"
+      TimeStamp="11/13/2017 8:02:13 AM" />
+  </GeneratedFiles>
+  <ParagraphStyles>
+    <Map
+      From="Heading 1"
+      To="h1.Heading 1" />
+    <Map
+      From="Heading 2"
+      To="h2.Heading 2" />
+    <Map
+      From="Heading 3"
+      To="h3.Heading 3" />
+  </ParagraphStyles>
+  <CharacterStyles>
+    <Map
+      From="Hyperlink"
+      To="a.(MS Word Style)" />
+  </CharacterStyles>
+  <NewTopicStyles />
+  <UsedParagraphStyles>
+    <StyleName
+      Name="Heading 1" />
+    <StyleName
+      Name="Heading 2" />
+    <StyleName
+      Name="Heading 3" />
+    <StyleName
+      Name="List Paragraph" />
+    <StyleName
+      Name="stepresultbulletlev1" />
+    <StyleName
+      Name="tablebody" />
+    <StyleName
+      Name="tablebulletlev1" />
+    <StyleName
+      Name="tablecolumnheader" />
+    <StyleName
+      Name="tablenotenote" />
+  </UsedParagraphStyles>
+  <UsedCharacterStyles>
+    <StyleName
+      Name="Emphasis" />
+    <StyleName
+      Name="Hyperlink" />
+    <StyleName
+      Name="bold" />
+    <StyleName
+      Name="link" />
+    <StyleName
+      Name="Strong" />
+  </UsedCharacterStyles>
+</MsWordImport>

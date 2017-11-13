@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultToc Version="1">
+    <TocEntry Title="Groups and Contacts V44H" Link="/Content/DTC_V44H_GroupsCons/Groups and Contacts V44H.htm" />
+    <TocEntry Title="Searching for and Configuring Groups or Individuals" Link="/Content/DTC_V44H_GroupsCons/Searching for and Configuring.htm" />
+    <TocEntry Title="Configuring Additional Information for a Group or Individual" Link="/Content/DTC_V44H_GroupsCons/Configuring Additional Information.htm" />
+    <TocEntry Title="Editing Information About Groups or Individuals" Link="/Content/DTC_V44H_GroupsCons/Editing Information About.htm" />
+    <TocEntry Title="Importing Groups" Link="/Content/DTC_V44H_GroupsCons/Importing Groups.htm" />
+    <TocEntry Title="Working with Reservations for a Group" Link="/Content/DTC_V44H_GroupsCons/Working with Reservations.htm" />
+    <TocEntry Title="Emailing a Group" Link="/Content/DTC_V44H_GroupsCons/Emailing a Group.htm" />
+    <TocEntry Title="Printing and Exporting Group Information" Link="/Content/DTC_V44H_GroupsCons/Printing and Exporting Group.htm" />
+    <TocEntry Title="Printing and Exporting Web User Information" Link="/Content/DTC_V44H_GroupsCons/Printing and Exporting Web.htm" />
+</CatapultToc>

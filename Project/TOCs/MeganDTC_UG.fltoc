@@ -238,7 +238,8 @@
           Title="Print and Export Group Information"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_PrintExportGroupInfo.html" />
         <TocEntry
-          Title="Work with Reservations for a Group" />
+          Title="Work with Reservations for a Group"
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_WorkwithResGroup.htm" />
         <TocEntry
           Title="Email a Group"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_EmailaGroup.htm" />

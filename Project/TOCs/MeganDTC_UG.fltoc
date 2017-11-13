@@ -297,7 +297,8 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ManageCheckIn.html" />
       </TocEntry>
       <TocEntry
-        Title="Reports and Queries">
+        Title="Reports and Queries"
+        Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ReportsQueries.html">
         <TocEntry
           Title="Report Descriptions and Options" />
         <TocEntry

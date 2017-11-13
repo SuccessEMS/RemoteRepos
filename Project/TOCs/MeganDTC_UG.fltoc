@@ -350,10 +350,10 @@
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenSingConfirmatTime.html" />
         <TocEntry
           Title="Generate Printed Confirmations"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GeneratePrintedConfirmations.html" />
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenPrintedConfirmations.html" />
         <TocEntry
           Title="Generate Word Merge Documents for Custom Documentation"
-          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenerateMergeDocsCustomDoc.html" />
+          Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_GenMergeDocsCustomDoc.html" />
         <TocEntry
           Title="View History of Sent Emails"
           Link="/Content/1DesktopClient/V44.1/C_UserGuide/DC_UG_ViewHistorySentEmails.html" />

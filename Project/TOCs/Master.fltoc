@@ -1395,6 +1395,9 @@
           </TocEntry>
         </TocEntry>
       </TocEntry>
+      <TocEntry
+        Title="Work with Subscriptions"
+        Link="/Content/16_MC/B_Configuration/MC_WorkwithSubscriptions.html" />
     </TocEntry>
     <TocEntry
       Title="EMS Campus Configuration Guide"

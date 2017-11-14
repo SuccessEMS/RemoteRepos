@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3023.333" MadCap:lastWidth="1024">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="3106" MadCap:lastWidth="867">
     <head><title mt-export-translate="no">Portal Authentication Methods</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="false" />
     </head>
     <body>
-        <h1 class="mt-export-title">Portal <MadCap:annotation MadCap:createDate="2017-10-26T17:08:07.7695596-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content for this topic was wiki and came from Install/Setup &gt; Optional Features &gt; Integrated Authentication Options." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-26T17:09:52.3441398-06:00">Authentication</MadCap:annotation> Methods
+        <h1>Portal <MadCap:annotation MadCap:createDate="2017-10-26T17:08:07.7695596-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content for this topic was wiki and came from Install/Setup &gt; Optional Features &gt; Integrated Authentication Options." MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-26T17:09:52.3441398-06:00">Authentication</MadCap:annotation> Methods
 </h1>
-        <table border="0" cellpadding="0" cellspacing="0" class="tip" style="border-collapse: collapse;">
+        <table border="0" cellpadding="0" cellspacing="0" class="tip">
             <tbody>
                 <tr>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 68px;" valign="top">
-                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default" style="width: 50px;height: 50px;" width="50px" height="50px">
+                    <td>
+                        <img src="../../../Resources/Images/tech_doc_note.png" alt="" class="internal default">
                         </img>
                     </td>
-                    <td style="border-style: solid none none;border-top-color: black;border-top-width: 1pt;width: 863px;" valign="top">
-                        <p class="NoteTipWarningText"><span class="mt-color-669900" data-mt-color="1"><strong>Note: </strong></span>EMS applications do&#160;not&#160;natively support SAML.<span class="mt-font-Calibri,sans-serif"><span class="mt-font-size-11.0pt">You must use our <a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/06-Portal_Authentication">Portal authentication</a> to use SAML.</span></span></p>
+                    <td>
+                        <p><strong>Note: </strong>EMS applications do&#160;not&#160;natively support SAML.You must use our <a title="https://success.emssoftware.com/EMS_V44.1/Installing_and_Setting_Up_EMS/01-Introduction/Configuring_Integrated_Authentication_for_the_EMS_Web_App/06-Portal_Authentication">Portal authentication</a> to use SAML.</p>
                     </td>
                 </tr>
             </tbody>
@@ -33,39 +33,22 @@
         <p>Using this method, you install a service provider of choice on the webserver hosting the EMS web applications. All traffic is routed through that service provider (typically via an ISAPI filter). This service provider will manage all of the authentication for the user. Once the user has successfully authenticated it will pass an identifier for the user to the EMS application using one of our portal methods. In this scenario typically the Server Variable (Header) method is used.</p>
         <h4>Steps to Configure, Method 1</h4>
         <ol>
-            <li><span><span>Install and configure a service provider on the EMS web server</span></span>
-            </li>
-            <li><span><span>Set the service provider to protect the specified EMS web applications</span></span>
-            </li>
-            <li><span><span>Configure the service provider to pass the required user attributes</span></span>
-            </li>
-            <li><span><span>In EMS configure the </span></span>{{product_webapp}}<span><span> parameter “Portal Authentication Method”</span></span></li>
-            <li><span><span>In EMS configure the applicable Portal Authentication Variables.</span></span>
-            </li>
+            <li>Install and configure a service provider on the EMS web server</li>
+            <li>Set the service provider to protect the specified EMS web applications</li>
+            <li>Configure the service provider to pass the required user attributes</li>
+            <li>In EMS configure the {{product_webapp}} parameter “Portal Authentication Method”</li>
+            <li>In EMS configure the applicable Portal Authentication Variables.</li>
         </ol>
         <h4>Steps to Configure, Method 2</h4>
         <p>This method can be common if there is already a server configured with a service provider in your environment, handling authentication for other applications. In EMS you can configure your application to re-direct any login requests to the other server to be authenticated. Once the user is authenticated, the server with your service provider installed sends the user back to the EMS Application with an identifier for the user in the header, or within a cookie. The EMS application reads this header, or cookie value, and leverages portal authentication to sign the user in with the matched credentials.</p>
         <ol>
-            <li><span><span>Install and configure a service provider on the EMS web server</span></span>
-            </li>
-            <li><span><span>Set the service provider to protect the specified EMS web applications</span></span>
-            </li>
-            <li><span><span>Configure the service provider to pass the required user attributes</span></span>
-            </li>
-            <li><span><span>In EMS configure the {{product_webapp}} parameter “Portal Authentication Method”</span></span>
-            </li>
-            <li><span><span>In EMS configure the applicable Portal Authentication Variables.</span></span>
-            </li>
-            <li><span><span>In EMS Change the Login URL under Configuration&gt;Everyday User Applicaitons&gt;<strong>Web App&#160;Menus</strong></span></span>
-                <ol>
-                    <li><span><span>Select Login.aspx, Click <strong>Edit</strong></span></span>
-                    </li>
-                    <li><span><span>Enter in the URL to your Remote Service Provider</span></span>
-                    </li>
-                </ol>
-            </li>
-            <li><span><span>Configure your remote Service provider to send the user back to the default.aspx page of the web application that the request originated from.</span></span>
-            </li>
+            <li>Install and configure a service provider on the EMS web server</li>
+            <li>Set the service provider to protect the specified EMS web applications</li>
+            <li>Configure the service provider to pass the required user attributes</li>
+            <li>In EMS configure the {{product_webapp}} parameter “Portal Authentication Method”</li>
+            <li>In EMS configure the applicable Portal Authentication Variables.</li>
+            <li>In EMS Change the Login URL under Configuration&gt;Everyday User Applicaitons&gt;<strong>Web App&#160;Menus</strong><ol><li>Select Login.aspx, Click <strong>Edit</strong></li><li>Enter in the URL to your Remote Service Provider</li></ol></li>
+            <li>Configure your remote Service provider to send the user back to the default.aspx page of the web application that the request originated from.</li>
         </ol>
         <h3>EMS Configuration</h3>
         <p>Please reference our Portal Authentication section for further details around the configuration required within EMS. There are a number of different options available. You will need to know the method that the user identifying value will be passed and the name of that value. Other values can also be passed (ie: email address and phone number) to aid in automatic web user account provisioning as well.</p>
@@ -106,15 +89,10 @@
         <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Response.Redirect("http://[ServerName]/ EMSWebApp/Default.aspx ")</p>
         <p>%&gt;</p>
         <h4>Query String Method</h4>
-        <p>A query string is information appended to the end of a page's URL. &#160;An example using portal authentication is below</p>
-        <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+        <p>A query string is information appended to the end of a page's URL. &#160;An example using portal authentication is below&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
         <p><strong>Code example:</strong>
         </p>
         <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;http://[ServerName]/ EMSWebApp/Default.aspx?MCQS=test@{{companyemail}}</p>
-        <p>&#160;</p>
         <p>To use the query string method, set the <strong>Portal Authentication Method</strong> parameter to <em>Query String</em> and type the appropriate variable for the <strong>Portal Authentication Variable</strong> parameter.</p>
-        <hr class="mt-export-separator" />
-        <p class="template:tag-insert"><strong>Page tags: </strong><a mt-export-translate="no">article:topic</a>
-        </p>
     </body>
 </html>

@@ -1435,6 +1435,9 @@
       <TocEntry
         Title="Work with Time Block Templates"
         Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_WorkTimeBlockTemp2.html" />
+      <TocEntry
+        Title="Troubleshoot: Slow Performance When De-Synchronizing Terms"
+        Link="/Content/8Campus/A_V44.1/B_ConfigurationGuide/Campus_TroubleshootSlowPerform.html" />
     </TocEntry>
     <TocEntry
       Title="Skype for Business Configuration Guide"

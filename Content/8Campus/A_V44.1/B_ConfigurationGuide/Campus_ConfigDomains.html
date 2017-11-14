@@ -1,35 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="7" MadCap:lastHeight="1124" MadCap:lastWidth="889" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="1764" MadCap:lastWidth="848" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Configuring Domains</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
         <h1>
-            <MadCap:annotation MadCap:createDate="2017-10-25T13:51:52.8852514-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content was deki from V44" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T13:52:08.1476112-06:00">Configuring</MadCap:annotation> Domains</h1>
+            <MadCap:annotation MadCap:createDate="2017-10-25T13:51:52.8852514-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content was deki from V44" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T13:52:08.1476112-06:00">Configure</MadCap:annotation> Domains</h1>
         <p>A <em>domain</em>&#160;is a level of organization within an institution that defines scheduling responsibility. Functions such as synchronizing, optimizing, and running reports are carried out on a per domain basis. When you configure your domain, you must identify the subjects that are offered in the domain and you must also specify the rooms that are controlled by the domain. The subjects that are defined within a domain determine the courses listed for the domain. The rooms that are defined within a domain determine all spaces that are potentially scheduled by the courses. Subjects can belong to only one domain. Rooms can belong to multiple domains.</p>
-        <table border="0" cellspacing="0" class="tip"> <tbody> <tr> <td> <div> <div>&#160;</div></div></td> <td><div>The term domain is controlled by an {{product}} system parameter (Campus: Domain Title Singular and Campus: Domain Title Plural), and it is often changed to Campus or School to better describe how course scheduling is divided. See <a title="Editing System Parameters">Editing System Parameters</a>.</div></td></tr></tbody></table>
+        <p>Tip:&#160;The term domain is controlled by an {{product}} system parameter (Campus: Domain Title Singular and Campus: Domain Title Plural), and it is often changed to Campus or School to better describe how course scheduling is divided. See <a title="Editing System Parameters">Editing System Parameters</a>.</p>
         <h2>To configure a domain</h2>
-        <p>1. On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; Domains.&#160;The Domains window opens. This window lists all the domains that are currently configured in your {{product}} database.</p>
+        <ol>
+            <li>On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; Domains.&#160;The Domains window opens. This window lists all the domains that are currently configured in your {{product}} database.</li>
+        </ol>
         <p>
-            <img border="0" class="internal" />
+            <img border="0" class="internal" src="../Images/V44.1_Config/ConfigDomain1.png" />
         </p>
-        <p>2. Click <strong>New</strong>.&#160;The Domain dialog box opens on the Domain tab.</p>
+        <ol MadCap:continue="true">
+            <li>Click <strong>New</strong>.&#160;The Domain dialog box opens on the Domain tab.</li>
+        </ol>
         <p>
-            <img border="0" class="internal" />
+            <img border="0" class="internal" src="../Images/V44.1_Config/ConfigDomain2.png" />
         </p>
-        <p>3. In the Description field, enter a name or description for the new domain.</p>
-        <table border="0" cellspacing="0" class="tip"> <tbody> <tr> <td> <div> <p><img class="internal" /></p></div></td> <td> <p>The description can be a maximum of 50 characters, including spaces.</p></td></tr></tbody></table>
-        <p>4. On the Cancel Status dropdown list, select the status that is to be used for canceling the room bookings in {{product}} when a course date is canceled in the SIS after publishing.</p>
-        <p>5. On the Cancel Reason dropdown list, select the reason that is to be used for cancelations after publishing.</p>
-        <p>6. Open the Rooms tab, and optionally do one or both of the following:</p>
-        <p>• On the Building dropdown list, select (all) buildings, or select a specific building.</p>
-        <p>• On the Room type dropdown list, leave the value set to (all), or select a specific room type.</p>
+        <ol MadCap:continue="true">
+            <li>In the Description field, enter a name or description for the new domain.</li>
+        </ol>
+        <p>Tip:&#160;The description can be a maximum of 50 characters, including spaces.</p>
+        <ol MadCap:continue="true">
+            <li>On the Cancel Status dropdown list, select the status that is to be used for canceling the room bookings in {{product}} when a course date is canceled in the SIS after publishing.</li>
+            <li>On the Cancel Reason dropdown list, select the reason that is to be used for cancelations after publishing.</li>
+            <li>Open the Rooms tab, and optionally do one or both of the following:</li>
+        </ol>
+        <ul>
+            <li>On the Building dropdown list, select (all) buildings, or select a specific building.</li>
+            <li>On the Room type dropdown list, leave the value set to (all), or select a specific room type.</li>
+        </ul>
         <p>All rooms that meet your search criteria are displayed in the Available list.</p>
-        <p>7. On the Available list, select the room (CTRL-click to select multiple rooms) that is to be&#160;controlled by the campus, and then Move (&gt;) to the Selected list.</p>
-        <p>8. Open the Subjects tab, and on the Available list, select the subject, or CTRL-click to select the multiple subjects that are offered by the campus, and then click the Move (&gt;) button to move the selected subjects to the Selected list.</p>
-        <p>9. Optionally, click <strong>Spelling </strong>to spell check the domain before you save it.</p>
-        <p>10. Click <strong>OK</strong>.&#160;The Campus dialog box closes. You return to the Domains window the newly configured domain automatically selected.</p>
+        <ol start="7">
+            <li>On the Available list, select the room (CTRL-click to select multiple rooms) that is to be&#160;controlled by the campus, and then Move (&gt;) to the Selected list.</li>
+            <li>Open the Subjects tab, and on the Available list, select the subject, or CTRL-click to select the multiple subjects that are offered by the campus, and then click the Move (&gt;) button to move the selected subjects to the Selected list.</li>
+            <li>Optionally, click <strong>Spelling </strong>to spell check the domain before you save it.</li>
+            <li>Click <strong>OK</strong>.&#160;The Campus dialog box closes. You return to the Domains window the newly configured domain automatically selected.</li>
+        </ol>
         <p class="StepNumberContinued">&#160;</p>
     </body>
 </html>

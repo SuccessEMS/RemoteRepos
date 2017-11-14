@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="4" MadCap:lastHeight="334" MadCap:lastWidth="928" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="4" MadCap:lastHeight="795" MadCap:lastWidth="887" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Troubleshooting: Slow Performance When De-Synchronizing Terms</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
-        <h1>Troubleshooting: Slow Performance When De-Synchronizing Terms</h1>
+        <h1>Troubleshoot: Slow Performance When De-Synchronizing Terms</h1>
         <p>When <a title="Synchronizing an Academic Term">managing terms</a>, users may experience system timeout (after ~30 minutes) or slowness when they click the Unsync&#160;button.</p>
         <p>
-            <img alt="" class="internal" style="width: 603px;height: 451px;" width="603px" height="451px" />
+            <img alt="" class="internal" src="../Images/V44.1_Config/Troubleshoot1.png" />
         </p>
         <p>The log file of the database grows exponentially while the un-synch process is running and an unusually high number (millions) of records generate in the tblcampuscourse and tblcampuscoursedates tables.</p>
         <p>This issue is due to old data from previous versions of the EMS auto-sync service. The workaround is to clean up this old data, by truncating the table as follows:</p>

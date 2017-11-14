@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html MadCap:lastBlockDepth="7" MadCap:lastHeight="1614" MadCap:lastWidth="889" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+<html MadCap:lastBlockDepth="7" MadCap:lastHeight="2627" MadCap:lastWidth="848" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
     <head><title mt-export-translate="no">Synchronizing Facility Data</title>
         <meta name="mt-type" value="application/x.deki-text" />
         <meta name="mt-unsafe" value="true" />
     </head>
     <body>
         <h1>
-            <MadCap:annotation MadCap:createDate="2017-10-25T13:51:13.9789895-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content was deki in V44" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T13:51:20.9861386-06:00">Synchronizing</MadCap:annotation> Facility Data</h1>
+            <MadCap:annotation MadCap:createDate="2017-10-25T13:51:13.9789895-06:00" MadCap:creator="Megan.Laub" MadCap:initials="ME" MadCap:comment="Content was deki in V44" MadCap:editor="Megan.Laub" MadCap:editDate="2017-10-25T13:51:20.9861386-06:00">Synchronize</MadCap:annotation> Facility Data</h1>
         <p>You must synchronize your facility data in the following order:&#160;</p>
         <ol>
             <li>Buildings</li>
@@ -16,67 +16,47 @@
         <p>The synchronization process does not update existing facility records after they have been imported and linked. For example, if a room’s code, description, or capacity is changed in the SIS after it has been imported and linked, this information is not changed in the {{product}} database.</p>
         <h2>Synchronizing Buildings</h2>
         <p>When you synchronize buildings, the values for Building Code and Description in the SIS are used for any new buildings that are configured in your {{product}} database. You can edit these values if needed in {{product}}. (See <a title="Configuring Buildings">Configuring Buildings</a>.)</p>
-        <p>1. On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Buildings</strong>.&#160;The {{product_campus}} Building window opens.</p>
-        <p class="AnchorFigure">
-            <img border="0" />
+        <ol>
+            <li>On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Buildings</strong>.&#160;The {{product_campus}} Building window opens.</li>
+        </ol>
+        <p>
+            <img border="0" src="../Images/V44.1_Config/SyncFacData1.png" />
         </p>
-        <p>2. Set the status of the imported buildings (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.&#160;A window opens that requires you to select a time zone for the referenced buildings.</p>
-        <p>3. Select the correct time zone, and then click <strong>Close </strong>to return to the {{product_campus}} Buildings window.</p>
-        <p>4. Click <strong>Process</strong>.&#160;A message opens indicating that the buildings were successfully processed.</p>
-        <p>5. Click <strong>OK </strong>to close the message and return to the {{product_campus}} Buildings window.</p>
-        <p>6. Click <strong>Cancel </strong>or Close (x) to close the window.</p>
+        <ol MadCap:continue="true">
+            <li>Set the status of the imported buildings (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.&#160;A window opens that requires you to select a time zone for the referenced buildings.</li>
+            <li>Select the correct time zone, and then click <strong>Close </strong>to return to the {{product_campus}} Buildings window.</li>
+            <li>Click <strong>Process</strong>.&#160;A message opens indicating that the buildings were successfully processed.</li>
+            <li>Click <strong>OK </strong>to close the message and return to the {{product_campus}} Buildings window.</li>
+            <li>Click <strong>Cancel </strong>or Close (x) to close the window.</li>
+        </ol>
         <h2>Synchronizing Room Types</h2>
-        <p>1. On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Room Types</strong>.&#160;The {{product_campus}} Room Types window opens.</p>
-        <p class="AnchorFigure">
-            <img border="0" />
+        <ol>
+            <li>On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Room Types</strong>.&#160;The {{product_campus}} Room Types window opens.</li>
+        </ol>
+        <p>
+            <img border="0" src="../Images/V44.1_Config/SyncFacData2.png" />
         </p>
-        <p>&#160;</p>
-        <p>2. Set the status of the imported room types (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.</p>
-        <p>3. Click <strong>Process</strong>.&#160;A message opens indicating that the room types were successfully processed.</p>
-        <p>4. Click <strong>OK </strong>to close the message and return to the {{product_campus}} Room Types window.</p>
-        <p>5. Click <strong>Cancel </strong>or Close (x) to close the window.</p>
-        <table border="0" cellspacing="0" class="tip">
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <p>
-                                <img class="internal" />
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <p>After you have synchronized the room types, you can edit the names as needed. See “<a title="Configuring Room Types">Configuring Room Types</a>”.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <ol MadCap:continue="true">
+            <li>Set the status of the imported room types (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.</li>
+            <li>Click <strong>Process</strong>.&#160;A message opens indicating that the room types were successfully processed.</li>
+            <li>Click <strong>OK </strong>to close the message and return to the {{product_campus}} Room Types window.</li>
+            <li>Click <strong>Cancel </strong>or Close (x) to close the window.</li>
+        </ol>
+        <p>Tip:&#160;After you have synchronized the room types, you can edit the names as needed. See “<a title="Configuring Room Types">Configuring Room Types</a>”.</p>
         <h2>Synchronizing Rooms</h2>
         <p>Before you can synchronize room data, at least one setup type must be configured in your {{product}} database (for example, academic setup), or the synchronization process cannot correctly import the room capacity. To configure a setup type, or confirm that one already has been configured in your {{product}} database, see <a title="Configuring Setup Types">Configuring Setup Ty</a><a title="Configuring Setup Types">pes</a>. After you have configured or confirmed this setup type, set the value for the following {{product}} system parameter (Area: Campus, Description: Default Setup Type) to this setup type. See <a title="Editing System Parameters">Editing System Parameters</a>.</p>
-        <p>1. On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Rooms</strong>.&#160;The {{product_campus}} Rooms window opens.</p>
-        <p class="AnchorFigure">
-            <img border="0" />
+        <ol>
+            <li>On the {{product_campus}} menu bar, click Academic Planning &gt; Configuration &gt; <strong>Synchronize Rooms</strong>.&#160;The {{product_campus}} Rooms window opens.</li>
+        </ol>
+        <p>
+            <img border="0" src="../Images/V44.1_Config/SyncFacData3.png" />
         </p>
-        <p>&#160;</p>
-        <p>2. Set the status of the imported rooms (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.</p>
-        <p>3. Click <strong>Process</strong>.&#160;A message opens indicating that the rooms were successfully processed.</p>
-        <p>4. Click <strong>OK </strong>to close the message and return to the {{product_campus}} Rooms window.</p>
-        <p>5. Click <strong>Cancel </strong>or Close (x) to close the window.</p>
-        <table border="0" cellspacing="0" class="tip">
-            <tbody>
-                <tr>
-                    <td>
-                        <div>
-                            <p>
-                                <img class="internal" />
-                            </p>
-                        </div>
-                    </td>
-                    <td>
-                        <p>After you synchronize the rooms, you can edit the names as needed. See <a title="Configuring Rooms">To configure one room at a time</a>.</p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <ol MadCap:continue="true">
+            <li>Set the status of the imported rooms (New - Auto Matched, Matched, Create, or Do Not Import) as described in <a title="Overview of Synchronization">Facility data synchronization</a>.</li>
+            <li>Click <strong>Process</strong>.&#160;A message opens indicating that the rooms were successfully processed.</li>
+            <li>Click <strong>OK </strong>to close the message and return to the {{product_campus}} Rooms window.</li>
+            <li>Click <strong>Cancel </strong>or Close (x) to close the window.</li>
+        </ol>
+        <p>Tip:&#160;After you synchronize the rooms, you can edit the names as needed. See <a title="Configuring Rooms">To configure one room at a time</a>.</p>
     </body>
 </html>

@@ -2435,22 +2435,302 @@
     Link="/Content/F_Optional Features/1_OptionalFeaturesHome.htm">
     <TocEntry
       Title="EMS API Home"
-      Link="/Content/F_Optional Features/2_EMS_API_Home.htm" />
+      Link="/Content/F_Optional Features/2_EMS_API_Home.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/EMS_API/API_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Process Overview"
+          Link="/Content/F_Optional Features/EMS_API/API_ProcessOverview.html" />
+        <TocEntry
+          Title="Technical Benefits"
+          Link="/Content/F_Optional Features/EMS_API/API_TechnicalBenefits.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Hardware and Software Requirements"
+        Link="/Content/F_Optional Features/EMS_API/API_HardwareSoftwareReqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="EMS API Requirements and Licensing"
+        Link="/Content/F_Optional Features/EMS_API/API_APIReqsLicensing.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Obtain the EMS API Web Service Installation Files"
+        Link="/Content/F_Optional Features/EMS_API/API_ObtainAPIWebServInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install or Upgrade Database Components"
+        Link="/Content/F_Optional Features/EMS_API/API_InstallUpgradeDatabaseComponents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install or Upgrade the EMS API Web Service"
+        Link="/Content/F_Optional Features/EMS_API/API_InstallUpgradeAPIWebServ.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure and Verify EMS for EMS API Web Service Use"
+        Link="/Content/F_Optional Features/EMS_API/API_ConfigVerifyEMSAPIWebServUse.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="EMS API Functions"
+        Link="/Content/F_Optional Features/EMS_API/API_EMSAPIfunctions.html" />
+      <TocEntry
+        Title="Release Notes"
+        Link="/Content/F_Optional Features/EMS_API/API_ReleaseNotes.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
     <TocEntry
       Title="EMS Floor Plan"
-      Link="/Content/F_Optional Features/3_EMS_FloorPlansHome.htm" />
+      Link="/Content/F_Optional Features/3_EMS_FloorPlansHome.htm">
+      <TocEntry
+        Title="Floor Plan Installation Guide">
+        <TocEntry
+          Title="Introduction"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+          <TocEntry
+            Title="Requirements"
+            Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_Requirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+        <TocEntry
+          Title="Obtain Floor Plans Installation Files"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_ObtainFPInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Install Floor Plans Components"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_InstallFloorPlanComponents.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+          <TocEntry
+            Title="Install or Upgrade the Floor Plan Web Service"
+            Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_InstallUpgradeFPWebService.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+          <TocEntry
+            Title="Install or Upgrade the Floor Plan Configuration Tool"
+            Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_InstallUpgradeFPConfigTool.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        </TocEntry>
+        <TocEntry
+          Title="Upload, Configure, and View Floorplans"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_IG/FloorPlan_IG_UploadConfigViewFP.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Floor Plan Configuration Guide">
+        <TocEntry
+          Title="Introduction"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_CG/FloorPlan_CG_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Hardware and Software Requirements"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_CG/FloorPlan_CG_HardwareSoftwareReqs.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Install or Upgrade the Floor Plan Web Service"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_CG/FloorPlan_CG_InstallUpgradeFPWebServ.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Install or Upgrade the Floor Plans Configuration Utility"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_CG/FloorPlan_CG_InstallUpgradeFPConfigUtility.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Floor Plan Configuration Steps"
+          Link="/Content/F_Optional Features/FloorPlan/A_V44.1/FloorPlan_CG/FloorPlan_CG_FPConfigSteps.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
     <TocEntry
       Title="EMS Facility Management Toolkit"
-      Link="/Content/F_Optional Features/4_EMS_Facility_Management_Toolkit_Home.htm" />
+      Link="/Content/F_Optional Features/4_EMS_Facility_Management_Toolkit_Home.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/FMToolkit/FMToolkit_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="How It Works"
+          Link="/Content/F_Optional Features/FMToolkit/FMToolkit_HowItWorks.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Integration Diagram"
+          Link="/Content/F_Optional Features/FMToolkit/FMToolkit_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Installation Overview"
+        Link="/Content/F_Optional Features/FMToolkit/FMToolkit_InstallOverview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Obtain the Installation Files"
+        Link="/Content/F_Optional Features/FMToolkit/FMToolkit_ObtainInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install and Executing the Facility Management Toolkit"
+        Link="/Content/F_Optional Features/FMToolkit/FMToolkit_InstallExecuteFMToolkit.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
     <TocEntry
       Title="EMS Human Resources Toolkit"
-      Link="/Content/F_Optional Features/5_EMS_HumanResourcesToolkitHome.htm" />
+      Link="/Content/F_Optional Features/5_EMS_HumanResourcesToolkitHome.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Integrate Course and Student Information with Student Information Systems (SIS)"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_IntegCourseSutdentInfowithSIS.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Integration Diagram"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Installation Overview"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_InstallationOverview.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Obtain the Installation Files"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_ObtainInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="How It Works"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_HowItWorks.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="How HR Toolkit Integrates Your User Records"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_HowIntegUserRec.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Align Your Source Data for HR Toolkit"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_AlignSourceData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Configure EMS Web App for HR Toolkit"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_ConfigWebAppforHRTK.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Upgrade Considerations"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_UpgradeConsiderations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Install HR Toolkit for the Group/Group Type Model"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_InstallforGroupGroupTypeModel.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Import Group/Group Type Data"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_ImportGroupGroupTypeData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Install HR Toolkit for the Groups/Contacts or Hybrid Model"
+        Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_InstallforGroupContactHybridModel.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Import Group/Contact or Hybrid Data"
+          Link="/Content/F_Optional Features/HRToolkit/A_V44.1/HRToolkit_ImportGroupContactHybridData.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+    </TocEntry>
     <TocEntry
       Title="CISCO TMS Interface"
-      Link="/Content/F_Optional Features/6_CISCO_TMS_InterfaceHome.htm" />
+      Link="/Content/F_Optional Features/6_CISCO_TMS_InterfaceHome.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Application Architecture"
+          Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_ApplicationArchitecture.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Examples"
+          Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_Examples.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Integration Diagram"
+          Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="System Requirements"
+          Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_SystemRequirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Obtain the Installation Files "
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_ObtainInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install the Database"
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_InstallDatabase.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install the EMS - Cisco TMS Service"
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_InstallCiscoTMSservice.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install the Cisco TMS Activity DLL"
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISCO_InstallCiscoTMSActDLL.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure the EMS - Cisco TMS Interface"
+        Link="/Content/F_Optional Features/CISCO/A_V44.1/CISOC_ConfigCiscoTMSinterface.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
     <TocEntry
       Title="Polycom Integration"
-      Link="/Content/F_Optional Features/7_Polycom_Integration_Home.htm" />
+      Link="/Content/F_Optional Features/7_Polycom_Integration_Home.htm">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_Introduction.html">
+        <TocEntry
+          Title="Application Architecture"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_ApplicationArchitecture.html" />
+        <TocEntry
+          Title="Requirements"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_Requirements.html" />
+        <TocEntry
+          Title="Integration Diagram"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Obtain the Installation Files"
+        Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_ObtainInstallFiles.html" />
+      <TocEntry
+        Title="Install the EMS Polycom Service For the First Time"
+        Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_InstallPolycomServiceFirstTime.html" />
+      <TocEntry
+        Title="Install or Upgrading the EMS Polycom Service"
+        Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_InstallUpgradePolycomService.html" />
+      <TocEntry
+        Title="Configure the EMS Polycom Interface"
+        Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_ConfigPolycomInterface.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Install the Polycom Activity DLL on Users' Machines"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_InstallPolycomActivityDLL.html" />
+        <TocEntry
+          Title="Configure the EMS Polycom Rooms/Resources"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_ConfigurePolycomRoomsResources.html" />
+        <TocEntry
+          Title="Advanced EMS Polycom Interface Configuration"
+          Link="/Content/F_Optional Features/Polycom/A_V44.1/Polycom_AdvancedPolycomInterfaceConfig.html" />
+      </TocEntry>
+    </TocEntry>
+    <TocEntry
+      Title="EMS Integration to RoomWizard">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd"></TocEntry>
+      <TocEntry
+        Title="System Requirements"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_SystemRequirements.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Obtain the Installation Files"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_ObtainInstallFiles.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install EMS - RoomWizard Interface"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_InstallRWinterface.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Install EMS -RoomWizard Interface Website"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_InstallRWInterWebsite.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      <TocEntry
+        Title="Configure the EMS RoomWizard Interface"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_ConfigEMSRW.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Data Transferred Between Units and the Interface"
+          Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_DataTransBetweenUnits.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Room Wizard Communication"
+          Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_RWCommunication.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Security Considerations"
+          Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_SecurityConsiderations.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Configure Steelcase RoomWizard"
+        Link="/Content/F_Optional Features/RoomWiz/A_V44.1/RoomWiz_ConfigSteelcaseRW.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+    </TocEntry>
+    <TocEntry
+      Title="Integrated Authentication Options"
+      Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_IntegratedAuthenOptions.html">
+      <TocEntry
+        Title="Introduction"
+        Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_Introduction.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+        <TocEntry
+          Title="Integrated Authentication Considerations"
+          Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_IntegratedAuthentication.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+        <TocEntry
+          Title="Integration Diagram"
+          Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_IntegrationDiagram.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="Integrated Windows Authentication"
+        Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_IntegratedWindowsAuthen.html">
+        <TocEntry
+          Title="Manage Everyday Users For Integrated Authentication"
+          Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_ManageEUforIntegAuthen.htm" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" />
+      </TocEntry>
+      <TocEntry
+        Title="LDAP Authentication"
+        Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_LDAPAuthentication.html" />
+      <TocEntry
+        Title="Portal or Federated Authentication"
+        Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_PortalFederatedAuthen.html">
+        <TocEntry
+          Title="Portal Authentication Methods"
+          Link="/Content/F_Optional Features/IntegAuth/A_V44.1/IntegAuth_PortalAuthenMethods.html" />
+      </TocEntry>
+    </TocEntry>
   </TocEntry>
   <TocEntry
     Title="Glossary"
